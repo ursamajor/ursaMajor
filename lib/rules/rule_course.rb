@@ -1,4 +1,4 @@
-require "#{Rails.root}/lib/rule_coursefilter"
+require "#{Rails.root}/lib/rules/rule_coursefilter"
 
 class CourseRegexRule < CourseFilter
   def check_course(plan, course, regex)
