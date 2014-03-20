@@ -4,7 +4,7 @@ class Plan < ActiveRecord::Base
   has_and_belongs_to_many :courses
   
   def add(course)
-    courses << course unless @courses.include? course
+    courses << course unless courses.include? course
   end
 
 end

@@ -84,7 +84,7 @@ rules:
                 - course: EL ENG.20
                 - course: EL ENG.40
 
-    series:
+    coe_series:
         rule: series
         args:
             - AND:
