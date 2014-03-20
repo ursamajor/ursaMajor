@@ -22,7 +22,7 @@ Rule.add(OrRule.new :or)
 
 class NotRule < Rule
   def check(plan, entry)
-    rule, args = parse_entry entry
+    rule, args = Rule.parse_entry entry
     !rule.check plan, args
   end
 end

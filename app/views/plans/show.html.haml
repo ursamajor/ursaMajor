@@ -1,0 +1,22 @@
+= link_to "Courses", courses_path
+= link_to "Plans", plans_path
+= @plan.name
+
+%table
+  %thead
+    %tr
+      %th Name
+      %th Units
+      - if session[:plan] == @plan.id
+        %th Action
+  %tbody
+  - @plan.courses.each do |course|
+    %tr
+      %td= course.name
+      %td= course.units
+      - if session[:plan] == @plan.id
+        %td= button_to "Remove Course", remove_course_path(course), :method => :put
+- if @plan.courses.length > 0
+  - @rules.keys.each do |rule|
+    - next if [:and, :or, :not, :units, :courses, :series, :same_course, :course_regex, :dept, :course, :pnp, :course_number_range].include? rule
+    %p= Rule.get(rule).check_print @plan, nil

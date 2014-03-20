@@ -1,0 +1,18 @@
+= link_to "Courses", courses_path
+
+= form_tag plans_path do
+  = label :plan, :name, 'Name'
+  = text_field :plan, :name
+  = submit_tag 'Create Plan'
+  
+%table
+  %thead
+    %tr
+      %th Name
+      %th Action
+  %tbody
+  - @plans.each do |plan|
+    %tr
+      %td= link_to "#{plan.name}", plan_path(plan)
+      - if session[:plan] != plan.id
+        %td= button_to "Select Plan", select_plan_path(plan), :method => :put

@@ -22,11 +22,9 @@ ActiveRecord::Schema.define(:version => 20140320023416) do
     t.datetime "updated_at",                    :null => false
   end
 
-  create_table "courses_plans", :force => true do |t|
-    t.integer  "course_id"
-    t.integer  "plan_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+  create_table "courses_plans", :id => false, :force => true do |t|
+    t.integer "course_id"
+    t.integer "plan_id"
   end
 
   create_table "plans", :force => true do |t|

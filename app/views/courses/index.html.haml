@@ -1,0 +1,19 @@
+= link_to "Plans", plans_path
+
+%table
+  %thead
+    %tr
+      %th Name
+      %th Units
+      - if session[:plan]
+        %th Action
+  %tbody
+  - @courses.each do |course|
+    %tr
+      %td= course.name
+      %td= course.units
+      - if session[:plan]
+        - if @plan.include? course
+          %td= button_to "Remove Course", remove_course_path(course), :method => :put
+        - else
+          %td= button_to "Add Course", add_course_path(course), :method => :put

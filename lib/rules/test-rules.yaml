@@ -73,15 +73,6 @@ rules:
             - numcourses: 4
             - dept: cs
 
-    university:
-    # this rule doesn't work because rules that we haven't built yet
-        rule: AND
-        args:
-            - ac
-            - rc
-            - writing
-            - amhist
-
     lowerdiv_units:
         rule: units
         args:

@@ -74,7 +74,7 @@ class Rule
 
   def check_print(plan, args)
     result = check plan, args
-    puts "The plan #{result ? 'PASSES' : 'FAILS'} rule #{name}."
+    "The plan #{result ? 'PASSES' : 'FAILS'} rule #{name}."
   end
 
 end
