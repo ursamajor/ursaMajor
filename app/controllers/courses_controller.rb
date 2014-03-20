@@ -11,17 +11,10 @@ class CoursesController < ApplicationController
     end
   end
 
-  def add
-    course = Course.find_by_id params[:id]
-    plan = Plan.find_by_id session[:plan]
-    plan.courses << course if not plan.courses.include? course
-    redirect_to :back
-  end
-
   def remove
     course = Course.find_by_id params[:id]
     plan = Plan.find_by_id session[:plan]
-    plan.courses.delete(course) if plan.courses.include? course
+    plan.courses.delete course if plan.courses.include? course
     redirect_to :back
   end
 

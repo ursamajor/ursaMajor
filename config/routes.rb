@@ -2,7 +2,6 @@ LittleDipper::Application.routes.draw do
 
   resources :courses do
     member do
-      put 'add'
       put 'remove'
     end
   end
@@ -10,6 +9,7 @@ LittleDipper::Application.routes.draw do
   resources :plans do
     member do
       put 'select'
+      put 'add'
     end
   end
   

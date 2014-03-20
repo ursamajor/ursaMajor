@@ -71,16 +71,16 @@ rules:
         rule: courses
         args:
             - numcourses: 4
-            - dept: cs
+            - dept: COMPSCI
 
-    lowerdiv_units:
+    lowerdiv_eecs_units:
         rule: units
         args:
             - numunits: 20
             - OR:
-                - course: CS.61A
-                - course: CS.61B
-                - course: CS.61C
+                - course: COMPSCI.61A
+                - course: COMPSCI.61B
+                - course: COMPSCI.61C
                 - course: EL ENG.20
                 - course: EL ENG.40
 

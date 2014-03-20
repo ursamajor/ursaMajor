@@ -1,19 +1,18 @@
 = link_to "Plans", plans_path
 
+= form_tag add_plan_path(session[:plan]), :method => :put do
+  = label_tag :course
+  = text_field_tag :course
+  = submit_tag 'Add Course'
+
 %table
   %thead
     %tr
       %th Name
       %th Units
-      - if session[:plan]
-        %th Action
+
   %tbody
   - @courses.each do |course|
     %tr
       %td= course.name
       %td= course.units
-      - if session[:plan]
-        - if @plan.include? course
-          %td= button_to "Remove Course", remove_course_path(course), :method => :put
-        - else
-          %td= button_to "Add Course", add_course_path(course), :method => :put

@@ -2,6 +2,11 @@
 = link_to "Plans", plans_path
 = @plan.name
 
+= form_tag add_plan_path, :method => :put do
+  = label_tag :course
+  = text_field_tag :course
+  = submit_tag 'Add Course'
+
 %table
   %thead
     %tr
