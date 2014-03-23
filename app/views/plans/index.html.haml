@@ -1,18 +1,17 @@
-= link_to "Courses", courses_path
-
-= form_tag plans_path do
-  = label :plan, :name, 'Name'
-  = text_field :plan, :name
-  = submit_tag 'Create Plan'
-  
-%table
-  %thead
-    %tr
-      %th Name
-      %th Action
-  %tbody
-  - @plans.each do |plan|
-    %tr
-      %td= link_to "#{plan.name}", plan_path(plan)
-      - if session[:plan] != plan.id
-        %td= button_to "Select Plan", select_plan_path(plan), :method => :put
+.left-column-container.column.col-md-3
+  %h2 Create Plan
+  = form_tag plans_path, :method => :post, :id => 'search_form' do
+    .search-input-container.input-group
+      %input{:class => 'form-control search-bar', :type => 'text', :placeholder => 'Choose a name...', :name => 'plan_name'}
+      %span{:class =>"input-group-btn"}>
+        = submit_tag 'Add', :class => "btn btn-default search-submit"
+.right-column-container.column.container.col-md-8
+  %H2 My Plans
+  %table.table
+    %thead
+      %tr
+        %th Name
+    .body
+      - @plans.each do |plan|
+        %tr
+          %td= link_to "#{plan.name}", plan_path(plan)

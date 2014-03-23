@@ -10,6 +10,7 @@ class YamlRule < Rule
   def initialize(name, entry)
     @name = name.to_sym
     @entry = entry
+    @description = entry['description']
     @rule, @args = Rule.parse_entry @entry
   end
 

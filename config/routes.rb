@@ -1,20 +1,17 @@
 MolecularNatsicology::Application.routes.draw do
 
-  resources :courses do
-    member do
-      put 'remove'
-    end
-  end
+  devise_for :users
+
+  resources :courses
 
   resources :plans do
     member do
-      put 'select'
-      put 'add'
+      put 'add_course'
     end
   end
   
   resources :rules
 
-  root :to => "plans#index"
+  root :to => "courses#index"
 
 end

@@ -1,29 +1,41 @@
 class PlansController < ApplicationController
+  respond_to :html, :json
+  before_filter :signed_in
+  before_filter :is_owner, :only => :show
   
   def index
-    @plans = Plan.all
-    add_course params[:course] if params[:course]
+    @plans = current_user.plans
   end
 
   def show
     @plan = Plan.find_by_id params[:id]
   end
 
-  def select
-    session[:plan] = params[:id].to_i
-    redirect_to :back
-  end
-
   def create
-    plan = Plan.create params[:plan]
+    plan = Plan.new
+    plan.name = params[:plan_name]
+    plan.user = current_user
+    plan.save
     redirect_to :back
   end
 
-  def add
+  def add_course
     plan = Plan.find_by_id params[:id]
-    course = Course.find_by_name params[:course]
+    course = Course.find_by_name params[:course_name].upcase
     plan.add course if course
     redirect_to :back
+  end
+
+  protected
+
+  def is_owner
+    plan = Plan.find_by_id params[:id]
+    if current_user != plan.user
+      flash[:error] = "Error: You do not have permission to access"
+      redirect_to root_path
+      return
+    end
+    return true
   end
 
 end

@@ -1,5 +1,6 @@
 class Rule
   attr_accessor :name
+  attr_accessor :description
 
   @source = :raw
   @rules = {}
@@ -12,8 +13,9 @@ class Rule
     end
   end
 
-  def initialize(name = nil)
+  def initialize(name = nil, description = nil)
     @name = name
+    @description = description
     fail 'abstract' if abstract?
   end
 

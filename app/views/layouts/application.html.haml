@@ -1,11 +1,80 @@
 !!! 5
-
 %html
   %head
-    %title MolecularNatsicology
-    = stylesheet_link_tag "application"
-    = javascript_include_tag "application"
+    %title Molecular Natsicology
+    = favicon_link_tag '/favicon.ico'
+    = stylesheet_link_tag 'application'
+    = javascript_include_tag 'application'
     = csrf_meta_tags
 
   %body
-    = yield
+    #main-menu.navbar
+
+      .navbar-header
+        %button.navbar-toggle{:type => "button", "data-toggle" => "collapse", "data-target" => ".navbar-collapse"}
+          %span.sr-only Toggle navigation
+          %span.icon-bar
+          %span.icon-bar
+          %span.icon-bar
+
+        = link_to "/", :class => "home-link" do
+          %span.menu-text
+            Molecular Natsicology
+
+      .navbar-collapse.collapse
+        %ul{:class => "nav navbar-nav navbar-right main-navigation"} 
+
+          %li{:class => "tab"}>
+            = link_to courses_path do
+              %i{:class => "fa fa-book"}
+              %p Courses
+
+          - if signed_in?
+
+            %li{:class => "tab"}>
+              = link_to plans_path do
+                %i{:class => "fa fa-file-text"}
+                %p Plans
+
+          %li{:class => "tab"}>
+            = link_to rules_path do
+              %i{:class => "fa fa-check-square-o"}
+              %p Rules
+
+          - if signed_in?
+
+            %li.dropdown-custom.tab.account
+              %a
+                %i.fa.fa-user
+                %p
+                  = current_user.email
+                  %b.caret
+
+              %ul.dropdown-menu
+                %li
+                  = link_to "Profile", edit_user_registration_path
+                %li
+                  = link_to "Sign out", destroy_user_session_path, :method => :delete
+
+          - else
+            %li{:class => "tab account"}>
+              = link_to new_user_registration_path do
+                %i{:class => "fa fa-user"}
+                %p Sign up
+
+            %li{:class => "tab account"}>
+              = link_to new_user_session_path do
+                %i{:class => "fa fa-book"}
+                %p Log In
+
+    - flash.each do |name, msg|
+      .flash
+        - if not msg.nil?
+          - if msg.is_a?(String)
+            %div{:class => "alert alert-#{name == :notice ? "success" : "warning"}", :id => "flash"}
+              %a.close{"data-dismiss" => "alert"} ×
+              = content_tag :div, msg, :id => "flash_#{name}"
+
+    .container
+      .content.row
+        = yield

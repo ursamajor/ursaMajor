@@ -1,0 +1,14 @@
+.left-column-container.column.col-md-3
+.right-column-container.column.container.col-md-8
+  %h3 Rules
+  %table.table
+    %thead
+      %tr
+        %th Rule
+        %th Description
+    .body
+      - @rules.keys.each do |rule|
+        - next if [:and, :or, :not, :units, :courses, :series, :same_course, :course_regex, :dept, :course, :pnp, :course_number_range].include? rule
+        %tr
+          %td= rule
+          %td= Rule.get(rule).description

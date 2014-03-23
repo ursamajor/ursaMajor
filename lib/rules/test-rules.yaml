@@ -54,6 +54,7 @@ rules:
             - rule: pnp
 
     dumb_way_to_match_ac: # to illustrate how to use OR for single course
+        description: "American Cultures"
         rule: same_course
         args:
             - OR:
@@ -62,18 +63,21 @@ rules:
             - ac
 
     four_units_ac:
+        description: "Four units of AC"
         rule: units
         args:
             - numunits: 4
             - ac
 
     four_cs_courses:
+        description: "Four CS courses"
         rule: courses
         args:
             - numcourses: 4
             - dept: COMPSCI
 
     lowerdiv_eecs_units:
+        description: "EECS lower divsion requirement"
         rule: units
         args:
             - numunits: 20
@@ -85,6 +89,7 @@ rules:
                 - course: EL ENG.40
 
     coe_series:
+        description: "Series requirement"
         rule: series
         args:
             - AND:
@@ -93,6 +98,7 @@ rules:
 
     molecular_toxicology_major:
     # this rule doesn't work because it requires a lot of data and rules that we haven't built yet
+        description: "Molecular Toxicology Major"
         rule: AND
         args:
             - AND: # Humanities and Social Sciences (22 units)
@@ -170,6 +176,7 @@ rules:
                         - dept: PMB
 
     haas_business_administration_major:
+        description: "Haas Business Administration Major"
         rule: AND
         args:
             - AND: # Pre-Requisites

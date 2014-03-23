@@ -4,6 +4,7 @@ gem 'rails', '3.2.17'
 
 group :development, :test do
   gem 'sqlite3'
+  gem 'sqlite3_ar_regexp'
 end
 
 group :production do
@@ -21,3 +22,5 @@ gem 'jquery-rails'
 gem 'haml'
 gem 'bootstrap-sass-rails'
 gem 'font-awesome-sass'
+
+gem 'devise'
