@@ -6,7 +6,8 @@ class CoursesController < ApplicationController
     query = session[:search_query] = params[:search_query]
 
     if ! [nil, ""].include? query
-      @courses = Course.match_regex query
+      query = "%"+query+"%"
+      @courses = Course.search_query query
     end
   end
 

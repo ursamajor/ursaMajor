@@ -58,9 +58,12 @@ class Rule
       name = entry['rule']
       args = entry.include?('args') ? entry['args'] : nil
     elsif allow_implicit && entry.length == 1
-      puts entry
-      name = entry.keys[0]
-      args = entry.values[0]
+      begin
+        name = entry.keys[0]
+        args = entry.values[0]
+      rescue
+        puts entry
+      end
     else
       fail ArgumentError, "invalid rule entry: #{entry}"
     end
