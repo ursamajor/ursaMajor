@@ -22,8 +22,13 @@ class PlansController < ApplicationController
   def add_course
     plan = Plan.find_by_id params[:id]
     course = Course.find_by_name params[:course_name].upcase
-    plan.add course if course
-    redirect_to :back, notice: "Course #{course.name} successfully added"
+    if course
+      plan.add course 
+      flash[:notice] = "Course #{course.name} successfully added"
+    else
+      flash[:warning] = "Could not find course"
+    end
+    redirect_to :back
   end
 
   def remove_course
