@@ -8,7 +8,7 @@
         %th Description
     .body
       - @rules.keys.each do |rule|
-        - next if [:and, :or, :not, :units, :courses, :series, :same_course, :course_regex, :dept, :course, :pnp, :course_number_range].include? rule
+        - next if [:and, :or, :not, :units, :courses, :series, :same_course, :course_regex, :dept, :course, :pnp, :course_number_range, :lowerdiv, :upperdiv, :ls_breadth_arts, :ls_breadth_history, :ls_breadth_international, :ls_breadth_philosophy, :ls_breadth_social, :cnr_breadth_arts_history_philosophy, :cnr_breadth_social_international].include? rule
         %tr
           %td= rule
           %td= Rule.get(rule).description
