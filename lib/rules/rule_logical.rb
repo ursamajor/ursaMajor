@@ -36,7 +36,7 @@ class UnitsRule < Rule
     numunits = entry[0]['numunits']
     rule = entry[1]
     rule, args = Rule.parse_entry rule
-    plan.courses.each { |course| total += course.units if rule.check course, args }
+    plan.courses.each { |course| total += course.units and course.rule_list.add(@@current_rule) and course.save if rule.check course, args }
     total >= numunits
   end
 end
@@ -48,7 +48,7 @@ class CoursesRule < Rule
     numcourses = entry[0]['numcourses']
     rule = entry[1]
     rule, args = Rule.parse_entry rule
-    plan.courses.each { |course| total += 1 if rule.check course, args }
+    plan.courses.each { |course| total += 1 and course.rule_list.add(@@current_rule) and course.save if rule.check course, args }
     total >= numcourses
   end
 end

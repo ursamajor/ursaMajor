@@ -18,7 +18,7 @@
     .body
       - @plan.courses.each do |course|
         %tr
-          %td= course.name
+          %td= link_to course.name, course_path(course)
           %td= course.units
           %td= button_to "Remove Course", remove_course_plan_path(:id => @plan.id, :course_name => course.name), :method => :delete
   

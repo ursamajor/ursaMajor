@@ -24,3 +24,5 @@ gem 'bootstrap-sass-rails'
 gem 'font-awesome-sass'
 
 gem 'devise'
+
+gem 'acts-as-taggable-on'

@@ -2,6 +2,7 @@ class Rule
   attr_accessor :name
   attr_accessor :description
 
+  @@current_rule = Rule.name
   @source = :raw
   @rules = {}
 
@@ -17,6 +18,10 @@ class Rule
     @name = name
     @description = description
     fail 'abstract' if abstract?
+  end
+
+  def self.current_rule
+    @@current_rule
   end
 
   def abstract?

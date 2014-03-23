@@ -1,0 +1,9 @@
+%h3 Rules Met
+%table.table
+  %thead
+    %tr
+      %th Rule
+  .body
+    - @course.rule_list.each do |rule|
+      %tr
+        %th= rule

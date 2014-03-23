@@ -8,6 +8,7 @@ class YamlRule < Rule
   end
 
   def initialize(name, entry)
+    @@current_rule = name
     @name = name.to_sym
     @entry = entry
     @description = entry['description']

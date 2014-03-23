@@ -11,4 +11,8 @@ class CoursesController < ApplicationController
     end
   end
 
+  def show
+    @course = Course.find_by_id params[:id]
+  end
+
 end
