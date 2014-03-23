@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-LittleDipper::Application.load_tasks
+MolecularNatsicology::Application.load_tasks

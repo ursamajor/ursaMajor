@@ -1,4 +1,4 @@
-LittleDipper::Application.routes.draw do
+MolecularNatsicology::Application.routes.draw do
 
   resources :courses do
     member do

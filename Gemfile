@@ -20,3 +20,4 @@ end
 gem 'jquery-rails'
 gem 'haml'
 gem 'bootstrap-sass-rails'
+gem 'font-awesome-sass'
