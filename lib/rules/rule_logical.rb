@@ -39,7 +39,7 @@ class UnitsRule < Rule
     plan.courses.each { |course| 
       if rule.check course, args
         total += course.units
-        course.rule_list.add(@@current_rule)
+        course.rule_list.add @@current_rule
         course.save
       end
     }
@@ -57,7 +57,7 @@ class CoursesRule < Rule
     plan.courses.each { |course| 
       if rule.check course, args
         total += 1
-        course.rule_list.add(@@current_rule)
+        course.rule_list.add @@current_rule
         course.save
       end
     }

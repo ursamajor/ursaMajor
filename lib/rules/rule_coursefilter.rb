@@ -9,8 +9,8 @@ class CourseFilter < Rule
 
   def check(plan, args)
     plan.courses.each do |course|
-      if check_course(plan, course, args)
-        course.rule_list.add(@@current_rule)
+      if check_course plan, course, args
+        course.rule_list.add @@current_rule
         course.save
         return true 
       end
