@@ -1,4 +1,4 @@
-MolecularNatsicology::Application.routes.draw do
+LittleDipper::Application.routes.draw do
 
   devise_for :users
 
