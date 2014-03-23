@@ -5,8 +5,8 @@ class CoursesController < ApplicationController
     @courses = Course.all
     query = session[:search_query] = params[:search_query]
 
-    if ! [nil, ""].include?(query)
-      @courses = Course.match_regex(query)
+    if ! [nil, ""].include? query
+      @courses = Course.match_regex query
     end
   end
 

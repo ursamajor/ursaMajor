@@ -7,6 +7,7 @@ MolecularNatsicology::Application.routes.draw do
   resources :plans do
     member do
       put 'add_course'
+      delete 'remove_course'
     end
   end
   

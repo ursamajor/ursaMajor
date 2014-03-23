@@ -14,15 +14,13 @@
       %tr
         %th Name
         %th Units
-        - if session[:plan] == @plan.id
-          %th Action
+        %th Action
     .body
       - @plan.courses.each do |course|
         %tr
           %td= course.name
           %td= course.units
-          - if session[:plan] == @plan.id
-            %td= button_to "Remove Course", remove_course_path(course), :method => :put
+          %td= button_to "Remove Course", remove_course_plan_path(:id => @plan.id, :course_name => course.name), :method => :delete
   
   - if @plan.courses.length > 0
     %h3 Rules

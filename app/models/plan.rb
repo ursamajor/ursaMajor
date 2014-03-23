@@ -8,4 +8,8 @@ class Plan < ActiveRecord::Base
     courses << course unless courses.include? course
   end
 
+  def remove(course)
+    courses.delete course if courses.include? course
+  end
+
 end

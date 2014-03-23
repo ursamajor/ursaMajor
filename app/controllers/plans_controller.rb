@@ -1,7 +1,7 @@
 class PlansController < ApplicationController
   respond_to :html, :json
   before_filter :signed_in
-  before_filter :is_owner, :only => :show
+  before_filter :is_owner, :only => :show, :add_course, :remove_course
   
   def index
     @plans = current_user.plans
@@ -16,14 +16,21 @@ class PlansController < ApplicationController
     plan.name = params[:plan_name]
     plan.user = current_user
     plan.save
-    redirect_to :back
+    redirect_to :back, notice: "Plan #{plan.name} successfully created"
   end
 
   def add_course
     plan = Plan.find_by_id params[:id]
     course = Course.find_by_name params[:course_name].upcase
     plan.add course if course
-    redirect_to :back
+    redirect_to :back, notice: "Course #{course.name} successfully added"
+  end
+
+  def remove_course
+    plan = Plan.find_by_id params[:id]
+    course = Course.find_by_name params[:course_name]
+    plan.remove course if course
+    redirect_to :back, notice: "Course #{course.name} successfully removed"
   end
 
   protected
