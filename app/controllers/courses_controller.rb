@@ -6,7 +6,7 @@ class CoursesController < ApplicationController
     query = session[:search_query] = params[:search_query]
 
     if ! [nil, ""].include? query
-      query = "%"+query+"%"
+      query = "%"+query.upcase+"%"
       @courses = Course.search_query query
     end
   end

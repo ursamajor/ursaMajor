@@ -21,9 +21,11 @@ end
 Rule.add(OrRule.new :or)
 
 class NotRule < Rule
-  def check(plan, entry)
-    rule, args = Rule.parse_entry entry
-    !rule.check plan, args
+  def check(plan, entries)
+    Rule.parse_entries(entries).each do |rule, args|
+      return false if rule.check plan, args
+    end
+    true
   end
 end
 Rule.add(NotRule.new :not)

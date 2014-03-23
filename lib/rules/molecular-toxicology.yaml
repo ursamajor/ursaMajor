@@ -835,46 +835,45 @@ rules:
                 - course: VISSTD.185X
                 - course: VISSTD.186X
                 - course: VISSTD.189
-            # - NOT:
-            #     - OR:
-            #         - course: THEATER.R1A
-            #         - course: THEATER.R1B
-            #         - course: THEATER.12
-            #         - course: THEATER.N12
-            #         - course: THEATER.60
-            #         - course: THEATER.160
-            #         - course: THEATER.172
-            #         - course: THEATER.176
-            #         - course: THEATER.177
-            #         - course: MUSIC.R1B
-            #         - course: MUSIC.49B
-            #         - course: MUSIC.49C
-            #         - course: MUSIC.50
-            #         - course: MUSIC.50A
-            #         - course: MUSIC.51
-            #         - course: MUSIC.51A
-            #         - course: MUSIC.51B
-            #         - course: MUSIC.60
-            #         - course: MUSIC.61
-            #         - course: MUSIC.163
-            #         - course: HISTART.R1B
-            #         - course: HISTART.N142
-            #         - course: ART.C178
-            #         - course: COM LIT.R1A
-            #         - course: COM LIT.R1B
-            #         - course: COM LIT.R2A
-            #         - course: COM LIT.R2B
-            #         - course: COM LIT.R3A
-            #         - course: COM LIT.R3B
-            #         - course: COM LIT.112A
-            #         - course: COM LIT.112B
-            #         - course: ENGLISH.R1A
-            #         - course: ENGLISH.R1B
-            #         - course: ENGLISH.142A
-            #         - course: ENGLISH.142D
-            #         - course: FILM.R1A
-            #         - course: FILM.R1B
-            #         - course: FILM.C181
+            - NOT:
+                - course: THEATER.R1A
+                - course: THEATER.R1B
+                - course: THEATER.12
+                - course: THEATER.N12
+                - course: THEATER.60
+                - course: THEATER.160
+                - course: THEATER.172
+                - course: THEATER.176
+                - course: THEATER.177
+                - course: MUSIC.R1B
+                - course: MUSIC.49B
+                - course: MUSIC.49C
+                - course: MUSIC.50
+                - course: MUSIC.50A
+                - course: MUSIC.51
+                - course: MUSIC.51A
+                - course: MUSIC.51B
+                - course: MUSIC.60
+                - course: MUSIC.61
+                - course: MUSIC.163
+                - course: HISTART.R1B
+                - course: HISTART.N142
+                - course: ART.C178
+                - course: COM LIT.R1A
+                - course: COM LIT.R1B
+                - course: COM LIT.R2A
+                - course: COM LIT.R2B
+                - course: COM LIT.R3A
+                - course: COM LIT.R3B
+                - course: COM LIT.112A
+                - course: COM LIT.112B
+                - course: ENGLISH.R1A
+                - course: ENGLISH.R1B
+                - course: ENGLISH.142A
+                - course: ENGLISH.142D
+                - course: FILM.R1A
+                - course: FILM.R1B
+                - course: FILM.C181
 
     ls_breadth_history:
         description: "Historical Studies Breadth Requirement"
@@ -1435,15 +1434,14 @@ rules:
                 - course: UGIS.C154
                 - course: UGIS.C155
                 - course: UGIS.C162A
-            # - NOT:
-            #     - OR:
-            #         - course: HISTART.R1B
-            #         - course: HISTART.N142
-            #         - course: HISTORY.R1A
-            #         - course: HISTORY.R1B
-            #         - course: HISTORY.30A
-            #         - course: HISTORY.30B
-            #         - course: HISTORY.30C
+            - NOT:
+                - course: HISTART.R1B
+                - course: HISTART.N142
+                - course: HISTORY.R1A
+                - course: HISTORY.R1B
+                - course: HISTORY.30A
+                - course: HISTORY.30B
+                - course: HISTORY.30C
 
     ls_breadth_international:
         description: "International Studies Breadth Requirement"
@@ -2238,9 +2236,8 @@ rules:
                 - course: UGIS.C154
                 - course: UGIS.C155
                 - course: UGIS.170
-            # - NOT:
-            #     - OR:
-            #         - course: PHILOS.R1B
+            - NOT:
+                - course: PHILOS.R1B
 
     ls_breadth_social:
         description: "Social and Behavioral Sciences Breadth Requirement"
@@ -3499,29 +3496,28 @@ rules:
                 - course: UGIS.175
                 - course: UGIS.176A
                 - course: UGIS.177
-            # - NOT:
-            #     - OR:
-            #         - course: SOCIOL.105
-            #         - course: SOCIOL.106
-            #         - course: SOCIOL.128
-            #         - course: SOC WEL.154
-            #         - course: POL SCI.133
-            #         - course: LINGUIS.R1B
-            #         - course: LINGUIS.2A
-            #         - course: LINGUIS.2B
-            #         - course: LINGUIS.R6
-            #         - course: LINGUIS.12
-            #         - course: LINGUIS.18
-            #         - course: LINGUIS.41
-            #         - course: LINGUIS.44
-            #         - course: LINGUIS.47
-            #         - course: LINGUIS.48
-            #         - course: LEGALST.R1A
-            #         - course: LEGALST.R1B
-            #         - course: LEGALST.39C
-            #         - course: HISTORY.R1
-            #         - course: HISTORY.R1B
-            #         - course: HISTORY.181B
+            - NOT:
+                - course: SOCIOL.105
+                - course: SOCIOL.106
+                - course: SOCIOL.128
+                - course: SOC WEL.154
+                - course: POL SCI.133
+                - course: LINGUIS.R1B
+                - course: LINGUIS.2A
+                - course: LINGUIS.2B
+                - course: LINGUIS.R6
+                - course: LINGUIS.12
+                - course: LINGUIS.18
+                - course: LINGUIS.41
+                - course: LINGUIS.44
+                - course: LINGUIS.47
+                - course: LINGUIS.48
+                - course: LEGALST.R1A
+                - course: LEGALST.R1B
+                - course: LEGALST.39C
+                - course: HISTORY.R1
+                - course: HISTORY.R1B
+                - course: HISTORY.181B
 
     cnr_breadth_arts_history_philosophy:
         description: "Arts, History, or Philosophy Breadth"
