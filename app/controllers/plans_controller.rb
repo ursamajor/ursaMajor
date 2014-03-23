@@ -1,7 +1,7 @@
 class PlansController < ApplicationController
   respond_to :html, :json
   before_filter :signed_in
-  before_filter :is_owner, :only => :show, :add_course, :remove_course
+  before_filter :is_owner, :only => [:show, :add_course, :remove_course]
   
   def index
     @plans = current_user.plans
