@@ -25,6 +25,32 @@ rules:
         rule: course_number_range
         args: [ 100 ]
 
+    four_units_ac:
+        description: "Four unit ac course"
+        rule: units
+        args:
+            - numunits: 4
+            - university_ac
+
+    four_cs_courses:
+        description: "Four cs courses"
+        rule: courses
+        args:
+            - numcourses: 4
+            - dept: COMPSCI
+
+    lowerdiv_units:
+        description: "EECS lower division requirement"
+        rule: units
+        args:
+            - numunits: 20
+            - OR:
+                - course: COMPSCI.61A
+                - course: COMPSCI.61B
+                - course: COMPSCI.61C
+                - course: EL ENG.20
+                - course: EL ENG.40
+
     ls_breadth_arts:
         description: "Arts and Literature Breadth Requirement"
         rule: same_course
