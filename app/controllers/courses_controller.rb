@@ -2,7 +2,7 @@ class CoursesController < ApplicationController
   respond_to :html, :json
 
   def index
-    @courses = Course.all
+    @courses = Course.order 'name ASC'
     query = session[:search_query] = params[:search_query]
 
     if ! [nil, ""].include? query
@@ -13,6 +13,10 @@ class CoursesController < ApplicationController
 
   def show
     @course = Course.find_by_id params[:id]
+  end
+
+  def all
+    @courses = Course.order 'name ASC'
   end
 
 end

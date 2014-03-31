@@ -19,9 +19,12 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'json_builder'
 gem 'haml'
 gem 'bootstrap-sass-rails'
 gem 'font-awesome-sass'
+
+gem 'nokogiri'
 
 gem 'devise'
 
