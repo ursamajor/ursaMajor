@@ -8,7 +8,6 @@ class YamlRule < Rule
   end
 
   def initialize(name, entry)
-    @@current_rule = name
     @name = name.to_sym
     @entry = entry
     @description = entry['description']
@@ -18,6 +17,7 @@ class YamlRule < Rule
   def check(plan, args)
     fail ArgumentError,
       "YAML rules should not take arguments, got #{args.inspect}" unless args.nil?
+    @@current_rule = self.name.to_s
     @rule.check plan, @args
   end
 end

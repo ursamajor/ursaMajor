@@ -32,5 +32,13 @@ class Course < ActiveRecord::Base
       puts "error in course creation: " + e.message
     end
   end
+
+  def self.clear_tags(course_ids)
+    course_ids.each do |id|
+      course = Course.find_by_id id
+      course.rule_list = []
+      course.save
+    end
+  end
   
 end
