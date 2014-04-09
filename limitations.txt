@@ -1,0 +1,3 @@
+- Only tags with inner and outermost rule. Overcome by running every rule when doing initial tagging.
+- If course is within an AND rule, will stop as soon you don't have one of the classes. This means that if you have any of the rest, they won't be tagged. Overcome by using courses/numcourses+OR as overall rule.
+- If rule is a NOT, course will still be tagged as passing that rule.
