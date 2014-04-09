@@ -21,6 +21,10 @@ class Rule
     fail 'abstract' if abstract?
   end
 
+  def self.base
+    [:and, :or, :not, :units, :courses, :series, :same_course, :course_regex, :dept, :course, :pnp, :course_number_range]
+  end
+
   def self.current_rule
     @@current_rule
   end
