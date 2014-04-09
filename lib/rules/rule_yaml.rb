@@ -8,16 +8,16 @@ class YamlRule < Rule
   end
 
   def initialize(name, entry)
-    @@current_rule = name
     @name = name.to_sym
     @entry = entry
     @description = entry['description']
     @rule, @args = Rule.parse_entry @entry
   end
 
-  def check(plan, args)
+  def check(plan, args, flags=[])
     fail ArgumentError,
       "YAML rules should not take arguments, got #{args.inspect}" unless args.nil?
-    @rule.check plan, @args
+    @@current_rule = self.name.to_s
+    @rule.check plan, @args, flags
   end
 end

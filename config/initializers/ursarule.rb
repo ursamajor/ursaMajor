@@ -9,3 +9,22 @@ data = YAML.load_file("#{Rails.root}/lib/rules/test-rules.yaml")
 data['rules'].keys.each do |rule|
   Rule.add YamlRule.new rule, data['rules'][rule]
 end
+
+tag_all = false
+
+if tag_all
+  all_courses = Plan.new
+  Course.all.each do |course|
+    plan = Plan.new
+    plan.add course
+    all_courses.add course
+    Rule.all.keys.each do |rule|
+      next if Rule.base.include? rule
+      Rule.get(rule).check_print plan, nil
+    end
+  end
+  Rule.all.keys.each do |rule|
+    next if Rule.base.include? rule
+    Rule.get(rule).check_print all_courses, nil
+  end
+end
