@@ -3,6 +3,7 @@ class Rule
   attr_accessor :description
 
   @@current_rule = Rule.name
+  @@top_level_rule = Rule.name
   @source = :raw
   @rules = {}
 
@@ -22,6 +23,10 @@ class Rule
 
   def self.current_rule
     @@current_rule
+  end
+
+  def self.top_level_rule
+    @@top_level_rule
   end
 
   def abstract?
@@ -83,7 +88,12 @@ class Rule
     fail NotImplementedError, "<Rule '#{name}'>.check"
   end
 
+  def start_tagging
+    @@top_level_rule = self.name.to_s
+  end
+
   def check_print(plan, args)
+    start_tagging
     result = check plan, args
     "The plan #{result ? 'PASSES' : 'FAILS'} rule #{name}."
   end

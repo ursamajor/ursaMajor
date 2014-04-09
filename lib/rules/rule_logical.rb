@@ -40,6 +40,7 @@ class UnitsRule < Rule
       if rule.check course, args
         total += course.units
         course.rule_list.add @@current_rule
+        course.rule_list.add @@top_level_rule
         course.save
       end
     }
@@ -58,6 +59,7 @@ class CoursesRule < Rule
       if rule.check course, args
         total += 1
         course.rule_list.add @@current_rule
+        course.rule_list.add @@top_level_rule
         course.save
       end
     }

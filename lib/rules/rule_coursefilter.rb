@@ -11,6 +11,7 @@ class CourseFilter < Rule
     plan.courses.each do |course|
       if check_course plan, course, args
         course.rule_list.add @@current_rule
+        course.rule_list.add @@top_level_rule
         course.save
         return true 
       end
