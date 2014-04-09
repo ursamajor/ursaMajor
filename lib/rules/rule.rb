@@ -84,7 +84,7 @@ class Rule
     entries.map { |entry| parse_entry entry }
   end
 
-  def check(plan, args)
+  def check(plan, args, flags=[])
     fail NotImplementedError, "<Rule '#{name}'>.check"
   end
 
@@ -92,7 +92,7 @@ class Rule
     @@top_level_rule = self.name.to_s
   end
 
-  def check_print(plan, args)
+  def check_print(plan, args, flags=[])
     start_tagging
     result = check plan, args
     "The plan #{result ? 'PASSES' : 'FAILS'} rule #{name}."
