@@ -21,6 +21,8 @@ LittleDipper::Application.routes.draw do
     end
   end
 
+  get '/tag_all', to: 'tags#tag_all'  
+
   root :to => "courses#index"
 
 end
