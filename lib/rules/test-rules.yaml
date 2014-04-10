@@ -3622,12 +3622,13 @@ rules:
         rule: AND
         args:
             - course: MCELLBI.102
-            - course: MCELLBI.104
-            - course: INTEGBI.141
+            - OR:
+                - course: MCELLBI.104
+                - course: INTEGBI.141
             - OR:
                 - course: PLANTBI.C112
                 - course: MCELLBI.C112
-            - course: PB HLTH.162A
+                - course: PB HLTH.162A
             - OR:
                 - course: PLANTBI.C112
                 - course: MCELLBI.C112L

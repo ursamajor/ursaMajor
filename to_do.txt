@@ -1,3 +1,4 @@
 - upgrade to rails 4
 - remove course if used for rule and can only be used once
 - rename departments
+- UI for editing rules/yaml

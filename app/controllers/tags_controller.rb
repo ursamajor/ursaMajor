@@ -1,5 +1,17 @@
 class TagsController < ApplicationController
 
+  def tag
+    if ENV['TAG_ALL'] == "true"
+      rule = params[:rule]
+      all_courses = Plan.new
+      Course.all.each do |course|
+        all_courses.add course
+      end
+      Rule.get(rule).check_print all_courses, nil
+    end
+    redirect_to root_path
+  end
+
   def tag_all
     if ENV['TAG_ALL'] == "true"
       all_courses = Plan.new
