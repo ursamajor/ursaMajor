@@ -10,9 +10,7 @@ data['rules'].keys.each do |rule|
   Rule.add YamlRule.new rule, data['rules'][rule]
 end
 
-tag_all = false
-
-if tag_all
+if ENV['TAG_ALL']
   all_courses = Plan.new
   Course.all.each do |course|
     plan = Plan.new
