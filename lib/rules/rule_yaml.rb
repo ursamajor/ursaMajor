@@ -14,10 +14,10 @@ class YamlRule < Rule
     @rule, @args = Rule.parse_entry @entry
   end
 
-  def check(plan, args, flags=[])
+  def check(plan, args, flags=[], fulfilling_set)
     fail ArgumentError,
       "YAML rules should not take arguments, got #{args.inspect}" unless args.nil?
     @@current_rule = self.name.to_s
-    @rule.check plan, @args, flags
+    @rule.check plan, @args, flags, fulfilling_set
   end
 end

@@ -5,4 +5,8 @@ class RulesController < ApplicationController
     @rules = Rule.all
   end
 
+  def display
+    @rule = Rule.get(params[:rule])
+  end
+
 end
