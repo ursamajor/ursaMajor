@@ -15,7 +15,11 @@ LittleDipper::Application.routes.draw do
     end
   end
   
-  resources :rules
+  resources :rules do
+    collection do
+      get 'display'
+    end
+  end
 
   root :to => "courses#index"
 

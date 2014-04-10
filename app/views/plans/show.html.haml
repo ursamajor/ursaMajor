@@ -29,9 +29,14 @@
         %tr
           %th Rule
           %th Result
+          %th Fulfilling Set
       .body
         - @rules.keys.each do |rule|
           - next if Rule.base.include? rule
           %tr
             %td= rule
-            %td= Rule.get(rule).check_print @plan, nil
+            - result = Rule.get(rule).check_print @plan, nil
+            %td= result[0]
+            %td
+              - result[1].courses.each do |course|
+                = course.name

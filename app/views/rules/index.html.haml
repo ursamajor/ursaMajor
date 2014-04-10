@@ -10,5 +10,5 @@
       - @rules.keys.each do |rule|
         - next if Rule.base.include? rule
         %tr
-          %td= rule
+          %td= link_to rule, display_rules_path(:rule => rule)
           %td= Rule.get(rule).description
