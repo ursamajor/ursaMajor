@@ -10,7 +10,7 @@ data['rules'].keys.each do |rule|
   Rule.add YamlRule.new rule, data['rules'][rule]
 end
 
-if ENV['TAG_ALL']
+if ENV['TAG_ALL'] == "true"
   all_courses = Plan.new
   Course.all.each do |course|
     plan = Plan.new
@@ -18,6 +18,7 @@ if ENV['TAG_ALL']
     all_courses.add course
     Rule.all.keys.each do |rule|
       next if Rule.base.include? rule
+      next if course.rule_list.include? rule
       Rule.get(rule).check_print plan, nil
     end
   end
