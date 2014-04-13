@@ -7,20 +7,14 @@ class CourseFilter < Rule
     self.class == CourseFilter
   end
 
-  def check(plan, args, flags=[], fulfilling_set)
+  def check(plan, args)
     plan.courses.each do |course|
-      if check_course plan, course, args, flags, fulfilling_set
-        course.rule_list.add @@current_rule
-        course.rule_list.add @@top_level_rule
-        course.save unless flags.include? "NOT"
-        fulfilling_set.add course unless flags.include? "NOT"
-        return true 
-      end
+      return true if check_course plan, course, args
     end
     false
   end
 
-  def check_course(plan, course, args, flags=[], fulfilling_set)
+  def check_course(plan, course, args)
     fail NotImplementedError, "<Rule '#{name}'>.check_course"
   end
   

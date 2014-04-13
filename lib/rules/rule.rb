@@ -1,9 +1,6 @@
 class Rule
-  attr_accessor :name
-  attr_accessor :description
+  attr_accessor :name, :description
 
-  @@current_rule = Rule.name
-  @@top_level_rule = Rule.name
   @source = :raw
   @rules = {}
 
@@ -23,14 +20,6 @@ class Rule
 
   def self.base
     [:and, :or, :not, :units, :courses, :series, :same_course, :course_regex, :dept, :course, :pnp, :course_number_range]
-  end
-
-  def self.current_rule
-    @@current_rule
-  end
-
-  def self.top_level_rule
-    @@top_level_rule
   end
 
   def abstract?
@@ -88,19 +77,13 @@ class Rule
     entries.map { |entry| parse_entry entry }
   end
 
-  def check(plan, args, flags=[], fulfilling_set)
+  def check(plan, args)
     fail NotImplementedError, "<Rule '#{name}'>.check"
   end
 
-  def start_tagging
-    @@top_level_rule = self.name.to_s
-  end
-
-  def check_print(plan, args, flags=[])
-    start_tagging
-    fulfilling_set = Plan.new
-    result = check plan, args, flags, fulfilling_set
-    ["The plan #{result ? 'PASSES' : 'FAILS'} rule #{name}.", fulfilling_set]
+  def check_print(plan, args)
+    result = check plan, args
+    ["The plan #{result.pass ? 'PASSES' : 'FAILS'} rule #{name}.", result.fulfilling_set]
   end
 
 end
