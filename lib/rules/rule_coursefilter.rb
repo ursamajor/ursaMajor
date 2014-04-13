@@ -1,4 +1,5 @@
 require "#{Rails.root}/lib/rules/rule"
+require "#{Rails.root}/lib/rules/result"
 
 class CourseFilter < Rule
   @source = :course_filter

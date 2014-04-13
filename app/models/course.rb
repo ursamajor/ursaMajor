@@ -14,6 +14,10 @@ class Course < ActiveRecord::Base
     [self]
   end
 
+  def dept
+    name.match(/^([^.]+)/)[0]
+  end
+
   def self.add(department)
     uri = "https://apis-dev.berkeley.edu/cxf/asws/course?departmentCode=#{CGI.escape(department)}&_type=xml&app_id=#{ENV['APP_ID']}&app_key=#{ENV['APP_KEY']}"
     begin

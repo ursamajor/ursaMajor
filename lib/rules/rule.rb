@@ -83,7 +83,7 @@ class Rule
 
   def check_print(plan, args)
     result = check plan, args
-    ["The plan #{result.pass ? 'PASSES' : 'FAILS'} rule #{name}.", result.fulfilling_set]
+    ["The plan #{result.pass? ? 'PASSES' : 'FAILS'} rule #{name}.", result.courses]
   end
 
 end
