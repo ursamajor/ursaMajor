@@ -8,10 +8,14 @@ class CourseFilter < Rule
   end
 
   def check(plan, args)
+    result = Result.new self, false
     plan.courses.each do |course|
-      return true if check_course plan, course, args
+      subresult = check_course plan, course, args
+      result.courses_union(subresult.courses)
+      result.pass = true if subresult.pass
+      result.subresults << subresult
     end
-    false
+    result
   end
 
   def check_course(plan, course, args)
