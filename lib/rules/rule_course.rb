@@ -78,4 +78,4 @@ class NumCoursesRule < Rule
     result
   end
 end
-Rule.add(NumCoursesRule.new :numcourses)
+Rule.add(NumCoursesRule.new :count_courses)

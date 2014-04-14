@@ -56,6 +56,8 @@ class SameCourseRule < CourseFilter
 end
 Rule.add(SameCourseRule.new :same_course)
 
+# SeriesRule is obsolete
+
 class SameDeptRule < Rule
   def check(plan, entry)
     fail ArgumentError unless entry['dept']
