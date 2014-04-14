@@ -41,7 +41,7 @@ class CourseNumberRule < CourseFilter
     course.number >= min && course.number <= max
   end
 end
-Rule.add(CourseNumberRangeRule.new :course_number)
+Rule.add(CourseNumberRule.new :course_number)
 
 class UnitsRule < Rule
   def check(plan, entry)

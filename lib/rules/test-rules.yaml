@@ -37,10 +37,12 @@ rules:
 
     four_cs_courses:
         description: "Four cs courses"
-        rule: courses
+        rule: numcourses
         args:
-            - numcourses: 4
-            - dept: COMPSCI
+            min: 4
+            rule: dept
+            args:
+                - COMPSCI
 
     lowerdiv_units:
         description: "EECS lower division requirement"
