@@ -25,8 +25,10 @@ class Result
   end
 
   def tag_courses
-    @courses.each { |course| course.rule_list.add @rule.name }
-    @subresults.each { |result| result.tag_courses }
+    unless @rule.base?
+      @courses.each { |course| course.rule_list.add @rule.name.to_s; course.save }
+      @subresults.each { |result| result.tag_courses }
+    end
   end
 
 end

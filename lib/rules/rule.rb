@@ -22,6 +22,10 @@ class Rule
     [:and, :or, :not, :units, :count_courses, :same_dept, :same_course, :course_regex, :dept, :course, :pnp, :course_number]
   end
 
+  def base?
+    Rule.base.include? name
+  end
+
   def abstract?
     self.class == Rule
   end
@@ -83,6 +87,7 @@ class Rule
 
   def check_print(plan, args)
     result = check plan, args
+    result.tag_courses
     ["The plan #{result.pass ? 'PASSES' : 'FAILS'} rule #{name}.", result.courses]
   end
 
