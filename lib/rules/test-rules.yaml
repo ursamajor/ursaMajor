@@ -17,20 +17,23 @@ rules:
 
     lowerdiv:
         description: "Lower Division"
-        rule: course_number_range
-        args: [ 0, 99 ]
+        rule: course_number
+        args:
+            min: 0
+            max: 99
 
     upperdiv:
         description: "Upper Division"
-        rule: course_number_range
-        args: [ 100 ]
+        rule: course_number
+        args:
+            min: 100
 
     four_units_ac:
-        description: "Four unit ac course"
+        description: "4-unit American Cultures course"
         rule: units
         args:
-            - numunits: 4
-            - university_ac
+            min: 4
+            rule: university_ac
 
     four_cs_courses:
         description: "Four cs courses"
@@ -43,8 +46,9 @@ rules:
         description: "EECS lower division requirement"
         rule: units
         args:
-            - numunits: 20
-            - OR:
+            min: 20
+            rule: OR
+            args:
                 - course: COMPSCI.61A
                 - course: COMPSCI.61B
                 - course: COMPSCI.61C
@@ -3564,8 +3568,9 @@ rules:
         description: "Humanities and Social Sciences (14 units)"
         rule: units
         args:
-            - numunits: 14
-            - OR:
+            min: 14
+            rule: OR
+            args:
                 - rule: university_ac
                 - rule: cnr_breadth_arts_history_philosophy
                 - rule: cnr_breadth_social_international
@@ -3607,14 +3612,16 @@ rules:
         description: "Upper Division CNR Requirement (15 units)"
         rule: units
         args:
-            - numunits: 15
-            - same_course:
-                - OR:
-                    - dept: AGR CHM
-                    - dept: ENE,RES
-                    - dept: ESPM
-                    - dept: NUSCTX
-                    - dept: PLANTBI
+            min: 15
+            rule: AND
+            args:
+                - same_course:
+                    - OR:
+                        - dept: AGR CHM
+                        - dept: ENE,RES
+                        - dept: ESPM
+                        - dept: NUSCTX
+                        - dept: PLANTBI
                 - rule: upperdiv
 
     molecular_toxicology_upper:
@@ -3638,8 +3645,9 @@ rules:
             - course: NUSCTX.171
             - course: NUSCTX.193
             - units:
-                - numunits: 36
-                - OR:
+                min: 36
+                rule: OR
+                args:
                     - course: MCELLBI.102
                     - course: MCELLBI.104
                     - course: INTEGBI.141

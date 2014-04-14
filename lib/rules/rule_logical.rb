@@ -46,36 +46,16 @@ class NotRule < Rule
 end
 Rule.add(NotRule.new :not)
 
-class UnitsRule < Rule
-  def check(plan, entry)
-    fail ArgumentError unless entry['min'] || entry['max']
-    min = entry['min'] || 0
-    max = entry['max'] || Float::INFINITY
-    rule, args = Rule.parse_entry entry['rule']
-    subresult = rule.check plan, args
-    total = 0
-    subresult.courses.each { |course| total += course.units }
-    result_boolean = total >= min && total <= max
-    Result.new self, result_boolean
+# This is ANDcourse. We do not need ORcourse because ANDcourse will change
+# all of its children's plan arguments to a single course.
+class SameCourseRule < CourseFilter
+  def check_course(plan, course, entries)
+    Rule.get(:and).check course, entries
   end
 end
-Rule.add(UnitsRule.new :units)
+Rule.add(SameCourseRule.new :same_course)
 
-class CoursesRule < Rule
-  def check(plan, entry)
-    fail ArgumentError unless entry['min'] || entry['max']
-    min = entry['min'] || 0
-    max = entry['max'] || Float::INFINITY
-    rule, args = Rule.parse_entry entry['rule']
-    subresult = rule.check plan, args
-    total = subresult.courses.length
-    result_boolean = total >= min && total <= max
-    Result.new self, result_boolean
-  end
-end
-Rule.add(UnitsRule.new :courses)
-
-class SeriesRule < Rule
+class SameDeptRule < Rule
   def check(plan, entry)
     fail ArgumentError unless entry['dept']
     rule, args = Rule.parse_entry entry['rule']
@@ -87,18 +67,14 @@ class SeriesRule < Rule
       plan.courses.each do |course2|
         dept_plan.add course2 if course2.dept == plan_dept_name
       end
-      result.pass = true if rule.check dept_plan, args
+      subresult = rule.check dept_plan, args
+      if subresult.pass
+        result.pass = true
+        result.courses_union(subresult)
+        result.subresults << subresult
+      end
     end
     result
   end
 end
-Rule.add(SeriesRule.new :series)
-
-# This is ANDcourse. We do not need ORcourse because ANDcourse will change
-# all of its children's plan arguments to a single course.
-class SameCourseRule < CourseFilter
-  def check_course(plan, course, entries)
-    Rule.get(:and).check course, entries
-  end
-end
-Rule.add(SameCourseRule.new :same_course)
+Rule.add(SameDeptRule.new :same_dept)
