@@ -56,26 +56,29 @@ class SameCourseRule < CourseFilter
 end
 Rule.add(SameCourseRule.new :same_course)
 
-# class SameDeptRule < Rule
-#   def check(plan, entry)
-#     fail ArgumentError unless entry['dept']
-#     rule, args = Rule.parse_entry entry['rule']
 
-#     result = Result.new self, false
-#     plan.courses.each do |course1| 
-#       dept_plan = Plan.new
-#       plan_dept_name = course1.dept
-#       plan.courses.each do |course2|
-#         dept_plan.add course2 if course2.dept == plan_dept_name
-#       end
-#       subresult = rule.check dept_plan, args
-#       if subresult.pass
-#         result.pass = true
-#         result.courses_union(subresult)
-#         result.subresults << subresult
-#       end
-#     end
-#     result
-#   end
-# end
-# Rule.add(SameDeptRule.new :same_dept)
+# SeriesRule is obsolete
+
+class SameDeptRule < Rule
+  def check(plan, entry)
+    fail ArgumentError unless entry['dept']
+    rule, args = Rule.parse_entry entry['rule']
+
+    result = Result.new self, false
+    plan.courses.each do |course1| 
+      dept_plan = Plan.new
+      plan_dept_name = course1.dept
+      plan.courses.each do |course2|
+        dept_plan.add course2 if course2.dept == plan_dept_name
+      end
+      subresult = rule.check dept_plan, args
+      if subresult.pass
+        result.pass = true
+        result.courses_union(subresult)
+        result.subresults << subresult
+      end
+    end
+    result
+  end
+end
+Rule.add(SameDeptRule.new :same_dept)
