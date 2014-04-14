@@ -9,7 +9,11 @@ class Result
     @subresults = []
   end
 
-  def courses_union(result)
+  def add_course(course)
+    @courses << course unless @courses.include? course
+  end
+
+  def courses_union(courses)
     @courses |= result.courses
   end
 

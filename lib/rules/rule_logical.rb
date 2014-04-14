@@ -7,9 +7,9 @@ class AndRule < Rule
     Rule.parse_entries(entries).each do |rule, args|
       subresult = rule.check plan, args
       if result.rule.name == :not
-        result.courses_subtract(subresult.courses)
+        result.courses_subtract(subresult)
       else
-        result.courses_intersect(subresult.courses)
+        result.courses_intersect(subresult)
       end
       result.pass = false unless subresult.pass
       result.subresults << subresult
@@ -24,7 +24,7 @@ class OrRule < Rule
     result = Result.new self, false
     Rule.parse_entries(entries).each do |rule, args|
       subresult = rule.check plan, args
-      result.courses_union(subresult.courses)
+      result.courses_union(subresult)
       result.pass = true if subresult.pass
       result.subresults << subresult
     end
@@ -38,7 +38,7 @@ class NotRule < Rule
     result = Result.new self, true
     Rule.parse_entries(entries).each do |rule, args|
       subresult = rule.check plan, args
-      result.courses_union(subresult.courses)
+      result.courses_union(subresult)
       result.pass = false if subresult.pass
       result.subresults << subresult
     end

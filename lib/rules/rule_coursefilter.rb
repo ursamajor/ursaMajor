@@ -12,7 +12,7 @@ class CourseFilter < Rule
     result = Result.new self, false
     plan.courses.each do |course|
       subresult = check_course plan, course, args
-      result.courses_union(subresult.courses)
+      result.courses_union(subresult)
       result.pass = true if subresult.pass
       result.subresults << subresult
     end
