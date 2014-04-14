@@ -18,7 +18,7 @@ class YamlRule < Rule
   def check(plan, args)
     fail ArgumentError,
       "YAML rules should not take arguments, got #{args.inspect}" unless args.nil?
-    result = Rule.new self, false
+    result = Result.new self, false
     subresult = @rule.check plan, @args
     result.courses = subresult.courses
     result.pass = subresult.pass

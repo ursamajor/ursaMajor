@@ -19,7 +19,7 @@ class Rule
   end
 
   def self.base
-    [:and, :or, :not, :units, :courses, :series, :same_course, :course_regex, :dept, :course, :pnp, :course_number_range]
+    [:and, :or, :not, :units, :count_courses, :same_dept, :same_course, :course_regex, :dept, :course, :pnp, :course_number]
   end
 
   def abstract?
@@ -83,7 +83,7 @@ class Rule
 
   def check_print(plan, args)
     result = check plan, args
-    ["The plan #{result.pass? ? 'PASSES' : 'FAILS'} rule #{name}.", result.courses]
+    ["The plan #{result.pass ? 'PASSES' : 'FAILS'} rule #{name}.", result.courses]
   end
 
 end

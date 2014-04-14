@@ -48,7 +48,7 @@ class UnitsRule < Rule
     fail ArgumentError unless entry['min'] || entry['max']
     min = entry['min'] || 0
     max = entry['max'] || Float::INFINITY
-    rule, args = Rule.parse_entry entry['rule']
+    rule, args = Rule.parse_entry entry
 
     subresult = rule.check plan, args
     total = 0
@@ -67,7 +67,7 @@ class NumCoursesRule < Rule
     fail ArgumentError unless entry['min'] || entry['max']
     min = entry['min'] || 0
     max = entry['max'] || Float::INFINITY
-    rule, args = Rule.parse_entry entry['rule']
+    rule, args = Rule.parse_entry entry
 
     subresult = rule.check plan, args
     total = subresult.courses.length

@@ -7,9 +7,9 @@ class AndRule < Rule
     Rule.parse_entries(entries).each do |rule, args|
       subresult = rule.check plan, args
       if result.rule.name == :not
-        result.courses_subtract(subresult)
+        result.courses_subtract subresult
       else
-        result.courses_intersect(subresult)
+        result.courses_union subresult
       end
       result.pass = false unless subresult.pass
       result.subresults << subresult
@@ -24,7 +24,7 @@ class OrRule < Rule
     result = Result.new self, false
     Rule.parse_entries(entries).each do |rule, args|
       subresult = rule.check plan, args
-      result.courses_union(subresult)
+      result.courses_union subresult
       result.pass = true if subresult.pass
       result.subresults << subresult
     end
@@ -38,7 +38,7 @@ class NotRule < Rule
     result = Result.new self, true
     Rule.parse_entries(entries).each do |rule, args|
       subresult = rule.check plan, args
-      result.courses_union(subresult)
+      result.courses_union subresult
       result.pass = false if subresult.pass
       result.subresults << subresult
     end
@@ -51,7 +51,8 @@ Rule.add(NotRule.new :not)
 # all of its children's plan arguments to a single course.
 class SameCourseRule < CourseFilter
   def check_course(plan, course, entries)
-    Rule.get(:and).check course, entries
+    result = Rule.get(:and).check course, entries
+    result.pass
   end
 end
 Rule.add(SameCourseRule.new :same_course)
@@ -61,8 +62,7 @@ Rule.add(SameCourseRule.new :same_course)
 
 class SameDeptRule < Rule
   def check(plan, entry)
-    fail ArgumentError unless entry['dept']
-    rule, args = Rule.parse_entry entry['rule']
+    rule, args = Rule.parse_entry entry
 
     result = Result.new self, false
     plan.courses.each do |course1| 
@@ -74,7 +74,7 @@ class SameDeptRule < Rule
       subresult = rule.check dept_plan, args
       if subresult.pass
         result.pass = true
-        result.courses_union(subresult)
+        result.courses_union subresult
         result.subresults << subresult
       end
     end

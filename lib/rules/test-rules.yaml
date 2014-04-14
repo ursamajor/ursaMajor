@@ -43,6 +43,25 @@ rules:
             rule: dept
             args: COMPSCI
 
+    series:
+        description: "Series Requirement"
+        rule: same_dept
+        args:
+            rule: AND
+            args:
+                - same_course:
+                    - upperdiv
+                    - OR:
+                        - university_ac
+                        - cnr_breadth_arts_history_philosophy
+                        - cnr_breadth_social_international
+                - same_course:
+                    - lowerdiv
+                    - OR:
+                        - university_ac
+                        - cnr_breadth_arts_history_philosophy
+                        - cnr_breadth_social_international
+
     lowerdiv_units:
         description: "EECS lower division requirement"
         rule: units
@@ -3623,7 +3642,7 @@ rules:
                         - dept: ESPM
                         - dept: NUSCTX
                         - dept: PLANTBI
-                - rule: upperdiv
+                    - upperdiv
 
     molecular_toxicology_upper:
         description: "Upper Division Molecular Toxicology Requirement (36 units)"
@@ -3686,9 +3705,12 @@ rules:
                     - course: PB HLTH.150B
                     - course: PB HLTH.170B
                     - course: UGIS.192C
-                    - dept: INTEGBI
-                    - dept: MCELLBI
-                    - dept: PLANTBI
+                    - same_course:
+                        - upperdiv
+                        - OR:
+                            - dept: INTEGBI
+                            - dept: MCELLBI
+                            - dept: PLANTBI
 
     cnr_molecular_toxicology_major:
         description: "Molecular Toxicology Major"

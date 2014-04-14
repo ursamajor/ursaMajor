@@ -1,6 +1,5 @@
 class Result
   attr_accessor :rule, :courses, :pass, :subresults
-  alias_method :pass?, :pass
 
   def initialize(rule, pass)
     @rule = rule
@@ -13,7 +12,7 @@ class Result
     @courses << course unless @courses.include? course
   end
 
-  def courses_union(courses)
+  def courses_union(result)
     @courses |= result.courses
   end
 
