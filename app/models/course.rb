@@ -1,6 +1,5 @@
 class Course < ActiveRecord::Base
 
-  attr_accessible :name, :number, :pnp, :units
   acts_as_taggable_on :rules
   has_and_belongs_to_many :plans
 

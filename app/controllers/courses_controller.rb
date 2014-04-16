@@ -19,4 +19,10 @@ class CoursesController < ApplicationController
     @courses = Course.order 'name ASC'
   end
 
+  private
+
+  def courses_params
+    params.require(:course).permit(:name, :number, :pnp, :units)
+  end
+
 end

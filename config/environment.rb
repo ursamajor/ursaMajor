@@ -1,4 +1,4 @@
-# Load the rails application
+# Load the Rails application.
 require File.expand_path('../application', __FILE__)
 
 environment_variables = File.join(Rails.root, 'config', 'environment_variables.rb')
@@ -6,8 +6,8 @@ load(environment_variables) if File.exists?(environment_variables)
 
 require "#{Rails.root}/lib/api.rb"
 
-# Initialize the rails application
-LittleDipper::Application.initialize!
+# Initialize the Rails application.
+Rails.application.initialize!
 
 ActionMailer::Base.smtp_settings = {
   :address        => 'smtp.sendgrid.net',

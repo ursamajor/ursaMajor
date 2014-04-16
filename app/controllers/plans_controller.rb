@@ -50,4 +50,10 @@ class PlansController < ApplicationController
     return true
   end
 
+  private
+
+  def plans_params
+    params.require(:plan).permit(:name)
+  end
+
 end

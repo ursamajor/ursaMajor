@@ -1,31 +1,30 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.17'
+gem 'rails', '4.1.0'
 
 group :development, :test do
   gem 'sqlite3'
-  gem 'sqlite3_ar_regexp'
 end
 
 group :production do
   gem 'pg'
+  gem 'rails_12factor'
 end
 
-group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-  gem 'sass'
-  gem 'uglifier', '>= 1.0.3'
-end
-
+gem 'bootstrap-sass-rails'
+gem 'coffee-rails', '~> 4.0.0'
+gem 'font-awesome-sass'
+gem 'haml'
+gem 'jbuilder', '~> 2.0'
 gem 'jquery-rails'
 gem 'json_builder'
-gem 'haml'
-gem 'bootstrap-sass-rails'
-gem 'font-awesome-sass'
-
-gem 'nokogiri'
-
-gem 'devise'
+gem 'sass-rails', '~> 4.0.3'
+gem 'uglifier', '>= 1.3.0'
 
 gem 'acts-as-taggable-on'
+gem 'devise'
+gem 'nokogiri'
+
+gem 'sdoc', '~> 0.4.0',          group: :doc
+gem 'spring',        group: :development
+gem 'turbolinks'

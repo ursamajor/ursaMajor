@@ -1,5 +1,0 @@
-- Only tags with inner and outermost rule. Overcome by running every rule when doing initial tagging.
-- If course is within an AND rule, will stop as soon you don't have one of the classes. This means that if you have any of the rest, they won't be tagged. TODO: Overcome by using courses/numcourses+OR as overall rule.
-- If rule is a NOT, course will still be tagged as passing that rule. Overcome by using NOT flag.
-- some rules on their own (non-complex, course_regex, course_number_range, OR, etc.) stop as soon as one course meets it, meaning even if other courses can be used to meet it, they won't be tagged. Overcome by running each course individually for each rule.
-- a course can be used for multiple requirements, even if it's not supposed to. TODO: Overcome by removing course once it satisfies an exclusive rule.
