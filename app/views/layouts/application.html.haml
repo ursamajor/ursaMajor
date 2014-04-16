@@ -76,5 +76,6 @@
               = content_tag :div, msg, :id => "flash_#{name}"
 
     .container
-      .content.row
-        = yield
+      <div ng-view class= "content row">
+      = yield
+      </div>

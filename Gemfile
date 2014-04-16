@@ -11,6 +11,7 @@ group :production do
   gem 'rails_12factor'
 end
 
+gem 'angularjs-rails'
 gem 'bootstrap-sass-rails'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'font-awesome-sass'

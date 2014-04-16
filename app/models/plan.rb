@@ -2,6 +2,8 @@ class Plan < ActiveRecord::Base
 
   has_and_belongs_to_many :courses
   belongs_to :user
+
+  validates :name, presence: true, uniqueness: { case_sensitive: true }
   
   def add(course)
     courses << course unless courses.include? course

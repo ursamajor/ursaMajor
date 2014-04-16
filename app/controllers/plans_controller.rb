@@ -15,8 +15,8 @@ class PlansController < ApplicationController
     plan = Plan.new
     plan.name = params[:plan_name]
     plan.user = current_user
-    plan.save
-    redirect_to :back, notice: "Plan #{plan.name} successfully created"
+    flash[:notice] = plan.save ? "Plan #{plan.name} successfully created" : "Plan name invalid"
+    redirect_to :back
   end
 
   def add_course
