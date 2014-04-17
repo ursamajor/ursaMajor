@@ -17,6 +17,7 @@ class CoursesController < ApplicationController
 
   def all
     @courses = Course.order 'name ASC'
+    render json: @courses.to_json
   end
 
   private
