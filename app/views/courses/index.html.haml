@@ -4,7 +4,7 @@
       %h2 Search
       / = form_tag courses_path, :method => :get, :id => 'search_form' do
       .search-input-container.input-group
-        <input ng-model="query" class="form-control search-bar" type="text", placeholder="Search for a course..." name= "search_query" value="#{session[:search_query]}">
+        <input ng-model="query" id="query" class="form-control search-bar" type="text", placeholder="Search for a course..." name= "search_query" value="#{session[:search_query]}">
         / %span{:class =>"input-group-btn"}>
         /   = submit_tag 'Go', :class => "btn btn-default search-submit"
   .right-column-container.column.container.col-md-8
@@ -16,7 +16,7 @@
           %th Units
 
       .body
-        / %div(infinite-scroll="addMoreCourses()" infinite-scroll-distance="2")
-        %tr(ng-repeat="course in courses" ng-show="([course.name] | filter:query).length")
-          %td <a href="/courses/{{course.id}}">{{course.name}}</a>
-          %td {{course.units}}
+        %div(infinite-scroll="addMoreCourses()" infinite-scroll-distance="2")
+          %tr(ng-repeat="course in courses | limitTo:totalDisplayed")
+            %td <a href="/courses/{{course.id}}">{{course.name}}</a>
+            %td {{course.units}}

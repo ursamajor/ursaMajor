@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   devise_for :users
   resources :courses do
     collection do
-      get 'all'
+      get 'search'
     end
   end
 

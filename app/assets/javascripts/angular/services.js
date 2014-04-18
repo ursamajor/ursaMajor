@@ -6,7 +6,7 @@ var littledipperServices = angular.module('littledipperServices', ['ngResource']
 
 littledipperServices.factory('Course', ['$resource',
   function($resource){
-    return $resource('/courses/:courseId.json', {}, {
+    return $resource('/courses/search?course=:courseId', {}, {
       query: {method:'GET', params:{courseId:'all'}, isArray:true}
     });
   }]);

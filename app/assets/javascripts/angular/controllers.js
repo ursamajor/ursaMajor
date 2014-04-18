@@ -4,21 +4,28 @@
 
 var littledipperControllers = angular.module('littledipperControllers', []);
 
-littledipperControllers.controller('CourseListCtrl', ['$scope', 'Course',
-  function($scope, Course) {
+littledipperControllers.controller('CourseListCtrl', ['$scope', '$http', 'Course',
+  function($scope, $http, Course) {
     $scope.courses = Course.query();
-    // $scope.displayedCourses = [];
+    $scope.totalDisplayed = 20;
    
-    // $scope.addMoreCourses = function() {
-    //   var start = $scope.displayedCourses.length
-    //   var last = $scope.courses.length - 1
-    //   for(var i = start; i <= start + 30 && i <= last; i++) {
-    //     $scope.displayedCourses.push($scope.courses[i]);
-    //   }
-    // };
+    $scope.addMoreCourses = function() {
+      $scope.totalDisplayed += 20;
+    };
+
+    $scope.filterCourses = function() {
+      $http.get('/courses/search?course='+$scope.query).success(function(data) {
+        $scope.courses = data;
+      });
+    }
+
+    $("#query").keyup(function() {
+      $scope.filterCourses();
+    });
+
   }]);
 
-littledipperControllers.controller('CourseDetailCtrl', ['$scope', '$routeParams', 'Course',
-  function($scope, $routeParams, Course) {
-    $scope.course = Course.get({courseId: $routeParams.courseId});
-  }]);
+// littledipperControllers.controller('CourseDetailCtrl', ['$scope', '$routeParams', 'Course',
+//   function($scope, $routeParams, Course) {
+//     $scope.course = Course.get({courseId: $routeParams.courseId});
+//   }]);
