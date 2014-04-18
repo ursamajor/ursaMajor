@@ -8,7 +8,7 @@
           %span{:class =>"input-group-btn"}>
             = submit_tag 'Add', :class => "btn btn-default search-submit"
       %ul
-        %li(data-ng-repeat="course in course_list | limitTo:totalDisplayed")
+        %li(data-ng-repeat="course in courses | limitTo:totalDisplayed")
           <a href="/plans/#{@plan.id}/add_course?course={{course.id}}">{{course.name}}</a>
   .right-column-container.column.container.col-md-8
     %h2= "Plan: #{@plan.name}"

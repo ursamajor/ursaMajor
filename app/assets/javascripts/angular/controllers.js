@@ -4,10 +4,9 @@
 
 var littledipperControllers = angular.module('littledipperControllers', []);
 
-littledipperControllers.controller('CourseListCtrl', ['$scope', '$http', 'Course',
-  function($scope, $http, Course) {
-    $scope.courses = Course.query();
-    $scope.course_list = [];
+littledipperControllers.controller('CourseListCtrl', ['$scope', '$http',
+  function($scope, $http) {
+    $scope.courses = [];
     $scope.totalDisplayed = 20;
    
     $scope.addMoreCourses = function() {
@@ -18,11 +17,10 @@ littledipperControllers.controller('CourseListCtrl', ['$scope', '$http', 'Course
 
     $scope.filterCourses = function() {
       $http.get('/courses/search?course='+$scope.query).success(function(data) {
-        $scope.courses = data;
         if ($scope.query == '') {
-          $scope.course_list = [];
+          $scope.courses = [];
         } else {
-          $scope.course_list = data;
+          $scope.courses = data;
         }
       });
     }

@@ -7,7 +7,7 @@ var littledipperApp = angular.module('littledipperApp', [
   // 'littledipperAnimations',
   'littledipperControllers',
   // 'littledipperFilters',
-  'littledipperServices',
+  // 'littledipperServices',
   'infinite-scroll'
 ]);
 
