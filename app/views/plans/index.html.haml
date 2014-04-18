@@ -2,7 +2,7 @@
   %h2 Create Plan
   = form_tag plans_path, :method => :post, :id => 'search_form' do
     .search-input-container.input-group
-      %input{:class => 'form-control search-bar', :type => 'text', :placeholder => 'Choose a name...', :name => 'plan_name'}
+      %input(class="form-control search-bar" type="text" placeholder="Choose a name..." name="plan_name" autocomplete="off")
       %span{:class =>"input-group-btn"}>
         = submit_tag 'Add', :class => "btn btn-default search-submit"
 .right-column-container.column.container.col-md-8
