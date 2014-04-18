@@ -7,21 +7,22 @@ var littledipperApp = angular.module('littledipperApp', [
   // 'littledipperAnimations',
   'littledipperControllers',
   // 'littledipperFilters',
-  'littledipperServices'
+  'littledipperServices',
+  'infinite-scroll'
 ]);
 
-littledipperApp.config(['$routeProvider',
-  function($routeProvider) {
-    $routeProvider.
-      when('/courses', {
-        templateUrl: 'courses/index.html.haml',
-        controller: 'CourseListCtrl'
-      }).
-      when('/courses/:courseId', {
-        templateUrl: 'courses/show.html.haml',
-        controller: 'CourseDetailCtrl'
-      }).
-      otherwise({
-        redirectTo: '/courses'
-      });
-  }]);
+// littledipperApp.config(['$routeProvider',
+//   function($routeProvider) {
+//     $routeProvider.
+//       when('/courses', {
+//         templateUrl: 'courses/index.html.haml',
+//         controller: 'CourseListCtrl'
+//       }).
+//       when('/courses/:courseId', {
+//         templateUrl: 'courses/show.html.haml',
+//         controller: 'CourseDetailCtrl'
+//       }).
+//       otherwise({
+//         redirectTo: '/courses'
+//       });
+//   }]);

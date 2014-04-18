@@ -1,5 +1,0 @@
-courses @courses do |course|
-  name course.name
-  number course.number
-  units course.units
-end
