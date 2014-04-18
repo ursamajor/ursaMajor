@@ -19,7 +19,11 @@ littledipperControllers.controller('CourseListCtrl', ['$scope', '$http', 'Course
     $scope.filterCourses = function() {
       $http.get('/courses/search?course='+$scope.query).success(function(data) {
         $scope.courses = data;
-        $scope.course_list = data;
+        if ($scope.query == '') {
+          $scope.course_list = [];
+        } else {
+          $scope.course_list = data;
+        }
       });
     }
 
