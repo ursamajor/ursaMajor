@@ -10,9 +10,7 @@ littledipperControllers.controller('CourseListCtrl', ['$scope', '$http',
     $scope.totalDisplayed = 20;
    
     $scope.addMoreCourses = function() {
-      if ($scope.totalDisplayed < 100) {
-        $scope.totalDisplayed += 20;
-      }
+      $scope.totalDisplayed += 30;
     };
 
     $scope.filterCourses = function() {
@@ -22,6 +20,7 @@ littledipperControllers.controller('CourseListCtrl', ['$scope', '$http',
         } else {
           $scope.courses = data;
         }
+        $scope.totalDisplayed = 20;
       });
     }
 
