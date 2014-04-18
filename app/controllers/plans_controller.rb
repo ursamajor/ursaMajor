@@ -21,7 +21,11 @@ class PlansController < ApplicationController
 
   def add_course
     plan = Plan.find_by_id params[:id]
-    course = Course.find_by_name params[:course_name].upcase
+    if params[:course]
+      course = Course.find_by_id params[:course]
+    else
+      course = Course.find_by_name params[:course_name].upcase
+    end
     if course
       plan.add course 
       flash[:notice] = "Course #{course.name} successfully added"

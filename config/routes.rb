@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   resources :plans do
     member do
-      put 'add_course'
+      get 'add_course'
       delete 'remove_course'
     end
   end
