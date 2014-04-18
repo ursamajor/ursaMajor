@@ -16,7 +16,7 @@
           %th Units
 
       .body
-        %div(infinite-scroll="addMoreCourses()" infinite-scroll-distance="3")
-          %tr(ng-repeat="course in displayedCourses" ng-show="([course.name] | filter:query).length")
-            %td <a href="/courses/{{course.id}}">{{course.name}}</a>
-            %td {{course.units}}
+        / %div(infinite-scroll="addMoreCourses()" infinite-scroll-distance="2")
+        %tr(ng-repeat="course in courses" ng-show="([course.name] | filter:query).length")
+          %td <a href="/courses/{{course.id}}">{{course.name}}</a>
+          %td {{course.units}}
