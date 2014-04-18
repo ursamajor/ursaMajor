@@ -25,7 +25,3 @@ littledipperApp.config(['$routeProvider',
         redirectTo: '/courses'
       });
   }]);
-
-angular.element(document).ready(function() {
-  angular.bootstrap(document, ['littledipperApp']);
-});
