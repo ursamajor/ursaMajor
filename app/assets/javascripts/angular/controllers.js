@@ -35,9 +35,18 @@ littledipperControllers.controller('CourseListCtrl', ['$scope', '$http',
 //     $scope.course = Course.get({courseId: $routeParams.courseId});
 //   }]);
 
-littledipperControllers.controller('PlanDetailCtrl', ['$scope', '$http',
-  function($scope, $http) {
-    $scope.backpack = [];
+littledipperControllers.controller('PlansListCtrl', ['$scope', 
+  function($scope) {
+
+  }]);
+
+littledipperControllers.controller('PlanDetailCtrl', ['$scope', '$http', '$routeParams', 'Plan',
+  function($scope, $http, $routeParams, Plan) {
+    $scope.demo_backpack = [];
+    $http.get(window.location.pathname+'.json').success(function(data) {
+      $scope.backpack = data;
+    });
+    // $scope.backpack = Plan.get({planId: $routeParams.planId});
     $scope.fall1 = [];
     $scope.fall2 = [];
     $scope.fall3 = [];

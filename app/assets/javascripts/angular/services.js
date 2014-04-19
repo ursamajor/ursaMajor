@@ -10,3 +10,10 @@ littledipperServices.factory('Course', ['$resource',
       query: {method:'GET', params:{courseId:'all'}, isArray:true}
     });
   }]);
+
+littledipperServices.factory('Plan', ['$resource',
+  function($resource){
+    return $resource('/plans/:planId.json', {}, {
+
+    });
+  }]);

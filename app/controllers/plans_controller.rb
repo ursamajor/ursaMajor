@@ -9,6 +9,10 @@ class PlansController < ApplicationController
 
   def show
     @plan = Plan.find_by_id params[:id]
+    respond_to do |format|
+      format.html
+      format.json { render partial: 'show.json' }
+    end
   end
 
   def create

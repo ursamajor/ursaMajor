@@ -8,7 +8,7 @@
           {{course.name}}
       %br
       %br
-      .thumbnail#backpack.col-md-1(data-drop="true" data-ng-model='backpack' data-jqyoui-options="{accept:'.btn-draggable:not([data-ng-model=backpack])'}" jqyoui-droppable="{multiple:true}")
+      .thumbnail#backpack.col-md-1(data-drop="true" data-ng-model='backpack' data-jqyoui-options="{accept:'.btn-draggable:not([data-ng-model=demo_backpack])'}" jqyoui-droppable="{multiple:true}")
         .caption
           .btn.btn-info.btn-draggable(data-ng-repeat="course in backpack" data-ng-show="course.name" data-drag="{{course.drag}}" data-jqyoui-options="{revert: 'invalid'}" data-ng-model="backpack" jqyoui-draggable="{index: {{$index}},animate:true}")
             {{course.name}}
