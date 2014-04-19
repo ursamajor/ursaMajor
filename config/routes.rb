@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get '/demo' => 'home#demo', as: 'demo'
+
   devise_for :users
   resources :courses do
     collection do

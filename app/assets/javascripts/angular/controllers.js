@@ -34,3 +34,20 @@ littledipperControllers.controller('CourseListCtrl', ['$scope', '$http',
 //   function($scope, $routeParams, Course) {
 //     $scope.course = Course.get({courseId: $routeParams.courseId});
 //   }]);
+
+littledipperControllers.controller('PlanDetailCtrl', ['$scope', '$http',
+  function($scope, $http) {
+    $scope.backpack = [];
+    $scope.fall1 = [];
+    $scope.fall2 = [];
+    $scope.fall3 = [];
+    $scope.fall4 = [];
+    $scope.spring1 = [];
+    $scope.spring2 = [];
+    $scope.spring3 = [];
+    $scope.spring4 = [];
+    $scope.summer1 = [];
+    $scope.summer2 = [];
+    $scope.summer3 = [];
+    $scope.summer4 = [];
+  }]);

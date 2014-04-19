@@ -4,3 +4,13 @@
 
 $ld-grey: #8E8E8E;
 $main-font: 'Open Sans', sans-serif;
+
+ul {
+  list-style: none;
+}
+
+.thumbnail { height: 280px !important; width: 250px; }
+.btn-droppable { width: 180px; height: 30px; padding-left: 4px; }
+.btn-draggable { width: 160px; }
+
+.thumbnail#backpack { height: 280px !important; width: 175px; }

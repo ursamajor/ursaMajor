@@ -1,3 +1,7 @@
 - remove course if used for rule and can only be used once
 - rename departments
 - UI for editing rules/yaml
+
+drag and drop
+- shouldn't allow duplicates
+- save to plan

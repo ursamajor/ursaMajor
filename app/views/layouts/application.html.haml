@@ -29,6 +29,11 @@
               %i{:class => "fa fa-book"}
               %p Courses
 
+          %li{:class => "tab"}>
+            = link_to demo_path do
+              %i{:class => "fa fa-keyboard-o"}
+              %p Demo
+
           - if signed_in?
 
             %li{:class => "tab"}>
