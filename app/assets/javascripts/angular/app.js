@@ -16,16 +16,16 @@ var littledipperApp = angular.module('littledipperApp', [
 //   function($routeProvider) {
 //     $routeProvider.
 //       when('/courses', {
-//         templateUrl: '/courses/index.html.haml',
+//         templateUrl: 'assets/course-list.html.haml',
 //         controller: 'CourseListCtrl'
 //       }).
 //       when('/courses/:courseId', {
-//         templateUrl: '..courses/show.html.haml',
+//         templateUrl: 'assets/course-detail.html.haml',
 //         controller: 'CourseDetailCtrl'
 //       }).
 //       when('/', {
 //         templateUrl: 'assets/plan-list.html.haml',
-//         controller: 'PlansListCtrl'
+//         controller: 'PlanListCtrl'
 //       }).
 //       when('/:planId', {
 //         templateUrl: 'assets/plan-detail.html.haml',

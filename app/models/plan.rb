@@ -13,4 +13,8 @@ class Plan < ActiveRecord::Base
     courses.delete course if courses.include? course
   end
 
+  def check(rule)
+    result = Rule.get(rule).check_print self, nil
+  end
+
 end

@@ -35,7 +35,7 @@ littledipperControllers.controller('CourseListCtrl', ['$scope', '$http',
 //     $scope.course = Course.get({courseId: $routeParams.courseId});
 //   }]);
 
-littledipperControllers.controller('PlansListCtrl', ['$scope', 
+littledipperControllers.controller('PlanListCtrl', ['$scope', 
   function($scope) {
 
   }]);
@@ -61,8 +61,13 @@ littledipperControllers.controller('PlanDetailCtrl', ['$scope', '$http', '$route
     $scope.summer4 = [];
 
     $scope.savePlan = function() {
-      $http.put('/plans/1/save', $scope.backpack).success(function() {
+      $http.put(window.location.pathname+'/save', $scope.backpack).success(function() {
 
       });
     }
+  }]);
+
+littledipperControllers.controller('RuleListCtrl', ['$scope', '$http',
+  function($scope, $http) {
+
   }]);
