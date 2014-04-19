@@ -59,4 +59,10 @@ littledipperControllers.controller('PlanDetailCtrl', ['$scope', '$http', '$route
     $scope.summer2 = [];
     $scope.summer3 = [];
     $scope.summer4 = [];
+
+    $scope.savePlan = function() {
+      $http.put('/plans/1/save', $scope.backpack).success(function() {
+
+      });
+    }
   }]);

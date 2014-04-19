@@ -46,6 +46,19 @@ class PlansController < ApplicationController
     redirect_to :back, notice: "Course #{course.name} successfully removed"
   end
 
+  def save
+    plan = Plan.find_by_id params[:id]
+    backpack = params[:_json]
+    courses = []
+    backpack.each do |data|
+      course = Course.find_by_id data['id']
+      courses << course unless courses.include? course
+    end
+    plan.courses = courses
+    @result = plan.save ? true : false
+    render partial: 'save.json'
+  end
+
   protected
 
   def is_owner

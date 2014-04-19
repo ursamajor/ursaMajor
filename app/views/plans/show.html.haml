@@ -13,6 +13,8 @@
         .caption
           .btn.btn-info.btn-draggable(data-ng-repeat="course in backpack" data-ng-show="course.name" data-drag="{{course.drag}}" data-jqyoui-options="{revert: 'invalid'}" data-ng-model="backpack" jqyoui-draggable="{index: {{$index}},animate:true}")
             {{course.name}}
+      .btn.btn-info(data-ng-click="savePlan()")
+        Save Courses
     .right-column-container.column.container.col-md-10
       %h2.text-center= "Plan: #{@plan.name}"
       = render partial: 'semesterGrid'
