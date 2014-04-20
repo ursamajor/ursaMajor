@@ -9,19 +9,9 @@
           %th Result
           %th Fulfilling Set
       .body
-        / %tr(data-ng-repeat="rule in rules")
-        /   %td 
-        /     %a(href="{{rule.url}}") {{rule.name}}
-        /   %td {{rule.description}}
-        /   %td {{rule.result}}
-        /   %td {{rule.courses}}
-        - @rules.keys.each do |rule|
-          - next if Rule.base.include? rule
-          %tr
-            %td= link_to rule, display_rules_path(:rule => rule)
-            %td= Rule.get(rule).description
-            - result = Rule.get(rule).check_print @plan, nil
-            %td= result[0]
-            %td
-              - result[1].each do |course|
-                = link_to course.name, course_path(course)
+        %tr(data-ng-repeat="rule in rules")
+          %td 
+            %a(href="{{rule.url}}") {{rule.name}}
+          %td {{rule.description}}
+          %td {{rule.result}}
+          %td {{rule.courses}}

@@ -14,6 +14,7 @@ Rails.application.routes.draw do
       put 'save'
       get 'add_course'
       delete 'remove_course'
+      get 'check'
     end
   end
   

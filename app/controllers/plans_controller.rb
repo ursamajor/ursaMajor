@@ -1,7 +1,7 @@
 class PlansController < ApplicationController
   respond_to :html, :json
   before_filter :signed_in
-  before_filter :is_owner, :only => [:show, :add_course, :remove_course]
+  before_filter :is_owner, :only => [:show, :add_course, :remove_course, :save, :check]
   
   def index
     @plans = current_user.plans
@@ -57,6 +57,14 @@ class PlansController < ApplicationController
     plan.courses = courses
     @result = plan.save ? true : false
     render partial: 'save.json'
+  end
+
+  def check
+    plan = Plan.find_by_id params[:id]
+    @results = plan.check
+    respond_to do |format|
+      format.json { respond_with @results }
+    end
   end
 
   protected

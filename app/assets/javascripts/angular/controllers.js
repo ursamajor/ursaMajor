@@ -69,5 +69,10 @@ littledipperControllers.controller('PlanDetailCtrl', ['$scope', '$http', '$route
 
 littledipperControllers.controller('RuleListCtrl', ['$scope', '$http',
   function($scope, $http) {
-
+    $scope.update_rules = function() {
+      $http.get(window.location.pathname+'/check.json').success(function(data) {
+        $scope.rules = data;
+      });
+    }
+    $scope.update_rules();
   }]);

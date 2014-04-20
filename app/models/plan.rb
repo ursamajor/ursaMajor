@@ -13,8 +13,25 @@ class Plan < ActiveRecord::Base
     courses.delete course if courses.include? course
   end
 
-  def check(rule)
-    result = Rule.get(rule).check_print self, nil
+  def check
+    results = []
+    Rule.all.keys.each do |key|
+      next if Rule.base.include? key
+      key = key.to_s
+      result = {}
+      rule = Rule.get(key)
+      value = rule.check_print self, nil
+      result["name"] = key
+      result["description"] = rule.description
+      result["result"] = value[0]
+      result["courses"] = value[1].map { |course| course.name }
+      if result["courses"] == []
+        result["courses"] = ""
+      end
+      result["url"] = Rails.application.routes.url_helpers.display_rules_path(:rule => key)
+      results << result
+    end
+    results
   end
 
 end
