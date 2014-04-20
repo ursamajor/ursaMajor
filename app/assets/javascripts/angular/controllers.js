@@ -103,6 +103,7 @@ littledipperControllers.controller('PlanDetailCtrl', ['$scope', '$http', '$route
       $scope.summer2 = $scope.find_semester(data, "summer2");
       $scope.summer3 = $scope.find_semester(data, "summer3");
       $scope.summer4 = $scope.find_semester(data, "summer4");
+      $scope.update_rules();
       $scope.$watchCollection('backpack', function() {
         $scope.update();
       });
@@ -143,8 +144,5 @@ littledipperControllers.controller('PlanDetailCtrl', ['$scope', '$http', '$route
         $scope.update();
       });
     });
-    // $scope.backpack = Plan.get({planId: $routeParams.planId});
-
-    $scope.update_rules();
 
   }]);

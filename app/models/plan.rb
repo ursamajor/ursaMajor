@@ -8,17 +8,14 @@ class Plan < ActiveRecord::Base
   
   @@semesters = [:backpack, :fall1, :fall2, :fall3, :fall4, :spring1, :spring2, :spring3, :spring4, :summer1, :summer2, :summer3, :summer4]
   
-  @@demo_id = nil
-
   def self.semesters
     @@semesters
   end
 
   def self.create_demo
-    plan = Plan.new :name => "Demo-#{@@demo_id}"
+    plan = Plan.new :name => "Demo-#{Plan.all.length}"
     Plan.semesters.each { |semester| plan.semesters.build name: semester.to_s }
     plan.save
-    @@demo_id = plan.id
     plan
   end
 
