@@ -12,7 +12,7 @@ group :production do
 end
 
 gem 'angularjs-rails'
-gem 'bootstrap-sass-rails'
+gem 'bootstrap-sass', '~> 3.1.1'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'font-awesome-sass'
 gem 'haml'
