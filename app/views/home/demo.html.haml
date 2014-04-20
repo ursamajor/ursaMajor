@@ -7,11 +7,17 @@
         .btn.btn-info.btn-draggable(data-drag="{{course.drag}}" data-jqyoui-options="{revert: 'invalid'}" data-ng-model="courses" jqyoui-draggable="{index: {{$index}},placeholder:true,animate:true}" data-ng-hide="!course.name")
           {{course.name}}
       %br
-      %br
-      .thumbnail#backpack.col-md-1(data-drop="true" data-ng-model='demo_backpack' data-jqyoui-options="{accept:'.btn-draggable:not([data-ng-model=demo_backpack])'}" jqyoui-droppable="{multiple:true}")
+      %h4.text-center Backpack
+      .thumbnail#backpack.col-md-1(data-drop="true" data-ng-model='backpack' data-jqyoui-options="{accept:'.btn-draggable:not([data-ng-model=backpack])'}" jqyoui-droppable="{multiple:true}")
         .caption
-          .btn.btn-info.btn-draggable(data-ng-repeat="course in demo_backpack" data-ng-show="course.name" data-drag="{{course.drag}}" data-jqyoui-options="{revert: 'invalid'}" data-ng-model="demo_backpack" jqyoui-draggable="{index: {{$index}},animate:true}")
+          .btn.btn-info.btn-draggable(data-ng-repeat="course in backpack" data-ng-show="course.name" data-drag="{{course.drag}}" data-jqyoui-options="{revert: 'invalid'}" data-ng-model="backpack" jqyoui-draggable="{index: {{$index}},animate:true}")
+            {{course.name}}
+      %h4.text-center Garbage
+      .thumbnail#garbage.col-md-2(data-drop="true" data-ng-model='garbage' data-jqyoui-options="{accept:'.btn-draggable:not([data-ng-model=garbage])'}" jqyoui-droppable="{multiple:true}")
+        .caption
+          .btn.btn-info.btn-draggable(data-ng-repeat="course in garbage" data-ng-show="course.name" data-drag="{{course.drag}}" data-jqyoui-options="{revert: 'invalid'}" data-ng-model="garbage" jqyoui-draggable="{index: {{$index}},animate:true}")
             {{course.name}}
     .right-column-container.column.container.col-md-10
-      %h2.text-center= "Demo Plan"
+      %h2.text-center Demo Plan
       = render partial: 'plans/semesterGrid'
+    = render partial: 'plans/rules'

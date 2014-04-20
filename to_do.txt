@@ -4,4 +4,3 @@
 
 drag and drop
 - shouldn't allow duplicates
-- save to plan

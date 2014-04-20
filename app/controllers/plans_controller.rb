@@ -19,42 +19,49 @@ class PlansController < ApplicationController
     plan = Plan.new
     plan.name = params[:plan_name]
     plan.user = current_user
+    Plan.semesters.each { |semester| plan.semesters.build name: semester.to_s }
     flash[:notice] = plan.save ? "Plan #{plan.name} successfully created" : "Plan name invalid"
     redirect_to :back
   end
 
-  def add_course
-    plan = Plan.find_by_id params[:id]
-    if params[:course]
-      course = Course.find_by_id params[:course]
-    else
-      course = Course.find_by_name params[:course_name].upcase
-    end
-    if course
-      plan.add course 
-      flash[:notice] = "Course #{course.name} successfully added"
-    else
-      flash[:warning] = "Could not find course"
-    end
-    redirect_to :back
-  end
+  # def add_course
+  #   plan = Plan.find_by_id params[:id]
+  #   if params[:course]
+  #     course = Course.find_by_id params[:course]
+  #   else
+  #     course = Course.find_by_name params[:course_name].upcase
+  #   end
+  #   if course
+  #     plan.add course 
+  #     flash[:notice] = "Course #{course.name} successfully added"
+  #   else
+  #     flash[:warning] = "Could not find course"
+  #   end
+  #   redirect_to :back
+  # end
 
-  def remove_course
-    plan = Plan.find_by_id params[:id]
-    course = Course.find_by_name params[:course_name]
-    plan.remove course if course
-    redirect_to :back, notice: "Course #{course.name} successfully removed"
-  end
+  # def remove_course
+  #   plan = Plan.find_by_id params[:id]
+  #   course = Course.find_by_name params[:course_name]
+  #   plan.remove course if course
+  #   redirect_to :back, notice: "Course #{course.name} successfully removed"
+  # end
 
   def save
     plan = Plan.find_by_id params[:id]
-    backpack = params[:_json]
-    courses = []
-    backpack.each do |data|
-      course = Course.find_by_id data['id']
-      courses << course unless courses.include? course
+    semesters = params[:_json]
+    plan.semesters.each do |semester|
+      courses = []
+      if params[semester.name]
+        params[semester.name].each do |data|
+          course = Course.find_by_id data['id']
+          courses << course unless courses.include? course
+        end
+      else
+        courses = []
+      end
+      semester.courses = courses
     end
-    plan.courses = courses
     @result = plan.save ? true : false
     render partial: 'save.json'
   end

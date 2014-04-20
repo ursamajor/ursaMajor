@@ -1,17 +1,16 @@
 #rules
-  - if @plan.courses.length > 0
-    %h3 Rules
-    %table.table
-      %thead
-        %tr
-          %th Rule
-          %th Description
-          %th Result
-          %th Fulfilling Set
-      .body
-        %tr(data-ng-repeat="rule in rules")
-          %td 
-            %a(href="{{rule.url}}") {{rule.name}}
-          %td {{rule.description}}
-          %td {{rule.result}}
-          %td {{rule.courses}}
+  %h3 Rules
+  %table.table
+    %thead
+      %tr
+        %th Rule
+        %th Description
+        %th Result
+        %th Fulfilling Set
+    .body
+      %tr(data-ng-repeat="rule in rules")
+        %td 
+          %a(href="{{rule.url}}") {{rule.name}}
+        %td {{rule.description}}
+        %td {{rule.result}}
+        %td {{rule.courses}}

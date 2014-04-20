@@ -1,7 +1,7 @@
 class Course < ActiveRecord::Base
 
   acts_as_taggable_on :rules
-  has_and_belongs_to_many :plans
+  has_and_belongs_to_many :semesters
 
   scope :search_query, lambda { |query| where("name LIKE ?", query) }
 

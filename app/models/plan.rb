@@ -1,16 +1,25 @@
 class Plan < ActiveRecord::Base
 
-  has_and_belongs_to_many :courses
+  has_many :semesters
+  has_many :courses, through: :semesters
   belongs_to :user
 
-  validates :name, presence: true, uniqueness: { case_sensitive: true }
+  validates :name, presence: true
   
-  def add(course)
-    courses << course unless courses.include? course
+  @@semesters = [:backpack, :fall1, :fall2, :fall3, :fall4, :spring1, :spring2, :spring3, :spring4, :summer1, :summer2, :summer3, :summer4]
+  
+  @@demo_id = nil
+
+  def self.semesters
+    @@semesters
   end
 
-  def remove(course)
-    courses.delete course if courses.include? course
+  def self.create_demo
+    plan = Plan.new :name => "Demo-#{@@demo_id}"
+    Plan.semesters.each { |semester| plan.semesters.build name: semester.to_s }
+    plan.save
+    @@demo_id = plan.id
+    plan
   end
 
   def check
@@ -32,6 +41,12 @@ class Plan < ActiveRecord::Base
       results << result
     end
     results
+  end
+
+  def get(name)
+    semesters.each do |semester|
+      return semester.courses if semester.name == name.to_s
+    end
   end
 
 end

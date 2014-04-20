@@ -1,1 +1,1 @@
-json.success = @result
+json.success @result
