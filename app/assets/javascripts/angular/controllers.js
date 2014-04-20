@@ -43,6 +43,7 @@ littledipperControllers.controller('PlanListCtrl', ['$scope',
 littledipperControllers.controller('PlanDetailCtrl', ['$scope', '$http', '$routeParams', 'Plan',
   function($scope, $http, $routeParams, Plan) {
     $scope.garbage = [];
+
     $scope.find_semester = function(data, semester) {
       for (var i =0; i < data.length; i++) {
         if (data[i][semester]) {
@@ -51,22 +52,6 @@ littledipperControllers.controller('PlanDetailCtrl', ['$scope', '$http', '$route
       }
       return [];
     }
-    $http.get(window.location.pathname+'.json').success(function(data) {
-      $scope.backpack = $scope.find_semester(data, "backpack");
-      $scope.fall1 = $scope.find_semester(data, "fall1");
-      $scope.fall2 = $scope.find_semester(data, "fall2");
-      $scope.fall3 = $scope.find_semester(data, "fall3");
-      $scope.fall4 = $scope.find_semester(data, "fall4");
-      $scope.spring1 = $scope.find_semester(data, "spring1");
-      $scope.spring2 = $scope.find_semester(data, "spring2");
-      $scope.spring3 = $scope.find_semester(data, "spring3");
-      $scope.spring4 = $scope.find_semester(data, "spring4");
-      $scope.summer1 = $scope.find_semester(data, "summer1");
-      $scope.summer2 = $scope.find_semester(data, "summer2");
-      $scope.summer3 = $scope.find_semester(data, "summer3");
-      $scope.summer4 = $scope.find_semester(data, "summer4");
-    });
-    // $scope.backpack = Plan.get({planId: $routeParams.planId});
 
     $scope.getSaveData = function() {
       var saveData = {
@@ -98,50 +83,68 @@ littledipperControllers.controller('PlanDetailCtrl', ['$scope', '$http', '$route
         $scope.rules = data;
       });
     }
-    $scope.update_rules();
 
     $scope.update = function() {
       $scope.savePlan();
       $scope.update_rules();
     }
 
-    $scope.$watchCollection('backpack', function() {
-      $scope.update();
+    $http.get(window.location.pathname+'.json').success(function(data) {
+      $scope.backpack = $scope.find_semester(data, "backpack");
+      $scope.fall1 = $scope.find_semester(data, "fall1");
+      $scope.fall2 = $scope.find_semester(data, "fall2");
+      $scope.fall3 = $scope.find_semester(data, "fall3");
+      $scope.fall4 = $scope.find_semester(data, "fall4");
+      $scope.spring1 = $scope.find_semester(data, "spring1");
+      $scope.spring2 = $scope.find_semester(data, "spring2");
+      $scope.spring3 = $scope.find_semester(data, "spring3");
+      $scope.spring4 = $scope.find_semester(data, "spring4");
+      $scope.summer1 = $scope.find_semester(data, "summer1");
+      $scope.summer2 = $scope.find_semester(data, "summer2");
+      $scope.summer3 = $scope.find_semester(data, "summer3");
+      $scope.summer4 = $scope.find_semester(data, "summer4");
+      $scope.$watchCollection('backpack', function() {
+        $scope.update();
+      });
+      $scope.$watchCollection('fall1', function() {
+        $scope.update();
+      });
+      $scope.$watchCollection('fall2', function() {
+        $scope.update();
+      });
+      $scope.$watchCollection('fall3', function() {
+        $scope.update();
+      });
+      $scope.$watchCollection('fall4', function() {
+        $scope.update();
+      });
+      $scope.$watchCollection('spring1', function() {
+        $scope.update();
+      });
+      $scope.$watchCollection('spring2', function() {
+        $scope.update();
+      });
+      $scope.$watchCollection('spring3', function() {
+        $scope.update();
+      });
+      $scope.$watchCollection('spring4', function() {
+        $scope.update();
+      });
+      $scope.$watchCollection('summer1', function() {
+        $scope.update();
+      });
+      $scope.$watchCollection('summer2', function() {
+        $scope.update();
+      });
+      $scope.$watchCollection('summer3', function() {
+        $scope.update();
+      });
+      $scope.$watchCollection('summer4', function() {
+        $scope.update();
+      });
     });
-    $scope.$watchCollection('fall1', function() {
-      $scope.update();
-    });
-    $scope.$watchCollection('fall2', function() {
-      $scope.update();
-    });
-    $scope.$watchCollection('fall3', function() {
-      $scope.update();
-    });
-    $scope.$watchCollection('fall4', function() {
-      $scope.update();
-    });
-    $scope.$watchCollection('spring1', function() {
-      $scope.update();
-    });
-    $scope.$watchCollection('spring2', function() {
-      $scope.update();
-    });
-    $scope.$watchCollection('spring3', function() {
-      $scope.update();
-    });
-    $scope.$watchCollection('spring4', function() {
-      $scope.update();
-    });
-    $scope.$watchCollection('summer1', function() {
-      $scope.update();
-    });
-    $scope.$watchCollection('summer2', function() {
-      $scope.update();
-    });
-    $scope.$watchCollection('summer3', function() {
-      $scope.update();
-    });
-    $scope.$watchCollection('summer4', function() {
-      $scope.update();
-    });
+    // $scope.backpack = Plan.get({planId: $routeParams.planId});
+
+    $scope.update_rules();
+
   }]);
