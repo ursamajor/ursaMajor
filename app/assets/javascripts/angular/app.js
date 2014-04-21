@@ -1,34 +1,13 @@
 'use strict';
 
+angular.module('littledipper.controllers', []);
+
 /* littleDipper Module */
 
-var littledipperApp = angular.module('littledipperApp', [
-  'ngRoute',
-  // 'littledipperAnimations',
-  'littledipperControllers',
-  // 'littledipperFilters',
-  'littledipperServices',
+var littledipper = angular.module('littledipper', [
   'ngDragDrop',
-  'infinite-scroll'
+  'ngRoute',
+  'infinite-scroll',
+  'littledipper.controllers'
 ]);
 
-// littledipperApp.config(['$routeProvider',
-//   function($routeProvider) {
-//     $routeProvider.
-//       when('/courses', {
-//         templateUrl: 'assets/course-list.html.haml',
-//         controller: 'CourseListCtrl'
-//       }).
-//       when('/courses/:courseId', {
-//         templateUrl: 'assets/course-detail.html.haml',
-//         controller: 'CourseDetailCtrl'
-//       }).
-//       when('/', {
-//         templateUrl: 'assets/plan-list.html.haml',
-//         controller: 'PlanListCtrl'
-//       }).
-//       when('/:planId', {
-//         templateUrl: 'assets/plan-detail.html.haml',
-//         controller: 'PlanDetailCtrl'
-//       });
-//   }]);

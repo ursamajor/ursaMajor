@@ -20,17 +20,4 @@
     .right-column-container.column.container.col-md-10
       %h2.text-center= "Plan: #{@plan.name}"
       = render partial: 'semesterGrid'
-      / %h3 Courses
-      / %table.table
-      /   %thead
-      /     %tr
-      /       %th Name
-      /       %th Units
-      /       %th Action
-      /   .body
-      /     - @plan.courses.each do |course|
-      /       %tr
-      /         %td= link_to course.name, course_path(course)
-      /         %td= course.units
-      /         %td= button_to "Remove Course", remove_course_plan_path(:id => @plan.id, :course_name => course.name), :method => :delete
     = render partial: 'rules'
