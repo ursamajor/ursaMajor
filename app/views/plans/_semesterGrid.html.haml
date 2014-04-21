@@ -1,7 +1,7 @@
 #semesters
   %div(class="contentWrapper data-ng-cloak")
     .row
-      .thumbnail.col-md-2(data-drop="true" data-ng-model='fall1' data-jqyoui-options="{accept:'.btn-draggable:not([data-ng-model=fall1])'}" jqyoui-droppable="{multiple:true}")
+      .thumbnail.col-md-2(data-drop="true" data-ng-model="fall1" data-jqyoui-options="{accept:'.btn-draggable:not([data-ng-model=fall1])'}" jqyoui-droppable="{multiple:true}")
         .caption
           .btn.btn-info.btn-draggable(data-ng-repeat="course in fall1" data-ng-show="course.name" data-drag="{{course.drag}}" data-jqyoui-options="{revert: 'invalid'}" data-ng-model="fall1" jqyoui-draggable="{index: {{$index}},animate:true}")
             {{course.name}}
@@ -13,7 +13,7 @@
         .caption
           .btn.btn-info.btn-draggable(data-ng-repeat="course in fall3" data-ng-show="course.name" data-drag="{{course.drag}}" data-jqyoui-options="{revert: 'invalid'}" data-ng-model="fall3" jqyoui-draggable="{index: {{$index}},animate:true}")
             {{course.name}}
-      .thumbnail.col-md-2(data-drop="true" data-ng-model='fall4' data-jqyoui-options="{accept:'.btn-draggable:not([data-ng-model=fall4])'}" jqyoui-droppable="{multiple:true}")
+      .thumbnail.col-md-2(data-drop="true" data-ng-model="fall4" data-jqyoui-options="{accept:'.btn-draggable:not([data-ng-model=fall4])'}" jqyoui-droppable="{multiple:true}")
         .caption
           .btn.btn-info.btn-draggable(data-ng-repeat="course in fall4" data-ng-show="course.name" data-drag="{{course.drag}}" data-jqyoui-options="{revert: 'invalid'}" data-ng-model="fall4" jqyoui-draggable="{index: {{$index}},animate:true}")
             {{course.name}}
@@ -26,7 +26,7 @@
         .caption
           .btn.btn-info.btn-draggable(data-ng-repeat="course in spring2" data-ng-show="course.name" data-drag="{{course.drag}}" data-jqyoui-options="{revert: 'invalid'}" data-ng-model="spring2" jqyoui-draggable="{index: {{$index}},animate:true}")
             {{course.name}}
-      .thumbnail.col-md-2(data-drop="true" data-ng-model='spring3' data-jqyoui-options="{accept:'.btn-draggable:not([data-ng-model=spring3])'}" jqyoui-droppable="{multiple:true}")
+      .thumbnail.col-md-2(data-drop="true" data-ng-model="spring3" data-jqyoui-options="{accept:'.btn-draggable:not([data-ng-model=spring3])'}" jqyoui-droppable="{multiple:true}")
         .caption
           .btn.btn-info.btn-draggable(data-ng-repeat="course in spring3" data-ng-show="course.name" data-drag="{{course.drag}}" data-jqyoui-options="{revert: 'invalid'}" data-ng-model="spring3" jqyoui-draggable="{index: {{$index}},animate:true}")
             {{course.name}}
@@ -39,7 +39,7 @@
         .caption
           .btn.btn-info.btn-draggable(data-ng-repeat="course in summer1" data-ng-show="course.name" data-drag="{{course.drag}}" data-jqyoui-options="{revert: 'invalid'}" data-ng-model="summer1" jqyoui-draggable="{index: {{$index}},animate:true}")
             {{course.name}}
-      .thumbnail.col-md-2(data-drop="true" data-ng-model='summer2' data-jqyoui-options="{accept:'.btn-draggable:not([data-ng-model=summer2])'}" jqyoui-droppable="{multiple:true}")
+      .thumbnail.col-md-2(data-drop="true" data-ng-model="summer2" data-jqyoui-options="{accept:'.btn-draggable:not([data-ng-model=summer2])'}" jqyoui-droppable="{multiple:true}")
         .caption
           .btn.btn-info.btn-draggable(data-ng-repeat="course in summer2" data-ng-show="course.name" data-drag="{{course.drag}}" data-jqyoui-options="{revert: 'invalid'}" data-ng-model="summer2" jqyoui-draggable="{index: {{$index}},animate:true}")
             {{course.name}}
