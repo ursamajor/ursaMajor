@@ -5,7 +5,7 @@ angular.module('littledipper.controllers').controller 'PlanDetailCtrl', ['$scope
   $scope.garbage = []
   $scope.plan = {}
 
-  $scope.find_semester = (data, name) ->
+  $scope.findSemester = (data, name) ->
     for semester in data
       return semester[name] if semester[name]
     []
@@ -16,21 +16,20 @@ angular.module('littledipper.controllers').controller 'PlanDetailCtrl', ['$scope
 
   $scope.savePlan = ->
     $http.put("#{window.location.pathname}/save", $scope.plan).success ->
-      $scope.garbage = []
+      $scope.updateRules()
   
-  $scope.update_rules = ->
+  $scope.updateRules = ->
     $http.get("#{window.location.pathname}/check.json").success (data) ->
       $scope.rules = data
 
   $scope.update = ->
     $scope.updatePlan()
     $scope.savePlan()
-    $scope.update_rules()
 
   $http.get("#{window.location.pathname}.json").success (data) ->
     for semester in $scope.semesters
-      $scope[semester] = $scope.find_semester data, semester
+      $scope[semester] = $scope.findSemester data, semester
       $scope.$watchCollection semester, ->
         $scope.update()
-    $scope.update_rules()
+    $scope.updateRules()
 ]

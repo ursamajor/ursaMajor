@@ -4,6 +4,7 @@
 
 drag and drop
 - shouldn't allow duplicates
-- should garbage be watched? only benefit is if you drags straight from course list to garbage
+- putting in garbage loses from list of courses unless you refresh
 - if you put more courses than room in div, just overflows
 - course list doesn't wrap around
+- improve updating of rules when plan changes
