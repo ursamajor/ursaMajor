@@ -5,9 +5,12 @@
 drag and drop
 - shouldn't allow duplicates
 - putting in garbage loses from list of courses unless you refresh
-- if you put more courses than room in div, just overflows
-- course list doesn't wrap around
-- improve updating of rules when plan changes
-- improve initial load
 - front-end rule checking
   - rule passes if meets num_courses, num_units + all sub_rules pass
+
+- add more semesters
+- clear board/semester
+- shorten names of rules
+- mapping of names
+- landing page
+- course info

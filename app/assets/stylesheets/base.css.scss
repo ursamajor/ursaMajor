@@ -18,7 +18,7 @@ ul {
 
 .course-input { width: 140px; font-size: 0.9em;}
 
-#rules { margin-left: 0px; padding-left: 0px; float: right; overflow:auto; width: 30%; height: 500px; overflow-y: scroll; }
+#rules { margin-left: 0px; padding-left: 0px; float: right; overflow:auto; width: 30%; height: 625px; overflow-y: scroll; }
 
 #semesters { float: left; }
 .container { padding-left: 0px; }
@@ -40,3 +40,4 @@ td#result.green { color: green; opacity: 0.7 }
 .plan-name { color: #404040 } 
 
 a.rule { color: #587DA1 }
+a:hover { text-decoration: none; opacity: 0.8; }
