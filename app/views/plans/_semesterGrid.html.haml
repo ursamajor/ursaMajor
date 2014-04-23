@@ -1,53 +1,76 @@
 #semesters
   %div(class="contentWrapper data-ng-cloak")
-    .row
+    .row 
+      .col-md-1
+        .semester-name#fall Fall
       .thumbnail.col-md-2(data-drop="true" data-ng-model="fall1" data-jqyoui-options="{accept:'.btn-draggable:not([data-ng-model=fall1])'}" jqyoui-droppable="{multiple:true}")
-        .caption
+        .caption 
+          .year 2014
           .btn.btn-info.btn-draggable(data-ng-repeat="course in fall1" data-ng-show="course.name" data-drag="{{course.drag}}" data-jqyoui-options="{revert: 'invalid'}" data-ng-model="fall1" jqyoui-draggable="{index: {{$index}},animate:true}")
             {{course.name}}
       .thumbnail.col-md-2(data-drop="true" data-ng-model="fall2" data-jqyoui-options="{accept:'.btn-draggable:not([data-ng-model=fall2])'}"  jqyoui-droppable="{multiple:true}")
         .caption
+          .year 2015
           .btn.btn-info.btn-draggable(data-ng-repeat="course in fall2" data-ng-show="course.name" data-drag="{{course.drag}}" data-jqyoui-options="{revert: 'invalid'}" data-ng-model="fall2" jqyoui-draggable="{index: {{$index}},animate:true}")
             {{course.name}}
       .thumbnail.col-md-2(data-drop="true" data-ng-model="fall3" data-jqyoui-options="{accept:'.btn-draggable:not([data-ng-model=fall3])'}"  jqyoui-droppable="{multiple:true}")
         .caption
+          .year 2016
           .btn.btn-info.btn-draggable(data-ng-repeat="course in fall3" data-ng-show="course.name" data-drag="{{course.drag}}" data-jqyoui-options="{revert: 'invalid'}" data-ng-model="fall3" jqyoui-draggable="{index: {{$index}},animate:true}")
             {{course.name}}
       .thumbnail.col-md-2(data-drop="true" data-ng-model="fall4" data-jqyoui-options="{accept:'.btn-draggable:not([data-ng-model=fall4])'}" jqyoui-droppable="{multiple:true}")
         .caption
+          .year 2017
           .btn.btn-info.btn-draggable(data-ng-repeat="course in fall4" data-ng-show="course.name" data-drag="{{course.drag}}" data-jqyoui-options="{revert: 'invalid'}" data-ng-model="fall4" jqyoui-draggable="{index: {{$index}},animate:true}")
             {{course.name}}
     .row
+      .col-md-1
+        %br
+        %br
+        .semester-name Spring
       .thumbnail.col-md-2(data-drop="true" data-ng-model="spring1" data-jqyoui-options="{accept:'.btn-draggable:not([data-ng-model=spring1])'}"  jqyoui-droppable="{multiple:true}")
         .caption
+          .year 2014
           .btn.btn-info.btn-draggable(data-ng-repeat="course in spring1" data-ng-show="course.name" data-drag="{{course.drag}}" data-jqyoui-options="{revert: 'invalid'}" data-ng-model="spring1" jqyoui-draggable="{index: {{$index}},animate:true}")
             {{course.name}}
       .thumbnail.col-md-2(data-drop="true" data-ng-model="spring2" data-jqyoui-options="{accept:'.btn-draggable:not([data-ng-model=spring2])'}"  jqyoui-droppable="{multiple:true}")
         .caption
+          .year 2015
           .btn.btn-info.btn-draggable(data-ng-repeat="course in spring2" data-ng-show="course.name" data-drag="{{course.drag}}" data-jqyoui-options="{revert: 'invalid'}" data-ng-model="spring2" jqyoui-draggable="{index: {{$index}},animate:true}")
             {{course.name}}
       .thumbnail.col-md-2(data-drop="true" data-ng-model="spring3" data-jqyoui-options="{accept:'.btn-draggable:not([data-ng-model=spring3])'}" jqyoui-droppable="{multiple:true}")
         .caption
+          .year 2016
           .btn.btn-info.btn-draggable(data-ng-repeat="course in spring3" data-ng-show="course.name" data-drag="{{course.drag}}" data-jqyoui-options="{revert: 'invalid'}" data-ng-model="spring3" jqyoui-draggable="{index: {{$index}},animate:true}")
             {{course.name}}
       .thumbnail.col-md-2(data-drop="true" data-ng-model="spring4" data-jqyoui-options="{accept:'.btn-draggable:not([data-ng-model=spring4])'}"  jqyoui-droppable="{multiple:true}")
         .caption
+          .year 2017
           .btn.btn-info.btn-draggable(data-ng-repeat="course in spring4" data-ng-show="course.name" data-drag="{{course.drag}}" data-jqyoui-options="{revert: 'invalid'}" data-ng-model="spring4" jqyoui-draggable="{index: {{$index}},animate:true}")
             {{course.name}}
     .row
+      .col-md-1
+        %br
+        %br
+        %br
+        .semester-name Summer
       .thumbnail.col-md-2(data-drop="true" data-ng-model="summer1" data-jqyoui-options="{accept:'.btn-draggable:not([data-ng-model=summer1])'}"  jqyoui-droppable="{multiple:true}")
         .caption
+          .year 2014
           .btn.btn-info.btn-draggable(data-ng-repeat="course in summer1" data-ng-show="course.name" data-drag="{{course.drag}}" data-jqyoui-options="{revert: 'invalid'}" data-ng-model="summer1" jqyoui-draggable="{index: {{$index}},animate:true}")
             {{course.name}}
       .thumbnail.col-md-2(data-drop="true" data-ng-model="summer2" data-jqyoui-options="{accept:'.btn-draggable:not([data-ng-model=summer2])'}" jqyoui-droppable="{multiple:true}")
         .caption
+          .year 2015
           .btn.btn-info.btn-draggable(data-ng-repeat="course in summer2" data-ng-show="course.name" data-drag="{{course.drag}}" data-jqyoui-options="{revert: 'invalid'}" data-ng-model="summer2" jqyoui-draggable="{index: {{$index}},animate:true}")
             {{course.name}}
       .thumbnail.col-md-2(data-drop="true" data-ng-model="summer3" data-jqyoui-options="{accept:'.btn-draggable:not([data-ng-model=summer3])'}"  jqyoui-droppable="{multiple:true}")
         .caption
+          .year 2016
           .btn.btn-info.btn-draggable(data-ng-repeat="course in summer3" data-ng-show="course.name" data-drag="{{course.drag}}" data-jqyoui-options="{revert: 'invalid'}" data-ng-model="summer3" jqyoui-draggable="{index: {{$index}},animate:true}")
             {{course.name}}
       .thumbnail.col-md-2(data-drop="true" data-ng-model="summer4" data-jqyoui-options="{accept:'.btn-draggable:not([data-ng-model=summer4])'}"  jqyoui-droppable="{multiple:true}")
         .caption
+          .year 2017
           .btn.btn-info.btn-draggable(data-ng-repeat="course in summer4" data-ng-show="course.name" data-drag="{{course.drag}}" data-jqyoui-options="{revert: 'invalid'}" data-ng-model="summer4" jqyoui-draggable="{index: {{$index}},animate:true}")
             {{course.name}}
