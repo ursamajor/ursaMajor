@@ -42,8 +42,9 @@ angular.module('littledipper.controllers').controller 'PlanDetailCtrl', ['$scope
     $scope.plan["courses"] = []
     for semester in $scope.semesters
       $scope.plan[semester] = $scope[semester]
-      for course in $scope.plan[semester]
-        $scope.plan["courses"].push course
+      unless semester is "backpack"
+        for course in $scope.plan[semester]
+          $scope.plan["courses"].push course
 
   $scope.savePlan = ->
     $http.put("#{window.location.pathname}/save", $scope.plan).success ->

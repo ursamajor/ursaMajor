@@ -14,3 +14,5 @@ drag and drop
 - landing page
 - course info
 - selecting which rules you want
+
+- in results, adding a checkmark shifts everything a bit
