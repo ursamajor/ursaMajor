@@ -21,20 +21,18 @@ class Plan < ActiveRecord::Base
 
   def check
     results = []
-    Rule.all.keys.each do |key|
-      next if Rule.base.include? key
-      key = key.to_s
+    Rule.all.values.each do |rule|
+      next if rule.hidden?
       result = {}
-      rule = Rule.get(key)
       value = rule.check_print self, nil
-      result["name"] = key
+      result["name"] = rule.name.to_s
       result["description"] = rule.description
       result["result"] = value[0]
       result["courses"] = value[1].map { |course| course.name }
       if result["courses"] == []
         result["courses"] = ""
       end
-      result["url"] = Rails.application.routes.url_helpers.display_rules_path(:rule => key)
+      result["url"] = Rails.application.routes.url_helpers.display_rules_path(:rule => rule.name)
       results << result
     end
     results

@@ -1,18 +1,35 @@
-- remove course if used for rule and can only be used once
-- UI for editing rules/yaml
-
-drag and drop
-- shouldn't allow duplicates
-- putting in garbage loses from list of courses unless you refresh
-- front-end rule checking
-  - rule passes if meets num_courses, num_units + all sub_rules pass
+functionality
 
 - ability to add more semesters
 - ability to clear board/semester
-- shorten names of rules
-- mapping of names/rename departments
-- landing page
 - course info
 - selecting which rules you want
+- UI for editing rules/yaml
+- all query matching across period (allow spaces in queries)
+- handling more than one major
+
+appearance
 
 - in results, adding a checkmark shifts everything a bit
+- landing page
+- make ui more responsive
+
+chores
+
+- going through completed rules, make sure they work
+- shorten names of rules
+- mapping of names/rename departments
+
+brainstorm
+
+- checking multipart rules(ones that can't be satisfied just seeing numcourses/numunits, ex. a major)
+  - rule passes if meets num_courses, num_units + all sub_rules pass
+
+- shouldn't allow duplicates
+- putting in garbage loses from list of courses unless you refresh
+  - when loading a plan, remove courses already in from total list of courses (avoid duplicates)
+  - when putting something in garbage, push that course back into courses
+
+- remove course if used for rule and can only be used once
+  - all different combinations to decide which one to remove/use for a certain rule
+  - flag as an exclusive rule, which removes course from plan when checking rest

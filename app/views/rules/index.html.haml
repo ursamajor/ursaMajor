@@ -7,8 +7,8 @@
         %th Rule
         %th Description
     .body
-      - @rules.keys.each do |rule|
-        - next if Rule.base.include? rule
+      - @rules.values.each do |rule|
+        - next if rule.hidden?
         %tr
-          %td= link_to rule, display_rules_path(:rule => rule)
-          %td= Rule.get(rule).description
+          %td= link_to rule.name, display_rules_path(:rule => rule.name)
+          %td= rule.description
