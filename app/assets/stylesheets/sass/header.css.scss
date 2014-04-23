@@ -25,10 +25,10 @@ $menu-unit-width: (100% / $units);
 }
 
 
-$link-top-padding: 8px;
-$link-bottom-padding: 5px;
-$menu-text-height: 18px;
-$icon-text-height: 25px;
+$link-top-padding: 3px;
+$link-bottom-padding: 0px;
+$menu-text-height: 9px;
+$icon-text-height: 12.5px;
 $total-menu-height: $link-top-padding + $link-bottom-padding + $menu-text-height + $icon-text-height;
 #main-menu {
     @include font($main-font, 300);
@@ -51,7 +51,7 @@ $total-menu-height: $link-top-padding + $link-bottom-padding + $menu-text-height
                     display: block;
                 }
                 i {
-                    @include height($icon-text-height, 20px);
+                    @include height($icon-text-height, 15px);
                     
                 }
             }
@@ -91,7 +91,7 @@ $total-menu-height: $link-top-padding + $link-bottom-padding + $menu-text-height
             font-size: 17px;
             vertical-align: top;
             display: inline-block;
-            padding-top: 25px;
+            padding-top: 13px;
             font-weight: 400;
             padding-left: 25px;
         }

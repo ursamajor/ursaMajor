@@ -13,7 +13,7 @@ class Plan < ActiveRecord::Base
   end
 
   def self.create_demo
-    plan = Plan.new :name => "Demo-#{Plan.all.length}"
+    plan = Plan.new :name => "Demo Plan"
     Plan.semesters.each { |semester| plan.semesters.build name: semester.to_s }
     plan.save
     plan
