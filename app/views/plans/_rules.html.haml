@@ -7,11 +7,9 @@
         %th Fulfilling Set
     .body
       %tr(data-ng-repeat="rule in rules")
-        / %td 
-        /   %a(href="{{rule.url}}") {{rule.name}}
         %td 
           %a(href="{{rule.url}}") {{rule.description}}
-        %td {{rule.result.pass}}
+        %td#result(class="{{rule.result.pass | color}}") {{rule.result.pass | satisfied}}
         %td
           .course(data-ng-repeat="course in rule.result.courses")
             {{course}}
