@@ -53,10 +53,11 @@ angular.module('littledipper.controllers').controller 'PlanDetailCtrl', ['$scope
     $scope.updatePlan()
     $scope.savePlan()
 
+  $scope.getRules()
+
   $http.get("#{window.location.pathname}.json").success (data) ->
     for semester in $scope.semesters
       $scope[semester] = $scope.findSemester data, semester
       $scope.$watchCollection semester, ->
         $scope.update()
-    $scope.getRules()
 ]

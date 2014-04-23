@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   resources :courses do
     collection do
       get 'search'
+      get 'tagged_courses'
     end
   end
 
