@@ -9,11 +9,13 @@ ul {
   list-style: none;
 }
 
-.thumbnail { height: 200px !important; width: 30%; }
+.thumbnail { min-height: 200px; height: 100% !important; width: 140px; }
 .btn-droppable { width: 100%; height: 30px; padding-left: 4px; }
 .btn-draggable { width: 100%; }
 
-.thumbnail#backpack, .thumbnail#garbage { height: 280px !important; width: 100%; }
+.course-input { width: 150px; }
 
-#rules { float: left }
-#semesters { float: left }
+.thumbnail#backpack, .thumbnail#garbage { border-style: dashed }
+
+#rules { float: left; }
+#semesters { float: left; }
