@@ -43,24 +43,24 @@ rules:
             rule: dept
             args: COMPSCI
 
-    series:
-        description: "Series Requirement"
-        rule: same_dept
-        args:
-            rule: AND
-            args:
-                - same_course:
-                    - upperdiv
-                    - OR:
-                        - university_ac
-                        - cnr_breadth_arts_history_philosophy
-                        - cnr_breadth_social_international
-                - same_course:
-                    - lowerdiv
-                    - OR:
-                        - university_ac
-                        - cnr_breadth_arts_history_philosophy
-                        - cnr_breadth_social_international
+    # series:
+    #     description: "Series Requirement"
+    #     rule: same_dept
+    #     args:
+    #         rule: AND
+    #         args:
+    #             - same_course:
+    #                 - upperdiv
+    #                 - OR:
+    #                     - university_ac
+    #                     - cnr_breadth_arts_history_philosophy
+    #                     - cnr_breadth_social_international
+    #             - same_course:
+    #                 - lowerdiv
+    #                 - OR:
+    #                     - university_ac
+    #                     - cnr_breadth_arts_history_philosophy
+    #                     - cnr_breadth_social_international
 
     lowerdiv_units:
         description: "EECS lower division requirement"

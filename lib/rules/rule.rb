@@ -1,5 +1,5 @@
 class Rule
-  attr_accessor :name, :description
+  attr_accessor :name, :description, :num_courses, :num_units
 
   @source = :raw
   @rules = {}
@@ -24,6 +24,22 @@ class Rule
 
   def base?
     Rule.base.include? name
+  end
+
+  def self.json
+    rules = []
+    self.all.keys.each do |rule|
+      next if Rule.base.include? rule
+      rule = Rule.get(rule)
+      result = {}
+      result["name"] = rule.name.to_s
+      result["description"] = rule.description
+      result["numCourses"] = rule.num_courses
+      result["numUnits"] = rule.num_units
+      result["url"] = Rails.application.routes.url_helpers.display_rules_path(:rule => rule.name.to_s)
+      rules << result
+    end
+    rules
   end
 
   def abstract?

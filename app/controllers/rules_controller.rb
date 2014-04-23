@@ -8,4 +8,9 @@ class RulesController < ApplicationController
     @rule = Rule.get(params[:rule])
   end
 
+  def search
+    @rules = Rule.json
+    respond_with @rules
+  end
+
 end

@@ -24,29 +24,6 @@ class PlansController < ApplicationController
     redirect_to :back
   end
 
-  # def add_course
-  #   plan = Plan.find_by_id params[:id]
-  #   if params[:course]
-  #     course = Course.find_by_id params[:course]
-  #   else
-  #     course = Course.find_by_name params[:course_name].upcase
-  #   end
-  #   if course
-  #     plan.add course 
-  #     flash[:notice] = "Course #{course.name} successfully added"
-  #   else
-  #     flash[:warning] = "Could not find course"
-  #   end
-  #   redirect_to :back
-  # end
-
-  # def remove_course
-  #   plan = Plan.find_by_id params[:id]
-  #   course = Course.find_by_name params[:course_name]
-  #   plan.remove course if course
-  #   redirect_to :back, notice: "Course #{course.name} successfully removed"
-  # end
-
   def save
     plan = Plan.find_by_id params[:id]
     semesters = params[:_json]
