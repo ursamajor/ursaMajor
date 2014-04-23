@@ -36,6 +36,7 @@ class Rule
       result["description"] = rule.description
       result["numCourses"] = rule.num_courses
       result["numUnits"] = rule.num_units
+      #result["subrules"]
       result["url"] = Rails.application.routes.url_helpers.display_rules_path(:rule => rule.name.to_s)
       rules << result
     end

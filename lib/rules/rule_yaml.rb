@@ -12,8 +12,8 @@ class YamlRule < Rule
     @name = name.to_sym
     @entry = entry
     @description = entry['description']
-    @num_courses = 1
-    @num_units = 0
+    @num_courses = entry['num_courses'] || 1
+    @num_units = entry['num_units'] || 0
     @rule, @args = Rule.parse_entry @entry
   end
 

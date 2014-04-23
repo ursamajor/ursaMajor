@@ -30,6 +30,7 @@ rules:
 
     four_units_ac:
         description: "4-unit American Cultures course"
+        num_units: 4
         rule: units
         args:
             min: 4
@@ -37,6 +38,7 @@ rules:
 
     four_cs_courses:
         description: "4 CS courses"
+        num_courses: 4
         rule: count_courses
         args:
             min: 4
@@ -64,6 +66,7 @@ rules:
 
     lowerdiv_units:
         description: "EECS lower division requirement"
+        num_courses: 5
         rule: units
         args:
             min: 20
@@ -3586,6 +3589,7 @@ rules:
 
     hss:
         description: "Humanities and Social Sciences (14 units)"
+        num_units: 14
         rule: units
         args:
             min: 14
@@ -3597,6 +3601,7 @@ rules:
 
     phys_math:
         description: "Physical Sciences and Math (26-28 units)"
+        num_courses: 9
         rule: AND
         args:
             - OR:
@@ -3620,6 +3625,7 @@ rules:
 
     bio_nr:
         description: "Biological and Natural Resource Science (11 units)"
+        num_courses: 5
         rule: AND
         args:
             - course: NUSCTX.11
@@ -3630,6 +3636,7 @@ rules:
 
     cnr_upper_division:
         description: "Upper Division CNR Requirement (15 units)"
+        num_units: 15
         rule: units
         args:
             min: 15
@@ -3646,6 +3653,7 @@ rules:
 
     molecular_toxicology_upper:
         description: "Upper Division Molecular Toxicology Requirement (36 units)"
+        num_units: 36
         rule: AND
         args:
             - course: MCELLBI.102
