@@ -30,7 +30,7 @@ angular.module('littledipper.controllers').controller 'PlanDetailCtrl', ['$scope
         numUnits += course["units"]
     {
       "pass": numUnits >= rule.numUnits and numCourses >= rule.numCourses
-      "courses": course["name"] for course in fulfillingSet
+      "courses": {id: course["id"], name: course["name"]} for course in fulfillingSet
     }
 
   $scope.checkRules = ->

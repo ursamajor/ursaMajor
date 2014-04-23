@@ -1,5 +1,4 @@
 - remove course if used for rule and can only be used once
-- rename departments
 - UI for editing rules/yaml
 
 drag and drop
@@ -8,9 +7,10 @@ drag and drop
 - front-end rule checking
   - rule passes if meets num_courses, num_units + all sub_rules pass
 
-- add more semesters
-- clear board/semester
+- ability to add more semesters
+- ability to clear board/semester
 - shorten names of rules
-- mapping of names
+- mapping of names/rename departments
 - landing page
 - course info
+- selecting which rules you want

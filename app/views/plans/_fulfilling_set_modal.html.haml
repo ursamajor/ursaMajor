@@ -1,0 +1,11 @@
+.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "Fulfilling Set", role: "dialog", tabindex: "-1", id: "fulfilling_set_{{rule.name}}"}
+  .modal-dialog
+    .modal-content
+      .modal-header
+        %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", type: "button"} ×
+        %h4#myModalLabel.modal-title {{rule.description}}
+      .modal-body
+        .course(data-ng-repeat="course in rule.result.courses")
+          %a(href="/courses/{{course.id}}") {{course.name}}
+      .modal-footer
+        %button.btn.btn-default{"data-dismiss" => "modal", type: "button"} Close

@@ -1,15 +1,9 @@
 #rules.col-md-2
   %table.table
-    %thead
-      %tr
-        %th Rule
-        %th Result
-        / %th Fulfilling Set
-    .body
+    %tbody
       %tr(data-ng-repeat="rule in rules")
         %td 
           %a.rule(href="{{rule.url}}") {{rule.description}}
-        %td#result(class="{{rule.result.pass | color}}") {{rule.result.pass | satisfied}}
-        / %td
-        /   .course(data-ng-repeat="course in rule.result.courses")
-        /     {{course}}
+        %td#result(class="{{rule.result.pass | color}}") 
+          %a.result(data-toggle="modal" data-target="#fulfilling_set_{{rule.name}}") {{rule.result.pass | satisfied}}
+          = render "plans/fulfilling_set_modal"
