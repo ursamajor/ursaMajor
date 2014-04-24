@@ -77,7 +77,9 @@ angular.module('littledipper.controllers').controller 'PlanDetailCtrl', ['$scope
     $scope.updatePlan()
     for rule in $scope.rules
       rule["result"] = $scope.checkRule rule
-  
+  $scope.test = ->
+    alert('test')
+    
   $scope.updatePlan = ->
     $scope.plan["courses"] = []
     for semester in $scope.semesters

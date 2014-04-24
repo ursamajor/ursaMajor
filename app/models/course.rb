@@ -29,6 +29,32 @@ class Course < ActiveRecord::Base
         course.name = name
         course.number = name.match(/[\d]+/)[0]
         course.units = course_info.xpath("lowerUnits").text.to_i
+        course.description = course_info.xpath("description").text
+        course.save
+      end
+    rescue => e
+      puts "error in course creation: " + e.message
+    end
+  end
+
+  def self.update_all
+    depts = []
+    Course.all.each do |course|
+      next if depts.include? course.dept
+      depts << course.dept
+      self.update(course.dept)
+    end
+  end
+
+  def self.update(department)
+    uri = "https://apis-dev.berkeley.edu/cxf/asws/course?departmentCode=#{CGI.escape(department)}&_type=xml&app_id=#{ENV['APP_ID']}&app_key=#{ENV['APP_KEY']}"
+    begin
+      doc = APICaller.call_api(uri)
+      courses = doc.xpath("//CanonicalCourse")
+      courses.each do |course_info|
+        name = course_info.xpath("courseUID").text
+        course = Course.find_by_name(name)
+        course.description = course_info.xpath("description").text
         course.save
       end
     rescue => e
