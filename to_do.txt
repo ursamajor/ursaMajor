@@ -11,7 +11,6 @@ functionality
 - ability to clear board/semester
 - selecting which rules you want
 - UI for editing rules/yaml
-- all query matching across period (allow spaces in queries)
 - handling more than one major
 - able to flag a course under a certain rule
 - handling variable unit courses
@@ -21,20 +20,23 @@ appearance
 - take out bootstrap
 - ability to move courses within a semester around
 - in results, adding a checkmark shifts everything a bit
-- course info, pull more
+- course info display
   - edit drag/drop library for click vs drag http://stackoverflow.com/questions/1771627/preventing-click-event-with-jquery-drag-and-drop
 - landing page
 - semesters smaller to fit on one page
 - handling semester box expansion
 - sizing glitches drag and drop
 - make ui more responsive
+- semester settings?
 - maybe make clear semester opaque then less opaque when hover
+  - flip card to confirm clear
+  - option to save to backpack
+- alphabetically sort courses that satisfy a rule
 
 chores
 
 - going through completed rules, make sure they work
 - shorten names of rules
-- mapping of names/rename departments
 - sort courses by name and number, course letter (after doing so, remove initial sort in js)
   - more efficient -> place garbage course in right place instead of sorting everything
 - separate courses and plans controller again (combined for sake of duplicate removal)

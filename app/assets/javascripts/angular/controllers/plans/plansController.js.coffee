@@ -9,10 +9,12 @@ angular.module('littledipper.controllers').controller 'PlanDetailCtrl', ['$scope
 
   #todo: put garbage course in right place instead of sorting everything (since already sorted at beginning)
   $scope.sortCourses = (a, b) -> switch
-        when a.dept > b.dept then 1
-        when a.dept < b.dept then -1
-        when a.number > b.number then 1
-        when a.number < b.number then -1
+      when a.dept > b.dept then 1
+      when a.dept < b.dept then -1
+      when a.number > b.number then 1
+      when a.number < b.number then -1
+      when a.postfix > b.postfix then 1
+      when a.postfix < b.postfix then -1
 
   $http.get("/courses/tagged_courses.json").success (data) ->
     $scope.courses = data

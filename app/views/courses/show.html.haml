@@ -12,6 +12,7 @@
         %th Description
     .body
       - @course.rule_list.each do |rule|
+        - next unless Rule.get(rule)
         %tr
           %td= link_to rule, display_rules_path(:rule => rule)
           %td= Rule.get(rule).description
