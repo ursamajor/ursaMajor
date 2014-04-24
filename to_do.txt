@@ -17,6 +17,7 @@ functionality
 
 appearance
 
+- take out bootstrap
 - ability to move courses within a semester around
 - in results, adding a checkmark shifts everything a bit
 - course info

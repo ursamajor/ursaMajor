@@ -38,6 +38,13 @@ angular.module('littledipper.controllers').controller 'PlanDetailCtrl', ['$scope
 
   # END CoursesController
 
+  # later make one method for returning garbage to $scope.courses
+  $scope.clearSemester = (semester) ->
+    semesterCourses = $scope[semester]
+    $scope[semester] = []
+    $scope.courses.push course for course in semesterCourses
+    $scope.courses.sort $scope.sortCourses
+
   $scope.findSemester = (data, name) ->
     for semester in data
       return semester[name] if semester[name]
