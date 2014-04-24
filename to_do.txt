@@ -1,3 +1,8 @@
+possible
+
+- popular rules
+- prerequisites
+
 functionality
 
 - ability to add more semesters
@@ -6,6 +11,7 @@ functionality
 - UI for editing rules/yaml
 - all query matching across period (allow spaces in queries)
 - handling more than one major
+- able to flag a course under a certain rule
 
 appearance
 
@@ -23,6 +29,7 @@ chores
 - sort courses by name and number (after doing so, remove initial sort in js)
   - more efficient -> place garbage course in right place instead of sorting everything
 - separate courses and plans controller again (combined for sake of duplicate removal)
+- updating rule (can only use up to 2 from same dept for breadths)
 
 structure
 
@@ -46,4 +53,5 @@ brainstorm
 
 - remove course if used for rule and can only be used once
   - all different combinations to decide which one to remove/use for a certain rule
+    - utility function of numRulesSatisfied, proportion of courses left to fulfill other requirements
   - flag as an exclusive rule, which removes course from plan when checking rest
