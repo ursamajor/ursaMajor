@@ -24,6 +24,10 @@ class CoursesController < ApplicationController
     render :partial => "courses/all.json"
   end
 
+  def all
+    @courses = Course.all
+  end
+
   def tagged_courses
     respond_to do |format|
       format.json { render 'tagged_courses.json' }

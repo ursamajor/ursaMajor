@@ -39,6 +39,7 @@ chores
   - more efficient -> place garbage course in right place instead of sorting everything
 - separate courses and plans controller again (combined for sake of duplicate removal)
 - updating rule (can only use up to 2 from same dept for breadths)
+- labeling pnp courses
 
 structure
 

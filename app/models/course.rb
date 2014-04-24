@@ -42,13 +42,17 @@ class Course < ActiveRecord::Base
     Course.all.each { |course| course.update }
   end
 
-  def self.update_all_with_space
-    Course.all.each { |course| course.update if course.has_space?}
+  def self.update_all_after(id)
+    Course.all.each { |course| course.update if course.id > id }
   end
 
-  def has_space?
-    name[" "]
-  end
+  # def self.update_all_with_space
+  #   Course.all.each { |course| course.update if course.has_space?}
+  # end
+
+  # def has_space?
+  #   name[" "]
+  # end
 
   def update
     uri = "https://apis-dev.berkeley.edu/cxf/asws/course?courseUID=#{CGI.escape name}&_type=xml&app_id=#{ENV['APP_ID']}&app_key=#{ENV['APP_KEY']}"
