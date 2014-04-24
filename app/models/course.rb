@@ -29,7 +29,7 @@ class Course < ActiveRecord::Base
         course.name = name
         course.number = name.match(/[\d]+/)[0]
         course.units = course_info.xpath("lowerUnits").text.to_i
-        course.description = course_info.xpath("description").text
+        course.description = course_info.xpath("courseDescription").text
         course.save
       end
     rescue => e
