@@ -16,6 +16,8 @@ angular.module('littledipper.controllers').controller 'PlanDetailCtrl', ['$scope
   $http.get("/courses/tagged_courses.json").success (data) ->
     $scope.courses = data
     $scope.courses.sort $scope.sortCourses #todo: sort in rails controller so don't have to here
+    $scope.updatePlan()
+    $scope.removeDuplicates() #todo: find way to only have to do this once and avoid data race
     $scope.totalDisplayed = 20
  
   $scope.addMoreCourses = ->
