@@ -53,8 +53,8 @@ class Course < ActiveRecord::Base
       courses = doc.xpath("//CanonicalCourse")
       courses.each do |course_info|
         name = course_info.xpath("courseUID").text
-        course = Course.find_by_name(name)
-        course.description = course_info.xpath("description").text
+        course = Course.find_by_name(name)  
+        course.description = course_info.xpath("courseDescription").text
         course.save
       end
     rescue => e

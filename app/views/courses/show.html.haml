@@ -1,6 +1,8 @@
 .left-column-container.column.col-md-3
 .right-column-container.column.container.col-md-8
   %h2= @course.name
+  %h3 Description
+  #description= @course.description
   %h3 Rules Met
   %table.table
     %thead
