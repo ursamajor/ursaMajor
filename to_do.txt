@@ -23,7 +23,6 @@ appearance
 - course info
 - display unit total
 - landing page
-- garbage smaller
 - semesters smaller to fit on one page
 - handling semester box expansion
 - sizing glitches drag and drop

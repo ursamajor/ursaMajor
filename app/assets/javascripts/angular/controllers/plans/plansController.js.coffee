@@ -85,6 +85,12 @@ angular.module('littledipper.controllers').controller 'PlanDetailCtrl', ['$scope
       unless semester is "backpack"
         for course in $scope.plan[semester]
           $scope.plan["courses"].push course
+    $scope.updateUnits()
+
+  $scope.updateUnits = ->
+    $scope.units = 0
+    for course in $scope.plan["courses"]
+      $scope.units += course.units
 
   $scope.savePlan = ->
     $http.put("#{window.location.pathname}/save", $scope.plan)
