@@ -12,7 +12,7 @@ class CoursesController < ApplicationController
   end
 
   def show
-    @course = Course.find_by_id params[:id]
+    @course = Course.find_by id: params[:id]
   end
 
   def search

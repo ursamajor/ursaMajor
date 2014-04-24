@@ -8,7 +8,7 @@ class PlansController < ApplicationController
   end
 
   def show
-    @plan = Plan.find_by_id params[:id]
+    @plan = Plan.find_by id: params[:id]
     respond_to do |format|
       format.html
       format.json { render partial: 'show.json' }
@@ -25,13 +25,13 @@ class PlansController < ApplicationController
   end
 
   def save
-    plan = Plan.find_by_id params[:id]
+    plan = Plan.find_by id: params[:id]
     semesters = params[:_json]
     plan.semesters.each do |semester|
       courses = []
       if params[semester.name]
         params[semester.name].each do |data|
-          course = Course.find_by_id data['id']
+          course = Course.find_by id: data['id']
           courses << course unless courses.include? course
         end
       else
@@ -44,7 +44,7 @@ class PlansController < ApplicationController
   end
 
   def check
-    plan = Plan.find_by_id params[:id]
+    plan = Plan.find_by id: params[:id]
     @results = plan.check
     respond_to do |format|
       format.json { respond_with @results }
@@ -54,7 +54,7 @@ class PlansController < ApplicationController
   protected
 
   def is_owner
-    plan = Plan.find_by_id params[:id]
+    plan = Plan.find_by id: params[:id]
     if current_user != plan.user
       flash[:error] = "Error: You do not have permission to access"
       redirect_to root_path

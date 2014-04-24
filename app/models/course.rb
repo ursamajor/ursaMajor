@@ -24,7 +24,7 @@ class Course < ActiveRecord::Base
       courses = doc.xpath("//CanonicalCourse")
       courses.each do |course_info|
         name = course_info.xpath("courseUID").text
-        next if Course.find_by_name name
+        next if Course.find_by name: name
         course = Course.new
         course.name = name
         course.number = name.match(/[\d]+/)[0]
@@ -53,7 +53,7 @@ class Course < ActiveRecord::Base
       courses = doc.xpath("//CanonicalCourse")
       courses.each do |course_info|
         name = course_info.xpath("courseUID").text
-        course = Course.find_by_name(name)  
+        course = Course.find_by name: name  
         course.description = course_info.xpath("courseDescription").text
         course.save
       end
@@ -64,7 +64,7 @@ class Course < ActiveRecord::Base
 
   def self.clear_tags(course_ids)
     course_ids.each do |id|
-      course = Course.find_by_id id
+      course = Course.find_by id: id
       course.rule_list = []
       course.save
     end

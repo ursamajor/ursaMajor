@@ -4,8 +4,7 @@
       .btn.btn-info.btn-draggable(data-drag="{{course.drag}}" data-jqyoui-options="{revert: 'invalid'}" data-ng-model="courses" jqyoui-draggable="{index: {{$index}},placeholder:true,animate:true,applyFilter:'filterCourses'}" data-ng-hide="!course.name")
         {{course.name}}
 %br
-.thumbnail.profile
-  Total Units: {{units}} 
+= render 'plans/profile'
 .thumbnail#backpack.col-md-1(data-drop="true" data-ng-model="backpack" data-jqyoui-options="{accept:'.btn-draggable:not([data-ng-model=backpack])'}" jqyoui-droppable="{multiple:true}")
   .caption
     .bin Backpack
