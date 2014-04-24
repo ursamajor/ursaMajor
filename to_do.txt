@@ -23,7 +23,6 @@ appearance
 - in results, adding a checkmark shifts everything a bit
 - course info, pull more
   - edit drag/drop library for click vs drag http://stackoverflow.com/questions/1771627/preventing-click-event-with-jquery-drag-and-drop
-- display unit total
 - landing page
 - semesters smaller to fit on one page
 - handling semester box expansion
