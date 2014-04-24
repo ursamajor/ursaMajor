@@ -24,6 +24,21 @@ chores
   - more efficient -> place garbage course in right place instead of sorting everything
 - separate courses and plans controller again (combined for sake of duplicate removal)
 
+structure
+
+move all requires 
+
+config
+  initializers
+    ursarule.rb
+
+model
+  rule
+    rule*.rb
+lib
+  rule
+    yaml files
+
 brainstorm
 
 - checking multipart rules(ones that can't be satisfied just seeing numcourses/numunits, ex. a major)
