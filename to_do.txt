@@ -14,6 +14,9 @@ functionality
 - handling more than one major
 - able to flag a course under a certain rule
 - handling variable unit courses
+- able to edit plan names, able to delete plans
+- switch plans without reload
+- query partial matches across spaces
 
 appearance
 
