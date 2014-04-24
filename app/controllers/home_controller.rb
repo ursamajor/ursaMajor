@@ -10,7 +10,7 @@ class HomeController < ApplicationController
     session[:demo_id] = @plan.id
     respond_to do |format|
       format.html
-      format.json { render partial: 'demo.json' }
+      format.json { render partial: 'plans/show.json' }
     end
   end
 
