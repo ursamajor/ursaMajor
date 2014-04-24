@@ -2,9 +2,11 @@ possible
 
 - popular rules
 - prerequisites
+- user information (GPA, transcripts)
+- when a course is offered
 
 functionality
-
+- autopopulate plans from user information (major, years of semester)
 - ability to add more semesters
 - ability to clear board/semester
 - selecting which rules you want
@@ -15,10 +17,15 @@ functionality
 
 appearance
 
+- ability to move courses within a semester around
 - in results, adding a checkmark shifts everything a bit
 - course info
 - display unit total
 - landing page
+- garbage smaller
+- semesters smaller to fit on one page
+- handling semester box expansion
+- sizing glitches drag and drop
 - make ui more responsive
 
 chores
