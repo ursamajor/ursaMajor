@@ -8,7 +8,7 @@
           .year 2013
           //%a.fa.fa-times-circle(data-ng-click="clearSemester('fall1')")
           %a.fa.fa-cog
-          .btn.btn-info.btn-draggable(data-ng-repeat="course in fall1" data-ng-show="course.name" data-drag="{{course.drag}}" data-jqyoui-options="{revert: 'invalid'}" data-ng-model="fall1" jqyoui-draggable="{index: {{$index}},animate:true}")
+          .btn.btn-info.btn-draggable(data-ng-click='courseDisplay()' data-ng-repeat="course in fall1" data-ng-show="course.name" data-drag="{{course.drag}}" data-jqyoui-options="{revert: 'invalid'}" data-ng-model="fall1" jqyoui-draggable="{onStart: 'startDragging', index: {{$index}},animate:true}")
             {{course.name}}
       .thumbnail.col-md-2(data-drop="true" data-ng-model="fall2" data-jqyoui-options="{accept:'.btn-draggable:not([data-ng-model=fall2])'}"  jqyoui-droppable="{multiple:true}")
         .caption

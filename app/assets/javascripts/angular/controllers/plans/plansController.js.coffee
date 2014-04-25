@@ -39,6 +39,16 @@ angular.module('littledipper.controllers').controller 'PlanDetailCtrl', ['$scope
     $scope.totalDisplayed = 20
 
   # END CoursesController
+  # later make one method for returning garbage to $scope.courses
+  $scope.dragged = false
+  
+  $scope.courseDisplay = ->
+    if not $scope.dragged
+      alert("test")
+    $scope.dragged = false
+
+  $scope.startDragging = ->
+    $scope.dragged = true
 
   # later make one method for returning garbage to $scope.courses
   $scope.clearSemester = (semester) ->
