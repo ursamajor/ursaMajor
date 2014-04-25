@@ -2,9 +2,10 @@
   .row#shift
     .left-column-container.column.col-md-2
       %h2 Demo Plan
-      = render partial: 'plans/leftColumn'
+      = render 'plans/leftColumn'
     .right-column-container.column.container.col-md-10
       %br
       %br
-      = render partial: 'plans/semesterGrid'
-      = render partial: 'plans/rules'
+      = render 'plans/courseModals'
+      = render 'plans/semesterGrid'
+      = render 'plans/rules'

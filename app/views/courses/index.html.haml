@@ -9,6 +9,6 @@
 
     .body
       %div(infinite-scroll="addMoreCourses()" infinite-scroll-distance="2")
-        %tr(data-ng-repeat="course in courses | emptyIfBlank:query | filter:query | limitTo:totalDisplayed")
+        %tr(data-ng-repeat="course in courses | emptyIfBlank:query | filter:{name: query} | limitTo:totalDisplayed")
           %td <a href="/courses/{{course.id}}">{{course.name}}</a>
           %td {{course.units}}

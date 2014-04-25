@@ -36,6 +36,9 @@ appearance
   - flip card to confirm clear
   - option to save to backpack
 - alphabetically sort courses that satisfy a rule
+- some course names cut off
+- for long course descriptions, continue/more button
+- loading bars/progress wheel
 
 chores
 

@@ -27,7 +27,7 @@ angular.module('littledipper.controllers').controller 'PlanDetailCtrl', ['$scope
     $scope.totalDisplayed += 30
 
   $scope.filterCourses = ->
-    $filter('filter') $scope.courses, $scope.query
+    $filter('filter') $scope.courses, {name: $scope.query}
 
   $scope.$watchCollection 'garbage', ->
     garbageCourse = $scope.garbage[0]
@@ -100,6 +100,7 @@ angular.module('littledipper.controllers').controller 'PlanDetailCtrl', ['$scope
       unless semester is "backpack"
         for course in $scope.plan[semester]
           $scope.plan["courses"].push course
+    $scope.planCourses = $scope.plan["courses"].concat $scope.backpack
     $scope.updateUnits()
 
   $scope.updateUnits = ->

@@ -3,6 +3,8 @@ json.array! @courses do |course|
   json.name course.search_name
   json.dept course.search_dept
   json.number course.number
+  json.title course.title
+  json.description course.description
   json.postfix course.postfix
   json.units course.units
   json.tagged_with course.rule_list

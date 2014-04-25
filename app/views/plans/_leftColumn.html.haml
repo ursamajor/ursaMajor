@@ -1,14 +1,15 @@
 %input(data-ng-model="query" id="query" class="form-control search-bar course-input" type="text" placeholder="Add a course..." name= "search_query" value="#{session[:search_query]}" autocomplete="off")
   .query
-    .btn.btn-droppable(data-ng-repeat="course in courses | emptyIfBlank:query | filter:query | limitTo:4" data-drop="true" data-ng-model="courses" data-jqyoui-options="{accept:'.btn-draggable:not([data-ng-model=courses])'}" jqyoui-droppable="{index: {{$index}},applyFilter:'filterCourses'}")
+    .btn.btn-droppable(data-ng-repeat="course in courses | emptyIfBlank:query | filter:{name: query} | limitTo:4" data-drop="true" data-ng-model="courses" data-jqyoui-options="{accept:'.btn-draggable:not([data-ng-model=courses])'}" jqyoui-droppable="{index: {{$index}},applyFilter:'filterCourses'}")
       .btn.btn-info.btn-draggable(data-drag="{{course.drag}}" data-jqyoui-options="{revert: 'invalid'}" data-ng-model="courses" jqyoui-draggable="{index: {{$index}},placeholder:true,animate:true,applyFilter:'filterCourses'}" data-ng-hide="!course.name")
         {{course.name}}
+        = render 'plans/course_modal'
 %br
 = render 'plans/profile'
 .thumbnail#backpack.col-md-1(data-drop="true" data-ng-model="backpack" data-jqyoui-options="{accept:'.btn-draggable:not([data-ng-model=backpack])'}" jqyoui-droppable="{multiple:true}")
   .caption
     .bin Backpack
-    .btn.btn-info.btn-draggable(data-ng-repeat="course in backpack" data-ng-show="course.name" data-drag="{{course.drag}}" data-jqyoui-options="{revert: 'invalid'}" data-ng-model="backpack" jqyoui-draggable="{index: {{$index}},animate:true}")
+    .btn.btn-info.btn-draggable(data-ng-click="courseDisplay(course.id)" data-ng-repeat="course in backpack" data-ng-show="course.name" data-drag="{{course.drag}}" data-jqyoui-options="{revert: 'invalid'}" data-ng-model="backpack" jqyoui-draggable="{index: {{$index}},animate:true}")
       {{course.name}}
 .thumbnail#garbage.col-md-2(data-drop="true" data-ng-model="garbage" data-jqyoui-options="{accept:'.btn-draggable:not([data-ng-model=garbage])'}" jqyoui-droppable="{multiple:true}")
   .caption
