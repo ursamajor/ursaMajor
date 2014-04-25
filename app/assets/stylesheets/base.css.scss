@@ -29,7 +29,8 @@ ul {
 #semesters { float: left; }
 
 a.fa.fa-times-circle { color: #990000; font-size: 0.9em; float: right; display: inline-block; cursor: pointer; cursor: hand; }
-a.fa.fa-times-circle:hover {opacity: 0.35; }
+a.fa.fa-cog { padding-right: 2px; opacity: 0.9; color: #404040; font-size: 0.9em; float: right; display: inline-block; cursor: pointer; cursor: hand; }
+a.fa.fa-times-circle:hover, a.fa.fa-cog:hover {opacity: 0.35; }
 
 #rules { margin-left: 0px; padding-left: 0px; float: right; width: 30%; height: 625px; overflow:auto }
 
