@@ -5,6 +5,9 @@
         %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", type: "button"} ×
         %h4#myModalLabel.modal-title {{course.name}} - {{course.title}}
       .modal-body
+        %h4 Course Description:
         {{course.description}}
+        %h4 Units: 
+        {{course.units}}
       .modal-footer
         %button.btn.btn-default{"data-dismiss" => "modal", type: "button"} Close
