@@ -9,7 +9,7 @@
 .thumbnail#backpack.col-md-1(data-drop="true" data-ng-model="backpack" data-jqyoui-options="{accept:'.btn-draggable:not([data-ng-model=backpack])'}" jqyoui-droppable="{multiple:true}")
   .caption
     .bin Backpack
-    .btn.btn-info.btn-draggable(data-ng-click="courseDisplay(course.id)" data-ng-repeat="course in backpack" data-ng-show="course.name" data-drag="{{course.drag}}" data-jqyoui-options="{revert: 'invalid'}" data-ng-model="backpack" jqyoui-draggable="{index: {{$index}},animate:true}")
+    .btn.btn-info.btn-draggable(data-ng-click="courseDisplay(course.id)" data-ng-repeat="course in backpack" data-ng-show="course.name" data-drag="{{course.drag}}" data-jqyoui-options="{revert: 'invalid'}" data-ng-model="backpack" jqyoui-draggable="{onStart: 'startDragging',index: {{$index}},animate:true}")
       {{course.name}}
 .thumbnail#garbage.col-md-2(data-drop="true" data-ng-model="garbage" data-jqyoui-options="{accept:'.btn-draggable:not([data-ng-model=garbage])'}" jqyoui-droppable="{multiple:true}")
   .caption

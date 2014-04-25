@@ -5,6 +5,10 @@
 $ld-grey: #8E8E8E;
 $main-font: 'Open Sans', sans-serif;
 
+body {
+  font-family: $main-font;
+}
+
 ul {
   list-style: none;
 }
@@ -13,7 +17,7 @@ ul {
 
 .plan-name { color: #404040 } 
 .course-input { width: 140px; font-size: 0.9em; }
-.query { width: 140px; }
+.query { width: 147px; }
 
 .thumbnail { height: 100% !important; width: 140px; }
 #semesters .thumbnail, .thumbnail#backpack { min-height: 200px }

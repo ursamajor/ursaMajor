@@ -1,7 +1,7 @@
 #Plans controller
 
 angular.module('littledipper.controllers').controller 'PlanDetailCtrl', ['$scope', '$http', '$filter', ($scope, $http, $filter) ->
-  $scope.semesters = ['backpack','fall1','fall2','fall3','fall4','spring1','spring2','spring3','spring4','summer1','summer2','summer3','summer4']
+  $scope.semesters = ['fall1','fall2','fall3','fall4','spring1','spring2','spring3','spring4','summer1','summer2','summer3','summer4']
   $scope.garbage = []
   $scope.plan = {}
 
@@ -95,11 +95,11 @@ angular.module('littledipper.controllers').controller 'PlanDetailCtrl', ['$scope
     
   $scope.updatePlan = ->
     $scope.plan["courses"] = []
+    $scope.plan["backpack"] = $scope["backpack"]
     for semester in $scope.semesters
       $scope.plan[semester] = $scope[semester]
-      unless semester is "backpack"
-        for course in $scope.plan[semester]
-          $scope.plan["courses"].push course
+      for course in $scope.plan[semester]
+        $scope.plan["courses"].push course
     $scope.planCourses = $scope.plan["courses"].concat $scope.backpack
     $scope.updateUnits()
 
@@ -123,7 +123,7 @@ angular.module('littledipper.controllers').controller 'PlanDetailCtrl', ['$scope
   $scope.getRules()
 
   $http.get("#{window.location.pathname}.json").success (data) ->
-    for semester in $scope.semesters
+    for semester in $scope.semesters.concat "backpack"
       $scope[semester] = $scope.findSemester data, semester
       $scope.$watchCollection semester, ->
         $scope.update()
