@@ -7,7 +7,7 @@
     = javascript_include_tag 'application'
     = csrf_meta_tags
 
-  %body
+  %body{:class => @landing_page? "landing_page" : ""}
     #main-menu.navbar
 
       .navbar-header

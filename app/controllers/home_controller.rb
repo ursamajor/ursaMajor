@@ -2,6 +2,7 @@ class HomeController < ApplicationController
   respond_to :html, :json
   
   def index
+    @landing_page = true 
   end
 
   def demo

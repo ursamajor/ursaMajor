@@ -51,3 +51,13 @@ td#result.red a.result { color: #990000; opacity: 0.7 }
 td#result.green a.result { color: green; opacity: 0.7 }
 
 a.result { cursor: pointer; cursor: hand; }
+
+
+/* Landing Page */
+body.landing_page { height: 100%; width: 100%; background: url('http://i.imgur.com/f3Ny4iy.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+   }
+/*.landing { background: url('http://upload.wikimedia.org/wikipedia/commons/7/7f/UCBerkeleyCampus.jpg'); }*/
