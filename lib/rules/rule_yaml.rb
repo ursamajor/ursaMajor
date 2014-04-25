@@ -15,6 +15,7 @@ class YamlRule < Rule
     @hidden = entry['hidden'] || false
     @num_courses = entry['num_courses'] || 1
     @num_units = entry['num_units'] || 0
+    @subrules = entry['subrules'] || []
     @rule, @args = Rule.parse_entry @entry
   end
 

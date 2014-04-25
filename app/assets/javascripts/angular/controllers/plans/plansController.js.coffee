@@ -79,6 +79,9 @@ angular.module('littledipper.controllers').controller 'PlanDetailCtrl', ['$scope
     $scope.updatePlan()
     for rule in $scope.rules
       rule["result"] = $scope.checkRule rule
+      if rule["result"]["pass"]
+        for subrule in rule["subrules"]
+          rule["result"]["pass"] = false if not $scope.checkRule(subrule)["pass"]
     
   $scope.updatePlan = ->
     $scope.plan["courses"] = []

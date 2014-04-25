@@ -1,5 +1,5 @@
 class Rule
-  attr_accessor :name, :description, :hidden, :num_courses, :num_units
+  attr_accessor :name, :description, :hidden, :num_courses, :num_units, :subrules
   alias_method :hidden?, :hidden
 
   @source = :raw
@@ -29,7 +29,7 @@ class Rule
       result["description"] = rule.description
       result["numCourses"] = rule.num_courses
       result["numUnits"] = rule.num_units
-      #result["subrules"]
+      result["subrules"] = rule.subrules
       result["url"] = Rails.application.routes.url_helpers.display_rules_path(:rule => rule.name)
       rules << result
     end
