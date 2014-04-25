@@ -41,10 +41,10 @@ angular.module('littledipper.controllers').controller 'PlanDetailCtrl', ['$scope
   # END CoursesController
   # later make one method for returning garbage to $scope.courses
   $scope.dragged = false
-  
-  $scope.courseDisplay = ->
+
+  $scope.courseDisplay= (course) ->
     if not $scope.dragged
-      alert("test")
+      $("#course_#{course}").modal('show')
     $scope.dragged = false
 
   $scope.startDragging = ->
