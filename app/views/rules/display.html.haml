@@ -7,6 +7,6 @@
       %tr
         %th Courses Fulfilling
     .body
-      - Course.tagged_with(@rule.name.to_s).each do |course|
+      - @courses.each do |course|
         %tr
           %th= link_to course.name, course_path(course)

@@ -6,6 +6,7 @@ class RulesController < ApplicationController
 
   def display
     @rule = Rule.get(params[:rule])
+    @courses = Course.tagged_with(@rule.name.to_s).order 'name ASC'
   end
 
   def search
