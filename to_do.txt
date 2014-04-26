@@ -39,6 +39,7 @@ appearance
 - for long course descriptions, continue/more button
 - loading bars/progress wheel
 - manual save courses
+- display rule description in modal
 
 chores
 

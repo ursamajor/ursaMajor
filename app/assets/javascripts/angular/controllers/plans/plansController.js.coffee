@@ -40,6 +40,10 @@ angular.module('littledipper.controllers').controller 'PlanDetailCtrl', ['$scope
 
   # END CoursesController
   # later make one method for returning garbage to $scope.courses
+  $scope.semesterSettings = (semester) ->
+    if confirm "Delete #{semester}?"
+      $scope.clearSemester semester
+
   $scope.dragged = false
 
   $scope.courseDisplay= (course) ->

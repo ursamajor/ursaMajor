@@ -1,2 +1,4 @@
 %div(data-ng-repeat="course in planCourses")
   = render 'plans/course_modal'
+%div(data-ng-repeat="course in courses | emptyIfBlank:query | filter:{name: query} | limitTo:4")
+  = render 'plans/course_modal'
