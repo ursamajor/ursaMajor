@@ -5,7 +5,7 @@ class UsersController < ApplicationController
     user = User.new user_params
     if user.save
       current_user = user
-      redirect_to home_demo_path
+      redirect_to '/demo'
     else
       redirect_to '/landing'
     end
