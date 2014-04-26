@@ -1,0 +1,41 @@
+/* Landing Page */
+body.landing_page { 
+  height: 100%; width: 100%; 
+  background: url('http://i.imgur.com/f3Ny4iy.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  label { 
+    display: inline-block;
+    float: left; 
+    clear: left; 
+    width: 260px;
+    margin: 0px; 
+  }
+
+  form { 
+    margin-left: auto; 
+    margin-right: auto; 
+    border: 1px solid rgb(217, 217, 217); 
+    padding: 0px; 
+    border-radius: 2px; 
+  }
+
+  input { 
+    font-size: 2.5em; 
+    border: 0px; 
+    padding: 0px; 
+    border-radius: 2px; 
+    display: inline-block; 
+    float: left; 
+    width: 250px; 
+    clear: left; 
+  }
+
+  .sign-up-submit {
+    float: left; 
+    border-radius: 2px; 
+  }
+}
