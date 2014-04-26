@@ -18,14 +18,13 @@ functionality
 - switch plans without reload
 - query partial matches across spaces
 - ninjacourses/courserank semesterly calendar
+- favorite schedule
 
 appearance
 
-- take out bootstrap
 - ability to move courses within a semester around
 - in results, adding a checkmark shifts everything a bit
-- course info display
-  - edit drag/drop library for click vs drag http://stackoverflow.com/questions/1771627/preventing-click-event-with-jquery-drag-and-drop
+- course info display for query courses
 - landing page
 - semesters smaller to fit on one page
 - handling semester box expansion
@@ -39,6 +38,8 @@ appearance
 - some course names cut off
 - for long course descriptions, continue/more button
 - loading bars/progress wheel
+- manual save courses
+- display rule description in modal
 
 chores
 
