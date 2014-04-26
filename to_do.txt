@@ -8,7 +8,6 @@ possible
 functionality
 - autopopulate plans from user information (major, years of semester)
 - ability to add more semesters
-- ability to clear board/semester
 - selecting which rules you want
 - UI for editing rules/yaml
 - handling more than one major
@@ -24,28 +23,25 @@ appearance
 
 - ability to move courses within a semester around
 - in results, adding a checkmark shifts everything a bit
-- course info display for query courses
 - landing page
 - semesters smaller to fit on one page
 - handling semester box expansion
 - sizing glitches drag and drop
 - make ui more responsive
 - semester settings?
-- maybe make clear semester opaque then less opaque when hover
   - flip card to confirm clear
   - option to save to backpack
 - alphabetically sort courses that satisfy a rule
-- some course names cut off
 - for long course descriptions, continue/more button
 - loading bars/progress wheel
-- manual save courses
+- manually save plan
 - display rule description in modal
 
 chores
 
 - going through completed rules, make sure they work
 - shorten names of rules
-- sort courses by name and number, course letter (after doing so, remove initial sort in js)
+- sort courses beforehand in rails
   - more efficient -> place garbage course in right place instead of sorting everything
 - separate courses and plans controller again (combined for sake of duplicate removal)
 - updating rule (can only use up to 2 from same dept for breadths)

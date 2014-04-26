@@ -8,6 +8,6 @@
 = render partial: 'plans/semester', locals: {semester: 'backpack', label: 'backpack', type: 'backpack'}
 .thumbnail#garbage.col-md-2(data-drop="true" data-ng-model="garbage" data-jqyoui-options="{accept:'.btn-draggable:not([data-ng-model=garbage])'}" jqyoui-droppable="{multiple:true}")
   .caption
-    .gridLabel Garbage
+    .gridLabel garbage
     .btn.btn-info.btn-draggable(data-ng-repeat="course in garbage" data-ng-show="course.name" data-drag="{{course.drag}}" data-jqyoui-options="{revert: 'invalid'}" data-ng-model="garbage" jqyoui-draggable="{index: {{$index}},animate:true}")
       {{course.name}}
