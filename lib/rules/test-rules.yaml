@@ -3588,12 +3588,12 @@ rules:
         description: "Humanities and Social Sciences (14 units)"
         rule: units
             args:
-            min: 14
-            rule: OR
-            args:
-                - rule: university_ac
-                - rule: cnr_breadth_arts_history_philosophy
-                - rule: cnr_breadth_social_international
+                min: 14
+                rule: OR
+                args:
+                    - rule: university_ac
+                    - rule: cnr_breadth_arts_history_philosophy
+                    - rule: cnr_breadth_social_international
 
     phys_math:
         description: "Physical Sciences and Math (26-28 units)"
