@@ -1,52 +1,59 @@
-possible
+Next Tasks
+- selecting which rules you want
+- switch plans without reload
+- able to edit plan names, able to delete plans
+- editing of course info in ui
+- delete courses
+- landing page
+- alphabetically sort courses that satisfy a rule
+- for long course descriptions, continue/more button
+- show units in a semester
+- display rule description in modal
+- sort courses beforehand in rails
+  - more efficient -> place garbage course in right place instead of sorting everything
 
-- popular rules
-- prerequisites
-- user information (GPA, transcripts)
-- when a course is offered
+Brainstorm
 
-functionality
+- checking multipart rules(ones that can't be satisfied just seeing numcourses/numunits, ex. a major)
+  - rule passes if meets num_courses, num_units + all sub_rules pass
+
+- remove course if used for rule and can only be used once
+  - all different combinations to decide which one to remove/use for a certain rule
+    - utility function of numRulesSatisfied, proportion of courses left to fulfill other requirements
+  - flag as an exclusive rule, which removes course from plan when checking rest
+
+Functionality
+
 - autopopulate plans from user information (major, years of semester)
 - ability to add more semesters
-- selecting which rules you want
 - UI for editing rules/yaml
 - handling more than one major
 - able to flag a course under a certain rule
 - handling variable unit courses
-- able to edit plan names, able to delete plans
-- switch plans without reload
 - query partial matches across spaces
-- ninjacourses/courserank semesterly calendar
-- favorite schedule
-- editing of course info in ui
-- delete courses
 
-appearance
+Appearance
 
 - ability to move courses within a semester around
-- landing page
 - handling semester box expansion
 - sizing glitches drag and drop
 - make ui more responsive
 - semester settings?
   - flip card to confirm clear
+  - favorite schedule
   - option to save to backpack
-- alphabetically sort courses that satisfy a rule
-- for long course descriptions, continue/more button
 - loading bars/progress wheel
 - manually save plan
-- display rule description in modal
 
-chores
+Chores
 
 - going through completed rules, make sure they work
-- sort courses beforehand in rails
-  - more efficient -> place garbage course in right place instead of sorting everything
 - separate courses and plans controller again (combined for sake of duplicate removal)
 - updating rule (can only use up to 2 from same dept for breadths)
 - labeling pnp courses
 
-minor
+Optional Tasks
+- alphabetically sort course when swapping between query list and ones already in plan
 - in results, adding a checkmark shifts everything a bit
 - shorten names of rules
 - more consistent json object attribute accessing [] vs .
@@ -62,17 +69,18 @@ minor
     rule
       yaml files
 
-brainstorm
+Possible Features
 
-- checking multipart rules(ones that can't be satisfied just seeing numcourses/numunits, ex. a major)
-  - rule passes if meets num_courses, num_units + all sub_rules pass
+- popular rules
+- prerequisites
+- user information (GPA, transcripts)
+- when a course is offered
+- ninjacourses/courserank semesterly calendar
+- allow input of grades, display gpa overall/per semester
+- share plan
+- sample major plan
 
-- remove course if used for rule and can only be used once
-  - all different combinations to decide which one to remove/use for a certain rule
-    - utility function of numRulesSatisfied, proportion of courses left to fulfill other requirements
-  - flag as an exclusive rule, which removes course from plan when checking rest
-
-errors
+Errors
 
 - sometimes course modal doesn't pop up when you load plan initially
 - sometimes doesn't save if exit too quickly
