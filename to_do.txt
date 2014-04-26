@@ -18,6 +18,7 @@ functionality
 - query partial matches across spaces
 - ninjacourses/courserank semesterly calendar
 - favorite schedule
+- editing of course info in ui
 
 appearance
 
