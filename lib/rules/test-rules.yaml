@@ -3587,13 +3587,13 @@ rules:
     hss:
         description: "Humanities and Social Sciences (14 units)"
         rule: units
+        args:
+            min: 14
+            rule: OR
             args:
-                min: 14
-                rule: OR
-                args:
-                    - rule: university_ac
-                    - rule: cnr_breadth_arts_history_philosophy
-                    - rule: cnr_breadth_social_international
+                - rule: university_ac
+                - rule: cnr_breadth_arts_history_philosophy
+                - rule: cnr_breadth_social_international
 
     phys_math:
         description: "Physical Sciences and Math (26-28 units)"
@@ -3616,7 +3616,7 @@ rules:
             - rule: math3
     math1:
         hidden: true
-        rule: course_count
+        rule: count_courses
         args:
             min: 3
             rule: AND
@@ -3626,7 +3626,7 @@ rules:
                 - course: STAT.2
     math2:
         hidden: true
-        rule: course_count
+        rule: count_courses
         args:
             min: 2
             rule: AND
@@ -3635,7 +3635,7 @@ rules:
                 - course: STAT.2
     math3:
         hidden: true
-        rule: course_count
+        rule: count_courses
         args:
             min: 2
             rule: AND
@@ -3686,7 +3686,7 @@ rules:
             - rule: mtu3
     mtu1:
         hidden: true
-        rule: course_count
+        rule: count_courses
         args:
             rule: OR
             args:
@@ -3694,7 +3694,7 @@ rules:
                 - course: INTEGBI.141
     mtu2:
         hidden: true
-        rule: course_count
+        rule: count_courses
         args:
             rule: OR
             args:
@@ -3703,9 +3703,10 @@ rules:
                 - course: PB HLTH.162A
     mtu3:
         hidden: true
-        rule: course_count
+        rule: count_courses
         args:
             rule: OR
+            args:
                 - course: PLANTBI.C112L
                 - course: MCELLBI.C112L
                 - course: PB HLTH.162L
