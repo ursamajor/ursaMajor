@@ -5,12 +5,12 @@
   = form_tag '/users', method: :post do
 
     %div= label :user, :email
-    %br= email_field :user, :email, autofocus: true
+    %div= email_field :user, :email, autofocus: true
 
     %div= label :user, :password 
-    %br= password_field :user, :password, autocomplete: "off"
+    %div= password_field :user, :password, autocomplete: "off"
 
     %div= label :user, :password_confirmation
-    %br= password_field :user, :password_confirmation, autocomplete: "off"
+    %div= password_field :user, :password_confirmation, autocomplete: "off"
 
-    %div= submit_tag "Sign up"
+    %div{:class => "sign-up-submit"}>= submit_tag "Sign up"
