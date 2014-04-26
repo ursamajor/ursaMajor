@@ -2,15 +2,12 @@
   %h1 Landing Page
   %p Landing Page Text
   %button
-  = form_tag '/users', method: :post do
+  = form_tag '/landing', method: :post do
 
-    %div= label :user, :email
-    %br= email_field :user, :email, autofocus: true
+    %br= email_field :user, :email, autofocus: true, placeholder: "Email"
 
-    %div= label :user, :password 
-    %br= password_field :user, :password, autocomplete: "off"
+    %br= password_field :user, :password, autocomplete: "off", placeholder: "Password"
 
-    %div= label :user, :password_confirmation
-    %br= password_field :user, :password_confirmation, autocomplete: "off"
+    %br= password_field :user, :password_confirmation, autocomplete: "off", placeholder: "Password Confirmation"
 
     %div= submit_tag "Sign up"

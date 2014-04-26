@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   put '/demo/save' => 'home#demo_save'
   get '/demo/check' => 'home#demo_check'
   get '/landing' => 'home#index'
+  post '/landing' => 'users#landing_create'
 
   devise_for :users
   resources :courses do
