@@ -20,15 +20,15 @@ ul {
 .query { width: 147px; }
 
 .thumbnail { height: 100% !important; width: 140px; }
-#semesters .thumbnail, .thumbnail#backpack { min-height: 200px }
+#semesters .thumbnail, .thumbnail.backpack { min-height: 200px }
 .profile { opacity: 0.9; border-color: #B1B3B1; border-style: solid; }
-#backpack, #garbage, { border-color: grey; border-style: dashed; background: rgba(142, 142, 142, 0.05); }
-#garbage { min-height: 100px; }
+.backpack, .garbage, { border-color: grey; border-style: dashed; background: rgba(142, 142, 142, 0.05); }
+.garbage { min-height: 100px; }
 
 .btn-droppable { width: 100%; height: 30px; padding-left: 4px; }
 .btn-draggable { width: 100%; margin-top: 1px; }
 
-.bin, .year { color: grey; opacity: 0.5; font-size: 1.3em; display: inline-block; }
+.gridLabel { color: grey; opacity: 0.5; font-size: 1.3em; display: inline-block; }
 
 #semesters { float: left; }
 

@@ -3,27 +3,27 @@
     .row 
       .col-md-1
         .semester-name#fall Fall
-      = render partial: "plans/semester", locals: {semester: 'fall1', year: '2013'}
-      = render partial: "plans/semester", locals: {semester: 'fall2', year: '2014'}
-      = render partial: "plans/semester", locals: {semester: 'fall3', year: '2015'}
-      = render partial: "plans/semester", locals: {semester: 'fall4', year: '2016'}
+      = render partial: "plans/semester", locals: {semester: 'fall1', label: '2013', type: 'semester'}
+      = render partial: "plans/semester", locals: {semester: 'fall2', label: '2014', type: 'semester'}
+      = render partial: "plans/semester", locals: {semester: 'fall3', label: '2015', type: 'semester'}
+      = render partial: "plans/semester", locals: {semester: 'fall4', label: '2016', type: 'semester'}
     
     .row
       .col-md-1
         %br
         %br
         .semester-name Spring
-      = render partial: "plans/semester", locals: {semester: 'spring1', year: '2014'}
-      = render partial: "plans/semester", locals: {semester: 'spring2', year: '2015'}
-      = render partial: "plans/semester", locals: {semester: 'spring3', year: '2016'}
-      = render partial: "plans/semester", locals: {semester: 'spring4', year: '2017'}
+      = render partial: "plans/semester", locals: {semester: 'spring1', label: '2014', type: 'semester'}
+      = render partial: "plans/semester", locals: {semester: 'spring2', label: '2015', type: 'semester'}
+      = render partial: "plans/semester", locals: {semester: 'spring3', label: '2016', type: 'semester'}
+      = render partial: "plans/semester", locals: {semester: 'spring4', label: '2017', type: 'semester'}
     .row
       .col-md-1
         %br
         %br
         %br
         .semester-name Summer
-      = render partial: "plans/semester", locals: {semester: 'summer1', year: '2014'}
-      = render partial: "plans/semester", locals: {semester: 'summer2', year: '2015'}
-      = render partial: "plans/semester", locals: {semester: 'summer3', year: '2016'}
-      = render partial: "plans/semester", locals: {semester: 'summer4', year: '2017'}
+      = render partial: "plans/semester", locals: {semester: 'summer1', label: '2014', type: 'semester'}
+      = render partial: "plans/semester", locals: {semester: 'summer2', label: '2015', type: 'semester'}
+      = render partial: "plans/semester", locals: {semester: 'summer3', label: '2016', type: 'semester'}
+      = render partial: "plans/semester", locals: {semester: 'summer4', label: '2017', type: 'semester'}
