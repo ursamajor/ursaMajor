@@ -19,13 +19,12 @@ functionality
 - ninjacourses/courserank semesterly calendar
 - favorite schedule
 - editing of course info in ui
+- delete courses
 
 appearance
 
 - ability to move courses within a semester around
-- in results, adding a checkmark shifts everything a bit
 - landing page
-- semesters smaller to fit on one page
 - handling semester box expansion
 - sizing glitches drag and drop
 - make ui more responsive
@@ -41,29 +40,27 @@ appearance
 chores
 
 - going through completed rules, make sure they work
-- shorten names of rules
 - sort courses beforehand in rails
   - more efficient -> place garbage course in right place instead of sorting everything
 - separate courses and plans controller again (combined for sake of duplicate removal)
 - updating rule (can only use up to 2 from same dept for breadths)
 - labeling pnp courses
-- have demo use max amount of things same as regular plans
+
+minor
+- in results, adding a checkmark shifts everything a bit
+- shorten names of rules
 - more consistent json object attribute accessing [] vs .
-
-structure
-
-move all requires 
-
-config
-  initializers
-    ursarule.rb
-
-model
-  rule
-    rule*.rb
-lib
-  rule
-    yaml files
+-structure
+  - move all requires 
+  config
+    initializers
+      ursarule.rb
+  model
+    rule
+      rule*.rb
+  lib
+    rule
+      yaml files
 
 brainstorm
 
@@ -78,6 +75,7 @@ brainstorm
 errors
 
 - sometimes course modal doesn't pop up when you load plan initially
+- sometimes doesn't save if exit too quickly
 
 error in course update, course = AGR CHM.299: 404 Not Found
 error in course update, course = BUDDSTD.98: 404 Not Found
