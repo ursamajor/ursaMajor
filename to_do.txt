@@ -11,8 +11,8 @@ Next Tasks
   - more efficient -> place garbage course in right place instead of sorting everything
 
 Brainstorm
-- checking multipart rules(ones that can't be satisfied just seeing numcourses/numunits, ex. a major)
-  - rule passes if meets num_courses, num_units + all sub_rules pass
+- front-end rule parser, checking multipart rules(ones that can't be satisfied just seeing numcourses/numunits, ex. a major)
+  - rule passes if meets num_courses, num_units + all sub_rules pass (AND)/one subrule passes (OR)
 
 - remove course if used for rule and can only be used once
   - all different combinations to decide which one to remove/use for a certain rule
@@ -78,6 +78,8 @@ Possible Features
 
 Errors
 - sometimes course modal doesn't pop up when you load plan initially
+  - replicate error by switching page from plan, then returning to plan using browser back
+  - course modal not rendered
 - sometimes doesn't save if exit too quickly
 
 error in course update, course = AGR CHM.299: 404 Not Found

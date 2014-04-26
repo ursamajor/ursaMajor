@@ -64,8 +64,7 @@ Rule.add(UnitsRule.new :units)
 
 class NumCoursesRule < Rule
   def check(plan, entry)
-    fail ArgumentError unless entry['min'] || entry['max']
-    min = entry['min'] || 0
+    min = entry['min'] || 1
     max = entry['max'] || Float::INFINITY
     rule, args = Rule.parse_entry entry
 
