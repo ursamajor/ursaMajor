@@ -1,15 +1,16 @@
 .landing
-  %h1 new product
-  %p lorem ipsum do
+  %h1 Landing Page
+  %p Landing Page Text
   %button
-  = form_tag new_user_registration_path, :method => :post, :id => 'signup_form' do |f|
-    = label_tag :email
-    = email_field_tag :email
+  = form_tag '/users', method: :post do
 
-    = label_tag :password
-    = password_field_tag :password
+    %div= label :user, :email
+    %br= email_field :user, :email, autofocus: true
 
-    = label_tag :password_confirmation
-    = password_field_tag :password_confirmation
+    %div= label :user, :password 
+    %br= password_field :user, :password, autocomplete: "off"
 
-    = submit_tag "Sign up"
+    %div= label :user, :password_confirmation
+    %br= password_field :user, :password_confirmation, autocomplete: "off"
+
+    %div= submit_tag "Sign up"

@@ -77,6 +77,8 @@ brainstorm
 
 errors
 
+- sometimes course modal doesn't pop up when you load plan initially
+
 error in course update, course = AGR CHM.299: 404 Not Found
 error in course update, course = BUDDSTD.98: 404 Not Found
 error in course update, course = BUDDSTD.99: 404 Not Found

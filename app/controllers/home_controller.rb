@@ -3,6 +3,7 @@ class HomeController < ApplicationController
   
   def index
     @landing_page = true 
+    @user = User.new
   end
 
   def demo
