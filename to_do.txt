@@ -32,6 +32,7 @@ Functionality
 - updating rule (can only use up to 2 from same dept for breadths)
 
 Appearance
+- handling display of plan names that are long
 - ability to move courses within a semester around
 - handling semester box expansion
 - sizing glitches drag and drop

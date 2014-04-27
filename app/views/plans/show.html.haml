@@ -1,10 +1,10 @@
 %div(data-ng-controller="PlanDetailCtrl")
   .row#shift
     .left-column-container.column.col-md-2.plan-name-text
-      - if signed_in?
-        %h2.plan-name= best_in_place @plan, :name, type: :input
-      - else
+      - if @demo
         %h2.plan-name= @plan.name
+      - else
+        %h2.plan-name= best_in_place @plan, :name, type: :input
       = render 'plans/leftColumn'
     .right-column-container.column.container.col-md-10
       %br
