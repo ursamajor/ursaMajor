@@ -1,7 +1,7 @@
 class PlansController < ApplicationController
   respond_to :html, :json
-  before_filter :signed_in
-  before_filter :is_owner, :except => [:index, :create]
+  before_action :signed_in
+  before_action :is_owner, :except => [:index, :create]
   
   def index
     @plans = current_user.plans

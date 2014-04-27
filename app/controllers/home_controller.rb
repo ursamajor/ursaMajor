@@ -3,7 +3,7 @@ class HomeController < ApplicationController
   
   def index
     if signed_in?
-      redirect_to '/demo' and return
+      redirect_to demo_path and return
     else
       @landing_page = true 
       @user = User.new

@@ -5,7 +5,7 @@ class UsersController < ApplicationController
     user = User.new user_params
     if user.save
       current_user = user
-      redirect_to '/demo', notice: "Welcome! You have signed up successfully."
+      redirect_to demo_path, notice: "Welcome! You have signed up successfully."
     else
       flash[:warning] = "Invalid email or password combination"
       redirect_to '/landing'
