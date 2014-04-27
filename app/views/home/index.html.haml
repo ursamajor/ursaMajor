@@ -1,8 +1,15 @@
-= form_tag '/landing', method: :post do
-  %div= email_field :user, :email, autofocus: true, placeholder: "Email", :class => "input-field-top"
+.header
+  %h3 littleDipper
+  %h2 The schedule explorer and planner that stays with you for longer than a semester. 
+  = form_tag '/landing', method: :post do
+    %div= email_field :user, :email, autofocus: true, placeholder: "Email", :class => "input-field-top"
 
-  %div= password_field :user, :password, autocomplete: "off", placeholder: "Password", :class => "input-field-middle"
+    %div= password_field :user, :password, autocomplete: "off", placeholder: "Password", :class => "input-field-middle"
 
-  %div= password_field :user, :password_confirmation, autocomplete: "off", placeholder: "Password Confirmation", :class => "input-field-bottom"
+    %div= password_field :user, :password_confirmation, autocomplete: "off", placeholder: "Password Confirmation", :class => "input-field-bottom"
 
-  %div= submit_tag "Sign up", :class => "sign-up-submit"
+    %div= submit_tag "Sign up", :class => "sign-up-submit"
+  %hr
+  Or try a 
+  = link_to demo_path do
+    Demo
