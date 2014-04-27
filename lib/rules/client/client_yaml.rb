@@ -1,5 +1,5 @@
-require "#{Rails.root}/lib/rules/rule"
-require "#{Rails.root}/lib/rules/result"
+require "#{Rails.root}/lib/rules/server/rule"
+require "#{Rails.root}/lib/rules/server/result"
 
 class YamlRule < Rule
   @source = :yaml

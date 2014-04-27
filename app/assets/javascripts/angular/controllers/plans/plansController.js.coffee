@@ -85,9 +85,9 @@ angular.module('littledipper.controllers').controller 'PlanDetailCtrl', ['$scope
         numCourses += 1
         numUnits += course["units"]
     pass = numUnits >= rule.numUnits and numCourses >= rule.numCourses
-    # if pass
-    #   for subrule in rule["subrules"]
-    #     pass = false if not $scope.checkRule(subrule)["pass"]
+    if pass
+      for subrule in rule["subrules"]
+        pass = false if not $scope.checkRule(subrule)["pass"]
     {
       "pass": pass
       "courses": {id: course["id"], name: course["name"]} for course in fulfillingSet

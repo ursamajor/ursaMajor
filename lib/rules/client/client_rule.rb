@@ -1,15 +1,51 @@
-require "#{Rails.root}/lib/rules/rule"
+require "#{Rails.root}/lib/rules/server/rule"
 
 class ClientRule < Rule
-  attr_accessor :num_courses, :num_units, :operator, :subrules
+  # attr_accessor :name, :description, :hidden, :num_courses, :num_units, :operator, :subrules
+    attr_accessor :num_courses, :num_units, :operator, :subrules
+  # alias_method :hidden?, :hidden
 
   @source = :client
   @rules = {}
 
   class << self
-    attr_accessor :rules
+    attr_accessor :source, :rules
     alias_method :all, :rules
+    def source
+      @source || superclass.source
+    end
   end
+
+  # def initialize(name = nil, description = nil, hidden = true)
+  #   @name = name
+  #   @description = description
+  #   @hidden = hidden
+  #   fail 'abstract' if abstract?
+  # end
+
+  # def abstract?
+  #   self.class == Rule
+  # end
+
+  # def self.check_type(desc, obj, expected_class)
+  #   unless obj.is_a? expected_class
+  #     fail TypeError,
+  #       "#{desc}: expected #{expected_class} but got #{obj.class} #{obj.inspect}"
+  #   end
+  # end
+
+  # def self.get(name)
+  #   name = name.downcase.to_sym if name.is_a? String
+  #   check_type 'name', name, Symbol
+  #   fail "rule #{name.inspect} does not exist" unless @rules.include? name
+  #   @rules[name]
+  # end
+
+  # def self.add(rule)
+  #   check_type 'rule', rule, Rule
+  #   check_type 'rule.name', rule.name, Symbol
+  #   @rules[rule.name] = rule
+  # end
 
   def initialize(name, entry)
     @name = name.to_sym
@@ -78,7 +114,7 @@ class ClientRule < Rule
     else
       fail ArgumentError, "invalid rule entry: #{entry}"
     end
-    [ClientRule.get(name), args]
+    # [ClientRule.get(name), args]
   end
 
   def self.parse_entries(entries)
