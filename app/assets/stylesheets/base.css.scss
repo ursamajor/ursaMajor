@@ -26,3 +26,14 @@ a:hover {
   opacity: 0.8; 
 }
 input { border-style: 1px solid; width: 80%; }
+
+/* Show more course description. */
+.course-description {
+  line-height: 16px;
+  height: 32px;
+  overflow: hidden;
+}
+.show {
+  overflow: visible;
+  height: auto;
+}

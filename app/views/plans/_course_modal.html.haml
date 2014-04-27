@@ -7,7 +7,9 @@
       .modal-body
         %h5
           %b Description:
-        {{course.description || "Sorry, something's missing!"}}
+        .course-description(ng-class="{show: show}")
+          {{course.description || "Sorry, something's missing!"}}
+        %a(ng-click="show = true") Show more
         %br 
         %br
         %b Units: 
