@@ -32,7 +32,7 @@ Rails.application.routes.draw do
   get '/tag', to: 'tags#tag'
   get '/tag_all', to: 'tags#tag_all'  
 
-  get '/' => redirect('/demo')
-  root :to => "home#demo"
+  get '/' => redirect('/landing')
+  root :to => "home#index"
 
 end
