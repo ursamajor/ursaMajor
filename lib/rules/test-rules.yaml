@@ -3595,25 +3595,6 @@ rules:
                 - rule: cnr_breadth_arts_history_philosophy
                 - rule: cnr_breadth_social_international
 
-    phys_math:
-        description: "Physical Sciences and Math (26-28 units)"
-        rule: AND
-        args:
-            - rule: math
-            - course: CHEM.1A
-            - course: CHEM.1AL
-            - course: CHEM.3A
-            - course: CHEM.3AL
-            - course: CHEM.3B
-            - course: CHEM.3BL
-            - course: PHYSICS.8A
-    math:
-        hidden: true
-        rule: OR
-        args:
-            - rule: math1
-            - rule: math2
-            - rule: math3
     math1:
         hidden: true
         rule: count_courses
@@ -3642,6 +3623,33 @@ rules:
             args:
                 - course: MATH.10A
                 - course: MATH.10B
+    math:
+        hidden: true
+        rule: OR
+        args:
+            - rule: math1
+            - rule: math2
+            - rule: math3
+    physical:
+        hidden: true
+        rule: count_courses
+        args:
+            min: 7
+            rule: AND
+            args:
+                - course: CHEM.1A
+                - course: CHEM.1AL
+                - course: CHEM.3A
+                - course: CHEM.3AL
+                - course: CHEM.3B
+                - course: CHEM.3BL
+                - course: PHYSICS.8A
+    phys_math:
+        description: "Physical Sciences and Math (26-28 units)"
+        rule: AND
+        args:
+            - rule: math
+            - rule: physical
 
     bio_nr:
         description: "Biological and Natural Resource Science (11 units)"
@@ -3672,19 +3680,19 @@ rules:
                         - dept: PLANTBI
                     - upperdiv
 
-    molecular_toxicology_upper:
-        description: "Upper Division Molecular Toxicology Requirement"
-        rule: AND
-        args:
-            - course: MCELLBI.102
-            - course: NUSCTX.110
-            - course: NUSCTX.121
-            - course: NUSCTX.171
-            - course: NUSCTX.193
-            - rule: mtu1
-            - rule: mtu2
-            - rule: mtu3
     mtu1:
+        hidden: true
+        rule: count_courses
+        args:
+            min: 5
+            rule: AND
+            args:
+                - course: MCELLBI.102
+                - course: NUSCTX.110
+                - course: NUSCTX.121
+                - course: NUSCTX.171
+                - course: NUSCTX.193
+    mtu2:
         hidden: true
         rule: count_courses
         args:
@@ -3692,7 +3700,7 @@ rules:
             args:
                 - course: MCELLBI.104
                 - course: INTEGBI.141
-    mtu2:
+    mtu3:
         hidden: true
         rule: count_courses
         args:
@@ -3701,7 +3709,7 @@ rules:
                 - course: PLANTBI.C112
                 - course: MCELLBI.C112
                 - course: PB HLTH.162A
-    mtu3:
+    mtu4:
         hidden: true
         rule: count_courses
         args:
@@ -3710,6 +3718,14 @@ rules:
                 - course: PLANTBI.C112L
                 - course: MCELLBI.C112L
                 - course: PB HLTH.162L
+    molecular_toxicology_upper:
+        description: "Upper Division Molecular Toxicology Requirement"
+        rule: AND
+        args:
+            - rule: mtu1
+            - rule: mtu2
+            - rule: mtu3
+            - rule: mtu4
 
     molecular_toxicology_upper_units:
         description: "Upper Division Molecular Toxicology Unit Requirement (36 units)"
