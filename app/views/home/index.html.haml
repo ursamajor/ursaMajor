@@ -10,6 +10,8 @@
 
     %div= submit_tag "Sign up", :class => "sign-up-submit"
   %hr
-  Or try a 
+  = link_to new_user_session_path do
+    Sign in
+  or try a 
   = link_to demo_path do
-    Demo
+    demo
