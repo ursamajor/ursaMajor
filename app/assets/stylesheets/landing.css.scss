@@ -1,7 +1,7 @@
 /* Landing Page */
 body.landing_page { 
   height: 100%; width: 100%; 
-  background: url('https://scontent-b.xx.fbcdn.net/hphotos-frc3/t1.0-9/10256514_440907309377444_451960275737144915_n.jpg') no-repeat center center fixed; 
+  background: url('http://i.imgur.com/f3Ny4iy.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -25,6 +25,7 @@ body.landing_page {
     width: 260px !important;
     margin-left: auto;
     margin-right: auto;
+    color: black;
 
   }
   .input-field-middle {
@@ -70,7 +71,7 @@ body.landing_page {
     border-style: 1px solid;
     padding-left: 5px;
   }
-  .header { height: 400px; margin-left: auto; margin-right: auto; width: 30%; text-align: center; font-family: 'Open Sans', sans-serif; color: white; background-color: rgba(142,142,142,0.9); border-style: 1px solid; }
+  .header { height: 400px; margin-left: auto; margin-right: auto; width: 30%; text-align: center; font-family: 'Open Sans', sans-serif; color: white; background-color: rgba(142,142,142,0.82); border-style: 1px solid; }
   h3 { line-height: 46px;font-size: 43px; padding-top: 10px; color: white; text-align: center; }
   h2 { padding-bottom: 20px; padding-right: 7px; padding-left: 7px; text-align: center; color: white; font-size: 14px; line-height: 13px; }
 }
