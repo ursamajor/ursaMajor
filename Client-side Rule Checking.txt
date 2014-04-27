@@ -59,7 +59,8 @@ Client-side Rule Checking
         - if the main rule is a same_course, course_regex, course, OR, etc. where it can be satisfied by a single course, 
         then it should be fine as is (it's the equivalent of having num_courses = 1)
         - if it is an AND, then it will most likely need to be rewritten as a count_courses or units
-          - if the rule can be satisfied by a variable number of units/courses (see phys_math in moltox in the original test-rules.yaml), then break it down into the largest blocks you can that are count_courses/units subrules (see below)
+          - if the rule can be satisfied by a variable number of units/courses (see phys_math in moltox in the original 
+          test-rules.yaml), then break it down into the largest blocks you can that are count_courses/units subrules (see below)
 
       example:
         ORIGINAL
@@ -106,3 +107,29 @@ Client-side Rule Checking
             - course: CHEM.3BL
             - course: PHYSICS.8A
 
+        ideally, you would break it down further
+
+        phys_math:
+          description: "Physical Sciences and Math (26-28 units)"
+          rule: AND
+          args:
+            - rule: math
+            - course: CHEM.1A
+            - course: CHEM.1AL
+            - course: CHEM.3A
+            - course: CHEM.3AL
+            - course: CHEM.3B
+            - course: CHEM.3BL
+            - course: PHYSICS.8A
+
+        and further
+
+        phys_math:
+          description: "Physical Sciences and Math (26-28 units)"
+          rule: AND
+          args:
+            - rule: math
+            - rule: physical
+
+        since that means the front-end would only have to check two tags (broken down 3 times) as opposed to
+        8 (broken down twice), or 10 (broken down once)
