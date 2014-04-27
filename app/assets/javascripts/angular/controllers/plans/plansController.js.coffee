@@ -1,6 +1,6 @@
 #Plans controller
 
-angular.module('littledipper.controllers').controller 'PlanDetailCtrl', ['$scope', '$http', '$filter', ($scope, $http, $filter) ->
+angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', '$http', '$filter', ($scope, $http, $filter) ->
   $scope.semesters = ['fall1','fall2','fall3','fall4','spring1','spring2','spring3','spring4','summer1','summer2','summer3','summer4']
   $scope.garbage = []
   $scope.plan = {}

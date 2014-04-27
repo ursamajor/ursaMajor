@@ -1,6 +1,6 @@
 #Courses controller
 
-angular.module('littledipper.controllers').controller 'CourseListCtrl', ['$scope', '$http', '$filter', ($scope, $http, $filter) ->
+angular.module('ursamajor.controllers').controller 'CourseListCtrl', ['$scope', '$http', '$filter', ($scope, $http, $filter) ->
   
   $scope.sortCourses = (a, b) -> switch
       when a.dept > b.dept then 1

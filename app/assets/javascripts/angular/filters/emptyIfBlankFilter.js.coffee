@@ -1,6 +1,6 @@
 #return empty if query is blank
 
-angular.module('littledipper.filters').filter 'emptyIfBlank', ['$filter', ($filter) ->
+angular.module('ursamajor.filters').filter 'emptyIfBlank', ['$filter', ($filter) ->
   (object, query) ->
     if not query then {} else object
 ]

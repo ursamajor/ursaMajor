@@ -1,15 +1,15 @@
 #load submodules
 
-angular.module 'littledipper.controllers', []
-angular.module 'littledipper.filters', []
+angular.module 'ursamajor.controllers', []
+angular.module 'ursamajor.filters', []
 
-#littleDipper Module
+#ursaMajor Module
 
-littledipper = angular.module 'littledipper', [
+ursamajor = angular.module 'ursamajor', [
   'ngDragDrop'
   'ngRoute'
   'infinite-scroll'
-  'littledipper.controllers'
-  'littledipper.filters'
+  'ursamajor.controllers'
+  'ursamajor.filters'
 ]
 
