@@ -1,3 +1,6 @@
+
+
+
 Next Tasks
 - selecting which rules you want
 - switch plans without reload
@@ -13,6 +16,9 @@ Next Tasks
 Brainstorm
 - front-end rule parser, checking multipart rules(ones that can't be satisfied just seeing numcourses/numunits, ex. a major)
   - rule passes if meets num_courses, num_units + all sub_rules pass (AND)/one subrule passes (OR)
+  - when hitting a rule:, treat as subrule to current rule
+  - when hitting a course:, treat as subrule, but instead of checking tagged_with, check course name, means have to keep course uid
+  - when hitting an or, treat as a subrule bool_op:"OR" whose subrules are the things in the or
 
 - remove course if used for rule and can only be used once
   - all different combinations to decide which one to remove/use for a certain rule
