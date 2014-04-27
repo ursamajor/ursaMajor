@@ -1,4 +1,8 @@
 /* Landing Page */
+@font-face {
+  font-family: 'Pacifico';
+  src: font-url('Pacifico.ttf') format('truetype');
+}
 body.landing_page { 
   height: 100%; width: 100%; 
   background: url('http://i.imgur.com/f3Ny4iy.jpg') no-repeat center center fixed; 
@@ -72,6 +76,8 @@ body.landing_page {
     padding-left: 5px;
   }
   .header { height: 400px; margin-left: auto; margin-right: auto; width: 30%; text-align: center; font-family: 'Open Sans', sans-serif; color: white; background-color: rgba(142,142,142,0.82); border-style: 1px solid; }
-  h3 { line-height: 46px;font-size: 43px; padding-top: 10px; color: white; text-align: center; }
+  h3 { font-family: 'Pacifico'; line-height: 46px;font-size: 43px; padding-top: 10px; color: white; text-align: center; }
   h2 { padding-bottom: 20px; padding-right: 7px; padding-left: 7px; text-align: center; color: white; font-size: 14px; line-height: 13px; }
+  
+  
 }
