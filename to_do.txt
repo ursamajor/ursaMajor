@@ -1,6 +1,3 @@
-
-
-
 Next Tasks
 - selecting which rules you want
 - switch plans without reload
