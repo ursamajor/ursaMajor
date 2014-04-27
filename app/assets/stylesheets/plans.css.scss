@@ -6,6 +6,8 @@
   color: #404040;
 }
 
+.plan-name input { border-style: 1px solid; width: 95%; }
+
 .course-input { 
   width: 140px; 
   font-size: 0.9em; 
@@ -13,6 +15,17 @@
 
 .query { 
   width: 147px; 
+}
+
+/* Show more course description. */
+.course-description {
+  line-height: 16px;
+  height: 32px;
+  overflow: hidden;
+}
+.show {
+  overflow: visible;
+  height: auto;
 }
 
 .thumbnail { 

@@ -3,7 +3,7 @@ class HomeController < ApplicationController
   
   def index
     if signed_in?
-      redirect_to '/demo' and return
+      redirect_to demo_path and return
     else
       @landing_page = true 
       @user = User.new
@@ -13,6 +13,7 @@ class HomeController < ApplicationController
   def demo
     @plan = session[:demo_id] ? Plan.find_by(id: session[:demo_id]) : Plan.create_demo 
     @plan ||= Plan.create_demo 
+    @demo = true
     session[:demo_id] = @plan.id
     respond_to do |format|
       format.html { render 'plans/show.html' }
