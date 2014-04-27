@@ -84,8 +84,12 @@ angular.module('littledipper.controllers').controller 'PlanDetailCtrl', ['$scope
         fulfillingSet.push course 
         numCourses += 1
         numUnits += course["units"]
+    pass = numUnits >= rule.numUnits and numCourses >= rule.numCourses
+    if pass
+      for subrule in rule["subrules"]
+        pass = false if not $scope.checkRule(subrule)["pass"]
     {
-      "pass": numUnits >= rule.numUnits and numCourses >= rule.numCourses
+      "pass": pass
       "courses": {id: course["id"], name: course["name"]} for course in fulfillingSet
     }
 
@@ -93,9 +97,6 @@ angular.module('littledipper.controllers').controller 'PlanDetailCtrl', ['$scope
     $scope.updatePlan()
     for rule in $scope.rules
       rule["result"] = $scope.checkRule rule
-      if rule["result"]["pass"]
-        for subrule in rule["subrules"]
-          rule["result"]["pass"] = false if not $scope.checkRule(subrule)["pass"]
     
   $scope.updatePlan = ->
     $scope.plan["courses"] = []

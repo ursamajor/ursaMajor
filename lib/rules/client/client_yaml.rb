@@ -1,5 +1,5 @@
-require "#{Rails.root}/lib/rules/rule"
-require "#{Rails.root}/lib/rules/result"
+require "#{Rails.root}/lib/rules/server/rule"
+require "#{Rails.root}/lib/rules/server/result"
 
 class YamlRule < Rule
   @source = :yaml
@@ -12,23 +12,7 @@ class YamlRule < Rule
     @name = name.to_sym
     @entry = entry
     @description = entry['description']
-    @hidden = entry['hidden'] || false
-    @num_courses = YamlRule.get_num_courses(entry) || 1
-    @num_units = YamlRule.get_num_units(entry) || 0
-    @subrules = entry['subrules'] || []
     @rule, @args = Rule.parse_entry @entry
-  end
-
-  def self.get_num_courses(entry)
-    if entry['rule'] == 'count_courses'
-      entry['args']['min'] || 1
-    end
-  end
-
-  def self.get_num_units(entry)
-    if entry['rule'] == 'units'
-      entry['args']['min'] || 0
-    end
   end
 
   def check(plan, args)
