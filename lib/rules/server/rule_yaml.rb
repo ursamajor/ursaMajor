@@ -12,6 +12,7 @@ class YamlRule < Rule
     @name = name.to_sym
     @entry = entry
     @description = entry['description']
+    @hidden = entry['hidden']
     @rule, @args = Rule.parse_entry @entry
   end
 
