@@ -6,11 +6,7 @@ Rails.application.routes.draw do
   get '/landing' => 'home#index', as: 'landing'
   post '/landing' => 'users#landing_create'
 
-  devise_for :users, :controllers => { :sessions => 'sessions'}
-
-  devise_scope :user do
-    get "sign_in", to: "sessions#new"
-  end
+  devise_for :users, :controllers => { :sessions => 'sessions', :passwords => 'passwords'}
 
   resources :courses do
     collection do

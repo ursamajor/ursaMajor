@@ -1,4 +1,4 @@
-.header
+.header.signup
   %h3 ursaMajor
   %h2 The schedule explorer and planner that stays with you for longer than a semester. 
   = form_tag '/landing', method: :post do
@@ -8,7 +8,7 @@
 
     %div= password_field :user, :password_confirmation, autocomplete: "off", placeholder: "Password Confirmation", :class => "input-field-bottom"
 
-    %div= submit_tag "Sign up", :class => "sign-up-submit"
+    %div= submit_tag "Sign up", :class => "user-submit"
   %hr
   = link_to new_user_session_path do
     Sign in
