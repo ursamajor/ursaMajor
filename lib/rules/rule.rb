@@ -1,5 +1,5 @@
 class Rule
-  attr_accessor :name, :description, :hidden, :num_courses, :num_units, :subrules
+  attr_accessor :name, :description, :hidden
   alias_method :hidden?, :hidden
 
   @source = :raw
@@ -18,22 +18,6 @@ class Rule
     @description = description
     @hidden = hidden
     fail 'abstract' if abstract?
-  end
-
-  def self.json
-    rules = []
-    self.all.values.each do |rule|
-      next if rule.hidden?
-      result = {}
-      result["name"] = rule.name.to_s
-      result["description"] = rule.description
-      result["numCourses"] = rule.num_courses
-      result["numUnits"] = rule.num_units
-      result["subrules"] = rule.subrules
-      result["url"] = Rails.application.routes.url_helpers.display_rules_path(:rule => rule.name)
-      rules << result
-    end
-    rules
   end
 
   def abstract?

@@ -5,12 +5,12 @@ class RulesController < ApplicationController
   end
 
   def display
-    @rule = Rule.get(params[:rule])
+    @rule = ClientRule.get(params[:rule])
     @courses = Course.tagged_with(@rule.name.to_s).order 'name ASC'
   end
 
   def search
-    @rules = Rule.json
+    @rules = ClientRule.json
     respond_with @rules
   end
 
