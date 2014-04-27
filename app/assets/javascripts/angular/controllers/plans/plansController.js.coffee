@@ -112,6 +112,10 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
     $scope.units = 0
     for course in $scope.plan["courses"]
       $scope.units += course.units
+    for semester in $scope.semesters.concat "backpack"
+      $scope[semester]["units"] = 0
+      for course in $scope[semester]
+        $scope[semester]["units"] += course.units
 
   $scope.savePlan = ->
     $http.put("#{window.location.pathname}/save", $scope.plan)

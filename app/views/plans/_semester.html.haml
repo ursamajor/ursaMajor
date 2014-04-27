@@ -1,7 +1,7 @@
 .thumbnail.col-md-2(data-drop="true" data-ng-model="#{semester}" data-jqyoui-options="{accept:'.btn-draggable:not([data-ng-model=#{semester}])'}" jqyoui-droppable="{multiple:true}" class="#{type}")
   .caption 
     .gridLabel #{label}
-    //%a.fa.fa-times-circle(data-ng-click="clearSemester(semester)")
     %a.fa.fa-cog(data-ng-click="semesterSettings('#{semester}')")
     .btn.btn-info.btn-draggable(data-ng-click="courseDisplay(course.id)" data-ng-repeat="course in #{semester}" data-ng-show="course.name" data-drag="{{course.drag}}" data-jqyoui-options="{revert: 'invalid'}" data-ng-model="#{semester}" jqyoui-draggable="{onStart: 'startDragging', index: {{$index}},animate:true}")
       {{course.name}}
+    .units {{#{semester}.units}} units

@@ -3,7 +3,6 @@ Next Tasks
 - switch plans without reload
 - editing of course info in ui
 - for long course descriptions, continue/more button
-- show units in a semester
 - link text in landing blends in 
 - display rule description in modal
 - sort courses beforehand in rails
