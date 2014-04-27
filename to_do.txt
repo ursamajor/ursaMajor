@@ -3,7 +3,6 @@ Next Tasks
 - switch plans without reload
 - fix plan name div
 - editing of course info in ui
-- landing page
 - for long course descriptions, continue/more button
 - show units in a semester
 - display rule description in modal

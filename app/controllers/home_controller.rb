@@ -2,8 +2,12 @@ class HomeController < ApplicationController
   respond_to :html, :json
   
   def index
-    @landing_page = true 
-    @user = User.new
+    if signed_in?
+      redirect_to '/demo' and return
+    else
+      @landing_page = true 
+      @user = User.new
+    end
   end
 
   def demo
