@@ -1,0 +1,44 @@
+rules:
+
+    ls_history_minor:
+    rule: AND
+    args:
+        - OR: 
+            - course: HISTORY.2
+            - course: HISTORY.3
+            - course: HISTORY.4A
+            - course: HISTORY.4B
+            - course: HISTORY.5
+            - course: HISTORY.6A
+            - course: HISTORY.6B
+            - course: HISTORY.7A
+            - course: HISTORY.7B
+            - course: HISTORY.8A
+            - course: HISTORY.8B
+            - course: HISTORY.10
+            - course: HISTORY.11
+            - course: HISTORY.12
+            - course: HISTORY.14
+            - course: HISTORY.30
+            - course: HISTORY.39A
+            - course: HISTORY.39B
+            - course: HISTORY.39C
+            - course: HISTORY.39D
+            - course: HISTORY.39E
+            - course: HISTORY.39F
+            - course: HISTORY.39G
+            - course: HISTORY.39H
+            - course: HISTORY.39I
+            - course: HISTORY.39J
+            - course: HISTORY.39K
+            - course: HISTORY.39L
+            - course: HISTORY.39M
+
+        - AND: # upper division
+        # can substitude one upper-div for any one of the first three...
+            - course: HISTORY.103
+            - course: HISTORY.101
+            - AND: # concentration (...)
+                - numcourses:
+                    min: 4
+                    courses:

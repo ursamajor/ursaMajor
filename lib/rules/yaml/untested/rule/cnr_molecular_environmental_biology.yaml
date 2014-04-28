@@ -1,0 +1,459 @@
+rules:
+
+    cnr_molecular_environmental_biology_major:
+        rule: AND
+        args:
+	    	- university_all
+            - cnr_upper_division
+            - AND: # Lower-Div
+                - cnr_espm_environmental_science_core
+                - cnr_espm_social_science_core
+                - cnr_breadth_arts_history_philosophy
+                - cnr_breadth_social_international
+                - course: CHEM.1A
+                - course: CHEM.1AL
+                - course: CHEM.3A
+                - course: CHEM.3AL
+                - course: CHEM.3B
+                - course: CHEM.3BL
+                - course: BIOLOGY.1A
+                - course: BIOLOGY.1AL
+                - course: BIOLOGY.1B
+                - course: PHYSICS.8A
+            - AND: # upper div 
+                - OR: # biochemistry
+                    - course: MCELLBI.102
+                    - course: CHEM.135
+                    - course: MCELLBI.110
+                - OR: # molecular biology/genetics
+                    - course: INTEGBI.141
+                    - course: INTEGBI.161
+                    - course: INTEGBI.162
+                    - course: INTEGBI.164
+                    - course: MCELLBI.104
+                    - course: MCELLBI.110
+                    - course: MCELLBI.140
+                    - course: PLANTBI.160
+                - OR: # cell & development biology
+                    - course: MCELLBI.130
+                    - course: MCELLBI.130A
+                    - course: MCELLBI.133L
+                    - course: MCELLBI.135E
+                    - course: MCELLBI.137
+                    - course: MCELLBI.141
+                    - AND:
+                        - OR:                      
+                            - course: PLANTBI.C112
+                            - course: MCELLBI.C112
+                        - course: PLANTBI.C112L
+                    - course: PB HLTH.162A
+                - OR: # organismal physiology
+                    - course: ESPM.144
+                    - course: INTEGBI.132
+                    - course: INTEGBI.140
+                    - course: INTEGBI.148
+                    - course: MCELLBI.136
+                    - course: NUSCTX.103
+                    - course: PLANTBI.C116
+                    - course: MCELLBI.C116
+                    - course: PLANTBI.135
+                - OR: # organismal diversity
+                    - course: ESPM.106
+                    - course: ESPM.108A
+                    - course: ESPM.115B
+                    - course: ESPM.132
+                    - course: ESPM.C138
+                    - course: PLANTBI.C114
+                    - course: MCELLBI.C114
+                    - AND:
+                        - OR:                      
+                            - course: PLANTBI.C112
+                            - course: MCELLBI.C112
+                        - course: PLANTBI.C112L
+                    - course: ESPM.140
+                    - AND:
+                        - course: INTEGBI.101
+                        - course: INTEGBI.101L
+                    - AND:
+                        - course: INTEGBI.102
+                        - course: INTEGBI.102L
+                    - AND:
+                        - course: INTEGBI.103
+                        - course: INTEGBI.103L
+                    - AND:
+                        - course: INTEGBI.104
+                        - course: INTEGBI.104L
+                    - AND:
+                        - course: INTEGBI.168
+                        - course: INTEGBI.168L
+                    - AND:
+                        - course: PLANTBI.C102
+                        - course: PLANTBI.C102L
+                    - AND:
+                        - course: PLANTBI.110
+                        - course: PLANTBI.110L
+                    - course: PLANTBI.113
+                    - course: PLANTBI.C116
+                    - course: MCELLBI.C116
+                    - AND:
+                        - course: PLANTBI.120
+                        - course: PLANTBI.120L
+                - OR: # ecology
+                    - course: ESPM.102A
+                    - course: ESPM.110
+                    - course: ESPM.111
+                    - course: ESPM.112
+                    - course: ESPM.113
+                    - course: ESPM.114
+                    - course: ESPM.115C
+                    - OR:
+                        - course: ESPM.116A
+                        - course: ESPM.116B
+                        - course: ESPM.116C
+                    - course: ESPM.119
+                    - course: ESPM.131
+                    - course: ESPM.C149
+                    - course: INTEGBI.C149
+                    - course: INTEGBI.153
+                    - AND:
+                        - course: INTEGBI.154
+                        - course: INTEGBI.154L
+                - OR: # senior seminar
+                    - course: ESPM.192
+                    - course: PLANTBI.170
+                - AND: # lab req
+                    - numcourses:
+                        min: 2
+                        courses:
+                            - course: ANTHRO.135
+                            - course: MCELLBI.133L
+                            - course: INTEGBI.101L
+                            - course: INTEGBI.102L
+                            - course: INTEGBI.103L
+                            - course: INTEGBI.104L
+                            - course: INTEGBI.N116
+                            - course: INTEGBI.117L
+                            - course: INTEGBI.131L
+                            - course: INTEGBI.154L
+                            - course: INTEGBI.164
+                            - course: INTEGBI.168L
+                            - course: INTEGBI.173L
+                            - course: INTEGBI.174L
+                            - course: INTEGBI.175L
+                            - course: INTEGBI.183L
+                            - course: INTEGBI.184L
+                            - course: PLANTBI.C102L
+                            - course: PLANTBI.110L
+                            - course: PLANTBI.C112L
+                            - course: PLANTBI.113
+                            - course: PLANTBI.120L
+                            - course: ESPM.102A
+                            - course: ESPM.105
+                            - course: ESPM.106
+                            - course: ESPM.108A
+                            - course: ESPM.115C
+                            - course: ESPM.117
+                            - course: ESPM.132
+                            - course: ESPM.140
+                            - course: ESPM.146L
+                            - course: ESPM.147 # x 3
+                            - course: PB HLTH.162L
+                            - OR:
+                                - course: ESPM.105A
+                                - course: ESPM.C107 # 4 only
+                                - course: INTEGBI.C158 # 4 only
+                                - course: GEOG.C142 # 4 only
+                                - course: ESPM.H196
+                                - course: ESPM.199
+                                - course: NSCTX.H196
+                                - course: NSCTX.199
+                                - course: PLANTBI.H196
+                                - course: PLANTBI.199
+                - OR: # concentration req
+                    - AND: # animal health & behavior
+                        - AND: # math
+                            - OR:
+                                - course: MATH.1A
+                                - course: MATH.16A
+                            - OR:
+                                - course: MATH.1B
+                                - course: MATH.16B
+                        - units:
+                            min: 12
+                            courses:
+                                - course: ANTHRO.135
+                                - course: ESPM.C103
+                                - course: INTEGBI.C156
+                                - course: ESPM.106
+                                - course: ESPM.110
+                                - course: ESPM.114
+                                - course: ESPM.C126
+                                - course: IB.C144
+                                - course: PSYCH.C115B
+                                - course: ESPM.C142
+                                - course: ESPM.145
+                                - course: ESPM.146
+                                - course: ESPM.146L
+                                - course: ESPM.186
+                                - course: ESPM.188
+                                - AND:
+                                    - course: INTEGBI.104
+                                    - course: INTEGBI.104L
+                                - course: INTEGBI.C143A
+                                - course: PSYCH.C113
+                                - course: INTEGBI.C143B
+                                - course: PSYCH.C116
+                                - course: INTEGBI.146
+                                - course: INTEGBI.148
+                                - OR:
+                                    - course: INTEGBI.184
+                                    - course: INTEGBI.184L
+                                - course: INTEGBI.186
+                                - course: PSYCH.121
+                    - AND: # biodiversity
+                        - AND: # math
+                            - OR:
+                                - course: MATH.1A
+                                - course: MATH.16A
+                            - OR:
+                                - course: MATH.1B
+                                - course: MATH.16B
+                                - course: STAT.2
+                                - course: STAT.20
+                                - course: STAT.25
+                                - course: PB HLTH.142A
+                                - course: STAT.131A
+                        - units:
+                            min: 12
+                            courses:
+                                - AND:
+                                    - course: ESPM.C103
+                                    - course: PLANTBI.C156
+                                    - course: ESPM.105
+                                    - course: ESPM.106
+                                    - course: ESPM.108A
+                                    - course: ESPM.115B
+                                    - course: ESPM.132
+                                    - course: ESPM.140
+                                    - course: ESPM.147
+                                - AND:
+                                    - course: INTEGBI.101
+                                    - course: INTEGBI.101L
+                                - AND:
+                                    - course: INTEGBI.102
+                                    - course: INTEGBI.102L
+                                - AND:
+                                    - course: INTEGBI.103
+                                    - course: INTEGBI.103L
+                                - AND:
+                                    - course: INTEGBI.104
+                                    - course: INTEGBI.104L
+                                - course: INTEGBI.160
+                                - course: INTEGBI.166
+                                - AND:
+                                    - course: INTEGBI.168
+                                    - course: INTEGBI.168L
+                                - AND:
+                                    - course: INTEGBI.173
+                                    - course: INTEGBI.173L
+                                - AND:
+                                    - course: INTEGBI.174
+                                    - course: INTEGBI.174L
+                                - AND:
+                                    - course: INTEGBI.175
+                                    - course: INTEGBI.175L
+                                - course: INTEGBI.183
+                                - course: INTEGBI.183L
+                                - AND:
+                                    - course: PLANTBI.102
+                                    - course: PLANTBI.102L
+                                 - AND:
+                                    - course: PLANTBI.110
+                                    - course: PLANTBI.110L
+                                - course: PLANTBI.113
+                                - course: PLANTBI.C116
+                                - course: MCELLBI.C116
+                                - AND:
+                                    - course: PLANTBI.120
+                                    - course: PLANTBI.120L
+                    - AND: # ecology
+                        - AND: # math
+                            - OR:
+                                - course: MATH.1A
+                                - course: MATH.16A
+                            - OR:
+                                - course: MATH.1B
+                                - course: MATH.16B
+                                - course: STAT.2
+                                - course: STAT.20
+                                - course: STAT.25
+                                - course: PB HLTH.142A
+                                - course: STAT.131A
+                        - units:
+                            min: 12
+                            courses:
+                                - course: ESPM.105A
+                                - course: ESPM.102A
+                                - course: ESPM.C103
+                                - course: INTEGBI.C156
+                                - course: ESPM.111
+                                - course: ESPM.112
+                                - course: ESPM.113
+                                - course: ESPM.114
+                                - course: ESPM.115B
+                                - course: ESPM.115C
+                                - course: ESPM.116B
+                                - course: ESPM.116C
+                                - course: ESPM.117
+                                - course: ESPM.118
+                                - course: ESPM.119
+                                - course: ESPM.C139
+                                - course: GEOG.C136
+                                - course: ESPM.131
+                                - course: ESPM.134
+                                - AND:
+                                    - course: ESPM.146
+                                    - course: ESPM.146L
+                                - course: ESPM.147
+                                - course: ESPM.C149
+                                - course: INTEGBI.C149
+                                - course: ESPM.152
+                                - course: ESPM.172
+                                - course: ESPM.173
+                                - course: ESPM.174
+                                - course: ESPM.C180
+                                - course: ESPM.181
+                                - course: ESPM.188
+                                - course: PLANTBI.180
+                                - AND:
+                                    - course: INTEGBI.102
+                                    - course: INTEGBI.102L
+                                - course: INTEGBI.151
+                                - course: INTEGBI.153
+                                - AND:
+                                    - course: INTEGBI.154
+                                    - course: INTEGBI.154L
+                                - course: INTEGBI.C155
+                                - course: ANTHRO.C129D
+                    - AND: # environment & human health
+                        - AND: # math
+                            - OR:
+                                - course: MATH.1A
+                                - course: MATH.16A
+                            - OR:
+                                - course: MATH.1B
+                                - course: MATH.16B
+                        - units:
+                            min: 12
+                            courses:
+                                - course: ANTHRO.135
+                                - course: ESPM.C126
+                                - course: INTEGBI.C144
+                                - course: PSYCH.C115B
+                                - course: ESPM.C138
+                                - course: PLANTBI.C114
+                                - course: MCELLBI.C114
+                                - course: ESPM.145
+                                - course: ESPM.146L
+                                - course: ESPM.C148
+                                - course: NUSCTX.C159
+                                - course: ESPM.162
+                                - course: ESPM.167
+                                - course: INTEGBI.N116
+                                - course: INTEGBI.117
+                                - course: INTEGBI.117L
+                                - course: INTEGBI.131
+                                - course: INTEGBI.131L
+                                - course: INTEGBI.137
+                                - course: INTEGBI.140
+                                - course: INTEGBI.C143A
+                                - course: INTEGBI.C144A
+                                - course: PSYCH.C113
+                                - course: PSYCH.C116
+                                - course: MCELLBI.135
+                                - course: MCELLBI.150
+                                - course: MCELLBI.165
+                                - course: NUSCTX.103
+                                - course: NUSCTX.108A
+                                - course: NUSCTX.110
+                                - course: NUSCTX.C119
+                                - course: NUSCTX.160
+                                - course: NUSCTX.166
+                                - course: PLANTBI.C103
+                                - course: PLANTBI.C103
+                                - course: PLANTBI.180
+                                - course: PB HLTH.103
+                                - course: PB HLTH.104A
+                                - course: PB HLTH.104B
+                                - course: PB HLTH.105
+                                - course: PB HLTH.114
+                                - course: PB HLTH.116
+                                - course: PB HLTH.150B
+                                - course: PSYCH.110
+                    - AND: # insect biology / anthropod science
+                        - course: ESPM.140
+                        - AND: # math
+                            - OR:
+                                - course: MATH.1A
+                                - course: MATH.16A
+                            - OR:
+                                - course: MATH.1B
+                                - course: MATH.16B
+                                - course: STAT.2
+                                - course: STAT.20
+                                - course: STAT.25
+                                - course: PB HLTH.142A
+                                - course: STAT.131A
+                        - units:
+                            min: 8
+                            courses:
+                                - course: ESPM.105
+                                - course: ESPM.113
+                                - course: ESPM.115B
+                                - course: ESPM.132
+                                - course: ESPM.134
+                                - course: ESPM.140
+                                - course: ESPM.142
+                                - course: ESPM.144
+                                - course: ESPM.145
+                                - AND:
+                                    - course: ESPM.146
+                                    - course: ESPM.146L
+                                - course: ESPM.147
+                                - course: ESPM.148
+                    - AND: # microbiology
+                        - AND: # math
+                            - OR:
+                                - course: MATH.1A
+                                - course: MATH.16A
+                            - OR:
+                                - course: MATH.1B
+                                - course: MATH.16B
+                        - units:
+                            min: 12
+                            courses:
+                                - course: CHM ENG.114
+                                - course: ESPM.112
+                                - course: ESPM.131
+                                - course: ESPM.C138
+                                - course: PLANTBI.C114
+                                - course: MCELLBI.C114
+                                - course: MCELLBI.113
+                                - course: MCELLBI.C148
+                                - course: PLANTBI.C103
+                                - course: MCELLBI.C103
+                                - course: PB HLTH.C102
+                                - course: PLANTBI.C112
+                                - course: MCELLBI.C112
+                                - course: PLANTBI.C112L
+                                - course: MCELLBI.C112L
+                                - course: PLANTBI.C116
+                                - course: MCELLBI.C116
+                                - course: PB HLTH.162A
+                                - course: PB HLTH.162L 
+
+
+
+
+
+

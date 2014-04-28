@@ -1,0 +1,83 @@
+rules:
+
+    coe_materials_science_and_engineering_major:
+        rule: AND
+        args:
+            - OR:
+                - AND:
+                    - course: CHEM.1A
+                    - course: CHEM.1AL
+                - course: CHEM.4A
+            - OR:
+                - course: CHEM.1B
+                - course: CHEM.4B
+            - course: ENGIN.7
+            - course: MATH.1A
+            - course: MATH.1B
+            - course: MATH.53
+            - course: MATH.54
+            - course: PHYSICS.7A
+            - course: PHYSICS.7B
+            - course: PHYSICS.7C
+            - course: ENGIN.45
+            - course: MEC ENG.C85
+            - AND: # technical electives
+                - units: # technical, upper division, 24 technical total???
+                    min: 21
+                    courses:
+                        - dept: BIO ENG
+                                - NOT:
+                                    - course: BIO ENG.100
+                            - dept: CHM ENG
+                            - dept: CIV ENG
+                            - dept: COMPSCI
+                                - NOT:
+                                    - course: COMPSCI.195
+                                    - course: COMPSCI.H195
+                            - dept: ENGIN
+                                - NOT:
+                                    - course: ENGIN.125
+                            - dept: IND ENG
+                                - NOT:
+                                    - course: IND ENG.190A
+                                    - course: IND ENG.190B
+                                    - course: IND ENG.190C
+                                    - course: IND ENG.190D
+                                    - course: IND ENG.190E
+                                    - course: IND ENG.190F
+                                    - course: IND ENG.190G
+                                    - course: IND ENG.190H
+                                    - course: IND ENG.190I
+                                    - course: IND ENG.190K
+                            - dept: MEC ENG
+                                - NOT:
+                                    - course: MEC ENG.191AC
+                                    - course: MEC ENG.191K
+                            - dept: MAT SCI
+                            - dept: NUC ENG
+                            - dept: EL ENG
+                            - dept: COMPSCI
+                - OR:
+                    - course: MAT SCI.120
+                    - course: MAT SCI.121
+                    - course: MAT SCI.122
+                    - course: MAT SCI.123
+                    - course: MAT SCI.125
+            - course: MAT SCI.112
+            - course: MAT SCI.113
+            - course: MAT SCI.130
+            - course: MAT SCI.151
+            - AND: # HSS
+            	- university_rc_A
+            	- university_rc_B
+            	- university_AC
+            	- numcourses:
+            		min: 4
+            		courses:
+            			- coe_humanities_and_social_sciences
+                            - numcourses:
+                                min: 2
+                                rule: upper_division
+                            - numcorses:
+                                min: 2
+                                rule: same_department # 1 up, 1 low

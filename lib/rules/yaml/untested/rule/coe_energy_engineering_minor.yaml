@@ -1,0 +1,58 @@
+rules:
+
+    coe_energy_engineering_minor:
+        rule: AND
+        args:
+            - AND: # eligibility
+                - OR:
+                    - AND:
+                        - course: CHEM.1A
+                        - course: CHEM.1AL
+                    - course: CHEM.4A
+                - course: ENGIN.7
+                - course: MATH.1A
+                - course: MATH.1B
+                - course: MATH.53
+                - course: MATH.54
+                - course: PHYSICS.7A
+                - course: PHYSICS.7B
+            - AND: # course req
+                - OR:
+                    - course: MEC ENG.40
+                    - course: ENGIN.115
+                - course: EL ENG.137A
+                - OR:
+                    - course: ENE,RES.100
+                    - course: CIV ENG.106
+                    - course: CIV ENG.107
+                    - course: CIV ENG.111
+            - AND: # electives, obv exclude from above
+                - course: ARCH.140
+                - course: CY PLAN.119
+                - course: CIV ENG.106
+                - course: CIV ENG.107
+                - course: CIV ENG.108
+                - course: CIV ENG.111
+                - course: CIV ENG.113N
+                - course: CIV ENG.115
+                - course: CIV ENG.156
+                - course: ENGIN.120
+                - course: MEC ENG.106
+                - course: ENVECON.147
+                - course: ENVECON.C151
+                - course: ENVECON.153
+                - course: ENVECON.154
+                - course: ENE,RES.C180
+                - course: POLECON.101
+                - course: EL ENG.137B
+                - course: MEC ENG.109
+                - course: MAT SCI.136
+                - course: NUC ENG.161
+                - course: GEOG.142
+                - course: ENGIN.194
+                - course: EL ENG.134
+                - course: ESPM.102D
+
+
+
+

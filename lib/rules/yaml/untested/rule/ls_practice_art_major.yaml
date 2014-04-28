@@ -1,0 +1,74 @@
+rules:
+
+    ls_practice_art_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # lower division
+            - course: ART.8
+            - course: ART.12
+            - numcourses:
+                min: 2
+                    - course: ART.13
+                    - course: ART.14
+                    - course: ART.16
+                    - course: ART.21
+                    - course: ART.23AC
+                    - course: ART.26
+            - dept: HISTART # lower div
+        - AND: # upper division
+            - OR:
+                - course: ART.117
+                - course: ART.118
+            - course: ART.119
+            - course: ART.185
+            - numcourses:
+                min: 5
+                courses:
+                    - course: ART.102
+                    - course: ART.120
+                    - course: ART.122
+                    - course: ART.123
+                    - course: ART.124
+                    - course: ART.132
+                    - course: ART.137
+                    - course: ART.138
+                    - course: ART.141
+                    - course: ART.142
+                    - course: ART.160
+                    - course: ART.162
+                    - course: ART.164
+                    - course: ART.171
+                    - course: ART.173
+                    - course: ART.174
+                    - course: ART.175
+                    - course: ART.178
+                    - course: ART.C179
+                    - course: ART.179
+                    - numcourses:
+                        max: 2
+                        courses:
+                            - course: FILM.180
+                            - course: FILM.181
+                            - course: FILM.185
+                            - course: FILM.186
+                            - course: THEATER.173
+                            - course: THEATER.174
+                            - course: THEATER.175
+                            - course: VIS STD.180A
+                            - course: VIS STD.180B
+                            - course: VIS STD.181
+                            - course: VIS STD.185
+                            - course: VIS STD.C185A
+                            - course: VIS STD.187A
+                            - course: VIS STD.187B
+            - AND: # art history
+                - course: ART.119
+                - OR:
+                    - course: HISTART.100
+                    - course: HISTART.186A
+                    - course: HISTART.186B
+                    - course: HISTART.186C
+
+

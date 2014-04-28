@@ -1,0 +1,82 @@
+rules:
+
+    coc_joint_chemical_engineering_materials_science_engineering_major:
+        description: "Joint Major in Chemical Engineering and Materials Science and Engineering"
+        rule: AND
+        args:
+            - coc_breadth_joint_chemical_engineering_materials_science_requirement
+            - coc_joint_chemical_engineering_materials_science_engineering_requirements
+            - coc_electives_joint_chemical_engineering_materials_science_engineering_materials_science
+
+
+    coc_breadth_joint_chemical_engineering_materials_science_requirement:
+        description: "Joint Chemical Engineering & Materials Science and Engineering Breadth Requirements"
+        rule: AND
+        args:
+            - OR:
+                - university_rc_A
+                - university_rc_B
+            - units:
+                min: 15
+                rule: OR
+                args:
+                    - rule: coc_breadth_humanities_and_social_sciences
+
+    coc_joint_chemical_engineering_materials_science_engineering_requirements:
+        description: "Joint Chemical Engineering & Materials Science and Engineering Requirements"
+        rule: AND
+        args:
+            - course: MATH.1A
+            - course: MATH.1B
+            - course: MATH.53
+            - course: MATH.54
+            - AND:
+                - OR:
+                    - course: CHEM.4A
+                    - course: CHEM.4B
+                - OR:
+                    - course: CHEM.1A
+                    - course: CHEM.1B
+            - course: PHYSICS.7A
+            - course: PHYSICS.7B
+            - course: PHYSICS.7C
+            - course: ENGIN.7
+            - course: CHEM.112A
+            - course: EL ENG.100
+            - course: ENGIN.45
+            - OR:
+                - course: CHEM.120A
+                - course: PHYSICS.137A
+            - course: CHM ENG.142
+            - course: CHM ENG.140
+            - course: CHM ENG.141
+            - course: CHM ENG.150A
+            - course: CHM ENG.150B
+            - course: CHM ENG.154
+            - course: CHM ENG.160
+            - course: MAT SCI.102
+            - course: MAT SCI.103
+            - course: MAT SCI.120
+            - course: MAT SCI.130
+
+    coc_electives_joint_chemical_engineering_materials_science_engineering_materials_science:
+        description: "Joint Chemical Engineering & Materials Science and Engineering Materials Science Electives"
+        rule: AND
+        args:
+            - OR:
+                - course: MAT SCI.104
+                - course: MAT SCI.111
+                - course: MAT SCI.112
+                - course: MAT SCI.113
+                - course: MAT SCI.117
+                - course: MAT SCI.C118
+                - course: MAT SCI.151
+            - OR:
+                - course: MAT SCI.121
+                - course: MAT SCI.122
+                - course: MAT SCI.123
+                - course: MAT SCI.125
+
+
+
+

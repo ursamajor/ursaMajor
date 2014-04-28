@@ -1,0 +1,70 @@
+rules:
+
+    ls_astrophysics_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - OR:
+            - course: ASTRON.120
+            - course: ASTRON.121
+        - numcourses:
+            min: 2
+            courses:
+                - course: ASTRON.160
+                - course: ASTRON.C161
+                - course: ASTRON.C162
+        - units: # upper division electives
+            min: 18
+            courses:
+                - course: PHYSICS.105
+                - course: PHYSICS.110A
+                - course: PHYSICS.110B
+                - course: PHYSICS.111
+                - course: PHYSICS.112
+                - course: PHYSICS.124
+                - course: PHYSICS.129A
+                - course: PHYSICS.129B
+                - course: PHYSICS.137A
+                - course: PHYSICS.137B
+                - course: PHYSICS.142
+                - course: PHYSICS.150
+                - course: MATH.104
+                - course: MATH.110
+                - course: MATH.121A
+                - course: MATH.121B
+                - course: MATH.128A
+                - course: MATH.128B
+                - course: MATH.160
+                - course: MATH.185
+                - course: EL ENG.150
+                - course: EL ENG.160
+                - course: EL ENG.164
+                - course: EL ENG.169
+                - course: EL ENG.184
+                - course: EL ENG.186
+                - course: EL ENG.188
+                - course: EL ENG.195
+                - course: STAT.101
+                - course: STAT.102
+                - course: STAT.134
+                - course: STAT.135
+                - course: STAT.153
+                - course: GEOG.146
+                - course: EPS.108
+                - course: EPS.121
+                - course: EPS.122
+                - course: CHEM.104A
+                - course: CHEM.104B
+                - course: CHEM.105
+                - course: CHEM.108
+                - course: CHEM.112A
+                - course: CHEM.112B
+                - course: CHEM.120A
+                - course: CHEM.120B
+                - course: CHEM.122
+                - course: CHEM.125
+                - course: CHEM.143
+                - course: HISTORY.181B
+
+

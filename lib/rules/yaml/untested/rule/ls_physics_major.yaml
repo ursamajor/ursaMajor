@@ -1,0 +1,46 @@
+rules:
+
+    ls_physics_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # lower division
+            - OR:
+                - course: PHYSICS.7A
+                - course: PHYSICS.H7A
+            - OR:
+                - course: PHYSICS.7B
+                - course: PHYSICS.H7B
+            - OR:
+                - course: PHYSICS.7C
+                - course: PHYSICS.H7C
+            - AND: # math
+                - course: MATH.1A
+                - course: MATH.1B
+                - course: MATH.53
+                - course: MATH.54
+        - AND: # upper division
+            - course: PHYSICS.105
+            - course: PHYSICS.110A
+            - course: PHYSICS.111 # take twice...
+            - course: PHYSICS.111
+            - course: PHYSICS.112
+            - course: PHYSICS.137A
+            - course: PHYSICS.137B
+            - OR: # elective
+                - course: PHYSICS.100
+                - course: PHYSICS.110B
+                - course: PHYSICS.129
+                - course: PHYSICS.130
+                - course: PHYSICS.132
+                - course: PHYSICS.138
+                - course: PHYSICS.139
+                - course: PHYSICS.141A
+                - course: PHYSICS.141B
+                - course: PHYSICS.142
+                - course: PHYSICS.151
+                - course: PHYSICS.C161
+                - course: ASTRON.C161
+                - course: PHYSICS.177
+

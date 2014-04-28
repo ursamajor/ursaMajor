@@ -1,0 +1,74 @@
+rules:
+
+    coc_chemistry_major:
+        description: "Chemistry Major"
+        rule: AND
+        args:
+            - coc_lowerdiv_chemistry_requirements
+            - coc_upperdiv_chemistry_requirements
+            - units_upperdiv
+            - units_total
+
+
+
+
+    coc_lowerdiv_chemistry_requirements:
+        description: "Lower Division Chemistry Requirements"
+        rule: AND
+        args:
+            - university_rc_A
+            - university_rc_B
+            - numcourses:
+                min: 2
+                rule: OR
+                args:
+                    - coc_foreign_language
+            - numcourses:
+                min: 2
+                rule: OR
+                args:
+                    - coc_breadth_humanities_and_social_sciences # 2 diff depts
+            - course: CHEM.96
+            - AND: # chemistry
+                - course: CHEM.4A
+                - course: CHEM.4B
+                - course: CHEM.112A
+                - course: CHEM.112B
+            - AND: # math
+                - course: MATH.1A
+                - course: MATH.1B
+                - course: MATH.53
+                - course: MATH.54
+            - AND: # PHYSICS
+                - course: PHYSICS.7A
+                - course: PHYSICS.7B
+
+
+    coc_upperdiv_chemistry_requirements:
+        description: "Upper Division Chemistry Requirements"
+        rule: AND
+        args:
+            - course: CHEM.104A
+            - course: CHEM.104B
+            - course: CHEM.120A
+            - course: CHEM.120B
+            - OR:
+                - course: CHEM.125
+                - course: CHEM.C182
+            - OR:
+                - course: CHEM.105
+                - course: CHEM.108
+                - course: CHEM.115
+                - course: CHEM.146
+            - units:
+                min: 16
+                rule: OR
+                args:
+                    - coc_allied_subjects
+                    - upperdiv_chemistry # don't include above
+
+
+
+
+
+

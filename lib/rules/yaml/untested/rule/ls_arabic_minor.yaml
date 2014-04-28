@@ -1,0 +1,49 @@
+rules:
+
+    ls_arabic_minor:
+    rule: AND
+    args:
+        - OR: 
+            - AND: # Option A: Open to students with no background in the language
+                - AND: 
+                    - course: ARABIC.1A
+                    - course: ARABIC.1B
+                    - course: ARABIC.20A
+                    - course: ARABIC.20B
+                    - course: ARABIC.100A
+                    - numcourses: # 2 semesters of literature in Arabic
+                        min: 2
+                        courses:
+                            - course: ARABIC.100B
+                            - course: ARABIC.104B
+                            - course: ARABIC.105B
+                            - course: ARABIC.111A
+                            - course: ARABIC.111B
+                    - numcourses: # Not sure - 2 semester courses in Arabic culture/history   
+                        min: 2
+                        courses:
+                            - course: ARABIC.107
+                            - course: ARABIC.108
+
+            - AND: # Option B: Open to students who can demonstrate proficiency at a level equivalent to that expected of students who have successfully completed the elementary and intermediate courses in the language 
+                - numcourses: # 2 semesters of literature in Arabic
+                    min: 5
+                    courses:
+                        - course: ARABIC.100A
+                        - course: ARABIC.100B
+                        - course: ARABIC.104B
+                        - course: ARABIC.105B
+                        - course: ARABIC.111A
+                        - course: ARABIC.111B
+                - numcourses: # Not sure - 2 semester courses in Arabic culture/history   
+                    min: 2
+                    courses:
+                        - course: ARABIC.107
+                        - course: ARABIC.108
+
+
+
+
+
+
+

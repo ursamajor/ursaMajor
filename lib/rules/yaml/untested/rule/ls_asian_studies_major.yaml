@@ -1,0 +1,888 @@
+rules:
+
+    ls_asian_studies_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # lower division
+            - course: ASIANST.10
+            - OR:
+                - course: HISTORY.6A
+                - course: HISTORY.6B
+                - course: HISTORY.11
+                - course: HISTORY.14
+                - course: SEASIAN.10A
+                - course: SEASIAN.10B
+                - course: KOREAN.7A
+                - course: KOREAN.7B
+                - course: S ASIAN.1A
+                - course: S ASIAN.10B
+        - OR: # concentration
+            - AND: # multi-area
+                - OR: # language
+                    - AND: # chinese
+                        - OR:
+                            - AND:
+                                - course: CHINESE.1A
+                                - course: CHINESE.1B
+                            - course: CHINESE.1X
+                            - course: CHINESE.1Y
+                            - course: CHINESE.1
+                        - OR:
+                            - AND:
+                                - course: CHINESE.10A
+                                - course: CHINESE.10B
+                            - course: CHINESE.10X
+                            - course: CHINESE.10Y
+                            - course: CHINESE.10
+                    - AND: # japanese
+                        - OR:
+                            - AND:
+                                - course: JAPAN.1A
+                                - course: JAPAN.1B
+                            - course: JAPAN.1
+                        - OR:
+                            - AND:
+                                - course: JAPAN.10A
+                                - course: JAPAN.10B
+                            - course: JAPAN.10X
+                            - course: JAPAN.10
+                    - AND: # korean
+                        - OR:
+                            - AND:
+                                - course: KOREAN.1A
+                                - course: KOREAN.1B
+                            - AND:
+                                - course: KOREAN.1AX
+                                - course: KOREAN.1BX
+                            - course: KOREAN.1
+                        - OR:
+                             - AND:
+                                - course: KOREAN.10A
+                                - course: KOREAN.10B
+                            - AND:
+                                - course: KOREAN.10AX
+                                - course: KOREAN.10BX
+                            - course: KOREAN.10
+                - OR: # theory and methods & an upper div from same dept
+                    - AND: # anthro
+                        - OR:
+                            - course: ANTHRO.114
+                            - course: ANTHRO.141
+                            - course: ANTHRO.144
+                            - course: ANTHRO.169B
+                        - OR:
+                            - course: ANTHRO.125
+                            - course: ANTHRO.C125A
+                            - course: ANTHRO.C125B
+                            - course: ANTHRO.147C
+                            - course: ANTHRO.170
+                            - course: ANTHRO.171
+                            - course: ANTHRO.184
+                            - course: ANTHRO.C186
+                    - AND: # econ
+                        - OR:
+                            - course: ECON.100A
+                            - course: ECON.100B
+                            - course: ECON.101A
+                            - course: ECON.101B
+                        - OR:
+                            - course: ECON.162
+                            - course: ECON.C171
+                            - course: ECON.C181
+                            - course: ECON.183
+                    - AND: # film
+                        - course: FILM.100
+                        - course: FILM.160
+                    - AND: # histart
+                        - course: HISTART.100
+                        - OR:
+                            - course: HISTART.130A
+                            - course: HISTART.131A
+                            - course: HISTART.131B
+                            - course: HISTART.134
+                            - course: HISTART.136A
+                            - course: HISTART.136B
+                            - course: HISTART.136C
+                            - course: HISTART.137
+                            - course: HISTART.190A
+                            - course: HISTART.192
+                    - AND: # ias
+                        - course: IAS.102
+                    - OR: # ling
+                        - course: LING.100
+                        - course: LING.140
+                    - OR: # pol econ
+                        - course: POLECON.100
+                        - course: POLECON.101
+                    - AND: # philosophy
+                        - course: PHILOS.100
+                        - course: PHILOS.153
+                    - AND: # poli sci
+                        - OR:
+                            - course: POL SCI.112A
+                            - course: POL SCI.112B
+                            - course: POL SCI.112C
+                            - course: POL SCI.112D
+                        - OR:
+                            - course: POL SCI.128
+                            - course: POL SCI.138E
+                            - course: POL SCI.140
+                            - course: POL SCI.143A
+                            - course: POL SCI.143B
+                            - course: POL SCI.143C
+                            - course: POL SCI.143E
+                            - course: POL SCI.144B
+                            - course: POL SCI.145A
+                            - course: POL SCI.145B
+                            - course: POL SCI.149
+                    - AND: # sociology
+                        - OR:
+                            - course: SOCIOL.101A
+                            - course: SOCIOL.101B
+                            - course: SOCIOL.101C
+                            - course: SOCIOL.105
+                        - OR:
+                            - course: SOCIOL.172
+                            - course: SOCIOL.183
+                            - course: SOCIOL.C183
+                            - course: SOCIOL.190
+                - OR: # history
+                    - course: HISTORY.100
+                    - course: HISTORY.103F
+                    - course: HISTORY.116A
+                    - course: HISTORY.116B
+                    - course: HISTORY.116C
+                    - course: HISTORY.116D
+                    - course: HISTORY.118A
+                    - course: HISTORY.118B
+                    - course: HISTORY.118C
+                - numcourses:
+                    min: 5
+                    courses: # the theory things can count
+                        - course: ANTHRO.125
+                        - course: ANTHRO.C125A
+                        - course: ANTHRO.C125B
+                        - course: ANTHRO.147C
+                        - course: ANTHRO.170
+                        - course: ANTHRO.171
+                        - course: ANTHRO.184
+                        - course: ANTHRO.C186
+                        - course: ASIANST.150
+                        - course: ASAMST.138
+                        - course: BUDDSTD.C114
+                        - course: BUDDSTD.181
+                        - course: BUDDSTD.182
+                        - numcourses:
+                            max: 2
+                            courses:
+                                - course: CHINESE.100A
+                                - course: CHINESE.100XA
+                                - course: CHINESE.100B
+                                - course: CHINESE.100XB
+                                - course: CHINESE.101
+                                - course: CHINESE.102
+                                - course: CHINESE.111
+                                - course: CHINESE.112
+                                - course: JAPAN.100A
+                                - course: JAPAN.100B
+                                - course: JAPAN.100S
+                                - course: JAPAN.101
+                                - course: JAPAN.102
+                                - course: JAPAN.103
+                                - course: JAPAN.104
+                                - course: JAPAN.111
+                                - course: JAPAN.112
+                        - course: CHINESE.110A
+                        - course: CHINESE.110B
+                        - course: CHINESE.120
+                        - course: CHINESE.122
+                        - course: CHINESE.130
+                        - course: CHINESE.132
+                        - course: CHINESE.134
+                        - course: CHINESE.136
+                        - course: CHINESE.138
+                        - course: CHINESE.C140
+                        - course: CHINESE.155
+                        - course: CHINESE.156
+                        - course: CHINESE.157
+                        - course: CHINESE.158
+                        - course: CHINESE.159
+                        - course: CHINESE.161
+                        - course: CHINESE.165
+                        - course: CHINESE.180
+                        - course: CHINESE.182
+                        - course: CHINESE.183
+                        - course: CHINESE.C184
+                        - course: CHINESE.C185
+                        - course: CHINESE.186
+                        - course: CHINESE.188
+                        - course: CHINESE.189
+                        - course: CY PLAN.115
+                        - course: EA LANG.100
+                        - course: EA LANG.101
+                        - course: EA LANG.102
+                        - course: EA LANG.103
+                        - course: EA LANG.104
+                        - course: EA LANG.105
+                        - course: EA LANG.106
+                        - course: EA LANG.107
+                        - course: EA LANG.108
+                        - course: EA LANG.109
+                        - course: EA LANG.C120
+                        - course: EA LANG.C122
+                        - course: EA LANG.C130
+                        - course: EA LANG.181
+                        - course: ECON.162
+                        - course: ECON.C171
+                        - course: ECON.C181
+                        - course: ECON.183
+                        - course: FILM.160
+                        - course: GEOG.153
+                        - course: GEOG.164
+                        - course: GEOG.175
+                        - course: HISTORY.111
+                        - course: HISTORY.C111B
+                        - course: HISTORY.111C
+                        - course: HISTORY.113A
+                        - course: HISTORY.113B
+                        - course: HISTORY.114A
+                        - course: HISTORY.114B
+                        - course: HISTORY.116A
+                        - course: HISTORY.116B
+                        - course: HISTORY.116C
+                        - course: HISTORY.116D
+                        - course: HISTORY.117A
+                        - course: HISTORY.117C
+                        - course: HISTORY.117D
+                        - course: HISTORY.118A
+                        - course: HISTORY.118B
+                        - course: HISTORY.118C
+                        - course: HISTORY.119A
+                        - course: HISTART.130A
+                        - course: HISTART.131A
+                        - course: HISTART.131B
+                        - course: HISTART.134
+                        - course: HISTART.136A
+                        - course: HISTART.136B
+                        - course: HISTART.136C
+                        - course: HISTART.137
+                        - course: HISTART.190A
+                        - course: HISTART.192
+                        - course: JAPAN.C115
+                        - course: JAPAN.120
+                        - course: JAPAN.130
+                        - course: JAPAN.132
+                        - course: JAPAN.140
+                        - course: JAPAN.142
+                        - course: JAPAN.144
+                        - course: JAPAN.146
+                        - course: JAPAN.155
+                        - course: JAPAN.159
+                        - course: JAPAN.160
+                        - course: JAPAN.161
+                        - course: JAPAN.163
+                        - course: JAPAN.170
+                        - course: JAPAN.172
+                        - course: JAPAN.173
+                        - course: JAPAN.C174
+                        - course: JAPAN.180
+                        - course: JAPAN.185
+                        - course: JAPAN.186
+                        - course: JAPAN.187
+                        - course: JAPAN.188
+                        - course: LEGALST.161
+                        - course: MUSIC.131A
+                        - course: MUSIC.133C
+                        - course: MUSIC.133D
+                        - course: MUSIC.134B
+                        - course: MUSIC.139
+                        - course: MUSIC.140
+                        - course: NE STUD.126
+                        - course: PHILOS.153
+                        - course: POL SCI.128
+                        - course: POL SCI.138E
+                        - course: POL SCI.140
+                        - course: POL SCI.143A
+                        - course: POL SCI.143B
+                        - course: POL SCI.143C
+                        - course: POL SCI.143E
+                        - course: POL SCI.144B
+                        - course: POL SCI.145A
+                        - course: POL SCI.145B
+                        - course: POL SCI.149
+                        - course: PSYCH.107
+                        - course: RELIGST.C161
+                        - course: RELIGST.C163
+                        - course: RELIGST.C164
+                        - course: RELIGST.C165
+                        - course: RELIGST.C166
+                        - course: SEASIAN.128
+                        - course: SEASIAN.129
+                        - course: SEASIAN.130
+                        - course: SEASIAN.137
+                        - course: SEASIAN.138
+                        - course: SEASIAN.C141B
+                        - course: SEASIAN.C164
+                        - course: S ASIAN.108
+                        - course: S ASIAN.121
+                        - course: S ASIAN.124
+                        - course: S ASIAN.141
+                        - course: S ASIAN.144
+                        - course: S ASIAN.146
+                        - course: S ASIAN.148
+                        - course: S ASIAN.152
+                        - course: S,SEASN.120
+                        - course: S,SEASN.C135
+                        - course: S,SEASN.C145
+                        - course: S,SEASN.149
+                        - course: S,SEASN.190
+                        - course: SOCIOL.172
+                        - course: SOCIOL.183
+                        - course: SOCIOL.C183
+                        - course: SOCIOL.190
+            - AND: # china
+                - AND: # language
+                    - OR:
+                        - AND:
+                            - course: CHINESE.1A
+                            - course: CHINESE.1B
+                        - course: CHINESE.1X
+                        - course: CHINESE.1Y
+                        - course: CHINESE.1
+                    - OR:
+                        - AND:
+                            - course: CHINESE.10A
+                            - course: CHINESE.10B
+                        - course: CHINESE.10X
+                        - course: CHINESE.10Y
+                        - course: CHINESE.10
+                - OR: # theory and methods & an upper div from same dept
+                    - AND: # anthro
+                        - OR:
+                            - course: ANTHRO.114
+                            - course: ANTHRO.141
+                            - course: ANTHRO.144
+                            - course: ANTHRO.169B
+                        - OR:
+                            - course: ANTHRO.125 # maybe
+                            - course: ANTHRO.C125A # maybe
+                            - course: ANTHRO.147C # maybe
+                            - course: ANTHRO.170
+                    - AND: # econ
+                        - OR:
+                            - course: ECON.100A
+                            - course: ECON.100B
+                            - course: ECON.101A
+                            - course: ECON.101B
+                        - course: ECON.162
+                    - AND: # film
+                        - course: FILM.100
+                        - course: FILM.160 # when on china
+                    - AND: # histart
+                        - course: HISTART.100
+                        - OR:
+                            - course: HISTART.130A
+                            - course: HISTART.131A
+                            - course: HISTART.131B
+                            - course: HISTART.190A # maybe
+                            - course: HISTART.192 # maybe
+                    - AND: # ias
+                        - course: IAS.102
+                    - OR: # ling
+                        - course: LING.100
+                        - course: LING.140
+                    - OR: # pol econ
+                        - course: POLECON.100
+                        - course: POLECON.101
+                    - AND: # philosophy
+                        - course: PHILOS.100
+                        - course: PHILOS.153
+                    - AND: # poli sci
+                        - OR:
+                            - course: POL SCI.112A
+                            - course: POL SCI.112B
+                            - course: POL SCI.112C
+                            - course: POL SCI.112D
+                        - OR:
+                            - course: POL SCI.128
+                            - course: POL SCI.143C
+                            - course: POL SCI.143E
+                            - course: POL SCI.149 # maybe?
+                    - AND: # sociology
+                        - OR:
+                            - course: SOCIOL.101A
+                            - course: SOCIOL.101B
+                            - course: SOCIOL.101C
+                            - course: SOCIOL.105
+                        - OR:
+                            - course: SOCIOL.183
+                            - course: SOCIOL.C183
+                            - course: SOCIOL.190
+                - OR: # history
+                    - course: HISTORY.100
+                    - course: HISTORY.103F
+                    - course: HISTORY.116A
+                    - course: HISTORY.116B
+                    - course: HISTORY.116C
+                    - course: HISTORY.116D
+                    - course: HISTORY.117D
+                - numcourses:
+                    min: 3
+                    courses: # china
+                        - course: ANTHRO.170
+                        - numcourses:
+                            max: 2
+                            courses:
+                                - course: CHINESE.100A
+                                - course: CHINESE.100XA
+                                - course: CHINESE.100B
+                                - course: CHINESE.100XB
+                                - course: CHINESE.101
+                                - course: CHINESE.102
+                                - course: CHINESE.111
+                                - course: CHINESE.112
+                        - course: CHINESE.110A
+                        - course: CHINESE.110B
+                        - course: CHINESE.120
+                        - course: CHINESE.122
+                        - course: CHINESE.130
+                        - course: CHINESE.132
+                        - course: CHINESE.134
+                        - course: CHINESE.136
+                        - course: CHINESE.138
+                        - course: CHINESE.C140
+                        - course: CHINESE.155
+                        - course: CHINESE.156
+                        - course: CHINESE.157
+                        - course: CHINESE.158
+                        - course: CHINESE.159
+                        - course: CHINESE.161
+                        - course: CHINESE.165
+                        - course: CHINESE.180
+                        - course: CHINESE.182
+                        - course: CHINESE.183
+                        - course: CHINESE.C184
+                        - course: CHINESE.C185
+                        - course: CHINESE.186
+                        - course: CHINESE.188
+                        - course: CHINESE.189
+                        - course: ECON.162
+                        - course: FILM.160
+                        - course: GEOG.164
+                        - course: HISTORY.116A
+                        - course: HISTORY.116B
+                        - course: HISTORY.116C
+                        - course: HISTORY.116D
+                        - course: HISTORY.117A
+                        - course: HISTORY.117C
+                        - course: HISTORY.117D
+                        - course: HISTART.130A
+                        - course: HISTART.131A
+                        - course: HISTART.131B
+                        - course: HISTART.134
+                        - course: PHILOS.153
+                        - course: POL SCI.128
+                        - course: POL SCI.138E
+                        - course: POL SCI.140
+                        - course: POL SCI.143C
+                        - course: POL SCI.143E
+                        - course: SOCIOL.183
+                        - course: SOCIOL.C183
+                - OR: # outside china
+                - OR: # asia...perhaps here?
+                    - course: ANTHRO.125
+                    - course: ANTHRO.C125A
+                    - course: ANTHRO.C125B
+                    - course: ANTHRO.147C
+                    - course: ANTHRO.171
+                    - course: ANTHRO.184
+                    - course: ANTHRO.C186
+                    - course: ASIANST.150
+                    - course: ASAMST.138
+                    - course: BUDDSTD.C114
+                    - course: BUDDSTD.181
+                    - course: BUDDSTD.182
+                    - numcourses:
+                        max: 2
+                        courses:
+                            - course: JAPAN.100A
+                            - course: JAPAN.100B
+                            - course: JAPAN.100S
+                            - course: JAPAN.101
+                            - course: JAPAN.102
+                            - course: JAPAN.103
+                            - course: JAPAN.104
+                            - course: JAPAN.111
+                            - course: JAPAN.112
+                    - course: CY PLAN.115
+                    - course: EA LANG.100
+                    - course: EA LANG.101
+                    - course: EA LANG.102
+                    - course: EA LANG.103
+                    - course: EA LANG.104
+                    - course: EA LANG.105
+                    - course: EA LANG.106
+                    - course: EA LANG.107
+                    - course: EA LANG.108
+                    - course: EA LANG.109
+                    - course: EA LANG.C120
+                    - course: EA LANG.C122
+                    - course: EA LANG.C130
+                    - course: EA LANG.181
+                    - course: ECON.C171
+                    - course: ECON.C181
+                    - course: ECON.183
+                    - course: GEOG.153
+                    - course: GEOG.175
+                    - course: HISTORY.111
+                    - course: HISTORY.C111B
+                    - course: HISTORY.111C
+                    - course: HISTORY.113A
+                    - course: HISTORY.113B
+                    - course: HISTORY.114A
+                    - course: HISTORY.114B
+                    - course: HISTORY.118A
+                    - course: HISTORY.118B
+                    - course: HISTORY.118C
+                    - course: HISTORY.119A
+                    - course: HISTART.136A
+                    - course: HISTART.136B
+                    - course: HISTART.136C
+                    - course: HISTART.137
+                    - course: HISTART.190A
+                    - course: HISTART.192
+                    - course: JAPAN.C115
+                    - course: JAPAN.120
+                    - course: JAPAN.130
+                    - course: JAPAN.132
+                    - course: JAPAN.140
+                    - course: JAPAN.142
+                    - course: JAPAN.144
+                    - course: JAPAN.146
+                    - course: JAPAN.155
+                    - course: JAPAN.159
+                    - course: JAPAN.160
+                    - course: JAPAN.161
+                    - course: JAPAN.163
+                    - course: JAPAN.170
+                    - course: JAPAN.172
+                    - course: JAPAN.173
+                    - course: JAPAN.C174
+                    - course: JAPAN.180
+                    - course: JAPAN.185
+                    - course: JAPAN.186
+                    - course: JAPAN.187
+                    - course: JAPAN.188
+                    - course: LEGALST.161
+                    - course: MUSIC.131A
+                    - course: MUSIC.133C
+                    - course: MUSIC.133D
+                    - course: MUSIC.134B
+                    - course: MUSIC.139
+                    - course: MUSIC.140
+                    - course: NE STUD.126
+                    - course: POL SCI.143A
+                    - course: POL SCI.143B
+                    - course: POL SCI.144B
+                    - course: POL SCI.145A
+                    - course: POL SCI.145B
+                    - course: POL SCI.149
+                    - course: PSYCH.107
+                    - course: RELIGST.C161
+                    - course: RELIGST.C163
+                    - course: RELIGST.C164
+                    - course: RELIGST.C165
+                    - course: RELIGST.C166
+                    - course: SEASIAN.128
+                    - course: SEASIAN.129
+                    - course: SEASIAN.130
+                    - course: SEASIAN.137
+                    - course: SEASIAN.138
+                    - course: SEASIAN.C141B
+                    - course: SEASIAN.C164
+                    - course: S ASIAN.108
+                    - course: S ASIAN.121
+                    - course: S ASIAN.124
+                    - course: S ASIAN.141
+                    - course: S ASIAN.144
+                    - course: S ASIAN.146
+                    - course: S ASIAN.148
+                    - course: S ASIAN.152
+                    - course: S,SEASN.120
+                    - course: S,SEASN.C135
+                    - course: S,SEASN.C145
+                    - course: S,SEASN.149
+                    - course: S,SEASN.190
+                    - course: SOCIOL.172
+                    - course: SOCIOL.190
+            - AND: # japan
+                - AND: # language
+                    - OR:
+                        - AND:
+                            - course: JAPAN.1A
+                            - course: JAPAN.1B
+                        - course: JAPAN.1
+                    - OR:
+                        - AND:
+                            - course: JAPAN.10A
+                            - course: JAPAN.10B
+                        - course: JAPAN.10X
+                        - course: JAPAN.10
+                - OR: # theory and methods & an upper div from same dept
+                    - AND: # anthro
+                        - OR:
+                            - course: ANTHRO.114
+                            - course: ANTHRO.141
+                            - course: ANTHRO.144
+                            - course: ANTHRO.169B
+                        - OR:
+                            - course: ANTHRO.125 # maybe?
+                            - course: ANTHRO.C125A # maybe?
+                            - course: ANTHRO.C125B
+                            - course: ANTHRO.147C # maybe?
+                            - course: ANTHRO.171
+                    - AND: # econ
+                        - OR:
+                            - course: ECON.100A
+                            - course: ECON.100B
+                            - course: ECON.101A
+                            - course: ECON.101B
+                    - AND: # film
+                        - course: FILM.100
+                        - course: FILM.160 # on japan
+                    - AND: # histart
+                        - course: HISTART.100
+                        - OR:
+                            - course: HISTART.134
+                            - course: HISTART.190A # maybe
+                            - course: HISTART.192 # maybe
+                    - AND: # ias
+                        - course: IAS.102
+                    - OR: # ling
+                        - course: LING.100
+                        - course: LING.140
+                    - OR: # pol econ
+                        - course: POLECON.100
+                        - course: POLECON.101
+                    - AND: # philosophy
+                        - course: PHILOS.100
+                    - AND: # poli sci
+                        - OR:
+                            - course: POL SCI.112A
+                            - course: POL SCI.112B
+                            - course: POL SCI.112C
+                            - course: POL SCI.112D
+                        - OR:
+                            - course: POL SCI.138E # maybe?
+                            - course: POL SCI.140 # maybe?
+                            - course: POL SCI.143A # maybe?
+                            - course: POL SCI.143B # maybe
+                            - course: POL SCI.149 # maybe?
+                    - AND: # sociology
+                        - OR:
+                            - course: SOCIOL.101A
+                            - course: SOCIOL.101B
+                            - course: SOCIOL.101C
+                            - course: SOCIOL.105
+                        - OR:
+                            - course: SOCIOL.190 # maybe
+                - OR: # history
+                    - course: HISTORY.100
+                    - course: HISTORY.103F
+                    - course: HISTORY.118A
+                    - course: HISTORY.118B
+                    - course: HISTORY.118C
+                - numcourses: # on japan
+                    min: 3
+                    courses:
+                        - course: ANTHRO.C125B
+                        - course: ANTHRO.171
+                        - numcourses:
+                            max: 2
+                            courses:
+                                - course: JAPAN.100A
+                                - course: JAPAN.100B
+                                - course: JAPAN.100S
+                                - course: JAPAN.101
+                                - course: JAPAN.102
+                                - course: JAPAN.103
+                                - course: JAPAN.104
+                                - course: JAPAN.111
+                                - course: JAPAN.112
+                        - course: EA LANG.109
+                        - course: FILM.160 # japan
+                        - course: HISTORY.118B
+                        - course: HISTORY.119A
+                        - course: HISTART.134
+                        - course: JAPAN.C115
+                        - course: JAPAN.120
+                        - course: JAPAN.130
+                        - course: JAPAN.132
+                        - course: JAPAN.140
+                        - course: JAPAN.142
+                        - course: JAPAN.144
+                        - course: JAPAN.146
+                        - course: JAPAN.155
+                        - course: JAPAN.159
+                        - course: JAPAN.160
+                        - course: JAPAN.161
+                        - course: JAPAN.163
+                        - course: JAPAN.170
+                        - course: JAPAN.172
+                        - course: JAPAN.173
+                        - course: JAPAN.C174
+                        - course: JAPAN.180
+                        - course: JAPAN.185
+                        - course: JAPAN.186
+                        - course: JAPAN.187
+                        - course: JAPAN.188
+                - OR: # outside japan
+                - OR: # asia...perhaps from here?
+                        - course: ANTHRO.125
+                        - course: ANTHRO.C125A
+                        - course: ANTHRO.147C
+                        - course: ANTHRO.170
+                        - course: ANTHRO.184
+                        - course: ANTHRO.C186
+                        - course: ASIANST.150
+                        - course: ASAMST.138
+                        - course: BUDDSTD.C114
+                        - course: BUDDSTD.181
+                        - course: BUDDSTD.182
+                        - numcourses:
+                            max: 2
+                            courses:
+                                - course: CHINESE.100A
+                                - course: CHINESE.100XA
+                                - course: CHINESE.100B
+                                - course: CHINESE.100XB
+                                - course: CHINESE.101
+                                - course: CHINESE.102
+                                - course: CHINESE.111
+                                - course: CHINESE.112
+                        - course: CHINESE.110A
+                        - course: CHINESE.110B
+                        - course: CHINESE.120
+                        - course: CHINESE.122
+                        - course: CHINESE.130
+                        - course: CHINESE.132
+                        - course: CHINESE.134
+                        - course: CHINESE.136
+                        - course: CHINESE.138
+                        - course: CHINESE.C140
+                        - course: CHINESE.155
+                        - course: CHINESE.156
+                        - course: CHINESE.157
+                        - course: CHINESE.158
+                        - course: CHINESE.159
+                        - course: CHINESE.161
+                        - course: CHINESE.165
+                        - course: CHINESE.180
+                        - course: CHINESE.182
+                        - course: CHINESE.183
+                        - course: CHINESE.C184
+                        - course: CHINESE.C185
+                        - course: CHINESE.186
+                        - course: CHINESE.188
+                        - course: CHINESE.189
+                        - course: CY PLAN.115
+                        - course: EA LANG.100
+                        - course: EA LANG.101
+                        - course: EA LANG.102
+                        - course: EA LANG.103
+                        - course: EA LANG.104
+                        - course: EA LANG.105
+                        - course: EA LANG.106
+                        - course: EA LANG.107
+                        - course: EA LANG.108
+                        - course: EA LANG.C120
+                        - course: EA LANG.C122
+                        - course: EA LANG.C130
+                        - course: EA LANG.181
+                        - course: ECON.162
+                        - course: ECON.C171
+                        - course: ECON.C181
+                        - course: ECON.183
+                        - course: GEOG.153
+                        - course: GEOG.164
+                        - course: GEOG.175
+                        - course: HISTORY.111
+                        - course: HISTORY.C111B
+                        - course: HISTORY.111C
+                        - course: HISTORY.113A
+                        - course: HISTORY.113B
+                        - course: HISTORY.114A
+                        - course: HISTORY.114B
+                        - course: HISTORY.116A
+                        - course: HISTORY.116B
+                        - course: HISTORY.116C
+                        - course: HISTORY.116D
+                        - course: HISTORY.117A
+                        - course: HISTORY.117C
+                        - course: HISTORY.117D
+                        - course: HISTORY.118A
+                        - course: HISTORY.118C
+                        - course: HISTART.130A
+                        - course: HISTART.131A
+                        - course: HISTART.131B
+                        - course: HISTART.136A
+                        - course: HISTART.136B
+                        - course: HISTART.136C
+                        - course: HISTART.137
+                        - course: HISTART.190A
+                        - course: HISTART.192
+                        - course: LEGALST.161
+                        - course: MUSIC.131A
+                        - course: MUSIC.133C
+                        - course: MUSIC.133D
+                        - course: MUSIC.134B
+                        - course: MUSIC.139
+                        - course: MUSIC.140
+                        - course: NE STUD.126
+                        - course: PHILOS.153
+                        - course: POL SCI.128
+                        - course: POL SCI.138E
+                        - course: POL SCI.140
+                        - course: POL SCI.143A
+                        - course: POL SCI.143B
+                        - course: POL SCI.143C
+                        - course: POL SCI.143E
+                        - course: POL SCI.144B
+                        - course: POL SCI.145A
+                        - course: POL SCI.145B
+                        - course: POL SCI.149
+                        - course: PSYCH.107
+                        - course: RELIGST.C161
+                        - course: RELIGST.C163
+                        - course: RELIGST.C164
+                        - course: RELIGST.C165
+                        - course: RELIGST.C166
+                        - course: SEASIAN.128
+                        - course: SEASIAN.129
+                        - course: SEASIAN.130
+                        - course: SEASIAN.137
+                        - course: SEASIAN.138
+                        - course: SEASIAN.C141B
+                        - course: SEASIAN.C164
+                        - course: S ASIAN.108
+                        - course: S ASIAN.121
+                        - course: S ASIAN.124
+                        - course: S ASIAN.141
+                        - course: S ASIAN.144
+                        - course: S ASIAN.146
+                        - course: S ASIAN.148
+                        - course: S ASIAN.152
+                        - course: S,SEASN.120
+                        - course: S,SEASN.C135
+                        - course: S,SEASN.C145
+                        - course: S,SEASN.149
+                        - course: S,SEASN.190
+                        - course: SOCIOL.172
+                        - course: SOCIOL.183
+                        - course: SOCIOL.C183
+                        - course: SOCIOL.190
+
+
+

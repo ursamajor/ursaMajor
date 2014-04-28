@@ -1,0 +1,33 @@
+rules:
+
+    coe_geoengineering_minor:
+        rule: AND
+        args:
+            - AND: # pre-reqs
+                - OR:
+                    - course: CHEM.1A
+                    - course: CHEM.4A
+                - course: MATH.1A
+                - course: MATH.1B
+                - course: MATH.53
+                - course: MATH.54
+                - course: PHYSICS.7A
+                - course: CIV ENG.C30
+                - course: CIV ENG.70
+            - AND: # required upper division
+                - course: CIV ENG.100
+                - course: CIV ENG.130N
+                - course: CIV ENG.175
+            - AND: # upper div
+                - numcourses:
+                    min: 2
+                    courses:
+                        - course: CIV ENG.171
+                        - course: CIV ENG.172
+                        - course: CIV ENG.173
+                        - course: CIV ENG.176
+                        - course: CIV ENG.177
+                        - course: CIV ENG.C178 
+
+
+

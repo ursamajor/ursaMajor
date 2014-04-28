@@ -1,0 +1,195 @@
+
+# upper division
+
+ced_upperdiv_architecture:
+    description: "Upper Division Architecture"
+    rule: same_course
+    args:
+        - upperdiv
+        - dept: ARCH
+
+ced_upperdiv_landscape_architecture:
+    description: "Upper Division Landscape Architecture"
+    rule: same_course
+    args:
+        - upperdiv
+        - dept: LD ARCH
+
+ced_upperdiv_environmental_design:
+    description: "Upper Division Environmental Design"
+    rule: same_course
+    args:
+        - upperdiv
+        - dept: ENV DES
+
+ced_upperdiv_vision_studies:
+    description: "Upper Division Vision Studies"
+    rule: same_course
+    args:
+        - upperdiv
+        - dept: VIS STD
+
+ced_upperdiv_city_planning:
+    description: "Upper Division City Planning"
+    rule: same_course
+    args:
+        - upperdiv
+        - dept: CY PLAN
+
+
+# ced breadth
+ced_breadth_all:
+    description: "CED Seven Course Breadth"
+    rule: count_courses
+    args:
+    min: 7
+    rule: AND
+    args:
+        - ls_breadth_arts
+        - ls_breadth_bio
+        - ls_breadth_history
+        - ced_breadth_international
+        - ls_breadth_philosophy
+        - ls_breadth_physical
+        - ls_breadth_social
+
+ced_breadth_international:
+    description: "CED International Breadth"
+    rule: same_course
+    args:
+        - ls_breadth_international
+        - OR:
+            - 
+
+
+# ced lower div
+
+ced_lower_division_environmental_design:
+    description: "Lower Divison Environmental Design"
+    rules: AND
+    args:
+        - course: ENV DES.1
+        - numcourses:
+            min: 2
+            courses:
+                - course: ENV DES.4A
+                - course: ENV DES.4B
+                - course: ENV DES.4C
+
+# ced specific major areas
+
+# sustainable environmental design
+ced_sustainable_environmental_design_economics_area:
+    description: "CED Sustainable Environmental Design Major Economics, Business and Policy Area"
+    rules: OR
+    args:
+        - course: UGBA.107
+        - course: UGBA.180
+        - course: CY PLAN.113A
+        - course: CY PLAN.113B
+        - course: CY PLAN.115
+        - course: IAS.115
+        - course: GPP.115
+        - course: ENVECON.100
+        - course: ENVECON.C175
+        - course: IAS.C175
+        - course: ENE,RES.151
+        - course: ENE,RES.190
+        - course: ESPM.60
+        - course: ESPM.166
+        - course: ESPM.168
+        - course: ESPM.169
+        - course: ESPM.193A
+        - course: EDUC.C193A
+        - course: PUB POL.182
+
+ced_sustainable_environmental_design_society_area:
+    description: "CED Sustianable Environmental Design Major Society, Culture and Ethics Area"
+    args: OR
+        - course: ANTHRO.137
+        - course: ARCH.110AC
+        - course: ARCH.133
+        - course: CY PLAN.118AC
+        - course: ENE,RES.100
+        - course: ENE,RES.101
+        - course: ESPM.148
+        - course: ESPM.151
+        - course: ESPM.161
+        - course: ESPM.163AC
+        - course: ESPM.C167
+        - course: PB HLTH.C160
+        - course: ESPM.155
+        - course: LD ARCH.140
+        - course: LD ARCH.141AC
+        - course: SOCIOL.123
+        - course: SOCIOL.128
+
+ced_sustainable_environmental_design_resources_area:
+    description: "CED Sustainable Environmental Design Major Resources and Environmental Management Area"
+    args: OR
+        - course: ENE,RES.102
+        - course: EPS.170AC
+        - course: ESPM.50AC
+        - course: ESPM.102D
+        - course: ESPM.102C
+        - course: ESPM.117
+        - course: INTEGBI.152
+
+ced_sustainable_environmental_design_design_area:
+    description: "CED Sustainable Environmental Design Major Design and Technology Area"
+    args: OR
+        - course: ARCH.105
+        - course: ARCH.122
+        - course: ARCH.130
+        - course: ARCH.242
+        - course: ARCH.149
+        - course: ARCH.249
+        - course: ARCH.160
+        - course: CY PLAN.C111
+        - course: ARCH.C111
+        - course: CY PLAN.C114
+        - course: CIV ENG.C114
+        - course: CY PLAN.116
+        - course: CY PLAN.140
+        - course: ENE,RES.175
+        - course: ENV DES.11A
+        - course: ENV DES.11B
+        - course: GEOG.125
+        - course: INFO.146
+
+# urban studies
+ced_urban_studies_electives_international:
+    description: "Urban Studies International Content Courses"
+    rules: OR
+    args:
+        - course: ANTHRO.139
+        - course: DEMOG.145AC
+        - course: ECON.115
+        - course: EDUC.186AC
+        - course: ESPM.165
+        - course: ESPM.169
+        - course: ETH STD.159AC
+        - course: GEOG.110
+        - course: GEOG.111
+        - course: GEOG.123
+        - course: GEOG.130
+        - course: GEOG.C152
+        - course: GEOG.159AC
+        - course: GEOG.164
+        - course: HISTORY.134
+        - course: HISTORY.134A
+        - course: HISTORY.160
+        - course: HISTORY.C176
+        - course: IAS.115
+        - course: CY PLAN.115
+        - course: IAS.C145
+        - course: GEOG.C152
+        - course: HISTORY.C176
+        - course: PACS.127
+        - course: PACS.149
+        - course: POLECON.100
+        - course: POLECON.101
+        - course: SOCIOL.127
+        - course: SOCIOL.180I
+        - course: UGBA.165S
+

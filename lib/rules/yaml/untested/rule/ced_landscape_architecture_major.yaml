@@ -1,0 +1,51 @@
+rules:
+
+    ced_landscape_architecture_major:
+    rules: AND
+    args:
+        - university_all
+        - ls_breadth_all
+            - NOT:
+                - dept: LD ARCH # upper div reqs cannot simultaneously count for breadth
+                - # courses used to satisfy non-ld arch upper div
+        - AND: # lower division
+            - ced_lower_division_environmental_design
+            - course: ENV DES.11A
+            - course: ENV DES.11B
+            - OR: # physical science
+                - course: EPS.50
+                - course: EPS.80
+                - course: ESPM.15
+                - course: PHYSICS.7A
+                - course: PHYSICS.8A
+                - course: PHYSICS.10
+                - course: PHYSICS.C10
+                - course: LNS.C70V
+            - OR: # biological science
+                - course: BIOLOGY.1B
+                - AND:
+                    - course: BIOLOGY.11
+                    - course: BIOLOGY.11L
+                - AND: PLANTBI.40
+                - course: ESPM.2
+                - course: ESPM.6
+                - course: ESPM.101A
+                - course: LD ARCH.12
+        - AND: # upper division
+            - course: LD ARCH.101
+            - course: LD ARCH.102
+            - course: LD ARCH.103
+            - course: LD ARCH.110
+            - course: LD ARCH.112
+            - course: LD ARCH.120
+            - course: LD ARCH.121
+            - course: LD ARCH.134A
+            - course: LD ARCH.134B
+            - course: LD ARCH.135
+            - course: LD ARCH.170
+            - AND: # outside landscape arch
+                - numcourses:
+                    min: 3
+                    courses:
+                        - NOT:
+                            - dept: LD ARCH

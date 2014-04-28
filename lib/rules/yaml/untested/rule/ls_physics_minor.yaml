@@ -1,0 +1,24 @@
+rules:
+
+    ls_physics_minor:
+    rule: AND
+    args:
+        - AND: # physics
+            - course: PHYSICS.7A
+            - course: PHYSICS.7B
+            - course: PHYSICS.7C
+        - AND: # math
+            - course: MATH.1A
+            - course: MATH.1B
+            - course: MATH.53
+            - course: MATH.54
+        - AND: # upper division
+            - course: PHYSICS.137A
+            - OR:
+                - course: PHYSICS.110A
+                - course: PHYSICS.105
+            - AND: # elective
+                -units:
+                    min: 9 
+                    course:
+                        - dept: PHYSICS

@@ -1,0 +1,193 @@
+rules:
+
+    cnr_molecular_toxicology_hss:
+        description: "Humanities and Social Sciences (14 units)"
+        rule: units
+        args:
+            min: 14
+            rule: OR
+            args:
+                - rule: university_ac
+                - rule: cnr_breadth_arts_history_philosophy
+                - rule: cnr_breadth_social_international
+
+    cnr_molecular_toxicology_math1:
+        hidden: true
+        rule: count_courses
+        args:
+            min: 3
+            rule: AND
+            args:
+                - course: MATH.16A
+                - course: MATH.16B
+                - course: STAT.2
+    cnr_molecular_toxicology_math2:
+        hidden: true
+        rule: count_courses
+        args:
+            min: 2
+            rule: AND
+            args:
+                - course: MATH.1A
+                - course: STAT.2
+    cnr_molecular_toxicology_math3:
+        hidden: true
+        rule: count_courses
+        args:
+            min: 2
+            rule: AND
+            args:
+                - course: MATH.10A
+                - course: MATH.10B
+    cnr_molecular_toxicology_math:
+        hidden: true
+        rule: OR
+        args:
+            - rule: cnr_molecular_toxicology_math1
+            - rule: cnr_molecular_toxicology_math2
+            - rule: cnr_molecular_toxicology_math3
+    cnr_molecular_toxicology_physical:
+        hidden: true
+        rule: count_courses
+        args:
+            min: 7
+            rule: AND
+            args:
+                - course: CHEM.1A
+                - course: CHEM.1AL
+                - course: CHEM.3A
+                - course: CHEM.3AL
+                - course: CHEM.3B
+                - course: CHEM.3BL
+                - course: PHYSICS.8A
+    cnr_molecular_toxicology_phys_math:
+        description: "Physical Sciences and Math (26-28 units)"
+        rule: AND
+        args:
+            - rule: cnr_molecular_toxicology_math
+            - rule: cnr_molecular_toxicology_physical
+
+    cnr_molecular_toxicology_bio_nr:
+        description: "Biological and Natural Resource Science (11 units)"
+        rule: count_courses
+        args:
+            min: 5
+            rule: AND
+            args:
+                - course: NUSCTX.11
+                - course: MCELLBI.32
+                - course: MCELLBI.32L
+                - course: BIOLOGY.1A
+                - course: BIOLOGY.1AL
+
+    cnr_molecular_toxicology_mtu1:
+        hidden: true
+        rule: count_courses
+        args:
+            min: 5
+            rule: AND
+            args:
+                - course: MCELLBI.102
+                - course: NUSCTX.110
+                - course: NUSCTX.121
+                - course: NUSCTX.171
+                - course: NUSCTX.193
+    cnr_molecular_toxicology_mtu2:
+        hidden: true
+        rule: count_courses
+        args:
+            rule: OR
+            args:
+                - course: MCELLBI.104
+                - course: INTEGBI.141
+    cnr_molecular_toxicology_mtu3:
+        hidden: true
+        rule: count_courses
+        args:
+            rule: OR
+            args:
+                - course: PLANTBI.C112
+                - course: MCELLBI.C112
+                - course: PB HLTH.162A
+    cnr_molecular_toxicology_mtu4:
+        hidden: true
+        rule: count_courses
+        args:
+            rule: OR
+            args:
+                - course: PLANTBI.C112L
+                - course: MCELLBI.C112L
+                - course: PB HLTH.162L
+    cnr_molecular_toxicology_upper:
+        description: "Upper Division Molecular Toxicology Requirement"
+        rule: AND
+        args:
+            - rule: cnr_molecular_toxicology_mtu1
+            - rule: cnr_molecular_toxicology_mtu2
+            - rule: cnr_molecular_toxicology_mtu3
+            - rule: cnr_molecular_toxicology_mtu4
+
+    cnr_molecular_toxicology_upper_units:
+        description: "Upper Division Molecular Toxicology Unit Requirement (36 units)"
+        rule: units
+        args:
+            min: 36
+            rule: OR
+            args:
+                - course: MCELLBI.102
+                - course: MCELLBI.104
+                - course: INTEGBI.141
+                - course: PLANTBI.C112
+                - course: MCELLBI.C112
+                - course: PB HLTH.162A
+                - course: PLANTBI.C112
+                - course: MCELLBI.C112L
+                - course: PB HLTH.162L
+                - course: NUSCTX.110
+                - course: NUSCTX.121
+                - course: NUSCTX.171
+                - course: NUSCTX.193
+                - course: CIV ENG.114
+                - course: CIV ENG.115
+                - course: ESPM.100
+                - course: ESPM.119
+                - course: ESPM.126
+                - course: ESPM.162
+                - course: ESPM.C180
+                - course: NUSCTX.103
+                - course: NUSCTX.104
+                - course: NUSCTX.108A
+                - course: NUSCTX.C114
+                - course: ESPM.C148
+                - course: NUSCTX.C115
+                - course: NUSCTX.160
+                - course: NUSCTX.161A
+                - course: NUSCTX.161B
+                - course: NUSCTX.166
+                - course: NUSCTX.C196
+                - course: NUSCTX.H196                    
+                - course: NUSCTX.199
+                - course: PB HLTH.150A
+                - course: PB HLTH.150B
+                - course: PB HLTH.170B
+                - course: UGIS.192C
+                - same_course:
+                    - upperdiv
+                    - OR:
+                        - dept: INTEGBI
+                        - dept: MCELLBI
+                        - dept: PLANTBI
+
+    cnr_molecular_toxicology_major:
+        description: "Molecular Toxicology Major"
+        rule: AND
+        args:
+            - rule: university_ac
+            - rule: university_rc_a
+            - rule: university_rc_b
+            - rule: cnr_upper_division
+            - rule: cnr_molecular_toxicology_hss
+            - rule: cnr_molecular_toxicology_phys_math
+            - rule: cnr_molecular_toxicology_bio_nr
+            - rule: cnr_molecular_toxicology_upper
+            - rule: cnr_molecular_toxicology_upper_units

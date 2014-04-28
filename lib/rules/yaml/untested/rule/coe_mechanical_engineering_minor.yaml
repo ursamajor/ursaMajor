@@ -1,0 +1,61 @@
+rules:
+
+    coe_mechanical_engineering_minor:
+        rule: AND
+        args:
+            - AND: # pre-reqs
+                - course: PHYSICS.7A
+                - course: MEC ENG.104
+                - course: MEC ENG.105
+                - course: CIV ENG.130
+            - AND: # upper div electives
+                - numcourses:
+                    min: 3
+                    courses:
+                        - course: MEC ENG.101
+                        - course: MEC ENG.102A
+                        - course: MEC ENG.102B
+                        - course: MEC ENG.106
+                        - course: MEC ENG.107
+                        - course: MEC ENG.108
+                        - course: MEC ENG.109
+                        - course: MEC ENG.110
+                        - course: MEC ENG.C115
+                        - course: MEC ENG.C117
+                        - course: MEC ENG.118
+                        - course: MEC ENG.110
+                        - course: MEC ENG.119
+                        - course: MEC ENG.120
+                        - course: MEC ENG.122
+                        - course: MEC ENG.127
+                        - course: MEC ENG.128
+                        - course: MEC ENG.130
+                        - course: MEC ENG.131
+                        - course: MEC ENG.132
+                        - course: MEC ENG.133
+                        - course: MEC ENG.C134
+                        - course: MEC ENG.135
+                        - course: MEC ENG.138
+                        - course: MEC ENG.140
+                        - course: MEC ENG.146
+                        - course: MEC ENG.150A
+                        - course: MEC ENG.151
+                        - course: MEC ENG.163
+                        - course: MEC ENG.164
+                        - course: MEC ENG.165
+                        - course: MEC ENG.167
+                        - course: MEC ENG.168
+                        - course: MEC ENG.170
+                        - course: MEC ENG.171
+                        - course: MEC ENG.173
+                        - course: MEC ENG.175
+                        - course: MEC ENG.C176
+                        - course: MEC ENG.C180
+                        - course: MEC ENG.190A
+                        - course: MEC ENG.190K
+                        - course: MEC ENG.190L
+                        - course: MEC ENG.190M
+                        - course: MEC ENG.190Y
+                        - course: MEC ENG.190Y
+                        - course: MEC ENG.191AC
+                        - course: MEC ENG.191K

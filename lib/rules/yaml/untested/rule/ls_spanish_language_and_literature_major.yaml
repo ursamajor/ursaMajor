@@ -1,0 +1,46 @@
+rules:
+
+    ls_spanish_language_and_literature_major: # option A in spanish&portuguese
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # pre-requisites
+            - course: SPANISH.1
+            - course: SPANISH.2
+            - course: SPANISH.3
+            - course: SPANISH.4
+            - course: SPANISH.25
+        - AND: # two advanced grammar and composition
+            - course: SPANISH.102A
+            - course: SPANISH.135W
+        - AND: # spanish literature
+            - course: SPANISH.104A
+            - course: SPANISH.104B
+        - AND: # spanish american literature
+            - course: SPANISH.107A
+            - course: SPANISH.107B
+        - OR: # spanish linguistics (i think, not confirmed)
+            - course: SPANISH.100
+            - course: SPANISH.161
+            - course: SPANISH.162
+            - course: SPANISH.163
+            - course: SPANISH.166
+            - course: SPANISH.167
+            - course: SPANISH.168
+            - course: SPANISH.169
+        - AND: # electives
+            - numcourses:
+                min: 3
+                courses:
+                    - dept: SPANISH # upper div besides these above...in Spanish?? or in Spanish Dept?
+        - AND: # related...but outside the dept
+            - numcourses:
+                min: 2
+                courses: # ????????
+
+
+
+
+
+

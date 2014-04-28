@@ -1,0 +1,100 @@
+rules:
+
+    ced_architecture_major:
+        description: "Architecture Major"
+        rule: AND
+        args:
+            - rule: university_all
+            - rule: ced_breadth_all
+            - rule: ced_lowerdiv_environmental_design
+            - rule: ced_upperdiv_non_architecture_requirements
+            - rule: ced_lowerdiv_architecture_requirements
+            - rule: ced_upperdiv_architecture_requirements
+            - rule: units_total
+
+
+    # to define architecture major
+    ced_lowerdiv_architecture_requirements:
+        description: "Lower Division Architecture Requirements"
+        rule: AND
+        args:
+            - course: ENV DES.11A
+            - course: ENV DES.11B
+            - rule: math_a
+            - rule: physics_a
+
+
+    ced_upperdiv_architecture_requirements: # cannot be used to fulfil breadth
+        description: "Upper Division Architecture Requirements"
+        rule: AND
+        args:
+            - course: ARCH.100A
+            - course: ARCH.100B
+            - course: ARCH.170A
+            - course: ARCH.170B
+            - rule: arch_110ac_or_130
+            - rule: arch_tracks
+
+    arch_110ac_or_130:
+        hidden: true
+        rule: OR
+        args:
+                - course: ARCH.110AC
+                - course: ARCH.130
+
+    arch_tracks:
+        hidden: true
+        rule: OR
+        args:
+            - rule: arch_capstone
+            - rule: arch_senior_track
+
+    arch_capstone:
+        hidden: true
+        rule: count_courses
+        args:
+            min: 3
+            rule: AND
+            args:
+                - course: ARCH.102A
+                - course: ARCH.102B
+                - rule: arch_140_or_160
+        # also included here are three capstone electives, dk where the list is
+
+
+    arch_140_or_160:
+        hidden: true
+        rule: OR
+        args:
+            - course: ARCH.140
+            - course: ARCH.160
+
+
+    arch_senior_track:
+        hidden: true
+        rule: count_courses
+        args:
+            min: 5
+            rule: AND
+            args:
+                    - course: ARCH.100C
+                    - course: ARCH.100D
+                    - course: ARCH.140
+                    - course: ARCH.160
+                    - course: ARCH.150
+
+
+
+    ced_upperdiv_non_architecture_requirements: # cannot be used to fulfill breadth
+        description: "Upper Division Non-Architecture Requirements"
+        rule: units
+        args:
+            min: 9
+            rule: OR
+            args:
+                - rule: upperdiv_landscape_architecture
+                - rule: upperdiv_environmental_design
+                - rule: upperdiv_city_planning
+                - rule: upperdiv_vision_studies
+
+

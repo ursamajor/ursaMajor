@@ -1,0 +1,239 @@
+rules:
+
+# ap credit of breadth / requirements
+# not sure if requirements can count as breadth
+
+    cnr_genetics_and_plant_biology_major:
+        rule: AND
+        args:
+            - university_all
+            - cnr_upper_division
+            - AND: # lower division
+                - AND: # math
+                    - OR: 
+                        - course: MATH.1A
+                        - course: MATH.16A
+                    - OR:
+                        - course: MATH.1B
+                        - course: MATH.16B
+                - AND: # chemistry
+                    - course: CHEM.1A
+                    - course: CHEM.1AL
+                    - course: CHEM.3A
+                    - course: CHEM.3AL
+                    - course: CHEM.3B
+                    - course: CHEM.3BL
+                - AND: # statistics
+                    - OR:
+                        - course: STAT.2 
+                        - course: STAT.20
+                        - course: STAT.131A
+                - AND: # biology
+                    - course: BIOLOGY.1A
+                    - course: BIOLOGY.1AL
+                    - course: BIOLOGY.1B
+                - AND: # physics
+                    - course: PHYSICS.8A
+                - AND: # humanities & social sciences
+                    - units:
+                        min: 15
+                        courses:
+                            - cnr_breadth_arts_history_philosophy
+                            - cnr_breadth_social_international
+            - AND: # upper div core
+                - course: PLANTBI.101L
+                - course: PLANTBI.C107L
+                - course: PLANTBI.135
+                - course: PLANTBI.150
+                - course: PLANTBI.160
+            - AND: # plant biology tracks
+                - OR:
+                    - AND: # Biotechnology and bioenergy tracks
+                        - numcourses:
+                            min: 5
+                            courses:
+                                - course: ENE,RES.C100
+                                - course: ESPM.108A
+                                - course: ESPM.108B
+                                - course: ESPM.152
+                                - course: ESPM.162
+                                - AND:
+                                    - course: INTEGBI.117
+                                    - course: INTEGBI.117L
+                                - course: INTEGBI.151
+                                - course: INTEGBI.162
+                                - course: MCELLBI.102
+                                - course: PLANTBI.C103
+                                - course: PLANTBI.C112
+                                - AND:
+                                    - course: PLANTBI.120
+                                    - course: PLANTBI.120L
+                                - course: PLANTBI.122
+                                - course: PLANTBI.C124
+                                - AND:
+                                    - course: PLANTBI.142
+                                    - course: PLANTBI.C144L
+                                - course: PLANTBI.C148
+                                - course: PLANTBI.170
+                                - course: PLANTBI.180
+                                - course: PLANTBI.185
+                                - AND:
+                                    - course: PLANTBI.H196
+                                    - course: PLANTBI.199
+                    - AND: # plant genetics, genomics, and bioinformatics track
+                        - numcourses:
+                            min: 5
+                            courses:
+                                - course: BIO ENG.131
+                                - course: BIO ENG.143
+                                - course: MATH.127
+                                - course: STAT.C143
+                                - course: ESPM.108B
+                                - course: INTEGBI.162
+                                - course: INTEGBI.163
+                                - course: MCELLBI.102
+                                - course: MCELLBI.130A
+                                - course: PLANTBI.C134
+                                - AND:
+                                    - course: PLANTBI.142
+                                    - course: PLANTBI.C144L
+                                - course: PLANTBI.C144
+                                - course: PLANTBI.C148
+                                - course: PLANTBI.165
+                                - course: PLANTBI.185
+                                - AND:
+                                    - course: PLANTBI.H196
+                                    - course: PLANTBI.199
+                    - AND: # plant diversity and evolution track
+                        - numcourses:
+                            min: 5
+                            courses:
+                                - course: ESPM.108A
+                                - course: ESPM.108B
+                                - course: ESPM.149
+                                - course: ESPM.152
+                                - course: INTEGBI.C102LF
+                                - AND:
+                                    - course: INTEGBI.117
+                                    - course: INTEGBI.117L
+                                - course: INTEGBI.151
+                                - course: INTEGBI.154
+                                - course: INTEGBI.157
+                                - course: INTEGBI.160
+                                - course: INTEGBI.161
+                                - course: INTEGBI.162
+                                - course: INTEGBI.163
+                                - course: INTEGBI.168L
+                                - course: INTEGBI.181
+                                - AND:
+                                    - course: PLANTBI.C102
+                                    - course: PLANTBI.C102L
+                                - AND:
+                                    - course: PLANTBI.110
+                                    - course: PLANTBI.110L
+                                - course: PLANTBI.113
+                                - AND:
+                                    - course: PLANTBI.120
+                                    - course: PLANTBI.120L
+                                - AND:
+                                    - course: PLANTBI.142
+                                    - course: PLANTBI.C144L
+                                - course: PLANTBI.180
+                                - course: PLANTBI.185
+                                - AND:
+                                    - course: PLANTBI.H196
+                                    - course: PLANTBI.199
+                    - AND: # plant microbe interactions track
+                        - numcourses:
+                            min: 5
+                            courses:
+                                - course: ESPM.131
+                                - course: MCELLBI.102
+                                - AND:
+                                    - course: PLANTBI.C102
+                                    - course: PLANTBI.C102L
+                                - course: PLANTBI.C103
+                                - AND:
+                                    - course: PLANTBI.110
+                                    - course: PLANTBI.110L
+                                - AND:
+                                    - course: PLANTBI.C112
+                                    - course: PLANTBI.C112L
+                                - course: PLANTBI.113
+                                - course: PLANTBI.C114
+                                - course: PLANTBI.C116
+                                - AND:
+                                    - course: PLANTBI.120
+                                    - course: PLANTBI.120L
+                                - AND:
+                                    - course: PLANTBI.142
+                                    - course: PLANTBI.C144L
+                                - course: PLANTBI.C148
+                                - course: PLANTBI.165
+                                - course: PLANTBI.180
+                                - course: PLANTBI.185
+                                - AND:
+                                    - course: PLANTBI.H196
+                                    - course: PLANTBI.199
+                    - AND: # experimental plant biology track
+                        - numcourses:
+                            min: 5
+                            courses:
+                                - course: BIO ENG.131
+                                - course: BIO ENG.143
+                                - course: ENE,RES.C100
+                                - course: ESPM.108A
+                                - course: ESPM.108B
+                                - course: ESPM.131
+                                - course: ESPM.149
+                                - course: ESPM.152
+                                - course: ESPM.162
+                                - course: INTEGBI.C102LF
+                                - AND:
+                                    - course: INTEGBI.117
+                                    - course: INTEGBI.117L
+                                - course: INTEGBI.151
+                                - course: INTEGBI.154
+                                - course: INTEGBI.157
+                                - course: INTEGBI.160
+                                - course: INTEGBI.161
+                                - course: INTEGBI.162
+                                - course: INTEGBI.163
+                                - course: INTEGBI.168L
+                                - course: INTEGBI.181
+                                - course: MATH.127
+                                - course: MCELLBI.102
+                                - course: MCELLBI.130
+                                - AND:
+                                    - course: PLANTBI.C102
+                                    - course: PLANTBI.C102L
+                                - course: PLANTBI.C103
+                                - AND:
+                                    - course: PLANTBI.110
+                                    - course: PLANTBI.110L
+                                - AND:
+                                    - course: PLANTBI.C112
+                                    - course: PLANTBI.C112L
+                                - course: PLANTBI.113
+                                - course: PLANTBI.C114
+                                - course: PLANTBI.C116
+                                - AND:
+                                    - course: PLANTBI.120
+                                    - course: PLANTBI.120L
+                                - AND:
+                                - course: PLANTBI.122
+                                - course: PLANTBI.C124
+                                - course: PLANTBI.C134
+                                - AND:
+                                    - course: PLANTBI.142
+                                    - course: PLANTBI.C144L
+                                - course: PLANTBI.C144
+                                - course: PLANTBI.C148
+                                - course: PLANTBI.165
+                                - course: PLANTBI.180
+                                - course: PLANTBI.185
+                                - course: PLANTBI.170
+                                - AND:
+                                    - course: PLANTBI.H196
+                                    - course: PLANTBI.199
+                                - course: STAT.C143

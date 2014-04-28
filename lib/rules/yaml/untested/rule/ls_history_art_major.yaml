@@ -1,0 +1,298 @@
+rules:
+
+    ls_history_art_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - OR: # emphases
+            - AND: # western art
+                - AND: # lower division
+                    - numcourses: # western art
+                        min: 2
+                        courses:
+                            - course: HISTART.10B
+                            - course: HISTART.11
+                            - course: HISTART.12
+                    - OR: # asian art
+                        - course: HISTART.30
+                        - course: HISTART.N31
+                        - course: HISTART.32
+                        - course: HISTART.33
+                        - course: HISTART.34
+                        - course: HISTART.35
+                    # one upper div can be substituted
+                    - OR: # art or new media
+                        - course: ART.8
+                        - course: ART.12
+                        - course: ART.N12
+                        - course: ART.13
+                        - course: ART.N13
+                        - course: ART.14
+                        - course: ART.16
+                        - course: ART.21
+                        - course: ART.23AC
+                        - course: ART.N23
+                        - course: ART.W23AC
+                        - course: ART.26
+                - AND: # upper div
+                    - AND: # subfields of western art
+                        - OR: # western art: ancient (to ca. 400 CE)
+                            - course: HISTART.120 # maybe?
+                            - course: HISTART.C120A
+                            - course: NE STUD.C120A # maybe?
+                            - course: HISTART.C120B
+                            - course: NE STUD.C120B # maybe
+                            - course: HISTART.C140
+                            - course: NE STUD.C129 # maybe
+                            - course: HISTART.141A
+                            - course: HISTART.141B
+                            - course: HISTART.141C
+                            - course: HISTART.N142
+                            - course: HISTART.145
+                        - OR: # medieval-early modern (ca 400-1800CE)
+                            - course: HISTART.151
+                            - course: HISTART.156A
+                            - course: HISTART.C156B
+                            - course: HISTORY.C188A
+                            - course: HISTART.161
+                            - course: HISTART.162
+                            - course: HISTART.166
+                            - course: HISTART.169A
+                        - OR: # modern/contemporary (after ca 1800 CE)...something like this?
+                            - course: HISTART.170
+                            - course: HISTART.171
+                            - course: HISTART.172
+                            - course: HISTART.173
+                            - course: HISTART.174
+                            - course: HISTART.175
+                            - course: HISTART.179
+                            - course: HISTART.180A
+                            - course: HISTART.180C
+                            - course: HISTART.N180A
+                            - course: HISTART.N180B
+                            - course: HISTART.N180C
+                            - course: HISTART.N181
+                            - course: HISTART.182
+                            - course: HISTART.183
+                            - course: HISTART.183E
+                            - course: HISTART.185
+                            - course: HISTART.185A
+                            - course: HISTART.185B
+                            - course: HISTART.N185C
+                            - course: HISTART.186A
+                            - course: HISTART.186C
+                            - course: HISTART.N186C
+                            - course: HISTART.187AC
+                    - AND: # additional upper div
+                        - course: HISTART.100
+                        - OR:
+                            - course: HISTART.190G
+                            - course: HISTART.N190G
+                    - AND: # additional
+                        - OR:
+                            - numcourses:
+                                min: 2
+                                courses:
+                                    - dept: HISTART
+                            - AND:
+                                - dept: HISTART
+                                - OR: # another seminar??
+            - AND: # asian art
+                - AND: # lower division
+                    - numcourses: # asian art
+                        min: 2
+                        courses:
+                            - course: HISTART.30
+                            - course: HISTART.N31
+                            - course: HISTART.32
+                            - course: HISTART.33
+                            - course: HISTART.34
+                            - course: HISTART.35
+                    - OR: # western art
+                        - course: HISTART.10B
+                        - course: HISTART.11
+                        - course: HISTART.12
+                    # one upper div can be substituted
+                    - OR: # art or new media
+                        - course: ART.8
+                        - course: ART.12
+                        - course: ART.N12
+                        - course: ART.13
+                        - course: ART.N13
+                        - course: ART.14
+                        - course: ART.16
+                        - course: ART.21
+                        - course: ART.23AC
+                        - course: ART.N23
+                        - course: ART.W23AC
+                        - course: ART.26
+                - AND: # upper division
+                    - OR: # south/southeast asian
+                        - course: HISTART.134C
+                        - course: HISTART.136A
+                        - course: HISTART.136B
+                        - course: HISTART.136C
+                        - course: HISTART.137
+                    - OR: # chinese
+                        - course: HISTART.130A
+                        - course: HISTART.131A
+                        - course: HISTART.131B
+                        - course: HISTART.131C
+                    - OR: # japanese
+                        - course: HISTART.134A
+                        - course: HISTART.134B
+                    - numcourses: # two of above must predate 1800
+                        min: 2
+                        courses:
+                            - course: HISTART.130A
+                            - course: HISTART.131A
+                            - course: HISTART.131B
+                            - course: HISTART.136A
+                            - course: HISTART.136B
+                            - course: HISTART.137
+                    - OR: # one of above must postdate 1800
+                        - course: HISTART.131C
+                        - course: HISTART.134A
+                        - course: HISTART.134B # idk where this goes
+                        - course: HISTART.134C
+                        - course: HISTART.136C # idk where this goes either
+                    - AND: # additional upper div
+                        - course: HISTART.100
+                        - OR:
+                            - course: HISTART.190A
+                            - course: HISTART.N190A
+                    - AND: # additional
+                        - OR:
+                            - numcourses:
+                                min: 2
+                                courses:
+                                    - dept: HISTART
+                            - AND:
+                                - dept: HISTART
+                                - OR: # another seminar??
+            - AND: # independent specialization
+                - AND: # lower-div
+                   - OR: # western art
+                        - course: HISTART.10B
+                        - course: HISTART.11
+                        - course: HISTART.12
+                    - OR: # asian art
+                        - course: HISTART.30
+                        - course: HISTART.N31
+                        - course: HISTART.32
+                        - course: HISTART.33
+                        - course: HISTART.34
+                        - course: HISTART.35
+                    - OR: # other
+                        - course: HISTART.10B
+                        - course: HISTART.11
+                        - course: HISTART.12
+                        - course: HISTART.30
+                        - course: HISTART.N31
+                        - course: HISTART.32
+                        - course: HISTART.33
+                        - course: HISTART.34
+                        - course: HISTART.35
+                        - course: HISTART.41
+                        - course: HISTART.51
+                        - course: HISTART.62
+                        - course: HISTART.65
+                    # one upper div can be substituted
+                    - OR: # art or new media
+                        - course: ART.8
+                        - course: ART.12
+                        - course: ART.N12
+                        - course: ART.13
+                        - course: ART.N13
+                        - course: ART.14
+                        - course: ART.16
+                        - course: ART.21
+                        - course: ART.23AC
+                        - course: ART.N23
+                        - course: ART.W23AC
+                        - course: ART.26
+                - AND: # upper div
+                # those that fit specialization in HISTART
+                    # two must predate 1800
+                        - course: HISTART.120 # maybe?
+                        - course: HISTART.C120A
+                        - course: NE STUD.C120A # maybe?
+                        - course: HISTART.C120B
+                        - course: NE STUD.C120B # maybe
+                        - course: HISTART.C140
+                        - course: NE STUD.C129 # maybe
+                        - course: HISTART.130A
+                        - course: HISTART.131A
+                        - course: HISTART.131B
+                        - course: HISTART.136A
+                        - course: HISTART.136B
+                        - course: HISTART.137
+                        - course: HISTART.141A
+                        - course: HISTART.141B
+                        - course: HISTART.141C
+                        - course: HISTART.N142
+                        - course: HISTART.145
+                        - course: HISTART.151
+                        - course: HISTART.156A
+                        - course: HISTART.C156B
+                        - course: HISTORY.C188A
+                        - course: HISTART.161
+                        - course: HISTART.162
+                        - course: HISTART.166
+                        - course: HISTART.169A
+                    # one must postdate 1800
+                        - course: HISTART.131C
+                        - course: HISTART.134A
+                        - course: HISTART.134B # idk where this goes
+                        - course: HISTART.134C
+                        - course: HISTART.136C # idk where this goes either
+                        - course: HISTART.170
+                        - course: HISTART.171
+                        - course: HISTART.172
+                        - course: HISTART.173
+                        - course: HISTART.174
+                        - course: HISTART.175
+                        - course: HISTART.179
+                        - course: HISTART.180A
+                        - course: HISTART.180C
+                        - course: HISTART.N180A
+                        - course: HISTART.N180B
+                        - course: HISTART.N180C
+                        - course: HISTART.N181
+                        - course: HISTART.182
+                        - course: HISTART.183
+                        - course: HISTART.183E
+                        - course: HISTART.185
+                        - course: HISTART.185A
+                        - course: HISTART.185B
+                        - course: HISTART.N185C
+                        - course: HISTART.186A
+                        - course: HISTART.186C
+                        - course: HISTART.N186C
+                        - course: HISTART.187AC
+                    - AND: # additional upper div
+                        - course: HISTART.100
+                        - OR:
+                            - course: HISTART.190A
+                            - course: HISTART.N190A
+                            - course: HISTART.190B
+                            - course: HISTART.N190B
+                            - course: HISTART.190C
+                            - course: HISTART.N190C
+                            - course: HISTART.190E
+                            - course: HISTART.N190E
+                            - course: HISTART.190F
+                            - course: HISTART.N190F
+                            - course: HISTART.190G
+                            - course: HISTART.N190G
+                    - AND: # additional
+                        - OR:
+                            - numcourses:
+                                min: 2
+                                courses:
+                                    - dept: HISTART
+                            - AND:
+                                - dept: HISTART
+                                - OR: # another seminar??
+

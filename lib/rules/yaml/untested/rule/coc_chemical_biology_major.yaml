@@ -1,0 +1,60 @@
+rules:
+
+    coc_chemical_biology_major:
+    rule: AND
+    args:
+        - university_rc_A
+        - university_rc_B
+        - AND: # foreign language, 2nd semester
+            - numcourses:
+                min: 2
+                courses:
+                    - coc_foreign_language
+        - AND: # breadth
+            - numcourses:
+                min: 2
+                courses:
+                    - coc_breadth_humanities_and_social_sciences # 2 diff depts
+        - AND: # math
+            - course: MATH.1A
+            - course: MATH.1B
+            - course: MATH.53
+            - course: MATH.54
+        - AND: # physics
+            - course: PHYSICS.7A
+            - course: PHYSICS.7B
+        - AND: # biology
+            - course: BIOLOGY.1A
+            - course: BIOLOGY.1AL
+            - course: MCELLBI.110
+            - course: MCELLBI.110L
+        - AND: # chemistry
+            - course: CHEM.4A
+            - course: CHEM.4B
+            - course: CHEM.96
+            - course: CHEM.112A
+            - course: CHEM.112B
+            - course: CHEM.120A
+            - course: CHEM.120B
+            - course: CHEM.103
+            - course: CHEM.135
+            - OR:
+                - course: CHEM.105
+                - course: CHEM.125
+                - course: CHEM.C170L
+        - AND: # allied subjects
+            - units:
+                min: 7
+                courses:
+                    - dept: CHEM
+                    - coc_allied_subjects
+        - AND: # free electives
+            - units:
+                min: 6
+                courses: # whatever
+
+
+
+
+
+

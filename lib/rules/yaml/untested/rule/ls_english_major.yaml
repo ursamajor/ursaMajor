@@ -1,0 +1,43 @@
+rules:
+
+    ls_english_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # core reqs
+            - AND: # four foundational courses
+                - course: ENGLISH.45A
+                - course: ENGLISH.45B
+                - course: ENGLISH.45C
+                - OR: # shakespeare
+                    - course: ENGLISH.117
+                    - course: ENGLISH.117A
+                    - course: ENGLISH.117B
+                    - course: ENGLISH.117J
+                    - course: ENGLISH.117S
+            - OR: # PRE-1800
+                - course: ENGLISH.104
+                - course: ENGLISH.105
+                - course: ENGLISH.110
+                - course: ENGLISH.111
+                - course: ENGLISH.112
+                - course: ENGLISH.114A
+                - course: ENGLISH.115A
+                - course: ENGLISH.115B
+                - course: ENGLISH.118
+                - course: ENGLISH.119
+                - course: ENGLISH.120
+                - course: ENGLISH.125A
+                - course: ENGLISH.130A
+            - OR: # seminar
+                - course: ENGLISH.190
+                - course: ENGLISH.H195A
+                - course: ENGLISH.H195B
+        - AND: # electives
+            - numcourses:
+                min: 6
+                courses:
+                    - dept: ENGLISH # other ones not included
+
+

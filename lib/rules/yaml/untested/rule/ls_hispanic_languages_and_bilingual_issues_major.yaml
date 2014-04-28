@@ -1,0 +1,27 @@
+rules:
+
+    ls_hispanic_languages_and_bilingual_issues_major: # option A in spanish&portuguese
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # pre-requisites
+            - course: SPANISH.1
+            - course: SPANISH.2
+            - course: SPANISH.3
+            - course: SPANISH.4
+            - course: SPANISH.25
+        - AND: # grammar and composition
+            - course: SPANISH.100
+            - OR:
+                - course: SPANISH.162 # anything else?? maybe?
+            - OR:
+                - course: SPANISH.167
+                - course: SPANISH.169
+        - AND: # literature/culture
+            - course: # latin american literature
+            - course: # latin american or peninsular literature/culture
+        - AND: # electives outside department
+            - course: # bilingualism
+            - course: # US hispanic literature/culture
+            - course: # related to major...?

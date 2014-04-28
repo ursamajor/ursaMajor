@@ -1,0 +1,40 @@
+rules:
+
+    coe_environmental_engineering_science_major:
+        rule: AND
+        args:
+            - AND: # pre-requsites
+                - OR:
+                    - AND:
+                        - course: MATH.1A
+                        - course: MATH.1B
+                    - AND:
+                        - course: MATH.16A
+                        - course: MATH.16B
+                - OR:
+                    - course: PHYSICS.7A
+                    - course: PHYSICS.8A
+                - OR:
+                    - course: CIV ENG.C30
+                    - course: MEC ENG.C85
+            - AND: # required
+                - course: CIV ENG.60
+                - course: CIV ENG.120
+                - OR:
+                    - course: CIV ENG.122N
+                    - course: CIV ENG.123N
+            - AND: # upper div
+                - numcourses:
+                    min: 2
+                    courses:
+                        - course: CIV ENG.121
+                        - OR: # exclude above
+                            - course: CIV ENG.122N
+                            - course: CIV ENG.123N
+                        - course: CIV ENG.124
+                        - course: CIV ENG.130N
+                        - course: CIV ENG.140
+                        - course: CIV ENG.165
+                        - course: CIV ENG.166
+                        - course: CIV ENG.175
+                        - course: CIV ENG.193

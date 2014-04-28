@@ -1,0 +1,62 @@
+rules:
+
+    haas_business_administration_major:
+        rule: AND
+        args:
+            - set_param:
+                - TODO: exclude-breadth-dept: UGBA
+            - AND: # Pre-Requisites
+                - AND:
+                    - course: UGBA.10
+                    - OR: # can waive
+                        - course: ECON.1
+                        - course: ECON.2
+                    - OR:
+                        - course: STAT.20
+                        - course: STAT.21
+                        - course: STAT.25
+                    - OR: # can waive 1/2
+                        - AND:
+                            - OR:
+                                - course: MATH.1A
+                                - course: MATH.16A
+                            - OR:
+                                - course: MATH.1B
+                                - course: MATH.16B
+                        - AND:
+                            - TODO: waive at least one semester 
+                            - OR:
+                                - course: MATH.1B
+                                - course: MATH.16B
+                                - course: MATH.53
+                                - course: MATH.54
+            - AND: # Upper-Division
+                - AND:
+                    - course: UGBA.100
+                    - OR:
+                        - course: UGBA.101A
+                        - course: ECON.100A
+                        - course: ECON.101A
+                        - course: IAS.106
+                    - OR:
+                        - course: UGBA.101B
+                        - course: ECON.100B
+                        - course: ECON.101B
+                        - course: IAS.107
+                    - course: UGBA.102A
+                    - course: UGBA.102B
+                    - course: UGBA.103
+                    - course: UGBA.104
+                    - course: UGBA.104
+                    - course: UGBA.105
+                    - course: UGBA.106
+                    - course: UGBA.107
+                - units:
+                    min: 38
+                    courses:
+                        - dept: UGBA # electives too
+                - AND: # Breadth/others
+                    - university_all
+                    - ls_all
+                        - NOT:
+                            - dept: UGBA

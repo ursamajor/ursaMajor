@@ -1,0 +1,120 @@
+rules:
+
+    ls_economics_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # reqs
+            - OR:
+                - AND:
+                    - course: MATH.1A
+                    - course: MATH.1B
+                - AND:
+                    - course: MATH.16A
+                    - course: MATH.16B
+            - OR:
+                - course: STAT.20
+                - course: STAT.21
+                - course: STAT.25
+                - course: STAT.131A
+                - course: STAT.134
+                - course: IND ENG.172
+            - OR:
+                - course: ECON.1
+                - course: ECON.2
+            - OR:
+                - AND:
+                    - course: ECON.100A
+                    - course: ECON.100B
+                - AND:
+                    - course: ECON.101A
+                    - course: ECON.101B
+            - OR:
+                - course: ECON.140
+                - course: ECON.141
+        - AND: # electives
+            - numcourses:
+                min: 5
+                courses:
+                    - course: ECON.C102
+                    - course: ECON.C103
+                    - course: ECON.104
+                    - course: ECON.105
+                    - course: ECON.C110
+                    - course: ECON.113
+                    - course: ECON.115
+                    - course: ECON.119
+                    - course: ECON.121
+                    - course: ECON.122
+                    - course: ECON.123
+                    - course: ECON.124
+                    - course: ECON.C125
+                    - course: ECON.126
+                    - course: ECON.131
+                    - course: ECON.132
+                    - course: ECON.134
+                    - course: ECON.136
+                    - course: ECON.137
+                    - course: ECON.138
+                    - course: ECON.C142
+                    - course: ECON.151
+                    - course: ECON.152
+                    - course: ECON.153
+                    - course: ECON.154
+                    - course: ECON.155
+                    - course: ECON.157
+                    - course: ECON.161
+                    - course: ECON.162
+                    - course: ECON.C171
+                    - course: ECON.172
+                    - course: ECON.173
+                    - course: ECON.174
+                    - course: ECON.C175
+                    - course: ECON.C181
+                    - course: ECON.182
+                    - course: ECON.183
+                    - course: ECON.190
+                    - course: ECON.191
+                    - course: ECON.196
+                    - numcourses:
+                        max: 2
+                        courses:
+                            - course: AFRICAM.112B # not as of Fall 2013
+                            - course: CY PLAN.113A # not as of Fall 2013
+                            - course: CY PLAN.113B # not as of Fall 2013
+                            - course: ENVECON.C102
+                            - course: ENVECON.C125
+                            - course: MATH.C103
+                            - course: POL SCI.C135
+                            - course: PUB POL.C142
+                            - course: POL SCI.C131A
+                            - course: ENVECON.C151
+                            - course: DEMOG.C175
+                            - course: ENVECON.C181
+                            - course: ENGIN.120
+                            - course: ENVECON.131
+                            - course: ENVECON.143
+                            - course: ENVECON.145 # as of fall 2013
+                            - course: HISTORY.159A
+                            - course: HISTORY.159B
+                            - course: HISTORY.160
+                            - course: IND ENG.160 # not as of fall 2013
+                            - course: IND ENG.161 # not as of fall 2013
+                            - course: LEGALST.145
+                            - course: LEGALST.147
+                            - course: PHILOS.141
+                            - course: PBB HLTH.126
+                            - course: PUB POL.103
+                            - course: PUB POL.C103
+                            - course: LNS.C180U
+                            - course: STAT.155 # not as of fall 2013
+                            - course: UGBA.103 # not as of fall 2013
+                            - course: UGBA.118
+                            - course: UGBA.131
+                            - course: UGBA.132
+                            - course: UGBA.133
+                            - course: UGBA.178 # not as of fall 2013
+                            - course: UGBA.180
+
+

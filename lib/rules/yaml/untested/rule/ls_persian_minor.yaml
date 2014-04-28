@@ -1,0 +1,50 @@
+rules:
+
+    ls_persian_minor:
+    rule: AND
+    args:
+        - OR: 
+            - AND: # Option A: Open to students with little or no background in the language.
+                - course: PERSIAN.1A
+                - course: PERSIAN.1B
+                - course: PERSIAN.100A
+                - course: PERSIAN.100B
+                - course: PERSIAN.101A
+                - course: PERSIAN.101B
+                - AND: 
+                    - numcourses:
+                        min: 1
+                        courses:
+                            - course: NE STUD.143A
+                            - course: NE STUD.143B
+                            - course: NE STUD.160
+                            - course: NE STUD.162A
+                            - course: NE STUD.162A
+                            - course: NE STUD.162B
+                            - course: NE STUD.175
+
+            - AND: # Option B: Open to students who can demonstrate proficiency at a level equivalent to that expected of students who have successfully completed the elementary and intermediate courses in the language 
+                    -AND:
+                        - numcourses:
+                            min: 5
+                            courses:
+                                - course: PERSIAN.101A
+                                - course: PERSIAN.101B
+                                - course: PERSIAN.102A
+                                - course: PERSIAN.102B
+                                - course: PERSIAN.103A
+                                - course: PERSIAN.103B
+                                - course: PERSIAN.104
+                    - AND: 
+                        - numcourses:
+                            min: 1
+                            courses:
+                                - course: NE STUD.143A
+                                - course: NE STUD.143B
+                                - course: NE STUD.160
+                                - course: NE STUD.162A
+                                - course: NE STUD.162A
+                                - course: NE STUD.162B
+                                - course: NE STUD.175
+    
+    

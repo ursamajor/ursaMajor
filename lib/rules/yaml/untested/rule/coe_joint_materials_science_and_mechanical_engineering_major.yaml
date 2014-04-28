@@ -1,0 +1,106 @@
+rules:
+
+    coe_joint_materials_science_and_mechanical_engineering_major:
+        rule: AND
+        args:
+            - OR:
+                - AND:
+                    - course: CHEM.1A
+                    - course: CHEM.1AL
+                - course: CHEM.4A
+            - course: MATH.1A
+            - course: MATH.1B
+            - course: MATH.53
+            - course: MATH.54
+            - course: PHYSICS.7A
+            - course: PHYSICS.7B
+            - course: ENGIN.7
+            - course: ENGIN.10
+            - course: ENGIN.28
+            - course: ENGIN.45
+            - course: MEC ENG.40
+            - course: MEC ENG.C85
+            - course: EL ENG.100
+            - course: MAT SCI.102
+            - course: MAT SCI.103
+            - course: MAT SCI.104
+            - course: MAT SCI.112
+            - course: MAT SCI.130
+            - course: MEC ENG.104
+            - course: MEC ENG.102A
+            - course: MEC ENG.102B
+            - course: MEC ENG.106
+            - course: MEC ENG.107
+            - course: MEC ENG.109
+            - course: MEC ENG.132
+            - OR:
+                - course: MEC ENG.108
+                - course: MAT SCI.113
+            - AND: # technical electives
+                - OR:
+                    - course: MEC ENG.101
+                    - course: MEC ENG.110
+                    - course: MEC ENG.119
+                    - course: MEC ENG.128
+                    - course: MEC ENG.130
+                    - course: MEC ENG.165
+                - OR:
+                    - course: MAT SCI.120
+                    - course: MAT SCI.121
+                    - course: MAT SCI.122
+                    - course: MAT SCI.123
+                    - course: MAT SCI.125
+                - units:
+                    min: 3
+                    courses:
+                        - dept: MEC ENG # upper division, 3 units other than others
+                - units:
+                    min: 3
+                    courses:
+                        - dept: BIO ENG
+                                - NOT:
+                                    - course: BIO ENG.100
+                            - dept: CHM ENG
+                            - dept: CIV ENG
+                            - dept: COMPSCI
+                                - NOT:
+                                    - course: COMPSCI.195
+                                    - course: COMPSCI.H195
+                            - dept: ENGIN
+                                - NOT:
+                                    - course: ENGIN.125
+                            - dept: IND ENG
+                                - NOT:
+                                    - course: IND ENG.172
+                                    - course: IND ENG.190A
+                                    - course: IND ENG.190B
+                                    - course: IND ENG.190C
+                                    - course: IND ENG.190D
+                                    - course: IND ENG.190E
+                                    - course: IND ENG.190F
+                                    - course: IND ENG.190G
+                                    - course: IND ENG.190H
+                                    - course: IND ENG.190I
+                                    - course: IND ENG.190K
+                            - dept: MEC ENG
+                                - NOT:
+                                    - course: MEC ENG.191AC
+                                    - course: MEC ENG.191K
+                            - dept: MAT SCI
+                            - dept: NUC ENG
+                            - dept: EL ENG
+                            - dept: COMPSCI
+            - AND: # HSS
+            	- university_rc_A
+            	- university_rc_B
+            	- university_AC
+            	- numcourses:
+            		min: 4
+            		courses:
+            			- coe_humanities_and_social_sciences
+                            - numcourses:
+                                min: 2
+                                rule: upper_division
+                            - numcorses:
+                                min: 2
+                                rule: same_department # 1 up, 1 low

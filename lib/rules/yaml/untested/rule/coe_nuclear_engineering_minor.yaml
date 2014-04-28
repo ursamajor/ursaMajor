@@ -1,0 +1,33 @@
+rules:
+
+    coe_nuclear_engineering_minor:
+        rule: AND
+        args:
+            - AND: # prerequisite
+                - course: MATH.1A
+                - course: MATH.1B
+                - course: MATH.53
+                - course: MATH.54
+                - course: PHYSICS.7A
+                - course: PHYSICS.7B
+                - course: PHYSICS.7C
+                - course: ENGIN.45
+            - course: NUC ENG.101
+            - AND: # electives
+                - numcourses:
+                    min: 3
+                    courses:
+                        - course: NUC ENG.102
+                        - course: NUC ENG.104
+                        - course: NUC ENG.107
+                        - course: NUC ENG.120
+                        - course: NUC ENG.124
+                        - course: NUC ENG.130
+                        - course: NUC ENG.150
+                        - course: NUC ENG.155
+                        - course: NUC ENG.161
+                        - course: NUC ENG.167
+                        - course: NUC ENG.170A
+                        - course: NUC ENG.170B
+                        - course: NUC ENG.175
+                        - course: NUC ENG.180

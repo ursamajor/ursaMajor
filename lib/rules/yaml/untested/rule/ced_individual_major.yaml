@@ -1,0 +1,37 @@
+rules:
+
+    ced_individual_major:
+    rules: AND
+    args:
+        - university_all
+        - ls_breadth_all
+            - NOT:
+                # upper div reqs
+        - AND: # lower division
+            - ced_lower_division_environmental_design
+            - course: ENV DES.11A # can be waived??
+            - course: ENV DES.11B # can be waived??
+            - OR:
+                - course: MATH.16A
+                - course: MATH.1A
+                - course: STAT.2
+                - course: STAT.20
+                - course: STAT.21
+                - course: STAT.25
+                - course: STAT.131A
+        - AND: # upper div
+            - units:
+                min: 36
+                courses:
+                    - # ANY?!?!?!
+                    - AND:
+                        - units:
+                            min: 24
+                            courses:
+                                - dept: ARCH
+                                - dept: LD ARCH
+                                - dept: ENV DES
+                                - dept: VIS STD
+                                - dept: CY PLAN
+                    - course: ENV DES.195A
+                    - course: ENV DES.195B

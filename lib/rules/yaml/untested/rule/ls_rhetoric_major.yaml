@@ -1,0 +1,49 @@
+rules:
+
+    ls_rhetoric_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # lower division
+            - course: RHETOR.10
+            - course: RHETOR.20
+        - AND: # upper division
+            - course: RHETOR.103A
+            - course: RHETOR.103B
+        - OR: # concentration
+            - AND: # history & theory of rhetoric
+                - numcourses:
+                    min: 3
+                    courses:
+                        - ls_rhetoric_concentration_history
+                - numcourses:
+                    min: 2
+                    courses:
+                        - ls_rhetoric_concentration_public_discourse
+                        - ls_rhetoric_concentration_narrative_and_image
+                # another course in another department
+            - AND: # public discourse
+                - numcourses:
+                    min: 3
+                    courses:
+                        - ls_rhetoric_concentration_public_discourse
+                - numcourses:
+                    min: 2
+                    courses:
+                        - ls_rhetoric_concentration_history
+                        - ls_rhetoric_concentration_narrative_and_image
+                # another course in another department
+            - AND: # narrative & image
+                - numcourses:
+                    min: 3
+                    courses:
+                        - ls_rhetoric_concentration_narrative_and_image
+                - numcourses:
+                    min: 2
+                    courses:
+                        - ls_rhetoric_concentration_public_discourse
+                        - ls_rhetoric_concentration_history
+                # another course in another department
+
+

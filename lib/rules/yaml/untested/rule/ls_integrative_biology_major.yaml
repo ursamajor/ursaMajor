@@ -1,0 +1,78 @@
+rules:
+
+    ls_integrative_biology_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # lower division
+            - OR:
+                - course: MATH.1A
+                - course: MATH.10A
+            - OR:
+                - course: MATH.1B
+                - course: MATH.10B
+            - course: CHEM.1A
+            - course: CHEM.1AL
+            - course: CHEM.3A
+            - course: CHEM.3AL
+            - course: CHEM.3B
+            - course: CHEM.3BL
+            - course: BIOLOGY.1A
+            - course: BIOLOGY.1AL
+            - course: BIOLOGY.1B
+            - OR:
+                - course: PHYSICS.8A
+                - course: PHYSICS.7A
+            - OR:
+                - course: PHYSICS.8B
+                - course: PHYSICS.7B
+        - AND: # upper division
+            - AND:
+                - units:
+                    min: 24
+                    courses:
+                        - OR: # evolution & genetics
+                            - course: INTEGBI.141
+                            - course: INTEGBI.160
+                            - course: INTEGBI.161
+                            - course: INTEGBI.162
+                            - course: INTEGBI.163
+                            - course: INTEGBI.164
+                            - course: INTEGBI.167
+                            - course: INTEGBI.169
+                        - OR: # track
+                            - AND: # ecology, evolution & organismal biology
+                                - numcourses:
+                                    min: 2
+                                    courses:
+                                        - ls_integrative_biology_group_B
+                                - ls_integrative_biology_group_C
+                                - AND: # ud lab
+                                    - OR: # field based lab
+                                        - course: INTEGBI.102LF
+                                        - course: INTEGBI.103LF
+                                        - course: INTEGBI.104LF
+                                        - course: INTEGBI.C107LF
+                                        - course: PLANTBI.C107
+                                        - course: INTEGBI.117LF
+                                        - course: INTEGBI.146LF
+                                        - course: INTEGBI.153LF
+                                        - course: INTEGBI.157LF
+                                        - course: INTEGBI.C158LF
+                                        - course: ESPM.C107
+                                        - course: INTEGBI.173LF
+                                        - course: INTEGBI.174LF
+                                        - course: INTEGBI.175LF
+                                    - ls_integrative_biology_lab
+                            - AND: # human biology & health sciences
+                                - ls_integrative_biology_group_B
+                                - numcourses:
+                                    min: 2
+                                    courses:
+                                        - ls_integrative_biology_group_C
+                                - numcourses:
+                                    min: 2
+                                    courses:
+                                        - ls_integrative_biology_lab
+

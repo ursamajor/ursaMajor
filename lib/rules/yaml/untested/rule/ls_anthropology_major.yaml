@@ -1,0 +1,159 @@
+rules:
+
+    ls_anthropology_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # lower div
+            - course: ANTHRO.1
+                - OR:
+                    - course: ANTHRO.2
+                    - course: ANTHRO.2AC
+                - OR:
+                    - course: ANTHRO.3
+                    - course: ANTHRO.3AC
+        - AND: # upper div
+            - course: ANTHRO.114
+            - OR: # biological core...does it include other depts?
+                - course: ANTHRO.C100
+                - course: ANTHRO.C103
+                - course: ANTHRO.105
+                - course: ANTHRO.106
+                - course: ANTHRO.N106
+                - course: ANTHRO.107
+                - course: ANTHRO.111
+                - course: ANTHRO.112
+                - course: ANTHRO.127A
+                - course: ANTHRO.127B
+            - OR: # archaeology core
+                - course: ANTHRO.121AC
+                - course: ANTHRO.121B
+                - course: ANTHRO.121C
+                - course: ANTHRO.122A
+                - course: ANTHRO.122C
+                - course: ANTHRO.122E
+                - course: ANTHRO.122F
+                - course: ANTHRO.123A
+                - course: ANTHRO.123B
+                - course: ANTHRO.C123F
+                - course: ANTHRO.124A
+                - course: ANTHRO.124AC
+                - course: ANTHRO.C124C
+                - course: ANTHRO.C125A
+                - course: ANTHRO.C125B
+                - course: ANTHRO.127A
+                - course: ANTHRO.127B
+                - course: ANTHRO.128
+                - course: ANTHRO.128A
+                - course: ANTHRO.128M
+                - course: ANTHRO.129A
+                - course: ANTHRO.129C
+                - course: ANTHRO.C129D
+                - course: ANTHRO.C129F
+                - course: ANTHRO.129E
+                - course: ANTHRO.132A
+                - course: ANTHRO.134
+                - course: ANTHRO.134A
+                - course: ANTHRO.134B
+                - course: ANTHRO.135
+                - course: ANTHRO.136A
+                - course: ANTHRO.136C
+                - course: ANTHRO.C136K
+                - course: ANTHRO.136E
+                - course: ANTHRO.136H
+                - course: ANTHRO.174AC
+            - OR: # sociocultural core
+                - course: ANTHRO.115
+                - course: ANTHRO.119
+                - course: ANTHRO.137
+                - course: ANTHRO.138A
+                - course: ANTHRO.138B
+                - course: ANTHRO.139
+                - course: ANTHRO.140
+                - course: ANTHRO.141
+                - course: ANTHRO.142
+                - course: ANTHRO.C146
+                - course: ANTHRO.C147B
+                - course: ANTHRO.148
+                - course: ANTHRO.149
+                - course: ANTHRO.150
+                - course: ANTHRO.155
+                - course: ANTHRO.156
+                - course: ANTHRO.147B
+                - course: ANTHRO.157
+                - course: ANTHRO.158
+                - course: ANTHRO.160AC
+                - course: ANTHRO.161
+                - course: ANTHRO.162
+                - course: ANTHRO.N162
+                - course: ANTHRO.166
+                - course: ANTHRO.169A
+                - course: ANTHRO.169B
+                - course: ANTHRO.169C
+                - course: ANTHRO.170
+                - course: ANTHRO.171
+                - course: ANTHRO.172AC
+                - course: ANTHRO.174AC
+                - course: ANTHRO.179
+                - course: ANTHRO.180
+                - course: ANTHRO.181
+                - course: ANTHRO.183
+                - course: ANTHRO.189A
+            - AND: # electives
+                - numcourses:
+                    min: 5
+                    courses:
+                        - dept: ANTHRO # besides the other ones
+            - OR: # area, must be included within 9 upper divs
+                - course: ANTHRO.121AC
+                - course: ANTHRO.121B
+                - course: ANTHRO.121C
+                - course: ANTHRO.122A
+                - course: ANTHRO.122C
+                - course: ANTHRO.122E
+                - course: ANTHRO.122F
+                - course: ANTHRO.123A
+                - course: ANTHRO.123B
+                - course: ANTHRO.C123F
+                - course: ANTHRO.124A
+                - course: ANTHRO.124AC
+                - course: ANTHRO.C124C
+                - course: ANTHRO.C125A
+                - course: ANTHRO.C125B
+                - course: ANTHRO.128A
+                - course: ANTHRO.170
+                - course: ANTHRO.171
+                - course: ANTHRO.172AC
+                - course: ANTHRO.174AC
+                - course: ANTHRO.179
+                - course: ANTHRO.180
+                - course: ANTHRO.181
+                - course: ANTHRO.183
+                - course: ANTHRO.189A
+            - OR: # methods, must be included in 0 upper divs
+                - course: ANTHRO.C100
+                - course: ANTHRO.C103
+                - course: ANTHRO.121C
+                - course: ANTHRO.127A
+                - course: ANTHRO.128M
+                - course: ANTHRO.131
+                - course: ANTHRO.132
+                - course: ANTHRO.132A
+                - course: ANTHRO.134
+                - course: ANTHRO.134A
+                - course: ANTHRO.135A
+                - course: ANTHRO.135B
+                - course: ANTHRO.136A
+                - course: ANTHRO.136C
+                - course: ANTHRO.C136K
+                - course: ANTHRO.136E
+                - course: ANTHRO.136H
+                - course: ANTHRO.138B
+                - course: ANTHRO.139
+                - course: ANTHRO.169A
+                - course: ANTHRO.169B
+
+
+
+

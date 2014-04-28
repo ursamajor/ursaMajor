@@ -1,0 +1,1000 @@
+
+
+# upper div
+upperdiv_integrative_biology:
+    description: "Upper Division Integrative Biology"
+    rule: same_course
+    args:
+        - upperdiv
+        - dept: INTEGBI
+
+upperdiv_molecular_cell_biology:
+    description: "Upper Division Molecular & Cell Biology"
+    rule: same_course
+    args:
+        - upperdiv
+        - dept: MCB
+
+upperdiv_physics:
+    description: "Upper Division Physics"
+    rule: same_course
+    args:
+        - upperdiv
+        - dept: PHYSICS
+
+
+rules:
+
+    ls_ethnic_studies_core:
+        description: "Ethnic Studies Department Core"
+        rule: AND
+        args:
+            - course: ETH STD.10AC
+            - course: ETH STD.11AC
+            - course: ETH STD.101A
+            - course: ETH STD.101B
+
+
+
+    ls_rhetoric_concentration_history:
+        description: "Rhetoric Concentration: History & Theory of Rhetoric"
+        rule: OR
+        args:
+            - course: RHETOR.104
+            - course: RHETOR.105T
+            - course: RHETOR.106
+            - course: RHETOR.107
+            - course: RHETOR.108
+            - course: RHETOR.109
+            - course: RHETOR.110
+            - course: RHETOR.112
+            - course: RHETOR.114
+            - course: RHETOR.116
+            - course: RHETOR.117
+            - course: RHETOR.118
+
+
+    ls_rhetoric_concentration_public_discourse:
+        description: "Rhetoric Concentration: Public Discourse"
+        rule: OR
+        args:
+            - course: RHETOR.150
+            - course: RHETOR.151
+            - course: RHETOR.152
+            - course: RHETOR.152AC
+            - course: RHETOR.153
+            - course: RHETOR.155
+            - course: RHETOR.157A
+            - course: RHETOR.157B
+            - course: RHETOR.1
+            - course: RHETOR.158
+            - course: RHETOR.159A
+            - course: RHETOR.160
+            - course: RHETOR.162AC
+            - course: RHETOR.164
+            - course: RHETOR.165
+            - course: RHETOR.166
+            - course: RHETOR.167
+            - course: RHETOR.168
+            - course: RHETOR.169
+            - course: RHETOR.170
+            - course: RHETOR.171
+            - course: RHETOR.172
+            - course: RHETOR.176
+            - course: RHETOR.182
+
+
+    ls_rhetoric_concentration_narrative_and_image:
+        description: "Rhetoric Concentration: Narrative & Image"
+        rule: OR
+        args:
+            - course: RHETOR.121
+            - course: RHETOR.122
+            - course: RHETOR.123
+            - course: RHETOR.124
+            - course: RHETOR.127
+            - course: RHETOR.128T
+            - course: RHETOR.129
+            - course: RHETOR.129AC
+            - course: RHETOR.130
+            - course: RHETOR.131T
+            - course: RHETOR.132T
+            - course: RHETOR.133T
+            - course: RHETOR.134
+            - course: RHETOR.135T
+
+
+
+    ls_political_science_specialization_american_politics:
+        description: "Political Science Specialization: American Politics"
+        rule: OR
+        args:
+            - course: POL SCI.1
+            - course: POL SCI.102
+            - course: POL SCI.103W
+            - course: POL SCI.104
+            - course: POL SCI.105
+            - course: POL SCI.106A
+            - course: POL SCI.109A
+            - course: POL SCI.109B
+            - course: POL SCI.109G
+            - course: POL SCI.109H
+            - course: POL SCI.109L
+            - course: POL SCI.109M
+            - course: POL SCI.109R
+            - course: POL SCI.109W
+            - course: POL SCI.110B
+            - course: POL SCI.111AC
+            - course: POL SCI.150
+            - course: POL SCI.157A
+            - course: POL SCI.157B
+            - course: POL SCI.161
+            - course: POL SCI.164A
+            - course: POL SCI.N164A
+            - course: POL SCI.166
+            - course: POL SCI.167AC
+            - course: POL SCI.169
+            - course: POL SCI.171
+            - course: POL SCI.173S
+            - course: POL SCI.175A
+            - course: POL SCI.179
+            - course: POL SCI.181
+
+    ls_political_science_specialization_comparative_politics:
+        description: "Political Science Specialization: Comparative Politics"
+        rule: OR
+        args:
+            - course: POL SCI.2
+            - course: POL SCI.137A
+            - course: POL SCI.138E
+            - course: POL SCI.138G
+            - course: POL SCI.139B
+            - course: POL SCI.C139
+            - course: CY PLAN.C139
+            - course: POL SCI.139D
+            - course: POL SCI.140E
+            - course: POL SCI.140F
+            - course: POL SCI.140R
+            - course: POL SCI.140S
+            - course: POL SCI.140
+            - course: POL SCI.141C
+            - course: POL SCI.142A
+            - course: POL SCI.143A
+            - course: POL SCI.143B
+            - course: POL SCI.143C
+            - course: POL SCI.143T
+            - course: POL SCI.144
+            - course: POL SCI.144B
+            - course: POL SCI.145A
+            - course: POL SCI.145B
+            - course: POL SCI.W145A
+            - course: POL SCI.146A
+            - course: POL SCI.146D
+            - course: POL SCI.N146C
+            - course: POL SCI.147F
+            - course: POL SCI.147G
+            - course: POL SCI.147T
+            - course: POL SCI.148A
+            - course: POL SCI.149B
+            - course: POL SCI.149C
+            - course: POL SCI.149E
+            - course: POL SCI.149F
+            - course: POL SCI.149I
+            - course: POL SCI.149J
+            - course: POL SCI.149P
+            - course: POL SCI.149W
+            - course: POL SCI.149Y
+            - course: POL SCI.149Z
+
+    ls_political_science_specialization_empirical_theory:
+        description: "Political Science Specialization: Empirical Theory and Quantitative Methods"
+        rule: OR
+        args:
+            - course: POL SCI.3
+            - course: POL SCI.C131A
+            - course: ECON.C142
+            - course: PUB POL.C142
+            - course: POL SCI.C135
+            - course: ECON.C110
+            - course: POL SCI.161
+
+    ls_political_science_specialization_political_theory:
+        description: "Political Science Specialization: Political Theory"
+        rule: OR
+        args:
+            - course: POL SCI.4
+            - course: POL SCI.112A
+            - course: POL SCI.112B
+            - course: POL SCI.112C
+            - course: POL SCI.112D
+            - course: POL SCI.N113A
+            - course: POL SCI.114A
+            - course: POL SCI.116A
+            - course: POL SCI.116B
+            - course: POL SCI.116C
+            - course: POL SCI.116D
+            - course: POL SCI.116E
+            - course: POL SCI.116F
+            - course: POL SCI.116G
+            - course: POL SCI.116H
+            - course: POL SCI.116I
+            - course: POL SCI.116J
+            - course: POL SCI.116K
+            - course: POL SCI.116L
+            - course: POL SCI.116M
+            - course: POL SCI.116N
+            - course: POL SCI.116O
+            - course: POL SCI.116P
+            - course: POL SCI.116Q
+            - course: POL SCI.116R
+            - course: POL SCI.116S
+            - course: POL SCI.116T
+            - course: POL SCI.116U
+            - course: POL SCI.116V
+            - course: POL SCI.116W
+            - course: POL SCI.116X
+            - course: POL SCI.116Y
+            - course: POL SCI.116Z
+            - course: POL SCI.118AC
+
+    ls_political_science_specialization_international_relations:
+        description: "Political Science Specialization: International Relations"
+        rule: OR
+        args:
+            - course: POL SCI.122A
+            - course: POL SCI.123A
+            - course: POL SCI.123G
+            - course: POL SCI.123H
+            - course: POL SCI.123M
+            - course: POL SCI.123S
+            - course: POL SCI.124A
+            - course: POL SCI.124C
+            - course: POL SCI.126A
+            - course: POL SCI.128
+            - course: POL SCI.128A
+            - course: POL SCI.129B
+
+    ls_ias_foreign_language_requirement:
+        description: "Foreign Language Requirement for International & Area Studies"
+        rule: OR
+        args: # need to check w
+            - AND:
+                - course: AFRICAM.11A
+                - course: AFRICAM.11B
+                - course: AFRICAM.10A
+                - course: AFRICAM.10B
+            - AND: 
+                - course: AFRICAM.7A
+                - course: AFRICAM.7B
+                - course: AFRICAM.C7A
+                - course: AFRICAM.C7B
+                - course: AFRICAM.8A
+                - course: AFRICAM.8B
+            - AND:
+                - course: AFRICAM.13A
+                - course: AFRICAM.13B
+                - course: AFRICAM.14A
+                - course: AFRICAM.14B
+            - AND:
+                - course: AFRICAM.30A
+                - course: AFRICAM.30B
+                - course: AFRICAM.31A
+                - course: AFRICAM.31B
+            - AND:
+                - course: ARABIC.1A
+                - course: ARABIC.1B
+                - course: ARABIC.20A
+                - course: ARABIC.20B
+            - AND:
+                - course: BANGLA.1A
+                - course: BANGLA.1B
+                - course: BANGLA.101A
+                - course: BANGLA.101B
+            - AND:
+                - course: CELTIC.15
+                - course: CELTIC.85
+                - course: CELTIC.145A
+                - course: CELTIC.145B
+            - AND:
+                - course: CELTIC.16
+                - course: CELTIC.86
+                - course: CELTIC.144A
+                - course: CELTIC.144B
+            - AND:
+                - course: CHINESE.1A
+                - course: CHINESE.1B
+                - course: CHINESE.10A
+                - course: CHINESE.10B
+            - AND:
+                - course: CHINESE.1X
+                - course: CHINESE.10X
+            - AND:
+                - course: CHINESE.1Y
+                - course: CHINESE.10Y
+            - AND:
+                - course: EAEURST.2A
+                - course: EAEURST.2B
+                - course: EAEURST.102A
+                - course: EAEURST.102B
+            - AND:
+                - course: EGYPT.100A
+                - course: EGYPT.100B
+                - course: EGYPT.101A
+                - course: EGYPT.101B
+            - AND:
+                - course: FILIPN.1A
+                - course: FILIPN.1B
+                - course: FILIPN.100A
+                - course: FILIPN.100B
+            - AND:
+                - course: FRENCH.1
+                - course: FRENCH.2
+                - course: FRENCH.3
+                - course: FRENCH.4
+            - AND:
+                - OR:
+                    - AND:
+                        - course: GERMAN.1
+                        - course: GERMAN.2
+                    - course: GERMAN.1E
+                - course: GERMAN.3
+                - course: GERMAN.4
+            - AND:
+                - OR:
+                    - AND:
+                        - course: GREEK.1
+                        - course: GREEK.2
+                    - course: GREEK.10
+                - course: GREEK.40
+            - AND:
+                - course: HEWBREW.1A
+                - course: HEWBREW.1B
+                - course: HEWBREW.20A
+                - course: HEWBREW.20B
+            - AND:
+                - course: HIN-URD.1A
+                - course: HIN-URD.1B
+                - course: HIN-URD.100A
+                - course: HIN-URD.100B
+            - AND:
+                - course: HIN-URD.2A
+                - course: HIN-URD.2B
+                - course: HIN-URD.103A
+                - course: HIN-URD.103B
+            - AND:
+                - course: ITALIAN.1
+                - course: ITALIAN.2
+                - course: ITALIAN.3
+                - course: ITALIAN.4
+            - AND:
+                - course: JAPAN.1A
+                - course: JAPAN.1B
+                - course: JAPAN.10A
+                - course: JAPAN.10B
+            - course: JAPAN.10X
+            - AND:
+                - course: KHMER.1A
+                - course: KHMER.1B
+                - course: KHMER.100A
+                - course: KHMER.100B
+            - AND:
+                - course: KOREAN.1A
+                - course: KOREAN.1B
+                - course: KOREAN.10A
+                - course: KOREAN.10B
+            - AND:
+                - course: KOREAN.1AX
+                - course: KOREAN.1BX
+                - course: KOREAN.10AX
+                - course: KOREAN.10BX
+            - AND:
+                - course: MALAY/I.1A
+                - course: MALAY/I.1B
+                - course: MALAY/I.100A
+                - course: MALAY/I.100B
+            - AND:
+                - course: PERSIAN.1A
+                - course: PERSIAN.1B
+                - course: PERSIAN.11A
+                - course: PERSIAN.11B
+            - AND:
+                - course: PORTUG.11
+                - course: PORTUG.12
+                - course: PORTUG.101A
+                - course: PORTUG.101B
+            - AND:
+                - course: PUNJABI.1A
+                - course: PUNJABI.1B
+                - course: PUNJABI.100A
+                - course: PUNJABI.100B
+            - AND:
+                - course: SCANDIN.1A
+                - course: SCANDIN.1B
+                - course: SCANDIN.100A
+                - course: SCANDIN.100B
+            - AND:
+                - course: SCANDIN.2A
+                - course: SCANDIN.2B
+                - course: SCANDIN.102A
+                - course: SCANDIN.102B
+            - AND:
+                - course: SLAVIC.1
+                - course: SLAVIC.2
+                - course: SLAVIC.3
+                - course: SLAVIC.4
+            - AND:
+                - course: SLAVIC.6A
+                - course: SLAVIC.6B
+            - AND:
+                - course: SLAVIC.25A
+                - course: SLAVIC.25B
+                - course: SLAVIC.115A
+                - course: SLAVIC.115B
+            - AND:
+                - course: SLAVIC.26A
+                - course: SLAVIC.26B
+                - course: SLAVIC.116A
+                - course: SLAVIC.116B
+            - AND:
+                - course: SLAVIC.26A
+                - course: SLAVIC.26B
+                - course: SLAVIC.117A
+                - course: SLAVIC.117B
+            - AND:
+                - course: SLAVIC.28A
+                - course: SLAVIC.28B
+                - course: SLAVIC.118A
+                - course: SLAVIC.118B
+            - AND:
+                - course: S,SEASN.1A
+                - course: S,SEASN.1B
+                - course: S,SEASN.100A
+                - course: S,SEASN.100B
+            - AND:
+                - course: SPANISH.1
+                - course: SPANISH.2
+                - course: SPANISH.3
+                - course: SPANISH.4
+            - AND:
+                - course: TAGALG.1A
+                - course: TAGALG.1B
+                - course: TAGALG.100A
+                - course: TAGALG.100B
+            - AND:
+                - course: TAMIL.1A
+                - course: TAMIL.1B
+                - course: TAMIL.101A
+                - course: TAMIL.101B
+            - AND:
+                - course: THAI.1A
+                - course: THAI.1B
+                - course: THAI.100A
+                - course: THAI.100B
+            - AND:
+                - course: TIBETAN.1A
+                - course: TIBETAN.1B
+                - course: TIBETAN.10A
+                - course: TIBETAN.10B
+            - AND:
+                - course: TURKISH.1A
+                - course: TURKISH.1B
+                - course: TURKISH.100A
+                - course: TURKISH.100B
+            - AND:
+                - course: VIETNMS.1A
+                - course: VIETNMS.1B
+                - course: VIETNMS.100A
+                - course: VIETNMS.100B
+
+
+    ls_peace_and_conflict_studies_concentration_conflict_resolution:
+        description: "Peace and Conflict Studies Concentration: Conflict Resolution"
+        rule: OR
+        args:
+            - course: AFRICAM.111
+            - course: ANTHRO.139
+            - course: CY PLAN.115
+            - course: GPP.115
+            - course: EDUC.140AC
+            - course: ESPM.155
+            - course: ESPM.163AC
+            - course: ESPM.168
+            - course: GEOG.130
+            - course: GWS.102
+            - course: HISTORY.112
+            - course: ISF.100A
+            - course: ISF.100B
+            - course: PACS.135
+            - course: PACS.149
+            - course: PACS.150
+            - course: PACS.150AC
+            - course: PACS.151
+            - course: PACS.154
+            - course: PACS.154AC
+            - course: PACS.164A
+            - course: PACS.164B
+            - course: PACS.170
+            - course: POL SCI.124A
+            - course: POL SCI.150
+            - course: PSYCH.160
+            - course: PSYCH.C162
+            - course: LNS.C160V
+            - course: PSYCH.166AC
+            - course: SOCIOL.130
+            - course: SOCIOL.130AC
+            - course: SOCIOL.131A
+            - course: SOCIOL.131AC
+            - course: SOCIOL.133
+            - course: UGBA.152
+
+    ls_peace_and_conflict_studies_concentration_culture_and_identity:
+        description: "Peace and Conflict Studies Concentration: Culture and Identity"
+        rule: OR
+        args:
+            - course: ANTHRO.189
+            - course: ASIANST.150
+            - course: ASAMST.150
+            - course: BUDDSTD.C120
+            - course: EA LANG.C120
+            - course: EDUC.140AC
+            - course: GWS.102
+            - course: GWS.103
+            - course: GERMAN.C109
+            - course: LNS.C180T
+            - course: HISTORY.100
+            - course: HISTORY.109C
+            - course: HISTORY.114B
+            - course: IAS.150
+            - course: LNS.150
+            - course: M E STU.130
+            - course: M E STU.150
+            - course: NATAMST.120AC
+            - course: PACS.125AC
+            - course: PACS.151
+            - course: POL SCI.122A
+            - course: POL SCI.144B
+            - course: SOCIOL.131A
+            - course: SOCIOL.131AC
+
+    ls_peace_and_conflict_studies_concentration_global_governance:
+        description: "Peace and Conflict Studies Concentration: Global Governance"
+        rule: OR
+        args:
+            - course: CY PLAN.115
+            - course: GPP.115
+            - course: ECON.115
+            - course: ECON.C181
+            - course: ENVECON.C181
+            - course: ENVECON.152
+            - course: ESPM.152
+            - course: GEOG.130
+            - course: GWS.141
+            - course: HISTORY.130
+            - course: HISTORY.162A
+            - course: HISTORY.162B
+            - course: PACS.130
+            - course: PACS.149
+            - course: PACS.151
+            - course: POLECON.101
+            - course: POL SCI.122A
+            - course: POL SCI.126A
+            - course: POL SCI.141C
+            - course: POL SCI.143A
+            - course: POL SCI.146A
+            - course: POL SCI.148A
+            - course: UGBA.178
+
+    ls_peace_and_conflict_studies_concentration_human_rights:
+        description: "Peace and Conflict Studies Concentration: Human Rights"
+        rule: OR
+        args:
+            - course: AFRICAM.111
+            - course: AFRICAM.112A
+            - course: AFRICAM.112B
+            - course: AFRICAM.138
+            - course: AFRICAM.139
+            - course: AMERSTD.102
+            - course: ANTHRO.139
+            - course: ASAMST.126
+            - course: ASAMST.141
+            - course: CHICANO.159
+            - course: CHICANO.174
+            - course: ENE,RES.175
+            - course: ESPM.161
+            - course: ESPM.162
+            - course: ESPM.163AC
+            - course: GERMAN.C109
+            - course: LNS.C180T
+            - course: GWS.141
+            - course: HISTORY.C187
+            - course: LNS.C140V
+            - course: ISF.100E
+            - course: LEGALST.107
+            - course: LEGALST.154
+            - course: LEGALST.177
+            - course: LEGALST.182
+            - course: NATAMST.101
+            - course: PACS.125AC
+            - course: PACS.126
+            - course: PACS.127
+            - course: PACS.128AC
+            - course: PACS.154
+            - course: POL SCI.124C
+            - course: POL SCI.140
+            - course: POL SCI.157A
+            - course: POL SCI.157B
+            - course: RHETOR.164
+            - course: RHETOR.165
+            - course: SOCIOL.111
+            - course: SOCIOL.124
+            - course: UGBA.175
+
+    ls_peace_and_conflict_studies_concentration_human_security:
+        description: "Peace and Conflict Studies Concentration: Human Security"
+        rule: OR
+        args:
+            - course: AFRICAM.112A
+            - course: AFRICAM.112B
+            - course: CY PLAN.115
+            - course: GPP.115
+            - course: DEV STD.C100
+            - course: GEOG.C112
+            - course: ECON.161
+            - course: ENVECON.152
+            - course: ESPM.155
+            - course: ESPM.165
+            - course: GEOG.C110
+            - course: ISF.C101
+            - course: GEOG.159AC
+            - course: EDUC.186AC
+            - course: ETH STD.159AC
+            - course: GEOG.164
+            - course: HISTORY.162A
+            - course: HISTORY.162B
+            - course: PACS.125AC
+            - course: PACS.149
+            - course: POL SCI.124A
+            - course: POL SCI.138E
+            - course: POL SCI.139B
+            - course: POL SCI.141C
+            - course: SOCIOL.127
+
+    ls_peace_and_conflict_studies_concentration_nonviolence:
+        description: "Peace and Conflict Studies Concentration: Nonviolence"
+        rule: OR
+        args:
+            - course: EDUC.189
+            - course: ETH STD.136
+            - course: ESPM.161
+            - course: ESPM.162
+            - course: GERMAN.C109
+            - course: LNS.C180T
+            - course: HISTORY.125A
+            - course: HISTORY.125B
+            - course: LEGALST.107
+            - course: NE STUD.146A
+            - course: NE STUD.146B
+            - course: PACS.149
+            - course: PACS.150
+            - course: PACS.150AC
+            - course: PACS.154
+            - course: PACS.164A
+            - course: PACS.164B
+            - course: PACS.170
+            - course: PHILOS.104
+            - course: PHILOS.108
+            - course: POL SCI.124A
+            - course: POL SCI.140
+            - course: PSYCH.167AC
+            - course: SOCIOL.C112
+            - course: RELIGST.C182
+            - course: SOCIOL.130
+            - course: SOCIOL.130AC
+
+
+
+    ls_geography_specialty_earth_system_science:
+        description: "Geography Specialty Group: Earth System Science"
+        rule: OR
+        args:
+            - course: GEOG.109
+            - course: GEOG.134
+            - course: GEOG.C136
+            - course: GEOG.C139
+            - course: GEOG.140A
+            - course: GEOG.140B
+            - course: GEOG.C141
+            - course: GEOG.142
+            - course: GEOG.143
+            - course: GEOG.144
+            - course: GEOG.C145
+            - course: GEOG.C146
+            - course: GEOG.148
+            - course: GEOG.171
+            - course: GEOG.173B
+            - course: GEOG.175
+
+    ls_geography_specialty_economy_culture_society:
+        description: "Geography Specialty Group: Economy, Culture & Society"
+        rule: OR
+        args:
+            - course: GEOG.109
+            - course: GEOG.C110
+            - course: GEOG.111
+            - course: GEOG.C112
+            - course: GEOG.120
+            - course: GEOG.123
+            - course: GEOG.125
+            - course: GEOG.130
+            - course: GEOG.134
+            - course: GEOG.138
+            - course: GEOG.C152
+            - course: GEOG.153
+            - course: GEOG.156
+            - course: GEOG.C157
+            - course: GEOG.159AC
+            - course: GEOG.C160A
+            - course: GEOG.C160B
+            - course: GEOG.163
+            - course: GEOG.164
+            - course: GEOG.165
+            - course: GEOG.169
+            - course: GEOG.170
+            - course: GEOG.172
+            - course: GEOG.173A
+            - course: GEOG.175
+
+    ls_geography_methodology:
+        description: "Geography Methodology Requirement"
+        rule: OR
+        args:
+            - course: GEOG.180
+            - course: GEOG.181
+            - course: GEOG.183
+            - course: GEOG.187
+            - course: GEOG.C188
+
+
+
+    ls_integrative_biology_group_B:
+        description: "Integrative Biology Requirement Group B: Ecology, Behavior & Diversity"
+        rule: OR
+        args:
+            - course: PLANTBI.C102
+            - course: INTEGBI.102
+            - course: INTEGBI.102LF
+            - course: INTEGBI.103LF
+            - course: INTEGBI.104LF
+            - course: INTEGBI.106A
+            - course: INTEGBI.C107L
+            - course: PLANTBI.C107
+            - course: INTEGBI.C110L
+            - course: PLANTBI.C110L
+            - course: INTEGBI.113L
+            - course: INTEGBI.C144
+            - course: INTEGBI.146LF
+            - course: INTEGBI.C149
+            - course: ESPM.C149
+            - course: INTEGBI.151
+            - course: INTEGBI.152
+            - course: INTEGBI.153
+            - course: INTEGBI.154
+            - course: INTEGBI.C155
+            - course: ANTHRO.C129D
+            - course: INTEGBI.C156
+            - course: ESPM.C103
+            - course: INTEGBI.157LF
+            - course: INTEGBI.158LF
+            - course: ESPM.C107
+            - course: INTEGBI.159
+            - course: INTEGBI.160
+            - course: INTEGBI.162
+            - course: INTEGBI.166
+            - course: INTEGBI.167
+            - course: INTEGBI.168L
+            - course: INTEGBI.173LF
+            - course: INTEGBI.174LF
+            - course: INTEGBI.175LF
+            - course: INTEGBI.181L
+            - course: INTEGBI.183L
+            - course: INTEGBI.C185L
+            - course: ANTHRO.C100
+            - course: INTEGBI.C187
+            - course: ANTHRO.C124C
+
+
+    ls_integrative_biology_group_C:
+        description: "Integrative Biology Requiremeng Group C: Structure, Function & Human Health"
+        rule: OR
+        args:
+            - course: INTEGBI.115
+            - course: INTEGBI.116L
+            - course: INTEGBI.117LF
+            - course: INTEGBI.118
+            - course: INTEGBI.119
+            - course: INTEGBI.123AL
+            - course: INTEGBI.C125L
+            - course: PHYS ED.C165
+            - course: INTEGBI.127L
+            - course: INTEGBI.128
+            - course: INTEGBI.C129L
+            - course: PHYS ED.C129
+            - course: INTEGBI.C130
+            - course: SOCIOL.118
+            - AND:
+                - course: INTEGBI.131
+                - course: INTEGBI.131L
+            - AND:
+                - course: INTEGBI.132
+                - course: INTEGBI.132L
+            - AND:
+                - course: INTEGBI.C135
+                - course: INTEGBI.C135L
+            - course: INTEGBI.136
+            - course: INTEGBI.137
+            - course: INTEGBI.138
+            - course: INTEGBI.139
+            - course: INTEGBI.140
+            - course: INTEGBI.C142L
+            - course: ANTHRO.C103
+            - course: INTEGBI.C143A
+            - course: PSYCH.C113
+            - course: INTEGBI.C143B
+            - course: PSYCH.C116
+            - course: INTEGBI.148
+            - AND:
+                - course: INTEGBI.151
+                - course: INTEGBI.151L
+            - course: INTEGBI.184L
+
+    ls_integrative_biology_lab:
+        description: "Integrative Biology Lab Requirement"
+        rule: OR
+        args:
+            - course: INTEGBI.C101L
+            - course: PLANTBI.C102
+            - course: INTEGBI.113L
+            - course: INTEGBI.116L
+            - course: INTEGBI.123AL
+            - course: PHYS ED.C165
+            - course: INTEGBI.C125L
+            - course: INTEGBI.C129L
+            - course: PHYS ED.C129
+            - course: INTEGBI.131L
+            - course: INTEGBI.127L
+            - course: INTEGBI.132L
+            - course: INTEGBI.C135L
+            - course: EL ENG.C145O
+            - course: BIO ENG.C136L
+            - course: INTEGBI.C142L
+            - course: ANTHRO.C103
+            - course: INTEGBI.C149L
+            - course: ESPM.C149L
+            - course: INTEGBI.151L
+            - course: INTEGBI.154L
+            - course: INTEGBI.168L
+            - course: INTEGBI.181
+            - course: INTEGBI.183L
+            - course: INTEGBI.184L
+            - course: INTEGBI.C185L
+            - course: ANTHRO.C100
+            - course: INTEGBI.102LF
+            - course: INTEGBI.103LF
+            - course: INTEGBI.104LF
+            - course: INTEGBI.C107LF
+            - course: PLANTBI.C107
+            - course: INTEGBI.117LF
+            - course: INTEGBI.146LF
+            - course: INTEGBI.153LF
+            - course: INTEGBI.157LF
+            - course: INTEGBI.C158LF
+            - course: ESPM.C107
+            - course: INTEGBI.173LF
+            - course: INTEGBI.174LF
+            - course: INTEGBI.175LF
+
+
+
+    ls_legal_studies_distribution_area_I:
+        description: "Legal Studies Distribution Requirement: Area I Crime, Law & Social Control"
+        rule: OR
+        args:
+            - course: LEGALST.102
+            - course: LEGALST.104AC
+            - course: LEGALST.105
+            - course: LEGALST.109
+            - course: LEGALST.120
+            - course: LEGALST.160
+            - course: LEGALST.163
+            - course: LEGALST.170
+
+    ls_legal_studies_distribution_area_II:
+        description: "Legal Studies Distribution Requirement: Area II Law & Culture"
+        rule: OR
+        args:
+            - course: LEGALST.103
+            - course: LEGALST.104AC
+            - course: LEGALST.105
+            - course: LEGALST.107
+            - course: LEGALST.116
+            - course: LEGALST.121
+            - course: LEGALST.132AC
+            - course: LEGALST.140
+            - course: LEGALST.151
+            - course: LEGALST.1
+            - course: LEGALST.155
+            - course: LEGALST.156
+            - course: LEGALST.160
+            - course: LEGALST.161
+            - course: LEGALST.168
+            - course: LEGALST.177
+            - course: LEGALST.181
+
+    ls_legal_studies_distribution_area_III:
+        description: "Legal Studies Distribution Requirement: Area III Law & Markets"
+        rule: OR
+        args:
+            - course: LEGALST.105
+            - course: LEGALST.107
+            - course: LEGALST.140
+            - course: LEGALST.145
+            - course: LEGALST.146
+            - course: LEGALST.147
+            - course: LEGALST.156
+            - course: LEGALST.158
+            - course: LEGALST.177
+
+    ls_legal_studies_distribution_area_IV:
+        description: "Legal Studies Distribution Requirement: Area IV Law, Rights & Social Change"
+        rule: OR
+        args:
+            - course: LEGALST.107
+            - course: LEGALST.132AC
+            - course: LEGALST.138
+            - course: LEGALST.154
+            - course: LEGALST.156
+            - course: LEGALST.157
+            - course: LEGALST.158
+            - course: LEGALST.180
+            - course: LEGALST.182
+            - course: LEGALST.183
+            - course: LEGALST.184
+            - course: LEGALST.189
+
+    ls_legal_studies_distribution_area_V:
+        description: "Legal Studies Distribution Requirement: Area V Law & Sovereignty"
+        rule: OR
+        args:
+            - course: LEGALST.111
+            - course: LEGALST.119
+            - course: LEGALST.138
+            - course: LEGALST.139
+            - course: LEGALST.157
+            - course: LEGALST.171
+            - course: LEGALST.176
+            - course: LEGALST.177
+            - course: LEGALST.178
+            - course: LEGALST.179
+            - course: LEGALST.182
+
+
+    ls_molecular_cell_biology_lower_division:
+        description: "Molecular Cell Biology Lower Division Requirements"
+        rule: AND
+        args:
+            - OR:
+                - course: MATH.10A
+                - course: MATH.10B
+            - OR:
+                - course: MATH.1A
+                - course: MATH.1B
+            - course: CHEM.1A
+            - course: CHEM.1AL
+            - course: BIOLOGY.1A
+            - course: BIOLOGY.1AL
+            - course: BIOLOGY.1B
+            - course: PHYSICS.8A
+            - course: PHYSICS.8B
+
+
+

@@ -1,0 +1,39 @@
+rules:
+
+    ls_american_studies_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # lower division
+            - OR:
+                - course: AMERSTD.10
+                - course: AMERSTD.10AC
+            - AND:
+                # three that focus on the US, no more than two in same dept
+        - AND: # upper division
+            - AND: # core methods
+                - OR: # time
+                    - course: AMERSTD.101
+                    - course: AMERSTD.C111
+                    - course: AMERSTD.C132B
+                    - course: AMERSTD.139AC
+                - OR: # place
+                    - course: AMERSTD.102
+                    - course: AMERSTD.C112
+                    - course: AMERSTD.C171
+                    - course: AMERSTD.H110
+            - AND: # area of concentration
+                - units:
+                    min: 6
+                    courses:
+                    # two different dept, no more than three from one
+            - OR: # thesis
+                - course: AMERSTD.191
+                - course: AMERSTD.190
+                - course: AMERSTD.H195
+                # THESIS OFFERED BY ANOTHER DEPT?!?!?! WUT.
+
+
+
+

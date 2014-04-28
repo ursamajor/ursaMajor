@@ -1,0 +1,89 @@
+rules:
+
+    cnr_conservation_and_resource_studies_major:
+        description: "Conservation and Resource Studies Major"
+        rule: AND
+        args:
+            - rule: university_all
+            - rule: cnr_lowerdiv_conservation_requirements
+            - rule: cnr_prepatory_conservation_requirements
+            - rule: cnr_upperdiv_conservation_requirements
+            - rule: cnr_area_conservation_requirements
+            - rule: cnr_units_upperdiv
+            - rule: units_upperdiv
+            - rule: units_total
+
+
+
+    cnr_lowerdiv_conservation_requirements:
+        description: "Lower Division Conservation and Resource Studies Requirement"
+        rule: AND
+        args:
+            - rule: crs_bio
+            - rule: crs_math
+            - course: ESPM.90
+            - rule: crs_breadth
+            - rule: crs_breadth
+            - rule: cnr_prepatory_conservation_requirements
+
+    crs_bio:
+        hidden: true
+        rule: OR
+        args:
+            - rule: bio1a
+            - rule: bio1b
+            - rule: bio11
+
+    crs_math:
+        hidden: true
+        rule: OR
+        args:
+            - course: MATH.16A
+            - course: MATH.16B
+            - course: MATH.1A
+            - course: MATH.1B
+            - course: STAT.2
+            - course: STAT.20
+            - course: STAT.25
+            - course: STAT.131A
+            - course: PB HLTH.142A
+
+    crs_breadth:
+        hidden: true
+        rule: count_courses
+        args:
+            min: 5
+            rule: AND
+            args:
+                - rule: cnr_breadth_arts_history_philosophy
+                - rule: cnr_breadth_social_international
+                - rule: cnr_breadth_physical
+                - rule: cnr_espm_environmental_science_core
+                - rule: cnr_espm_social_science_core
+
+
+    cnr_prepatory_conservation_requirements: # idk what qualifies
+        description: "Conservation and Resource Studies Preperatory Courses to the Area of Interest"
+        rule: count_courses
+        args:
+            min: 2
+            rule: OR
+            args:
+
+    cnr_upperdiv_conservation_requirements:
+        description: "Upper Division Conservation and Resource Studies Requirements"
+        rule: AND
+        args:
+            - course: ESPM.100
+            - course: ESPM.194A
+
+    cnr_area_conservation_requirements: # idk what qualifies
+        description: "Conservation and Resource Studies Area of Interest Courses Requirement"
+        rule: count_courses
+        args:
+            min: 8
+            rule: OR
+            args:
+                - rule: upperdiv
+
+

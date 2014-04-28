@@ -1,0 +1,31 @@
+rules:
+
+    ls_philosophy_minor:
+    rule: AND
+    args:
+        - AND: # lower division
+            - course: PHILOS.25A
+            - course: PHILOS.25B
+        - AND: # upper division
+            - OR: # ethics
+                - course: PHILOS.104
+                - course: PHILOS.105
+                - course: PHILOS.107
+                - course: PHILOS.115
+            - OR: # epistemology/metaphysics
+                - course: PHILOS.122
+                - course: PHILOS.125
+                - course: PHILOS.131
+                - course: PHILOS.132
+                - course: PHILOS.133
+                - course: PHILOS.135
+            - AND: # electives
+                - numcourses:
+                    min: 3
+                    courses:
+                        - dept: PHILOS # ones not chosen yet;
+                        # one can be in another department
+
+
+
+

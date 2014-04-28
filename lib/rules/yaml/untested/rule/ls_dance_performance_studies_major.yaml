@@ -1,0 +1,66 @@
+rules:
+
+    ls_dance_performance_studies_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # lower division
+            - course: THEATER.60
+                - OR:
+                    - AND:
+                        - course: THEATER.40A
+                        - course: THEATER.40B
+                    - AND:
+                        - course: THEATER.141A
+                        - course: THEATER.141B
+                    - AND:
+                        - course: THEATER.142A
+                        - course: THEATER.142B
+            - course: THEATER.26
+            - OR: # performance studies
+                - course: THEATER.52AC
+                - course: THEATER.25AC
+        - AND: # upper division
+            - AND: # intermediate modern dance technique
+                - course: THEATER.141A
+                - course: THEATER.141B
+            - AND: # advanced I modern dance technique
+                - course: THEATER.142A
+                - course: THEATER.142B
+            - AND: # choreography
+                - OR:
+                    - course: THEATER.144
+                    - course: THEATER.114
+                - OR:
+                    - course: THEATER.146A
+                    - course: THEATER.146B
+            - AND: # technical theater
+                - course: THEATER.167 # if 60 included craft shop
+                - course: THEATER.168 # if 60 included run crew
+            - OR: # design
+                - course: THEATER.172
+                - course: THEATER.173A
+                - course: THEATER.173B
+                - course: THEATER.174A
+                - course: THEATER.174B
+                - course: THEATER.175A
+                - course: THEATER.175B
+                - course: THEATER.177
+            - AND: # performance studies
+                - numcourses:
+                    min: 3
+                    courses:
+                        - OR: # performance theory
+                            - course: THEATER.119
+                        - OR: # performance culture
+                            - course: THEATER.121
+                            - course: THEATER.122
+                        - OR: # performance history
+                            - course: THEATER.125
+                            - course: THEATER.151B
+                        - OR: # performance literatures
+                            - course: THEATER.113A
+                            - course: THEATER.126
+
+

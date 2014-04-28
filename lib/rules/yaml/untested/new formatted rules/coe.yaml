@@ -1,0 +1,469 @@
+
+
+#    coe_bioengineering_major:
+#        description: "Bioengineering Major"
+#        rule: AND
+#        args:
+#            - coe_humanities_and_social_sciences
+#            - coe_lowerdiv
+#            - coe_upperdiv
+#            - units_upperdiv
+#            - units_total
+
+
+# upper division
+
+upperdiv_engineering_courses:
+    description: "Upper Division Engineering Courses"
+    rule: same_course
+    args:
+        - upperdiv_bioengineering
+        - upperdiv_civil_engineering
+        - upperdiv_engineering
+        - upperdiv_electrical_engineering
+        - upperdiv_industrial_engineering
+        - upperdiv_mechanical_engineering
+        - upperdiv_nuclear_engineering
+        - upperdiv_materials_science_and_engineering
+
+
+upperdiv_bioengineering:
+    description: "Upper Division Biongineering"
+    rule: same_course
+    args:
+        - upperdiv
+        - dept: BIO ENG
+
+upperdiv_civil_engineering:
+    description: "Upper Division Civil and Environmental Engineering"
+    rule: same_course
+    args:
+        - upperdiv
+        - dept: CIV ENG
+
+upperdiv_electrical_engineering:
+    description: "Upper Division Electrical Engineering and Computer Science"
+    rule: same_course
+    args:
+        - upperdiv
+        - dept: EL ENG
+
+upperdiv_engineering:
+    description: "Upper Division Engineering"
+    rule: same_course
+    args:
+        - upperdiv
+        - dept: ENGIN
+
+upperdiv_industrial_engineering:
+    description: "Upper Division Industrial Engineering and Operations Research"
+    rule: same_course
+    args:
+        - upperdiv
+        - dept: IND ENG
+
+upperdiv_materials_science_and_engineering:
+    description: "Upper Division Materials Science and Engineering"
+    rule: same_course
+    args:
+        - upperdiv
+        - dept: MAT SCI
+
+upperdiv_mechanical_engineering:
+    description: "Upper Division Mechanical Engineering"
+    rule: same_course
+    args:
+        - upperdiv
+        - dept: MEC ENG
+
+upperdiv_nuclear_engineering:
+    description: "Upper Division Nuclear Engineering"
+    rule: same_course
+    args:
+        - upperdiv
+        - dept: NUC ENG
+
+
+coe_engineering_electives:
+    description: "Engineering Electives"
+    rule: same_course
+    args:
+        - OR:
+            - dept: BIO ENG
+                - NOT:
+                    - course: BIO ENG.100
+            - dept: CHM ENG
+                - NOT:
+                    - course: CHM ENG.185
+            - dept: CIV ENG
+            - dept: COMPSCI
+                    - course: COMPSCI.195
+                    - course: COMPSCI.C195
+            - dept: EL ENG
+            - dept: ENGIN
+                - NOT:
+                    - course: ENGIN.100
+                    - course: ENGIN.110
+                    - course: ENGIN.C111
+                    - course: ENGIN.124
+                    - course: ENGIN.130AC
+                    - course: ENGIN.140
+                    - course: ENGIN.191
+                    - course: ENGIN.193
+                    - course: ENGIN.195
+                    - course: ENGIN.196
+            - dept: IND ENG
+                - NOT:
+                    - course: IND ENG.172
+                    - course: IND ENG.190A
+                    - course: IND ENG.190B
+                    - course: IND ENG.190C
+                    - course: IND ENG.190D
+                    - course: IND ENG.190E
+                    - course: IND ENG.190F
+                    - course: IND ENG.190G
+                    - course: IND ENG.190H
+                    - course: IND ENG.190I
+                    - course: IND ENG.190K
+            - dept: MEC ENG
+                - NOT:
+                    - course: MEC ENG.106
+            - dept: MAT SCI
+            - dept: NUC ENG
+
+
+coe_humanities_and_social_sciences:
+    description: "COE Humanities and Social Sciences Requirement"
+    rule: count_courses
+    args:
+        min: 7
+        args:
+            rule: same_dept
+            args:
+                rule: AND
+                args:
+                    - same_course:
+                        - upperdiv
+                        - coe_humanities_and_social_sciences_courses
+                    - same_course:
+                        - lowerdiv
+                        - coe_humanities_and_social_sciences_courses
+
+coe_humanities_and_social_sciences_courses:
+    description: "COE Humanities and Social Sciences Courses"
+    rule: AND
+        - university_rc_A
+        - university_rc_B
+        - coe_foreign_language
+        - ls_breadth_arts
+        - ls_breadth_history
+        - ls_breadth_philosophy
+            - NOT:
+                - course: ENGIN.124
+        - ls_breadth_international
+        - ls_breadth_social
+            - NOT:
+                - course: IND ENG.172
+                - course: IND ENG.171
+                - course: IND ENG.170
+                - course: IND ENG.166
+                - course: IND ENG.39A
+                - course: IND ENG.39
+                - course: CIV ENG.167
+                - course: CIV ENG.151
+                - course: CIV ENG.
+                - course: ENGIN.39D
+                - course: ENGIN.49
+                - course: ENGIN.120
+                - course: MEC ENG.39B
+                - course: NUC ENG.170
+
+
+coe_foreign_language:
+    description: "COE Foreign Language"
+    rules: same_course
+    args:
+        - OR:
+            - course: AFRICAM.10A
+            - course: AFRICAM.10B
+            - course: AFRICAM.11A
+            - course: AFRICAM.11B
+            - course: AFRICAM.15A
+            - course: AFRICAM.15B
+            - course: AFRICAM.7A
+            - course: AFRICAM.7B
+            - course: AFRICAM.C7A
+            - course: AFRICAM.C7B
+            - course: AFRICAM.8A
+            - course: AFRICAM.8B
+            - course: AFRICAM.9A
+            - course: AFRICAM.9B
+            - course: AFRICAM.13A
+            - course: AFRICAM.13B
+            - course: AFRICAM.14A
+            - course: AFRICAM.14B
+            - course: AFRICAM.19A
+            - course: AFRICAM.19B
+            - course: AFRICAM.30A
+            - course: AFRICAM.30B
+            - course: AFRICAM.31A
+            - course: AFRICAM.31B
+            - course: ARABIC.1A
+            - course: ARABIC.1B
+            - course: ARABIC.15B
+            - course: ARABIC.20A
+            - course: ARABIC.20B
+            - course: ARABIC.100A
+            - course: ARABIC.100B
+            - course: BANGLA.1A
+            - course: BANGLA.1B
+            - course: BANGLA.101A
+            - course: BANGLA.101B
+            - course: CATALAN.101
+            - course: CELTIC.15
+            - course: CELTIC.85
+            - course: CELTIC.105A
+            - course: CELTIC.145A
+            - course: CELTIC.145B
+            - course: CELTIC.16
+            - course: CELTIC.86
+            - course: CELTIC.144A
+            - course: CELTIC.144B
+            - course: CELTIC.146A
+            - course: CELTIC.146B
+            - course: CELTIC.102A
+            - course: CELTIC.102B
+            - course: CHINESE.1A
+            - course: CHINESE.1B
+            - course: CHINESE.1X
+            - course: CHINESE.1Y
+            - course: CHINESE.10A
+            - course: CHINESE.10B
+            - course: CHINESE.10X
+            - course: CHINESE.10Y
+            - course: CHINESE.100A
+            - course: CHINESE.100B
+            - course: CHINESE.100XA
+            - course: CHINESE.100XB
+            - course: CHINESE.111
+            - course: CHINESE.112
+            - course: COM LIT.112A
+            - course: COM LIT.112B
+            - course: CUNEIF.112A
+            - course: CUNEIF.112B
+            - course: CUNEIF.100A
+            - course: CUNEIF.100B
+            - course: CUNEIF.102A
+            - course: CUNEIF.102B
+            - course: CUNEIF.106A
+            - course: CUNEIF.106B
+            - course: EAEURST.1A
+            - course: EAEURST.1B
+            - course: EAEURST.2A
+            - course: EAEURST.2B
+            - course: EAEURST.101A
+            - course: EAEURST.101B
+            - course: EAEURST.102A
+            - course: EAEURST.102B
+            - course: EGYPT.100A
+            - course: EGYPT.100B
+            - course: EGYPT.101A
+            - course: EGYPT.101B
+            - course: FILIPN.1A
+            - course: FILIPN.1B
+            - course: FILIPN.100A
+            - course: FILIPN.100B
+            - course: FILIPN.101A
+            - course: FILIPN.101B
+            - course: FRENCH.1
+            - course: FRENCH.2
+            - course: FRENCH.3
+            - course: FRENCH.4
+            - course: FRENCH.13
+            - course: FRENCH.14
+            - course: FRENCH.35
+            - course: FRENCH.102
+            - course: FRENCH.138
+            - course: GERMAN.1
+            - course: GERMAN.1E
+            - course: GERMAN.2
+            - course: GERMAN.3
+            - course: GERMAN.4
+            - course: GERMAN.40
+            - course: GERMAN.101
+            - course: GERMAN.102A
+            - course: GERMAN.102B
+            - course: GERMAN.102D
+            - course: GERMAN.105
+            - course: GERMAN.172
+            - course: GREEK.1
+            - course: GREEK.2
+            - course: GREEK.10
+            - course: GREEK.40
+            - course: HEWBREW.1A
+            - course: HEWBREW.1B
+            - course: HEWBREW.20A
+            - course: HEWBREW.20B
+            - course: HEWBREW.100A
+            - course: HEWBREW.100B
+            - course: HIN-URD.1A
+            - course: HIN-URD.1B
+            - course: HIN-URD.100A
+            - course: HIN-URD.100B
+            - course: HIN-URD.2A
+            - course: HIN-URD.2B
+            - course: HIN-URD.103A
+            - course: HIN-URD.103B
+            - course: HIN-URD.104A
+            - course: HIN-URD.104B
+            - course: IRANIAN.110A
+            - course: ITALIAN.1
+            - course: ITALIAN.2
+            - course: ITALIAN.3
+            - course: ITALIAN.4
+            - course: ITALIAN.12
+            - course: ITALIAN.101A
+            - course: ITALIAN.101B
+            - course: JAPAN.1A
+            - course: JAPAN.1B
+            - course: JAPAN.10A
+            - course: JAPAN.10B
+            - course: JAPAN.10X
+            - course: JAPAN.100A
+            - course: JAPAN.100B
+            - course: JAPAN.100X
+            - course: KHMER.1A
+            - course: KHMER.1B
+            - course: KHMER.100A
+            - course: KHMER.100B
+            - course: KHMER.101A
+            - course: KHMER.101B
+            - course: KOREAN.1A
+            - course: KOREAN.1AX
+            - course: KOREAN.1B
+            - course: KOREAN.1BX
+            - course: KOREAN.10A
+            - course: KOREAN.10B
+            - course: KOREAN.10BX
+            - course: KOREAN.100A
+            - course: KOREAN.110B
+            - course: KOREAN.111
+            - course: KOREAN.112
+            - course: LATIN.1
+            - course: LATIN.2
+            - course: LATIN.10
+            - course: LATIN.40
+            - course: MALAY/I.1A
+            - course: MALAY/I.1B
+            - course: MALAY/I.100A
+            - course: MALAY/I.100B
+            - course: PERSIAN.1A
+            - course: PERSIAN.1B
+            - course: PERSIAN.11A
+            - course: PERSIAN.11B
+            - course: PERSIAN.100A
+            - course: PERSIAN.100B
+            - course: PORTUG.11
+            - course: PORTUG.12
+            - course: PORTUG.101A
+            - course: PORTUG.101B
+            - course: PORTUG.103
+            - course: PUNJABI.1A
+            - course: PUNJABI.1B
+            - course: PUNJABI.100A
+            - course: PUNJABI.100B
+            - course: SANSKR.100A
+            - course: SANSKR.100B
+            - course: SANSKR.101A
+            - course: SANSKR.101B
+            - course: SCANDIN.1A
+            - course: SCANDIN.1B
+            - course: SCANDIN.100A
+            - course: SCANDIN.100B
+            - course: SCANDIN.2A
+            - course: SCANDIN.2B
+            - course: SCANDIN.102A
+            - course: SCANDIN.102B
+            - course: SCANDIN.3A
+            - course: SCANDIN.3B
+            - course: SCANDIN.4A
+            - course: SCANDIN.4B
+            - course: SEMITIC.100A
+            - course: SEMITIC.100B
+            - course: SLAVIC.1
+            - course: SLAVIC.2
+            - course: SLAVIC.3
+            - course: SLAVIC.4
+            - course: SLAVIC.6A
+            - course: SLAVIC.6B
+            - course: SLAVIC.101
+            - course: SLAVIC.103A
+            - course: SLAVIC.103B
+            - course: SLAVIC.106A
+            - course: SLAVIC.106B
+            - course: SLAVIC.109
+            - course: SLAVIC.120A
+            - course: SLAVIC.120B
+            - course: SLAVIC.25A
+            - course: SLAVIC.25B
+            - course: SLAVIC.115A
+            - course: SLAVIC.115B
+            - course: SLAVIC.26A
+            - course: SLAVIC.26B
+            - course: SLAVIC.116A
+            - course: SLAVIC.116B
+            - course: SLAVIC.26A
+            - course: SLAVIC.26B
+            - course: SLAVIC.117A
+            - course: SLAVIC.117B
+            - course: SLAVIC.28A
+            - course: SLAVIC.28B
+            - course: SLAVIC.118A
+            - course: SLAVIC.118B
+            - course: S,SEASN.1A
+            - course: S,SEASN.1B
+            - course: S,SEASN.100A
+            - course: S,SEASN.100B
+            - course: SPANISH.1
+            - course: SPANISH.2
+            - course: SPANISH.3
+            - course: SPANISH.4
+            - course: SPANISH.8
+            - course: SPANISH.12
+            - course: SPANISH.21
+            - course: SPANISH.22
+            - course: SPANISH.102A
+            - course: TAGALG.1A
+            - course: TAGALG.1B
+            - course: TAGALG.100A
+            - course: TAGALG.100B
+            - course: TAMIL.1A
+            - course: TAMIL.1B
+            - course: TAMIL.101A
+            - course: TAMIL.101B
+            - course: TELUGU.1A
+            - course: TELUGU.1B
+            - course: THAI.1A
+            - course: THAI.1B
+            - course: THAI.100A
+            - course: THAI.100B
+            - course: THAI.101A
+            - course: THAI.101B
+            - course: TIBETAN.1A
+            - course: TIBETAN.1B
+            - course: TIBETAN.10A
+            - course: TIBETAN.10B
+            - course: TURKISH.1A
+            - course: TURKISH.1B
+            - course: TURKISH.100A
+            - course: TURKISH.100B
+            - course: VIETNMS.1A
+            - course: VIETNMS.1B
+            - course: VIETNMS.100A
+            - course: VIETNMS.100B
+            - course: VIETNMS.101A
+            - course: VIETNMS.101B
+            - course: YIDDISH.101
+            - course: YIDDISH.102
+
+

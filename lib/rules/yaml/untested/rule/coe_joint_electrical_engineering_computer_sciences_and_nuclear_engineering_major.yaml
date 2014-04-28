@@ -1,0 +1,128 @@
+rules:
+
+    coe_joint_electrical_engineering_and_nuclear_engineering_major:
+        rule: AND
+        args:
+            - OR:
+                - AND:
+                    - course: CHEM.1A
+                    - course: CHEM.1AL
+                - course: CHEM.4A
+            - course: COMPSCI.61A
+            - course: COMPSCI.61B
+            - course: NUC ENG.92
+            - course: MATH.1A
+            - course: MATH.1B
+            - course: MATH.53
+            - course: MATH.54
+            - course: PHYSICS.7A
+            - course: PHYSICS.7B
+            - course: PHYSICS.7C
+            - course: EL ENG.20N
+            - course: EL ENG.40
+            - course: ENGIN.45
+            - course: ENGIN.115
+            - course: EL ENG.120
+            - OR:
+                - course: EL ENG.126
+                - course: STAT.25
+                - course: STAT.134
+            - course: NUC ENG.101
+            - course: NUC ENG.104
+            - course: NUC ENG.150
+            - course: EL ENG.105
+            - course: EL ENG.117
+            - course: NUC ENG.170A
+            - AND: # technical electives
+                - units:
+                    min: 9
+                    courses:
+                        - course: BIO ENG.C165
+                        - course: CHEM.143
+                        - course: CHM ENG.150A
+                        - course: CHM ENG.150B
+                        - course: CIV ENG.193
+                        - course: ENGIN.120
+                        - course: ENE,RES.151
+                        - course: EL ENG.120
+                        - course: EL ENG.145B
+                        - course: IND ENG.166
+                        - course: MAT SCI.102
+                        - course: MAT SCI.104
+                        - course: MAT SCI.112
+                        - course: MAT SCI.113
+                        - AND:
+                            - course: MEC ENG.106
+                            - course: MEC ENG.109
+                        - course: CHM ENG.150A
+                        - course: MEC ENG.106
+                        - course: MEC ENG.109
+                        - course: NUC ENG.107
+                        - course: NUC ENG.120
+                        - course: NUC ENG.124
+                        - course: NUC ENG.130
+                        - course: NUC ENG.155
+                        - course: NUC ENG.161
+                        - course: NUC ENG.162
+                        - course: NUC ENG.167
+                        - course: NUC ENG.175
+                        - course: NUC ENG.180
+                        - course: PHYSICS.110A
+                        - course: PHYSICS.110B
+                        - course: PHYSICS.111
+                        - course: PHYSICS.129A
+                        - course: PHYSICS.129B
+                        - course: PHYSICS.139
+                        - course: PHYSICS.142
+                - units:
+                    min: 8
+                    courses:
+                        - course: EL ENG.113
+                        - course: EL ENG.114
+                        - course: EL ENG.118
+                        - course: EL ENG.119
+                        - course: EL ENG.128
+                        - course: EL ENG.130
+                        - course: EL ENG.131
+                        - course: EL ENG.134
+                        - course: EL ENG.137A
+                        - course: EL ENG.137B
+                        - course: EL ENG.140
+                        - course: EL ENG.141
+                        - course: EL ENG.143
+                        - course: EL ENG.239
+                        - course: COMPSCI.150
+            - AND: # HSS
+            	- university_rc_A
+            	- university_rc_B
+            	- university_AC
+            	- numcourses:
+            		min: 4
+            		courses:
+            			- coe_humanities_and_social_sciences
+                            - numcourses:
+                                min: 2
+                                rule: upper_division
+                            - numcorses:
+                                min: 2
+                                rule: same_department # 1 up, 1 low
+                - OR: # ethics, fulfills one hss
+                    - course: ANTHRO.156B
+                    - course: BIO ENG.100
+                    - course: ENGIN.125
+                    - course: ESPM.161
+                    - course: ESPM.162
+                    - course: GEOG.31
+                    - course: ISF.61
+                    - course: ISF.100E
+                    - course: IAS.105
+                    - course: LEGALST.19AC
+                    - course: LEGALST.100A
+                    - course: MEC ENG.191AC
+                    - course: PHILOS.2
+                    - course: PHILOS.104
+                    - course: PHILOS.107
+                    - course: POL SCI.108A
+                    - course: PB HLTH.116 # can't fullfil hss
+                    - course: SOCIOL.116
+                    - course: SOCIOL.123

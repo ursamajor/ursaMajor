@@ -1,0 +1,702 @@
+
+# upper division
+
+cnr_units_upperdiv:
+    description: "Upper Division CNR Requirement"
+    rule: count_courses
+    args:
+        min: 5
+        rule: OR
+        args:
+            - rule: upperdiv_environmental_economics_and_policy
+            - rule: upperdiv_environmental_science
+            - rule: upperdiv_environmental_sciences_policy_management
+            - rule: upperdiv_nutritional_science
+            - rule: upperdiv_plant_biology
+
+
+upperdiv_environmental_economics_and_policy:
+    description: "Upper Division Environmental Economics and Policy"
+    rule: same_course
+    args:
+        - upperdiv
+        - dept: ENVECON
+
+upperdiv_environmental_science:
+    description: "Upper Division Environmental Science"
+    rule: same_course
+    args:
+        - upperdiv
+        - dept: ENV SCI
+
+upperdiv_environmental_sciences_policy_management:
+    description: "Upper Division Environmental Sciences, Policy and Management"
+    rule: same_course
+    args:
+        - upperdiv
+        - dept: ESPM
+
+upperdiv_nutritional_science:
+    description: "Upper Division Nutritional Science & Toxicology"
+    rule: same_course
+    args:
+        - upperdiv
+        - dept: NUSCTX
+
+upperdiv_plant_biology:
+    description: "Upper Division Plant Biology"
+    rule: same_course
+    args:
+        - upperdiv
+        - dept: PLANTBI
+
+
+
+# lower division cores
+
+cnr_espm_environmental_science_core:
+    description: "ESPM Environmental Science Core"
+    rule: OR
+    args:
+        - course: ESPM.2
+        - course: ESPM.6
+        - course: ESPM.C10
+        - course: LNS.C30V
+        - course: ESPM.15
+
+cnr_espm_social_science_core:
+    description: "ESPM Social Science Core"
+    rule: OR
+    args:
+        - course: ESPM.C11
+        - course: LNS.C30U
+        - course: ESPM.C12
+        - course: ESPM.50AC
+        - course: ESPM.60
+
+
+# breadth
+cnr_breadth_arts_history_philosophy:
+    description: "Arts, History, or Philosophy Breadth"
+    rule: units
+    args:
+        min: 3
+        rule: OR
+        args:
+            - rule: ls_breadth_history
+            - rule: ls_breadth_philosophy
+            - rule: ls_breadth_arts
+
+cnr_breadth_social_international:
+    description: "Social or International Breadth"
+    rule: units
+    args:
+        min: 3
+        rule: OR
+        args:
+            - rule: ls_breadth_social
+            - rule: ls_breadth_international
+
+
+cnr_breadth_physical:
+    description: "Physical Breadth"
+    rule: same_course
+    args:
+        - OR:
+            - course: ANTHRO.131
+            - course: ANTHRO.132
+            - course: ANTHRO.133
+            - course: ANTHRO.134
+            - course: ANTHRO.134A
+            - course: ARCH.39A
+            - course: ARCH.140
+            - course: ARCH.149
+            - course: ARCH.150
+            - course: ARCH.152
+            - course: ARCH.154
+            - course: ARCH.160
+            - course: ARCH.162
+            - course: ARCH.170A
+            - course: ARCH.170E
+            - course: ARCH.171
+            - course: ARCH.173
+            - course: ARCH.174
+            - course: ARCH.175
+            - course: ARCH.176
+            - course: ARCH.178
+            - course: ARCH.179
+            - course: ARCH.181
+            - dept: ASTRON
+                - NOT:
+                    - course: ASTRON.3
+                    - course: ASTRON.100
+            - course: BIOCHEM.170B # doesn't exist
+            - course: BIO ENG.C125
+            - course: CHM ENG.124
+            - course: CHM ENG.140
+            - course: CHM ENG.141
+            - course: CHM ENG.142
+            - course: CHM ENG.150A
+            - course: CHM ENG.150B
+            - course: CHM ENG.152
+            - course: CHM ENG.154
+            - course: CHM ENG.160
+            - course: CHM ENG.170A
+            - course: CHM ENG.170E
+            - course: CHM ENG.171
+            - course: CHM ENG.173
+            - course: CHM ENG.174
+            - course: CHM ENG.175
+            - course: CHM ENG.176
+            - course: CHM ENG.178
+            - course: CHM ENG.179
+            - course: CHM ENG.181
+            - dept: CHEM
+                - NOT:
+                    - course: CHEM.3AL
+                    - course: CHEM.3BL
+                    - course: CHEM.20
+                    - course: CHEM.100
+                    - course: CHEM.130A
+                    - course: CHEM.130B
+                    - course: CHEM.143
+            - course: CIV ENG.70
+            - course: CIV ENG.100
+            - course: CIV ENG.101
+            - course: CIV ENG.102
+            - course: CIV ENG.103
+            - course: CIV ENG.104
+            - course: CIV ENG.105
+            - course: CIV ENG.106
+            - course: CIV ENG.C106
+            - course: CIV ENG.108
+            - course: CIV ENG.109
+            - course: CIV ENG.110
+            - course: CIV ENG.111
+            - course: CIV ENG.112
+            - course: CIV ENG.113
+            - course: CIV ENG.115
+            - course: CIV ENG.116N
+            - course: CIV ENG.C116
+            - course: CIV ENG.117
+            - course: CIV ENG.118
+            - course: CIV ENG.119
+            - course: CIV ENG.120
+            - course: CIV ENG.120N
+            - course: CIV ENG.121
+            - course: CIV ENG.121N
+            - course: CIV ENG.122
+            - course: CIV ENG.124
+            - course: CIV ENG.125
+            - course: CIV ENG.130
+            - course: CIV ENG.131
+            - course: CIV ENG.131N
+            - course: CIV ENG.140
+            - course: CIV ENG.144
+            - course: CIV ENG.148A
+            - course: CIV ENG.148B
+            - course: CIV ENG.150
+            - course: CIV ENG.153
+            - course: CIV ENG.160
+            - course: CIV ENG.166
+            - course: CIV ENG.168N
+            - course: CIV ENG.170
+            - course: CIV ENG.171
+            - course: CIV ENG.172
+            - course: CIV ENG.173
+            - course: CIV ENG.175
+            - course: CIV ENG.176
+            - course: CIV ENG.177
+            - course: CIV ENG.185
+            - course: COMPSCI.39F
+            - course: COMPSCI.61C
+            - course: COMPSCI.61CL
+            - course: COMPSCI.188
+            - dept: EPS
+                - NOT:
+                    - course: EPS.3
+                    - course: EPS.39A
+                    - course: EPS.60
+                    - course: EPS.80
+                    - course: EPS.C100
+                    - course: EPS.104
+                    - course: EPS.106AC
+                    - course: EPS.119
+                    - course: EPS.120
+                    - course: EPS.150
+                    - course: EPS.185
+            - course: EL ENG.1
+            - course: EL ENG.20
+            - course: EL ENG.40
+            - course: EL ENG.41I
+            - course: EL ENG.100
+            - course: EL ENG.104
+            - course: EL ENG.110
+            - course: EL ENG.114
+            - course: EL ENG.117
+            - course: EL ENG.118
+            - course: EL ENG.121
+            - course: EL ENG.122
+            - course: EL ENG.123
+            - course: EL ENG.C125
+            - course: EL ENG.128
+            - course: EL ENG.129
+            - course: EL ENG.130
+            - course: EL ENG.131
+            - course: EL ENG.134
+            - course: EL ENG.135
+            - course: EL ENG.136
+            - course: EL ENG.140
+            - course: EL ENG.141
+            - course: EL ENG.142
+            - course: EL ENG.143
+            - course: EL ENG.145A
+            - course: EL ENG.145B
+            - course: EL ENG.145M
+            - course: EL ENG.146
+            - course: ENE,RES.100
+            - course: ENE,RES.C100
+            - course: ENE,RES.102
+            - course: ENE,RES.120
+            - course: ENE,RES.140
+            - course: ENE,RES.141
+            - course: ENGIN.11
+            - course: ENGIN.36
+            - course: ENGIN.45
+            - course: ENGIN.49
+            - course: ENGIN.101
+            - course: ENGIN.102
+            - course: ENGIN.117
+            - course: ENGIN.135
+            - course: ENGIN.145
+            - course: ENGIN.C150
+            - course: ENGIN.153
+            - course: ENGIN.160
+            - course: ENGIN.161
+            - course: ENGIN.162
+            - course: ENGIN.165
+            - course: ENGIN.166
+            - course: ENGIN.172
+            - course: ESPM.C107
+            - course: ESPM.120
+            - course: ESPM.121
+            - course: ESPM.124
+            - course: ESPM.125
+            - course: ESPM.126
+            - course: ESPM.127
+            - course: ESPM.128
+            - course: ESPM.C128
+            - course: ESPM.129
+            - course: ESPM.130
+            - course: ESPM.C130
+            - course: ESPM.148
+            - course: ESPM.172
+            - course: ESPM.177
+            - course: ESPM.179
+            - course: ESPM.180
+            - course: ESPM.C180
+            - course: ESPM.181
+            - course: ENV SCI.125
+            - course: GEOG.1
+            - course: GEOG.30
+            - course: GEOG.39C
+            - course: GEOG.40
+            - course: GEOG.C82
+            - course: GEOG.C136
+            - course: GEOG.C139
+            - course: GEOG.140
+            - course: GEOG.140A
+            - course: GEOG.140B
+            - course: GEOG.C141
+            - course: GEOG.142
+            - course: GEOG.143
+            - course: GEOG.144
+            - course: GEOG.146
+            - course: GEOG.147
+            - course: GEOG.171
+            - course: GEOG.184
+            - course: GEOG.185
+            - course: HISTORY.181B
+            - course: IND ENG.39A
+            - course: IND ENG.130
+            - course: IND ENG.131
+            - course: IND ENG.140
+            - course: IND ENG.150
+            - course: IND ENG.161
+            - course: IND ENG.162
+            - course: IND ENG.164
+            - course: IND ENG.165
+            - course: IND ENG.180
+            - course: INTEGBI.39D
+            - course: INTEGBI.C82
+            - course: INTEGBI.106
+            - course: INTEGBI.C158
+            - course: LNS.16
+            - course: LNS.70A
+            - course: LNS.70B
+            - course: LNS.C70T
+            - course: LNS.C70U
+            - course: LNS.C70V
+            - course: LNS.C70X
+            - course: LNS.C70Y
+            - course: LNS.117
+            - course: LNS.122
+            - course: LNS.170AC
+            - course: LNS.C170AC
+            - course: MAT SCI.101
+            - course: MAT SCI.102
+            - course: MAT SCI.103
+            - course: MAT SCI.104
+            - course: MAT SCI.111
+            - course: MAT SCI.112
+            - course: MAT SCI.113
+            - course: MAT SCI.114
+            - course: MAT SCI.115
+            - course: MAT SCI.116
+            - course: MAT SCI.117
+            - course: MAT SCI.118
+            - course: MAT SCI.120
+            - course: MAT SCI.121
+            - course: MAT SCI.122
+            - course: MAT SCI.123
+            - course: MAT SCI.124
+            - course: MAT SCI.125
+            - course: MAT SCI.130
+            - course: MAT SCI.145
+            - course: MAT SCI.146
+            - course: MAT SCI.148
+            - course: MAT SCI.149
+            - course: MAT SCI.150
+            - course: MAT SCI.160
+            - course: MAT SCI.161
+            - course: MAT SCI.170
+            - course: MAT SCI.172
+            - course: MAT SCI.176
+            - course: MAT SCI.180
+            - course: MEC ENG.1
+            - course: MEC ENG.39A
+            - course: MEC ENG.39C
+            - course: MEC ENG.39D
+            - course: MEC ENG.39E
+            - course: MEC ENG.101
+            - course: MEC ENG.102A
+            - course: MEC ENG.104
+            - course: MEC ENG.105
+            - course: MEC ENG.106
+            - course: MEC ENG.107A
+            - course: MEC ENG.107B
+            - course: MEC ENG.109
+            - course: MEC ENG.110
+            - course: MEC ENG.122
+            - course: MEC ENG.130
+            - course: MEC ENG.132
+            - course: MEC ENG.133
+            - course: MEC ENG.134
+            - course: MEC ENG.135
+            - course: MEC ENG.140
+            - course: MEC ENG.142
+            - course: MEC ENG.145
+            - course: MEC ENG.151
+            - course: MEC ENG.161
+            - course: MEC ENG.162
+            - course: MEC ENG.163
+            - course: MEC ENG.170
+            - course: MEC ENG.173
+            - course: MEC ENG.175
+            - course: MEC ENG.185
+            - course: NUC ENG.39
+            - course: NUC ENG.92
+            - course: NUC ENG.104A
+            - course: NUC ENG.107
+            - course: NUC ENG.124
+            - course: NUC ENG.150
+            - course: NUC ENG.160
+            - course: NUC ENG.161
+            - course: NUC ENG.162
+            - course: NUC ENG.180
+            - course: OPTOM.39A
+            - dept: PHYSICS
+                - NOT:
+                    - course: PHYSICS.C21
+                    - course: PHYSICS.39
+                    - course: PHYSICS.100
+                    - course: PHYSICS.H190
+            - course: PB HLTH.C171
+            - course: PB HLTH.175
+            - course: PB HLTH.176
+            - course: PUB POL.C184
+            - course: STAT.39B
+            - course: UGIS.66
+
+# miscellaneous
+
+bio1a:
+    hidden: true
+    rule: AND
+    args:
+        - course: BIOLOGY.1A
+        - course: BIOLOGY.1AL
+
+bio1b:
+    hidden: true
+    rule: AND
+    args:
+        - course: BIOLOGY.1B
+        - course: BIOLOGY.1BL
+
+stat_20_21_25:
+    hidden: true
+    rule: OR
+    args:
+        - course: STAT.20
+        - course: STAT.21
+        - course: STAT.25
+
+enviro_econ:
+    hidden: true
+    rule: OR
+    args:
+        - course: ENVECON.C1
+        - course: ECON.C3
+
+chem3a:
+    hidden: true
+    rule: AND
+    args:
+        - course: CHEM.3A
+        - course: CHEM.3AL
+
+es_bio:
+    hidden: true
+    rule: OR
+    args:
+        - rule: es_bio1
+        - rule: es_bio11
+
+es_bio1:
+    hidden: true
+    rule: AND
+    args:
+        - course: BIOLOGY.1A
+        - course: BIOLOGY.1AL
+        - course: BIOLOGY.1B
+
+
+# other pop Lab courses
+bioengc22:
+    hidden: true
+    rule: AND
+    args:
+        - course: BIO ENG.C22
+        - course: BIO ENG.C22L
+
+civeng115:
+    hidden: true
+    rule: AND
+    args:
+        - course: CIV ENG.115
+        - course: CIV ENG.115L
+civeng117:
+    hidden: true
+    rule: AND
+    args:
+        - course: CIV ENG.117
+        - course: CIV ENG.117L
+
+espm102B:
+    hidden: true
+    rule: AND
+    args:
+        - course: ESPM.102B
+        - course: ESPM.1O2BL
+
+espm146:
+    hidden: true
+    rule: AND
+    args:
+        - course: ESPM.146
+        - course: ESPM.146L
+
+espm149:
+    hidden: true
+    rule: AND
+    args:
+        - course: ESPM.C149
+        - course: ESPM.C149L
+
+ibc101:
+    hidden: true
+    rule: AND
+    args:
+        - course: INTEGBI.C101
+        - course: INTEGBI.C101L
+
+ib102:
+    hidden: true
+    rule: AND
+    args:
+        - course: INTEGBI.102
+        - course: INTEGBI.102L
+
+ib103:
+    hidden: true
+    rule: AND
+    args:
+        - course: INTEGBI.103
+        - course: INTEGBI.103L
+ib104:
+    hidden: true
+    rule: AND
+    args:
+        - course: INTEGBI.104
+        - course: INTEGBI.104L
+
+ib117:
+    hidden: true
+    rule: AND
+    args:
+        - course: INTEGBI.117
+        - course: INTEGBI.117L
+
+ib151:
+    hidden: true
+    rule: AND
+    args:
+        - course: INTEGBI.151
+        - course: INTEGBI.151L
+
+ib153:
+    hidden: true
+    rule: AND
+    args:
+        - course: INTEGBI.153
+        - course: INTEGBI.153L
+
+ib153lf:
+    hidden: true
+    rule: OR
+    args:
+        - course: INTEGBI.153
+        - course: INTEGBI.153LF
+ib154:
+    hidden: true
+    rule: AND
+    args:
+        - course: INTEGBI.154
+        - course: INTEGBI.154L
+
+ib168:
+    hidden: true
+    rule: AND
+    args:
+        - course: INTEGBI.168
+        - course: INTEGBI.168L
+
+ib173:
+    hidden: true
+    rule: AND
+    args:
+        - course: INTEGBI.173
+        - course: INTEGBI.173L
+
+ib174:
+    hidden: true
+    rule: AND
+    args:
+        - course: INTEGBI.174
+        - course: INTEGBI.174L
+
+ib175:
+    hidden: true
+    rule: AND
+    args:
+        - course: INTEGBI.175
+        - course: INTEGBI.175L
+
+ib184:
+    hidden: true
+    rule: OR
+    args:
+        - course: INTEGBI.184
+        - course: INTEGBI.184L
+
+mcbc112:
+    hidden: true
+    rule: AND
+    args:
+        - course: MCELLBI.C112
+        - course: MCELLBI.C112L
+
+pmbc102:
+    hidden: true
+    rule: AND
+    args:
+        - course: PLANTBI.C102
+        - course: PLANTBI.C102L
+
+pmb110:
+    hidden: true
+    rule: AND
+    args:
+        - course: PLANTBI.110
+        - course: PLANTBI.110L
+
+pmbc112:
+    hidden: true
+    rule: AND
+    args:
+        - course: PLANTBI.C112
+        - course: PLANTBI.C112L
+
+pmb120:
+    hidden: true
+    rule: AND
+    args:
+        - course: PLANTBI.120
+        - course: PLANTBI.120L
+
+pmb135:
+    hidden: true
+    rule: AND
+    args:
+        - course: PLANTBI.135
+        - course: PLANTBI.135L
+
+pmb142_c144:
+    hidden: true
+    rule: AND
+    args:
+        - course: PLANTBI.142
+        - course: PLANTBI.C144L
+
+pmbc144:
+    hidden: true
+    rule: AND
+    args:
+        - course: PLANTBI.C144
+        - course: PLANTBI.C144L
+
+pmb150:
+    hidden: true
+    rule: AND
+    args:
+        - course: PLANTBI.150
+        - course: PLANTBI.150L
+
+pmb160:
+    hidden: true
+    rule: AND
+    args:
+        - course: PLANTBI.160
+        - course: PLANTBI.160L
+
+pbhealth162a:
+    hidden: true
+    rule: AND
+    args:
+        - course: PB HLTH.162A
+        - course: PB HLTH.162AL
+
+
+
+

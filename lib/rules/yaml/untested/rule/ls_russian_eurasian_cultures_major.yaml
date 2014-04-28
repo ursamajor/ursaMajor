@@ -1,0 +1,50 @@
+rules:
+
+    ls_russian_eurasian_cultures_major: # new reqs as of spring 2014
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # lower division
+            - AND: # language
+                - OR:
+                    - AND:
+                        - course: SLAVIC.1
+                        - course: SLAVIC.2
+                    - course: SLAVIC.10
+                    - course: SLAVIC.6A
+                - OR:
+                    - AND:
+                        - course: SLAVIC.3
+                        - course: SLAVIC.3
+                    - course: SLAVIC.20
+                    - course: SLAVIC.6B
+            - course: SLAVIC.50
+        - AND: # upper division
+            - course: SLAVIC.100
+            - OR: # cultural topics
+                - course: SLAVIC.148
+                - course: SLAVIC.158
+            - OR: # History
+                - course: HISTORY.171A
+                - course: HISTORY.171B
+                - course: HISTORY.171C
+                - course: HISTORY.172
+                - course: HISTORY.173
+                - course: HISTORY.174A
+                - course: HISTORY.177A
+                - course: HISTORY.177B
+            - AND: # electives
+                - numcourses:
+                    min: 4
+                    courses: # can also utilize other relevant courses
+                    # from History, Anthro, ComLit, Theater, Dance, 
+                    # Econ, Journalism, Legal, PACS, PolEcon
+                        - dept: SLAVIC
+                        - course: GEOG.55C
+                        - course: POL SCI.129B
+                        - course: POL SCI.129C
+                        - course: POL SCI.141A
+                        - course: POL SCI.141C
+                        - course: SOCIOL.181
+

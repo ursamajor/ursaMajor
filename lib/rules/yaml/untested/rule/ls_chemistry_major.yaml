@@ -1,0 +1,38 @@
+rules:
+
+    ls_chemistry_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - course: MATH.1A
+        - course: MATH.1B
+        - course: MATH.53
+        - course: MATH.54
+        - course: PHYSICS.7A
+        - course: PHYSICS.7B
+        - course: CHEM.4A
+        - course: CHEM.4B
+        - OR:
+            - AND:
+                - course: CHEM.103
+                - course: CHEM.135
+            - AND:
+                - course: CHEM.104A
+                - course: CHEM.104B
+        - course: CHEM.112A
+        - course: CHEM.112B
+        - course: CHEM.120A
+        - course: CHEM.120B
+        - OR:
+            - course: CHEM.105
+            - course: CHEM.108
+            - course: CHEM.115
+            - course: CHEM.125
+            - course: CHEM.C170L
+            - course: CHEM.C182
+
+
+
+
+

@@ -1,0 +1,211 @@
+rules:
+
+    ls_genetics_genomics_development_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # lower division
+            - ls_molecular_cell_biology_lower_division
+            - course: CHEM.3A
+            - course: CHEM.3AL
+            - course: CHEM.3B
+            - course: CHEM.3BL
+        - OR:
+            - AND: # genetics, genomics & development
+                - AND: # upper div
+                    - course: MCELLBI.C100A
+                    - course: MCELLBI.110
+                    - course: MCELLBI.140
+                    - course: MCELLBI.140L
+                - OR:
+                    - AND:
+                        - OR:
+                            - course: MCELLBI.100B
+                            - course: MCELLBI.C103
+                            - course: MCELLBI.C112
+                            - course: MCELLBI.C114
+                            - course: MCELLBI.C116
+                            - course: MCELLBI.130A
+                            - course: MCELLBI.135A
+                            - course: MCELLBI.136
+                            - course: MCELLBI.150
+                            - course: MCELLBI.C160
+                            - course: MCELLBI.165
+                            - course: MCELLBI.166
+                            - course: CHEM.113
+                            - course: CHEM.115
+                            - course: CHEM.130B
+                            - course: ESPM.C148
+                            - course: ESPM.162
+                            - course: INTEGBI.160
+                            - course: MATH.110
+                            - course: PHYSICS.112
+                            - course: PHYSICS.132
+                            - course: PLANTBI.135
+                            - course: PLANTBI.150
+                        - OR:
+                            - course: MCELLBI.115
+                            - course: MCELLBI.132
+                            - course: MCELLBI.C134
+                            - course: MCELLBI.137
+                            - course: MCELLBI.141
+                            - course: MCELLBI.143
+                            - course: MCELLBI.C145
+                            - course: MCELLBI.C146
+                            - course: MCELLBI.C148
+                            - course: MCELLBI.C149
+                            - course: MCELLBI.167
+                            - course: BIO ENG.131
+                            - course: BIO ENG.C141
+                            - course: BIO ENG.142
+                            - course: BIO ENG.143
+                            - course: BIO ENG.144
+                            - course: ESPM.180B
+                            - course: INTEGBI.161
+                            - course: INTEGBI.162
+                            - course: INTEGBI.163
+                            - course: INTEGBI.165
+                            - course: MATH.127
+                            - course: PLANTBI.C134
+                            - course: PLANTBI.160
+                            - course: PB HLTH.141
+                            - course: PB HLTH.142
+                            - course: PB HLTH.143
+                            - course: PB HLTH.256
+                            - course: STAT.131A
+                            - course: STAT.134
+                            - course: STAT.C141
+                    - numcourses:
+                        min: 2
+                        courses:
+                            - course: MCELLBI.115
+                            - course: MCELLBI.132
+                            - course: MCELLBI.C134
+                            - course: MCELLBI.137
+                            - course: MCELLBI.141
+                            - course: MCELLBI.143
+                            - course: MCELLBI.C145
+                            - course: MCELLBI.C146
+                            - course: MCELLBI.C148
+                            - course: MCELLBI.C149
+                            - course: MCELLBI.167
+                            - course: BIO ENG.131
+                            - course: BIO ENG.C141
+                            - course: BIO ENG.142
+                            - course: BIO ENG.143
+                            - course: BIO ENG.144
+                            - course: ESPM.180B
+                            - course: INTEGBI.161
+                            - course: INTEGBI.162
+                            - course: INTEGBI.163
+                            - course: INTEGBI.165
+                            - course: MATH.127
+                            - course: PLANTBI.C134
+                            - course: PLANTBI.160
+                            - course: PB HLTH.141
+                            - course: PB HLTH.142
+                            - course: PB HLTH.143
+                            - course: PB HLTH.256
+                            - course: STAT.131A
+                            - course: STAT.134
+                            - course: STAT.C141
+            - AND: # developmental genetics
+                - AND: # upper div
+                    - course: MCELLBI.102
+                    - course: MCELLBI.104
+                    - course: MCELLBI.141
+                    - course: MCELLBI.140L
+                - OR:
+                    - AND:
+                        - OR:
+                            - course: MCELLBI.100B
+                            - course: MCELLBI.C103
+                            - course: MCELLBI.C112
+                            - course: MCELLBI.C114
+                            - course: MCELLBI.C116
+                            - course: MCELLBI.130A
+                            - course: MCELLBI.135A
+                            - course: MCELLBI.136
+                            - course: MCELLBI.150
+                            - course: MCELLBI.C160
+                            - course: MCELLBI.165
+                            - course: MCELLBI.166
+                            - course: CHEM.113
+                            - course: CHEM.115
+                            - course: CHEM.130B
+                            - course: ESPM.C148
+                            - course: ESPM.162
+                            - course: INTEGBI.160
+                            - course: MATH.110
+                            - course: PHYSICS.112
+                            - course: PHYSICS.132
+                            - course: PLANTBI.135
+                            - course: PLANTBI.150
+                        - OR:
+                            - course: MCELLBI.115
+                            - course: MCELLBI.132
+                            - course: MCELLBI.C134
+                            - course: MCELLBI.137
+                            - course: MCELLBI.141
+                            - course: MCELLBI.143
+                            - course: MCELLBI.C145
+                            - course: MCELLBI.C146
+                            - course: MCELLBI.C148
+                            - course: MCELLBI.C149
+                            - course: MCELLBI.167
+                            - course: BIO ENG.131
+                            - course: BIO ENG.C141
+                            - course: BIO ENG.142
+                            - course: BIO ENG.143
+                            - course: BIO ENG.144
+                            - course: ESPM.180B
+                            - course: INTEGBI.161
+                            - course: INTEGBI.162
+                            - course: INTEGBI.163
+                            - course: INTEGBI.165
+                            - course: MATH.127
+                            - course: PLANTBI.C134
+                            - course: PLANTBI.160
+                            - course: PB HLTH.141
+                            - course: PB HLTH.142
+                            - course: PB HLTH.143
+                            - course: PB HLTH.256
+                            - course: STAT.131A
+                            - course: STAT.134
+                            - course: STAT.C141
+                    - numcourses:
+                        min: 2
+                        courses:
+                            - course: MCELLBI.115
+                            - course: MCELLBI.132
+                            - course: MCELLBI.C134
+                            - course: MCELLBI.137
+                            - course: MCELLBI.141
+                            - course: MCELLBI.143
+                            - course: MCELLBI.C145
+                            - course: MCELLBI.C146
+                            - course: MCELLBI.C148
+                            - course: MCELLBI.C149
+                            - course: MCELLBI.167
+                            - course: BIO ENG.131
+                            - course: BIO ENG.C141
+                            - course: BIO ENG.142
+                            - course: BIO ENG.143
+                            - course: BIO ENG.144
+                            - course: ESPM.180B
+                            - course: INTEGBI.161
+                            - course: INTEGBI.162
+                            - course: INTEGBI.163
+                            - course: INTEGBI.165
+                            - course: MATH.127
+                            - course: PLANTBI.C134
+                            - course: PLANTBI.160
+                            - course: PB HLTH.141
+                            - course: PB HLTH.142
+                            - course: PB HLTH.143
+                            - course: PB HLTH.256
+                            - course: STAT.131A
+                            - course: STAT.134
+                            - course: STAT.C141
+

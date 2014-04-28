@@ -1,0 +1,28 @@
+rules:
+
+    ls_theater_and_performance_studies_major:
+    rule: AND
+    args:
+        - AND: # lower div
+            - OR:
+                - course: THEATER.10
+                - course: THEATER.60
+                - course: THEATER.26
+                - course: THEATER.25AC
+                - course: THEATER.52AC
+        - AND: # upper division
+            - OR: 
+                - course: THEATER.119
+                - course: THEATER.121
+                - course: THEATER.122
+                - course: THEATER.125
+                - course: THEATER.126
+            - AND: # electives
+                - numcourses:
+                    min: 5
+                    courses:
+                        - dept: THEATER # five electives including the required course
+
+
+
+

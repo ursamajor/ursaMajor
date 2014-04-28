@@ -1,0 +1,48 @@
+rules:
+
+    ls_chicano_studies_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - ls_ethnic_studies_core
+        - AND: # lower div
+            - numcourses:
+                min: 2
+                courses:
+                    - course: CHICANO.20
+                    - course: CHICANO.40
+                    - course: CHICANO.50
+                    - course: CHICANO.70
+        - AND: # upper div
+            - course: ETH STD.103
+            - numcourses:
+                min: 4
+                courses:
+                    - course: CHICANO.101
+                    - course: CHICANO.110
+                    - course: CHICANO.130
+                    - course: CHICANO.133
+                    - course: CHICANO.135A
+                    - course: CHICANO.135B
+                    - course: CHICANO.135C
+                    - course: CHICANO.141
+                    - course: CHICANO.142
+                    - course: CHICANO.143
+                    - course: CHICANO.145
+                    - course: CHICANO.148
+                    - course: CHICANO.149
+                    - course: CHICANO.150A
+                    - course: CHICANO.150B
+                    - course: CHICANO.159
+                    - course: CHICANO.161
+                    - course: CHICANO.162
+                    - course: CHICANO.163
+                    - course: CHICANO.165
+                    - course: CHICANO.172
+                    - course: CHICANO.174
+                    - course: CHICANO.176
+                    - course: CHICANO.179
+                    - course: CHICANO.180
+        - course: CHICANO.197
+

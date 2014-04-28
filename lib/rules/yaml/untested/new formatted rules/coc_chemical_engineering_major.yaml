@@ -1,0 +1,585 @@
+rules:
+
+
+    coc_chemical_engineering_major:
+        description: "Chemical Engineering Major"
+        rule: AND
+        args:
+            - coc_lowerdiv_chemical_engineering_requirements
+            - coc_upperdiv_chemical_engineering_requirements
+            - coc_concentration_chemical_engineering_requirement
+            - units_upperdiv
+            - units_total
+
+
+
+    coc_lowerdiv_chemical_engineering_requirements:
+        description: "Lower Division Chemical Engineering Requirements"
+        rule: AND
+        args:
+            - OR:
+                - university_rc_A
+                - university_rc_B
+            - units:
+                min: 15
+                rule: OR
+                args:
+                    - coc_breadth_humanities_and_social_sciences # 2 different depts, one upper div
+            - course: CHEM.C96
+            - AND: # chemistry
+                - course: CHEM.4A
+                - course: CHEM.4B
+                - course: CHEM.112A
+            - AND: # chemical engineering
+                - course: CHM ENG.140
+                - course: CHM ENG.141
+                - course: CHM ENG.150A
+            - course: ENGIN.7
+            - AND: # math
+                - course: MATH.1A
+                - course: MATH.1B
+                - course: MATH.53
+                - course: MATH.54
+            - AND: # physics
+                - course: PHYSICS.7A
+                - course: PHYSICS.7B
+
+    coc_upperdiv_chemical_engineering_requirements:
+        description: "Upper Division Chemical Engineering Requirements"
+        rule: AND
+        args:
+            - course: ENGIN.45
+            - course: EL ENG.100
+            - OR:
+                - course: CHEM.120A
+                - course: PHYSICS.137A
+            - AND: # chemical engineering
+                - course: CHM ENG.142
+                - course: CHM ENG.150B
+                - course: CHM ENG.154
+                - course: CHM ENG.160
+                - course: CHM ENG.162
+            - coc_electives_engineering
+
+    coc_concentration_chemical_engineering_requirement:
+        description: "Chemical Engineering Concentrations: Biotechnology, Chemical Processing, Environmental Technology, Materials Science and Technology, Applied Physical Science, and Open Elective Program"
+        rule: OR
+        args:
+            - coc_concentration_chemical_engineering_biotechnology
+            - coc_concentration_chemical_engineering_chemical_processing
+            - coc_concentration_chemical_engineering_environmental_technology
+            - coc_concentration_chemical_engineering_materials_science
+            - coc_concentration_chemical_engineering_applied_physical_science
+            - coc_concentration_chemical_engineering_open_electives
+
+
+    coc_concentration_chemical_engineering_open_electives:
+        description: "Chemical Engineering Concentration: Open Elective Program"
+        rule: AND
+        args:
+            - coc_electives_physical_biological_science
+            - upperdiv_chemical_engineering # others exclude
+            - units:
+                min: 6
+                rule: OR
+                args:
+                    - coc_electives_engineering
+
+    coc_concentration_chemical_engineering_biotechnology:
+        description: "Chemical Engineering Concentration: Biotechnology"
+        rule: AND
+        args:
+            - OR: 
+                - course: CHEM.112B
+                - course: MCELLBI.C112
+            - course: CHM ENG.170A
+            - course: CHM ENG.170B
+            - course: CHM ENG.C170L
+            - OR:
+                - course: MCELLBI.102
+                - course: CHEM.135
+
+    coc_concentration_chemical_engineering_chemical_processing:
+        description: "Chemical Engineering Concentration: Chemical Processing"
+        rule: AND
+        args:
+            - course: BIOLOGY.1A
+            - OR:
+                - course: CHEM.104A
+                - course: CHEM.112B
+            - units: # chemical engineering
+                min: 6
+                rule: OR
+                args:
+                    - course: CHM ENG.170A
+                    - course: CHM ENG.170B
+                    - course: CHM ENG.C170L
+                    - course: CHM ENG.171
+                    - course: CHM ENG.176
+                    - course: CHM ENG.C178
+                    - course: CHM ENG.179
+                    - course: CHM ENG.H194
+            - OR: # engineering
+                - course: CIV ENG.C30
+                - course: CIV ENG.111
+                - course: CIV ENG.114
+                - course: CIV ENG.173
+                - course: MAT SCI.111
+                - course: MAT SCI.112
+                - course: MAT SCI.113
+                - course: MAT SCI.C118
+                - course: MAT SCI.120
+                - course: MAT SCI.121
+                - course: MAT SCI.122
+                - course: MAT SCI.123
+                - course: MEC ENG.140
+                - course: MEC ENG.151
+
+    coc_concentration_chemical_engineering_environmental_technology:
+        description: "Chemical Engineering Concentration: Environmental Technology"
+        rule: AND
+        args:
+            - course: BIOLOGY.1A
+            - OR:
+                - course: CHEM.104A
+                - course: CHEM.112B
+            - units:
+                min: 6
+                rule: OR
+                args:
+                    - course: CIV ENG.108
+                    - course: CIV ENG.111
+                    - course: CIV ENG.113N
+                    - course: CIV ENG.C116
+                    - course: CIV ENG.173
+                    - course: MEC ENG.140
+
+    coc_concentration_chemical_engineering_materials_science:
+        description: "Chemical Engineering Concentration: Materials Science and Technology"
+        rule: AND
+        args:
+            - course: BIOLOGY.1A
+            - OR: 
+                - course: CHEM.104A
+                - course: CHEM.108
+                - course: CHEM.112B
+            - OR:
+                - course: CHM ENG.176
+                - course: CHM ENG.C178
+                - course: CHM ENG.179
+            - units:
+                min: 6
+                rule: OR
+                args:
+                    - course: CIV ENG.C30
+                    - course: EL ENG.130
+                    - course: EL ENG.143
+                    - course: MAT SCI.102
+                    - course: MAT SCI.103
+                    - course: MAT SCI.111
+                    - course: MAT SCI.112
+                    - course: MAT SCI.120
+                    - course: MAT SCI.121
+                    - course: MAT SCI.122
+                    - course: MAT SCI.123
+                    - course: MAT SCI.125
+                    - course: MEC ENG.122
+                    - course: MEC ENG.127
+
+    coc_concentration_chemical_engineering_applied_physical_science:
+        description: "Chemical Engineering Concentration: Applied Physical Science"
+        rule: AND
+        args:
+            - course: BIOLOGY.1A
+            - units: # chem or physics
+                min: 6
+                rule: OR
+                args:
+                    - rule: upperdiv_physics
+                    - rule: upperdiv_chemistry
+            - rule: upperdiv_chemical_engineering
+            - rule: coc_electives_engineering
+
+
+    coc_electives_physical_biological_science:
+        descriptions: "Suggested Physical and Biological Science Courses“
+        rule: same_course
+        args:
+            - OR:
+                - course: ANTHRO.1
+                - course: ANTHRO.C100
+                - course: ANTHRO.C103
+                - course: ANTHRO.107
+                - course: ANTHRO.C131
+                - course: ANTHRO.132
+                - course: ANTHRO.134
+                - course: ANTHRO.135
+                - course: ASTRON.3
+                - course: ASTRON.7A
+                - course: ASTRON.7B
+                - course: ASTRON.10
+                - course: ASTRON.C10
+                - course: ASTRON.C12
+                - course: ASTRON.C162
+                - course: BIOLOGY.1B
+                - course: CHEM.103
+                - course: CHEM.104A
+                - course: CHEM.104B
+                - course: CHEM.105
+                - course: CHEM.108
+                - course: CHEM.112B
+                - course: CHEM.113
+                - course: CHEM.114
+                - course: CHEM.115
+                - course: CHEM.120B
+                - course: CHEM.122
+                - course: CHEM.125
+                - course: CHEM.C130
+                - course: CHEM.135
+                - course: CHEM.143
+                - course: CHEM.146
+                - course: CHEM.C150
+                - course: CHEM.C182
+                - course: CHEM.C191
+                - course: CHEM.192
+                - course: CHEM.H194
+                - course: CHEM.196
+                - course: CIV ENG.C106
+                - course: CIV ENG.C116
+                - course: COG SCI.C102
+                - course: COG SCI.C110
+                - course: COG SCI.C126
+                - course: COG SCI.C127
+                - course: COMPSCI.C182
+                - course: EPS.3 
+                - course: EPS.8 
+                - course: EPS.C12 
+                - course: EPS.20
+                - course: EPS.C20
+                - course: EPS.50
+                - course: EPS.80
+                - course: EPS.100A
+                - course: EPS.103
+                - course: EPS.105
+                - course: EPS.108
+                - course: EPS.117
+                - course: EPS.C129
+                - course: EPS.130
+                - course: EPS.C141
+                - course: EPS.C146
+                - course: EPS.C162
+                - course: EPS.C171
+                - course: EPS.C180
+                - course: EPS.181
+                - course: EPS.C182
+                - course: EPS.185
+                - course: ENE,RES.102
+                - course: ENGLISH.C77
+                - course: ESPM.2
+                - course: ESPM.4
+                - course: ESPM.C10
+                - course: ESPM.C11
+                - course: ESPM.C12
+                - course: ESPM.40
+                - course: ESPM.42
+                - course: ESPM.44
+                - course: ESPM.100
+                - course: ESPM.102A
+                - course: ESPM.102B
+                - course: ESPM.102C
+                - course: ESPM.C103
+                - course: ESPM.106
+                - course: ESPM.C107
+                - course: ESPM.108A
+                - course: ESPM.108B
+                - course: ESPM.109
+                - course: ESPM.110
+                - course: ESPM.112
+                - course: ESPM.113
+                - course: ESPM.114
+                - course: ESPM.115B
+                - course: ESPM.117
+                - course: ESPM.118
+                - course: ESPM.119
+                - course: ESPM.120
+                - course: ESPM.C128
+                - course: ESPM.C129
+                - course: ESPM.C130
+                - course: ESPM.131
+                - course: ESPM.134
+                - course: ESPM.137
+                - course: ESPM.C138
+                - course: ESPM.140
+                - course: ESPM.142
+                - course: ESPM.144
+                - course: ESPM.145
+                - course: ESPM.146
+                - course: ESPM.148
+                - course: ESPM.C149
+                - course: ESPM.152
+                - course: ESPM.172
+                - course: ESPM.174
+                - course: ESPM.C180
+                - course: ESPM.181
+                - course: ESPM.185
+                - course: ESPM.186
+                - course: ESPM.187
+                - course: ENV SCI.10
+                - course: ENV SCI.125
+                - course: GEOG.1
+                - course: GEOG.35
+                - course: GEOG.40
+                - course: GEOG.C136
+                - course: GEOG.137
+                - course: GEOG.140A
+                - course: GEOG.C141
+                - course: GEOG.143
+                - course: GEOG.144
+                - course: GEOG.C145
+                - course: GEOG.148
+                - course: GEOG.171
+                - course: INTEGBI.31
+                - course: INTEGBI.32
+                - course: INTEGBI.41
+                - course: INTEGBI.C82
+                - course: INTEGBI.C101
+                - course: INTEGBI.C101L
+                - course: INTEGBI.102
+                - course: INTEGBI.102LF
+                - course: INTEGBI.103
+                - course: INTEGBI.103LF
+                - course: INTEGBI.104
+                - course: INTEGBI.104LF
+                - course: INTEGBI.106
+                - course: INTEGBI.106A
+                - course: INTEGBI.C107
+                - course: INTEGBI.C107L
+                - course: INTEGBI.117
+                - course: INTEGBI.117L
+                - course: INTEGBI.118
+                - course: INTEGBI.123A
+                - course: INTEGBI.123AL
+                - course: INTEGBI.131
+                - course: INTEGBI.135
+                - course: INTEGBI.137
+                - course: INTEGBI.C139
+                - course: INTEGBI.C142L
+                - course: INTEGBI.C143A
+                - course: INTEGBI.C143B
+                - course: INTEGBI.144
+                - course: INTEGBI.148
+                - course: INTEGBI.C149
+                - course: INTEGBI.151
+                - course: INTEGBI.152
+                - course: INTEGBI.153
+                - course: INTEGBI.154
+                - course: INTEGBI.154L
+                - course: INTEGBI.155
+                - course: INTEGBI.C156
+                - course: INTEGBI.157L
+                - course: INTEGBI.158LF
+                - course: INTEGBI.159
+                - course: INTEGBI.161
+                - course: INTEGBI.162
+                - course: INTEGBI.164
+                - course: INTEGBI.165
+                - course: INTEGBI.168
+                - course: INTEGBI.168L
+                - course: INTEGBI.169
+                - course: INTEGBI.174
+                - course: INTEGBI.174LF
+                - course: INTEGBI.183
+                - course: INTEGBI.183L
+                - course: INTEGBI.184
+                - course: INTEGBI.184L
+                - course: INTEGBI.C185L
+                - course: INTEGBI.187
+                - course: LNS.C30U
+                - course: LNS.C30V
+                - course: LNS.C30W
+                - course: LNS.C30T
+                - course: LNS.C30U
+                - course: LNS.C30W
+                - course: LNS.C30Y
+                - course: LINGUIS.C109
+                - course: MAT SCI.C105
+                - course: MCELLBI.32
+                - course: MCELLBI.41
+                - course: MCELLBI.50
+                - course: MCELLBI.C61
+                - course: MCELLBI.C62
+                - course: MCELLBI.64
+                - course: MCELLBI.C100A
+                - course: MCELLBI.100B
+                - course: MCELLBI.102
+                - course: MCELLBI.C103
+                - course: MCELLBI.104
+                - course: MCELLBI.111
+                - course: MCELLBI.C112
+                - course: MCELLBI.113
+                - course: MCELLBI.C114
+                - course: MCELLBI.115
+                - course: MCELLBI.C116
+                - course: MCELLBI.130A
+                - course: MCELLBI.132
+                - course: MCELLBI.133L
+                - course: MCELLBI.135A
+                - course: MCELLBI.135E
+                - course: MCELLBI.136
+                - course: MCELLBI.140
+                - course: MCELLBI.140L
+                - course: MCELLBI.141
+                - course: MCELLBI.143
+                - course: MCELLBI.C148
+                - course: MCELLBI.150
+                - course: MCELLBI.C160
+                - course: MCELLBI.160L
+                - course: MCELLBI.163
+                - course: MCELLBI.166
+                - course: MCELLBI.167
+                - course: NUSCTX.10
+                - course: NUSCTX.11
+                - course: NUSCTX.106
+                - course: NUSCTX.107
+                - course: NUSCTX.108A
+                - course: NUSCTX.110
+                - course: NUSCTX.C112
+                - course: NUSCTX.C119
+                - course: NUSCTX.120
+                - course: NUSCTX.150
+                - course: NUSCTX.160
+                - course: NUSCTX.171
+                - course: PHYSICS.7C
+                - course: PHYSICS.C21
+                - course: PHYSICS.105
+                - course: PHYSICS.110A
+                - course: PHYSICS.110B
+                - course: PHYSICS.112
+                - course: PHYSICS.129
+                - course: PHYSICS.130
+                - course: PHYSICS.132
+                - course: PHYSICS.137B
+                - course: PHYSICS.138
+                - course: PHYSICS.141A
+                - course: PHYSICS.177
+                - course: PLANTBI.10
+                - course: PLANTBI.40
+                - course: PLANTBI.C102
+                - course: PLANTBI.C102L
+                - course: PLANTBI.C103
+                - course: PLANTBI.C107
+                - course: PLANTBI.C107L
+                - course: PLANTBI.110
+                - course: PLANTBI.110L
+                - course: PLANTBI.C112
+                - course: PLANTBI.C114
+                - course: PLANTBI.C116
+                - course: PLANTBI.120
+                - course: PLANTBI.120L
+                - course: PLANTBI.122
+                - course: PLANTBI.135
+                - course: PLANTBI.C148
+                - course: PLANTBI.150
+                - course: PLANTBI.160
+                - course: PLANTBI.170
+                - course: PLANTBI.180
+                - course: PSYCH.110
+                - course: PSYCH.111
+                - course: PSYCH.C112
+                - course: PSYCH.C113
+                - course: PSYCH.114
+                - course: PSYCH.115A
+                - course: PSYCH.C115B
+                - course: PSYCH.C116
+                - course: PSYCH.117
+                - course: PSYCH.119
+                - course: PSYCH.122
+                - course: PSYCH.C126
+                - course: PSYCH.C127
+                - course: PSYCH.C129
+                - course: PB HLTH.C102
+                - course: PB HLTH.162A
+                - course: PB HLTH.C170B
+                - course: PB HLTH.172
+                - course: PB HLTH.C172
+                - course: UGIS.C12
+
+
+    coc_electives_engineering:
+        descriptions: "Suggested Engineering Electives“
+        rule: same_course
+        args:
+            - OR:
+                - course: BIO ENG.100
+                - course: BIO ENG.104
+                - course: BIO ENG.C105B
+                - course: BIO ENG.111
+                - course: BIO ENG.C136L
+                - course: BIO ENG.C144
+                - course: BIO ENG.C144L
+                - course: BIO ENG.150
+                - course: BIO ENG.151
+                - course: BIO ENG.C165
+                - course: CHM ENG.170A
+                - course: CHM ENG.170B
+                - course: CHM ENG.C170L
+                - course: CHM ENG.171
+                - course: CHM ENG.176
+                - course: CHM ENG.C178
+                - course: CHM ENG.179
+                - course: CHM ENG.H194
+                - course: CHM ENG.196
+                - course: CIV ENG.103
+                - course: CIV ENG.114
+                - course: CIV ENG.130
+                - course: CIV ENG.130N
+                - course: CIV ENG.131
+                - course: CIV ENG.C133
+                - course: CIV ENG.175
+                - course: CIV ENG.176
+                - course: CIV ENG.193
+                - course: COMPSCI.C149
+                - course: EL ENG.105
+                - course: EL ENG.130
+                - course: EL ENG.143
+                - course: EL ENG.C145B
+                - course: EL ENG.C145O
+                - course: EL ENG.147
+                - course: EL ENG.C149
+                - course: ENGIN.117
+                - course: ENGIN.120
+                - course: IND ENG.160
+                - course: IND ENG.162
+                - course: MAT SCI.112
+                - course: MAT SCI.113
+                - course: MAT SCI.120
+                - course: MAT SCI.121
+                - course: MAT SCI.122
+                - course: MAT SCI.123
+                - course: MAT SCI.136
+                - course: MAT SCI.140
+                - course: MAT SCI.151
+                - course: MEC ENG.102A
+                - course: MEC ENG.102B
+                - course: MEC ENG.104
+                - course: MEC ENG.C105B
+                - course: MEC ENG.106
+                - course: MEC ENG.108
+                - course: MEC ENG.109
+                - course: MEC ENG.110
+                - course: MEC ENG.127
+                - course: MEC ENG.131
+                - course: MEC ENG.140
+                - course: MEC ENG.142
+                - course: MEC ENG.146
+                - course: MEC ENG.151
+                - course: MEC ENG.166
+                - course: MEC ENG.C177L
+                - course: MEC ENG.C180
+                - course: MEC ENG.185
+                - course: NUC ENG.101
+                - course: NUC ENG.124
+                - course: PLANTBI.C144
+                - course: PLANTBI.C144L
+
+

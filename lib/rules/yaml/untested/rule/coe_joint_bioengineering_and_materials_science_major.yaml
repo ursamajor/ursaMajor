@@ -1,0 +1,110 @@
+rules:
+
+    coe_joint_bioengineering_and_materials_science_major:
+        rule: AND
+        args:
+            - OR:
+                - AND:
+                    - course: CHEM.1A
+                    - course: CHEM.1AL
+                - course: CHEM.4A
+            - OR:
+                - AND:
+                    - course: CHEM.3A
+                    - course: CHEM.3AL
+                - course: CHEM.112A
+            - OR:
+                - course: ENGIN.7
+                - course: COMPSCI.61A
+            - course: BIO ENG.10
+            - course: MATH.1A
+            - course: MATH.1B
+            - course: MATH.53
+            - course: MATH.54
+            - course: PHYSICS.7A
+            - course: PHYSICS.7B
+            - course: BIO ENG.24
+            - course: BIOLOGY.1A
+            - course: BIOLOGY.1AL
+            - course: ENGIN.45
+            - OR:
+                - course: EL ENG.40
+                - course: EL ENG.100
+                - course: BIO ENG.101
+            - course: BIO ENG.102
+            - course: BIO ENG.104
+            - OR:
+                - course: CHEM.135
+                - course: MCELLBI.102
+                - course: MCELLBI.110
+            - OR:
+                - course: CHEM.120B
+                - course: CHEM.C130
+                - course: MCELLBI.C100A
+                - course: ENGIN.115
+            - course: MCELLBI.130A
+            - course: MAT SCI.102
+            - course: MAT SCI.104
+            - OR:
+                - course: BIO ENG.110
+                - course: BIO ENG.115
+                - course: MAT SCI.130
+            - OR:
+                - course: BIO ENG.116
+                - course: BIO ENG.C117
+                - course: BIO ENG.111
+            - course: BIO ENG.C118
+            - AND:
+                - numcourses:
+                    min: 5
+                    courses:
+                        - course: BIO ENG.121
+                        - course: BIO ENG.150
+                        - course: MAT SCI.111
+                        - course: MAT SCI.112
+                        - course: MAT SCI.113
+            - course: MAT SCI.115
+            - OR: # bioengineering design project and research list
+                - course: BIO ENG.121L
+                - course: BIO ENG.140L
+                - course: BIO ENG.168L
+                - course: BIO ENG.192
+                - course: BIO ENG.H194
+                - course: BIO ENG.196
+            - OR: # technical
+                - course: BIO ENG.111
+                - course: BIO ENG.113
+                - course: BIO ENG.116
+                - course: BIO ENG.C117
+                - course: BIO ENG.121
+                - course: BIO ENG.H194
+                - course: MAT SCI.103
+                - course: MAT SCI.111
+                - course: MAT SCI.112
+                - course: MAT SCI.113
+            - AND: # HSS
+                - university_rc_A
+                - university_rc_B
+                - university_AC
+                - numcourses:
+                    min: 4
+                    courses:
+                        - coe_humanities_and_social_sciences
+                            - numcourses:
+                                min: 2
+                                rule: upper_division
+                            - numcorses:
+                                min: 2
+                                rule: same_department # 1 up, 1 low
+                - OR: # ethics, fulfills one hss
+                    - course: ANTHRO.156B
+                    - course: BIO ENG.100
+                    - course: ENGIN.125
+                    - course: ESPM.161
+                    - course: ESPM.162
+                    - course: LNS.160B
+                    - course: MEC ENG.191AC
+                    - course: PHILOS.2
+                    - course: PHILOS.104
+                    - course: PHILOS.107
+                    - course: PB HLTH.116 # can't fullfil hss

@@ -1,0 +1,153 @@
+rules:
+
+    ced_urban_studies_major:
+    rules: AND
+    args:
+        - university_all
+        - ls_breadth_all
+            - NOT:
+                - # courses used to satisfy non-urban upper div
+                - # courses used to satisfy upper div
+        - AND: # lower division
+            - ced_lower_division_environmental_design
+            - OR:
+                - course: ECON.1
+                - course: ECON.2
+                - course: ECON.C3
+                - course: ENVECON.C3
+            - OR:
+                - course: MATH.16A
+                - course: MATH.1A
+                # or higher
+            - OR:
+                - course: STAT.2
+                - course: STAT.20
+                - course: STAT.21
+                - course: STAT.25
+                - course: STAT.131A
+                # or higher
+           - numcourses:
+                min: 2
+                courses:
+                    - course: ENV DES.11A
+                    - course: ENV DES.11B
+                    - course: ENV DES.C169A
+                    - course: ENV DES.C169B
+                    - course: ENV DES.170
+                    - course: ARCH.110AC
+                    - course: ARCH.111
+                    - course: CY PLAN.111
+                    - course: ARCH.130
+                    - course: ARCH.170A
+                    - course: ARCH.170B
+                    - course: LD ARCH.170
+                    - course: CY PLAN.116
+                    - course: CY PLAN.140
+        - AND: # upper division core
+            - course: ENV DES.100
+            - course: CY PLAN.110
+            - numcourses:
+                min: 4
+                courses:
+                    - course: CY PLAN.111
+                    - course: ARCH.111
+                    - course: CY PLAN.113A
+                    - course: CY PLAN.113B
+                    - course: CY PLAN.114
+                    - course: CY PLAN.115
+                    - course: CY PLAN.116
+                    - course: CY PLAN.118AC
+                    - course: CY PLAN.119
+                    - course: CY PLAN.120
+                    - course: CY PLAN.C139
+                    - course: CY PLAN.140
+                    - course: CY PLAN.190
+        - AND: # outside CED
+            - numcourses:
+                min: 3
+                courses:
+                    - NOT:
+                        - dept: ARCH
+                        - dept: CY PLAN
+                        - dept: ENV DES
+                        - dept: LD ARCH
+                        - dept: VIS STD
+                        # cannot be used for upper div
+            - numcourses:
+                min: 3
+                courses:
+                    - ced_urban_studies_electives_international
+                    - course: AFRICAM.107
+                    - course: AMERSTD.102
+                    - course: ANTHRO.157
+                    - course: ANTHRO.189
+                    - course: ASAMST.150
+                    - course: CIV ENG.156
+                    - course: CIV ENG.167
+                    - course: DEMOG.C126
+                    - course: DEMOG.145AC
+                    - course: ECON.C102
+                    - course: ECON.121
+                    - course: ECON.C125
+                    - course: ECON.131
+                    - course: ECON.C171
+                    - course: ECON.174
+                    - course: ENE,RES.C100
+                    - course: ENE,RES.101
+                    - course: ENE,RES.151
+                    - course: ENE,RES.170
+                    - course: ENVECON.C101
+                    - course: ENVECON.151
+                    - course: ESPM.102D
+                    - course: ESPM.155
+                    - course: ESPM.160AC
+                    - course: ESPM.161
+                    - course: ESPM.163AC
+                    - course: ESPM.168
+                    - course: GEOG.125
+                    - course: GEOG.170
+                    - course: GEOG.181
+                    - course: GEOG.C188
+                    - course: HISTORY.120AC
+                    - course: HISTORY.C139B
+                    - course: LEGALST.182
+                    - course: NUSCTX.166
+                    - course: POL SCI.114A
+                    - course: POL SCI.138F
+                    - course: POL SCI.139D
+                    - course: POL SCI.181
+                    - course: PB HLTH.131AC
+                    - course: PB HLTH.150B
+                    - course: PUB POL.103
+                    - course: PUB POL.156
+                    - course: PUB POL.184
+                    - course: SOCIOL.110
+                    - course: SOCIOL.124
+                    - course: SOCIOL.130
+                    - course: SOCIOL.130AC
+                    - course: SOCIOL.136
+                    - course: SOCIOL.137AC
+                    - course: ESPM.163AC
+                    - course: SOCIOL.145
+                    - course: SOCIOL.186
+                    - course: UGBA.105
+                    - course: UGBA.180
+                    - course: UGBA.192P
+                    - AND:
+                        - numcourses:
+                            min: 1
+                            courses:
+                                - ced_urban_studies_electives_international
+            - AND: #capstone
+                - numcourses:
+                    min: 2
+                    courses:
+                        - course: ENV DES.195B
+                        - course: CY PLAN.116
+                        - course: CY PLAN.190
+                        - course: CY PLAN.197
+
+
+
+
+

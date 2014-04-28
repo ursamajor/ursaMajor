@@ -1,0 +1,23 @@
+rules:
+
+    ls_italian_studies_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # lower division
+            - course: ITALIAN.1
+            - course: ITALIAN.2
+            - course: ITALIAN.3
+            - course: ITALIAN.4
+        - AND: # upper division
+            - course: ITALIAN.101A
+            - course: ITALIAN.101B
+            - OR:
+                - course: ITALIAN.103
+                - course: ITALIAN.104
+            - AND: # electives
+                - dept: ITALIAN # others
+                - course: HISTORY.149B
+                - course: HISTORY.169A
+                # etc.

@@ -1,0 +1,137 @@
+rules:
+
+# ap credit of breadth / requirements
+# not sure if requirements can count as breadth
+
+    cnr_forestry_and_natural_resources_major:
+        rule: AND
+        args:
+            - university_all
+            - cnr_upper_division
+            - AND: # Lower-Div
+                - cnr_espm_environmental_science_core
+                - cnr_espm_social_science_core
+                - cnr_breadth_arts_history_philosophy
+                - cnr_breadth_social_international
+            - AND: # upper div
+                - OR:
+                    - AND:
+                        - ESPM.105A
+                        - ESPM.105B
+                        - ESPM.105C
+                        - ESPM.105D
+                    - ESPM.C109
+                - ESPM.102A
+                - ESPM.102B
+                - ESPM.102BL
+                - ESPM.102C
+                - ESPM.102D
+                - ESPM.72
+            - OR: # Forestry & natural sciences concentration
+                - AND: # lower div
+                    - course: CHEM.1A
+                    - course: CHEM.1AL
+                    - course: BIOLOGY.1B
+                    - OR:
+                        - AND:
+                            - course: MATH.1A
+                            - course: MATH.16A
+                        - AND:
+                            - course: MATH.1B
+                            - course: MATH.16B
+                    - OR:
+                        - course: STAT.2
+                        - course: STAT.20
+                    - OR:
+                        - course: ENVECON.C1
+                        - course: ECON.1
+                        - course: ECON.2
+                        - course: ECON.C3
+                    - OR:
+                        - course: EPS.50
+                        - course: GEOG.1
+                        - course: GEOG.40
+                - AND: #electives by concentration
+                    - OR: # Professional forestry specialization
+                        - AND:
+                            - course: ESPM.108A
+                            - course: ESPM.134
+                            - course: ESPM.182
+                            - course: ESPM.183
+                            - course: ESPM.185
+                            - OR:
+                                - course: ESPM.172
+                                - course: ESPM.174
+                                - course: ANTHRO.169A
+                                - course: ANTHRO.169B
+                                - course: ARCH.110
+                                - course: EPS.C120
+                                - course: GEOG.187
+                                - course: LD ARCH.110
+                                - course: LD ARCH.C188
+                                - course: ESPM.120
+                                - course: ESPM.121
+                                - course: ESPM.C128
+                                - course: ESPM.C129
+                                - course: EPS.117
+                                - course: GEOG.140A
+                    - OR: # natural sciences specialization
+                        - AND: # Ecology subject category
+                            - numcourses:
+                                min: 2
+                                courses:
+                                    - cnr_forestry_and_natural_resources_subject_ecology
+                        - AND: # Monitoring & measurement subject category
+                            - numcourses:
+                                min: 2
+                                courses:
+                                    - cnr_forestry_and_natural_resources_subject_monitoring_and_management
+                        - AND:
+                            - cnr_forestry_and_natural_resources_subject_physical_environment
+                            - cnr_forestry_and_natural_resources_subject_management_and_policy
+            - OR: # human dimensions of natural resources concentration
+                - AND: # lower div
+                    - ls_breadth_physical
+                    - OR:
+                        - course: BIOLOGY.1B
+                        - course: BIOLOGY.11
+                    - OR:
+                        - course: MATH.16A
+                        - course: MATH.1A
+                        - course: MATH.32
+                    - OR:
+                        - course: STAT.2
+                        - course: STAT.20
+                        - course: POL SCI.3
+                        - course: SOCIOL.5
+                    - OR:
+                        - course: ENVECON.C1
+                        - course: ECON.1
+                        - course: ECON.2
+                        - course: ECON.C3
+                        - course: UGBA.10
+                - AND: # electives
+                    - numcourses:
+                        min: 6
+                        courses:
+                            - AND:
+                                - AND: # Ecology subject category
+                                    - numcourses:
+                                        min: 1
+                                        courses:
+                                            - cnr_forestry_and_natural_resources_subject_ecology
+                                - AND: # Monitoring & managment subject category
+                                    - numcourses:
+                                        min: 1
+                                        courses:
+                                            - cnr_forestry_and_natural_resources_subject_monitoring_and_management
+                                - AND: # Physical environment subject category
+                                    - numcourses: 
+                                        min: 1
+                                        courses:
+                                            - cnr_forestry_and_natural_resources_subject_physical_environment
+                                - AND: # Management & policy subject category
+                                    - numcourses:
+                                        min: 1
+                                        courses:
+                                            - cnr_forestry_and_natural_resources_subject_management_and_policy

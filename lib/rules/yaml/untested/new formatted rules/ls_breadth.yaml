@@ -1,0 +1,4107 @@
+
+ls_breadth_all:
+    description: "L&S Seven Course Breadth"
+    rule: count_courses
+    args:
+        min: 7
+        rule: AND
+        args:
+            - ls_breadth_arts
+            - ls_breadth_bio
+            - ls_breadth_history
+            - ls_breadth_international
+            - ls_breadth_philosophy
+            - ls_breadth_physical
+            - ls_breadth_social
+        - rule: same_dept
+            max: 2
+
+qu:
+    description: "Quantitative Reasoning Requirement"
+    rule: same_course
+    args:
+        - units:
+            min: 2
+        - OR: # choose a department
+            - AND:
+                - dept: MATH
+                - NOT:
+                    - course: MATH.10
+                    - course: MATH.15
+                    - course: MATH.24
+                    - course: MATH.30
+                    - course: MATH.49
+                    - course: MATH.84
+                    - course: MATH.96
+                    - course: MATH.98
+                    - course: MATH.103
+                    - course: MATH.160
+                    - course: MATH.199
+            - AND:
+                - dept: STAT
+                - NOT:
+                    - course: STAT.24
+                    - course: STAT.39
+                    - course: STAT.98
+                    - course: STAT.198
+                    - course: STAT.199
+            - AND:
+                - dept: COMPSCI
+                - NOT:
+                    - course: COMPSCI.24
+                    - course: COMPSCI.39
+                    - course: COMPSCI.99
+                    - course: COMPSCI.195
+                    - course: COMPSCI.198
+                    - course: COMPSCI.199
+
+ls_breadth_arts:
+    description: "Arts and Literature Breadth Requirement"
+    rule: same_course
+    args:
+        - OR:
+            - course: AFRICAM.4A
+            - course: AFRICAM.5A
+            - course: AFRICAM.5B
+            - course: AFRICAM.26
+            - course: AFRICAM.29AC
+            - course: AFRICAM.39A
+            - course: AFRICAM.39G
+            - course: AFRICAM.100
+            - course: AFRICAM.142A
+            - course: AFRICAM.142AC
+            - course: AFRICAM.142B
+            - course: AFRICAM.142C
+            - course: AFRICAM.142D
+            - course: AFRICAM.150A
+            - course: AFRICAM.150B
+            - course: AFRICAM.N150B
+            - course: AFRICAM.151B
+            - course: AFRICAM.152A
+            - course: AFRICAM.152E
+            - course: AFRICAM.152F
+            - course: AFRICAM.153C
+            - course: AFRICAM.154
+            - course: AFRICAM.155
+            - course: AFRICAM.156AC
+            - course: AFRICAM.157
+            - course: AFRICAM.158A
+            - course: AFRICAM.158B
+            - course: AFRICAM.159
+            - course: AFRICAM.160
+            - course: AFRICAM.161
+            - course: AFRICAM.162
+            - course: AFRICAM.163
+            - course: AMERSTD.C10
+            - course: AMERSTD.C111E
+            - course: AMERSTD.C112F
+            - course: AMERSTD.C174
+            - course: ANTHRO.129A
+            - course: ANTHRO.C146
+            - course: ANTHRO.160AC
+            - course: ANTHRO.162
+            - course: ANTHRO.162AC
+            - course: ANTHRO.163AC
+            - course: ARABIC.104A
+            - course: ARABIC.104B
+            - course: ARABIC.105A
+            - course: ARABIC.105B
+            - course: ARABIC.106
+            - course: ARABIC.108
+            - course: ARABIC.111A
+            - course: ARABIC.111B
+            - course: ARABIC.120A
+            - course: ARABIC.120B
+            - course: ARABIC.148
+            - course: ARCH.39D
+            - course: ARCH.100A
+            - course: ARCH.100B
+            - course: ARCH.100C
+            - course: ARCH.100D
+            - course: ARCH.101
+            - course: ARCH.102
+            - course: ARCH.109
+            - course: ARCH.109A
+            - course: ARCH.109B
+            - course: ARCH.109C
+            - course: ARCH.135
+            - course: ARCH.160
+            - course: ARCH.170A
+            - course: ARCH.170B
+            - course: ARCH.171
+            - course: ARCH.172
+            - course: ARCH.173
+            - course: ARCH.174A
+            - course: ARCH.174B
+            - course: ARCH.174C
+            - course: ARCH.175A
+            - course: ARCH.175B
+            - course: ARCH.175C
+            - course: ARCH.175D
+            - dept: HISTART
+                - NOT:
+                    - course: HISTART.R1B
+                    - course: HISTART.N142
+            - dept: ART
+                - NOT:
+                    - course: ART.C178
+            - course: ASAMST.170
+            - course: ASAMST.171
+            - course: ASAMST.172
+            - course: ASAMST.173
+            - course: ASAMST.175
+            - course: ASAMST.176
+            - course: ASAMST.177
+            - course: ASAMST.179
+            - course: ASAMST.180
+            - course: ASAMST.181
+            - course: ASAMST.183
+            - course: ASAMST.184
+            - course: ASAMST.187
+            - course: ASIANST.10
+            - course: BUDDSTD.C124
+            - course: BUDDSTD.C140
+            - course: CELTIC.105B
+            - course: CELTIC.106C
+            - course: CELTIC.116B
+            - course: CELTIC.118A
+            - course: CELTIC.118B
+            - course: CELTIC.119A
+            - course: CELTIC.119B
+            - course: CELTIC.125
+            - course: CELTIC.126
+            - course: CELTIC.129
+            - course: CELTIC.138
+            - course: CELTIC.139
+            - course: CELTIC.146A
+            - course: CELTIC.146B
+            - course: CELTIC.C168
+            - course: CELTIC.169
+            - course: CELTIC.171
+            - course: CHICANO.20
+            - course: CHICANO.40
+            - course: CHICANO.130
+            - course: CHICANO.135
+            - course: CHICANO.135A
+            - course: CHICANO.135B
+            - course: CHICANO.135C
+            - course: CHICANO.141
+            - course: CHICANO.142
+            - course: CHICANO.143
+            - course: CHICANO.148
+            - course: CHICANO.149
+            - course: CHINESE.7A
+            - course: CHINESE.7B
+            - course: CHINESE.50
+            - course: CHINESE.80
+            - course: CHINESE.101
+            - course: CHINESE.110A
+            - course: CHINESE.110B
+            - course: CHINESE.111
+            - course: CHINESE.112
+            - course: CHINESE.120
+            - course: CHINESE.122
+            - course: CHINESE.132
+            - course: CHINESE.134
+            - course: CHINESE.136
+            - course: CHINESE.138
+            - course: CHINESE.C140
+            - course: CHINESE.142
+            - course: CHINESE.153
+            - course: CHINESE.154
+            - course: CHINESE.155
+            - course: CHINESE.156
+            - course: CHINESE.157
+            - course: CHINESE.158
+            - course: CHINESE.159
+            - course: CHINESE.180
+            - course: CHINESE.181A
+            - course: CHINESE.181B
+            - course: CHINESE.182
+            - course: CHINESE.183
+            - course: CHINESE.C184
+            - course: CHINESE.186
+            - course: CHINESE.187
+            - course: CHINESE.188
+            - course: CLASSIC.10A
+            - course: CLASSIC.10B
+            - course: CLASSIC.17A
+            - course: CLASSIC.17B
+            - course: CLASSIC.30B
+            - course: CLASSIC.34
+            - course: CLASSIC.35
+            - course: CLASSIC.39A
+            - course: CLASSIC.39B
+            - course: CLASSIC.39C
+            - course: CLASSIC.39D
+            - course: CLASSIC.39H
+            - course: CLASSIC.39J
+            - course: CLASSIC.R44
+            - course: CLASSIC.100A
+            - course: CLASSIC.100B
+            - course: CLASSIC.110
+            - course: CLASSIC.124
+            - course: CLASSIC.161
+            - course: CLASSIC.170A
+            - course: CLASSIC.170B
+            - course: CLASSIC.170C
+            - course: CLASSIC.170D
+            - course: CLASSIC.175A
+            - course: CLASSIC.175B
+            - course: CLASSIC.175C
+            - course: CLASSIC.175D
+            - course: CLASSIC.175E
+            - course: CLASSIC.175F
+            - course: CLASSIC.175G
+            - course: CLASSIC.178
+            - course: COLWRIT.N2
+            - course: COLWRIT.105
+            - course: COLWRIT.106
+            - course: COLWRIT.108
+            - course: COLWRIT.110
+            - dept: COM LIT
+                - NOT:
+                    - course: COM LIT.R1A
+                    - course: COM LIT.R1B
+                    - course: COM LIT.R2A
+                    - course: COM LIT.R2B
+                    - course: COM LIT.R3A
+                    - course: COM LIT.R3B
+                    - course: COM LIT.112A
+                    - course: COM LIT.112B
+            - course: DUTCH.140
+            - course: DUTCH.150
+            - course: DUTCH.160
+            - course: DUTCH.161
+            - course: DUTCH.161
+            - course: DUTCH.163
+            - course: DUTCH.164
+            - course: DUTCH.165
+            - course: DUTCH.166
+            - course: DUTCH.177
+            - course: EA LANG.105
+            - course: EA LANG.106
+            - course: EA LANG.C124
+            - course: EA LANG.180
+            - course: EA LANG.181
+            - course: EDUC.C144
+            - dept: ENGLISH
+                - NOT:
+                    - course: ENGLISH.R1A
+                    - course: ENGLISH.R1B
+                    - course: ENGLISH.142A
+                    - course: ENGLISH.142D
+            - course: ENV DES.4A
+            - course: ESPM.C12
+            - course: ESPM.C191
+            - course: ETH STD.100
+            - course: ETH STD.101B
+            - course: ETH STD.110
+            - course: ETH STD.122AC
+            - course: ETH STD.124
+            - course: ETH STD.128
+            - course: ETH STD.174
+            - course: ETH STD.175
+            - course: ETH STD.176
+            - dept: FILM
+                - NOT:
+                    - course: FILM.R1A
+                    - course: FILM.R1B
+                    - course: FILM.C181
+            - course: FRENCH.39A
+            - course: FRENCH.39B
+            - course: FRENCH.39C
+            - course: FRENCH.41
+            - course: FRENCH.103A
+            - course: FRENCH.103B
+            - course: FRENCH.112A
+            - course: FRENCH.112B
+            - course: FRENCH.114A
+            - course: FRENCH.114B
+            - course: FRENCH.116A
+            - course: FRENCH.116B
+            - course: FRENCH.117A
+            - course: FRENCH.117B
+            - course: FRENCH.118A
+            - course: FRENCH.118B
+            - course: FRENCH.119A
+            - course: FRENCH.119B
+            - course: FRENCH.120A
+            - course: FRENCH.120B
+            - course: FRENCH.121A
+            - course: FRENCH.121B
+            - course: FRENCH.122A
+            - course: FRENCH.122B
+            - course: FRENCH.123
+            - course: FRENCH.124A
+            - course: FRENCH.124B
+            - course: FRENCH.125A
+            - course: FRENCH.125B
+            - course: FRENCH.139
+            - course: FRENCH.140A
+            - course: FRENCH.140B
+            - course: FRENCH.140C
+            - course: FRENCH.140D
+            - course: FRENCH.141
+            - course: FRENCH.145
+            - course: FRENCH.150A
+            - course: FRENCH.150B
+            - course: FRENCH.151A
+            - course: FRENCH.151B
+            - course: FRENCH.152
+            - course: FRENCH.170
+            - course: FRENCH.172A
+            - course: FRENCH.172B
+            - course: FRENCH.173
+            - course: FRENCH.174
+            - course: FRENCH.175A
+            - course: FRENCH.175B
+            - course: FRENCH.177A
+            - course: FRENCH.178A
+            - course: FRENCH.178B
+            - course: FRENCH.180A
+            - course: FRENCH.180B
+            - course: FRENCH.180C
+            - course: FRENCH.180D
+            - course: FRENCH.184A
+            - course: FRENCH.184B
+            - course: GWS.39A
+            - course: GWS.39C
+            - course: GWS.39D
+            - course: GWS.100AC
+            - course: GWS.101
+            - course: GWS.112
+            - course: GWS.C123AC
+            - course: GWS.125
+            - course: GWS.126
+            - course: GWS.140
+            - course: GWS.C146
+            - course: GWS.153A
+            - course: GERMAN.25
+            - course: GERMAN.39A
+            - course: GERMAN.39B
+            - course: GERMAN.39C
+            - course: GERMAN.39D
+            - course: GERMAN.39E
+            - course: GERMAN.39F
+            - course: GERMAN.39H
+            - course: GERMAN.39I
+            - course: GERMAN.39L
+            - course: GERMAN.100
+            - course: GERMAN.101
+            - course: GERMAN.102A
+            - course: GERMAN.105
+            - course: GERMAN.C109
+            - course: GERMAN.110
+            - course: GERMAN.111
+            - course: GERMAN.112
+            - course: GERMAN.C113
+            - course: GERMAN.120
+            - course: GERMAN.121
+            - course: GERMAN.122
+            - course: GERMAN.123
+            - course: GERMAN.130
+            - course: GERMAN.132
+            - course: GERMAN.140
+            - course: GERMAN.141
+            - course: GERMAN.142
+            - course: GERMAN.143
+            - course: GERMAN.145
+            - course: GERMAN.151
+            - course: GERMAN.152
+            - course: GERMAN.153
+            - course: GERMAN.154
+            - course: GERMAN.155
+            - course: GERMAN.156
+            - course: GERMAN.C159
+            - course: GERMAN.161
+            - course: GERMAN.162
+            - course: GERMAN.165
+            - course: GERMAN.168
+            - course: GERMAN.175B
+            - course: GERMAN.175C
+            - course: GERMAN.177
+            - course: GERMAN.180
+            - course: GERMAN.180B
+            - course: GERMAN.181
+            - course: GERMAN.182
+            - course: GERMAN.183
+            - course: GERMAN.185
+            - course: GERMAN.186
+            - course: GERMAN.187
+            - course: GREEK.100
+            - course: GREEK.101
+            - course: GREEK.102
+            - course: GREEK.105
+            - course: GREEK.115
+            - course: GREEK.116
+            - course: GREEK.117
+            - course: GREEK.120
+            - course: GREEK.121
+            - course: GREEK.122
+            - course: GREEK.123
+            - course: GREEK.125
+            - course: HEBREW.104A
+            - course: HEBREW.104B
+            - course: HEBREW.148A
+            - course: HEBREW.148B
+            - course: HIN-URD.101A
+            - course: HIN-URD.101B
+            - course: HIN-URD.102A
+            - course: HIN-URD.102B
+            - course: HIN-URD.104A
+            - course: HIN-URD.104B
+            - course: HISTORY.39E
+            - course: HISTORY.39F
+            - course: ISF.C100C
+            - course: ISF.108
+            - course: ISF.117
+            - course: ISF.137AC
+            - course: ISF.C160
+            - course: ITALIAN.30
+            - course: ITALIAN.39A
+            - course: ITALIAN.39B
+            - course: ITALIAN.39D
+            - course: ITALIAN.40
+            - course: ITALIAN.50
+            - course: ITALIAN.70
+            - course: ITALIAN.75
+            - course: ITALIAN.80
+            - course: ITALIAN.90
+            - course: ITALIAN.103
+            - course: ITALIAN.104
+            - course: ITALIAN.109
+            - course: ITALIAN.110
+            - course: ITALIAN.111
+            - course: ITALIAN.112
+            - course: ITALIAN.114
+            - course: ITALIAN.115
+            - course: ITALIAN.117
+            - course: ITALIAN.120
+            - course: ITALIAN.130A
+            - course: ITALIAN.130B
+            - course: ITALIAN.140
+            - course: ITALIAN.163
+            - course: ITALIAN.170
+            - course: ITALIAN.175
+            - course: JAPAN.7A
+            - course: JAPAN.7B
+            - course: JAPAN.39
+            - course: JAPAN.39A
+            - course: JAPAN.39C
+            - course: JAPAN.101
+            - course: JAPAN.103
+            - course: JAPAN.111
+            - course: JAPAN.112
+            - course: JAPAN.120
+            - course: JAPAN.130
+            - course: JAPAN.132
+            - course: JAPAN.134
+            - course: JAPAN.140
+            - course: JAPAN.142
+            - course: JAPAN.144
+            - course: JAPAN.146
+            - course: JAPAN.155
+            - course: JAPAN.159
+            - course: JAPAN.180
+            - course: JAPAN.182A
+            - course: JAPAN.182B
+            - course: JAPAN.183
+            - course: JAPAN.184
+            - course: JAPAN.185
+            - course: JAPAN.186
+            - course: JAPAN.187
+            - course: JAPAN.188
+            - course: JAPAN.189
+            - course: JEWISH.39A
+            - course: JEWISH.39D
+            - course: JEWISH.39F
+            - course: JOURNAL.39F
+            - course: JOURNAL.151
+            - course: JOURNAL.75
+            - course: KHMER.101A
+            - course: KHMER.101B
+            - course: KOREAN.7A
+            - course: KOREAN.7B
+            - course: KOREAN.101
+            - course: KOREAN.111
+            - course: KOREAN.112
+            - course: KOREAN.130
+            - course: KOREAN.140
+            - course: KOREAN.150
+            - course: KOREAN.155
+            - course: KOREAN.157
+            - course: KOREAN.180
+            - course: KOREAN.185
+            - course: KOREAN.187A
+            - course: KOREAN.187B
+            - course: LATIN.100
+            - course: LATIN.101
+            - course: LATIN.102
+            - course: LATIN.115
+            - course: LATIN.116
+            - course: LATIN.117
+            - course: LATIN.118
+            - course: LATIN.119
+            - course: LATIN.120
+            - course: LATIN.121
+            - course: LATIN.122
+            - course: LATIN.123
+            - course: LATIN.140
+            - course: LATIN.155A
+            - course: LATIN.155B
+            - course: LEGALST.114
+            - course: LGBT.C146
+            - course: LBGT.C146A
+            - course: LNS.17
+            - course: LNS.20A
+            - course: LNS.20B
+            - course: LNS.20C
+            - course: LNS.20D
+            - course: LNS.21
+            - course: LNS.25
+            - course: LNS.26
+            - course: LNS.27
+            - course: LNS.39B
+            - course: LNS.40A
+            - course: LNS.C40T
+            - course: LNS.116
+            - course: LNS.118
+            - course: LNS.120A
+            - course: LNS.120B
+            - course: LNS.120C
+            - course: LNS.123
+            - course: LNS.125
+            - course: LNS.140A
+            - course: LNS.140C
+            - course: LNS.148
+            - course: LNS.180B
+            - course: LNS.C180T
+            - course: LINGUIS.65
+            - course: LINGUIS.106
+            - course: LINGUIS.127
+            - course: LINGUIS.128
+            - course: MEDIAST.150
+            - course: MED ST.110
+            - course: MIL AFF.124
+            - dept: MUSIC
+                - NOT:
+                    - course: MUSIC.R1B
+                    - course: MUSIC.49B
+                    - course: MUSIC.49C
+                    - course: MUSIC.50
+                    - course: MUSIC.50A
+                    - course: MUSIC.51
+                    - course: MUSIC.51A
+                    - course: MUSIC.51B
+                    - course: MUSIC.60
+                    - course: MUSIC.61
+                    - course: MUSIC.163
+            - course: NATAMST.20B
+            - course: NATAMST.52
+            - course: NATAMST.120
+            - course: NATAMST.150
+            - course: NATAMST.C152
+            - course: NATAMST.153
+            - course: NATAMST.154
+            - course: NATAMST.156
+            - course: NATAMST.158
+            - course: NATAMST.182
+            - course: NE STUD.15
+            - course: NE STUD.C16
+            - course: NE STUD.18
+            - course: NE STUD.23
+            - course: NE STUD.25
+            - course: NE STUD.32
+            - course: NE STUD.34
+            - course: NE STUD.80
+            - course: NE STUD.C92
+            - course: NE STUD.102A
+            - course: NE STUD.102B
+            - course: NE STUD.105A
+            - course: NE STUD.105B
+            - course: NE STUD.106A
+            - course: NE STUD.106B
+            - course: NE STUD.107
+            - course: NE STUD.110
+            - course: NE STUD.113
+            - course: NE STUD.C120A
+            - course: NE STUD.C120B
+            - course: NE STUD.C121A
+            - course: NE STUD.C121B
+            - course: NE STUD.122A
+            - course: NE STUD.122B
+            - course: NE STUD.123
+            - course: NE STUD.123A
+            - course: NE STUD.123B
+            - course: NE STUD.124
+            - course: NE STUD.124A
+            - course: NE STUD.124B
+            - course: NE STUD.125
+            - course: NE STUD.126
+            - course: NE STUD.127
+            - course: NE STUD.128
+            - course: NE STUD.C129
+            - course: NE STUD.132
+            - course: NE STUD.138
+            - course: NE STUD.139
+            - course: NE STUD.150A
+            - course: NE STUD.150B
+            - course: NE STUD.151
+            - course: NE STUD.152
+            - course: NE STUD.153
+            - course: NE STUD.154
+            - course: NE STUD.155
+            - course: NE STUD.162A
+            - course: NE STUD.162B
+            - course: NE STUD.165
+            - course: NE STUD.170A
+            - course: NE STUD.170B
+            - course: PERSIAN.101A
+            - course: PERSIAN.101B
+            - course: PERSIAN.102A
+            - course: PERSIAN.102B
+            - course: PERSIAN.103A
+            - course: PERSIAN.103B
+            - course: PERSIAN.104A
+            - course: PERSIAN.104B
+            - course: PERSIAN.105
+            - course: PHILOS.6
+            - course: PHILOS.7
+            - course: PHILOS.8
+            - course: PHILOS.109
+            - course: PHILOS.110
+            - course: PHILOS.111
+            - course: PHILOS.163
+            - course: PHILOS.170
+            - course: PHILOS.176
+            - course: PHILOS.181
+            - course: PHYS ED.160
+            - course: PORTUG.25
+            - course: PORTUG.102
+            - course: PORTUG.104
+            - course: PORTUG.107A
+            - course: PORTUG.107B
+            - course: PORTUG.114
+            - course: PORTUG.125
+            - course: PORTUG.128
+            - course: PORTUG.134
+            - course: PORTUG.135
+            - course: PORTUG.138
+            - course: PORTUG.144
+            - course: PSYCH.39E
+            - course: PSYCH.39F
+            - course: RELIGST.C108
+            - course: RELIGST.C109
+            - course: RELIGST.115
+            - course: RELIGST.C118
+            - course: RELIGST.C119
+            - course: RELIGST.C163
+            - course: RELIGST.C165
+            - course: RELIGST.C166
+            - course: RELIGST.171AC
+            - course: RHETOR.20
+            - course: RHETOR.22
+            - course: RHETOR.39D
+            - course: RHETOR.39F
+            - course: RHETOR.39I
+            - course: RHETOR.40AC
+            - course: RHETOR.41AC
+            - course: RHETOR.50A
+            - course: RHETOR.50B
+            - course: RHETOR.50C
+            - course: RHETOR.50D
+            - course: RHETOR.101
+            - course: RHETOR.103A
+            - course: RHETOR.103B
+            - course: RHETOR.104
+            - course: RHETOR.110
+            - course: RHETOR.112
+            - course: RHETOR.118
+            - course: RHETOR.120B
+            - course: RHETOR.120D
+            - course: RHETOR.121
+            - course: RHETOR.121A
+            - course: RHETOR.122
+            - course: RHETOR.124
+            - course: RHETOR.125
+            - course: RHETOR.126
+            - course: RHETOR.127
+            - course: RHETOR.130
+            - course: RHETOR.131T
+            - course: RHETOR.132T
+            - course: RHETOR.133T
+            - course: RHETOR.134
+            - course: RHETOR.136
+            - course: RHETOR.137
+            - course: RHETOR.138
+            - course: RHETOR.141AC
+            - course: RHETOR.150
+            - course: RHETOR.156
+            - course: RHETOR.178
+            - course: RHETOR.180AC
+            - course: SCANDIN.39B
+            - course: SCANDIN.50
+            - course: SCANDIN.100A
+            - course: SCANDIN.100B
+            - course: SCANDIN.106
+            - course: SCANDIN.107
+            - course: SCANDIN.108
+            - course: SCANDIN.C114
+            - course: SCANDIN.115
+            - course: SCANDIN.116
+            - course: SCANDIN.117
+            - course: SCANDIN.118
+            - course: SCANDIN.120
+            - course: SCANDIN.125
+            - course: SCANDIN.140A
+            - course: SCANDIN.140B
+            - course: SCANDIN.150
+            - course: SCANDIN.155
+            - course: SCANDIN.C160
+            - course: SCANDIN.165
+            - course: SCANDIN.170
+            - course: SLAVIC.36
+            - course: SLAVIC.R37W
+            - course: SLAVIC.39C
+            - course: SLAVIC.39D
+            - course: SLAVIC.39E
+            - course: SLAVIC.39G
+            - course: SLAVIC.39J
+            - course: SLAVIC.39K
+            - course: SLAVIC.39L
+            - course: SLAVIC.39N
+            - course: SLAVIC.45
+            - course: SLAVIC.46
+            - course: SLAVIC.50
+            - course: SLAVIC.100
+            - course: SLAVIC.130
+            - course: SLAVIC.131
+            - course: SLAVIC.132
+            - course: SLAVIC.133
+            - course: SLAVIC.134A
+            - course: SLAVIC.134B
+            - course: SLAVIC.134C
+            - course: SLAVIC.134D
+            - course: SLAVIC.134E
+            - course: SLAVIC.134F
+            - course: SLAVIC.134G
+            - course: SLAVIC.134N
+            - course: SLAVIC.135
+            - course: SLAVIC.138
+            - course: SLAVIC.140
+            - course: SLAVIC.146
+            - course: SLAVIC.147A
+            - course: SLAVIC.148
+            - course: SLAVIC.150
+            - course: SLAVIC.151
+            - course: SLAVIC.154
+            - course: SLAVIC.158
+            - course: SLAVIC.160
+            - course: SLAVIC.161
+            - course: SLAVIC.170
+            - course: SLAVIC.171
+            - course: SLAVIC.179
+            - course: SLAVIC.180
+            - course: SLAVIC.181
+            - course: SLAVIC.182
+            - course: SLAVIC.188
+            - course: SOC WEL.39A
+            - course: SOCIOL.160
+            - course: S,SEASN.39A
+            - course: S,SEASN.39B
+            - course: S,SEASN.39D
+            - course: S,SEASN.39F
+            - course: S,SEASN.39G
+            - course: S,SEASN.39H
+            - course: S,SEASN.39J
+            - course: S,SEASN.C110
+            - course: S,SEASN.C113
+            - course: S,SEASN.138
+            - course: S ASIAN.121
+            - course: S ASIAN.122
+            - course: S ASIAN.124
+            - course: S ASIAN.C128
+            - course: S ASIAN.131
+            - course: S ASIAN.138
+            - course: S ASIAN.C140
+            - course: S ASIAN.C142
+            - course: S ASIAN.143
+            - course: S ASIAN.145
+            - course: S ASIAN.152
+            - course: S ASIAN.165
+            - course: SPANISH.25
+            - course: SPANISH.39A
+            - course: SPANISH.39B
+            - course: SPANISH.39C
+            - course: SPANISH.39D
+            - course: SPANISH.39E
+            - course: SPANISH.40
+            - course: SPANISH.104A
+            - course: SPANISH.104B
+            - course: SPANISH.107A
+            - course: SPANISH.107B
+            - course: SPANISH.108
+            - course: SPANISH.109
+            - course: SPANISH.110
+            - course: SPANISH.111A
+            - course: SPANISH.111B
+            - course: SPANISH.112
+            - course: SPANISH.113
+            - course: SPANISH.114
+            - course: SPANISH.115
+            - course: SPANISH.117
+            - course: SPANISH.123A
+            - course: SPANISH.126
+            - course: SPANISH.127
+            - course: SPANISH.128
+            - course: SPANISH.129
+            - course: SPANISH.130
+            - course: SPANISH.131
+            - course: SPANISH.133
+            - course: SPANISH.134
+            - course: SPANISH.135
+            - course: SPANISH.135AC
+            - course: SPANISH.142
+            - course: SPANISH.147
+            - course: SPANISH.165
+            - course: SPANISH.185
+            - dept: THEATER
+                - NOT:
+                    - course: THEATER.R1A
+                    - course: THEATER.R1B
+                    - course: THEATER.12
+                    - course: THEATER.N12
+                    - course: THEATER.60
+                    - course: THEATER.160
+                    - course: THEATER.172
+                    - course: THEATER.176
+                    - course: THEATER.177
+            - course: TIBETAN.110
+            - course: TIBETAN.110B
+            - course: TIBETAN.120A
+            - course: TIBETAN.124
+            - course: TIBETAN.128A
+            - course: TIBETAN.128B
+            - course: TIBETAN.150A
+            - course: TIBETAN.150B
+            - course: TURKISH.101A
+            - course: TURKISH.101B
+            - course: TURKISH.102A
+            - course: TURKISH.102B
+            - course: UGIS.C12
+            - course: UGIS.44A
+            - course: UGIS.44B
+            - course: UGIS.44C
+            - course: UGIS.55A
+            - course: UGIS.C135
+            - course: UGIS.C136
+            - course: UGIS.140
+            - course: UGIS.160A
+            - course: UGIS.163
+            - course: UGIS.164
+            - course: UGIS.171
+            - course: VIETNMS.101B
+            - course: VISSTD.180A
+            - course: VISSTD.180B
+            - course: VISSTD.181
+            - course: VISSTD.182AC
+            - course: VISSTD.185A
+            - course: VISSTD.185X
+            - course: VISSTD.186X
+            - course: VISSTD.189
+
+ls_breadth_bio:
+    description: "Biological Sciences Breadth Requirement"
+    rule: same_course
+    args:
+        - OR:
+            - course: ANTHR0.1
+            - course: ANTHRO.C100
+            - course: ANTHRO.101
+            - course: ANTHRO.C103
+            - course: ANTHRO.105
+            - course: ANTHRO.106
+            - course: ANTHRO.107
+            - course: ANTHRO.108
+            - course: ANTHRO.109
+            - course: ANTHRO.110
+            - course: ANTHRO.112
+            - course: ANTHRO.135
+            - course: BIOCHEM.170B # doesn't exist
+            - course: BIO ENG.C119
+            - course: BIO ENG.155
+            - course: BIOLOGY.1A
+            - course: BIOLOGY.1B
+            - course: BIOLOGY.11
+            - course: CHM ENG.170A
+            - course: CHM ENG.170E
+            - course: CIV ENG.113
+            - course: COG SCI.C102
+            - course: COG SCI.C110
+            - course: COG SCI.C126
+            - course: COG SCI.C127
+            - course: COG SCI.C147
+            - course: EPS.C30
+            - course: EPS.C82
+            - course: EPS.C129
+            - course: EPS.185
+            - course: ENGLISH.C177
+            - course: ESPM.2
+            - course: ESPM.6
+            - course: ESPM.8
+            - course: ESPM.C10
+            - course: ESPM.C11
+            - course: ESPM.C12
+            - course: ESPM.15
+            - course: ESPM.36
+            - course: ESPM.40
+            - course: ESPM.42
+            - course: ESPM.44
+            - course: ESPM.100
+            - course: ESPM.101A
+            - course: ESPM.101B
+            - course: ESPM.102A
+            - course: ESPM.102B
+            - course: ESPM.102C
+            - course: ESPM.103A
+            - course: ESPM.105A
+            - course: ESPM.106
+            - course: ESPM.C107
+            - course: ESPM.108A
+            - course: ESPM.109
+            - course: ESPM.110
+            - course: ESPM.111
+            - course: ESPM.112
+            - course: ESPM.113
+            - course: ESPM.114
+            - course: ESPM.115A
+            - course: ESPM.115B
+            - course: ESPM.115C
+            - course: ESPM.116A
+            - course: ESPM.116B
+            - course: ESPM.116C
+            - course: ESPM.117
+            - course: ESPM.118
+            - course: ESPM.119
+            - course: ESPM.129
+            - course: ESPM.C129
+            - course: ESPM.131
+            - course: ESPM.132
+            - course: ESPM.133
+            - course: ESPM.134
+            - course: ESPM.135
+            - course: ESPM.136
+            - course: ESPM.137
+            - course: ESPM.138
+            - course: ESPM.140
+            - course: ESPM.141
+            - course: ESPM.142
+            - course: ESPM.143
+            - course: ESPM.144
+            - course: ESPM.145
+            - course: ESPM.146
+            - course: ESPM.149
+            - course: ESPM.152
+            - course: ESPM.164
+            - course: ESPM.167
+            - course: ESPM.181
+            - course: ESPM.185
+            - course: ESPM.186
+            - course: ESPM.187
+            - course: ESPM.189
+            - course: GEOG.30
+            - course: GEOG.40
+            - course: GEOG.C82
+            - course: GEOG.131
+            - course: GEOG.143
+            - course: GEOG.148
+            - course: GEOG.149
+            - course: GEOG.179D
+            - dept: INTEGBI
+                - NOT:
+                    - course: INTEGBI.39C
+            - course: LD ARCH.114A
+            - course: LD ARCH.114B
+            - course: LNS.18
+            - course: LNS.19
+            - course: LNS.23
+            - course: LNS.C30T
+            - course: LNS.C30U
+            - course: LNS.C30V
+            - course: LNS.C30W
+            - course: LNS.C30X
+            - course: LNS.117
+            - course: LNS.126
+            - course: LINGUIS.C109
+            - course: LINGUIS.C147
+            - course: LINGUIS.160
+            - course: MEC ENG.C176
+            - dept: MCELLBI
+                - NOT:
+                    - course: MCELLBI.168
+            - course: NUSCTX.10
+            - course: NUSCTX.11
+            - course: NUSCTX.39A
+            - course: NUSCTX.39C
+            - course: NUSCTX.100
+            - course: NUSCTX.103
+            - course: NUSCTX.106
+            - course: NUSCTX.110
+            - course: NUSCTX.113
+            - course: NUSCTX.120
+            - course: NUSCTX.150
+            - course: NUSCTX.160
+            - course: NUSCTX.161
+            - course: NUSCTX.170
+            - course: OPTOM.10
+            - course: OPTOM.C10
+            - course: OPTOM.130
+            - course: PHYSED.32
+            - course: PHYSED.C129
+            - course: PHYSED.C165L
+            - course: PHYSICS.177
+            - course: PLANTBI.10
+            - course: PLANTBI.11
+            - course: PLANTBI.13
+            - course: PLANTBI.39A
+            - course: PLANTBI.39B
+            - course: PLANTBI.39C
+            - course: PLANTBI.39D
+            - course: PLANTBI.40
+            - course: PLANTBI.C41X
+            - course: PLANTBI.100
+            - course: PLANTBI.102
+            - course: PLANTBI.C103
+            - course: PLANTBI.105
+            - course: PLANTBI.110
+            - course: PLANTBI.111
+            - course: PLANTBI.112
+            - course: PLANTBI.114
+            - course: PLANTBI.C116
+            - course: PLANTBI.120
+            - course: PLANTBI.130
+            - course: PLANTBI.135
+            - course: PLANTBI.140
+            - course: PLANTBI.142
+            - course: PLANTBI.C148
+            - course: PLANTBI.150
+            - course: PLANTBI.160
+            - course: PLANTBI.165
+            - course: PLANTBI.170
+            - course: PLANTBI.180
+            - course: PSYCH.C19
+            - course: PSYCH.39L
+            - course: PSYCH.100A
+            - course: PSYCH.110
+            - course: PSYCH.111
+            - course: PSYCH.C112
+            - course: PSYCH.113
+            - course: PSYCH.114
+            - course: PSYCH.115A
+            - course: PSYCH.C115C
+            - course: PSYCH.116
+            - course: PSYCH.117
+            - course: PSYCH.118
+            - course: PSYCH.119
+            - course: PSYCH.121
+            - course: PSYCH.122
+            - course: PSYCH.125
+            - course: PSYCH.C126
+            - course: PSYCH.C127
+            - course: PSYCH.C129
+            - course: PSYCH.133
+            - course: PB HLTH.39C
+            - course: PB HLTH.39F
+            - course: PB HLTH.C102
+            - course: PB HLTH.150C
+            - course: PB HLTH.C160
+            - course: PB HLTH.161
+            - course: PB HLTH.162A
+            - course: PB HLTH.162B
+            - course: PB HLTH.170
+            - course: PB HLTH.170B
+            - course: PB HLTH.172
+            - course: UGIS.C10
+            - course: UGIS.C12
+            - course: UGIS.C130
+
+ls_breadth_history:
+    description: "Historical Studies Breadth Requirement"
+    rule: same_course
+    args:
+        - OR:
+            - course: AFRICAM.4A
+            - course: AFRICAM.4B
+            - course: AFRICAM.5A
+            - course: AFRICAM.5B
+            - course: AFRICAM.111
+            - course: AFRICAM.113
+            - course: AFRICAM.116
+            - course: AFRICAM.117
+            - course: AFRICAM.121
+            - course: AFRICAM.122
+            - course: AFRICAM.123
+            - course: AFRICAM.125
+            - course: AFRICAM.126
+            - course: AFRICAM.128
+            - course: AFRICAM.131
+            - course: AFRICAM.C131
+            - course: AFRICAM.N131
+            - course: AFRICAM.135
+            - course: AFRICAM.138
+            - course: AFRICAM.150A
+            - course: AFRICAM.151B
+            - course: AFRICAM.C178
+            - course: AMERSTD.10
+            - course: AMERSTD.10AC
+            - course: AMERSTD.C10
+            - course: AMERSTD.C112A
+            - course: AMERSTD.C112B
+            - course: AMERSTD.C112F
+            - course: AMERSTD.C132
+            - course: AMERSTD.C132B
+            - course: AMERSTD.C171
+            - course: AMERSTD.172
+            - course: AMERSTD.C172
+            - course: AMERSTD.C1
+            - course: AMERSTD.C1
+            - course: AMERSTD.C1
+            - course: AMERSTD.C1
+            - course: ANTHRO.2
+            - course: ANTHRO.2AC
+            - course: ANTHRO.10AC
+            - course: ANTHRO.114
+            - course: ANTHRO.121A
+            - course: ANTHRO.121AC
+            - course: ANTHRO.121B
+            - course: ANTHRO.122A
+            - course: ANTHRO.122C
+            - course: ANTHRO.122D
+            - course: ANTHRO.122E
+            - course: ANTHRO.122F
+            - course: ANTHRO.123A
+            - course: ANTHRO.123B
+            - course: ANTHRO.123C
+            - course: ANTHRO.123D
+            - course: ANTHRO.123E
+            - course: ANTHRO.124A
+            - course: ANTHRO.124AC
+            - course: ANTHRO.C125A
+            - course: ANTHRO.C125B
+            - course: ANTHRO.129A
+            - course: ANTHRO.129C
+            - course: ANTHRO.C129F
+            - course: ANTHRO.134
+            - course: ANTHRO.134A
+            - course: ANTHRO.173
+            - course: ANTHRO.174AC
+            - course: ANTHRO.175
+            - course: ANTHRO.180
+            - course: ANTHRO.183
+            - course: ANTHRO.187
+            - course: ARCH.130
+            - course: ARCH.170A
+            - course: ARCH.170B
+            - course: ARCH.176
+            - course: ARCH.179AC
+            - dept: HISTART
+                - NOT:
+                    - course: HISTART.R1B
+                    - course: HISTART.N142
+            - course: ASAMST.20A
+            - course: ASAMST.120
+            - course: ASAMST.122
+            - course: ASAMST.123
+            - course: ASAMST.124
+            - course: ASAMST.128AC
+            - course: ASAMST.131
+            - course: ASAMST.170
+            - course: ASAMST.171
+            - course: ASAMST.175
+            - course: ASIANST.147
+            - course: ASIANST.148
+            - course: BUDDSTD.C120
+            - course: BUDDSTD.C183
+            - course: CELTIC.70
+            - course: CELTIC.128
+            - course: CELTIC.173
+            - course: CHICANO.50
+            - course: CHICANO.130
+            - course: CHICANO.135
+            - course: CHICANO.135A
+            - course: CHICANO.135B
+            - course: CHICANO.150A
+            - course: CHICANO.150B
+            - course: CHICANO.161
+            - course: CHICANO.162
+            - course: CHINESE.7A
+            - course: CHINESE.102
+            - course: CHINESE.181
+            - course: CHINESE.182
+            - course: CYPLAN.110
+            - course: CYPLAN.112B
+            - course: CLASSICS.10A
+            - course: CLASSICS.10B
+            - course: CLASSICS.17A
+            - course: CLASSICS.17B
+            - course: CLASSICS.29
+            - course: CLASSICS.36
+            - course: CLASSICS.C36
+            - course: CLASSICS.39B
+            - course: CLASSICS.39G
+            - course: CLASSICS.39I
+            - course: CLASSICS.R44
+            - course: CLASSICS.121
+            - course: CLASSICS.155A
+            - course: CLASSICS.155B
+            - course: CLASSICS.161
+            - course: COG SCI.C1093
+            - course: COLWRIT.50AC
+            - course: COLWRIT.150AC
+            - course: COM LIT.113
+            - course: COMPSCI.39B
+            - course: COMPSCI.39C
+            - course: COMPSCI.39E
+            - course: COMPSCI.39K
+            - course: DEMOG.145AC
+            - course: DEV STD.C100
+            - course: DUTCH.39A
+            - course: DUTCH.C170
+            - course: DUTCH.171AC
+            - course: DUTCH.173
+            - course: DUTCH.175
+            - course: DUTCH.177
+            - course: DUTCH.C178
+            - course: EPS.C51
+            - course: EA LANG.109
+            - course: EA LANG.C120
+            - course: ECON.105
+            - course: ECON.113
+            - course: ECON.114
+            - course: ECON.115
+            - course: ECON.134
+            - course: EDUC.122
+            - course: EDUC.183
+            - course: ENGLISH.101
+            - course: ENV DES.10
+            - course: ENV DES.71
+            - course: ENV DES.169A
+            - course: ENV DES.C169A
+            - course: ENV DES.C169B
+            - course: ESPM.50AC
+            - course: ESPM.160AC
+            - course: ESPM.C160
+            - course: ESPM.166
+            - course: ESPM.C191
+            - course: ETH STD.10A
+            - course: ETH STD.10AC
+            - course: ETH STD.21AC
+            - course: ETH STD.39A
+            - course: ETH STD.41AC
+            - course: ETH STD.C73AC
+            - course: ETH STD.124
+            - course: ETH STD.130
+            - course: ETH STD.130AC
+            - course: ETH STD.132
+            - course: FILM.25A
+            - course: FILM.25B
+            - course: FILM.129
+            - course: FILM.160
+            - course: FRENCH.43
+            - course: FRENCH.43A
+            - course: FRENCH.43B
+            - course: FRENCH.145
+            - course: FRENCH.160A
+            - course: FRENCH.160B
+            - course: FRENCH.161A
+            - course: FRENCH.161B
+            - course: FRENCH.162A
+            - course: FRENCH.162B
+            - course: FRENCH.171A
+            - course: FRENCH.171B
+            - course: FRENCH.180A
+            - course: FRENCH.180B
+            - course: FRENCH.180C
+            - course: FRENCH.180D
+            - course: FRENCH.183A
+            - course: FRENCH.183B
+            - course: GWS.100AC
+            - course: GWS.120
+            - course: GWS.122
+            - course: GWS.C145
+            - course: GWS.153A
+            - course: GEOG.39A
+            - course: GEOG.51
+            - course: GEOG.55
+            - course: GEOG.70AC
+            - course: GEOG.C112
+            - course: GEOG.113
+            - course: GEOG.120
+            - course: GEOG.C152
+            - course: GEOG.154
+            - course: GEOG.157
+            - course: GEOG.158
+            - course: GEOG.160A
+            - course: GEOG.160B
+            - course: GEOG.C160A
+            - course: GEOG.C160B
+            - course: GEOG.163
+            - course: GEOG.164
+            - course: GEOG.165
+            - course: GEOG.166
+            - course: GEOG.167
+            - course: GEOG.168
+            - course: GEOG.169
+            - course: GERMAN.C25
+            - course: GERMAN.39E
+            - course: GERMAN.120
+            - course: GERMAN.123
+            - course: GERMAN.141
+            - course: GERMAN.150
+            - course: GERMAN.153
+            - course: GERMAN.154
+            - course: GERMAN.157A
+            - course: GERMAN.157B
+            - course: GERMAN.157C
+            - course: GERMAN.157D
+            - course: GERMAN.C157B
+            - course: GERMAN.160A
+            - course: GERMAN.160B
+            - course: GERMAN.160C
+            - course: GERMAN.160K
+            - course: GERMAN.164
+            - course: GERMAN.170
+            - course: GERMAN.176
+            - course: GERMAN.177
+            - course: GREEK.120
+            - course: GREEK.121
+            - course: GREEK.122
+            - course: HMEDSCI.C133
+            - dept: HISTORY
+                - NOT:
+                    - course: HISTORY.R1A
+                    - course: HISTORY.R1B
+                    - course: HISTORY.30A
+                    - course: HISTORY.30B
+                    - course: HISTORY.30C
+            - course: INFO.C103
+            - course: INFO.182AC
+            - course: ISF.145
+            - course: ISF.C145
+            - course: IAS.45
+            - course: IAS.145
+            - course: IAS.C145
+            - course: IAS.147
+            - course: IAS.148
+            - course: ITALIAN.39F
+            - course: ITALIAN.40
+            - course: ITALIAN.70
+            - course: ITALIAN.103
+            - course: ITALIAN.160
+            - course: ITALIAN.N160
+            - course: JAPAN.7A
+            - course: JAPAN.80
+            - course: JAPAN.102
+            - course: JAPAN.104
+            - course: JEWISH.39B
+            - course: JEWISH.39E
+            - course: JOURNAL.39A
+            - course: JOURNAL.39AC
+            - course: JOURNAL.140
+            - course: KHMER.101A
+            - course: KHMER.101B
+            - course: KOREAN.7A
+            - course: KOREAN.102
+            - course: LDARCH.170
+            - course: LDARCH.C171
+            - course: LATIN.100
+            - course: LATIN.120
+            - course: LATIN.121
+            - course: LATIN.155A
+            - course: LATIN.155B
+            - course: LEGALST.103
+            - course: LEGALST.111
+            - course: LEGALST.112
+            - course: LEGALST.116
+            - course: LEGALST.121
+            - course: LEGALST.160
+            - course: LEGALST.161
+            - course: LEGALST.171
+            - course: LEGALST.174
+            - course: LEGALST.175
+            - course: LEGALST.176
+            - course: LEGALST.177
+            - course: LEGALST.178
+            - course: LGBT.145
+            - course: LNS.16
+            - course: LNS.17
+            - course: LNS.21
+            - course: LNS.26
+            - course: LNS.40A
+            - course: LNS.40AC
+            - course: LNS.40B
+            - course: LNS.40C
+            - course: LNS.C40T
+            - course: LNS.C60U
+            - COURSE: LNS.C70X
+            - course: LNS.120
+            - course: LNS.122
+            - course: LNS.123
+            - course: LNS.140A
+            - course: LNS.140B
+            - course: LNS.140C
+            - course: LNS.140D
+            - course: LNS.C140T
+            - course: LNS.C140U
+            - course: LNS.C140V
+            - course: LNS.148
+            - course: LINGUIS.11
+            - course: LINGUIS.22
+            - course: LINGUIS.55AC
+            - course: LINGUIS.71
+            - course: LINGUIS.C139
+            - course: LINGUIS.155AC
+            - course: MATH.160
+            - course: MEDIAST.104B
+            - course: MEDIAST.104C
+            - course: MED ST.150
+            - course: MIL AFF.20
+            - course: MIL AFF.120
+            - course: MIL AFF.121
+            - course: MIL AFF.123
+            - course: MIL AFF.154
+            - course: MUSIC.39F
+            - course: MUSIC.75
+            - course: MUSIC.76
+            - course: MUSIC.77
+            - course: MUSIC.128
+            - course: MUSIC.128A
+            - course: MUSIC.128B
+            - course: MUSIC.128BM
+            - course: MUSIC.128D
+            - course: MUSIC.128DM
+            - course: MUSIC.128E
+            - course: MUSIC.128P
+            - course: MUSIC.128Q
+            - course: MUSIC.128R
+            - course: MUSIC.128RM
+            - course: MUSIC.128S
+            - course: MUSIC.128SM
+            - course: MUSIC.128T
+            - course: MUSIC.128TM
+            - course: MUSIC.130A
+            - course: MUSIC.130AM
+            - course: MUSIC.130B
+            - course: MUSIC.137AC
+            - course: NATAMST.20A
+            - course: NATAMST.71
+            - course: NATAMST.72
+            - course: NATAMST.90
+            - course: NATAMST.145
+            - course: NATAMST.173
+            - course: NATAMST.175
+            - course: NATAMST.176
+            - course: NATAMST.177
+            - course: NATAMST.178
+            - course: NAV SCI.2
+            - course: NE STUD.15
+            - course: NE STUD.18
+            - course: NE STUD.20
+            - course: NE STUD.C26
+            - course: NE STUD.101A
+            - course: NE STUD.101B
+            - course: NE STUD.102A
+            - course: NE STUD.102B
+            - course: NE STUD.105A
+            - course: NE STUD.105B
+            - course: NE STUD.106A
+            - course: NE STUD.106B
+            - course: NE STUD.107
+            - course: NE STUD.109
+            - course: NE STUD.110
+            - course: NE STUD.112
+            - course: NE STUD.C120A
+            - course: NE STUD.C120B
+            - course: NE STUD.122
+            - course: NE STUD.122A
+            - course: NE STUD.122B
+            - course: NE STUD.123
+            - course: NE STUD.123A
+            - course: NE STUD.123B
+            - course: NE STUD.124
+            - course: NE STUD.124A
+            - course: NE STUD.124B
+            - course: NE STUD.125
+            - course: NE STUD.126
+            - course: NE STUD.128
+            - course: NE STUD.C129
+            - course: NE STUD.130A
+            - course: NE STUD.130B
+            - course: NE STUD.131
+            - course: NE STUD.C133
+            - course: NE STUD.134
+            - course: NE STUD.C135
+            - course: NE STUD.136
+            - course: NE STUD.137
+            - course: NE STUD.140
+            - course: NE STUD.141
+            - course: NE STUD.143A
+            - course: NE STUD.143B
+            - course: NE STUD.144
+            - course: NE STUD.146A
+            - course: NE STUD.146B
+            - course: NE STUD.147    
+            - course: NE STUD.150A
+            - course: NE STUD.150B
+            - course: NE STUD.160
+            - course: NE STUD.162A
+            - course: NE STUD.162B
+            - course: NE STUD.171
+            - course: NE STUD.173A
+            - course: NE STUD.173B
+            - course: NE STUD.175
+            - course: PACS.125AC
+            - course: PACS.161
+            - course: PHILOS.9
+            - course: PHILOS.25A
+            - course: PHILOS.25B
+            - course: PHILOS.C25A
+            - course: PHILOS.114
+            - course: PHILOS.C151
+            - course: PHILOS.C152
+            - course: PHILOS.153
+            - course: PHILOS.160
+            - course: PHILOS.161
+            - course: PHILOS.163
+            - course: PHILOS.170
+            - course: PHILOS.171
+            - course: PHILOS.172
+            - course: PHILOS.173
+            - course: PHILOS.174
+            - course: PHILOS.175
+            - course: PHILOS.176
+            - course: PHILOS.178
+            - course: PHILOS.183
+            - course: PHILOS.184
+            - course: PHYSED.39
+            - course: POLECON.160
+            - course: POLECON.160A
+            - course: POL SCI.33
+            - course: POL SCI.112A
+            - course: POL SCI.112B
+            - course: POL SCI.112C
+            - course: POL SCI.112D
+            - course: POL SCI.113A
+            - course: POL SCI.N113A
+            - course: POL SCI.115C
+            - course: POL SCI.122A
+            - course: POL SCI.124A
+            - course: POL SCI.136A
+            - course: POL SCI.137B
+            - course: POL SCI.141A
+            - course: POL SCI.146C
+            - course: POL SCI.N146C
+            - course: PORTUG.39A
+            - course: PORTUG.112
+            - course: PORTUG.113
+            - course: PSYCH.109
+            - course: PB HLTH.183
+            - course: PUB POL.39
+            - course: RELIGST.120A
+            - course: RELIGST.120B
+            - course: RELIGST.123
+            - course: RELIGST.C124
+            - course: RELIGST.125
+            - course: RELIGST.130
+            - course: RELIGST.C132
+            - course: RELIGST.C133
+            - course: RELIGST.C134
+            - course: RELIGST.C135
+            - course: RELIGST.C136
+            - course: RELGIST.C156
+            - course: RELIGST.C157
+            - course: RELIGST.C164
+            - course: RELIGST.173AC
+            - course: RHETOR.106
+            - course: RHETOR.116
+            - course: RHETOR.152
+            - course: RHETOR.152AC
+            - course: RHETOR.153
+            - course: RHETOR.155
+            - course: RHETOR.166
+            - course: SCANDIN.75
+            - course: SCANDIN.123
+            - course: SCANDIN.127
+            - course: SCANDIN.128
+            - course: SCANDIN.132
+            - course: SLAVIC.39A
+            - course: SLAVIC.39B
+            - course: SLAVIC.39D
+            - course: SLAVIC.39H
+            - course: SLAVIC.39I
+            - course: SLAVIC.100
+            - course: SLAVIC.130
+            - course: SLAVIC.131
+            - course: SLAVIC.C139
+            - course: SLAVIC.148
+            - course: SLAVIC.149AC
+            - course: SLAVIC.158
+            - course: SLAVIC.190
+            - course: SOC WEL.C129
+            - course: SOCIOL.131
+            - course: SOCIOL.131AC
+            - course: SOCIOL.181
+            - course: SOCIOL.186
+            - course: SOCIOL.C189
+            - course: S,SEASN.C110
+            - course: S,SEASN.C112
+            - course: S,SEASN.C123
+            - course: S ASIAN.1A
+            - course: S ASIAN.1B
+            - course: S ASIAN.110A
+            - course: S ASIAN.110B
+            - course: S ASIAN.144
+            - course: S ASIAN.146
+            - course: S ASIAN.148
+            - course: S ASIAN.151
+            - course: SEASIAN.10A
+            - course: SEASIAN.10B
+            - course: SEASIAN.137
+            - course: SEASIAN.138
+            - course: SPANISH.40
+            - course: SPANISH.112
+            - course: SPANISH.113
+            - course: SPANISH.122
+            - course: SPANISH.C178
+            - course: THEATER.39A
+            - course: THEATER.125
+            - course: THEATER.151A
+            - course: THEATER.151B
+            - course: THEATER.153A
+            - course: THEATER.153B
+            - course: UGIS.44A
+            - course: UGIS.44B
+            - course: UGIS.44C
+            - course: UGIS.55A
+            - course: UGIS.55B
+            - course: UGIS.C132
+            - course: UGIS.C133
+            - course: UGIS.C136
+            - course: UGIS.C145
+            - course: UGIS.C152
+            - course: UGIS.C153
+            - course: UGIS.C154
+            - course: UGIS.C155
+            - course: UGIS.C162A
+
+ls_breadth_international:
+    description: "International Studies Breadth Requirement"
+    rule: same_course
+    args:
+        - OR:
+            - course: AFRICAM.4B
+            - course: AFRICAM.8A
+            - course: AFRICAM.8B
+            - course: AFRICAM.9A
+            - course: AFRICAM.9B
+            - course: AFRICAM.10A
+            - course: AFRICAM.10B
+            - course: AFRICAM.14A
+            - course: AFRICAM.14B
+            - course: AFRICAM.15A
+            - course: AFRICAM.15B
+            - course: AFRICAM.19A
+            - course: AFRICAM.19B
+            - course: AFRICAM.31A
+            - course: AFRICAM.31B
+            - course: AFRICAM.112A
+            - course: AFRICAM.112B
+            - course: AFRICAM.113
+            - course: AFRICAM.128
+            - course: AFRICAM.131
+            - course: AFRICAM.C131
+            - course: AFRICAM.N131
+            - course: AFRICAM.135
+            - course: AFRICAM.160
+            - course: AFRIK.150 # doesn't exist
+            - course: ANTHRO.147C
+            - course: ANTHRO.C147B
+            - course: ANTHRO.152
+            - course: ANTHRO.170
+            - course: ANTHRO.171
+            - course: ANTHRO.175
+            - course: ANTHRO.176
+            - course: ANTHRO.177
+            - course: ANTHRO.179
+            - course: ANTHRO.180
+            - course: ANTHRO.181
+            - course: ANTHRO.182
+            - course: ANTHRO.183
+            - course: ANTHRO.184
+            - course: ANTHRO.185
+            - course: ANTHRO.C186
+            - course: ANTHRO.187
+            - course: ANTHRO.188
+            - course: ARABIC.20A
+            - course: ARABIC.20B
+            - course: ARABIC.21
+            - course: ARABIC.50
+            - course: HISTART.131C
+            - course: ART.119
+            - course: ASIANST.10
+            - course: ASIANST.110
+            - course: ASIANST.147
+            - course: ASIANST.148
+            - course: ASIANST.149
+            - course: ASIANST.150
+            - course: BUDDSTD.C128
+            - course: BUDDSTD.181
+            - course: UGBA.118
+            - course: UGBA.178
+            - course: CATALAN.101
+            - course: CATALAN.102
+            - course: CELTIC.85
+            - course: CELTIC.86
+            - course: CELTIC.106C
+            - course: CELTIC.115
+            - course: CELTIC.116B
+            - course: CELTIC.129
+            - course: CHICANO.10
+            - course: CHICANO.135C
+            - course: CHICANO.161
+            - course: CHICANO.163
+            - course: CHINESE.10
+            - course: CHINESE.10A
+            - course: CHINESE.10B
+            - course: CHINESE.100A
+            - course: CHINESE.100B
+            - course: CHINESE.100S
+            - course: CHINESE.153
+            - course: CHINESE.C184
+            - course: CYPLAN.111
+            - coures: CYPLAN.115
+            - course: CLASSIC.N172A
+            - course: COM LIT.171
+            - course: DEMOG.140
+            - course: DEMOG.C165
+            - course: DEMOG.C175
+            - course: DEV STD.140
+            - course: DEV STD.C165
+            - course: DEV STD.C175
+            - course: DUTCH.110
+            - course: DUTCH.125
+            - course: DUTCH.C170
+            - course: DUTCH.174
+            - course: EA LANG.C128
+            - course: EAEURST.100
+            - course: ECON.90
+            - course: ECON.115
+            - course: ECON.161
+            - course: ECON.161
+            - course: ECON.162
+            - course: ECON.171
+            - course: ECON.172
+            - course: ECON.C175
+            - course: ECON.C181
+            - course: ECON.182
+            - course: ENE,RES.162
+            - course: ENV DES.100
+            - course: ENVECON.151
+            - coures: ENVECON.152
+            - course: ENVECON.153
+            - course: ENVECON.C181
+            - course: ESPM.C107
+            - course: ESPM.155
+            - course: ESPM.165
+            - course: ESPM.166
+            - course: ESPM.168
+            - course: ESPM.169
+            - course: ESPM.184
+            - course: ETH STD.N180
+            - course: ETH STD.N190
+            - course: EURA ST.101A
+            - course: FILIPN.100A
+            - course: FILIPN.100B
+            - course: FILIPN.110A
+            - course: FRENCH.3
+            - course: FRENCH.4
+            - course: FRENCH.14
+            - course: GWS.14
+            - course: GWS.102
+            - course: GWS.141
+            - course: GWS.142
+            - course: GWS.144
+            - course: GEOG.4
+            - course: GEOG.10
+            - course: GEOG.20
+            - course: GEOG.N20
+            - course: GEOG.C32
+            - course: GEOG.35
+            - course: GEOG.51
+            - course: GEOG.55
+            - course: GEOG.100
+            - course: GEOG.104
+            - course: GEOG.108
+            - course: GEOG.110
+            - course: GEOG.111
+            - course: GEOG.C112
+            - course: GEOG.115
+            - course: GEOG.116
+            - course: GEOG.130
+            - course: GEOG.133
+            - course: GEOG.138
+            - course: GEOG.C152
+            - course: GEOG.153
+            - course: GEOG.157
+            - course: GEOG.164
+            - course: GEOG.169
+            - course: GERMAN.3
+            - course: GERMAN.4
+            - course: GERMAN.50
+            - course: GERMAN.100
+            - course: GERMAN.101
+            - course: GERMAN.102A
+            - course: GERMAN.102B
+            - course: GERMAN.102C
+            - course: GERMAN.102D
+            - course: GERMAN.103
+            - course: GERMAN.150
+            - course: GERMAN.160D
+            - course: GERMAN.188
+            - course: GPP.105
+            - course: GPP.115
+            - course: HEBREW.20A
+            - course: HEBREW.20B
+            - course: HEBREW.30
+            - course: HIN-URD.100A
+            - course: HIN-URD.100B
+            - course: HIN-URD.101A
+            - course: HIN-URD.101B
+            - course: HIN-URD.103A
+            - course: HIN-URD.103B
+            - course: HISTORY.160
+            - course: HISTORY.161
+            - course: HISTORY.162B
+            - course: HISTORY.C176
+            - course: HISTORY.186
+            - course: HISTORY.C194
+            - course: INTEGBI.C158
+            - course: ISF.60
+            - course: ISF.100A
+            - course: ISF.100D
+            - course: ISF.100E
+            - course: ISF.100H
+            - course: ISF.145
+            - course: ISF.C145
+            - course: IAS.20
+            - course: IAS.105
+            - course: IAS.105A
+            - course: IAS.105B
+            - course: IAS.113
+            - course: IAS.115
+            - course: IAS.120
+            - course: IAS.C142
+            - course: IAS.143
+            - course: IAS.145
+            - course: IAS.C145
+            - course: IAS.147
+            - course: IAS.148
+            - course: IAS.150
+            - course: IAS.160
+            - course: IAS.C170
+            - course: IAS.180
+            - course: ITALIAN.3
+            - course: ITALIAN.4
+            - course: JAPAN.10A
+            - course: JAPAN.10B
+            - course: JAPAN.80
+            - course: JAPAN.100B
+            - course: JAPAN.160
+            - course: JAPAN.161
+            - course: JOURNAL.39E
+            - course: JOURNAL.C183
+            - course: KHMER.101A
+            - course: KHMER.101B
+            - course: KOREAN.10
+            - course: KOREAN.10A
+            - course: KOREAN.10B
+            - course: KOREAN.100A
+            - course: KOREAN.100B
+            - course: LATAMST.10
+            - course: LATAMST.150
+            - course: LEGALST.157
+            - course: LEGALST.161
+            - course: LEGALST.179
+            - course: LGBT.C147B
+            - course: LNS.150A
+            - course: LNS.150B
+            - course: LNS.150C
+            - course: LNS.C150T
+            - course: LINGUIS.12
+            - course: LINGUIS.18
+            - course: MALAY.100A
+            - course: MALAY.100B
+            - course: MEDIAST.160
+            - course: M E STU.10
+            - course: M E STU.20
+            - course: M E STU.150
+            - course: MUSIC.74
+            - course: MUSIC.C131A
+            - course: MUSIC.132
+            - course: MUSIC.133A
+            - course: MUSIC.133C
+            - course: MUSIC.133D
+            - course: MUSIC.134A
+            - course: MUSIC.134B
+            - course: MUSIC.C134C
+            - course: MUSIC.135
+            - course: MUSIC.135A
+            - course: MUSIC.136
+            - course: MUSIC.139
+            - course: NE STUD.10
+            - course: NE STUD.C26
+            - course: NE STUD.127
+            - course: NE STUD.154
+            - course: NE STUD.165
+            - course: NE STUD.175
+            - course: OPTOM.39B
+            - course: PACS.124
+            - course: PACS.126
+            - course: PACS.127
+            - course: PACS.127A
+            - course: PACS.127B
+            - course: PACS.N127A
+            - course: PACS.128AC
+            - course: PACS.135
+            - course: PACS.149
+            - course: PACS.151
+            - course: PACS.164A
+            - course: PACS.164B
+            - course: PERSIAN.20
+            - course: PERSIAN.100A
+            - course: PERSIAN.100B
+            - course: POLECON.101
+            - course: POL ECON.150
+            - course: POL SCI.2
+            - course: POL SCI.5
+            - course: POL SCI.39B
+            - course: POL SCI.39C
+            - course: POL SCI.40
+            - course: POL SCI.117
+            - course: POL SCI.120A
+            - course: POL SCI.120B
+            - course: POL SCI.121A
+            - course: POL SCI.121B
+            - course: POL SCI.121C
+            - course: POL SCI.122A
+            - course: POL SCI.123
+            - course: POL SCI.123B
+            - course: POL SCI.124A
+            - course: POL SCI.124B
+            - course: POL SCI.124C
+            - course: POL SCI.125
+            - course: POL SCI.126A
+            - course: POL SCI.126B
+            - course: POL SCI.127A
+            - course: POL SCI.128
+            - course: POL SCI.129B
+            - course: POL SCI.136A
+            - course: POL SCI.136B
+            - course: POL SCI.137A
+            - course: POL SCI.137B
+            - course: POL SCI.137C
+            - course: POL SCI.138A
+            - course: POL SCI.138B
+            - course: POL SCI.138C
+            - course: POL SCI.138D
+            - course: POL SCI.138E
+            - course: POL SCI.138F
+            - course: POL SCI.138G
+            - course: POL SCI.139A
+            - course: POL SCI.139B
+            - course: POL SCI.139C
+            - course: POL SCI.140B
+            - course: POL SCI.140C
+            - course: POL SCI.140D
+            - course: POL SCI.140F
+            - course: POL SCI.141A
+            - course: POL SCI.141B
+            - course: POL SCI.141C
+            - course: POL SCI.142A
+            - course: POL SCI.142B
+            - course: POL SCI.143A
+            - course: POL SCI.143B
+            - course: POL SCI.143C
+            - course: POL SCI.143D
+            - course: POL SCI.143E
+            - course: POL SCI.144A
+            - course: POL SCI.144B
+            - course: POL SCI.145A
+            - course: POL SCI.145B
+            - course: POL SCI.W145A
+            - course: POL SCI.146A
+            - course: POL SCI.146B
+            - course: POL SCI.146C
+            - course: POL SCI.N146C
+            - course: POL SCI.147A
+            - course: POL SCI.147B
+            - course: POL SCI.147D
+            - course: POL SCI.147E
+            - course: POL SCI.147G
+            - course: POL SCI.147H
+            - course: POL SCI.148A
+            - course: POL SCI.148B
+            - course: POL SCI.149B
+            - course: POL SCI.149C
+            - course: POL SCI.149E
+            - course: POL SCI.149F
+            - course: POL SCI.149I
+            - course: POL SCI.149J
+            - course: POL SCI.149P
+            - course: POL SCI.149W
+            - course: POL SCI.149Y
+            - course: POL SCI.149Z
+            - course: POL SCI.182
+            - course: PORTUG.26
+            - course: PORTUG.N135
+            - course: PORTUG.C170
+            - course: PBH LTH.112
+            - course: PUB POL.176
+            - course: PUNJABI.100A
+            - course: PUNJABI.100B
+            - course: RHETOR.39G
+            - course: SCANDIN.12
+            - course: SCANDIN.100A
+            - course: SCANDIN.100B
+            - course: SCANDIN.102
+            - course: SCANDIN.170
+            - course: SLAVIC.3
+            - course: SLAVIC.4
+            - course: SLAVIC.20
+            - course: SLAVIC.37
+            - course: SLAVIC.R37W
+            - course: SLAVIC.39C
+            - course: SLAVIC.39F
+            - course: SLAVIC.39M
+            - course: SLAVIC.50
+            - course: SLAVIC.115A
+            - course: SLAVIC.115B
+            - course: SLAVIC.116A
+            - course: SLAVIC.116B
+            - course: SLAVIC.117A
+            - course: SLAVIC.117B
+            - course: SLAVIC.118A
+            - course: SLAVIC.118B
+            - course: SOCIOL.C116G
+            - course: SOCIOL.122A
+            - course: SOCIOL.127
+            - course: SOCIOL.145L
+            - course: SOCIOL.146
+            - course: SOCIOL.146AC
+            - course: SOCIOL.180C
+            - course: SOCIOL.180E
+            - course: SOCIOL.180I
+            - course: SOCIOL.180P
+            - course: SOCIOL.182
+            - course: SOCIOL.183
+            - course: SOCIOL.C183
+            - course: SOCIOL.184
+            - course: SOCIOL.C184
+            - course: SOCIOL.189
+            - course: SOCIOL.C189
+            - course: S,SEASN.39C
+            - course: S,SEASN.C113
+            - course: S,SEASN.C145
+            - course: S ASIAN.10A
+            - course: S ASIAN.10B
+            - course: S ASIAN.C145
+            - course: SPANISH.3
+            - course: SPANISH.4
+            - course: SPANISH.N12
+            - course: SPANISH.122
+            - course: SPANISH.129
+            - course: TAMIL.100A
+            - course: TAMIL.100B
+            - course: TAMIL.101A
+            - course: TAMIL.101B
+            - course: THAI.100A
+            - course: THAI.100B
+            - course: THAI.180
+            - course: THEATER.113
+            - course: THEATER.113A
+            - course: THEATER.122
+            - course: TIBETAN.10A
+            - course: TIBETAN.10B
+            - course: TURKISH.100A
+            - course: TURKISH.100B
+            - course: UGIS.118
+            - course: UGIS.C134
+            - course: UGIS.C147B
+            - course: UGIS.161
+            - course: UGIS.162L
+            - course: VIETNMS.100A
+            - course: VIETNMS.100B
+            - course: VIETNMS.101B
+            - course: YIDDISH.102
+
+ls_breadth_philosophy:
+    description: "Philosophy and Values Breadth Requirement"
+    rule: same_course
+    args:
+        - OR:
+            - course: AFRICAM.C124
+            - course: AFRICAM.138
+            - course: AFRICAM.C175
+            - course: AMERSTD.C132B
+            - course: ANTHRO.150
+            - course: ANTHR0.156B
+            - course: ANTHRO.158
+            - course: BIO ENG.100
+            - course: BUDDSTD.39A
+            - course: BUDDSTD.C50
+            - course: BUDDSTD.C114
+            - course: BUDDSTD.C115
+            - course: BUDDSTD.C122
+            - course: BUDDSTD.C122
+            - course: BUDDSTD.C124
+            - course: BUDDSTD.C126
+            - course: BUDDSTD.C128
+            - course: BUDDSTD.C130
+            - course: BUDDSTD.C135
+            - course: BUDDSTD.C154
+            - course: BUDDSTD.154
+            - course: BUDDSTD.181
+            - course: UGBA.39AC
+            - course: UGBA.107
+            - course: UGBA.170
+            - course: CELTIC.C168
+            - course: CELTIC.169
+            - course: CELTIC.173
+            - course: CHICANO.110
+            - course: CHINESE.130
+            - course: CHINESE.183
+            - course: CHINESE.C85
+            - course: CHINESE.186
+            - course: CLASSIC.10A
+            - course: CLASSIC.10B
+            - course: CLASSIC.28
+            - course: CLASSIC.29
+            - course: CLASSIC.34
+            - course: CLASSIC.36
+            - course: CLASSIC.C36
+            - course: CLASSIC.39A
+            - course: CLASSIC.39E
+            - course: CLASSIC.39F
+            - course: CLASSIC.100A
+            - course: CLASSIC.100B
+            - course: CLASSIC.121
+            - course: CLASSIC.124
+            - course: CLASSIC.130
+            - course: CLASSIC.132
+            - course: CLASSIC.161
+            - course: CLASSIC.163
+            - course: CLASSIC.178
+            - course: COG SCI.C101
+            - course: COG SCI.C108
+            - course: COG SCI.139
+            - course: COM LIT.39G
+            - course: COMPSCI.39D
+            - course: COMPSCI.39M
+            - course: EA LANG.C50
+            - course: EA LANG.105
+            - course: EA LANG.C124
+            - course: EA LANG.C126
+            - course: EA LANG.C128
+            - course: EA LANG.C130
+            - course: EA LANG.C135
+            - course: EDUC.39D
+            - course: EDUC.180
+            - course: EDUC.184
+            - course: EDUC.189
+            - course: ENGIN.124
+            - course: ENGIN.125
+            - course: ENGIN.130AC
+            - course: ENGLISH.39A
+            - course: ENGLISH.C77
+            - course: ENGLISH.177
+            - course: ESPM.C12
+            - course: ESPM.39E
+            - course: ESPM.50AC
+            - course: ESPM.161
+            - course: ESPM.162
+            - course: ESPM.164
+            - course: ESPM.176
+            - course: GPP.105
+            - course: GREEK.100
+            - course: GREEK.105
+            - course: GREEK.123
+            - course: HMEDSCI.C103
+            - course: HEWBREW.101A
+            - course: HISTORY.30
+            - course: HISTORY.C132B
+            - course: HISTORY.C157
+            - course: HISTORY.164A
+            - course: HISTORY.164B
+            - course: HISTORY.164C
+            - course: HISTORY.C175A
+            - course: HISTORY.C175B
+            - course: HISTORY.C191
+            - course: ISF.39A
+            - course: ISF.39B
+            - course: ISF.60
+            - course: ISF.61
+            - course: ISF.100A
+            - course: ISF.100B
+            - course: ISF.100E
+            - course: ISF.100G
+            - course: IAS.105
+            - course: IAS.105A
+            - course: IAS.105B
+            - course: ITALIAN.30
+            - course: ITALIAN.130A
+            - course: ITALIAN.130B
+            - course: JAPAN.C115
+            - course: JEWISH.39D
+            - course: JOURNAL.165
+            - course: LATIN.116
+            - course: LEGALST.19AC
+            - course: LEGALST.39D
+            - course: LEGALST.39E
+            - course: LEGALST.100
+            - course: LEGALST.100A
+            - course: LEGALST.100B
+            - course: LEGALST.101
+            - course: LEGALST.103
+            - course: LEGALST.105
+            - course: LEGALST.107
+            - course: LEGALST.108
+            - course: LEGALST.109
+            - course: LEGALST.110
+            - course: LEGALST.112
+            - course: LEGALST.114
+            - course: LEGALST.115
+            - course: LEGALST.119
+            - course: LEGALST.120
+            - course: LEGALST.121
+            - course: LEGALST.140
+            - course: LEGALST.142
+            - course: LEGALST.150
+            - course: LEGALST.151
+            - course: LEGALST.161
+            - course: LEGALST.167
+            - course: LNS.18
+            - course: LNS.27
+            - course: LNS.60A
+            - course: LNS.C60T
+            - course: LNS.C60U
+            - course: LNS.116
+            - course: LNS.121
+            - course: LNS.123
+            - course: LNS.124
+            - course: LNS.126
+            - course: LNS.C140T
+            - course: LNS.160A
+            - course: LNS.160B
+            - course: LNS.160C
+            - course: LNS.160D
+            - course: LNS.160E
+            - course: LNS.C160T
+            - course: LNS.C160U
+            - course: LNS.C160V
+            - course: LNS.C180U
+            - course: LINGUIS.52
+            - course: LINGUIS.105
+            - course: LINGUIS.106
+            - course: LINGUIS.C108
+            - course: LINGUIS.C142
+            - course: MATH.10
+            - course: MATH.125A
+            - course: MATH.125B
+            - course: MATH.135
+            - course: MEDIAST.104A
+            - course: MIL AFF.144
+            - course: MCELLBI.168
+            - course: NATAMST.150
+            - course: NATAMST.151
+            - course: NAT RES.39E
+            - course: NAV SCI.3
+            - course: NE STUD.30
+            - course: NE STUD.34
+            - course: NE STUD.40
+            - course: NE STUD.42
+            - course: NE STUD.C92
+            - course: NE STUD.101B
+            - course: NE STUD.102A
+            - course: NE STUD.102B
+            - course: NE STUD.C103
+            - course: NE STUD.C104
+            - course: NE STUD.105A
+            - course: NE STUD.105B
+            - course: NE STUD.131
+            - course: NE STUD.C133
+            - course: NE STUD.134
+            - course: NE STUD.C135
+            - course: NE STUD.137
+            - course: NE STUD.142
+            - course: NE STUD.144
+            - course: NE STUD.146A
+            - course: NE STUD.146B
+            - course: NE STUD.160
+            - course: OPTOM.39A
+            - course: PACS.100
+            - course: PACS.126
+            - course: PACS.127
+            - course: PACS.127A
+            - course: PACS.127B
+            - course: PACS.N127A
+            - course: PACS.128AC
+            - course: PACS.151
+            - course: PACS.155
+            - course: PACS.164A
+            - course: PACS.164B
+            - course: PACS.165
+            - course: PACS.170
+            - dept: PHILOS
+                - NOT:
+                    - course: PHILOS.R1B
+            - course: POLECON.100
+            - course: POLECON.101
+            - course: POL SCI.4
+            - course: POL SCI.39A
+            - course: POL SCI.60AC
+            - course: POL SCI.108A
+            - course: POL SCI.112A
+            - course: POL SCI.112B
+            - course: POL SCI.112C
+            - course: POL SCI.112D
+            - course: POL SCI.N113A
+            - course: POL SCI.114A
+            - course: POL SCI.115A
+            - course: POL SCI.115B
+            - course: POL SCI.115C
+            - course: POL SCI.116
+            - course: POL SCI.116M
+            - course: POL SCI.117
+            - course: POL SCI.124C
+            - course: POL SCI.140H
+            - course: POL SCI.C163A
+            - course: POL SCI.C163B
+            - course: PSYCH.107
+            - course: PSYCH.162
+            - course: PSYCH.C162
+            - course: PB HLTH.116
+            - course: PUB POL.C103
+            - course: PUB POL.159
+            - course: PUB POL.170
+            - course: PUB POL.186
+            - course: PUB POL.189
+            - course: RELIGST.90A
+            - course: RELIGST.C90B
+            - course: RELIGST.C103
+            - course: RELIGST.C104
+            - course: RELIGST.C108
+            - course: RELIGST.C109
+            - course: RELIGST.111
+            - course: RELIGST.C112
+            - course: RELIGST.115
+            - course: RELIGST.C118
+            - course: RELIGST.120A
+            - course: RELIGST.120B
+            - course: RELIGST.123
+            - course: RELIGST.C124
+            - course: RELIGST.125
+            - course: RELIGST.130
+            - course: RELIGST.C132
+            - course: RELIGST.C133
+            - course: RELIGST.C134
+            - course: RELIGST.C135
+            - course: RELIGST.C156
+            - course: RELIGST.C157
+            - course: RELIGST.161
+            - course: RELIGST.162
+            - course: RELIGST.C162
+            - course: RELIGST.C163
+            - course: RELIGST.C164
+            - course: RELIGST.C165
+            - course: RELIGST.C166
+            - course: RELIGST.171AC
+            - course: RELIGST.172AC
+            - course: RELIGST.173AC
+            - course: RELIGST.C175
+            - course: RELIGST.182
+            - course: RELIGST.C185B
+            - course: RELIGST.190
+            - course: RHETOR.39B
+            - course: RHETOR.39G
+            - course: RHETOR.50A
+            - course: RHETOR.50B
+            - course: RHETOR.50C
+            - course: RHETOR.50D
+            - course: RHETOR.103A
+            - course: RHETOR.103B
+            - course: RHETOR.105T
+            - course: RHETOR.107
+            - course: RHETOR.108
+            - course: RHETOR.117
+            - course: RHETOR.120A
+            - course: RHETOR.120C
+            - course: RHETOR.131
+            - course: RHETOR.141AC
+            - course: RHETOR.157A
+            - course: RHETOR.157B
+            - course: RHETOR.159A
+            - course: RHETOR.159B
+            - course: RHETOR.165
+            - course: SCANDIN.C160
+            - course: SLAVIC.134C
+            - course: SLAVIC.134D
+            - course: SLAVIC.134G
+            - course: SOCIOL.101
+            - course: SOCIOL.102
+            - course: SOCIOL.112
+            - course: SOCIOL.137AC
+            - course: SOCIOL.151
+            - course: SOCIOL.163
+            - course: S,SEASN.C51
+            - course: S,SEASN.C52
+            - course: S,SEASN.C123
+            - course: S,SEASN.C135
+            - course: S,SEASN.C145
+            - course: S ASIAN.C114
+            - course: S ASIAN.127
+            - course: S ASIAN.C128
+            - course: S ASIAN.129
+            - course: S ASIAN.131
+            - course: S ASIAN.C140
+            - course: S ASIAN.141
+            - course: S ASIAN.C142
+            - course: S ASIAN.151
+            - course: S ASIAN.C154
+            - course: S ASIAN.155
+            - course: S ASIAN.160
+            - course: S ASIAN.165
+            - course: SEASIAN.C145
+            - course: TIBETAN.C114
+            - course: TIBETAN.C154
+            - course: UGIS.C12
+            - course: UGIS.C133
+            - course: UGIS.C152
+            - course: UGIS.C153
+            - course: UGIS.C154
+            - course: UGIS.C155
+            - course: UGIS.170
+
+ls_breadth_physical:
+    description: "Physical Sciences Breadth Requirement"
+    rule: same_course
+    args:
+        - OR:
+            - course: ANTHRO.131
+            - course: ANTHRO.132
+            - course: ANTHRO.133
+            - course: ANTHRO.134
+            - course: ANTHRO.134A
+            - course: ARCH.39A
+            - course: ARCH.140
+            - course: ARCH.149
+            - course: ARCH.150
+            - course: ARCH.152
+            - course: ARCH.154
+            - course: ARCH.160
+            - course: ARCH.162
+            - course: ARCH.170A
+            - course: ARCH.170E
+            - course: ARCH.171
+            - course: ARCH.173
+            - course: ARCH.174
+            - course: ARCH.175
+            - course: ARCH.176
+            - course: ARCH.178
+            - course: ARCH.179
+            - course: ARCH.181
+            - dept: ASTRON
+                - NOT:
+                    - course: ASTRON.100
+            - course: BIOCHEM.170B # doesn't exist
+            - course: BIO ENG.C125
+            - course: CHM ENG.40
+            - course: CHM ENG.124
+            - course: CHM ENG.140
+            - course: CHM ENG.141
+            - course: CHM ENG.142
+            - course: CHM ENG.150A
+            - course: CHM ENG.150B
+            - course: CHM ENG.152
+            - course: CHM ENG.154
+            - course: CHM ENG.160
+            - course: CHM ENG.170A
+            - course: CHM ENG.170E
+            - course: CHM ENG.171
+            - course: CHM ENG.173
+            - course: CHM ENG.174
+            - course: CHM ENG.175
+            - course: CHM ENG.176
+            - course: CHM ENG.178
+            - course: CHM ENG.179
+            - course: CHM ENG.181
+            - dept: CHEM
+                - NOT:
+                    - course: CHEM.20
+                    - course: CHEM.130A
+                    - course: CHEM.130B
+            - course: CIV ENG.70
+            - course: CIV ENG.100
+            - course: CIV ENG.101
+            - course: CIV ENG.102
+            - course: CIV ENG.103
+            - course: CIV ENG.104
+            - course: CIV ENG.105
+            - course: CIV ENG.106
+            - course: CIV ENG.C106
+            - course: CIV ENG.108
+            - course: CIV ENG.109
+            - course: CIV ENG.110
+            - course: CIV ENG.111
+            - course: CIV ENG.112
+            - course: CIV ENG.113
+            - course: CIV ENG.115
+            - course: CIV ENG.116N
+            - course: CIV ENG.C116
+            - course: CIV ENG.117
+            - course: CIV ENG.118
+            - course: CIV ENG.119
+            - course: CIV ENG.120
+            - course: CIV ENG.120N
+            - course: CIV ENG.121
+            - course: CIV ENG.121N
+            - course: CIV ENG.122
+            - course: CIV ENG.124
+            - course: CIV ENG.125
+            - course: CIV ENG.130
+            - course: CIV ENG.131
+            - course: CIV ENG.131N
+            - course: CIV ENG.140
+            - course: CIV ENG.144
+            - course: CIV ENG.148A
+            - course: CIV ENG.148B
+            - course: CIV ENG.150
+            - course: CIV ENG.153
+            - course: CIV ENG.160
+            - course: CIV ENG.166
+            - course: CIV ENG.168N
+            - course: CIV ENG.170
+            - course: CIV ENG.171
+            - course: CIV ENG.172
+            - course: CIV ENG.173
+            - course: CIV ENG.175
+            - course: CIV ENG.176
+            - course: CIV ENG.177
+            - course: CIV ENG.185
+            - course: COMPSCI.39F
+            - course: COMPSCI.61C
+            - course: COMPSCI.61CL
+            - course: COMPSCI.188
+            - dept:
+                - NOT:
+                    - course: EPS.39A
+                    - course: EPS.60
+                    - course: EPS.C100
+                    - course: EPS.104
+                    - course: EPS.106AC
+                    - course: EPS.120
+            - course: EL ENG.1
+            - course: EL ENG.20
+            - course: EL ENG.40
+            - course: EL ENG.41I
+            - course: EL ENG.100
+            - course: EL ENG.104
+            - course: EL ENG.110
+            - course: EL ENG.114
+            - course: EL ENG.117
+            - course: EL ENG.118
+            - course: EL ENG.121
+            - course: EL ENG.122
+            - course: EL ENG.123
+            - course: EL ENG.C125
+            - course: EL ENG.128
+            - course: EL ENG.129
+            - course: EL ENG.130
+            - course: EL ENG.131
+            - course: EL ENG.134
+            - course: EL ENG.135
+            - course: EL ENG.136
+            - course: EL ENG.140
+            - course: EL ENG.141
+            - course: EL ENG.142
+            - course: EL ENG.143
+            - course: EL ENG.145A
+            - course: EL ENG.145B
+            - course: EL ENG.145M
+            - course: EL ENG.146
+            - course: ENE,RES.100
+            - course: ENE,RES.C100
+            - course: ENE,RES.102
+            - course: ENE,RES.120
+            - course: ENE,RES.140
+            - course: ENE,RES.141
+            - course: ENGIN.11
+            - course: ENGIN.36
+            - course: ENGIN.45
+            - course: ENGIN.49
+            - course: ENGIN.101
+            - course: ENGIN.102
+            - course: ENGIN.117
+            - course: ENGIN.135
+            - course: ENGIN.145
+            - course: ENGIN.C150
+            - course: ENGIN.153
+            - course: ENGIN.160
+            - course: ENGIN.161
+            - course: ENGIN.162
+            - course: ENGIN.165
+            - course: ENGIN.166
+            - course: ENGIN.172
+            - course: ESPM.2
+            - course: ESPM.4
+            - course: ESPM.15
+            - course: ESPM.20
+            - course: ESPM.22
+            - course: ESPM.C107
+            - course: ESPM.120
+            - course: ESPM.121
+            - course: ESPM.124
+            - course: ESPM.125
+            - course: ESPM.126
+            - course: ESPM.127
+            - course: ESPM.128
+            - course: ESPM.C128
+            - course: ESPM.129
+            - course: ESPM.130
+            - course: ESPM.C130
+            - course: ESPM.148
+            - course: ESPM.172
+            - course: ESPM.177
+            - course: ESPM.179
+            - course: ESPM.180
+            - course: ESPM.C180
+            - course: ESPM.181
+            - course: ENV SCI.125
+            - course: GEOG.1
+            - course: GEOG.30
+            - course: GEOG.39C
+            - course: GEOG.40
+            - course: GEOG.C82
+            - course: GEOG.C136
+            - course: GEOG.C139
+            - course: GEOG.140
+            - course: GEOG.140A
+            - course: GEOG.140B
+            - course: GEOG.C141
+            - course: GEOG.142
+            - course: GEOG.143
+            - course: GEOG.144
+            - course: GEOG.146
+            - course: GEOG.147
+            - course: GEOG.171
+            - course: GEOG.184
+            - course: GEOG.185
+            - course: HISTORY.181B
+            - course: IEOR.39A
+            - course: IEOR.130
+            - course: IEOR.131
+            - course: IEOR.140
+            - course: IEOR.150
+            - course: IEOR.161
+            - course: IEOR.162
+            - course: IEOR.164
+            - course: IEOR.165
+            - course: IEOR.180
+            - course: INTEGBI.39D
+            - course: INTEGBI.C82
+            - course: INTEGBI.106
+            - course: INTEGBI.C158
+            - course: LNS.16
+            - course: LNS.70A
+            - course: LNS.70B
+            - course: LNS.C70T
+            - course: LNS.C70U
+            - course: LNS.C70V
+            - course: LNS.C70W
+            - course: LNS.C70X
+            - course: LNS.C70Y
+            - course: LNS.117
+            - course: LNS.122
+            - course: LNS.170AC
+            - course: LNS.C170AC
+            - course: MAT SCI.101
+            - course: MAT SCI.102
+            - course: MAT SCI.103
+            - course: MAT SCI.104
+            - course: MAT SCI.111
+            - course: MAT SCI.112
+            - course: MAT SCI.113
+            - course: MAT SCI.114
+            - course: MAT SCI.115
+            - course: MAT SCI.116
+            - course: MAT SCI.117
+            - course: MAT SCI.118
+            - course: MAT SCI.120
+            - course: MAT SCI.121
+            - course: MAT SCI.122
+            - course: MAT SCI.123
+            - course: MAT SCI.124
+            - course: MAT SCI.125
+            - course: MAT SCI.130
+            - course: MAT SCI.145
+            - course: MAT SCI.146
+            - course: MAT SCI.148
+            - course: MAT SCI.149
+            - course: MAT SCI.150
+            - course: MAT SCI.160
+            - course: MAT SCI.161
+            - course: MAT SCI.170
+            - course: MAT SCI.172
+            - course: MAT SCI.176
+            - course: MAT SCI.180
+            - course: MEC ENG.1
+            - course: MEC ENG.39A
+            - course: MEC ENG.39C
+            - course: MEC ENG.39D
+            - course: MEC ENG.39E
+            - course: MEC ENG.101
+            - course: MEC ENG.102A
+            - course: MEC ENG.104
+            - course: MEC ENG.105
+            - course: MEC ENG.106
+            - course: MEC ENG.107A
+            - course: MEC ENG.107B
+            - course: MEC ENG.109
+            - course: MEC ENG.110
+            - course: MEC ENG.122
+            - course: MEC ENG.130
+            - course: MEC ENG.132
+            - course: MEC ENG.133
+            - course: MEC ENG.134
+            - course: MEC ENG.135
+            - course: MEC ENG.140
+            - course: MEC ENG.142
+            - course: MEC ENG.145
+            - course: MEC ENG.151
+            - course: MEC ENG.161
+            - course: MEC ENG.162
+            - course: MEC ENG.163
+            - course: MEC ENG.170
+            - course: MEC ENG.173
+            - course: MEC ENG.175
+            - course: MEC ENG.185
+            - course: NUC ENG.39
+            - course: NUC ENG.92
+            - course: NUC ENG.104A
+            - course: NUC ENG.107
+            - course: NUC ENG.124
+            - course: NUC ENG.150
+            - course: NUC ENG.160
+            - course: NUC ENG.161
+            - course: NUC ENG.162
+            - course: NUC ENG.180
+            - course: OPTOM.39A
+            - dept: PHYSICS
+                - NOT:
+                    - course: PHYSICS.39
+            - course: PB HLTH.C171
+            - course: PB HLTH.175
+            - course: PB HLTH.176
+            - course: PUB POL.C184
+            - course: STAT.39B
+            - course: UGIS.66
+
+ls_breadth_social:
+    description: "Social and Behavioral Sciences Breadth Requirement"
+    rule: same_course
+    args: 
+        - OR:
+            - course: AFRICAM.4A
+            - course: AFRICAM.4B
+            - course: AFRICAM.5A
+            - course: AFRICAM.5B
+            - course: AFRICAM.C15
+            - course: AFRICAM.20
+            - course: AFRICAM.25AC
+            - course: AFRICAM.26
+            - course: AFRICAM.27AC
+            - course: AFRICAM.28AC
+            - course: AFRICAM.39A
+            - course: AFRICAM.39C
+            - course: AFRICAM.39D
+            - course: AFRICAM.39E
+            - course: AFRICAM.39G
+            - course: AFRICAM.100
+            - course: AFRICAM.101
+            - course: AFRICAM.107
+            - course: AFRICAM.109
+            - course: AFRICAM.111
+            - course: AFRICAM.112A
+            - course: AFRICAM.112B
+            - course: AFRICAM.113
+            - course: AFRICAM.114
+            - course: AFRICAM.116
+            - course: AFRICAM.117
+            - course: AFRICAM.121
+            - course: AFRICAM.122
+            - course: AFRICAM.C125
+            - course: AFRICAM.126
+            - course: AFRICAM.128
+            - course: AFRICAM.131
+            - course: AFRICAM.C131
+            - course: AFRICAM.N131
+            - course: AFRICAM.132
+            - course: AFRICAM.C133A
+            - course: AFRICAM.C134
+            - course: AFRICAM.135
+            - course: AFRICAM.136AC
+            - course: AFRICAM.137
+            - course: AFRICAM.138
+            - course: AFRICAM.144
+            - course: AFRICAM.152F
+            - course: AFRICAM.C170
+            - course: AFRICAM.C178
+            - course: AFRIK.150 # doesn't exist
+            - course: AMERSTD.10
+            - course: AMERSTD.10AC
+            - course: AMERSTD.39
+            - course: AMERSTD.39A
+            - course: AMERSTD.39B
+            - course: AMERSTD.101
+            - course: AMERSTD.101AC
+            - course: AMERSTD.102
+            - course: AMERSTD.C111A
+            - course: AMERSTD.C112A
+            - course: AMERSTD.C112B
+            - course: AMERSTD.C112F
+            - course: AMERSTD.118AC
+            - course: AMERSTD.C125
+            - course: AMERSTD.C132
+            - course: AMERSTD.C132B
+            - course: AMERSTD.C134
+            - course: AMERSTD.163
+            - course: AMERSTD.165
+            - course: AMERSTD.166
+            - course: AMERSTD.167
+            - course: AMERSTD.C171
+            - course: AMERSTD.C172
+            - course: AMERSTD.C177
+            - course: AMERSTD.C179AC
+            - course: ANTHRO.1
+            - course: ANTHRO.2AC
+            - course: ANTHRO.3AC
+            - course: ANTHRO.10AC
+            - course: ANTHRO.11AC
+            - course: ANTHRO.12AC
+            - course: ANTHRO.15
+            - course: ANTHRO.16
+            - course: ANTHRO.17
+            - course: ANTHRO.18
+            - course: ANTHRO.39B
+            - course: ANTHRO.72
+            - course: ANTHRO.73
+            - course: ANTHRO.74
+            - course: ANTHRO.94
+            - course: ANTHRO.106
+            - course: ANTHRO.109
+            - course: ANTHRO.111
+            - course: ANTHRO.114
+            - course: ANTHRO.115
+            - course: ANTHRO.116
+            - course: ANTHRO.117
+            - course: ANTHRO.119
+            - course: ANTHRO.121A
+            - course: ANTHRO.121AC
+            - course: ANTHRO.121B
+            - course: ANTHRO.122A
+            - course: ANTHRO.122B
+            - course: ANTHRO.122C
+            - course: ANTHRO.122D
+            - course: ANTHRO.122E
+            - course: ANTHRO.123A
+            - course: ANTHRO.123B
+            - course: ANTHRO.123C
+            - course: ANTHRO.123D
+            - course: ANTHRO.123E
+            - course: ANTHRO.124A
+            - course: ANTHRO.124AC
+            - course: ANTHRO.C125A
+            - course: ANTHRO.C125B
+            - course: ANTHRO.128
+            - course: ANTHRO.129A
+            - course: ANTHRO.129C
+            - course: ANTHRO.129D
+            - course: ANTHRO.129E
+            - course: ANTHRO.C129F
+            - course: ANTHRO.130
+            - course: ANTHRO.132
+            - course: ANTHRO.133
+            - course: ANTHRO.134
+            - course: ANTHRO.134A
+            - course: ANTHRO.C136K
+            - course: ANTHRO.137
+            - course: ANTHRO.138A
+            - course: ANTHRO.138B
+            - course: ANTHRO.139
+            - course: ANTHRO.140
+            - course: ANTHRO.141
+            - course: ANTHRO.142
+            - course: ANTHRO.143
+            - course: ANTHRO.144
+            - course: ANTHRO.145
+            - course: ANTHRO.146
+            - course: ANTHRO.C146
+            - course: ANTHRO.147A
+            - course: ANTHRO.147C
+            - course: ANTHRO.C147B
+            - course: ANTHRO.148
+            - course: ANTHRO.149
+            - course: ANTHRO.150
+            - course: ANTHRO.151
+            - course: ANTHRO.152
+            - course: ANTHRO.153
+            - course: ANTHRO.154
+            - course: ANTHRO.156A
+            - course: ANTHRO.156B
+            - course: ANTHRO.156C
+            - course: ANTHRO.157
+            - course: ANTHRO.158
+            - course: ANTHRO.159
+            - course: ANTHRO.160AC
+            - course: ANTHRO.161
+            - course: ANTHRO.162
+            - course: ANTHRO.162AC
+            - course: ANTHRO.163AC
+            - course: ANTHRO.164
+            - course: ANTHRO.166
+            - course: ANTHRO.169B
+            - course: ANTHRO.170
+            - course: ANTHRO.171
+            - course: ANTHRO.172AC
+            - course: ANTHRO.173
+            - course: ANTHRO.174AC
+            - course: ANTHRO.175
+            - course: ANTHRO.176
+            - course: ANTHRO.177
+            - course: ANTHRO.178
+            - course: ANTHRO.179
+            - course: ANTHRO.180
+            - course: ANTHRO.181
+            - course: ANTHRO.182
+            - course: ANTHRO.183
+            - course: ANTHRO.184
+            - course: ANTHRO.185
+            - course: ANTHRO.C186
+            - course: ANTHRO.187
+            - course: ANTHRO.188
+            - course: ANTHRO.189
+            - course: ARCH.39B
+            - course: ARCH.39D
+            - course: ARCH.100A
+            - course: ARCH.100B
+            - course: ARCH.101
+            - course: ARCH.105
+            - course: ARCH.110AC
+            - course: ARCH.118AC
+            - course: ARCH.C119
+            - course: ARCH.120
+            - course: ARCH.122
+            - course: ARCH.130
+            - course: ARCH.136
+            - course: ARCH.159E
+            - course: ARCH.175
+            - course: ARCH.176
+            - course: ARCH.179AC
+            - course: HISTART.108
+            - course: HISTART.C189
+            - course: ART.C178
+            - course: ART.C179
+            - course: ASAMST.20A
+            - course: ASAMST.20B
+            - course: ASAMST.20C
+            - course: ASAMST.120
+            - course: ASAMST.121
+            - course: ASAMST.122
+            - course: ASAMST.123
+            - course: ASAMST.124
+            - course: ASAMST.125
+            - course: ASAMST.126
+            - course: ASAMST.127
+            - course: ASAMST.128AC
+            - course: ASAMST.129
+            - course: ASAMST.130
+            - course: ASAMST.131
+            - course: ASAMST.132
+            - course: ASAMST.141
+            - course: ASAMST.142
+            - course: ASAMST.143
+            - course: ASAMST.144
+            - course: ASAMST.145
+            - course: ASAMST.146
+            - course: ASAMST.149
+            - course: ASAMST.150
+            - course: ASAMST.151
+            - course: ASAMST.165
+            - course: ASAMST.166
+            - course: ASAMST.170
+            - course: ASAMST.171
+            - course: ASAMST.175
+            - course: ASAMST.178
+            - course: ASAMST.190
+            - course: ASIANST.10
+            - course: ASIANST.147
+            - course: ASIANST.148
+            - course: ASIANST.149
+            - course: ASIANST.150
+            - course: BUDDSTD.39
+            - course: BUDDSTD.C126
+            - course: BUDDSTD.183
+            - course: UGBA.10
+            - course: UGBA.39AC
+            - course: UGBA.101A
+            - course: UGBA.101B
+            - course: UGBA.107
+            - course: UGBA.112
+            - course: UGBA.118
+            - course: UGBA.152
+            - course: UGBA.153
+            - course: UGBA.154
+            - course: UGBA.156AC
+            - course: UGBA.160
+            - course: UGBA.C172
+            - course: UGBA.178
+            - course: UGBA.184
+            - course: CELTIC.70
+            - course: CELTIC.128
+            - course: CELTIC.161
+            - course: CHICANO.20
+            - course: CHICANO.50
+            - course: CHICANO.70
+            - course: CHICANO.80
+            - course: CHICANO.101
+            - course: CHICANO.102
+            - course: CHICANO.110
+            - course: CHICANO.133
+            - course: CHICANO.135
+            - course: CHICANO.135A
+            - course: CHICANO.135B
+            - course: CHICANO.135C
+            - course: CHICANO.145
+            - course: CHICANO.150A
+            - course: CHICANO.150B
+            - course: CHICANO.155
+            - course: CHICANO.159
+            - course: CHICANO.161
+            - course: CHICANO.163
+            - course: CHICANO.170
+            - course: CHICANO.172
+            - course: CHICANO.174
+            - course: CHICANO.176
+            - course: CHICANO.179
+            - course: CHICANO.180
+            - course: CHICANO.190
+            - course: CHINESE.102
+            - course: CHINESE.159
+            - course: CHINESE.161
+            - course: CHINESE.163
+            - course: CHINESE.165
+            - course: CHINESE.169
+            - course: CHINESE.181
+            - course: CY PLAN.39A
+            - course: CY PLAN.39B
+            - course: CY PLAN.39C
+            - course: CY PLAN.110
+            - course: CY PLAN.111
+            - course: CY PLAN.112A
+            - course: CY PLAN.112B
+            - course: CY PLAN.113A
+            - course: CY PLAN.113B
+            - course: CY PLAN.114
+            - course: CY PLAN.115
+            - course: CY PLAN.116
+            - course: CY PLAN.117
+            - course: CY PLAN.118AC
+            - course: CY PLAN.119
+            - course: CIV ENG.151
+            - course: CIV ENG.167
+            - course: CLASSIC.39C
+            - course: CLASSIC.39F
+            - course: CLASSIC.R44
+            - course: CLASSIC.121
+            - course: CLASSIC.178
+            - course: CLASSIC.180
+            - course: COG SCI.1
+            - course: COG SCI.C1
+            - course: COG SCI.100
+            - course: COG SCI.C101
+            - course: COG SCI.C102
+            - course: COG SCI.C103
+            - course: COG SCI.C104
+            - course: COG SCI.C107
+            - course: COG SCI.C110
+            - course: COG SCI.C142
+            - course: COG SCI.C147
+            - course: COLWRIT.25AC
+            - course: COLWRIT.50AC
+            - course: COLWRIT.C115
+            - course: COLWRIT.150AC
+            - course: COM LIT.20
+            - course: COM LIT.40
+            - course: COM LIT.N40
+            - course: COMPSCI.39M
+            - course: COMPSCI.C182
+            - course: DEMOG.100
+            - course: DEMOG.110
+            - course: DEMOG.C126
+            - course: DEMOG.135
+            - course: DEMOG.140
+            - course: DEMOG.145AC
+            - course: DEMOG.164
+            - course: DEMOG.C165
+            - course: DEMOG.C175
+            - dept: DEV STD
+            - course: DUTCH.39A
+            - course: DUTCH.C170
+            - course: DUTCH.173
+            - course: DUTCH.174
+            - course: DUTCH.175
+            - course: DUTCH.C178
+            - course: DUTCH.179
+            - course: EPS.170AC
+            - course: EA LANG.39A
+            - course: EA LANG.103
+            - course: EA LANG.109
+            - course: EA LANG.C126
+            - dept: ECON
+            - course: EDUC.C1
+            - course: EDUC.39A
+            - course: EDUC.39B
+            - course: EDUC.39C
+            - course: EDUC.39D
+            - course: EDUC.40AC
+            - course: EDUC.50
+            - course: EDUC.75
+            - course: EDUC.100
+            - course: EDUC.103
+            - course: EDUC.112
+            - course: EDUC.113
+            - course: EDUC.114A
+            - course: EDUC.114B
+            - course: EDUC.114C
+            - course: EDUC.122
+            - course: EDUC.124
+            - course: EDUC.140AC
+            - course: EDUC.N140
+            - course: EDUC.141
+            - course: EDUC.142
+            - course: EDUC.144
+            - course: EDUC.C144
+            - course: EDUC.145
+            - course: EDUC.C147
+            - course: EDUC.156
+            - course: EDUC.169
+            - course: EDUC.170
+            - course: EDUC.180
+            - course: EDUC.181
+            - course: EDUC.182
+            - course: EDUC.182AC
+            - course: EDUC.183
+            - course: EDUC.184
+            - course: EDUC.185
+            - course: EDUC.186AC
+            - course: EDUC.187
+            - course: EDUC.188
+            - course: EDUC.189
+            - course: EDUC.190
+            - course: ENE,RES.100
+            - course: ENE,RES.C100
+            - course: ENE,RES.102
+            - course: ENE,RES.121
+            - course: ENE,RES.141
+            - course: ENE,RES.151
+            - course: ENE,RES.162
+            - course: ENE,RES.190
+            - course: ENGIN.39D
+            - course: ENGIN.49
+            - course: ENGIN.120
+            - course: ENGIN.125
+            - course: ENGIN.130AC
+            - course: ENGLISH.25
+            - course: ENGLISH.C77
+            - course: ENGLISH.101
+            - course: ENGLISH.102
+            - course: ENGLISH.175
+            - course: ENV DES.1
+            - course: ENV DES.4
+            - course: ENV DES.4A
+            - course: ENV DES.4B
+            - course: ENV DES.10
+            - course: ENV DES.71
+            - course: ENV DES.100
+            - course: ENV DES.169A
+            - course: ENV DES.169B
+            - course: ENV DES.C169A
+            - course: ENV DES.C169B
+            - dept: ENVECON
+            - course: ESPM.C10
+            - course: ESPM.C11
+            - course: ESPM.C12
+            - course: ESPM.50AC
+            - course: ESPM.60
+            - course: ESPM.100
+            - course: ESPM.101E
+            - course: ESPM.102A
+            - course: ESPM.102B
+            - course: ESPM.102C
+            - course: ESPM.102D
+            - course: ESPM.C103
+            - course: ESPM.136
+            - course: ESPM.151
+            - course: ESPM.153
+            - course: ESPM.154
+            - course: ESPM.155
+            - course: ESPM.156
+            - course: ESPM.157
+            - course: ESPM.C159
+            - course: ESPM.160AC
+            - course: ESPM.C160
+            - course: ESPM.161
+            - course: ESPM.162
+            - course: ESPM.163AC
+            - course: ESPM.164
+            - course: ESPM.165
+            - course: ESPM.166
+            - course: ESPM.167
+            - course: ESPM.168
+            - course: ESPM.169
+            - course: ESPM.182
+            - course: ESPM.183
+            - course: ESPM.C183
+            - course: ESPM.185
+            - course: ESPM.188
+            - course: ESPM.C191
+            - course: ENV SCI.C12
+            - course: ETH STD.10A
+            - course: ETH STD.10AC
+            - course: ETH STD.10B
+            - course: ETH STD.11AC
+            - course: ETH STD.20AC
+            - course: ETH STD.21AC
+            - course: ETH STD.30
+            - course: ETH STD.39A
+            - course: ETH STD.41AC
+            - course: ETH STD.C73AC
+            - course: ETH STD.100
+            - course: ETH STD.101A
+            - course: ETH STD.101B
+            - course: ETH STD.103A
+            - course: ETH STD.103B
+            - course: ETH STD.103C
+            - course: ETH STD.103D
+            - course: ETH STD.103E
+            - course: ETH STD.122AC
+            - course: ETH STD.123
+            - course: ETH STD.124
+            - course: ETH STD.125AC
+            - course: ETH STD.C
+            - course: ETH STD.126
+            - course: ETH STD.128
+            - course: ETH STD.130AC
+            - course: ETH STD.131
+            - course: ETH STD.132
+            - course: ETH STD.133AC
+            - course: ETH STD.135
+            - course: ETH STD.136
+            - course: ETH STD.141
+            - course: ETH STD.142
+            - course: ETH STD.143
+            - course: ETH STD.144AC
+            - course: ETH STD.145
+            - course: ETH STD.146
+            - course: ETH STD.147
+            - course: ETH STD.148
+            - course: ETH STD.149
+            - course: ETH STD.150
+            - course: ETH STD.150AC
+            - course: ETH STD.159AC
+            - course: ETH STD.C170
+            - course: ETH STD.C173
+            - course: FILM.39A
+            - course: FILM.135AC
+            - course: FILM.C181
+            - course: FRENCH.35
+            - course: FRENCH.43
+            - course: FRENCH.43A
+            - course: FRENCH.43B
+            - course: FRENCH.138
+            - course: FRENCH.145
+            - course: FRENCH.146A
+            - course: FRENCH.146B
+            - course: FRENCH.147
+            - course: FRENCH.148
+            - course: FRENCH.160A
+            - course: FRENCH.160B
+            - course: FRENCH.161A
+            - course: FRENCH.161B
+            - course: FRENCH.162A
+            - course: FRENCH.162B
+            - course: FRENCH.171A
+            - course: FRENCH.171B
+            - course: FRENCH.172A
+            - course: FRENCH.172B
+            - course: FRENCH.173
+            - course: FRENCH.180A
+            - course: FRENCH.180B
+            - course: FRENCH.180C
+            - course: FRENCH.180D
+            - course: FRENCH.183A
+            - course: FRENCH.183B
+            - course: GWS.10
+            - course: GWS.12
+            - course: GWS.14
+            - course: GWS.C15
+            - course: GWS.20
+            - course: GWS.R20W
+            - course: GWS.39E
+            - course: GWS.40
+            - course: GWS.50AC
+            - course: GWS.100AC
+            - course: GWS.101
+            - course: GWS.102
+            - course: GWS.103
+            - course: GWS.104
+            - course: GWS.111
+            - course: GWS.112
+            - course: GWS.113
+            - course: GWS.116AC
+            - course: GWS.120
+            - course: GWS.122
+            - course: GWS.125
+            - course: GWS.129
+            - course: GWS.130
+            - course: GWS.131
+            - course: GWS.133AC
+            - course: GWS.134
+            - course: GWS.136
+            - course: GWS.139
+            - course: GWS.140
+            - course: GWS.141
+            - course: GWS.142
+            - course: GWS.143
+            - course: GWS.144
+            - course: GWS.C145
+            - course: GWS.146
+            - course: GWS.C146A
+            - course: GWS.153A
+            - course: GWS.155
+            - course: GEOG.4
+            - course: GEOG.7
+            - course: GEOG.10
+            - course: GEOG.C15
+            - course: GEOG.20
+            - course: GEOG.N20
+            - course: GEOG.31
+            - course: GEOG.C32
+            - course: GEOG.35
+            - course: GEOG.39
+            - course: GEOG.39A
+            - course: GEOG.39B
+            - course: GEOG.39C
+            - course: GEOG.39D
+            - course: GEOG.50AC
+            - course: GEOG.55
+            - course: GEOG.70AC
+            - course: GEOG.90
+            - course: GEOG.100
+            - course: GEOG.101
+            - course: GEOG.103
+            - course: GEOG.104
+            - course: GEOG.106
+            - course: GEOG.108
+            - course: GEOG.109
+            - course: GEOG.110
+            - course: GEOG.111
+            - course: GEOG.112
+            - course: GEOG.113
+            - course: GEOG.115
+            - course: GEOG.116
+            - course: GEOG.120
+            - course: GEOG.121
+            - course: GEOG.130
+            - course: GEOG.131
+            - course: GEOG.132
+            - course: GEOG.133
+            - course: GEOG.134
+            - course: GEOG.136
+            - course: GEOG.137
+            - course: GEOG.138
+            - course: GEOG.150AC
+            - course: GEOG.151
+            - course: GEOG.C152
+            - course: GEOG.153
+            - course: GEOG.154
+            - course: GEOG.155
+            - course: GEOG.156
+            - course: GEOG.157
+            - course: GEOG.158
+            - course: GEOG.159AC
+            - course: GEOG.160A
+            - course: GEOG.160B
+            - course: GEOG.C160A
+            - course: GEOG.C160B
+            - course: GEOG.162
+            - course: GEOG.163
+            - course: GEOG.164
+            - course: GEOG.165
+            - course: GEOG.166
+            - course: GEOG.167
+            - course: GEOG.168
+            - course: GEOG.180
+            - course: GEOG.181
+            - course: GEOG.188X
+            - course: GEOG.189
+            - course: GERMAN.25
+            - course: GERMAN.39F
+            - course: GERMAN.50
+            - course: GERMAN.102D
+            - course: GERMAN.103
+            - course: GERMAN.106
+            - course: GERMAN.C109
+            - course: GERMAN.150
+            - course: GERMAN.C159
+            - course: GERMAN.160A
+            - course: GERMAN.160B
+            - course: GERMAN.160C
+            - course: GERMAN.160D
+            - course: GERMAN.160K
+            - course: GERMAN.164
+            - course: GERMAN.171
+            - course: GERMAN.172
+            - course: GERMAN.173
+            - course: GERMAN.174
+            - course: GERMAN.177
+            - course: GERMAN.178
+            - course: GERMAN.180B
+            - course: GPP.105
+            - course: GPP.115
+            - course: HMEDSCI.C133
+            - course: HEWBREW.105A
+            - course: HEWBREW.105B
+            - dept: HISTORY
+                - NOT:
+                    - course: HISTORY.R1
+                    - course: HISTORY.R1B
+                    - course: HISTORY.181B
+            - course: IEOR.39
+            - course: IEOR.39A
+            - course: IEOR.166
+            - course: IEOR.170
+            - course: IEOR.171
+            - course: IEOR.172
+            - course: INFO.39
+            - course: INFO.39A
+            - course: INFO.W10
+            - course: INFO.101
+            - course: INFO.C103
+            - course: INFO.142AC
+            - course: INFO.146
+            - course: INFO.182AC
+            - course: INFO.C184
+            - course: INTEGBI.35AC
+            - course: INTEGBI.39B
+            - course: INTEGBI.C156
+            - course: ISF.60
+            - course: ISF.62
+            - course: ISF.100A
+            - course: ISF.100B
+            - course: ISF.100D
+            - course: ISF.100E
+            - course: ISF.100F
+            - course: ISF.100H
+            - course: ISF.108
+            - course: ISF.115
+            - course: ISF.116
+            - course: ISF.117
+            - course: ISF.118AC
+            - course: ISF.C125
+            - course: ISF.145
+            - course: ISF.C145
+            - course: ISF.C160
+            - course: IAS.20
+            - course: IAS.45
+            - course: IAS.102
+            - course: IAS.105
+            - course: IAS.105A
+            - course: IAS.105B
+            - course: IAS.106
+            - course: IAS.107
+            - course: IAS.113
+            - course: IAS.115
+            - course: IAS.143
+            - course: IAS.145
+            - course: IAS.C145
+            - course: IAS.148
+            - course: IAS.150
+            - course: IAS.155AC
+            - course: IAS.160
+            - course: IAS.175
+            - course: IAS.180
+            - course: ITALIAN.39F
+            - course: ITALIAN.40
+            - course: ITALIAN.80
+            - course: ITALIAN.103
+            - course: ITALIAN.160
+            - course: ITALIAN.N160
+            - course: JAPAN.39B
+            - course: JAPAN.39C
+            - course: JAPAN.80
+            - course: JAPAN.102
+            - course: JAPAN.104
+            - course: JAPAN.160
+            - course: JAPAN.161
+            - course: JAPAN.162
+            - course: JEWISH.39B
+            - course: JEWISH.39C
+            - course: JEWISH.39E
+            - course: JEWISH.39G
+            - course: JEWISH.101
+            - course: JOURNAL.39A
+            - course: JOURNAL.39AC
+            - course: JOURNAL.39C
+            - course: JOURNAL.39D
+            - course: JOURNAL.100
+            - course: JOURNAL.101
+            - course: JOURNAL.102AC
+            - course: JOURNAL.C103
+            - course: JOURNAL.C141
+            - course: JOURNAL.158
+            - course: JOURNAL.163
+            - course: JOURNAL.165
+            - course: JOURNAL.C177
+            - course: JOURNAL.180
+            - course: JOURNAL.C183
+            - course: KOREAN.102
+            - course: KOREAN.160
+            - course: LD ARCH.2
+            - course: LD ARCH.110
+            - course: LD ARCH.130
+            - course: LD ARCH.138AC
+            - course: LD ARCH.141
+            - course: LD ARCH.170
+            - course: LD ARCH.C171
+            - course: LATAMST.10
+            - course: LATAMST.150
+            - dept: LEGALST
+                - NOT:
+                    - course: LEGALST.R1A
+                    - course: LEGALST.R1B
+                    - course: LEGALST.39C
+            - course: LNS.7
+            - course: LNS.18
+            - course: LNS.20C
+            - course: LNS.23
+            - course: LNS.C30U
+            - course: LNS.C30V
+            - course: LNS.C30W
+            - course: LNS.40AC
+            - course: LNS.40B
+            - course: LNS.70B
+            - course: LNS.80
+            - course: LNS.A
+            - course: LNS.C103
+            - course: LNS.116
+            - course: LNS.119AC
+            - course: LNS.120
+            - course: LNS.120C
+            - course: LNS.126
+            - course: LNS.127
+            - course: LNS.140D
+            - course: LNS.C140U
+            - course: LNS.C140V
+            - course: LNS.150A
+            - course: LNS.C150T
+            - course: LNS.160A
+            - course: LNS.160C
+            - course: LNS.C160V
+            - course: LNS.170AC
+            - course: LNS.C170AC
+            - course: LNS.180A
+            - course: LNS.180AC
+            - course: LNS.180B
+            - course: LNS.180C
+            - course: LNS.C180T
+            - course: LNS.C180U
+            - course: LNS.C180V
+            - course: LNS.C180W
+            - course: LNS.C180X
+            - dept: LINGUIS
+                - NOT:
+                    - course: LINGUIS.R1B
+                    - course: LINGUIS.2A
+                    - course: LINGUIS.2B
+                    - course: LINGUIS.R6
+                    - course: LINGUIS.12
+                    - course: LINGUIS.18
+                    - course: LINGUIS.41
+                    - course: LINGUIS.44
+                    - course: LINGUIS.47
+                    - course: LINGUIS.48
+            - course: MATH
+            - course: MEC ENG.39B
+            - dept: MEDIAST
+            - course: MED ST
+            - course: M E STU.10
+            - course: M E STU.20
+            - course: M E STU.111
+            - course: M E STU.130
+            - course: M E STU.150
+            - course: MIL AFF.2
+            - course: MIL AFF.3
+            - course: MIL AFF.20
+            - course: MIL AFF.120
+            - course: MIL AFF.121
+            - course: MIL AFF.123
+            - course: MIL AFF.144
+            - course: MIL AFF.145A
+            - course: MIL AFF.154
+            - course: MCELLBI.41
+            - course: MCELLBI.C41X
+            - course: MCELLBI.C61
+            - course: MUSIC.26AC
+            - course: MUSIC.39B
+            - course: MUSIC.109M
+            - course: MUSIC.135
+            - course: MUSIC.135A
+            - course: MUSIC.136
+            - course: MUSIC.137AC
+            - course: MUSIC.177
+            - course: NATAMST.20A
+            - course: NATAMST.50
+            - course: NATAMST.71
+            - course: NATAMST.72
+            - course: NATAMST.90
+            - course: NATAMST.100
+            - course: NATAMST.101
+            - course: NATAMST.102
+            - course: NATAMST.103
+            - course: NATAMST.104
+            - course: NATAMST.110
+            - course: NATAMST.120AC
+            - course: NATAMST.145
+            - course: NATAMST.149
+            - course: NATAMST.152
+            - course: NATAMST.155
+            - course: NATAMST.157
+            - course: NATAMST.158
+            - course: NATAMST.159
+            - course: NATAMST.173
+            - course: NATAMST.175
+            - course: NATAMST.176
+            - course: NATAMST.177
+            - course: NATAMST.178AC
+            - course: NATAMST.180
+            - course: NATAMST.190
+            - course: NAV SCI.2
+            - course: NE STUD.10
+            - course: NE STUD.15
+            - course: NE STUD.18
+            - course: NE STUD.20
+            - course: NE STUD.23
+            - course: NE STUD.C26
+            - course: NE STUD.C92
+            - course: NE STUD.101A
+            - course: NE STUD.101B
+            - course: NE STUD.102A
+            - course: NE STUD.102B
+            - course: NE STUD.122
+            - course: NE STUD.122A
+            - course: NE STUD.122B
+            - course: NE STUD.123
+            - course: NE STUD.123A
+            - course: NE STUD.123B
+            - course: NE STUD.124
+            - course: NE STUD.124A
+            - course: NE STUD.124B
+            - course: NE STUD.125
+            - course: NE STUD.126
+            - course: NE STUD.127
+            - course: NE STUD.128
+            - course: NE STUD.130A
+            - course: NE STUD.130B
+            - course: NE STUD.143A
+            - course: NE STUD.143B
+            - course: NE STUD.146A
+            - course: NE STUD.146B
+            - course: NE STUD.147
+            - course: NE STUD.154
+            - course: NE STUD.161
+            - course: NE STUD.165
+            - course: NE STUD.171
+            - course: NE STUD.172
+            - course: NE STUD.173A
+            - course: NE STUD.173B
+            - course: NE STUD.174
+            - course: NE STUD.175
+            - course: NUC ENG.170
+            - course: NUSCTX.39B
+            - course: NUSCTX.39C
+            - course: NUSCTX.104
+            - course: NUSCTX.135
+            - course: NUSCTX.C159
+            - course: OPTOM.39B
+            - course: PACS.10
+            - course: PACS.100
+            - course: PACS.125AC
+            - course: PACS.126
+            - course: PACS.127
+            - course: PACS.127A
+            - course: PACS.127B
+            - course: PACS.N127A
+            - course: PACS.128AC
+            - course: PACS.149
+            - course: PACS.150
+            - course: PACS.151
+            - course: PACS.153
+            - course: PACS.154
+            - course: PACS.155
+            - course: PACS.164A
+            - course: PACS.164B
+            - course: PHILOS.2
+            - course: PHILOS.5
+            - course: PHILOS.23
+            - course: PHILOS.113AC
+            - course: PHILOS.115
+            - course: PHILOS.117
+            - course: PHYSED.39
+            - course: PHYSED.60
+            - course: PLANTBI.10
+            - course: PLANTBI.C41X
+            - dept: POLECON
+            - dept: POL SCI
+                - NOT:
+                    - course: POL SCI.133
+            - course: PORTUG.39A
+            - course: PORTUG.112
+            - course: PORTUG.113
+            - course: PORTUG.136
+            - course: PORTUG.138
+            - course: PSYCH.1
+            - course: PSYCH.W1
+            - course: PSYCH.2
+            - course: PSYCH.12
+            - course: PSYCH.14
+            - course: PSYCH.15
+            - course: PSYCH.39
+            - course: PSYCH.39A
+            - course: PSYCH.39AC
+            - course: PSYCH.39B
+            - course: PSYCH.39C
+            - course: PSYCH.39D
+            - course: PSYCH.39F
+            - course: PSYCH.39G
+            - course: PSYCH.39H
+            - course: PSYCH.39J
+            - course: PSYCH.39K
+            - course: PSYCH.39M
+            - course: PSYCH.100A
+            - course: PSYCH.101
+            - course: PSYCH.104
+            - course: PSYCH.105
+            - course: PSYCH.106
+            - course: PSYCH.107
+            - course: PSYCH.108
+            - course: PSYCH.109
+            - course: PSYCH.110
+            - course: PSYCH.120A
+            - course: PSYCH.120B
+            - course: PSYCH.123
+            - course: PSYCH.124
+            - course: PSYCH.125
+            - course: PSYCH.C129
+            - course: PSYCH.130
+            - course: PSYCH.131
+            - course: PSYCH.132AC
+            - course: PSYCH.133
+            - course: PSYCH.135AC
+            - course: PSYCH.136
+            - course: PSYCH.138
+            - course: PSYCH.140
+            - course: PSYCH.141
+            - course: PSYCH.142
+            - course: PSYCH.143
+            - course: PSYCH.144
+            - course: PSYCH.146
+            - course: PSYCH.147
+            - course: PSYCH.148
+            - course: PSYCH.149
+            - course: PSYCH.150
+            - course: PSYCH.151
+            - course: PSYCH.152
+            - course: PSYCH.153
+            - course: PSYCH.154
+            - course: PSYCH.155
+            - course: PSYCH.158
+            - course: PSYCH.159
+            - course: PSYCH.160
+            - course: PSYCH.161
+            - course: PSYCH.162
+            - course: PSYCH.C162
+            - course: PSYCH.163
+            - course: PSYCH.164
+            - course: PSYCH.165
+            - course: PSYCH.166
+            - course: PSYCH.167AC
+            - course: PSYCH.168
+            - course: PSYCH.169A
+            - course: PSYCH.169B
+            - course: PSYCH.169C
+            - course: PSYCH.169D
+            - course: PSYCH.171
+            - course: PSYCH.180
+            - course: PSYCH.182
+            - course: PSYCH.C191
+            - course: PB HLTH.14
+            - course: PB HLTH.39B
+            - course: PB HLTH.39C
+            - course: PB HLTH.39D
+            - course: PB HLTH.39E
+            - course: PB HLTH.39F
+            - course: PB HLTH.39G
+            - course: PB HLTH.39H
+            - course: PB HLTH.103
+            - course: PB HLTH.105
+            - course: PB HLTH.106
+            - course: PB HLTH.107
+            - course: PB HLTH.112
+            - course: PB HLTH.114
+            - course: PB HLTH.116
+            - course: PB HLTH.126
+            - course: PB HLTH.130AC
+            - course: PB HLTH.131AC
+            - course: PB HLTH.143
+            - course: PB HLTH.150A
+            - course: PB HLTH.150B
+            - course: PB HLTH.150C
+            - course: PB HLTH.150E
+            - course: PB HLTH.C160
+            - course: PB HLTH.180
+            - course: PB HLTH.181
+            - course: PB HLTH.190
+            - course: PUB POL.1
+            - course: PUB POL.6
+            - course: PUB POL.10
+            - course: PUB POL.39
+            - course: PUB POL.39A
+            - course: PUB POL.C71
+            - course: PUB POL.101
+            - course: PUB POL.C103
+            - course: PUB POL.117AC
+            - course: PUB POL.156
+            - course: PUB POL.157
+            - course: PUB POL.C157
+            - course: PUB POL.159
+            - course: PUB POL.160
+            - course: PUB POL.161
+            - course: PUB POL.162
+            - course: PUB POL.163
+            - course: PUB POL.164
+            - course: PUB POL.165
+            - course: PUB POL.166
+            - course: PUB POL.167
+            - course: PUB POL.168
+            - course: PUB POL.170
+            - course: PUB POL.171
+            - course: PUB POL.173
+            - course: PUB POL.174
+            - course: PUB POL.175
+            - course: PUB POL.176
+            - course: PUB POL.177
+            - course: PUB POL.178
+            - course: PUB POL.179
+            - course: PUB POL.180
+            - course: PUB POL.181
+            - course: PUB POL.182
+            - course: PUB POL.183
+            - course: PUB POL.184
+            - course: PUB POL.C184
+            - course: PUB POL.185
+            - course: PUB POL.186
+            - course: PUB POL.187
+            - course: PUB POL.188
+            - course: PUB POL.189
+            - course: RELIGST.C124
+            - course: RELIGST.C134
+            - course: RELIGST.C135
+            - course: RELIGST.162
+            - course: RELIGST.C162
+            - course: RELIGST.171AC
+            - course: RELIGST.172AC
+            - course: RELIGST.173AC
+            - course: RELIGST.C175
+            - course: RELIGST.182
+            - course: RELIGST.C185A
+            - course: RELIGST.C185B
+            - course: RELIGST.190
+            - course: RHETOR.39A
+            - course: RHETOR.39C
+            - course: RHETOR.39G
+            - course: RHETOR.42AC
+            - course: RHETOR.109
+            - course: RHETOR.116
+            - course: RHETOR.120C
+            - course: RHETOR.123
+            - course: RHETOR.127
+            - course: RHETOR.129AC
+            - course: RHETOR.134
+            - course: RHETOR.136
+            - course: RHETOR.137
+            - course: RHETOR.151
+            - course: RHETOR.152
+            - course: RHETOR.152AC
+            - course: RHETOR.162
+            - course: RHETOR.167
+            - course: RHETOR.168
+            - course: RHETOR.170
+            - course: RHETOR.171
+            - course: RHETOR.172
+            - course: RHETOR.176
+            - course: RHETOR.182
+            - course: SCANDIN.39A
+            - course: SCANDIN.75
+            - course: SCANDIN.118
+            - course: SCANDIN.132
+            - course: SCANDIN.165
+            - course: SCANDIN.170
+            - course: SLAVIC.37
+            - course: SLAVIC.R37W
+            - course: SLAVIC.38
+            - course: SLAVIC.39A
+            - course: SLAVIC.39B
+            - course: SLAVIC.39F
+            - course: SLAVIC.39G
+            - course: SLAVIC.39H
+            - course: SLAVIC.39I
+            - course: SLAVIC.39M
+            - course: SLAVIC.50
+            - course: SLAVIC.100
+            - course: SLAVIC.104A
+            - course: SLAVIC.137
+            - course: SLAVIC.C139
+            - course: SLAVIC.147A
+            - course: SLAVIC.147B
+            - course: SLAVIC.149AC
+            - course: SLAVIC.158
+            - course: SLAVIC.190
+            - dept: SOC WEL
+                - NOT:
+                    - course: SOC WEL.154
+            - dept: SOCIOL
+                - NOT:
+                    - course: SOCIOL.105
+                    - course: SOCIOL.106
+                    - course: SOCIOL.128
+            - course: S,SEASN.39C
+            - course: S,SEASN.39F
+            - course: S,SEASN.39G
+            - course: S,SEASN.C112
+            - course: S ASIAN.108
+            - course: S ASIAN.110A
+            - course: S ASIAN.110B
+            - course: S ASIAN.130
+            - course: S ASIAN.139
+            - course: S ASIAN.141
+            - course: S ASIAN.C141
+            - course: S ASIAN.144
+            - course: S ASIAN.145
+            - course: S ASIAN.146
+            - course: S ASIAN.148
+            - course: S ASIAN.151
+            - course: S ASIAN.152
+            - course: SEASIAN.122
+            - course: SEASIAN.130
+            - course: SEASIAN.137
+            - course: SEASIAN.138
+            - course: SPANISH.39
+            - course: SPANISH.39A
+            - course: SPANISH.39B
+            - course: SPANISH.100
+            - course: SPANISH.113
+            - course: SPANISH.135AC
+            - course: SPANISH.137
+            - course: SPANISH.161
+            - course: SPANISH.162
+            - course: SPANISH.164
+            - course: SPANISH.165
+            - course: SPANISH.168
+            - course: SPANISH.C178
+            - course: SPANISH.179
+            - course: STAT.39A
+            - course: STAT.39C
+            - course: TIBETAN.167
+            - course: UGIS.C12
+            - course: UGIS.C14
+            - course: UGIS.20AC
+            - course: UGIS.44A
+            - course: UGIS.44B
+            - course: UGIS.44C
+            - course: UGIS.55A
+            - course: UGIS.55B
+            - course: UGIS.56AC
+            - course: UGIS.92
+            - course: UGIS.110
+            - course: UGIS.112
+            - course: UGIS.114
+            - course: UGIS.116
+            - course: UGIS.118
+            - course: UGIS.120
+            - course: UGIS.121
+            - course: UGIS.C130
+            - course: UGIS.C132
+            - course: UGIS.C133
+            - course: UGIS.C134
+            - course: UGIS.C136
+            - course: UGIS.C137
+            - course: UGIS.C145
+            - course: UGIS.146
+            - course: UGIS.C146A
+            - course: UGIS.C147B
+            - course: UGIS.C148
+            - course: UGIS.C154
+            - course: UGIS.C155
+            - course: UGIS.161
+            - course: UGIS.162
+            - course: UGIS.162A
+            - course: UGIS.162B
+            - course: UGIS.162C
+            - course: UGIS.162D
+            - course: UGIS.162E
+            - course: UGIS.162I
+            - course: UGIS.162J
+            - course: UGIS.162K
+            - course: UGIS.162L
+            - course: UGIS.162M
+            - course: UGIS.162N
+            - course: UGIS.162O
+            - course: UGIS.162P
+            - course: UGIS.165
+            - course: UGIS.167
+            - course: UGIS.168
+            - course: UGIS.169
+            - course: UGIS.170
+            - course: UGIS.171
+            - course: UGIS.172
+            - course: UGIS.173
+            - course: UGIS.174
+            - course: UGIS.175
+            - course: UGIS.176A
+            - course: UGIS.177
+
+
+
+
+

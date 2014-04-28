@@ -1,0 +1,49 @@
+rules:
+
+    ls_theater_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # lower div
+            - course: THEATER.10
+            - course: THEATER.60
+            - course: THEATER.26
+            - OR:
+                - course: THEATER.25AC
+                - course: THEATER.52AC
+        - AND: # upper division
+            - OR: # technical theater
+                - course: THEATER.167 # if 60 had craft shop
+                - course: THEATER.168 # if 60 had run crew
+            - OR: # design
+                - course: THEATER.172
+                - course: THEATER.173A
+                - course: THEATER.173B
+                - course: THEATER.174A
+                - course: THEATER.174B
+                - course: THEATER.175A
+                - course: THEATER.175B
+                - course: THEATER.177
+            - AND: # performance
+            # choose three of these content areas...? one course each
+                - OR: # performance theory
+                    - course: THEATER.119
+                - OR: # performance culture
+                    - course: THEATER.121
+                    - course: THEATER.122
+                - OR: # performance history
+                    - course: THEATER.125
+                    - course: THEATER.151B
+                - OR: # performance literatures
+                    - course: THEATER.113A
+                    - course: THEATER.126
+            - AND: # electives
+                - units:
+                    min: 24
+                    courses:
+                        - dept: THEATER # upper div, doesn't include previous
+
+
+
+

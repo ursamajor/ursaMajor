@@ -1,0 +1,59 @@
+rules:
+
+    ls_immunology_pathogenesis_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # lower division
+            - ls_molecular_cell_biology_lower_division
+            - course: CHEM.3A
+            - course: CHEM.3AL
+            - course: CHEM.3B
+            - course: CHEM.3BL
+        - OR:
+            - AND: # immunology & pathogenesis
+                - AND: # upper div
+                    - course: MCELLBI.C100A
+                    - course: MCELLBI.110
+                    - OR:
+                        - course: MCELLBI.104
+                        - course: MCELLBI.140
+                    - course: MCELLBI.150
+                    - course: MCELLBI.150L
+                - OR: # electives
+                    - course: MCELLBI.100B
+                    - course: MCELLBI.C103
+                    - course: MCELLBI.C112
+                    - course: MCELLBI.C114
+                    - course: MCELLBI.130A
+                    - course: MCELLBI.132
+                    - course: MCELLBI.C134
+                    - course: MCELLBI.135A
+                    - course: MCELLBI.141
+                    - course: MCELLBI.149
+                    - course: BIO ENG.131
+            - AND: # infectious diseases
+                - AND: # upper div
+                    - course: MCELLBI.102
+                    - course: MCELLBI.104
+                    - course: MCELLBI.150
+                    - course: MCELLBI.150L
+                - AND: # elective
+                    - OR:
+                        - course: MCELLBI.C103
+                        - course: MCELLBI.C112
+                        - course: MCELLBI.C114
+                    - OR:
+                        - course: MCELLBI.130A
+                        - course: MCELLBI.132
+                        - course: MCELLBI.C134
+                        - course: MCELLBI.135A
+                        - course: MCELLBI.136
+                        - course: MCELLBI.141
+                        - course: MCELLBI.143
+                        - course: MCELLBI.C145
+                        - course: MCELLBI.C146
+                        - course: MCELLBI.149
+                        - course: MCELLBI.C160
+                        - course: MCELLBI.250

@@ -1,0 +1,298 @@
+rules:
+
+    ls_comparative_literature_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # comparative literature
+            - course: COM LIT.100
+            - OR: # should complement period of student's minor literature
+                - course: COM LIT.151
+                - course: COM LIT.152
+                - course: COM LIT.153
+                - course: COM LIT.154
+                - course: COM LIT.155
+                - course: COM LIT.156
+            - course: COM LIT.190
+        - OR: # classical literature
+            - course: CLASSIC.100A
+            - course: CLASSIC.100B
+            - course: CLASSIC.121
+            - course: CLASSIC.124
+            - course: NE STUD.135
+            # or upper div literature read in original, or translation
+            # from Greek, Latin, Classical Arabic, Biblical Hebrew,
+            # Sanskrit, or Classical Chinese
+        - OR: # major literature
+            - AND: # english
+                - OR: # medieval literature
+                    - course: ENGLISH.110
+                    - course: ENGLISH.111
+                    - course: ENGLISH.112
+                    - course: ENGLISH.114A # maybe?
+                    - course: ENGLISH.114B # maybe?
+                    - course: ENGLISH.N114A # maybe?
+                    - course: ENGLISH.N114B # maybe?
+                - OR: # renaissance
+                    - course: ENGLISH.115A
+                    - course: ENGLISH.115B
+                    - course: ENGLISH.N115A
+                    - course: ENGLISH.N115B
+                    - course: ENGLISH.116
+                    - course: ENGLISH.117A
+                    - course: ENGLISH.117B
+                    - course: ENGLISH.N117S
+                    - course: ENGLISH.117S
+                    - course: ENGLISH.118
+                    - course: ENGLISH.N118
+                - OR: # 18th or 19th century
+                    - course: ENGLISH.119
+                    - course: ENGLISH.120
+                    - course: ENGLISH.121
+                    - course: ENGLISH.N121
+                    - course: ENGLISH.122
+                    - course: ENGLISH.125A
+                    - course: ENGLISH.125B
+                    - course: ENGLISH.125C
+                    - course: ENGLISH.N125B
+                    - course: ENGLISH.130A
+                    - course: ENGLISH.130B
+                    - course: ENGLISH.130C
+                    - course: ENGLISH.N130A
+                    - course: ENGLISH.N130B
+                    - course: ENGLISH.133A
+                - OR: # 20th century
+                    - course: ENGLISH.125D
+                    - course: ENGLISH.N125D
+                    - course: ENGLISH.125E
+                    - course: ENGLISH.N125E
+                    - course: ENGLISH.126
+                    - course: ENGLISH.127
+                    - course: ENGLISH.130D
+                    - course: ENGLISH.N130D
+                    - course: ENGLISH.133B
+                    - course: ENGLISH.134
+                    - course: ENGLISH.N134
+                    - course: ENGLISH.137B
+            - AND: # french
+                - OR: # medieval literature
+                    - course: FRENCH.112A
+                    - course: FRENCH.112B
+                    - course: FRENCH.114A
+                    - course: FRENCH.116A
+                - OR: # 17th century
+                    - course: FRENCH.117A
+                - OR: # 18th-19th century
+                    - course: FRENCH.118A
+                    - course: FRENCH.119A
+                    - course: FRENCH.119B
+                - OR: # 20th century
+                    - course: FRENCH.120
+                    - course: FRENCH.120A
+                    - course: FRENCH.120B
+            - AND: # italian
+                - OR: # medieval literature
+                    - course: ITALIAN.109
+                    - course: ITALIAN.110
+                - OR: # renaissance 
+                - OR: # 18th or 19th century
+                - OR: # 20th century literature
+            - AND: # greek
+                - course: GREEK.101
+                - course: GREEK.100
+                - course: GREEK.102
+                - OR:
+                    - course: GREEK.115
+                    - course: GREEK.116
+                    - course: GREEK.117
+                    - course: GREEK.120
+                    - course: GREEK.121
+                    - course: GREEK.122
+                    - course: GREEK.123
+            - AND: # latin
+                - course: LATIN.101
+                - course: LATIN.100
+                - course: LATIN.102
+                - OR:
+                    - course: LATIN.115
+                    - course: LATIN.116
+                    - course: LATIN.117
+                    - course: LATIN.118
+                    - course: LATIN.120
+                    - course: LATIN.121
+                    - course: LATIN.122
+                    - course: LATIN.123
+            - AND: # german
+                - course: GERMAN.105
+                - OR: # 18th/19th century
+                    - course: GERMAN.140
+                    - course: GERMAN.157A
+                    - course: GERMAN.157B
+                - OR: # 20th century
+                    - course: GERMAN.152
+                    - course: GERMAN.157C
+                    - course: GERMAN.157D
+                    - course: GERMAN.160A
+                    - course: GERMAN.160B
+                    - course: GERMAN.160C
+                    - course: GERMAN.160D
+                    - course: GERMAN.160K
+                - OR: # additional upper div lit course
+                    - course: GERMAN.C106 # maybe?
+                    - course: EDUC.C145 # maybe?
+                    - course: GERMAN.107 # maybe?
+                    - course: GERMAN.108 # maybe?
+                    - course: GERMAN.110
+                    - course: GERMAN.112
+                    - course: GERMAN.C113 # maybe?
+                    - course: RELIGST.C118 # maybe?
+                    - course: GERMAN.123
+                    - course: GERMAN.147
+            - AND: # dutch
+                - course: DUTCH.140
+                - OR:
+                    - course: DUTCH.C164
+                    - course: DUTCH.166
+                # at least 4 upper div beyond 4th semester...?
+                # max of 3 units can be satisfied in German?
+            - AND: # modern greek
+                # medieval greek: romances & poetry
+                # renaissance greek: Cretan and/ or Cypriot renaissance literature
+                # 18th or 19th century: greek enlightenment and/or 19th poetry
+                # 20th century greek: greek prose fiction and/or poetry
+            - AND: # chinese
+                - OR:
+                    - course: CHINESE.120
+                    - course: CHINESE.122
+                    - course: CHINESE.140
+                - OR:
+                    - course: CHINESE.132
+                    - course: CHINESE.134
+                    - course: CHINESE.136
+                    - course: CHINESE.155
+                    - course: CHINESE.138
+                - OR:
+                    - course: CHINESE.156
+                    - course: CHINESE.157
+                    - course: CHINESE.101
+                - OR: # upper div literature
+            - AND: # japanese
+                - OR: # classical/ancient
+                    - course: JAPAN.120
+                    - course: JAPAN.130
+                    - course: JAPAN.132
+                    - course: JAPAN.140
+                    - course: JAPAN.230
+                    - course: JAPAN.234
+                - OR: # middle
+                    - course: JAPAN.142
+                    - course: JAPAN.144
+                    - course: JAPAN.234
+                - OR: # modern
+                    - course: JAPAN.155
+                    - course: JAPAN.159
+                    - course: JAPAN.255
+                    - course: JAPAN.101
+                - OR: # upper div literature
+            - AND: # arabic
+                - OR:
+                    - course: ARABIC.105B
+                    - course: ARABIC.104B
+                    - course: ARABIC.111A
+                - AND:
+                    - course: ARABIC.111B
+                - OR:
+                    - course: ARABIC.105A
+                    - course: ARABIC.104A
+                - OR: # upper div literature
+            - AND: # persian
+                - OR: # classical prose
+                    - course: PERSIAN.102A
+                    - course: PERSIAN.102B
+                - OR: # classical poetry
+                    - course: PERSIAN.103A
+                    - course: PERSIAN.103B
+                - OR: # contemporary literature
+                    - course: PERSIAN.104A
+                    - course: PERSIAN.104B
+                - OR: # upper div literature
+            - AND: # hebrew
+                - OR: # biblical hebrew texts
+                    - course: HEBREW.101A
+                    - course: HEBREW.101B
+                - OR: # postbiblical hebrew texts / later rabbinic and medieval hebrew
+                    - course: HEBREW.102A
+                    - course: HEBREW.102B
+                    - course: HEBREW.103A
+                    - course: HEBREW.103B
+                - OR: # modern hebrew texts
+                    - course: HEBREW.104A
+                    - course: HEBREW.104B
+                - OR: # upper div literature
+            - AND: # portuguese
+                - course: PORTUG.107A
+                - course: PORTUG.107B
+                - OR: # 20th century literature
+                    - course: PORTUG.114
+                    - course: PORTUG.128
+                - OR: # upper div literature
+            - AND: # russian
+                - numcourses:
+                    min: 2
+                    courses:
+                        - course: SLAVIC.180
+                        - course: SLAVIC.181
+                        - course: SLAVIC.182
+                        - course: SLAVIC.188
+                - numcourses:
+                    min: 2
+                    courses: # upper div literature courses
+            - AND: # sanskrit
+                - course: SANSKRIT.101A
+                - course: SANSKRIT.101B
+                - OR: # sanskrit literature
+                    - course: SANSKRIT.200A
+                    - course: SANSKRIT.200B
+                - OR: # upper div literature course
+            - AND: # latin america
+                - course: SPANISH.104A
+                - OR: # 19th century
+                    - course: SPANISH.104B
+                - OR: # 20th century
+                - OR: # latin american literature...MAYBE?
+                    - course: SPANISH.107A
+                    - course: SPANISH.107B
+                    - course: SPANISH.111A
+                    - course: SPANISH.111B
+                    - course: SPANISH.115
+                    - course: SPANISH.117
+            - AND: # spanish and latin america
+                - OR: # pre-twentieth latin american
+                    - course: SPANISH.104A
+                - OR: # 20th century latin america
+                    - course: SPANISH.104B
+                - OR: # pretwentieth spanish literature
+                    - course: SPANISH.107A
+                    - course: SPANISH.109
+                    - course: SPANISH.111A
+                    - course: SPANISH.117
+                - OR: # 20th spanish literature
+                    - course: SPANISH.107B
+            - AND: # peniinsular spain
+                - numcourses: # medieval/renaissance
+                    min: 2
+                    courses:
+                        - course: SPANISH.107A
+                        - course: SPANISH.109
+                        - course: SPANISH.111A
+                        - course: SPANISH.117
+                - numcourses: # 18th-20th century
+                    min: 2
+                    courses:
+                    - course: SPANISH.107B
+                    # etc.
+
+
+
+

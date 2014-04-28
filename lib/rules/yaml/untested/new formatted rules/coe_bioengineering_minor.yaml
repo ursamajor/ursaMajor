@@ -1,0 +1,16 @@
+rules:
+
+    coe_bioengineering_minor:
+        description: "Bioengineering Minor"
+        rule: count_courses
+            min: 5
+            args:
+                - coe_bioengineering_fundamentals_courses
+                - coe_bioengineering_topics_engineering_courses
+                - OR: # technical electives
+                    - coe_bioengineering_technical_electives_courses
+                    - coe_bioengineering_topics_bioengineering_courses
+                    - coe_bioengineering_topics_engineering_courses
+                    - coe_bioengineering_upper_division_biology_courses
+                - coe_bioengineering_topics_bioengineering
+

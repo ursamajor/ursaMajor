@@ -1,0 +1,97 @@
+rules:
+
+    ls_south_and_southeast_asian_languages_and_literatures_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # lower division
+            - numcourses:
+                min: 2
+                courses:
+                    - course: S ASIAN.1A
+                    - course: S ASIAN.1B
+                    - course: SEASIAN.10A
+                    - course: SEASIAN.10B
+            - AND: # language
+                - OR: # hindi
+                    - course: HIN-URD.1A
+                    - course: HIN-URD.1B
+                    - course: HIN-URD.100A
+                    - course: HIN-URD.100B
+                - OR: # urdu
+                    - course: HIN-URD.2A
+                    - course: HIN-URD.2B
+                    - course: HIN-URD.103A
+                    - course: HIN-URD.103B
+                - OR: # bengali
+                    - course: BANGLA.1A
+                    - course: BANGLA.1B
+                    - course: BANGLA.101A
+                    - course: BANGLA.101B
+                - OR: # indonesian
+                    - course: MALAY/I.1A
+                    - course: MALAY/I.1B
+                    - course: MALAY/I.100A
+                    - course: MALAY/I.100B
+                - OR: # khmer
+                    - course: KHMER.1A
+                    - course: KHMER.1B
+                    - course: KHMER.100A
+                    - course: KHMER.100B
+                - OR: # punjabi
+                    - course: PUNJABI.1A
+                    - course: PUNJABI.1B
+                    - course: PUNJABI.100A
+                    - course: PUNJABI.100B
+                - OR: # sanskrit
+                    - course: SANSKR.100A
+                    - course: SANSKR.100B
+                    - course: SANSKR.101A
+                    - course: SANSKR.101B
+                - OR: # tagalog
+                    - course: TAGALG.1A
+                    - course: TAGALG.1B
+                    - course: TAGALG.100A
+                    - course: TAGALG.100B
+                - OR: # tamil
+                    - course: TAMIL.1A
+                    - course: TAMIL.1B
+                    - course: TAMIL.101A
+                    - course: TAMIL.101B
+                - OR: # thai
+                    - course: THAI.1A
+                    - course: THAI.1B
+                    - course: THAI.100A
+                    - course: THAI.100B
+                - OR: # vietnamese
+                    - course: VIETNMS.1A
+                    - course: VIETNMS.1B
+                    - course: VIETNMS.100A
+                    - course: VIETNMS.100B
+        - AND: # upper div courses
+            - numcourses:
+                min: 4
+                courses:
+                    - course: ASAMST.125
+                    - course: ASAMST.126
+                    - course: GEOG.163
+                    - course: HISTORY.111A
+                    - course: HISTORY.C111B
+                    - course: HISTORY.111B
+                    - course: HISTORY.114B
+                    - course: HISTART.137
+                    - course: RELIGST.C162
+                    - course: IND ENG.190K
+                    - course: MUSIC.133C
+                    - course: POL SCI.145A
+                    - course: POL SCI.145B
+                    - numcourses:
+                        min: 2
+                        courses:
+                            - dept: S,SEASN
+                            - dept: SEASIAN
+                            - dept: S ASIAN
+
+
+

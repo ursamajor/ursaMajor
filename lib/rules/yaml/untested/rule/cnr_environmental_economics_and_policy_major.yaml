@@ -1,0 +1,44 @@
+rules:
+# upper divs electives?
+# ap credit of breadth / requirements
+# not sure if requirements can count as breadth
+
+    cnr_environmental_economics_and_policy_major:
+        rule: AND
+        args:
+            - university_all
+            - ls_breadth_all
+            - cnr_upper_division
+            - AND: # Lower div
+                - OR: # prinicples of micro-economics
+                    - course: ENVECON.1
+                    - course: ECON.1
+                    - course: ECON.2
+                    - course: ECON.3
+                - AND: # calculus
+                    - OR:
+                        - course: MATH.1A
+                        - course: MATH.16A
+                    - OR:
+                        - course: MATH.1B
+                        - course: MATH.16B
+                - OR: # statistics
+                    - course: STAT.20
+                    - course: STAT.21
+                    - course: STAT.25
+            - AND: # upper-div core requirements
+                - OR: # intermediate micro-economics
+                    - course: ENVECON.100
+                    - course: ECON.100A
+                    - course: ECON.101A
+                - OR: # environmental or natural resource economics
+                    - course: ENVECON.C101
+                    - course: ENVECON.C102
+                - OR: # quantitative methods
+                    - course: ENVECON.C115
+                    - course: ENVECON.C118
+                    - # other
+            - AND: #upper-div electives
+                - units:
+                    min: 9 # 3 EEP minimum upper-dv
+                # 5 courses to form area of concentration

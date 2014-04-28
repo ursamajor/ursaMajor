@@ -1,0 +1,34 @@
+rules:
+
+    ls_greek_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - OR: # elementary language courses
+            - course: GREEK.1
+            - course: GREEK.2
+            - course: GREEK.10
+            - course: GREEK.15
+        - OR: # intermediate language course
+            - course: GREEK.40
+         - AND: # basic reading courses
+            - course: GREEK.100
+            - course: GREEK.101
+            - course: GREEK.102
+        - AND: # senior reading courses
+            - numcourses:
+                min: 4
+                courses:
+                    - course: GREEK.115
+                    - course: GREEK.116
+                    - course: GREEK.117
+                    - course: GREEK.120
+                    - course: GREEK.121
+                    - course: GREEK.122
+                    - course: GREEK.123
+        - AND: 
+            - course: CLASSIC.10A
+            - course: CLASSIC.10B
+
+

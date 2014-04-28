@@ -1,0 +1,42 @@
+rules:
+
+    ls_hebrew_minor:
+    rule: AND
+    args:
+        - OR: 
+            - AND: # Option A: Open to students with no background in the language
+                - course: HEBREW.1A
+                - course: HEBREW.1B
+                - course: HEBREW.20A
+                - course: HEBREW.20B
+                - course: HEWBREW.100A
+                - course: HEWBREW.100B
+                - course: HEWBREW.104A
+                - course: HEWBREW.104B
+                - numcourses: # not sure - One-semester course in Hebrew culture/ history
+                    min: 1
+                    courses:
+                        - course: HEWBREW.148A
+            
+            - AND: # Option B: Open to students who can demonstrate proficiency at a level equivalent to that expected of students who have successfully completed the elementary and intermediate courses in the language 
+                - numcourses: 
+                    min: 5
+                    courses:
+                        - course: HEWBREW.100A
+                        - course: HEWBREW.100B
+                        - course: HEWBREW.102A
+                        - course: HEWBREW.102B
+                        - course: HEWBREW.104A
+                        - course: HEWBREW.104B
+                        - course: HEWBREW.105B
+                        - course: HEWBREW.106A
+                        - course: HEWBREW.106B
+                        - course: HEWBREW.N106
+                        - course: HEWBREW.107A
+                        - course: HEWBREW.107B
+                - numcourses: # not sure - two One-semester course in Hebrew culture/ history
+                    min: 2
+                    courses:
+                        - course: HEWBREW.104A
+                        - course: HEWBREW.104B
+                        - course: HEWBREW.148A

@@ -1,0 +1,34 @@
+rules:
+
+    coe_industrial_engineering_and_operations_research_minor:
+        rule: AND
+        args:
+            - OR: # list a
+                - course: IND ENG.160
+                - course: IND ENG.162
+            - OR: # list b
+                - OR:
+                    - course: IND ENG.172
+                    - course: STAT.134
+                - course: IND ENG.131
+                - course: IND ENG.166
+            - numcourses:
+                min: 3
+                courses:
+                    - course: IND ENG.160
+                    - course: IND ENG.162
+                    - OR:
+                        - course: IND ENG.172
+                        - course: STAT.134
+                    - course: IND ENG.131
+                    - course: IND ENG.166
+            - OR: # ieor electives
+                - course: ENGIN.120
+                - course: IND ENG.115
+                - course: IND ENG.130
+                - course: IND ENG.165
+                - course: IND ENG.150
+                - course: IND ENG.151
+                - course: IND ENG.153
+                - course: IND ENG.170
+                - course: IND ENG.171

@@ -1,0 +1,75 @@
+rules:
+
+    ls_ancient_egyptian_and_near_eastern_civilization_minor:
+    rule: AND
+    args:
+            - AND: 
+                - OR: # lower-div
+                    - course: NED STUD.10
+                    - course: NED STUD.18
+                - numcourses: # upper-div 
+                    min: 5
+                    courses:
+                        - course: NE STUD.102A
+                        - course: NE STUD.102B
+                        - course: NE STUD.C103
+                        - course: NE STUD.C104
+                        - course: NE STUD.106A
+                        - course: NE STUD.106B
+                        - course: NE STUD.107
+                        - course: NE STUD.108
+                        - course: NE STUD.109
+                        - course: NE STUD.110
+                        - course: NE STUD.113
+                        - course: NE STUD.C119
+                        - course: NE STUD.C120A
+                        - course: NE STUD.C120B
+                        - course: NE STUD.122A
+                        - course: NE STUD.122B
+                        - course: NE STUD.123A
+                        - course: NE STUD.123B
+                        - course: NE STUD.124A
+                        - course: NE STUD.124B
+                        - course: NE STUD.125
+                        - course: NE STUD.126
+                        - course: NE STUD.C129
+                        - course: NE STUD.130A
+                        - course: NE STUD.130B
+                        - course: NE STUD.132
+                        - course: NE STUD.C133
+                        - course: NE STUD.C135
+                        - course: NE STUD.136
+                        - course: NE STUD.138
+                        - course: NE STUD.160
+                        - course: NE STUD.190A
+                        - course: NE STUD.190B
+                        - course: NE STUD.190C
+                        - course: NE STUD.192A
+                        - course: NE STUD.192B
+                        - course: NE STUD.192C
+                        - course: CUNEIF.100A
+                        - course: CUNEIF.100B
+                        - course: CUNEIF.101A
+                        - course: CUNEIF.101B
+                        - course: CUNEIF.102A
+                        - course: CUNEIF.102B
+                        - course: CUNEIF.103A
+                        - course: CUNEIF.103B
+                        - course: CUNEIF.106A
+                        - course: CUNEIF.106B
+                        - course: EGYPT.100A
+                        - course: EGYPT.100B
+                        - course: EGYPT.101A
+                        - course: EGYPT.101B
+                        - course: EGYPT.102A
+                        - course: EGYPT.102B
+                        - course: HEWBREW.106A
+                        - course: HEWBREW.106B
+                        - course: HEWBREW.107A
+                        - course: HEWBREW.107B
+                        - course: IRANIAN.110A
+                        - course: IRANIAN.110B
+                        - course: IRANIAN.111A
+                        - course: IRANIAN.111B
+                        - course: SEMITIC.100A
+                        - course: SEMITIC.100B

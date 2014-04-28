@@ -1,0 +1,204 @@
+rules:
+
+    ls_computer_science_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # lower division
+            - course: COMPSCI.61A
+            - course: COMPSCI.61B
+            - course: COMPSCI.61C
+            - course: MATH.1A
+            - course: MATH.1B
+            - course: MATH.54
+            - course: COMPSCI.70
+        - AND: # upper division
+            - units:
+                min: 27
+                courses:
+                    - OR: # design
+                        - course: COMPSCI.149
+                        - course: COMPSCI.150
+                        - course: COMPSCI.152
+                        - course: COMPSCI.160
+                        - course: COMPSCI.162
+                        - course: COMPSCI.164
+                        - course: COMPSCI.169
+                        - course: COMPSCI.184
+                        - course: EL ENG.125
+                        - course: EL ENG.128
+                        - course: EL ENG.130
+                        - course: EL ENG.140
+                        - course: EL ENG.141
+                        - course: EL ENG.143
+                        - course: EL ENG.149
+                        - course: EL ENG.192
+                    - numcourses: # upper div CS; apply once
+                        min: 2
+                        courses:
+                            - course: COMPSCI.149
+                            - course: COMPSCI.150
+                            - course: COMPSCI.152
+                            - course: COMPSCI.160
+                            - course: COMPSCI.161
+                            - course: COMPSCI.162
+                            - course: COMPSCI.164
+                            - course: COMPSCI.169
+                            - course: COMPSCI.170
+                            - course: COMPSCI.172
+                            - course: COMPSCI.176
+                            - course: COMPSCI.184
+                            - course: COMPSCI.186
+                            - course: COMPSCI.188
+                    - numcourses: # upper div EE/CS, apply once
+                        min: 2
+                        courses:
+                            - course: COMPSCI.149
+                            - course: COMPSCI.150
+                            - course: COMPSCI.152
+                            - course: COMPSCI.160
+                            - course: COMPSCI.161
+                            - course: COMPSCI.162
+                            - course: COMPSCI.164
+                            - course: COMPSCI.169
+                            - course: COMPSCI.170
+                            - course: COMPSCI.172
+                            - course: COMPSCI.176
+                            - course: COMPSCI.184
+                            - course: COMPSCI.186
+                            - course: COMPSCI.188
+                            - course: EL ENG.105
+                            - course: EL ENG.113
+                            - course: EL ENG.117
+                            - course: EL ENG.118
+                            - course: EL ENG.120
+                            - course: EL ENG.121
+                            - course: EL ENG.122
+                            - course: EL ENG.123
+                            - course: EL ENG.125
+                            - course: EL ENG.C125
+                            - course: EL ENG.126
+                            - course: EL ENG.127
+                            - course: EL ENG.128
+                            - course: EL ENG.C128
+                            - course: EL ENG.129
+                            - course: EL ENG.130
+                            - course: EL ENG.134
+                            - course: EL ENG.137A
+                            - course: EL ENG.137B
+                            - course: EL ENG.140
+                            - course: EL ENG.141
+                            - course: EL ENG.142
+                            - course: EL ENG.143
+                            - course: EL ENG.144
+                            - course: EL ENG.C145B
+                            - course: EL ENG.C145L
+                            - course: EL ENG.C145M
+                            - course: EL ENG.C145O
+                            - course: EL ENG.147
+                            - course: EL ENG.C149
+                            - course: EL ENG.149
+                            - course: EL ENG.192
+                        - course: ARCH.122
+                        - course: ARCH.129
+                        - course: ARCH.222
+                        - course: ARCH.229
+                        - course: ART.175
+                        - course: ASTRON.C162
+                        - course: BIO ENG.104
+                        - course: BIO ENG.131
+                        - course: BIO ENG.231
+                        - course: BIO ENG.143
+                        - course: BIO ENG.243
+                        - course: BIO ENG.240
+                        - course: UGBA.103
+                        - course: UGBA.119
+                        - course: UGBA.137
+                        - course: UGBA.140
+                        - course: UGBA.146
+                        - course: UGBA.152
+                        - course: CNM.190 # doesn't exist
+                        - course: CNM.290 # doesn't exist
+                        - course: CHEM.120A
+                        - course: CHEM.120B
+                        - course: CHEM.C130
+                        - dept: CIV ENG
+                            - NOT:
+                                - course: CIV ENG.192
+                                - course: CIV ENG.252L
+                                - course: CIV ENG.290R
+                        - course: COG SCI.C101
+                        - course: COG SCI.C110
+                        - course: COG SCI.C127
+                        - course: COG SCI.C131
+                        - dept: COMPSCI
+                        - dept: EL ENG
+                        - course: EL ENG.101A
+                        - course: EL ENG.101B
+                        - course: EL ENG.136
+                        - course: EL ENG.137
+                        - course: EL ENG.141
+                        - dept: ENGIN
+                            - NOT:
+                                - course: ENGIN.102
+                        - course: FILM.140
+                        - course: GEOG.C188
+                        - course: EPS.104
+                        - course: EPS.C162
+                        - dept: IND ENG
+                        - course: INFO.152
+                        - course: INFO.214
+                        - course: INFO.219
+                        - course: INFO.242
+                        - course: INFO.256
+                        - course: INFO.257
+                        - course: INFO.290 # these classes down; maybe
+                        - course: INFO.290A
+                        - course: INFO.290M
+                        - course: INFO.290MA
+                        - course: INFO.290T
+                        - course: INFO.290TA
+                        - course: INFO.290X
+                        - course: INFO.293
+                        - course: INFO.296A
+                        - course: INFO.297 
+                        - course: INFO.298
+                        - course: INFO.298A
+                        - course: INFO.290
+                        - course: INFO.290
+                        - course: INFO.290
+                        - course: INFO.290
+                        - course: LING.C105
+                        - course: LING.C109
+                        - course: LING.120
+                        - course: LING.158
+                        - dept: MATH
+                            - NOT:
+                                - course: MATH.160
+                        - dept: MEC ENG
+                        - course: MCELLBI.102
+                        - course: MCELLBI.130L
+                        - course: MCELLBI.150L
+                        - course: MCELLBI.160L
+                        - course: MCELLBI.166
+                        - course: MCELLBI.262
+                        - course: MCELLBI.C100A
+                        - course: MUSIC.108
+                        - course: MUSIC.158
+                        - course: MUSIC.209
+                        - dept: PHYSICS
+                        - course: PSYCH.101
+                        - course: PSYCH.123
+                        - course: PSYCH.128
+                        - course: PSYCH.290Q
+                        - dept: STAT
+                            - NOT:
+                                - course: STAT.131A
+                                - course: STAT.131B
+                                - course: STAT.131F
+                        - course: VIS STD.265
+
+
+
+

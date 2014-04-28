@@ -1,0 +1,83 @@
+rules:
+
+    coe_industrial_engineering_and_operations_research_major:
+        rule: AND
+        args:
+            - OR:
+                - AND:
+                    - course: CHEM.1A
+                    - course: CHEM.1AL
+                - course: CHEM.4A
+            - course: ENGIN.7
+            - course: MATH.1A
+            - course: MATH.1B
+            - course: MATH.53
+            - course: MATH.54
+            - course: PHYSICS.7A
+            - course: PHYSICS.7B
+            - course: ENGIN.120
+            - OR: # programming course
+                - course: COMPSCI.9C
+                - course: COMPSCI.9F
+                - course: COMPSCI.9G
+                - course: COMPSCI.61A
+                # etc
+            - course: IND ENG.160
+            - course: IND ENG.161
+            - course: IND ENG.162
+            - course: IND ENG.165
+            - OR:
+                - course: IND ENG.172
+                - course: STAT.134
+            - course: IND ENG.131
+            - course: IND ENG.180
+            - AND: # ieor electives
+                - numcourses:
+                    min: 6
+                    courses:
+                        - course: IND ENG.115
+                        - course: IND ENG.130
+                        - course: IND ENG.140
+                        - course: IND ENG.160
+                        - course: IND ENG.150
+                        - course: IND ENG.151
+                        - course: IND ENG.153
+                        - course: IND ENG.170
+                        - course: IND ENG.171
+            - AND: # engineering breadth
+                - units:
+                    min: 9
+                    courses:
+                        - course: BIO ENG.102
+                        - course: CIV ENG.11
+                        - course: CIV ENG.C30
+                        - course: CIV ENG.60
+                        - course: CIV ENG.70
+                        - course: CIV ENG.115
+                        - course: ENGIN.10
+                        - course: ENGIN.28
+                        - course: ENGIN.36
+                        - course: ENGIN.45
+                        - course: ENGIN.115
+                        - OR:
+                            - course: EL ENG.40
+                            - course: EL ENG.42
+                            - course: EL ENG.100
+                        - course: MAT SCI.111
+                        - course: MEC ENG.40
+                        - course: MEC EHGN.C85
+                        - course: MEC ENG.132
+            - AND: # HSS
+            	- university_rc_A
+            	- university_rc_B
+            	- university_AC
+            	- numcourses:
+            		min: 4
+            		courses:
+            			- coe_humanities_and_social_sciences
+                            - numcourses:
+                                min: 2
+                                rule: upper_division
+                            - numcorses:
+                                min: 2
+                                rule: same_department # 1 up, 1 low

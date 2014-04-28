@@ -1,0 +1,42 @@
+rules:
+
+    ls_interdisciplinary_studies_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - numcourses: # world civilizations
+            min: 2
+            courses:
+                - OR: # global regions
+                    # primary does not concern US history (except as
+                    # site of pre-Colombian societies and civilizations)
+                    # can be based on region, can be casted globally, but
+                    # NOT geographic or necessarily historical (contemporary
+                    # chinese art)...????
+                - OR: # pre-modern
+                    # any course covering period prior to 1600BC
+                - OR: # modern history
+                    # history since 1600, doesn't have to relate to
+                    # contemporary
+        - AND: # upper division
+            - AND: # course of study
+                - numcourses:
+                    min: 6
+                    courses:
+                        # three different depts
+            - AND: # methodology
+                - course: ISF.100A
+                - OR:
+                    - course: ISF.100B
+                    - course: ISF.100C
+                    - course: ISF.100D
+                    - course: ISF.100E
+                    - course: ISF.100F
+                    - course: ISF.100G
+                    - course: ISF.100H
+            - AND: # research, optional until Fall 2014
+                - course: ISF.189
+                - course: ISF.190
+
+

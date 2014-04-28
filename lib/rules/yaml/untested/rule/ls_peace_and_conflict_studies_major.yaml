@@ -1,0 +1,90 @@
+rules:
+
+    ls_peace_and_conflict_studies_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # lower division
+            - course: PACS.10
+            - numcourses:
+                min: 2
+                courses:
+                    - course: ANTHRO.3
+                    - course: ANTHRO.3AC
+                    - course: ASIANST.10
+                    - course: DEV STD.C10
+                    - course: GEOG.C32
+                    - course: ECON.1
+                    - course: ECON.2
+                    - course: GWS.20
+                    - course: GEOG.4
+                    - course: GEOG.10
+                    - course: GEOG.20
+                    - course: GEOG.C55
+                    - course: NE STUD.C26
+                    - course: HISTORY.6B
+                    - course: HISTORY.7B
+                    - course: HISTORY.8B
+                    - course: HISTORY.10
+                    - course: HISTORY.11
+                    - course: HISTORY.12
+                    - course: HISTORY.14
+                    - course: IAS.45
+                    - course: LATAMST.10
+                    - course: M E STU.20
+                    - course: POL SCI.2
+                    - course: PSYCH.1
+                    - course: SOCIOL.1
+                    - course: SOCIOL.3AC
+                    - course: UGBA.10
+        - ls_ias_foreign_language_requirement
+        - AND: # upper division
+            - course: PACS.100
+            - course: PACS.190
+            - OR: # methodology
+                - course: DEMOG.110
+                - course: ECON.140
+                - course: ECON.141
+                - course: ECON.C142
+                - course: POL SCI.C131A
+                - course: PUB POL.C142
+                - course: ENVECON.C118
+                - course: IAS.C118
+                - course: IND ENG.162
+                - course: PSYCH.101
+                - course: PB HLTH.142
+                - course: SOCIOL.106
+                - course: STAT.131A
+                - course: AFRICAM.101
+                - course: ANTHRO.169B
+                - course: ETH STD.101A
+                - course: ETH STD.101B
+                - course: ETH STD.195
+                - course: IAS.102
+                - course: IAS.H102
+                - course: M E STU.102
+                - course: NATAMAST.110
+                - course: SOCIOL.105
+            - AND: # survey
+                - numcourses:
+                    min: 2
+                    courses:
+                        - ls_peace_and_conflict_studies_concentration_conflict_resolution
+                        - ls_peace_and_confict_studies_concentration_culture_and_identity
+                        - ls_peace_and_conflict_studies_concentration_global_governance
+                        - ls_peace_and_conflict_studies_concentration_human_rights
+                        - ls_peace_and_confict_studies_concentration_human_security
+                        - ls_peace_and_confict_studies_concentration_nonviolence
+            - AND: # concentration (can be others too)
+                - numcourses:
+                    min: 4
+                    courses:
+                        - OR:
+                            - ls_peace_and_conflict_studies_concentration_conflict_resolution
+                            - ls_peace_and_confict_studies_concentration_culture_and_identity
+                            - ls_peace_and_conflict_studies_concentration_global_governance
+                            - ls_peace_and_conflict_studies_concentration_human_rights
+                            - ls_peace_and_confict_studies_concentration_human_security
+                            - ls_peace_and_confict_studies_concentration_nonviolence
+

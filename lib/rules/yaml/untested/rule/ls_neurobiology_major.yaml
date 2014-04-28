@@ -1,0 +1,69 @@
+rules:
+
+    ls_neurobiology_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # lower division
+            - ls_molecular_cell_biology_lower_division
+            - course: CHEM.3A
+            - course: CHEM.3AL
+            - course: CHEM.3B
+            - course: CHEM.3BL
+        - AND: # core upper div
+            - course: MCELLBI.102
+            - course: MCELLBI.104
+            - course: MCELLBI.C160
+            - OR:
+                - course: MCELLBI.163
+                - course: MCELLBI.160L
+        - AND: # elective
+            - OR:   
+                - AND:
+                    - OR:
+                        - course: BIO ENG.131
+                        - course: BIO ENG.143
+                        - course: COG SCI.C127
+                        - course: MCELLBI.C100
+                        - course: MCELLBI.130A
+                        - course: MCELLBI.132
+                        - course: MCELLBI.135A
+                        - course: MCELLBI.136
+                        - course: MCELLBI.137
+                        - course: MCELLBI.141
+                        - course: MCELLBI.C145
+                        - course: MCELLBI.150
+                        - course: INTEGBI.131
+                        - course: INTEGBI.C139
+                        - course: INTEGBI.C143A
+                        - course: INTEGBI.C143B
+                        - course: INTEGBI.144
+                        - course: MATH.110
+                        - course: MATH.127
+                        - course: MATH.128A
+                        - course: MATH.128B
+                        - course: PHYSICS.112
+                        - course: PHYSICS.132
+                        - course: PSYCH.C112
+                        - course: PSYCH.C113
+                        - course: PSYCH.C116
+                        - course: PSYCH.117
+                        - course: PSYCH.C127
+                        - course: PB HLTH.141
+                        - course: PB HLTH.142
+                        - course: STAT.131A
+                    - OR:
+                        - course: MCELLBI.160L
+                        - course: MCELLBI.163
+                        - course: MCELLBI.165
+                        - course: MCELLBI.166
+                        - course: MCELLBI.167
+                - numcourses:
+                    min: 2
+                    courses:
+                        - course: MCELLBI.160L
+                        - course: MCELLBI.163
+                        - course: MCELLBI.165
+                        - course: MCELLBI.166
+                        - course: MCELLBI.167

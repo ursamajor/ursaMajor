@@ -1,0 +1,45 @@
+rules:
+
+    coe_environmental_engineering_science_minor:
+        rule: AND
+        args:
+            - AND: # pre-reqs
+                - OR:
+                    - AND:
+                        - course: CHEM.1A
+                        - course: CHEM.1AL
+                    - AND:
+                        - course: CHEM.4A
+                        - course: CHEM.4B
+                - course: ENGIN.7
+                - course: MATH.1A
+                - course: MATH.1B
+                - course: MATH.53
+                - course: MATH.54
+                - course: PHYSICS.7A
+                - course: PHYSICS.7B
+                - course: CIV ENG.93
+                - OR:
+                    - course: CIV ENG.C30
+                    - course: MEC ENG.C85
+            - AND: # required upper division
+                - OR:
+                    - course: CIV ENG.100
+                    - course: MEC ENG.106
+                - course: CIV ENG.111
+            - AND: # upper div
+                - numcourses:
+                    min: 3
+                    courses:
+                        - course: CIV ENG.101
+                        - course: CIV ENG.103
+                        - course: CIV ENG.C106
+                        - course: CIV ENG.107
+                        - course: CIV ENG.108
+                        - course: CIV ENG.112
+                        - course: CIV ENG.113N
+                        - course: CIV ENG.114
+                        - course: CIV ENG.115
+                        - course: CIV ENG.C116
+                        - course: CIV ENG.173
+  

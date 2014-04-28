@@ -1,0 +1,132 @@
+rules:
+
+
+    coe_electrical_engineering_and_computer_science_major:
+        description: "Electrical Engineering and Computer Science Major"
+        rule: AND
+        args:
+            - coe_humanities_and_social_sciences
+            - coe_lowerdiv_electrical_engineering_requirements
+            - coe_upperdiv
+            - units_upperdiv
+            - units_total
+
+
+
+
+    coe_lowerdiv_electrical_engineering_requirements:
+        description: "Lower Division Electrical Engineering & Computer Science Requirements"
+        rule: AND
+        args:
+            - AND: #natural science
+                - OR:
+                    - course: PHYSICS.7A
+                    - course: PHYSICS.H7C
+                - OR:
+                    - course: PHYSICS.7B
+                    - course: PHYSICS.H87B
+                - OR:
+                    - course: PHYSICS.7C
+                    - course: PHYSICS.H7C
+                    - AND:
+                        - course: CHEM.1A
+                        - course: CHEM.1AL
+                    - course: CHEM.1B
+                    - course: CHEM.3A
+                    - course: CHEM.3B
+                    - course: CHEM.4A
+                    - course: CHEM.4B
+                    - course: CHEM.5
+                    - AND:
+                        - course: BIOLOGY.1A
+                        - course: BIOLOGY.1AL
+                    - course: BIOLOGY.1B
+                    - course: ASTRON.7A
+                    - course: ASTRON.7B
+            - AND: # math and stats
+                - course: MATH.1A
+                - course: MATH.1B
+                - course: MATH.53
+                - course: MATH.54
+                - course: COMPSCI.70
+
+
+
+            - AND: # technical
+                - units:
+                    min: 45
+                    courses:
+                        - dept: BIO ENG
+                            - NOT:
+                                - course: BIO ENG.100
+                        - dept: CHM ENG
+                        - dept: CIV ENG
+                        - dept: ENGIN
+                            - NOT:
+                                - course: ENGIN.125
+                                - course: ENGIN.130AC
+                                - course: ENGIN.140
+                        - dept: IND ENG
+                            - NOT:
+                                - course: IND ENG.172
+                                - course: IND ENG.190A
+                                - course: IND ENG.190B
+                                - course: IND ENG.190C
+                                - course: IND ENG.190D
+                                - course: IND ENG.190E
+                                - course: IND ENG.190F
+                                - course: IND ENG.190G
+                                - course: IND ENG.190H
+                                - course: IND ENG.190I
+                                - course: IND ENG.190K
+                                - course: IND ENG.191
+                        - dept: MEC ENG
+                            - NOT:
+                                - course: MEC ENG.191AC
+                                - course: MEC ENG.190K
+                                - course: MEC ENG.191K
+                        - dept: MAT SCI
+                        - dept: NUC ENG
+                        - units:
+                            min: 22
+                            courses:
+                                - dept: EL ENG
+                                - dept: COMPSCI
+                                    - NOT:
+                                        - course: COMPSCI.C79
+                                        - course: COMPSCI.195
+                                        - course: COMPSCI.C195
+            - AND: # eecs lower division core (also count as technical.....)
+                - course: EL ENG.20N
+                - course: EL ENG.40
+                - course: COMPSCI.61A
+                - OR:
+                    - course: COMPSCI.61B
+                    - course: COMPSCI.61BL
+                - OR:
+                    - course: COMPSCI.61C
+                    - course: COMPSCI.61CL
+            - OR: # engineering ethics
+                - course: COMPSCI.195
+                - course: COMPSCI.H195
+                - course: ENE,RES.100
+                - course: ENE,RES.C100
+                - course: ISF.60
+                - course: ISF.100D
+            - OR: # engineering design
+                - course: EL ENG.C125
+                - course: EL ENG.C128
+                - course: EL ENG.130
+                - course: EL ENG.140
+                - course: EL ENG.141
+                - course: EL ENG.143
+                - course: EL ENG.C149
+                - course: EL ENG.192
+                - course: COMPSCI.C149
+                - course: COMPSCI.150
+                - course: COMPSCI.160
+                - course: COMPSCI.162
+                - course: COMPSCI.164
+                - course: COMPSCI.169
+                - course: COMPSCI.184
+                - course: COMPSCI.186

@@ -1,0 +1,22 @@
+rules:
+
+    ls_gender_women_studies_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # lower division
+            - course: GWS.10
+            - course: GWS.20
+        - AND: # upper division
+            - AND: # core
+                - course: GWS.101
+                - course: GWS.102
+                - course: GWS.103
+                - course: GWS.104
+                - course: GWS.195
+            - AND: # electives
+                - units:
+                    min: 10
+                    courses:
+                        - dept: GWS

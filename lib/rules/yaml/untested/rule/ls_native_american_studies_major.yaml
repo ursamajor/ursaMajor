@@ -1,0 +1,39 @@
+rules:
+
+    ls_native_american_studies_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - ls_ethnic_studies_core
+        - AND: # lower division
+            - course: NATAMST.20A
+            - course: NATAMST.20B
+        - AND: # upper division
+            - course: ETH STD.103
+            - course: NATAMST.110
+            - numcourses:
+                min: 3
+                courses:
+                    - course: NATAMST.100
+                    - course: NATAMST.101
+                    - course: NATAMST.102
+                    - course: NATAMST.104
+                    - course: NATAMST.120
+                    - course: NATAMST.120AC
+                    - course: NATAMST.145
+                    - course: NATAMST.149
+                    - course: NATAMST.151
+                    - course: NATAMST.152
+                    - course: NATAMST.155
+                    - course: NATAMST.158
+                    - course: NATAMST.175
+                    - course: NATAMST.176
+                    - course: NATAMST.178
+                    - course: NATAMST.178AC
+                    - OR:
+                        - course: NATAMST.182
+                        - course: NATAMST.190
+            - course: NATAMST.197
+
+

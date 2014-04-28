@@ -1,0 +1,86 @@
+rules:
+
+    ls_linguistics_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # upper division core
+            - course: LINGUIS.100
+            - course: LINGUIS.110
+            - course: LINGUIS.115
+            - course: LINGUIS.120
+            - course: LINGUIS.130
+        - AND: # upper division electives
+            - units:
+                min: 10
+                courses:
+                    - dept: LINGUIS
+                    - course: ANTHRO.166
+                    - course: ANTHRO.169C
+                    - course: CELTIC.102A
+                    - course: CELTIC.105A
+                    - course: CELTIC.161
+                    - course: CHINESE.161
+                    - course: CHINESE.165
+                    - course: CHINESE.167
+                    - course: JAPAN.120
+                    - course: JAPAN.160
+                    - course: JAPAN.161
+                    - course: JAPAN.162
+                    - course: JAPAN.163
+                    - course: KOREAN.160
+                    - course: DUTCH.107
+                    - course: AFRIKAANS.150
+                    - course: ENGLISH.101
+                    - course: ENGLISH.102
+                    - course: ENGLISH.179
+                    - course: FRENCH.145
+                    - course: FRENCH.146A
+                    - course: FRENCH.146B
+                    - course: FRENCH.147
+                    - course: FRENCH.148
+                    - course: FRENCH.173
+                    - course: GERMAN.103
+                    - course: GERMAN.105
+                    - course: GERMAN.C109
+                    - course: LNS.C180T
+                    - course: GERMAN.170
+                    - course: GERMAN.173
+                    - course: GERMAN.174
+                    - course: CUNEIF.100A
+                    - course: CUNEIF.100B
+                    - course: CUNEIF.101A
+                    - course: CUNEIF.101B
+                    - course: CUNEIF.102A
+                    - course: CUNEIF.102B
+                    - course: CUNEIF.103A
+                    - course: CUNEIF.103B
+                    - course: CUNEIF.106A
+                    - course: CUNEIF.106B
+                    - course: EGYPT.100A
+                    - course: EGYPT.100B
+                    - course: EGYPT.101A
+                    - course: EGYPT.101B
+                    - course: HEWBREW.105A
+                    - course: HEWBREW.106A
+                    - course: SEMITIC.100B
+                    - course: PHILOS.133
+                    - course: PHILOS.135
+                    - course: PSYCH.C124
+                    - course: PSYCH.143
+                    - course: SCANDIN.201A
+                    - course: SLAVIC.C137
+                    - course: SANSKRIT.100A
+                    - course: SANSKRIT.100B
+                    - course: SPANISH.100
+                    - course: SPANISH.161
+                    - course: SPANISH.162
+                    - course: SPANISH.164
+                    - course: SPANISH.165AC
+                    - course: SPANISH.166
+                    - course: SPANISH.179
+                    - course: UGIS.120
+
+
+

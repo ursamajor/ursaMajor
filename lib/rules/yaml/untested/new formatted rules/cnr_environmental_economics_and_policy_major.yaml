@@ -1,0 +1,71 @@
+rules:
+
+
+    cnr_environmental_economics_and_policy_major:
+        description: "Environmental Economics and Policy Major"
+        rule: AND
+        args:
+            - rule: university_all
+            - rule: univeristy_for_lang
+            - rule: ls_breadth_all # or could be cnr, not sure
+            - rule: cnr_lowerdiv_environmental_economics_and_policy_requirement
+            - rule: cnr_upperdiv_environmental_economics_and_policy_requirement
+            - rule: cnr_upperdiv_elective_environmental_economics_and_policy_requirement
+            - rule: cnr_units_upperdiv
+            - rule: units_upperdiv
+            - rule: units_total
+
+
+
+    cnr_lowerdiv_environmental_economics_and_policy_requirement:
+        description: "Lower Division Environmental Economics and Policy"
+        rule: AND
+        args:
+            - rule: econ_lowerdiv
+            - rule: math_a
+            - rule: math_b
+            - rule: stat_20_21_25
+
+    cnr_upperdiv_environmental_economics_and_policy_requirement:
+        description: "Upper Division Environmental Economics and Policy"
+        rule: AND
+        args:
+            - rule: cnr_eep_micro
+            - rule: cnr_eep_enviro_econ
+            - rule: cnr_eep_quant
+
+    cnr_eep_micro:
+        hidden: true
+        rule: OR
+        args:
+            - course: ENVECON.100
+            - course: ECON.100A
+            - course: ECON.101A
+
+    cnr_eep_enviro_econ:
+        hidden: true
+        rule: OR
+        args:
+            - course: ENVECON.C101
+            - course: ENVECON.C102
+
+    cnr_eep_quant:
+        hidden: true
+        rule: OR
+        args:
+            - course: ENVECON.C115
+            - course: ENVECON.C118
+
+    cnr_upperdiv_elective_environmental_economics_and_policy_requirement:
+        description: "Upper Division Electives Environmental Economics and Policy"
+        rule: count_courses
+        args:
+            min: 5
+            rule: OR
+            args:
+                - upperdiv
+                min: 3
+                rule: OR
+                args:
+                    - rule: upperdiv_environmental_economics_and_policy
+

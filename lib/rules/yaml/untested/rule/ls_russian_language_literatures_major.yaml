@@ -1,0 +1,63 @@
+rules:
+
+    ls_russian_language_and_literature_major: # new reqs as of spring 2014
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # lower division
+            - AND: # language
+                - OR:
+                    - AND:
+                        - course: SLAVIC.1
+                        - course: SLAVIC.2
+                    - course: SLAVIC.10
+                    - course: SLAVIC.6A
+                - OR:
+                    - AND:
+                        - course: SLAVIC.3
+                        - course: SLAVIC.3
+                    - course: SLAVIC.20
+                    - course: SLAVIC.6B
+            - course: SLAVIC.45
+            - course: SLAVIC.46
+        - AND: # upper division
+            - course: SLAVIC.100
+            - course: SLAVIC.103A
+            - course: SLAVIC.103B
+            - course: SLAVIC.120A
+            - course: SLAVIC.120B
+            - OR: # literature with russian readings
+                - course: SLAVIC.180
+                - course: SLAVIC.181
+                - course: SLAVIC.182
+                - course: SLAVIC.188
+            - OR: # russian literature in english translation
+                - course: SLAVIC.131
+                - course: SLAVIC.132
+                - course: SLAVIC.133
+                - course: SLAVIC.134A
+                - course: SLAVIC.134B
+                - course: SLAVIC.134C
+                - course: SLAVIC.134D
+                - course: SLAVIC.134E
+                - course: SLAVIC.134F
+                - course: SLAVIC.134G
+                - course: SLAVIC.134N
+            - OR: # culture
+                - course: SLAVIC.130
+                - course: SLAVIC.131
+                - course: SLAVIC.140
+                - course: SLAVIC.148
+                - course: SLAVIC.190
+                - course: SLAVIC.150
+                - course: SLAVIC.160
+                - course: SLAVIC.170
+                - course: SLAVIC.147A
+                - course: SLAVIC.147B
+                - course: SLAVIC.C137
+                - course: LINGUIS.C137
+                - course: SLAVIC.138
+            - OR:
+                - dept: SLAVIC # other than chosen
+

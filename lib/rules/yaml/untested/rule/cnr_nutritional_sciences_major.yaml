@@ -1,0 +1,153 @@
+rules:
+# what else counts as a humanities/social science?
+# only up to 10 units of NUSTX can count as electives
+# in physiology & metabolism
+
+    cnr_nutritional_science_major:
+        rule: AND
+        args:
+            - cnr_upper_division
+            - AND: # dietics track
+                - AND: # lower-div
+                    - units:
+                        min: 20
+                        courses:
+                            - university_rc_A
+                            - university_rc_B
+                            - OR: # econ
+                                - course: ECON.1
+                                - course: ECON.2
+                                - course: ECON.3
+                            - OR: # anthro/psych/soc
+                                - course: ANTHRO.3
+                                - course: ANTHRO.3AC
+                                - course: PSYCH.1
+                                - course: PSYCH.2
+                                - course: SOCIOL.3
+                                - course: SOCIOL.3AC
+                            - cnr_breadth_arts_history_philosophy
+                            - cnr_breadth_social_international
+                            - university_ac
+                            # i guessed
+                - AND: # physical sciences and math
+                    - OR:
+                        - AND:
+                            - course: MATH.16A
+                            - course: STAT.2
+                        - AND:
+                            - course: MATH.1A
+                            - course: STAT.2
+                        - AND:
+                            - course: MATH.10A
+                            - course: MATH.10B
+                    - course: CHEM.1A
+                    - course: CHEM.1AL
+                    - course: CHEM.3A
+                    - course: CHEM.3AL
+                    - course: CHEM.3B
+                    - course: CHEM.3BL
+                - AND: # biological and natural resource science
+                    - course: NUSCTX.10
+                    - course: MCELLBI.32
+                    - OR:
+                        - course: MCELLBI.32L
+                        - course: INTEGBI.132
+                        - course: INTEGBI.132L
+                    - course: BIOLOGY.1A
+                    - course: BIOLOGY.1AL
+                - AND: # upper div
+                    - course: MCELLBI.102
+                    - course: NUSCTX.103
+                    - course: NUSCTX.104
+                    - course: NUSCTX.108A
+                    - course: NUSCTX.108B
+                    - course: NUSCTX.135
+                    - course: NUSCTX.145
+                    - course: NUSCTX.160
+                    - course: NUSCTX.161A
+                    - course: NUSCTX.161B
+                    - course: NUSCTX.16
+                    - course: NUSCTX.192
+                    - course: PB HLTH.162A
+                    - course: UGBA.102A
+                    - course: UGBA.105
+            - AND: # physiology and metabolism track
+                - AND: # lower division
+                    - university_rc_A
+                    - university_rc_B
+                    - units:
+                        min: 14
+                        courses:
+                            - university_ac
+                            - university_for_lang
+                            - cnr_breadth_arts_history_philosophy
+                            - cnr_breadth_social_international
+                - AND: # physical sciences and math
+                    - OR: # math
+                        - AND:
+                            - course: MATH.16A
+                            - course: MATH.16B
+                            - course: STAT.2
+                        - AND:
+                            - course: MATH.1A
+                            - course: STAT.2
+                        - AND:
+                            - course: MATH.10A
+                            - course: MATH.10B
+                    - course: CHEM.1A
+                    - course: CHEM.1AL
+                    - course: CHEM.3A
+                    - course: CHEM.3AL
+                    - course: CHEM.3B
+                    - course: CHEM.3BL
+                    - course: PHYSICS.8A
+                - AND: # biological and natural resource science
+                    - course: NUSCTX.10
+                    - course: MCELLBI.32
+                    - course: MCELLBI.32L
+                    - course: BIOLOGY.1A
+                    - course: BIOLOGY.1AL
+                - AND: # upper div
+                    - course: MCELLBI.102
+                    - course: NUSCTX.103
+                    - course: NUSCTX.160
+                    - course: NUSCTX.170
+                    - course: NUSCTX.190
+                    - AND:
+                        - units:
+                            min: 20
+                            courses:
+                                - course: NUSCTX.104
+                                - course: NUSCTX.108A
+                                - course: NUSCTX.110
+                                - course: NUSCTX.C114
+                                - course: NUSCTX.115
+                                - course: NUSCTX.161A
+                                - course: NUSCTX.161B
+                                - course: NUSCTX.166
+                                - course: NUSCTX.193
+                                - course: NUSCTX.H196
+                                - course: NUSCTX.199
+                                - course: PLANTBI.C103
+                                - OR:
+                                    - course: PLANTBI.C112
+                                    - course: PB HLTH.C162A
+                                - course: PLANTBI.C114
+                                - course: INTEGBI.117
+                                - course: INTEGBI.123
+                                - course: INTEGBI.128
+                                - course: INTEGBI.131
+                                - course: INTEGBI.140
+                                - course: MCELLBI.104
+                                - course: MCELLBI.130A
+                                - course: MCELLBI.132
+                                - course: MCELLBI.135
+                                - course: PB HLTH.170B
+                                - course: UGIS.192C
+                                - dept: INTEGBI
+                                - dept: MCELLBI
+                                - dept: PLANTBI
+                                - dept: CHEM
+
+
+

@@ -1,0 +1,24 @@
+rules:
+
+    ls_buddhism_minor:
+    rule: AND
+    args:
+        - AND: # lower division
+            - OR:
+                - course: CHINESE.10B
+                - course: JAPAN.10B
+            
+            - numcourses:
+                min: 3
+                courses:
+                    dept: BUDDSTD
+
+            - numcourses:
+                min: 2
+                courses:
+                    - OR:
+                        - dept: CHINESE
+                        - dept: JAPAN
+                        - dept: KOREAN
+                        - dept: TIBETAN
+                        - dept: EA LANG                        

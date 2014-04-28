@@ -1,0 +1,154 @@
+rules: # two options
+
+# ap credit of breadth / requirements
+# not sure if requirements can count as breadth
+
+    cnr_environmental_sciences_major:
+            rule: AND
+            args:
+                - university_all
+                - cnr_upper_division
+                - AND: # Breadth requirements
+                    - cnr_espm_environmental_science_core
+                    - cnr_espm_social_science_core
+                    - OR: # environmental economics
+                        - course: ENVECON.C1
+                        - course: ECON.C3
+                    - cnr_breadth_arts_history_philosophy
+                    - cnr_breadth_social_international
+                - AND: # upper-div
+                    - OR: # statistics
+                        - course: STAT.131A
+                        - course: PB HLTH.141
+                        - course: PB HLTH.142
+                        - course: ESPM.173
+                    - course: ESPM.100ES # intro to methods of environmental science
+                    - AND: # senior research seminar first half
+                        - course: ESPM.175A
+                        - course: ESPM.175L
+                    - AND: # senior research seminar second half
+                        - course: ESPM.175B
+                        - course: ESPM.175L # take this twice as mentioned
+                    - OR: # environmental modeling
+                        - course: ENERES.102
+                        - course: ESPM.C104
+                        - course: ENVECON.C115
+                        - course: ESPM.C183
+                        - course: ENVECON.C183
+                    - OR: # human environment interactions
+                        - course: ESPM.102D
+                        - course: ESPM.151
+                        - course: ESPM.155
+                        - course: ESPM.160AC
+                        - course: HISTORY.120AC
+                        - course: ESPM.161
+                        - course: ESPM.162
+                        - course: ESPM.163AC
+                        - course: SOCIOL.137AC
+                        - course: ESPM.166
+                        - course: ESPM.C167
+                        - course: PB HLTH.C160
+                        - course: ESPM.168
+                        - course: ESPM.169
+                        - course: ESPM.186
+                        - course: ENVECON.C101
+                        - course: ECON.C125
+                        - course: ECON.131
+                        - course: ENVECON.140AC
+                        - course: ENVECON.153
+                        - course: ENVECON.162
+                        - course: ENVECON.180
+                        - course: ENERES.170
+                        - course: ENERES.175
+                        - course: GEOG.130
+                        - course: GEOG.138
+                        - course: ANTHRO.137
+                - OR: # based on concentration
+                    - AND: # Physical Science
+                        - course: MATH.1A
+                        - course: MATH.1B
+                        - course: CHEM.1A
+                        - course: CHEM.1AL
+                        - OR:
+                            - AND:
+                                - course: BIOLOGY.1A
+                                - course: BIOLOGY.1AL
+                                - course: BIOLOGY.1B
+                            - AND:
+                                - course: BIOLOGY.11
+                                - course: BIOLOGY.11L
+                                - OR:
+                                    - course: INTEGBI.153
+                                    - course: INTEGBI.154
+                                    - course: ESPM.102A
+                                    - course: ESPM.111
+                                    - course: ESPM.113
+                                    - course: ESPM.114
+                                    - course: ESPM.115B
+                                    - course: ESPM.116B
+                        - course: PHYSICS.7A
+                        - course: PHYSICS.7B
+                        - AND: # within concentration
+                            - cnr_environmental_sciences_electives_physical
+                        - OR: # outside concentration
+                            - cnr_environmental_sciences_electives_social
+                            - cnr_environmental_sciences_electives_biological
+                    - AND: # Biological Science
+                        - OR:
+                            - AND:
+                                - course: MATH.1A
+                                - course: MATH.16A
+                            - AND:
+                                - course: MATH.1B
+                                - course: MATH.16B
+                        - course: CHEM.1A
+                        - course: CHEM.1AL
+                        - course: CHEM.3A
+                        - course: CHEM.3AL
+                        - course: BIOLOGY.1A
+                        - course: BIOLOGY.1AL
+                        - course: BIOLOGY.1B
+                        - course: PHYSICS.8A
+                        - AND: # within concentration
+                            - cnr_environmental_sciences_electives_biological
+                        - OR: # outside concentration
+                            - cnr_environmental_sciences_electives_social
+                            - cnr_environmental_sciences_electives_physical
+                    - AND: # Social Science
+                        - OR:
+                            - AND:
+                                - course: MATH.1A
+                                - course: MATH.16A
+                            - AND:
+                                - course: MATH.1B
+                                - course: MATH.16B
+                        - course: CHEM.1A
+                        - course: CHEM.1AL
+                        - OR:
+                            - AND:
+                                - course: CHEM.3A
+                                - course: CHEM.3AL
+                            - course: CHEM.1B
+                        - OR:
+                            - AND:
+                                - course: BIOLOGY.1A
+                                - course: BIOLOGY.1AL
+                                - course: BIOLOGY.1B
+                            - AND:
+                                - course: BIOLOGY.11
+                                - course: BIOLOGY.11L
+                                - OR:
+                                    - course: INTEGBI.153
+                                    - course: INTEGBI.154
+                                    - course: ESPM.102A
+                                    - course: ESPM.111
+                                    - course: ESPM.113
+                                    - course: ESPM.114
+                                    - course: ESPM.115B
+                                    - course: ESPM.116B
+                        - course: PHYSICS.8A
+                        - AND: # within concentration
+                            - cnr_environmental_sciences_electives_social
+                        - OR: # outside concentration
+                            - cnr_environmental_sciences_electives_biological
+                            - cnr_environmental_sciences_electives_physical

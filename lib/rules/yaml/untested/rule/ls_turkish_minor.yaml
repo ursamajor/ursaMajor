@@ -1,0 +1,45 @@
+rules:
+
+    ls_turkish_minor:
+    rule: AND
+    args:
+        - OR: 
+            - AND: # Option A: Open to students with little or no background in the language.
+                - course: TURKISH.1A
+                - course: TURKISH.1B
+                - course: TURKISH.100A
+                - course: TURKISH.100B
+                -OR:
+                    -AND:
+                        - course: TURKISH.101A
+                        - course: TURKISH.101B
+                    -AND:
+                        - course: TURKISH.102A
+                        - course: TURKISH.102B
+                - AND: 
+                    - numcourses:
+                        min: 1
+                        courses:
+                            - course: NE STUD.170A
+                            - course: NE STUD.170B
+                            - course: NE STUD.172
+                            - course: NE STUD.173A
+                            - course: NE STUD.173B
+
+            - AND: # Option B: Open to students who can demonstrate proficiency at a level equivalent to that expected of students who have successfully completed the elementary and intermediate courses in the language 
+                - numcourses:
+                    min: 5
+                    courses:
+                        - course: TURKISH.101A
+                        - course: TURKISH.101B
+                        - course: TURKISH.102A
+                        - course: TURKISH.102B
+
+                - numcourses:
+                    min: 2
+                    courses:
+                        - course: NE STUD.170A
+                        - course: NE STUD.170B
+                        - course: NE STUD.172
+                        - course: NE STUD.173A
+                        - course: NE STUD.173B

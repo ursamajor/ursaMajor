@@ -1,0 +1,192 @@
+rules:
+
+    ls_cognitive_science_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # pre-reqs
+            - course: COG SCI.1
+            - OR:
+                - course: MATH.1A
+                - course: MATH.16A
+            - OR:
+                - course: COMPSCI.61A
+                - course: ENGIN.7
+        - AND: # lower-div
+            - OR:
+                - course: MCELLBI.61
+                - course: MCELLBI.64
+            - OR:
+                - course: MATH.55
+                - course: COMPSCI.70
+        - AND: # upper div
+            - OR: # cognitive neuroscience
+                - course: PSYCH.117
+                - course: COG SCI.127
+                - course: PSYCH.C127
+                - course: PSYCH.133
+            - OR: # cognitive psychology
+                - course: COG SCI.C100
+                - course: PSYCH.C120
+                - course: PSYCH.122
+                - course: COG SCI.C124
+                - course: PSYCH.C124
+                - course: COG SCI.C126
+                - course: PSYCH.C126
+                - course: COG SCI.C102
+                - course: PSYCH.C129
+                - course: PSYCH.143
+                - course: PSYCH.164
+            - OR: # computational modeling
+                - course: LINGUIS.100
+                - course: COG SCI.C101
+                - course: LINGUIS.C105
+                - course: COG SCI.C142
+                - course: LINGUIS.C142
+            - OR: # philosophy
+                - course: PHILOS.132
+                - course: PHILOS.133
+                - course: PHILOS.135
+                - course: PHILOS.136
+                - course: PHILOS.122
+            - OR: # society, culture, and cognition
+                - course: COG SCI.C103
+                - course: HISTORY.C192
+                - course: INFO.C103
+                - course: COG SCI.C104
+                - course: LINGUIS.C104
+                - course: ANTHRO.166
+                - course: ECON.119
+                - course: EDUC.140AC
+                - course: LINGUIS.150
+                - course: PSYCH.107
+                - course: PSYCH.164
+                - course: PSYCH.166AC
+                - course: SOCIOL.150
+                - course: SOCIOL.150A
+                - course: PSYCH.160
+        - AND: # electives
+            - numcourses:
+                min: 3
+                courses:
+                    - course: COG SCI.C103
+                    - course: HISTORY.C192
+                    - course: INFO.C103
+                    - course: COG SCI.C104
+                    - course: LINGUIS.C104
+                    - course: ANTHRO.166
+                    - course: ECON.119
+                    - course: EDUC.140AC
+                    - course: LINGUIS.150
+                    - course: PSYCH.107
+                    - course: PSYCH.164
+                    - course: PSYCH.166AC
+                    - course: SOCIOL.150
+                    - course: SOCIOL.150A
+                    - course: PSYCH.160
+                    - course: PHILOS.132
+                    - course: PHILOS.133
+                    - course: PHILOS.135
+                    - course: PHILOS.136
+                    - course: PHILOS.122
+                    - course: COG SCI.C100
+                    - course: PSYCH.C120
+                    - course: PSYCH.122
+                    - course: COG SCI.C124
+                    - course: PSYCH.C124
+                    - course: COG SCI.C126
+                    - course: PSYCH.C126
+                    - course: COG SCI.C102
+                    - course: PSYCH.C129
+                    - course: PSYCH.143
+                    - course: PSYCH.164
+                    - course: LINGUIS.100
+                    - course: COG SCI.C101
+                    - course: LINGUIS.C105
+                    - course: COG SCI.C142
+                    - course: LINGUIS.C142
+                    - course: PSYCH.117
+                    - course: COG SCI.127
+                    - course: PSYCH.C127
+                    - course: PSYCH.133
+                    - course: MCELLBI.C160
+                    - course: NEUROSC.C160
+                    - course: MCELLBI.163
+                    - course: MCELLBI.160L
+                    - course: MCELLBI.164
+                    - course: MCELLBI.165
+                    - course: MCELLBI.166
+                    - course: PSYCH.110
+                    - course: PSYCH.111
+                    - course: PSYCH.114
+                    - course: COG SCI.C110
+                    - course: COMPSCI.C182
+                    - course: LINGUIS.C109
+                    - course: INTEGBI.245
+                    - course: INTEGBI.245L
+                    - course: COG SCI.C127
+                    - course: PSYCH.C127
+                    - course: PSYCH.107
+                    - course: PSYCH.111
+                    - course: PSYCH.121
+                    - OR:
+                        - course: MUSIC.108
+                        - course: MUSIC.108M
+                    - course: EDUC.224A
+                    - course: EDUC.229A
+                    - course: VIS STD.265
+                    - course: COMPSCI.160
+                    - course: COMPSCI.170
+                    - course: COMPSCI.186
+                    - course: COMPSCI.C280
+                    - course: VIS STD.C280
+                    - course: COMPSCI.287
+                    - course: COMPSCI.288
+                    - course: LINGUIS.110
+                    - course: LINGUIS.120
+                    - course: LINGUIS.106
+                    - course: COG SCI.C108
+                    - course: LINGUIS.C108
+                    - course: LINGUIS.115
+                    - course: LINGUIS.121
+                    - course: LINGUIS.123
+                    - course: LINGUIS.125
+                    - course: LINGUIS.158
+                    - course: LINGUIS.C160
+                    - course: COG SCI.C140
+                    - course: LINGUIS.181
+                    - course: PSYCH.143
+                    - course: PHILOS.128
+                    - course: PHILOS.130
+                    - course: PHILOS.138
+                    - course: PHILOS.140A
+                    - course: PHILOS.140B
+                    - course: PHILOS.174
+                    - course: PHILOS.176
+                    - course: PHILOS.185
+                    - course: PHILOS.186
+                    - course: PHILOS.188
+                    - course: ANTHRO.149
+                    - course: ANTHRO.160AC
+                    - course: ANTHRO.161
+                    - course: INFO.146
+                    - course: LINGUIS.130
+                    - course: LINGUIS.C139
+                    - course: SLAVIC.C139
+                    - course: LINGUIS.151
+                    - course: LINGUIS.170
+                    - course: NATAMST.151
+                    - course: PHILOS.153
+                    - course: POL SCI.161
+                    - course: POL SCI.164A
+                    - course: PSYCH.167AC
+                    - course: RHETOR.103A
+                    - course: RHETOR.105
+                    - course: RHETOR.110
+                    - course: RHETOR.170
+                    - course: RHETOR.174
+                    - course: RHETOR.175
+                    - course: RHETOR.177
+
+

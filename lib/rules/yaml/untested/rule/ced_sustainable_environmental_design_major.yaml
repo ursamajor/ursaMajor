@@ -1,0 +1,69 @@
+rules:
+
+    ced_sustainable_environmental_design_major:
+    rules: AND
+    args:
+        - university_all
+        - ls_breadth_all
+            - NOT:
+                - # courses used to satisfy non-sustainable upper div
+                - # courses used to satisfy upper div
+        - AND: # lower division
+            - ced_lower_division_environmental_design
+            - course: LD ARCH.12
+            - OR:
+                - course: MATH.16A
+                - course: MATH.1A
+            - OR:
+                - course: STAT.2
+                - course: STAT.20
+                - course: STAT.21
+                - # or higher
+            - OR:
+                - course: PHYSICS.7A
+                - course: PHYSICS.8A
+            - OR:
+                - course: ECON.1
+                - course: ECON.2
+                - course: ECON.C3
+                - course: ENVECON.C3
+        - AND: # upper division core
+            - course: ENV DES.100
+            - course: ENV DES.102
+            - course: ENV DES.106
+            - course: ARCH.140
+            - course: ARCH.242
+            - course: CY PLAN.119
+            - course: LD ARCH.110
+            - course: LD ARCH.130
+            - course: LD ARCH.188
+            - course: GEOG.188
+        - AND: # area requirements
+            - OR:
+                - AND:
+                    - ced_sustainable_environmental_design_economics_area
+                    - ced_sustainable_environemental_design_society_area
+                    - ced_sustainable_environmental_design_resources_area
+                    - ced_sustainable_environmental_design_design_area
+                - OR:
+                    - numcourses:
+                        min: 4
+                        courses:
+                            - OR:
+                                - numcourses:
+                                    min: 2
+                                    courses:
+                                        - ced_sustainable_environmental_design_economics_area
+                                - numcourses:
+                                    min: 2
+                                    courses:
+                                        - ced_sustainable_environmental_design_society_area
+                                - numcourses:
+                                    min: 2
+                                    courses:
+                                        - ced_sustainable_environmental_design_design_area
+                                -  numcourses:
+                                    min: 2
+                                    courses:
+                                        - ced_sustainable_environmental_design_resources_area
+                    - # 2 courses from two of the areas

@@ -1,0 +1,286 @@
+rules: # not sure if I should combine lower/upper div into one concentration
+
+
+    cnr_forestry_and_natural_resources_major:
+        description: "Forestry and Natural Resources Major"
+        rule: AND
+        args:
+            - rule: university_all
+            - rule: cnr_lowerdiv_forestry_requirements
+            - rule: cnr_core_upperdiv_forestry_requirements
+            - rule: cnr_field_forestry_requirement
+            - rule: cnr_concentration_forestry_requirement
+            - rule: cnr_units_upperdiv
+            - rule: units_upperdiv
+            - rule: units_total
+
+
+
+    cnr_lowerdiv_forestry_requirements:
+        description: "Lower Division Forestry and Natural Resources Requirements"
+        rule: count_courses
+        args:
+            min: 4
+            rule: AND
+            args:
+                - rule: cnr_espm_environmental_science_core
+                - rule: cnr_espm_social_science_core
+                - rule: cnr_breadth_arts_history_philosophy
+                - rule: cnr_breadth_social_international
+
+    cnr_core_upperdiv_forestry_requirements:
+        description: "Core Upper Division Forestry and Natural Resources Requirements"
+        rule: AND
+        args:
+            - course: ESPM.102A
+            - course: ESPM.102B
+            - course: ESPM.102BL
+            - course: ESPM.102C
+            - course: ESPM.102D
+            - course: ESPM.72
+
+    cnr_field_forestry_requirement:
+        description: "Forestry and Natural Resources Field Program Requirement"
+        rule: OR
+        args:
+            - rule: cnr_forestry_field
+            - course: ESPM.C109
+
+    cnr_forestry_field:
+        hidden: true
+        rule: count_courses
+        args:
+            min: 4
+            args:
+                - course: ESPM.105A
+                - course: ESPM.105B
+                - course: ESPM.105C
+                - course: ESPM.105D
+
+    cnr_concentration_forestry_requirement:
+        description: "Forestry and Natural Resources Concentrations: Forestry and Natural Sciences, and Human Dimensions of Natural Resources"
+        rule: OR
+        args:
+            - rule: cnr_concentration_forestry_natural_sciences
+            - rule: cnr_concentration_forestry_human_dimensions
+
+
+    cnr_concentration_forestry_natural_sciences:
+        description: "Forestry and Natural Resources Concentration: Forestry and Natural Sciences"
+        rule: AND
+        args:
+            - course: CHEM.1A
+            - course: CHEM.1AL
+            - course: BIOLOGY.1B
+            - rule: math_a
+            - rule: math_b
+            - rule: stat_2_20
+            - rule: econ_lowerdiv
+            - rule: cnr_forestry_phys
+            - rule: cnr_forestry_special
+
+    cnr_forestry_phys:
+        hidden: true
+        rule: OR
+        args:
+            - course: EPS.50
+            - course: GEOG.1
+            - course: GEOG.40
+
+    cnr_forestry_special:
+        hidden: true
+        rule: OR
+        args:
+            - rule: cnr_concentration_forestry_natural_sciences_specialization_professional_forestry
+            - rule: cnr_concentration_forestry_natural_sciences_specialization_natural_sciences
+
+
+    cnr_concentration_forestry_natural_sciences_specialization_professional_forestry:
+        description: "Forestry and Natural Resources Concentration, Forestry and Natural Sciences Specialization: Professional Forestry"
+        rule: AND
+        args:
+            - course: ESPM.108A
+            - course: ESPM.134
+            - course: ESPM.182
+            - course: ESPM.183
+            - course: ESPM.185
+            - rule: fns_other
+            - rule: fns_prof_electives
+
+    fns_prof_electives:
+        hidden: true
+        rule: OR
+        args:
+            - rule: cnr_subject_forestry_physical_environment
+            - rule: cnr_subject_forestry_monitoring_and_measurement
+
+    fns_other:
+        hidden: true
+        rule: OR
+        args:
+            - course: ESPM.172
+            - course: ESPM.174
+            - course: ANTHRO.169A
+            - course: ANTHRO.169B
+            - course: ARCH.110
+            - course: EPS.C120
+            - course: GEOG.187
+            - course: LD ARCH.110
+            - course: LD ARCH.C188
+            - course: ESPM.120
+            - course: ESPM.121
+            - course: ESPM.C128
+            - course: ESPM.C129
+            - course: EPS.117
+            - course: GEOG.140A
+
+    cnr_concentration_forestry_natural_sciences_specialization_natural_sciences:
+        description: "Forestry and Natural Resources Concentration, Forestry and Natural Sciences Specialization: Natural Sciences"
+        rule: AND
+        args:
+            - rule: cnr_subject_forestry_physical_environment
+            - rule: cnr_subject_forestry_management_and_policy
+            - rule: cnr_forestry_nat_sci_ecology
+            - rule: cnr_forestry_nat_sci_monitoring
+
+    cnr_forestry_nat_sci_ecology:
+        hidden: true
+        rule: count_courses
+        args:
+            min: 3
+            rule: cnr_subject_forestry_ecology
+
+    cnr_forestry_nat_sci_monitoring:
+        hidden: true
+        rule: count_courses
+        args:
+            min: 2
+            rule: cnr_subject_forestry_monitoring_and_measurement
+
+    cnr_concentration_forestry_human_dimensions:
+        description: "Forestry and Natural Resources Concentration: Human Dimensions of Natural Resources"
+        rule: AND
+        args:
+            - rule: ls_breadth_physical
+            - rule: cnr_forestry_human_bio
+            - rule: cnr_forestry_human_math
+            - rule: cnr_forestry_human_stat
+            - rule: cnr_forestry_human_econ
+            - rule: cnr_forestry_electives
+
+    cnr_forestry_electives:
+        hidden: true
+        rule: count_courses
+        args:
+            min: 6
+            rule: AND
+            args:
+                - rule: cnr_subject_forestry_ecology
+                - rule: cnr_subject_forestry_physical_environment
+                - rule: cnr_subject_forestry_monitoring_and_measurement
+                - rule: cnr_subject_forestry_management_and_policy
+
+    cnr_forestry_human_bio:
+        hidden: true
+        rule: OR
+        args:
+            - course: BIOLOGY.1B
+            - course: BIOLOGY.11
+
+    cnr_forestry_human_math:
+        hidden: true
+        rule: OR
+        args:
+            - course: MATH.16A
+            - course: MATH.1A
+            - course: MATH.32
+
+    cnr_forestry_human_stat:
+        hidden: true
+        rule: OR
+        args:
+            - course: STAT.2
+            - course: STAT.20
+            - course: POL SCI.3
+            - course: SOCIOL.5
+
+    cnr_forestry_human_econ:
+        hidden: true
+        rule: OR
+        args:
+            - course: ENVECON.C1
+            - course: ECON.1
+            - course: ECON.2
+            - course: ECON.C3
+            - course: UGBA.10
+
+
+    cnr_subject_forestry_ecology:
+        description: "Forestry and Natural Resources Ecology Subject"
+        rule: same_course
+        args:
+            - OR:
+                - course: ESPM.108A
+                - course: ESPM.108B
+                - course: ESPM.111
+                - course: ESPM.112
+                - course: ESPM.113
+                - course: ESPM.114
+                - course: ESPM.115B
+                - course: ESPM.115C
+                - course: ESPM.116A
+                - course: ESPM.116B
+                - course: ESPM.116C
+                - course: ESPM.134
+                - course: ESPM.135
+                - course: ESPM.187
+                - course: INTEGBI.102
+                - course: INTEGBI.102LF
+                - course: INTEGBI.153
+                - course: INTEGBI.154
+                - course: INTEGBI.157LF
+
+    cnr_subject_forestry_monitoring_and_measurement:
+        description: "Forestry and Natural Resources Monitoring and Measurement Subject"
+        rule: same_course
+        args:
+            - OR:
+                - course: ESPM.172
+                - course: ESPM.174
+                - course: ANTHRO.169A
+                - course: ANTHRO.169B
+                - course: ARCH.110
+                - course: EPS.C120
+                - course: GEOG.187
+                - course: LD ARCH.110
+                - course: LD ARCH.C188
+
+    cnr_subject_forestry_management_and_policy:
+        description: "Forestry and Natural Resources Management and Policy Subject"
+        rule: same_course
+        args:
+            - OR:
+                - course: ESPM.120
+                - course: ESPM.121
+                - course: ESPM.C128
+                - course: ESPM.C129
+                - course: EPS.117
+                - course: GEOG.140A
+
+    cnr_subject_forestry_physical_environment:
+        description: "Forestry and Natural Resources Physical Environment Subject"
+        rule: same_course
+        args:
+            - OR:
+                - course: ESPM.155
+                - course: ESPM.165
+                - course: ESPM.168
+                - course: ESPM.169
+                - course: ESPM.181A
+                - course: ESPM.182
+                - course: ESPM.183
+                - course: ESPM.184
+                - course: ESPM.185
+                - course: ESPM.186
+                - course: ESPM.188
+                - course: CY PLAN.112A

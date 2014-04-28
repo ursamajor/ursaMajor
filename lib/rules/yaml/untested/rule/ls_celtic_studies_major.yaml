@@ -1,0 +1,60 @@
+rules:
+
+    ls_celtic_studies_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # lower division
+            - course: CELTIC.70
+            - OR:
+                - AND:
+                    - course: CELTIC.15
+                    - course: CELTIC.85
+                - AND:
+                    - course: CELTIC.16
+                    - course: CELTIC.86
+        - AND: # upper division
+            - OR:
+                - course: CELTIC.128
+                - course: CELTIC.129
+            - OR:
+                - course: CELTIC.138
+                - course: CELTIC.139
+            - OR:
+                - course: CELTIC.168
+                - course: CELTIC.169
+            - OR:
+                - course: CELTIC.102A
+                - course: CELTIC.102B
+                - course: CELTIC.105A
+                - course: CELTIC.105B
+                - course: CELTIC.144A
+                - course: CELTIC.145A
+                - course: CELTIC.146A
+            - units:
+                min: 8
+                courses:
+                    - course: CELTIC.118
+                    - course: CELTIC.119
+                    - course: CELTIC.125
+                    - course: CELTIC.126
+            - units: # the ones that didn't count before
+                min: 8
+                courses:
+                    - dept: CELTIC
+                    - course: ANTHRO.180
+                    - course: HISTART.160
+                    - course: COM LIT.152
+                    - course: COM LIT.165
+                    - course: HISTORY.150A
+                    - course: HISTORY.151A
+                    - course: HISTORY.151B
+                    - course: HISTORY.185A
+                    - course: LINGUIS.130
+                    - course: LINGUIS.131
+
+
+
+
+

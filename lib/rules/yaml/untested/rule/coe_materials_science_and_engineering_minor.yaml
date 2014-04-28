@@ -1,0 +1,23 @@
+rules:
+
+    coe_materials_science_and_engineering_minor:
+        rule: AND
+        args:
+            - AND: # pre-requisites
+                - course: ENGIN.45
+                - course: ENGIN.115
+            - AND: # course requirements
+                - course: MAT SCI.102
+                - course: MAT SCI.103
+            - OR: # electives
+                - course: MAT SCI.104
+                - course: MAT SCI.111
+                - course: MAT SCI.112
+                - course: MAT SCI.113C
+                - course: MAT SCI.117
+                - course: MAT SCI.120
+                - course: MAT SCI.121
+                - course: MAT SCI.122
+                - course: MAT SCI.123
+                - course: MAT SCI.125
+ 

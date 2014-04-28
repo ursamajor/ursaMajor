@@ -1,0 +1,38 @@
+rules:
+
+    ls_japanese_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # lower division
+            - course: JAPAN.1A
+            - course: JAPAN.1B
+            - course: JAPAN.10A
+            - course: JAPAN.10B
+            - course: JAPAN.7A
+            - course: JAPAN.7B
+        - AND: # upper division
+            - course: JAPAN.100A
+            - course: JAPAN.100B
+            - course: JAPAN.120
+            - OR: # japanese classical literature
+                - course: JAPAN.130
+                - course: JAPAN.132
+                - course: JAPAN.134
+                - course: JAPAN.140
+                - course: JAPAN.142
+                - course: JAPAN.144
+                - course: JAPAN.146
+            - OR: # japanese modern literature
+                - course: JAPAN.155
+                - course: JAPAN.159
+            - OR: # ea lang upper div
+                - course: EA LANG.100
+                - course: EA LANG.102
+            - AND: # electives...selected w an advisor...
+                - numcourses:
+                    min: 2
+                    courses:
+
+

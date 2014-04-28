@@ -1,0 +1,73 @@
+rules:
+
+    ls_music_major:
+    rule: AND
+    args:
+        - AND: # lower division
+            - OR: # musicianship
+                - course: MUSIC.20A
+                - course: MUSIC.49B
+            - OR:
+                - course: MUSIC.20B
+                - course: MUSIC.49C 
+                - course: MUSIC.25A
+            - OR:
+                - course: MUSIC.27
+                - course: MUSIC.26AC
+                - course: MUSIC.29
+                - course: MUSIC.73
+                - course: MUSIC.74
+                - course: MUSIC.75
+                - course: MUSIC.76
+                - course: MUSIC.77
+        - AND: # upper division
+            - numcourses:
+                min: 5
+                courses:
+                    - course: MUSIC.140
+                    - course: MUSIC.N140
+                    - course: MUSIC.141
+                    - course: MUSIC.142
+                    - course: MUSIC.143
+                    - course: MUSIC.144
+                    - course: MUSIC.145
+                    - course: MUSIC.146B
+                    - course: MUSIC.147
+                    - course: MUSIC.148
+                    - course: MUSIC.N148
+                    - course: MUSIC.149
+                    - course: MUSIC.108
+                    - course: MUSIC.108M
+                    - course: MUSIC.109
+                    - course: MUSIC.109M
+                    - course: MUSIC.116A
+                    - course: MUSIC.116AM
+                    - course: MUSIC.116B
+                    - course: MUSIC.116BM
+                    - course: MUSIC.128A
+                    - course: MUSIC.128B
+                    - course: MUSIC.128AM
+                    - course: MUSIC.128BM
+                    - course: MUSIC.128D
+                    - course: MUSIC.128DM
+                    - course: MUSIC.128E
+                    - course: MUSIC.128P
+                    - course: MUSIC.128Q
+                    - course: MUSIC.128S
+                    - course: MUSIC.128SM
+                    - course: MUSIC.128T
+                    - course: MUSIC.130B
+                    - course: MUSIC.N130B
+                    - course: MUSIC.132
+                    - course: MUSIC.133AX
+                    - course: MUSIC.133C
+                    - course: MUSIC.133D
+                    - course: MUSIC.134A
+                    - course: MUSIC.134B
+                    - course: MUSIC.C134C
+                    - course: MUSIC.135A
+                    - course: MUSIC.136
+                    - course: MUSIC.137AC
+                    - course: MUSIC.139
+
+

@@ -1,0 +1,42 @@
+rules:
+
+    ls_mathematics_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # lower division
+            - course: MATH.1A
+            - course: MATH.1B
+            - course: MATH.53
+            - course: MATH.54
+            - OR:
+                - course: MATH.55
+                - course: COMPSCI.70 # if CS or EECS double
+        - AND: # upper division
+            - course: MATH.104
+            - course: MATH.110
+            - course: MATH.113
+            - course: MATH.128A
+            - course: MATH.185
+        - AND: # semi-electives
+            - numcourses:
+                min: 2
+                courses:
+                    - OR: # computing
+                        - course: MATH.128A
+                    - OR: # geometry
+                        - course: MATH.130
+                        - course: MATH.140
+                        - course: MATH.141
+                        - course: MATH.142
+                        - course: MATH.143
+                    - OR: # logic and foundations
+                        - course: MATH.125A
+                        - course: MATH.135
+                        - course: MATH.136
+        - AND: # electives
+            - numcourses:
+                min: 2
+                coursese:
+                    - dept: MATH # the others

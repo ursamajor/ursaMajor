@@ -1,0 +1,482 @@
+rules: # not sure if I should combine lower/upper div into one concentration
+
+
+    cnr_environmental_sciences_major:
+        description: "Environemtnal Sciences Major"
+        rule: AND
+        args:
+            - rule: university_all
+            - rule: cnr_breadth_environmental_sciences_requirements
+            - rule: cnr_upperdiv_environmental_sciences_requirements
+            - rule: cnr_concentration_environmental_sciences_requirement
+            - rule: cnr_units_upperdiv
+            - rule: units_upperdiv
+            - rule: units_total
+
+
+
+    cnr_breadth_environmental_sciences_requirements:
+        description: "Environmental Sciences Breadth Requirement"
+        rule: AND
+        args:
+            - rule: enviro_econ
+            - rule: cnr_es_breadth
+
+    cnr_es_breadth:
+        hidden: true
+        rule: count_courses
+        args:
+            min: 4
+            rule: AND
+            args:
+                - rule: cnr_breadth_arts_history_philosophy
+                - rule: cnr_breadth_social_international
+                - rule: cnr_espm_environmental_science_core
+                - rule: cnr_espm_social_science_core
+
+    cnr_upperdiv_environmental_sciences_requirements:
+        description: "Upper Division Environmental Sciences Requirement"
+        rule: AND
+        args:
+            - rule: cnr_es_stats
+            - course: ESPM.100ES
+            - rule: cnr_es_enviro_modeling
+            - rule: es_senior_research_seminar
+            - rule: cnr_es_human_interactions
+
+    cnr_es_stats:
+        hidden: true
+        rule: OR
+        args:
+            - course: STAT.131A
+            - course: PB HLTH.141
+            - course: PB HLTH.142
+            - course: ESPM.173
+
+    cnr_es_enviro_modeling:
+        hidden: true
+        rule: OR
+        args:
+            - course: ENERES.102
+            - course: ESPM.C104
+            - course: ENVECON.C115
+            - course: ESPM.C183
+            - course: ENVECON.C183
+
+    cnr_es_human_interactions:
+        hidden: true
+        rule: OR
+        args:
+            - course: ESPM.102D
+            - course: ESPM.151
+            - course: ESPM.155
+            - course: ESPM.160AC
+            - course: HISTORY.120AC
+            - course: ESPM.161
+            - course: ESPM.162
+            - course: ESPM.163AC
+            - course: SOCIOL.137AC
+            - course: ESPM.166
+            - course: ESPM.C167
+            - course: PB HLTH.C160
+            - course: ESPM.168
+            - course: ESPM.169
+            - course: ESPM.186
+            - course: ENVECON.C101
+            - course: ECON.C125
+            - course: ECON.131
+            - course: ENVECON.140AC
+            - course: ENVECON.153
+            - course: ENVECON.162
+            - course: ENVECON.180
+            - course: ENERES.170
+            - course: ENERES.175
+            - course: GEOG.130
+            - course: GEOG.138
+            - course: ANTHRO.137
+
+    es_senior_research_seminar:
+        hidden: true
+        rule: AND
+        args:
+            - course: ESPM.175A
+            - course: ESPM.175L
+            - course: ESPM.175B
+            - course: ESPM.175L # take this twice as mentioned
+
+    cnr_concentration_environmental_sciences_requirement:
+        description: "Environmental Sciences Concentrations: Physical, Biological, and Social Science"
+        rule: OR
+        args:
+            - rule: cnr_concentration_environmental_sciences_physical
+            - rule: cnr_concentration_environmental_sciences_biological
+            - rule: cnr_concentration_environmental_sciences_social
+
+
+    cnr_concentration_environmental_sciences_physical:
+        description: "Environmental Sciences Concentration: Physical Science"
+        rule: AND
+        args:
+            - course: MATH.1A
+            - course: MATH.1B
+            - course: CHEM.1A
+            - course: CHEM.1AL
+            - rule: es_bio
+            - course: PHYSICS.7A
+            - course: PHYSICS.7B
+            - rule: cnr_electives_environmental_sciences_physical
+            - rule: cnr_es_physical_outside
+
+    cnr_es_physical_outside:
+        hidden: true
+        rule: OR
+        args:
+            - rule: cnr_electives_environmental_sciences_social
+            - rule: cnr_electives_environmental_sciences_biological
+
+    es_bio11:
+        hidden: true
+        rule: count_courses
+        args:
+            min: 3
+            rule: AND
+            args:
+                - rule: bio11
+                - rule: es_bio_more
+
+    es_bio_more:
+        hidden: true
+        rules: OR
+        args:
+            - course: INTEGBI.153
+            - course: INTEGBI.154
+            - course: ESPM.102A
+            - course: ESPM.111
+            - course: ESPM.113
+            - course: ESPM.114
+            - course: ESPM.115B
+            - course: ESPM.116B
+
+
+    cnr_concentration_environmental_sciences_biological:
+        description: "Environmental Sciences Concentration: Biological Science"
+        rule: AND
+        args:
+            - rule: math_a
+            - rule: math_b
+            - course: CHEM.1A
+            - course: CHEM.1AL
+            - course: CHEM.3A
+            - course: CHEM.3AL
+            - course: BIOLOGY.1A
+            - course: BIOLOGY.1AL
+            - course: BIOLOGY.1B
+            - course: PHYSICS.8A
+            - rule: cnr_electives_environmental_sciences_biological
+            - rule: cnr_es_biological_outside
+
+    cnr_es_biological_outside:
+        hidden: true
+        rule: OR
+        args:
+            - rule: cnr_electives_environmental_sciences_social
+            - rule: cnr_electives_environmental_sciences_physical
+
+    cnr_concentration_environmental_sciences_social:
+        description: "Environmental Sciences Concentration: Social Science"
+        rule: AND
+        args:
+            - rule: math_a
+            - rule: math_b
+            - course: CHEM.1A
+            - course: CHEM.1AL
+            - rule: es_chem_or
+            - rule: es_bio
+            - course: PHYSICS.8A
+            - rule: cnr_electives_environmental_sciences_social
+            - rule: es_social_outside
+
+    es_chem_or:
+        hidden: true
+        rule: OR
+        args:
+            - rule: chem3a
+            - course: CHEM.1B
+
+    es_social_outside:
+        hidden: true
+        rule: OR
+        args:
+            - rule: cnr_electives_environmental_sciences_physical
+            - rule: cnr_electives_environmental_sciences_biological
+
+    cnr_electives_environmental_sciences_biological:
+        description: "Environmental Sciences Biological Science Concentration Electives"
+        rule: same_course
+        args:
+            - OR:
+                - course: CHEM.103
+                - course: CHEM.112A
+                - course: CHEM.112B
+                - course: CHEM.115
+                - course: CIV ENG.101
+                - course: CIV ENG.107
+                - course: CIV ENG.110
+                - course: CIV ENG.114
+                - course: EPS.C100
+                - course: EPS.C120
+                - course: EPS.C129
+                - course: EPS.185
+                - course: ENERES.102
+                - course: ENERES.C130
+                - course: ENVECON.C115
+                - course: ESPM.101A
+                - course: ESPM.102A
+                - rule: espm102B
+                - course: ESPM.C103
+                - course: ESPM.C104
+                - course: ESPM.105A
+                - course: ESPM.106A
+                - course: ESPM.C107
+                - course: ESPM.108A
+                - course: ESPM.109
+                - course: ESPM.110
+                - course: ESPM.111
+                - course: ESPM.112
+                - course: ESPM.113
+                - course: ESPM.114
+                - course: ESPM.115B
+                - course: ESPM.116A
+                - course: ESPM.116B
+                - course: ESPM.116C
+                - course: ESPM.117
+                - course: ESPM.118
+                - course: ESPM.119
+                - course: ESPM.120
+                - course: ESPM.121
+                - course: ESPM.C129
+                - course: ESPM.131
+                - course: ESPM.134
+                - course: ESPM.135
+                - course: ESPM.C138
+                - course: ESPM.140
+                - course: ESPM.144
+                - course: ESPM.145
+                - rule: espm146
+                - course: ESPM.147
+                - course: ESPM.C148
+                - rule: espm149
+                - course: ESPM.162
+                - course: ESPM.172
+                - course: ESPM.181A
+                - course: ESPM.184
+                - course: ESPM.185
+                - course: ESPM.186
+                - course: ESPM.187
+                - course: ESPM.188
+                - course: GEOG.148
+                - course: GEOG.C188
+                - course: INTEGBI.C100
+                - rule: ibc101
+                - rule: ib102
+                - rule: ib103
+                - rule: ib104
+                - course: INTEGBI.106
+                - course: INTEGBI.106A
+                - course: INTEGBI.106L
+                - rule: ib117
+                - course: INTEGBI.C144
+                - course: INTEGBI.146
+                - course: INTEGBI.C149L
+                - rule: ib151
+                - course: INTEGBI.152
+                - rule: ib153
+                - rule: ib154
+                - course: INTEGBI.C156
+                - course: INTEGBI.157L
+                - course: INTEGBI.C158
+                - course: INTEGBI.160
+                - course: INTEGBI.162
+                - course: INTEGBI.C163
+                - rule: ib168
+                - rule: ib173
+                - rule: ib174
+                - rule: ib175
+                - course: LD ARCH.110
+                - course: LD ARCHC.188
+                - course: MCELLBI.C102
+                - rule: mcbc112
+                - course: MCELLBI.C114
+                - course: MCELLBI.C116
+                - course: NUSCTX.110
+                - course: NUSCTX.113
+                - course: NUSCTX.C119
+                - rule: pmbc102
+                - rule: pmb110
+                - rule: pmbc112
+                - course: PLANTBI.C114
+                - course: PLANTBI.C116
+                - rule: pmb120
+                - course: PLANTBI.180
+                - course: PSYCH.C115B
+                - course: PB HLTH.140
+                - course: PB HLTH.150A
+                - course: PB HLTH.150B
+                - rule: pbhealth162a
+                - course: PB HLTH.C170B
+
+    cnr_electives_environmental_sciences_social:
+        description: "Environmental Sciences Social Science Concentration Electives"
+        rule: same_course
+        args:
+            - OR:
+                - course: CIV ENG.107
+                - course: DEMOG.C126
+                - course: DEMOG.C175
+                - course: EPS.C120
+                - course: EPS.170AC
+                - course: ECON.C102
+                - course: ECON.C125
+                - course: ECON.C171
+                - course: ECON.C175
+                - course: ENERES.100
+                - course: ENERES.102
+                - course: ENERES.120
+                - course: ENERES.C130
+                - course: ENERES.151
+                - course: ENERES.170
+                - course: ENERES.C180
+                - course: ENGIN.124
+                - course: ENVECON.100
+                - course: ENVECON.C101
+                - course: ENVECON.C102
+                - course: ENVECON.C115
+                - course: ENVECON.131
+                - course: ENVECON.141
+                - course: ENVECON.C151
+                - course: ENVECON.153
+                - course: ENVECON.161
+                - course: ENVECON.162
+                - course: ESPM.102D
+                - course: ESPM.102C
+                - course: ESPM.C104
+                - course: ESPM.117
+                - course: ESPM.155
+                - course: ESPM.160AC
+                - course: ESPM.161
+                - course: ESPM.162
+                - course: ESPM.163AC
+                - course: ESPM.165
+                - course: ESPM.166
+                - course: ESPM.167
+                - course: ESPM.168
+                - course: ESPM.169
+                - course: ESPM.181B
+                - course: ESPM.183
+                - course: GEOG.130
+                - course: GEOG.C188
+                - course: HISTORY.120AC
+                - rule: ib117
+                - course: LD ARCH.110
+                - course: LD ARCHC.188
+                - course: PB HLTH.140
+                - course: SOCIOL.C126
+                - course: SOCIOL.128AC
+
+    cnr_electives_environmental_sciences_physical:
+        description: "Environmental Sciences Physical Science Concentration Electives"
+        rule: same_course
+        args:
+            - OR:
+                - course: ARCH.140
+                - course: ARCH.149
+                - course: CHM ENG.140
+                - course: CHM ENG.141
+                - course: CHM ENG.142
+                - course: CHM ENG.150A
+                - course: CHM ENG.150B
+                - course: CHEM.103
+                - course: CHEM.104A
+                - course: CHEM.104B
+                - course: CHEM.105
+                - course: CHEM.112A
+                - course: CHEM.112B
+                - course: CHEM.120A
+                - course: CHEM.120B
+                - course: CHEM.125
+                - course: CHEM.130B
+                - course: CHEM.C182
+                - course: CIV ENG.100
+                - course: CIV ENG.101
+                - course: CIV ENG.103
+                - course: CIV ENG.C106
+                - course: CIV ENG.107
+                - course: CIV ENG.108
+                - course: CIV ENG.109
+                - course: CIV ENG.110
+                - rule: civeng115
+                - course: CIV ENG.C116
+                - rule: civeng117
+                - course: CIV ENG.171
+                - course: CIV ENG.173
+                - course: EPS.C100
+                - course: EPS.100A
+                - course: EPS.100B
+                - course: EPS.101
+                - course: EPS.105
+                - course: EPS.117
+                - course: EPS.119
+                - course: EPS.C120
+                - course: EPS.C129
+                - course: EPS.131
+                - course: EPS.C141
+                - course: EPS.C146
+                - course: EPS.170AC
+                - course: EPS.C180
+                - course: EPS.C181
+                - course: EPS.C182
+                - course: EPS.185
+                - course: ENERES.100
+                - course: ENERES.102
+                - course: ENERES.120
+                - course: ENERES.C130
+                - course: ENERES.151
+                - course: ENGIN.115
+                - course: ESPM.102A
+                - rule: espm102B
+                - course: ESPM.120
+                - course: ESPM.121
+                - course: ESPM.122
+                - course: ESPM.126
+                - course: ESPM.C128
+                - course: ESPM.C130
+                - course: ESPM.131
+                - course: ESPM.C148
+                - course: ESPM.172
+                - course: ESPM.C180
+                - course: ESPM.181A
+                - course: GEOG.C136
+                - course: GEOG.C139
+                - course: GEOG.140A
+                - course: GEOG.140B
+                - course: GEOG.C141
+                - course: GEOG.143
+                - course: GEOG.144
+                - course: GEOG.C145
+                - course: GEOG.180
+                - course: GEOG.183
+                - course: GEOG.C188
+                - course: INTEGBI.C100
+                - course: INTEGBI.106A
+                - course: LD ARCH.120
+                - course: LD ARCHC.188
+                - course: LNS.170AC
+                - course: MATH.121A
+                - course: MATH.121B
+                - course: MEC ENG.106
+                - course: PB HLTH.171
+
+
+
+
+

@@ -1,0 +1,229 @@
+rules:
+
+    coe_environmental_engineering_science_major:
+        rule: AND
+        args:
+            - OR:
+                - AND:
+                    - course: CHEM.1A
+                    - course: CHEM.1AL
+                - course: CHEM.4A
+            - course: ENGIN.7
+            - AND: # science electives
+                - numcourses:
+                    min: 3
+                    courses:
+                        - AND:
+                            - course: BIOLOGY.1A
+                            - course: BIOLOGY.1AL
+                        - course: CHEM.1B
+                        - AND:
+                            - course: CHEM.3A
+                            - course: CHEM.3AL
+                        - course: CHEM.3B
+                        - course: CHEM.4B
+                        - course: PHYSICS.7C
+                        - course: EPS.50
+            - course: MATH.1A
+            - course: MATH.1B
+            - course: MATH.53
+            - course: MATH.54
+            - course: PHYSICS.7A
+            - course: PHYSICS.7B
+            - course: PHYSICS.7C
+            - course: BIOLOGY.1B
+            - OR:
+                - course: CIV ENG.C30
+                - course: MEC ENG.C85
+            - course: CIV ENG.111
+            - OR: # advanced mathematics
+                - AND:
+                    - course: MATH.121A
+                    - course: MATH.121B
+                - AND:
+                    - course: MATH.110
+                    - course: MATH.128A
+                - AND:
+                    - course: STAT.134
+                    - course: STAT.135
+                - AND:
+                    - course: ENGIN.117
+                    - course: ENGIN.177
+            - OR: # environmental fluid mechanics
+                - course: CIV ENG.101
+                - course: CIV ENG.103
+                - course: CIV ENG.173
+                - course: EPS.105
+                - course: EPS.C129
+                - course: ESPM.C129
+                - course: ESPM.181
+            - OR: # fluid mechanics
+                - course: CIV ENG.100
+                - course: ENGIN.150A
+                - course: MEC ENG.106
+            - OR: # mechanics
+                - course: CIV ENG.130N
+                - course: MEC ENG.104
+            - OR: #thermodynamics
+                - course: CHM ENG.141
+                - course: ENGIN.115
+                - course: MEC ENG.40
+            - OR: # cluster courses
+                - AND: # biology
+                    - units:
+                        min: 12
+                        courses:
+                            - AND:
+                                - course: MCELLBI.C112
+                                - course: MCELLBI.C112L 
+                            - course: MCELLBI.113
+                            - course: MCELLBI.C114
+                            - course: MCELLBI.C116
+                            - course: MCELLBI.130A
+                            - course: MCELLBI.133L
+                            - course: PLANTBI.120
+                            - course: PLANTBI.120L
+                            - course: PLANTBI.150
+                            - course: PLANTBI.150L
+                            - course: PLANTBI.180
+                - AND: # ecology
+                    - units:
+                        min: 12
+                        courses:
+                            - course: ESPM.C103
+                            - course: ESPM.C104
+                            - course: INTEGBI.149
+                            - course: INTEGBI.151
+                            - course: INTEGBI.151L
+                            - course: INTEGBI.152
+                            - course: INTEGBI.153
+                            - course: INTEGBI.153LF
+                            - course: INTEGBI.154
+                            - course: INTEGBI.154L
+                            - course: INTEGBI.162
+                            - course: INTEGBI.166
+                - AND: # energy
+                    - units:
+                        min: 12
+                        courses:
+                            - course: ARCH.140
+                            - course: CIV ENG.C106
+                            - course: CIV ENG.107
+                            - course: CIV ENG.108
+                            - course: EL ENG.134
+                            - course: EL ENG.137A
+                            - course: EL ENG.137B
+                            - course: ENE,RES.280
+                            - course: MAT SCI.136
+                            - course: MEC ENG.109
+                            - course: MEC ENG.140
+                            - course: MEC ENG.146
+                            - course: NUC ENG.161
+                - AND: # geoengineering
+                    - units:
+                        min: 12
+                        courses:
+                            - course: CIV ENG.171
+                            - course: CIV ENG.172
+                            - course: CIV ENG.173
+                            - course: CIV ENG.175
+                            - course: CIV ENG.176
+                            - course: CIV ENG.C178                            - course: CIV ENG.17
+                            - course: CIV ENG.281
+                - AND: # policy tools
+                    - units:
+                        min: 12
+                        courses:
+                            - course: ECON.C103
+                            - course: ECON.104
+                            - course: ECON.126
+                            - course: ECON.141
+                            - course: ECON.C142
+                            - course: POL SCI.C131A
+                            - course: SOCIOL.105
+                            - course: SOCIOL.106
+                - AND: # process engineering
+                    - units:
+                        min: 12
+                        courses:
+                            - course: CHM ENG.140
+                            - course: CHM ENG.142
+                            - course: CHM ENG.150B
+                            - course: CHM ENG.154
+                            - course: CHM ENG.170A
+                            - course: CHM ENG.170B
+                            - course: CHM ENG.170L
+                            - course: CHM ENG.171
+                - AND: # resources engineering
+                    - units:
+                        min: 12
+                        courses:
+                            - course: CIV ENG.101
+                            - course: CIV ENG.103
+                            - course: CIV ENG.107
+                            - course: CIV ENG.113
+                            - course: CIV ENG.114
+                            - course: CIV ENG.115
+                            - course: EPS.C180
+                            - course: ESPM.128
+                            - course: MEC ENG.140
+                            - course: NUC ENG.124
+            - OR: # advanced science sequence
+                - AND: # organic chemistry
+                    - course: CHEM.112A
+                    - course: CHEM.112B
+                    - course: CHEM.3A
+                    - course: CHEM.3B
+                - AND: # chemistry
+                    - course: CHEM.120A
+                    - course: CHEM.120B
+                    - course: !25
+                - AND: # EPS
+                    - units:
+                        min: 8
+                        courses:
+                            - course: EPS.101
+                            - course: EPS.105
+                            - course: EPS.108
+                            - course: EPS.116
+                            - course: EPS.117
+                            - course: EPS.124
+                            - course: EPS.C146
+                - AND: # ePS
+                    - units:
+                        min: 8
+                        courses:
+                            - course: EPS.C180
+                            - course: EPS.181
+                            - course: EPS.182
+                            - course: GEOG.142
+                - AND: # ESPM
+                    - units: 
+                        min: 8
+                        courses:
+                            - course: ESPM.102A
+                            - course: ESPM.C103
+                            - course: ESPM.111
+                            - course: ESPM.112
+                            - course: ESPM.120
+                            - course: ESPM.126
+                            - course: ESPM.C128
+                            - course: ESPM.131
+                - AND: # MCB
+                    - course: MCB.102
+                    - course: MCB.112
+                    - course: MCB.112L
+            - AND: # HSS
+                - university_rc_A
+                - university_rc_B
+                - university_AC
+                - numcourses:
+                    min: 4
+                    courses:
+                        - coe_humanities_and_social_sciences
+                            - numcourses:
+                                min: 2
+                                rule: upper_division
+                            - numcorses:
+                                min: 2
+                                rule: same_department # 1 up, 1 low

@@ -1,0 +1,38 @@
+rules:
+
+    ls_south_and_southeast_asian_civilizations_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # lower division
+            - numcourses:
+                min: 2
+                courses:
+                    - course: S ASIAN.1A
+                    - course: S ASIAN.1B
+                    - course: SEASIAN.10A
+                    - course: SEASIAN.10B
+        - AND: # electives, concern south and southeast asian
+            - numcourses:
+                min: 8
+                courses:
+                    - course: ASAMST.125
+                    - course: ASAMST.126
+                    - course: GEOG.163
+                    - course: HISTORY.111A
+                    - course: HISTORY.C111B
+                    - course: HISTORY.111B
+                    - course: HISTORY.114B
+                    - course: HISTART.137
+                    - course: RELIGST.C162
+                    - course: IND ENG.190K
+                    - course: MUSIC.133C
+                    - course: POL SCI.145A
+                    - course: POL SCI.145B
+                    - numcourses: # upper div
+                        min: 4
+                        courses:
+                            - dept: S,SEASN
+                            - dept: SEASIAN
+                            - dept: S ASIAN

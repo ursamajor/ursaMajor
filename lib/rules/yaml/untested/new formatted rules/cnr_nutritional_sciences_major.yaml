@@ -1,0 +1,186 @@
+rules: # same major, tracks COMPLETELY different
+
+
+    cnr_nutritional_science_major:
+        description: "Nutritional Science Major"
+        rule: AND
+        args:
+            - rule: university_all
+            - rule: cnr_lowerdiv_nutritional_science_requirements
+            - rule: cnr_upperdiv_nutritional_science_requirements
+            - rule: cnr_tracks_nutritional_science
+            - rule: cnr_units_upperdiv
+            - rule: units_upperdiv
+            - rule: units_total
+
+
+    cnr_tracks_nutritional_science:
+        description: "Nutritional Science Tracks: Dietics and Physiology & Metabolism"
+        rule: OR
+        args:
+            - rule: nutri_sci_dietics
+            - rule: nutri_sci_physiology
+
+    nutri_sci_dietics:
+        hidden: true
+        rule: AND
+        args:
+            - rule: cnr_lowerdiv_nutritional_science_dietics_requirements
+            - rule: cnr_upperdiv_nutritional_science_dietics_requirements
+
+    nutri_sci_physiology:
+            - rule: cnr_lowerdiv_nutritional_science_physiology_requirements
+            - rule: cnr_upperdiv_nutritional_science_physiology_requirements
+
+
+    cnr_lowerdiv_nutritional_science_requirements:
+        description: "Lower Division Nutritional Science Requirements"
+        rule: AND
+            - course: CHEM.1A
+            - course: CHEM.1AL
+            - course: CHEM.3A
+            - course: CHEM.3AL
+            - course: CHEM.3B
+            - course: CHEM.3BL
+            - course: NUSCTX.10
+            - course: MCELLBI.32
+            - rule: nutri_sci_32
+            - course: BIOLOGY.1A
+            - course: BIOLOGY.1AL
+
+    nutri_sci_32:
+        hidden: true
+        rule: OR
+        args:
+            - course: MCELLBI.32L
+            - course: INTEGBI.132
+            - course: INTEGBI.132L
+
+    cnr_lowerdiv_nutritional_science_dietics_requirements:
+        description: "Lower Division Nutritional Science Dietics Requirements"
+        rule: AND
+        args:
+            - rule: mtx_math
+            - rule: cnr_dietics_hss
+
+    cnr_dietics_hss:
+        hidden: true
+        rule: units
+        args:
+            min: 20
+            rule: AND
+            args:
+                - rule: econ_lowerdiv
+                - rule: university_rc_a
+                - rule: university_rc_b
+                - rule: dietics_anthro_psych_soc
+                - rule: cnr_breadth_arts_history_philosophy
+                - rule: cnr_breadth_social_international
+                - rule: university_ac
+
+    dietics_anthro_psych_soc:
+        hidden: true
+        rule: OR
+        args:
+            - course: ANTHRO.3
+            - course: ANTHRO.3AC # maybe
+            - course: PSYCH.1
+            - course: PSYCH.2
+            - course: SOCIOL.3
+            - course: SOCIOL.3AC # maybe
+
+
+    cnr_lowerdiv_nutritional_science_physiology_requirements:
+        description: "Lower Division Nutritional Science Physiology & Metabolism Requirements"
+        rule: AND
+        args:
+            - rule: physiology_hss
+            - rule: mtx_phys_math
+
+    physiology_hss:
+        hidden: true
+        rule: units
+        args:
+            min: 14
+            rule: OR
+            args:
+                - rule: university_ac
+                - rule: university_for_lang
+                - rule: cnr_breadth_arts_history_philosophy
+                - rule: cnr_breadth_social_international
+
+    cnr_upperdiv_nutritional_science_requirements:
+        description: "Upper Division Nutritional Science Requirements"
+        rule: AND
+        args:
+            - course: MCELLBI.102
+            - course: NUSCTX.103
+            - course: NUSCTX.160
+
+
+    cnr_upperdiv_nutritional_science_dietics_requirements:
+        description: "Upper Division Nutritional Science Dietics Requirements"
+        rule: AND
+        args:
+            - course: NUSCTX.104
+            - course: NUSCTX.108A
+            - course: NUSCTX.108B
+            - course: NUSCTX.135
+            - course: NUSCTX.145
+            - course: NUSCTX.161A
+            - course: NUSCTX.161B
+            - course: NUSCTX.16
+            - course: NUSCTX.192
+            - course: PB HLTH.162A
+            - course: UGBA.102A
+            - course: UGBA.105
+
+    cnr_upperdiv_nutritional_science_physiology_requirements:
+        description: "Upper Division Nutritional Science Physiology & Metabolism Requirements"
+        rule: AND
+        args:
+            - course: NUSCTX.170
+            - course: NUSCTX.190
+            - rule: nutri_sci_phys_other
+
+    nutri_sci_phys_other:
+        hidden: true
+        rule: units
+        args:
+            min: 20
+            rule: OR
+            args:
+                - course: NUSCTX.104
+                - course: NUSCTX.108A
+                - course: NUSCTX.161A
+                - course: NUSCTX.161B
+                - course: NUSCTX.166
+                - course: NUSCTX.110
+                - course: NUSCTX.C114
+                - course: NUSCTX.115
+                - course: NUSCTX.193
+                - course: NUSCTX.H196
+                - course: NUSCTX.199
+                - dept: INTEGBI
+                - dept: MCELLBI
+                - dept: PLANTBI
+                - dept: CHEM
+                - course: PB HLTH.170B
+                - course: UGIS.192C
+                - rule: pmbc112_pbhlthc162a
+
+    pmbc112_pbhlthc162a:
+        hidden: true
+        rule: OR
+        args:
+            - course: PLANTBI.C112
+            - course: PB HLTH.C162A
+
+# of these courses, max of 10 units
+#                    - course: NUSCTX.104
+#                    - course: NUSCTX.108A
+#                    - course: NUSCTX.161A
+#                    - course: NUSCTX.161B
+#                    - course: NUSCTX.166
+
+

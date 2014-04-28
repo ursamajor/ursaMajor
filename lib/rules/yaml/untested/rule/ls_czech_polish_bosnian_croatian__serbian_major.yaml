@@ -1,0 +1,61 @@
+rules:
+
+    ls_czech_polish_bosnian_croatian_serbian_language_and_literature_major: # as of spring 2014
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # lower division
+            - course: SLAVIC.1
+            - course: SLAVIC.2
+            - numcourses: # literature and culture
+                min: 2
+                courses:
+                    - course: SLAVIC.36
+                    - course: SLAVIC.39
+                    - course: SLAVIC.45
+                    - course: SLAVIC.46
+                    - course: SLAVIC.50
+            - OR: # target language
+                - AND: # polish
+                    - course: SLAVIC.25A
+                    - course: SLAVIC.25B
+                - AND: # czech
+                    - course: SLAVIC.26A
+                    - course: SLAVIC.26B
+                - AND: # bosnian, croatian, serbian
+                    - course: SLAVIC.27A
+                    - course: SLAVIC.27B
+        - AND: # upper division
+            - course: SLAVIC.100
+            - OR: # intermediate target language
+                - AND: # polish
+                    - course: SLAVIC.115A
+                    - course: SLAVIC.115B
+                - AND: # czech
+                    - course: SLAVIC.116A
+                    - course: SLAVIC.116B
+                - AND: # bosnian, croatian, serbian
+                    - course: SLAVIC.117A
+                    - course: SLAVIC.117B
+            - OR: # survey course in relevant literature
+                - course: SLAVIC.150
+                - course: SLAVIC.160
+                - course: SLAVIC.170
+            - OR: # literature
+                - AND:
+                    - course: SLAVIC.151
+                    - course: SLAVIC.152
+                - AND:
+                    - course: SLAVIC.161
+                    - course: SLAVIC.162
+                - AND:
+                    - course: SLAVIC.171
+                    - course: SLAVIC.172
+            - AND: # russian or european literature and history
+                - numcourses:
+                    min: 3
+                    courses:
+
+
+

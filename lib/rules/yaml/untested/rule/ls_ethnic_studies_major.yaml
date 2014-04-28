@@ -1,0 +1,38 @@
+rules:
+
+    ls_ethnic_studies_major: # conflicting reqs
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - ls_ethnic_studies_core
+        - AND: # upper division
+            - course: ETH STD.190
+            - course: ETH STD.197
+            - numcourses: # upper level course in ethnic studies
+                min: 3
+                courses:
+                    - course: ETH STD.100
+                    - course: ETH STD.103
+                    - course: ETH STD.122AC
+                    - course: ETH STD.C126
+                    - course: ETH STD.130
+                    - course: ETH STD.135
+                    - course: ETH STD.136
+                    - course: ETH STD.141
+                    - course: ETH STD.N144
+                    - course: ETH STD.147
+                    - course: ETH STD.150
+                    - course: ETH STD.159AC
+                    - course: ETH STD.C170
+                    - course: ETH STD.C173
+                    - course: ETH STD.180
+                    - course: ETH STD.190
+            - numcourses: # upper level elective courses in any ethnic studies program
+                min: 2
+                courses:
+                    - dept: ASAMST
+                    - dept: CHICANO
+                    - dept: NATAMST
+                    - dept: AFRICAM
+                    - dept: ETH STD

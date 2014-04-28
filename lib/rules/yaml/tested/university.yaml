@@ -1,0 +1,29 @@
+rules:
+
+    university_ac:
+        description: "American Cultures"
+        rule: course_regex
+        args: ac$
+
+    university_rc_a:
+        description: "R&C A"
+        rule: course_regex
+        args: R\dA$
+
+    university_rc_b:
+        description: "R&C B"
+        rule: course_regex
+        args: R\dB$
+
+    lowerdiv:
+        description: "Lower Division"
+        rule: course_number
+        args:
+            min: 0
+            max: 99
+
+    upperdiv:
+        description: "Upper Division"
+        rule: course_number
+        args:
+            min: 100

@@ -1,0 +1,153 @@
+rules:
+
+    ls_psychology_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # lower division
+            - course: PSYCH.1 # can ap
+            - OR: # evolution
+                - course: MCELLBI.41
+                - course: MCELLBI.41X
+                - course: ANTHRO.1
+                - course: INTEGBI.35AC
+            - numcourses: # biological science
+                min: 2 # ap can satisfy only one
+                courses:
+                    - course: MCELLBI.31
+                    - course: MCELLBI.32
+                    - course: MCELLBI.50
+                    - course: MCELLBI.61
+                    - course: MCELLBI.63
+                    - course: MCELLBI.64
+                    - course: BIOLOGY.1A
+                    - course: BIOLOGY.1B
+                    - course: BIOLOGY.11
+                    - course: INTEGBI.31
+                    - course: PSYCH.C19
+                    - course: MCELLBI.C62
+            - AND: # social science
+                - numcourses:
+                    min: 2
+                    courses: # must be from two different depts
+                        - OR:
+                            - course: ANTHRO.3
+                            - course: ANTHRO.3AC
+                        - OR:
+                            - course: SOCIOL.3
+                            - course: SOCIOL.3AC
+                        - course: LINGUIS.5
+                        - OR:
+                            - course: PHILOS.3
+                            - course: PHILOS.4
+                            - course: PHILOS.5
+                            - course: PHILOS.12A
+                            - course: PHILOS.25B
+                        - OR: # ap gov can satisfy, other can't be in polsci
+                            - course: POL SCI.1
+                            - course: POL SCI.2
+                            - course: POL SCI.4
+            - OR: # quantitative
+                - course: STAT.2
+                - course: STAT.20
+                - course: STAT.21
+                - course: MATH.10A
+                - course: MATH.10B
+                - course: MATH.1A
+                - course: MATH.1B
+                - course: MATH.54
+                - course: MATH.55
+        - AND: # upper division, beginning fall 2013 & prior have diff reqs
+            - course: PSYCH.101
+            - AND: # tier II
+                - numcourses:
+                    min: 5
+                    courses:
+                        - OR: # biological
+                            - course: PSYCH.110
+                            - course: PSYCH.114
+                            - course: PSYCH.125
+                            - course: PSYCH.C127
+                        - OR: # cognitive & development
+                            - course: PSYCH.C120
+                            - course: PSYCH.140
+                        - OR: # social/personality
+                            - course: PSYCH.150
+                            - course: PSYCH.156
+                            - course: PSYCH.160
+                            - course: PSYCH.166AC
+                            - course: PSYCH.180
+                        - OR: # clinical
+                            - course: PSYCH.130
+                            - course: PSYCH.131
+            - AND: # tier iii
+                - numcourses:
+                    min: 3
+                    courses:
+                        - course: PSYCH.107
+                        - course: PSYCH.N107
+                        - course: PSYCH.109
+                        - course: PSYCH.110
+                        - course: PSYCH.N110
+                        - course: PSYCH.113
+                        - course: INTEGBI.C143A
+                        - course: PSYCH.114
+                        - course: PSYCH.C116
+                        - course: INTEGBI.C143B
+                        - course: PSYCH.117
+                        - course: PSYCH.119
+                        - course: PSYCH.C120
+                        - course: COG SCI.C100
+                        - course: PSYCH.121
+                        - course: PSYCH.122
+                        - course: PSYCH.C123
+                        - course: COG SCI.C131
+                        - course: PSYCH.C124
+                        - course: COG SCI.C124
+                        - course: PSYCH.125
+                        - course: PSYCH.C126
+                        - course: COG SCI.C126
+                        - course: PSYCH.C127
+                        - course: COG SCI.C127
+                        - course: PSYCH.C129
+                        - course: COG SCI.C102
+                        - course: PSYCH.130
+                        - course: PSYCH.N130
+                        - course: PSYCH.131
+                        - course: PSYCH.133
+                        - course: PSYCH.N133
+                        - course: PSYCH.136
+                        - course: PSYCH.136X
+                        - course: PSYCH.140
+                        - course: PSYCH.N140
+                        - course: PSYCH.141
+                        - course: PSYCH.C143
+                        - course: LINGUIS.C146
+                        - course: PSYCH.145
+                        - course: PSYCH.146
+                        - course: PSYCH.147
+                        - course: PSYCH.147X
+                        - course: PSYCH.150
+                        - course: PSYCH.N150
+                        - course: PSYCH.156
+                        - course: PSYCH.160
+                        - course: PSYCH.N160
+                        - course: PSYCH.162
+                        - course: PSYCH.C162
+                        - course: LNS.C160V
+                        - course: PSYCH.N162
+                        - course: PSYCH.164
+                        - course: PSYCH.165
+                        - course: PSYCH.166AC
+                        - course: PSYCH.167AC
+                        - course: PSYCH.180
+                        - course: PSYCH.N180
+                        - course: PSYCH.192
+                        - OR:
+                            - course: PSYCH.128
+                            - course: PSYCH.139
+                            - course: PSYCH.148
+                            - course: PSYCH.168
+
+

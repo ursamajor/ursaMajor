@@ -1,0 +1,163 @@
+rules:
+
+    university_all:
+        description: "All University Requirements"
+        rule: AND
+        args:
+            - university_ac
+            - university_rc_A
+            - university_rc_B
+            - university_american_history
+            - university_american_institutions
+
+    units_total:
+        description: "120 Total Units to Graduate"
+        rule: units
+        args:
+            - numunits: 120
+
+    units_upperdiv:
+        description: "36 Upper Division Units"
+        rule: units
+        args:
+            - numunits: 36
+                - OR:
+                    - rule: upperdiv
+
+
+    university_ac:
+        description: "American Cultures"
+        rule: OR
+        args: 
+            - course_regex: ac$
+            - OR: #the ones that don't just end in AC, also xlisted w/ ones don't end in AC
+                - course: AFRICAM.C133A # xlisted w/ Education c181
+                - course: AFRICAM.142B
+                - course: AFRICAM.158A
+                - course: AFRICAM.158B
+                - course: AMERSTD.139AC # xlisted w/ History C139C
+                - course: AMERSTD.C174 # xlisted w/ English C143V, Visual C185A, UGIS C135
+                - course: ASAMST.190AC
+                - course: AMERSTD.C178B # xlisted w/ Architecture C174B
+                - course: ARCH.C174B # xlisted w/ AMERSTD C178B
+                - course: VIS STD.C185A # xlisted w/ UGIS C135, English C143V, AMERSTD C174
+                - course: HISTART.192G
+                - course: DEMOG.145AC #xlisted w/ History C139B
+                - course: EDU.C181 # xlisted w/ AFRICAM.C133A
+                - course: ENG.C143V # xlisted w/ AMERSTD C174, Visual C185A, UGIS C135
+                - course: ESPM.102D
+                - course: HISTORY.7A
+                - course: HISTORY.7B
+                - course: HISTORY.124A
+                - course: HISTORY.124B
+                - course: HISTORY.126A
+                - course: HISTORY.126B
+                - course: HISTORY.131B
+                - course: HISTORY.134A
+                - course: HISTORY.134B
+                - course: HISTORY.139A
+                - course: HISTORY.C139B # xlisted w/ DEM 145AC
+                - course: HISTORY.C139C # x listed w/ AMERSTD 139AC
+                - course: PB HLTH.150E
+                - course: UGIS C135 # x listed w/ Visual C185A, Eng C143V, AMERSTD C174
+
+    university_american_history:
+        description: "American History"
+        rule: same_course
+        args:
+            - OR:
+                - course: HISTORY.7A
+                - course: HISTORY.7B
+                - course: HISTORY.130B
+                - course: HISTORY.131A
+                - course: HISTORY.131B
+                - course: HISTORY.138
+
+    university_american_institutions:
+        description: "American Institutions"
+        rule: same_course
+        args:
+            - OR:
+                - course: POL SCI.1
+                - course: POL SCI.108A
+
+    university_rc_A: 
+        description: "Reading and Composition Part A Requirement"
+        rule: course_regex
+        args: R/dA$
+            - OR:
+                - course: COLWRIT.R1A
+                - course: CLASSIC.R44
+                - course: LNS.R44
+
+    university_rc_B:
+        description: "Reading and Composition Part B Requirement"
+        rule: course_regex
+        args: R/dB$
+            - OR:
+                - course: CLASSIC.R44
+                - course: LNS.R44
+
+    university_for_lang:
+        description: "Foreign Language Requirement" # can waive
+        rule: same_course
+        args: # 2nd semester language, something to ask about, not positive
+            - OR:
+                - course: AFRICAM.7B
+                - course: AFRICAM.11B
+                - course: AFRICAM.13B
+                - course: AFRICAM.30B
+                - course: ARABIC.1B
+                - course: BANGLA.1B
+                - course: CELTIC.10
+                - course: CELTIC.85
+                - course: CELTIC.86
+                - course: CHINESE.1B
+                - course: CHINESE.10X
+                - course: CHINESE.10Y
+                - course: CUNEIF.100B
+                - course: CUNEIF.102B
+                - course: CUNEIF.106B
+                - course: DUTCH.2
+                - course: EGYPT.100B
+                - course: EURAST.1B
+                - course: FILIPN.1B
+                - course: FRENCH.2
+                - course: GERMAN.2
+                - course: GREEK.2
+                - course: HEWBREW.1B
+                - course: HIN-URD.1B
+                - course: HIN-URD.2B
+                - coures: IRANIAN.101A
+                - course: ITALIAN.2
+                - course: JAPAN.1B
+                - course: KHMER.1B
+                - course: KOREAN.1B
+                - course: KOREAN.1BX
+                - course: LATIN.2
+                - course: LINGUIS.1B
+                - course: MALAY.1B
+                - course: PERSIAN.1B
+                - course: PORTUG.12
+                - course: PUNJABI.1B
+                - course: SANSKR.100B
+                - course: SCANDIN.1B
+                - course: SCANDIN.2B
+                - course: SCANDIN.3B
+                - course: SCANDIN.4B
+                - course: SEMITIC.100B
+                - course: SLAVIC.2
+                - course: SLAVIC.25B
+                - course: SLAVIC.26B
+                - course: SLAVIC.27B
+                - course: SLAVIC.28B
+                - course: S,SEASIAN.1B
+                - course: SPANISH.2
+                - course: TAGALG.1B
+                - course: TAMIL.1B
+                - course: TELUGU.1B
+                - course: THAI.1B
+                - course: TIBETAN.1B
+                - course: TURKISH.1B
+                - course: VIETNMS.1B
+                - course: YIDDISH.102

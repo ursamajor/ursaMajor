@@ -1,0 +1,56 @@
+rules:
+
+    ls_classical_languages_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # elementary language courses
+            - OR: # elementary greek
+                - course: GREEK.1
+                - course: GREEK.2
+                - course: GREEK.10
+                - course: GREEK.15
+            - OR: # elementary latin
+                - course: LATIN.1
+                - course: LATIN.2
+                - course: LATIN.10
+                - course: LATIN.15
+            - OR: # intermediate language course
+                - course: GREEK.40
+                - course: LATIN.40
+            - AND: # basic reading courses
+                - course: GREEK.100
+                - course: GREEK.101
+                - course: GREEK.102
+                - course: LATIN.100
+                - course: LATIN.101
+                - course: LATIN.102
+            - AND: # senior reading courses
+                - numcourses:
+                    min: 2
+                    courses:
+                        - course: GREEK.115
+                        - course: GREEK.116
+                        - course: GREEK.117
+                        - course: GREEK.120
+                        - course: GREEK.121
+                        - course: GREEK.122
+                        - course: GREEK.123
+                        - course: LATIN.115
+                        - course: LATIN.116
+                        - course: LATIN.117
+                        - course: LATIN.118
+                        - course: LATIN.119
+                        - course: LATIN.120
+                        - course: LATIN.121
+                        - course: LATIN.122
+                        - course: LATIN.123
+                        - course: LATIN.140
+                        - course: LATIN.155A
+                        - course: LATIN.155B
+            - AND: 
+                - course: CLASSIC.10A
+                - course: CLASSIC.10B
+
+

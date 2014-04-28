@@ -1,0 +1,78 @@
+rules:
+
+    ls_marine_science_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # lower division
+            - course: EPS.C82
+            - course: EPS.50
+            - OR:
+                - course: MATH.16A
+                - course: MATH.1A
+            - OR:
+                - course: MATH.16B
+                - course: MATH.1B
+            - OR:
+                - AND:
+                    - course: PHYSICS.7A
+                    - course: PHYSICS.7B
+                - AND:
+                    - course: PHYSICS.8A
+                    - course: PHYSICS.8B
+            - course: CHEM.1A
+            - course: BIOLOGY.1B
+        - AND: # upper division
+            - course: EPS.102
+            - course: EPS.150
+            - numcourses:
+                min: 4
+                courses:
+                    - course: EPS.100A
+                    - course: EPS.100B
+                    - course: EPS.103
+                    - course: EPS.203
+                    - course: EPS.109
+                    - course: EPS.115
+                    - course: EPS.C146
+                    - course: INTEGBI.106
+                    - course: INTEGBI.106A
+            - units:
+                min: 8
+                courses:
+                    - course: EPS.C100
+                    - course: EPS.103
+                    - course: EPS.203
+                    - course: EPS.131
+                    - course: EPS.C141
+                    - course: EPS.C146
+                    - course: EPS.241
+                    - AND:
+                        - course: INTEGBI.103
+                        - course: INTEGBI.103L
+                    - course: INTEGBI.106
+                    - course: INTEGBI.106A
+                    - course: INTEGBI.108
+                    - course: INTEGBI.160
+                    - course: INTEGBI.180
+                    - course: INTEGBI.180L
+                    - course: INTEGBI.182
+                    - course: INTEGBI.182L
+                    - course: INTEGBI.152
+                    - course: INTEGBI.158
+                    - course: INTEGBI.230
+                    - course: CIV ENG.102
+                    - course: CIV ENG.105
+                    - course: CIV ENG.113
+                    - AND:
+                        - course: CIV ENG.115
+                        - course: CIV ENG.115L
+                    - course: CIV ENG.201
+                    - course: CIV ENG.205A
+                    - course: CIV ENG.210
+                    - course: CIV ENG.213
+                    - course: CIV ENG.214
+
+
+

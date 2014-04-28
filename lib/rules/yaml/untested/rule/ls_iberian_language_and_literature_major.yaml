@@ -1,0 +1,38 @@
+rules:
+
+    ls_iberian_language_and_literature_major: # option A in spanish&portuguese
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # pre-requisites
+            - course: SPANISH.1
+            - course: SPANISH.2
+            - course: SPANISH.3
+            - course: SPANISH.4
+            - course: SPANISH.25
+        - AND: # grammar and composition
+            - course: SPANISH.102A
+            - course: SPANISH.135W
+        - OR: # language
+            - course: CATALAN.101
+            - AND:
+                - course: PORTUG.101A
+                - course: PORTUG.101B
+        - AND: # iberian literature
+            - OR: # literature of spain
+                - course: SPANISH.107A
+                - course: SPANISH.107B
+            - OR: # literature of portugal or catalonia???
+                - course: PORTUG.107B
+        - AND: # upper div electives; language, literature, linguistics, or culture
+            - numcourses:
+                min: 5
+                courses:
+                    - dept: SPANISH
+                    - dept: PORTUG
+                    - dept: CATALAN
+        - AND: # related...but outside the dept
+            - numcourses:
+                min: 2
+                courses: # ????????

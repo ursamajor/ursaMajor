@@ -1,0 +1,57 @@
+rules:
+
+    ls_ancient_egyptian_near_eastern_art_archeology_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - OR: # emphasis
+            - AND: # ancient egyptian and near eastern art and archeology
+                - AND: # lower division
+                    - course: NE STUD.10
+                    - course: NE STUD.15
+                - AND: # upper div
+                    - numcourses:
+                        min: 8
+                        courses:
+                            - course: NE STUD.108
+                            - course: NE STUD.C120A
+                            - course: NE STUD.C120B
+                            - course: NE STUD.122A
+                            - course: NE STUD.122B
+                            - course: NE STUD.123A
+                            - course: NE STUD.123B
+                            - course: NE STUD.124A
+                            - course: NE STUD.124B
+                            - course: NE STUD.125
+                            - course: NE STUD.126
+                            - course: NE STUD.127
+                            - course: NE STUD.128
+                            - course: NE STUD.C129
+                            - course: NE STUD.190A
+                            - course: NE STUD.190B
+            - AND: # egyptian art and archeology
+                - AND: # lower-div
+                    - course: NE STUD.10
+                    - course: NE STUD.18
+                - AND: # upper div
+                    - course: EGYPTIAN.100A
+                    - course: EGYPTIAN.100B
+                    - course: EGYPTIAN.101A
+                    - course: EGYPTIAN.101B
+                    - course: NE STUD.102A
+                    - course: NE STUD.02B
+                    - numcourses: 
+                        min: 2
+                        courses:
+                            - course: NE STUD.C103
+                            - course: NE STUD.106A
+                            - course: NE STUD.106B
+                            - course: NE STUD.112
+                            - course: NE STUD.124A
+                            - course: NE STUD.124B
+
+
+
+
+

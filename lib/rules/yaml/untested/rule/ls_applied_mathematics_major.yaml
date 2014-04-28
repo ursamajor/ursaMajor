@@ -1,0 +1,25 @@
+rules:
+
+    ls_applied_mathematics_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # lower division
+            - course: MATH.1A
+            - course: MATH.1B
+            - course: MATH.53
+            - course: MATH.54
+            - OR:
+                - course: MATH.55
+                - course: COMPSCI.70 # if CS or EECS double
+        - AND: # upper division
+            - course: MATH.104
+            - course: MATH.110
+            - course: MATH.113
+            - course: MATH.128A
+            - course: MATH.185
+        - AND: # cluster
+            - numcourses:
+                min: 3
+                courses:

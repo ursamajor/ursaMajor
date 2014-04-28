@@ -1,0 +1,49 @@
+rules:
+
+    coe_electrical_engineering_and_computer_science_minor:
+        rule: AND
+        args:
+            - AND: # eecs lower division core
+                - course: EL ENG.20N
+                - course: EL ENG.40
+                - OR:
+                    - course: COMPSCI.61A
+                    - course: ENGIN.7
+                - OR:
+                    - course: COMPSCI.61B
+                    - course: COMPSCI.61C
+            - AND: # upper div
+                - units: # upper div
+                    min: 9
+                    courses:
+                        - course: EL ENG.105
+                        - course: EL ENG.113
+                        - course: EL ENG.117
+                        - course: EL ENG.118
+                        - course: EL ENG.120
+                        - course: EL ENG.121
+                        - course: EL ENG.122
+                        - course: EL ENG.123
+                        - course: EL ENG.C125
+                        - course: EL ENG.126
+                        - course: EL ENG.127
+                        - course: EL ENG.C128
+                        - course: EL ENG.129
+                        - course: EL ENG.130
+                        - course: EL ENG.134
+                        - course: EL ENG.137A
+                        - course: EL ENG.137B
+                        - course: EL ENG.140
+                        - course: EL ENG.141
+                        - course: EL ENG.142
+                        - course: EL ENG.143
+                        - course: EL ENG.144
+                        - course: EL ENG.C145B
+                        - course: EL ENG.C145L
+                        - course: EL ENG.C145M
+                        - course: EL ENG.C145O
+                        - course: EL ENG.147
+                        - course: EL ENG.C149
+                        - course: EL ENG.192
+
+

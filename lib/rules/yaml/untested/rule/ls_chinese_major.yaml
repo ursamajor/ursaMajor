@@ -1,0 +1,60 @@
+rules:
+
+    ls_chinese_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # lower div
+            - course: CHINESE.1A
+            - course: CHINESE.1B
+            - course: CHINESE.10A
+            - course: CHINESE.10B
+            - course: CHINESE.7A
+            - course: CHINESE.7B
+        - AND: # upper div
+            - course: CHINESE.100A
+            - course: CHINESE.100B
+            - course: CHINESE.110A
+            - course: CHINESE.110B
+            - AND: # modern chinese literature
+                - course: CHINESE.153
+                - course: CHINESE.155
+                - course: CHINESE.156
+                - course: CHINESE.157
+                - course: CHINESE.158
+                - course: CHINESE.159
+            - AND: # ea lang upper div
+                - course: EA LANG.101
+                - course: EA LANG.103
+                - course: EA LANG.105
+                - course: EA LANG.106
+                - course: EA LANG.107
+                - course: EA LANG.109
+                - course: EA LANG.110
+                - course: EA LANG.112
+                - course: EA LANG.C120
+                - course: BUDDSTD.C120
+                - course: EA LANG.C126
+                - course: BUDDSTD.C126
+                - course: EA LANG.C128
+                - course: BUDDSTD.C128
+                - course: S,SEASN.C145
+                - course: EA LANG.C130
+                - course: BUDDSTD.C130
+                - course: EA LANG.C132
+                - course: BUDDSTD.C132
+                - course: EA LANG.C135
+                - course: BUDDSTD.C135
+                - course: S,SEASN.C135
+                - course: EA LANG.180
+                - course: EA LANG.181
+            - numcourses: # electives
+                min: 2
+                courses:
+
+
+
+
+
+

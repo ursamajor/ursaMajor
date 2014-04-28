@@ -1,0 +1,82 @@
+rules:
+
+    coe_joint_mechanical_engineering_and_nuclear_engineering_major:
+        rule: AND
+        args:
+            - OR:
+                - AND:
+                    - course: CHEM.1A
+                    - course: CHEM.1AL
+                - course: CHEM.4A
+            - course: MATH.1A
+            - course: MATH.1B
+            - course: MATH.53
+            - course: MATH.54
+            - course: PHYSICS.7A
+            - course: PHYSICS.7B
+            - course: PHYSICS.7C
+            - course: ENGIN.7
+            - course: ENGIN.28
+            - OR:
+                - course: ENGIN.10
+                - course: NUC ENG.92
+            - course: MEC ENG.40
+            - course: MEC ENG.C85
+            - OR:
+                - course: EL ENG.40
+                - course: EL ENG.100
+            - course: MEC ENG.102A
+            - course: MEC ENG.102B
+            - course: MEC ENG.104
+            - course: MEC ENG.106
+            - course: MEC ENG.107
+            - course: MEC ENG.108
+            - course: MEC ENG.109
+            - course: MEC ENG.132
+            - course: NUC ENG.101
+            - course: NUC ENG.104
+            - course: NUC ENG.150
+            - course: NUC ENG.170A
+            - AND: # technical electives
+                - units:
+                    min: 6
+                    courses:
+                        - dept: MEC ENG # upper, minus the others
+                - units:
+                    min: 6
+                    courses:
+                        - dept: NUC ENG # upper, minus the others
+            - AND: # HSS
+            	- university_rc_A
+            	- university_rc_B
+            	- university_AC
+            	- numcourses:
+            		min: 4
+            		courses:
+            			- coe_humanities_and_social_sciences
+                            - numcourses:
+                                min: 2
+                                rule: upper_division
+                            - numcorses:
+                                min: 2
+                                rule: same_department # 1 up, 1 low
+                - OR: # ethics, fulfills one hss
+                    - course: ANTHRO.156B
+                    - course: BIO ENG.100
+                    - course: ENGIN.125
+                    - course: ESPM.161
+                    - course: ESPM.162
+                    - course: GEOG.31
+                    - course: ISF.61
+                    - course: ISF.100E
+                    - course: IAS.105
+                    - course: LEGALST.19AC
+                    - course: LEGALST.100A
+                    - course: MEC ENG.191AC
+                    - course: PHILOS.2
+                    - course: PHILOS.104
+                    - course: PHILOS.107
+                    - course: POL SCI.108A
+                    - course: PB HLTH.116 # can't fullfil hss
+                    - course: SOCIOL.116
+                    - course: SOCIOL.123

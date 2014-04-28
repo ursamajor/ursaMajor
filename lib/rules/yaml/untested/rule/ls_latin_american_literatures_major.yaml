@@ -1,0 +1,35 @@
+rules:
+
+    ls_latin_american_literatures_major: # option A in spanish&portuguese
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # pre-requisites
+            - course: SPANISH.1
+            - course: SPANISH.2
+            - course: SPANISH.3
+            - course: SPANISH.4
+            - course: SPANISH.25
+        - AND: # grammar and composition
+            - course: SPANISH.102A
+            - course: SPANISH.135W
+        - AND: # language
+            - course: PORTUG.101A
+            - course: PORTUG.101B
+        - OR: # lit of spanish america
+            - course: SPANISH.104A
+            - course: SPANISH.104B
+        - OR: # lit of brazil
+            - course: PORTUG.104
+            - course: PORTUG.128
+        - AND: # upper division electives on Spanish/Port lang&ling, or brazilian or spanish-american lit or culture
+            - numcourses:
+                min: 5
+                courses:
+                    - dept: SPANISH
+                    - dept: PORTUG
+        - AND: # related...but outside the dept
+            - numcourses:
+                min: 2
+                courses: # ????????

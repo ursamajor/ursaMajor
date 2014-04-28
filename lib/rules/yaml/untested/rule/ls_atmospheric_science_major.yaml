@@ -1,0 +1,54 @@
+rules:
+
+    ls_atmospheric_science_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # lower division
+            - course: EPS.50
+            - course: MATH.1A
+            - course: MATH.1B
+            - course: MATH.53
+            - course: MATH.54
+            - course: PHYSICS.7A
+            - course: PHYSICS.7B
+            - course: PHYSICS.7C
+            - course: CHEM.1A
+        - AND: # upper division
+            - course: EPS.102
+            - course: EPS.150
+            - course: EPS.C180
+            - course: EPS.181
+            - course: EPS.182
+            - units:
+                min: 9
+                courses:
+                    - course: EPS.103
+                    - course: EPS.104
+                    - course: EPS.109
+                    - course: EPS.115
+                    - course: EPS.117
+                    - course: EPS.C129
+                    - course: EPS.131
+                    - course: EPS.183
+                    - course: EPS.230
+                    - course: CHEM.105
+                    - course: CHEM.120A
+                    - course: CHEM.120B
+                    - course: CHEM.125
+                    - course: GEOG.142
+                    - course: GEOG.143
+                    - course: CIV ENG.100
+                    - course: CIV ENG.107
+                    - course: CIV ENG.108
+                    - course: CIV ENG.200A
+                    - course: CIV ENG.200B
+                    - course: CIV ENG.218B
+                    - course: CIV ENG.218C
+                    # and more! ...
+
+
+
+
+

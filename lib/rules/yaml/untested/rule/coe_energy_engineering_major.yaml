@@ -1,0 +1,96 @@
+rules:
+
+    coe_energy_engineering_major:
+        rule: AND
+        args:
+            - OR:
+                - AND:
+                    - course: CHEM.1A
+                    - course: CHEM.1AL
+                - course: CHEM.4A
+            - OR:
+                - course: ENGIN.7
+                - course: COMPSCI.61A
+            - course: MATH.1A
+            - course: MATH.1B
+            - course: MATH.53
+            - course: MATH.54
+            - course: PHYSICS.7A
+            - course: PHYSICS.7B
+            - course: ENGIN.93
+            - OR:
+                - course: CIV ENG.C30
+                - course: MEC ENG.C85
+            - course: ENE,RES.100
+            - AND: # engineering prep
+                - OR:
+                    - course: EL ENG.40
+                    - course: EL ENG.100
+                    - course: ENGIN.45
+                - OR:
+                    - course: EL ENG.40
+                    - course: EL ENG.100
+                    - course: ENGIN.45
+                    - course: CIV ENG.11
+                    - course: CIV ENG.70
+                    - course: CHEM.1B
+                    - course: CHEM.3A
+                    - course: EL ENG.20N
+                    - course: PHYSICS.7C
+            - OR:
+                - course: MEC ENG.40
+                - course: ENGIN.115
+            - OR:
+                - course: CIV ENG.100
+                - course: MEC ENG.106
+            - OR: # econ
+                - course: CIV ENG.156
+                - course: ENGIN.120
+                - course: ENVECON.147
+                - course: ENVECON.C151
+                - course: ENVECON.153
+                - course: ENVECON.154
+                - course: ENE,RES.C180
+                - course: ESPM.102D
+                - course: POLECON.101
+            - course: EL ENG.137A
+            - OR: # math/stats/analysis
+                - course: CIV ENG.93
+                - course: COMPSCI.70
+                - course: ENGIN.117
+                - course: IND ENG.172
+                - course: MATH.55
+                - course: STAT.134
+            - course: MEC ENG.109
+            - course: MAT SCI.136
+            - course: NUC ENG.161
+            - OR:
+                - course: CIV ENG.108
+                - course: CIV ENG.111
+            - OR:
+                - course: CIV ENG.107
+                - course: GEOG.142
+            - course: ENGIN.194
+            - course: EL ENG.134
+            - OR: # sustainability
+                - course: CIV ENG.111
+                - course: CIV ENG.113N
+                - course: CIV ENG.115
+                - course: CY PLAN.119
+                - course: ENE,RES.101
+            - OR: # technical elective
+                - # ???? choose 1
+            - AND: # HSS
+                - university_rc_A
+                - university_rc_B
+                - university_AC
+                - numcourses:
+                    min: 4
+                    courses:
+                        - coe_humanities_and_social_sciences
+                            - numcourses:
+                                min: 2
+                                rule: upper_division
+                            - numcorses:
+                                min: 2
+                                rule: same_department # 1 up, 1 low

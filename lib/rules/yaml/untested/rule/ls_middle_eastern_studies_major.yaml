@@ -1,0 +1,52 @@
+rules:
+
+    ls_middle_eastern_studies_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # lower division
+            - course: NE STUD.10
+            - course: HISTORY.12
+            - course: M E STU.10
+        - ls_ias_foreign_language_requirement
+        - AND: # upper division core
+            - numcourses:
+                min: 3
+                courses:
+                    - course: ASAMST.190AC
+                    - course: ANTHRO.181
+                    - course: ARCH.175B
+                    - OR:
+                        - course: HISTORY.109A
+                        - course: HISTORY.109B
+                        - course: HISTORY.109C
+                    - OR:
+                        - course: M E STU.109
+                        - course: M E STU.130
+                        - course: M E STU.150
+                    - course: MUSIC.132
+                    - OR:
+                        - course: NE STUD.107
+                        - course: NE STUD.140
+                        - course: NE STUD.142
+                        - course: NE STUD.143A
+                        - course: NE STUD.143B
+                        - course: NE STUD.144
+                    - course: PACS.135 # if middle east
+                    - OR:
+                        - course: POL SCI.142A
+                        - course: POL SCI.149 # if middle east
+                    - course: SOCIOL.189
+                    - course: GWS.111
+        - AND: # concentration
+            - numcourses:
+                min: 4
+                courses:
+        - course: M E STU.102
+        - OR: # senior thesis
+            - course: ME STU.190
+            - course: ME STU.H195
+        - course: ME STU.194
+
+

@@ -1,0 +1,67 @@
+rules:
+
+    ls_german_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # pre-requisites
+            - course: GERMAN.1
+            - course: GERMAN.2
+            - course: GERMAN.3
+            - course: GERMAN.4
+        - AND: # upper division
+            - course: GERMAN.100
+            - course: GERMAN.101
+            - course: GERMAN.103
+            - AND: # german literature (not sure which counts)
+                - numcourses:
+                    min: 3
+                    courses: # ?
+                        - course: GERMAN.110
+                        - course: GERMAN.112
+                        - course: GERMAN.152
+                - OR:
+                    - AND:
+                        - numcourses:
+                            min: 4
+                            courses:
+                                - dept: GERMAN # the ones that didn't apply before
+                    - AND:
+                        - numcourses:
+                            min: 2
+                            courses:
+                                - dept: GERMAN # ones didn't apply before
+                        - numcourses:
+                            min: 2
+                            courses: # outside related to Germany/Europe, i just guessed
+                                - course: ANTHRO.180
+                                - course: ECON.161
+                                - course: ENGLISH.125C
+                                - course: HISTORY.100B
+                                - course: HISTORY.159A
+                                - course: HISTORY.159B
+                                - course: HISTORY.167A
+                                - course: HISTORY.167B
+                                - course: HISTORY.167C
+                                - course: HISTORY.162A
+                                - course: HISTORY.163A
+                                - course: HISTORY.163B
+                                - course: HISTORY.164A
+                                - course: HISTORY.164B
+                                - course: HISTORY.164C
+                                - course: HISTORY.165B
+                                - course: HISTORY.165D
+                                - course: LEGALST.171
+                                - course: MUSIC.128Q
+                                - course: MUSIC.128
+                                - course: PHILOS.189
+                                - course: POL SCI.112D
+                                - course: POL SCI.122A
+                                - course: POL SCI.141C
+                                - course: SLAVIC.50
+                                - course: SLAVIC.158
+                                - course: SOCIOL.180C
+                                - course: SOCIOL.180E
+                                - course: SOCIOL.180I
+                                - course: SOCIOL.180P

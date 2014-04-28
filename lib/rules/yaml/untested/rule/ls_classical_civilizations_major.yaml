@@ -1,0 +1,321 @@
+rules:
+
+    ls_classical_civilizations_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # pre-requisites
+            - numcourses:
+                min: 2
+                courses:
+                    - course: CLASSIC.10A
+                    - course: CLASSIC.10B
+                    - course: CLASSIC.R44
+        - AND: # lower div
+            - numcourses:
+                min: 2
+                courses:
+                    - numcourses:
+                        min: 1
+                            - course: CLASSIC.17A
+                            - course: CLASSIC.17B
+                            - course: CLASSIC.28
+                            - course: CLASSIC.29
+                            - course: CLASSIC.34
+                            - course: CLASSIC.35
+                            - course: CLASSIC.36
+                            - course: CLASSIC.39
+                    - course: LATIN.1
+                    - course: LATIN.2
+                    - course: LATIN.10
+                    - course: LATIN.15
+                    - course: LATIN.40
+                    - course: GREEK.1
+                    - course: GREEK.2
+                    - course: GREEK.10
+                    - course: GREEK.15
+                    - course: GREEK.40
+                    - course: HISTORY.4A
+                    - course: HISTART.10
+                    - course: HISTART.41
+                    - course: NE STUD.15
+                    - course: NE STUD.18
+                    - course: NE STUD.23
+                    - course: NE STUD.25
+                    - course: NE STUD.33
+                    - course: NE STUD.34
+                    - course: PHILOS.25A # can't also do CLASSIC.36
+        - AND: # area of breadth
+            - numcourses:
+                min: 2
+                courses:
+                # in non Greco-Roman, preindustrial cultural?
+        - AND: # upper div
+            - course: CLASSIC.130
+            - OR:
+                - course: CLASSIC.100A
+                - course: CLASSIC.100B
+                - course: CLASSIC.121
+                - course: CLASSIC.124
+                - course: CLASSIC.130
+                - course: CLASSIC.155A
+                - course: CLASSIC.155B
+                - course: CLASSIC.161
+                - course: CLASSIC.163
+                - course: CLASSIC.170A
+                - course: CLASSIC.170B
+                - course: CLASSIC.170C
+                - course: CLASSIC.170D
+                - course: CLASSIC.175A
+                - course: CLASSIC.175B
+                - course: CLASSIC.175C
+                - course: CLASSIC.175D
+                - course: CLASSIC.175F
+                - course: CLASSIC.180
+                - course: GREEK.100
+                - course: GREEK.101
+                - course: GREEK.102
+                - course: GREEK.105
+                - course: GREEK.115
+                - course: GREEK.116
+                - course: GREEK.117
+                - course: GREEK.118
+                - course: GREEK.120
+                - course: GREEK.121
+                - course: GREEK.122
+                - course: GREEK.123
+                - course: LATIN.100
+                - course: LATIN.101
+                - course: LATIN.102
+                - course: LATIN.105
+                - course: LATIN.115
+                - course: LATIN.116
+                - course: LATIN.117
+                - course: LATIN.118
+                - course: LATIN.119
+                - course: LATIN.120
+                - course: LATIN.121
+                - course: LATIN.122
+                - course: LATIN.123
+                - course: LATIN.140
+                - course: LATIN.155A
+                - course: LATIN.155B
+                - course: ANTHRO.123C
+                - course: ANTHRO.123E
+                - course: COM LIT.151
+                - course: CUNEIF.100A
+                - course: CUNEIF.100B
+                - course: CUNEIF.101A
+                - course: CUNEIF.101B
+                - course: CUNEIF.102A
+                - course: CUNEIF.102B
+                - course: CUNEIF.103A
+                - course: CUNEIF.103B
+                - course: CUNEIF.106A
+                - course: CUNEIF.106B
+                - course: EGYPT.100A
+                - course: EGYPT.100B
+                - course: EGYPT.101A
+                - course: EGYPT.101B
+                - course: EGYPT.102A
+                - course: EGYPT.102B
+                - course: HEBREW.106A
+                - course: HEBREW.106B
+                - course: HEBREW.107A
+                - course: HEBREW.107B
+                - course: HISTORY.101
+                - course: HISTORY.105A
+                - course: HISTORY.105B
+                - course: HISTORY.105C
+                - course: HISTORY.107A
+                - course: HISTORY.107B
+                - course: HISTORY.107C
+                - course: HISTORY.107D
+                - course: HISTART.140
+                - course: HISTART.141A
+                - course: HISTART.141B
+                - course: HISTART.141C
+                - course: HISTART.145
+                - course: IRANIAN.110A
+                - course: IRANIAN.110B
+                - course: IRANIAN.111A
+                - course: IRANIAN.111B
+                - course: NE STUD.101A
+                - course: NE STUD.101B
+                - course: NE STUD.102A
+                - course: NE STUD.102B
+                - course: NE STUD.103
+                - course: NE STUD.104
+                - course: NE STUD.105A
+                - course: NE STUD.105B
+                - course: NE STUD.106A
+                - course: NE STUD.106B
+                - course: NE STUD.107
+                - course: NE STUD.108
+                - course: NE STUD.109
+                - course: NE STUD.110
+                - course: NE STUD.111
+                - course: NE STUD.113
+                - course: NE STUD.C119
+                - course: NE STUD.C120A
+                - course: NE STUD.C120B
+                - course: NE STUD.122A
+                - course: NE STUD.122B
+                - course: NE STUD.123A
+                - course: NE STUD.123B
+                - course: NE STUD.124A
+                - course: NE STUD.124B
+                - course: NE STUD.126
+                - course: NE STUD.C129
+                - course: NE STUD.130A
+                - course: NE STUD.130B
+                - course: NE STUD.131
+                - course: NE STUD.132
+                - course: NE STUD.133
+                - course: NE STUD.134
+                - course: NE STUD.C135
+                - course: NE STUD.136
+                - course: NE STUD.138
+                - course: NE STUD.160
+                - course: NE STUD.190A
+                - course: NE STUD.190B
+                - course: NE STUD.192A
+                - course: NE STUD.192B
+                - course: NE STUD.192C
+                - course: PHILOS.161
+                - course: PHILOS.163
+                - course: POL SCI.112A
+                - course: RELIGST.120A
+                - course: RELIGST.120B
+                - course: RHETOR.100
+                - course: RHETOR.103A
+                - course: RHETOR.138
+                - course: RHETOR.166
+                - course: SANSKRIT.100A
+                - course: SANSKRIT.100B
+                - course: SANSKRIT.101A
+                - course: SANSKRIT.101B
+                - course: SEMITIC.100A
+                - course: SEMITIC.100B
+                - course: THEATER.126
+        - OR: # concentration
+            - AND: # classical archaeology & art history
+                - numcourses:
+                    min: 4
+                    courses:
+                        - course: CLASSIC.170A
+                        - course: CLASSIC.170B
+                        - course: CLASSIC.170C
+                        - course: CLASSIC.170D
+                        - course: CLASSIC.N172A
+                        - course: CLASSIC.N172B
+                        - course: CLASSIC.175A
+                        - course: CLASSIC.175D
+                        - course: CLASSIC.175E
+                        - course: CLASSIC.175F
+                        - course: CLASSIC.175G
+                        - course: CLASSIC.180
+                        - course: HISTART.140
+                        - course: HISTART.141A
+                        - course: HISTART.141B
+                        - course: HISTART.141C
+                        - course: HISTART.145
+                        - course: HISTART.151
+                        - course: HISTART.190B
+                        - course: HISTART.192B
+            - AND: # classical history & culture
+                - numcourses:
+                    min: 4
+                    courses:
+                        - course: CLASSIC.100A
+                        - course: CLASSIC.100B
+                        - course: CLASSIC.121
+                        - course: CLASSIC.124
+                        - course: CLASSIC.155A
+                        - course: CLASSIC.155B
+                        - course: CLASSIC.161
+                        - course: CLASSIC.163
+                        - course: CLASSIC.170B
+                        - course: CLASSIC.170C
+                        - course: CLASSIC.N172A
+                        - course: CLASSIC.N172B
+                        - course: CLASSIC.175A
+                        - course: CLASSIC.175B
+                        - course: CLASSIC.175C
+                        - course: CLASSIC.175D
+                        - course: CLASSIC.180
+                        - course: COM LIT.151
+                        # course: DRAMATIC ART.122 ...?
+                        - course: HISTORY.101
+                        - course: HISTORY.100
+                        - course: HISTORY.103A
+                        - course: HISTORY.105A
+                        - course: HISTORY.105B
+                        - course: HISTORY.105C
+                        - course: HISTORY.106A
+                        - course: HISTORY.106B
+                        - course: HISTORY.185
+                        - course: PHILOS.160
+                        - course: PHILOS.161
+                        - course: PHILOS.163
+                        - course: POL SCI.112A
+                        - course: RELIGST.120A
+                        - course: RELIGST.120B
+                        - course: RHETOR.100
+                        - course: RHETOR.138
+                        - course: RHETOR.166
+                        - course: THEATER.126
+            - AND: # greek language
+                - numcourses:
+                    min: 5
+                    courses:
+                        - numcourses:
+                            max: 2
+                            courses:
+                                - course: GREEK.1
+                                - course: GREEK.2
+                                - course: GREEK.10
+                                - course: GREEK.15
+                                - course: GREEK.40
+                        - course: GREEK.100
+                        - course: GREEK.101
+                        - course: GREEK.102
+                        - course: GREEK.105
+                        - course: GREEK.115
+                        - course: GREEK.116
+                        - course: GREEK.117
+                        - course: GREEK.120
+                        - course: GREEK.121
+                        - course: GREEK.122
+                        - course: GREEK.123
+            - AND: # latin language
+                - numcourses:
+                    min: 5
+                    courses:
+                        - numcourses:
+                            max: 2
+                            courses:
+                                - course: LATIN.1
+                                - course: LATIN.2
+                                - course: LATIN.10
+                                - course: LATIN.15
+                                - course: LATIN.40
+                        - course: LATIN.100
+                        - course: LATIN.101
+                        - course: LATIN.102
+                        - course: LATIN.105
+                        - course: LATIN.115
+                        - course: LATIN.116
+                        - course: LATIN.117
+                        - course: LATIN.118
+                        - course: LATIN.119
+                        - course: LATIN.120
+                        - course: LATIN.121
+                        - course: LATIN.122
+                        - course: LATIN.123
+                        - course: LATIN.140
+                        - course: LATIN.155A
+                        - course: LATIN.155B
+
+

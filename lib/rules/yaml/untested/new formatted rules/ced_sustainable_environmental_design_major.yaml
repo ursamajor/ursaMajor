@@ -1,0 +1,188 @@
+rules:
+
+    ced_sustainable_environmental_design_major:
+        description: "Sustainable Environmental Design Major"
+        rule: AND
+        args:
+            - rule: university_all
+            - rule: ced_breadth_all
+            - rule: ced_lowerdiv_environmental_design
+            - rule: ced_lowerdiv_sustainable_environmental_design_requirements
+            - rule: ced_core_upperdiv_sustainable_environmental_design_requirements
+            - rule: units_total
+
+
+    # to define the major
+    ced_lowerdiv_sustainable_environmental_design_requirements:
+        description: "Lower Division Sustainable Environmental Design Requirements"
+        rule: AND
+        args:
+            - course: LD ARCH.12
+            - rule: math_a # or higher
+            - rule: physics_a
+            - rule: stat_lowerdiv
+            - rule: econ_lowerdiv
+
+    ced_core_upperdiv_sustainable_environmental_design_requirements: # don't fulfill breadth
+        description: "Upper Division Core Requirements"
+        rule: AND
+        args:
+            - course: ENV DES.100
+            - course: ENV DES.102
+            - course: ENV DES.106
+            - course: ARCH.140
+            - course: ARCH.242
+            - course: CY PLAN.119
+            - course: LD ARCH.110
+            - course: LD ARCH.130
+            - course: LD ARCH.188
+            - course: GEOG.188
+
+    ced_area_upperdiv_sustainable_environmental_design_requirements: # don't fulfill breadth
+        description: "Sustainable Environmental Design Area Requirements"
+        rule: count_courses
+        args:
+            min: 4
+            rule: OR
+            args:
+                - rule: ced_sustainable_area_one_per_four
+                - rule: ced_sustainable_area_two_per_two
+
+    ced_sustainable_area_one_per_four:
+        hidden: true
+        rule: count_courses
+        args:
+            min: 4
+            rule: AND
+            args:
+                - rule: ced_sustainable_environmental_design_economics_area_courses
+                - rule: ced_sustainable_environmental_design_society_area_courses
+                - rule: ced_sustainable_environmental_design_design_area_courses
+                - rule: ced_sustainable_environmental_design_resources_area_courses
+
+
+    ced_sustainable_area_two_per_two:
+        hidden: true
+        rule: count_courses
+        args:
+            min: 4
+            rule: OR
+                - rule: ced_sustainable_econ_2
+                - rule: ced_sustainable_society_2
+                - rule: ced_sustainable_design_2
+                - rule: ced_sustainable_resources_2
+
+    ced_sustainable_resources_2:
+        hidden: true
+        rule: count_courses
+        args:
+            min: 2
+            rule: ced_sustainable_environmental_design_resources_area_courses
+
+    ced_sustainable_econ_2:
+        hidden: true
+        rule: count_courses
+        args:
+            min: 2
+            rule: ced_sustainable_environmental_design_economics_area_courses
+
+    ced_sustainable_design_2:
+        hidden: true
+        rule: count_courses
+        args:
+            min: 2
+            rule: ced_sustainable_environmental_design_design_area_courses
+
+    ced_sustainable_society_2:
+        hidden: true
+        rule: count_courses
+        args:
+            min: 2
+            rule: ced_sustainable_environmental_design_society_area_courses
+
+
+    ced_sustainable_environmental_design_economics_area_courses:
+        description: "CED Sustainable Environmental Design Major Economics, Business and Policy Area"
+        rule: same_course
+        args:
+            - OR:
+                - course: UGBA.107
+                - course: UGBA.180
+                - course: CY PLAN.113A
+                - course: CY PLAN.113B
+                - course: CY PLAN.115
+                - course: IAS.115
+                - course: GPP.115
+                - course: ENVECON.100
+                - course: ENVECON.C175
+                - course: IAS.C175
+                - course: ENE,RES.151
+                - course: ENE,RES.190
+                - course: ESPM.60
+                - course: ESPM.166
+                - course: ESPM.168
+                - course: ESPM.169
+                - course: ESPM.193A
+                - course: EDUC.C193A
+                - course: PUB POL.182
+
+    ced_sustainable_environmental_design_society_area_courses:
+        description: "CED Sustianable Environmental Design Major Society, Culture and Ethics Area"
+        rule: same_course
+        args:
+            - OR:
+                - course: ANTHRO.137
+                - course: ARCH.110AC
+                - course: ARCH.133
+                - course: CY PLAN.118AC
+                - course: ENE,RES.100
+                - course: ENE,RES.101
+                - course: ESPM.148
+                - course: ESPM.151
+                - course: ESPM.161
+                - course: ESPM.163AC
+                - course: ESPM.C167
+                - course: PB HLTH.C160
+                - course: ESPM.155
+                - course: LD ARCH.140
+                - course: LD ARCH.141AC
+                - course: SOCIOL.123
+                - course: SOCIOL.128
+
+    ced_sustainable_environmental_design_resources_area_courses:
+        description: "CED Sustainable Environmental Design Major Resources and Environmental Management Area"
+        rule: same_course
+        args:
+            - OR:
+                - course: ENE,RES.102
+                - course: EPS.170AC
+                - course: ESPM.50AC
+                - course: ESPM.102D
+                - course: ESPM.102C
+                - course: ESPM.117
+                - course: INTEGBI.152
+
+    ced_sustainable_environmental_design_design_area_courses:
+        description: "CED Sustainable Environmental Design Major Design and Technology Area"
+        rule: same_course
+        args:
+            - OR:
+                - course: ARCH.105
+                - course: ARCH.122
+                - course: ARCH.130
+                - course: ARCH.242
+                - course: ARCH.149
+                - course: ARCH.249
+                - course: ARCH.160
+                - course: CY PLAN.C111
+                - course: ARCH.C111
+                - course: CY PLAN.C114
+                - course: CIV ENG.C114
+                - course: CY PLAN.116
+                - course: CY PLAN.140
+                - course: ENE,RES.175
+                - course: ENV DES.11A
+                - course: ENV DES.11B
+                - course: GEOG.125
+                - course: INFO.146
+

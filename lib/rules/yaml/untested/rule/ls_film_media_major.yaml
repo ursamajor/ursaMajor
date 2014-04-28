@@ -1,0 +1,129 @@
+rules:
+
+    ls_film_media_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # lower division
+            - course: FILM.25A
+            - course: FILM.25B
+        - AND: # upper division
+            - course: FILM.100
+            - course: FILM.128
+            - course: FILM.129
+            - OR:
+                - course: FILM.108
+                - course: FILM.151
+                - course: FILM.160
+            - AND: # electives
+                - units:
+                    min: 16
+                    courses:
+                        - dept: FILM
+        - OR: # language requirement
+            - OR: # third semester of college-level language
+                - course: AFRICAM.8A
+                - course: AFRICAM.10A
+                - course: AFRICAM.14A
+                - course: AFRICAM.31A
+                - course: AFRIK.150 # doesn't exist
+                - course: ARABIC.20A
+                - course: CATALAN.101
+                - course: CELTIC.85
+                - course: CHINESE.10
+                - course: CHINESE.10A
+                - course: DUTCH.110
+                - course: EAEURST.100
+                - course: EURA ST.101A
+                - course: FILIPN.100A
+                - course: FRENCH.3
+                - course: GERMAN.3
+                - course: HEBREW.100A
+                - course: HIN-URD.100A
+                - course: HIN-URD.103A
+                - course: ITALIAN.3
+                - course: JAPAN.10A
+                - course: KHMER.101A
+                - course: KOREAN.10
+                - course: KOREAN.10A
+                - course: MALAY.100A
+                - course: PERSIAN.100A
+                - course: PUNJABI.100A
+                - course: SCANDIN.100A
+                - course: SCANDIN.102A
+                - course: SCANDIN.170
+                - course: SLAVIC.3
+                - course: SLAVIC.115A
+                - course: SLAVIC.116A
+                - course: SLAVIC.117A
+                - course: SLAVIC.118A
+                - course: S ASIAN.10A
+                - course: SPANISH.3
+                - course: TAMIL.100A
+                - course: THAI.100A
+                - course: TIBETAN.10A
+                - course: TURKISH.100A
+                - course: VIETNMS.100A
+                - course: YIDDISH.102
+            - numcourses: # second semester of two languages
+                min: 2
+                courses:
+                    - course: AFRICAM.7B
+                    - course: AFRICAM.11B
+                    - course: AFRICAM.13B
+                    - course: AFRICAM.30B
+                    - course: ARABIC.1B
+                    - course: BANGLA.1B
+                    - course: CELTIC.10
+                    - course: CELTIC.85
+                    - course: CELTIC.86
+                    - course: CHINESE.1B
+                    - course: CHINESE.10X
+                    - course: CHINESE.10Y
+                    - course: CUNEIF.100B
+                    - course: CUNEIF.102B
+                    - course: CUNEIF.106B
+                    - course: DUTCH.2
+                    - course: EGYPT.100B
+                    - course: EURAST.1B
+                    - course: FILIPN.1B
+                    - course: FRENCH.2
+                    - course: GERMAN.2
+                    - course: GREEK.2
+                    - course: HEWBREW.1B
+                    - course: HIN-URD.1B
+                    - course: HIN-URD.2B
+                    - coures: IRANIAN.101A
+                    - course: ITALIAN.2
+                    - course: JAPAN.1B
+                    - course: KHMER.1B
+                    - course: KOREAN.1B
+                    - course: KOREAN.1BX
+                    - course: LATIN.2
+                    - course: LINGUIS.1B
+                    - course: MALAY.1B
+                    - course: PERSIAN.1B
+                    - course: PORTUG.12
+                    - course: PUNJABI.1B
+                    - course: SANSKR.100B
+                    - course: SCANDIN.1B
+                    - course: SCANDIN.2B
+                    - course: SCANDIN.3B
+                    - course: SCANDIN.4B
+                    - course: SEMITIC.100B
+                    - course: SLAVIC.2
+                    - course: SLAVIC.25B
+                    - course: SLAVIC.26B
+                    - course: SLAVIC.27B
+                    - course: SLAVIC.28B
+                    - course: SSEASIAN.1B
+                    - course: SPANISH.2
+                    - course: TAGALG.1B
+                    - course: TAMIL.1B
+                    - course: TELUGU.1B
+                    - course: THAI.1B
+                    - course: TIBETAN.1B
+                    - course: TURKISH.1B
+                    - course: VIETNMS.1B
+                    - course: YIDDISH.102

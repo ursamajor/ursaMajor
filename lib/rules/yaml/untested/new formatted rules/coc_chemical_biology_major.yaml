@@ -1,0 +1,70 @@
+rules:
+
+
+    coc_chemical_biology_major:
+        description: "Chemical Biology Major"
+        rule: AND
+        args:
+            - rule: coc_lowerdiv_chemical_biology_requirements
+            - rule: coc_upperdiv_chemical_biology_requirements
+            - rule: units_upperdiv
+            - rule: units_total
+
+
+
+    coc_lowerdiv_chemical_biology_requirements:
+        description: "Lower Division Chemical Biology Requirements"
+        rule: AND
+        args:
+            - rule: university_rc_A
+            - rule: university_rc_B
+            - numcourses:
+                min: 2
+                rule: coc_foreign_language
+            - numcourses:
+                min: 2
+                rule: coc_breadth_humanities_and_social_sciences # 2 diff depts
+            - course: CHEM.96
+            - course: CHEM.4A
+            - course: CHEM.4B
+            - course: CHEM.112A
+            - course: CHEM.112B
+            - course: MATH.1A
+            - course: MATH.1B
+            - course: MATH.53
+            - course: MATH.54
+            - OR: # PHYSICS
+                - AND:
+                    - course: PHYSICS.7A
+                    - course: PHYSICS.7B
+                - AND:
+                    - course: PHYSICS.8A
+                    - course: PHYSICS.8B
+            - rule: bio1a
+
+    coc_upperdiv_chemical_biology_requirements:
+        description: "Upper Division Chemical Biology Requirements"
+        rule: AND
+        args:
+            - course: CHEM.120A
+            - course: CHEM.120B
+            - course: CHEM.103
+            - course: CHEM.135
+            - OR:
+                - course: CHEM.105
+                - course: CHEM.125
+                - course: CHEM.C170L
+                - course: CHEM.C182
+            - course: MCELLBI.110
+            - course: MCELLBI.110L
+            - units:
+                min: 7
+                rule: OR
+                args:
+                    - coc_allied_subjects
+                    - upperdiv_chemistry # don't include above
+
+
+
+
+

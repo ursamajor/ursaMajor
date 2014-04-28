@@ -1,0 +1,109 @@
+rules:
+
+    ls_cell_developmental_biology_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # lower division
+            - ls_molecular_cell_biology_lower_division
+            - course: CHEM.3A
+            - course: CHEM.3AL
+            - course: CHEM.3B
+            - course: CHEM.3BL
+        - AND: # core
+            - course: MCELLBI.102
+            - course: MCELLBI.104
+            - course: MCELLBI.133L
+        - OR:
+            - AND: # cell & systems biology
+                - AND: # upper div
+                    - course: MCELLBI.130A
+                - AND: # electives
+                    - numcourses:
+                        min: 2
+                        courses:
+                            - course: MCELLBI.C100A
+                            - course: MCELLBI.C103
+                            - course: MCELLBI.C112
+                            - course: MCELLBI.C114
+                            - course: MCELLBI.C116
+                            - course: MCELLBI.132
+                            - course: MCELLBI.C134
+                            - course: MCELLBI.135A
+                            - course: MCELLBI.136
+                            - course: MCELLBI.137
+                            - course: MCELLBI.141
+                            - course: MCELLBI.143
+                            - course: MCELLBI.C148
+                            - course: MCELLBI.149
+                            - course: MCELLBI.150
+                            - course: MCELLBI.C160
+                            - course: MCELLBI.163
+                            - course: MCELLBI.165
+                            - course: MCELLBI.166
+                            - course: MCELLBI.167
+                            - course: MCELLBI.130L
+                            - course: MCELLBI.133L
+                            - course: MCELLBI.140L
+                            - course: MCELLBI.150L
+                            - course: MCELLBI.160L
+                            - course: MCELLBI.102
+                            - course: MCELLBI.104
+                            - course: MCELLBI.130
+                            - course: MCELLBI.180
+                            - course: MCELLBI.190
+                            - course: MCELLBI.H196
+                            - course: MCELLBI.198
+                            - course: MCELLBI.199
+            - AND: # medical biology & physiology
+                - course: MCELLBI.136
+                - AND: # electives
+                    - numcourses:
+                        min: 2
+                        courses:
+                            - dept: MCELLBI
+                                - NOT:
+                                    - course: MCELLBI.110L
+                                    - course: MCELLBI.140L
+                                    - course: MCELLBI.150L
+                                    - course: MCELLBI.160L
+                                    - course: MCELLBI.110
+                                    - course: MCELLBI.180
+                                    - course: MCELLBI.190
+                                    - course: MCELLBI.H196
+                                    - course: MCELLBI.198
+                                    - course: MCELLBI.199
+                            - course: INTEGBI.103LF
+                            - course: INTEGBI.104LF
+                            - AND:
+                                - course: INTEGBI.117
+                                - course: INTEGBI.117LF
+                            - course: INTEGBI.123AL
+                            - course: INTEGBI.131
+                            - course: INTEGBI.137
+                            - course: INTEGBI.140
+                            - course: INTEGBI.C143A
+                            - course: INTEGBI.C143B
+                            - course: INTEGBI.148
+                            - course: NUSCTX.103
+                            - course: NUSCTX.108A
+                            - course: NUSCTX.110
+                            - course: NUSCTX.150
+                            - course: NUSCTX.160
+                            - course: NUSCTX.161A
+                            - course: PLANTBI.135
+                            - course: PLANTBI.150
+                            - course: PLANTBI.160
+                            - course: PSYCH.110
+                            - course: PSYCH.C113
+                            - course: PSYCH.C116
+                            - course: PB HLTH.141
+                            - course: PB HLTH.142
+                            - course: PB HLTH.150A
+                            - course: PB HLTH.150B
+                            - course: PB HLTH.162A
+                            - course: STAT.131A
+
+
+

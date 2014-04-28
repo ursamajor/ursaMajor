@@ -1,0 +1,51 @@
+rules:
+
+    ls_political_economy_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # lower division
+            - OR:
+                - course: ECON.1
+                - course: ECON.2
+                - course: ECON.C3
+                - course: ENVECON.C3
+            - course: IAS.45
+            - OR:
+                - course: STAT.2
+                - course: STAT.20
+                - course: STAT.21
+        - ls_ias_foreign_language_requirement
+        - AND: # upper division
+            - OR: # intermediate microeconomics
+                - course: ECON.100A
+                - course: ECON.101A
+                - course: IAS.106
+                - course: UGBA.101A
+            - OR: # intermediate macroeconomics
+                - course: ECON.100B
+                - course: ECON.101B
+                - course: IAS.107
+                - course: UGBA.101B
+            - course: POLECON.100
+            - course: POLECON.101
+            - OR: # historical context req
+                - course: CY PLAN.112
+                - course: ECON.113
+                - course: ECON.115
+                - course: HISTORY.124A
+                - course: HISTORY.124B
+                - course: HISTORY.125B
+                - course: HISTORY.131B
+                - course: HISTORY.158C
+                - course: HISTORY.162B
+                - course: POLECON.160
+                - course: POL SCI.122A
+                - course: UGBA.C172
+            - AND: # concentration...needs to be approved
+                - numcourses:
+                    min: 4
+                    courses:
+
+

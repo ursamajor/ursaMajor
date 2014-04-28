@@ -1,0 +1,195 @@
+rules:
+
+    ced_urban_studies_major:
+        description: "Urban Studies Major"
+        rule: AND
+        args:
+            - rule: university_all
+            - rule: ced_breadth_all
+            - rule: ced_lowerdiv_environmental_design
+            - rule: ced_lowerdiv_urban_studies_requirements
+            - rule: ced_core_upperdiv_urban_studies_requirements
+            - rule: ced_upperdiv_non_ced_requirements
+            - rule: ced_electives_urban_studies_international
+            - rule: ced_upperdiv_capstone_requirement
+            - rule: untis_total
+
+
+
+    ced_lowerdiv_urban_studies_requirements:
+        description: "Lower Division Urban Studies Requirements"
+        rule: AND
+        args:
+            - rule: econ_lowerdiv
+            - rule: math_a # or higher
+            - rule: stat2 # or higher
+            - rule: urban_studies_lower_div
+
+    urban_studies_lower_div:
+        hidden: true
+        rule: count_courses
+        args:
+            min: 2
+            rule: OR
+            args:
+                - course: ENV DES.11A
+                - course: ENV DES.11B
+                - course: ENV DES.C169A
+                - course: ENV DES.C169B
+                - course: ENV DES.170
+                - course: ARCH.110AC
+                - course: ARCH.111
+                - course: CY PLAN.111
+                - course: ARCH.130
+                - course: ARCH.170A
+                - course: ARCH.170B
+                - course: LD ARCH.170
+                - course: CY PLAN.116
+                - course: CY PLAN.140
+
+    ced_core_upperdiv_urban_studies_requirements: # cannot use breadth
+        description: "Upper Division Core Requirements"
+        rule: AND
+        args:
+            - course: ENV DES.100
+            - course: CY PLAN.110
+            - rule: urban_core
+
+    urban_core:
+        hidden: true
+        rule: count_courses
+        args:
+            min: 4
+            rule: OR
+            args:
+                - course: CY PLAN.111
+                - course: ARCH.111
+                - course: CY PLAN.113A
+                - course: CY PLAN.113B
+                - course: CY PLAN.114
+                - course: CY PLAN.115
+                - course: CY PLAN.116
+                - course: CY PLAN.118AC
+                - course: CY PLAN.119
+                - course: CY PLAN.120
+                - course: CY PLAN.C139
+                - course: CY PLAN.140
+                - course: CY PLAN.190
+
+    ced_upperdiv_capstone_requirement:
+        description: "Urban Studies Capstone Requirement"
+        rule: count_courses
+        args:
+            min: 2
+            rule: OR
+            args:
+                - course: ENV DES.195B
+                - course: CY PLAN.116
+                - course: CY PLAN.190
+                - course: CY PLAN.197
+
+    ced_upperdiv_non_ced_requirements: # cannot be used to fulfill breadth
+        description: "Upper Division Non-CED Requirements"
+        rule: count_courses
+        args:
+            min: 3
+            rule: OR
+            args:
+                - rule: ced_urban_studies_electives_international
+                - course: AFRICAM.107
+                - course: AMERSTD.102
+                - course: ANTHRO.157
+                - course: ANTHRO.189
+                - course: ASAMST.150
+                - course: CIV ENG.156
+                - course: CIV ENG.167
+                - course: DEMOG.C126
+                - course: DEMOG.145AC
+                - course: ECON.C102
+                - course: ECON.121
+                - course: ECON.C125
+                - course: ECON.131
+                - course: ECON.C171
+                - course: ECON.174
+                - course: ENE,RES.C100
+                - course: ENE,RES.101
+                - course: ENE,RES.151
+                - course: ENE,RES.170
+                - course: ENVECON.C101
+                - course: ENVECON.151
+                - course: ESPM.102D
+                - course: ESPM.155
+                - course: ESPM.160AC
+                - course: ESPM.161
+                - course: ESPM.163AC
+                - course: ESPM.168
+                - course: GEOG.125
+                - course: GEOG.170
+                - course: GEOG.181
+                - course: GEOG.C188
+                - course: HISTORY.120AC
+                - course: HISTORY.C139B
+                - course: LEGALST.182
+                - course: NUSCTX.166
+                - course: POL SCI.114A
+                - course: POL SCI.138F
+                - course: POL SCI.139D
+                - course: POL SCI.181
+                - course: PB HLTH.131AC
+                - course: PB HLTH.150B
+                - course: PUB POL.103
+                - course: PUB POL.156
+                - course: PUB POL.184
+                - course: SOCIOL.110
+                - course: SOCIOL.124
+                - course: SOCIOL.130
+                - course: SOCIOL.130AC
+                - course: SOCIOL.136
+                - course: SOCIOL.137AC
+                - course: ESPM.163AC
+                - course: SOCIOL.145
+                - course: SOCIOL.186
+                - course: UGBA.105
+                - course: UGBA.180
+                - course: UGBA.192P
+
+    ced_electives_electives_international: # cannot use breadth
+        description: "Urban Studies International Content Courses"
+        rules: same_course
+        args:
+            - OR:
+                - course: ANTHRO.139
+                - course: DEMOG.145AC
+                - course: ECON.115
+                - course: EDUC.186AC
+                - course: ESPM.165
+                - course: ESPM.169
+                - course: ETH STD.159AC
+                - course: GEOG.110
+                - course: GEOG.111
+                - course: GEOG.123
+                - course: GEOG.130
+                - course: GEOG.C152
+                - course: GEOG.159AC
+                - course: GEOG.164
+                - course: HISTORY.134
+                - course: HISTORY.134A
+                - course: HISTORY.160
+                - course: HISTORY.C176
+                - course: IAS.115
+                - course: CY PLAN.115
+                - course: IAS.C145
+                - course: GEOG.C152
+                - course: HISTORY.C176
+                - course: PACS.127
+                - course: PACS.149
+                - course: POLECON.100
+                - course: POLECON.101
+                - course: SOCIOL.127
+                - course: SOCIOL.180I
+                - course: UGBA.165S
+
+
+
+
+

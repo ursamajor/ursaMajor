@@ -1,0 +1,384 @@
+rules:
+
+
+    coe_bioengineering_major:
+        description: "Bioengineering Major"
+        rule: AND
+        args:
+            - coe_humanities_and_social_sciences
+            - coe_lowerdiv_bioengineering_requirements
+            - coe_upperdiv_bioengineering_requirements
+            - coe_bioengineering_upperdiv_technical_units
+            - coe_bioengineering_upperdiv_bioengineering_units
+            - coe_bioengineering_upperdiv_engineering_units
+            - units_upperdiv
+            - units_total
+
+
+
+
+    coe_lowerdiv_bioengineering_requirements:
+        description: "Lower Division Bioengineering Requirements"
+        rule: AND
+        args:
+            - course: MATH.1A
+            - course: MATH.1B
+            - course: MATH.53
+            - course: MATH.54
+            - OR:
+                - AND:
+                    - course: CHEM.1A
+                    - course: CHEM.1AL
+                - course: CHEM.4A
+            - course: BIOLOGY.1A
+            - course: BIOLOGY.1AL
+            - course: PHYSICS.7A
+            - course: PHYSICS.7B
+            - course: BIO ENG.10
+            - OR:
+                - course: ENGIN.7
+                - course: COMPSCI.61A
+            - course: BIO ENG.24
+            - course: BIO ENG.25
+
+    coe_bioengineering_upperdiv_technical_units:
+        description: "Upper Division Technical Units for Bioengineering"
+        rule: units
+            min: 42
+            rule: OR
+            args:
+                - upperdiv_engineering_courses
+                - upperdiv_chemistry
+                - upperdiv_physics
+                - upperdiv_integrative_biology
+                - upperdiv_molecular_cell_biology
+                - upperdiv_mathematics
+                - upperdiv_statistics
+
+    coe_bioengineering_upperdiv_bioengineering_units:
+        description: "Upper Division Bioengineering Units for Bioengineering"
+        rule: units
+        args:
+            min: 22
+            rule: upperdiv_bioengineering
+
+  coe_bioengineering_upperdiv_engineering_units:
+        description: "Upper Division Bioengineering Units for Bioengineering"
+        rule: units
+            min: 45
+            rule: OR
+            args:
+                - coe_bioengineering_topics_bioengineering
+                - coe_bioengineering_topics_engineering
+
+    coe_upperdiv_bioengineering_requirements:
+        description: "Upper Division Bioengineering Requirements"
+        rule: AND
+        args:
+            - OR: # ethics
+                - course: BIO ENG.100
+                - course: ANTHRO.156B
+                - course: ENGIN.125
+                - course: ESPM.161
+                - course: ESPM.162
+                - course: LNS.160B
+                - course: PHILOS.2
+                - course: PHILOS.104
+                - course: PHILOS.107
+                - course: PB HLTH.116
+            -OR: # bioE lab course
+                - AND:
+                    - course: BIO ENG.22
+                    - course: BIO ENG.22L
+                - course: BIO ENG.101
+                - course: BIO ENG.115
+                - course: BIO ENG.121L
+                - course: BIO ENG.C136L
+                - course: BIO ENG.140L
+                - course: BIO ENG.C144L
+                - course: BIO ENG.C145L
+                - course: BIO ENG.C145M
+                - course: BIO ENG.163L
+                - course: BIO ENG.168L
+            - OR: # bioeng design project/research
+                - course: BIO ENG.121L
+                - course: BIO ENG.140L
+                - course: BIO ENG.168L
+                - course: BIO ENG.192
+                - course: BIO ENG.H194
+                - course: BIO ENG.196
+            - numcourses:
+                min: 15
+                rule: AND
+                args:
+                    - coe_preparation_bioengineering_requirement
+                    - coe_bioengineering_fundamentals_requirement
+                    - coe_bioengineering_topics_bioengineering
+                    - coe_bioengineering_topics_engineering
+                    - coe_bioengineering_upper_division_biology
+
+    coe_preparation_bioengineering_requirement:
+        description: "Engineering and Biology Preparation for Bioengineering"
+        rule: count_courses
+            min: 2
+            rule: OR
+            args:
+                - course: ENGIN.45
+                - course: EL ENG.20N
+                - OR:
+                    - course: EL ENG.40
+                    - course: EL ENG.100
+                - OR:
+                    - course: CHEM.120B
+                    - course: BIO ENG.C105B
+                - course: CHEM.C130
+                - course: MCELLBI.100A
+                - course: CIV ENG.C30
+                - course: MEC ENG.C85
+                - OR:
+                    - course: COMPSCI.61B
+                    - course: COMPSCI.61BL
+                - course: MCELLBI.100A
+                - course: CHEM.C130
+                - course: MEC ENG.C85
+                - course: CIV ENG.C30
+
+    coe_bioengineering_fundamentals_requirement:
+        description: "Bioengineering Fundamentals for Bioengineering"
+        rule: count_courses
+            min: 2
+            rule: coe_bioengineering_fundamentals_courses
+
+    coe_bioengineering_fundamentals_courses:
+        description: "Bioengineering Fundamentals Courses"
+        rule: same_course
+        args:
+            - OR:
+                - course: BIO ENG.101
+                - course: BIO ENG.102
+                - course: BIO ENG.104
+                - course: BIO ENG.110
+                - course: BIO ENG.116
+                - course: BIO ENG.131
+                - course: BIO ENG.150
+
+    coe_bioengineering_technical_electives_requirement:
+        description: "Technical Electives for Bioengineering"
+        rule: count_courses
+            min: 3
+            rule: coe_bioengineering_technical_electives_courses
+
+    coe_bioengineering_technical_electives_courses:
+        description: "Technical Elective Courses for Bioengineering"
+        rule: same_course
+        args:
+            - OR:
+                - course: BIOLOGY.1B
+                - course: CHEM.3B
+                - course: CHEM.120A
+                - course: CHEM.120B
+                - course: CHEM.C130
+                - course: CHEM.130B
+                - OR:
+                    - course: COMPSCI.61B
+                    - course: COMPSCI.61BL
+                - OR:
+                    - course: COMPSCI.70
+                    - course: MATH.55
+                - OR:
+                    - course: IND ENG.172
+                    - course: STAT.134
+                - course: MATH.110
+                - course: MATH.118
+                - course: MATH.127
+                - course: MATH.128A
+                - course: MATH.170
+                - course: MCELLBI.C100A
+                - course: NUSCTX.121
+                - course: PHYSICS.7C
+                - course: PHYSICS.110A
+                - course: PHYSICS.112
+                - course: PHYSICS.137A
+                - course: PHYSICS.177
+                - course: PHYSICS.C191
+                - course: PB HLTH.143
+                - course: STAT.133
+                - course: STAT.135
+                - course: STAT.150
+                - coe_bioengineering_topics_bioengineering_courses
+                - coe_bioengineering_topics_engineering_courses
+                - coe_bioengineering_upper_division_biology
+
+
+    coe_bioengineering_topics_bioengineering:
+        description: "Bioengineering Topics"
+        rule: count_courses
+            min: 2
+            rule: coe_bioengineering_topics_bioengineering_courses
+
+    coe_bioengineering_topics_bioengineering_courses:
+        description: "Bioengineering Topics Courses"
+        rule: same_course
+        args:
+            - OR:
+                - AND:
+                    - course: BIO ENG.22
+                    - course: BIO ENG.22L
+                - course: BIO ENG.101
+                - course: BIO ENG.102
+                - course: BIO ENG.104
+                - course: BIO ENG.C105B
+                - course: BIO ENG.110
+                - course: BIO ENG.111
+                - course: BIO ENG.112
+                - course: BIO ENG.113
+                - course: BIO ENG.115
+                - course: BIO ENG.116
+                - course: BIO ENG.C117
+                - course: BIO ENG.C118
+                - course: BIO ENG.C119
+                - course: BIO ENG.121
+                - course: BIO ENG.121L
+                - course: BIO ENG.C125
+                - course: BIO ENG.131
+                - course: BIO ENG.132
+                - course: BIO ENG.135
+                - course: BIO ENG.C136L
+                - course: BIO ENG.C140L
+                - course: BIO ENG.C141
+                - course: BIO ENG.142
+                - course: BIO ENG.143
+                - course: BIO ENG.C144
+                - course: BIO ENG.C144L
+                - course: BIO ENG.C145L
+                - course: BIO ENG.C145M
+                - course: BIO ENG.C146
+                - course: BIO ENG.150
+                - course: BIO ENG.151
+                - course: BIO ENG.163
+                - course: BIO ENG.164
+                - course: BIO ENG.C165
+                - course: BIO ENG.168L
+                - course: BIO ENG.190A
+                - course: BIO ENG.190B
+                - course: BIO ENG.190C
+                - course: BIO ENG.190D
+                - course: BIO ENG.190E
+                - course: BIO ENG.190F
+                - course: BIO ENG.190G
+                - course: BIO ENG.190H
+
+    coe_bioengineering_topics_engineering:
+        description: "Engineering Topics"
+        rule: count_courses
+            min: 2
+            rule: coe_bioengineering_topics_engineering_courses
+
+    coe_bioengineering_topics_engineering_courses:
+        description: "Engineering Topics"
+        rule: same_course
+        args:
+            - OR:
+                - coe_bioengineering_topics_bioengineering_courses
+                - course: BIO ENG.192
+                - course: BIO ENG.H194
+                - course: CHM ENG.140
+                - course: CHM ENG.141
+                - course: CHM ENG.150A
+                - course: CHM ENG.150B
+                - course: CHM ENG.170A
+                - course: CHM ENG.170B
+                - course: CHM ENG.170L
+                - course: CHM ENG.171
+                - course: CHM ENG.C178
+                - course: CIV ENG.C30
+                - course: CIV ENG.130N
+                - course: COMPSCI.61A
+                - course: COMPSCI.61B
+                - course: COMPSCI.61BL
+                - course: COMPSCI.170
+                - course: COMPSCI.186
+                - course: COMPSCI.C191
+                - course: ENGIN.7
+                - course: ENGIN.45
+                - course: ENGIN.115
+                - course: ENGIN.170
+                - course: EL ENG.20N
+                - course: EL ENG.40
+                - course: EL ENG.100
+                - course: EL ENG.100
+                - course: EL ENG.105
+                - course: EL ENG.117
+                - course: EL ENG.120
+                - course: EL ENG.126
+                - course: EL ENG.129
+                - course: EL ENG.142
+                - course: EL ENG.143
+                - course: EL ENG.192
+                - course: IND ENG.162
+                - course: MEC ENG.C85
+                - course: MEC ENG.102B
+                - course: MEC ENG.104
+                - course: MEC ENG.106
+                - course: MEC ENG.109
+                - course: MEC ENG.118
+                - course: MEC ENG.119
+                - course: MEC ENG.128
+                - course: MEC ENG.132
+                - course: MEC ENG.133
+                - course: MEC ENG.167
+                - course: MEC ENG.185
+                - course: MAT SCI.102
+                - course: MAT SCI.104
+                - course: MAT SCI.111
+                - course: MAT SCI.113
+                - course: MAT SCI.151
+                - course: NUC ENG.101
+                - course: NUC ENG.107
+                - course: NUC ENG.170B
+
+    coe_bioengineering_upper_division_biology:
+        description: "COE Bioengineering Upper Division Biology"
+        rule: count_courses
+            min: 2
+            rule: coe_bioengineering_upper_division_biology
+
+    coe_bioengineering_upper_division_biology_courses:
+        description: "COE Bioengineering Upper Division Biology Courses"
+        rule: same_course
+            - OR:
+                - course: INTEGBI.115
+                - OR:
+                    - course: INTEGBI.127
+                    - course: INTEGBI.127L
+                - course: INTEGBI.131
+                - course: INTEGBI.132
+                - course: INTEGBI.135
+                - course: INTEGBI.148
+                - course: INTEGBI.163
+                - course: CHEM.C130
+                - course: CHEM.135
+                - course: MCELLBI.C100A
+                - course: MCELLBI.100B
+                - course: MCELLBI.102
+                - course: MCELLBI.110
+                - course: MCELLBI.111
+                - course: MCELLBI.C112
+                - course: MCELLBI.130A
+                - course: MCELLBI.132
+                - course: MCELLBI.133L
+                - course: MCELLBI.136
+                - course: MCELLBI.140
+                - course: MCELLBI.140L
+                - course: MCELLBI.C145
+                - course: MCELLBI.C148
+                - course: MCELLBI.150
+                - course: MCELLBI.C160
+                - course: NEUROSC.C160
+                - course: MCELLBI.160L
+                - course: MCELLBI.166
+                - course: PLANTBI.185
+                - course: PLANTBI.C112
+                - course: PLANTBI.C145
+                - course: PLANTBI.C148
+

@@ -1,0 +1,136 @@
+rules:
+
+    ls_near_eastern_languages_and_literatures_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - OR: # emphasis
+            - AND: # arabic
+                - AND: # lower-div
+                    - course: NED STUD.10
+                    - course: ARABIC.1A
+                    - course: ARABIC.1B
+                    - course: ARABIC.20A
+                    - course: ARABIC.20B
+                - AND: # upper-div
+                    - course: ARABIC.100A
+                    - course: ARABIC.100B
+                    - numcourses:
+                        min: 3
+                        courses:
+                            - course: ARABIC.104A
+                            - course: ARABIC.104B
+                            - course: ARABIC.105A
+                            - course: ARABIC.105B
+                            - course: ARABIC.107
+                            - course: ARABIC.108
+                            - course: ARABIC.111
+                    - numcourses:
+                        min: 4
+                        courses:
+                            - course: NE STUD.C121A
+                            - course: NE STUD.C121B
+                            - course: NE STUD.140
+                            - course: NE STUD.146A
+                            - course: NE STUD.146B
+                            - course: NE STUD.147
+                            - course: NE STUD.150A
+                            - course: NE STUD.150B
+                            - course: NE STUD.152
+                            - course: NE STUD.153
+                            - course: NE STUD.155
+                            - course: NE STUD.190E
+            - AND: # hebrew
+                - AND: # lower-div
+                    - course: NE STUD.10
+                    - course: HEBREW.1A
+                    - course: HEBREW.1B
+                    - course: HEBREW.20A
+                    - course: HEBREW.20B
+                - AND: # upper-div
+                    - course: HEWBREW.100A
+                    - course: HEWBREW.100B
+                    - numcourses:
+                        min: 2
+                        courses:
+                            - course: HEWBREW.102A
+                            - course: HEWBREW.102B
+                            - course: HEWBREW.103A
+                            - course: HEWBREW.103B
+                            - course: HEWBREW.104A
+                            - course: HEWBREW.104B
+                            - course: HEWBREW.105A
+                            - course: HEWBREW.105B
+                            - course: HEWBREW.107A
+                            - course: HEWBREW.107B
+                    - numcourses:
+                        min: 4
+                        courses:
+                            - course: HEWBREW.111
+                            - course: HEWBREW.148A
+                            - course: HEWBREW.148B
+                            - course: NE STUD.131
+                            - course: NE STUD.132
+                            - course: NE STUD.C133
+                            - course: NE STUD.C135
+                            - course: NE STUD.136
+                            - course: NE STUD.137
+                            - course: NE STUD.138
+                            - course: NE STUD.139
+                            - course: RELIGST.C134
+                            - course: RELIGST.C135
+            - AND: # persian
+                - AND: # lower div
+                    - course: NE STUD.10
+                    - course: PERSIAN.1A
+                    - course: PERSIAN.1B
+                    - course: PERSIAN.11A
+                    - course: PERSIAN.11B
+                - AND: # upper-div
+                    - course: PERSIAN.100A
+                    - course: PERSIAN.100B
+                    - course: PERSIAN.101A
+                    - course: PERSIAN.101B
+                    - AND: 
+                        - numcourses:
+                            min: 2
+                                - course: PERSIAN.102A
+                                - course: PERSIAN.102B
+                                - course: PERSIAN.103A
+                                - course: PERSIAN.103B
+                                - OR:
+                                    - course: PERSIAN.104A
+                                    - course: PERSIAN.104B
+                    - OR:
+                        - AND:
+                            - course: NE STUD.143A
+                            - course: NE STUD.143B
+                        - AND:
+                            - course: NE STUD.162A
+                            - course: NE STUD.162B
+            - AND: # egyptology
+                - AND: # lower-div
+                    - course: NE STUD.10
+                - AND: # upper div
+                    - AND: # language
+                        - course: EGYPT.100A
+                        - course: EGYPT.100B
+                        - course: EGYPT.101A
+                        - course: EGYPT.101B
+                        - OR:
+                            - AND:
+                                - course: EGYPT.102A
+                                - course: EGYPT.102B
+                            - AND: # two additional semesters in egyptian language
+                    - numcourses:
+                        min: 2
+                        courses:
+                            - course: NE STUD.102A
+                            - course: NE STUD.102B
+                            - course: NE STUD.112
+
+
+
+
+

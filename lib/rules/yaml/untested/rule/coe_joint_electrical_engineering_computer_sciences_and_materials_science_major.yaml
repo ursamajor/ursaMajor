@@ -1,0 +1,72 @@
+rules:
+
+    coe_joint_electrical_engineering_computer_sciences_and_materials_science_major:
+        rule: AND
+        args:
+            - OR:
+                - AND:
+                    - course: CHEM.1A
+                    - course: CHEM.1AL
+                - course: CHEM.4A
+            - course: MATH.1A
+            - course: MATH.1B
+            - course: MATH.53
+            - course: MATH.54
+            - course: PHYSICS.7A
+            - course: PHYSICS.7B
+            - course: PHYSICS.7C
+            - OR:
+                - course: ENGIN.7
+                - course: COMPSCI.61A
+            - course: COMPSCI.61B
+            - OR:
+                - course: COMPSCI.61C
+                - course: EL ENG.20N
+            - OR:
+                - course: ENGIN.115
+                - course: PHYSICS.112
+            - course: EL ENG.105
+            - OR:
+                - course: EL ENG.126
+                - course: STAT.25
+                - course: STAT.134
+            - course: ENGIN.45
+            - course: EL ENG.40
+            - course: MAT SCI.102
+            - course: MAT SCI.103
+            - course: MAT SCI.104
+            - course: PHYSICS.137A
+            - course: EL ENG.117
+            - OR:
+                - course: EL ENG.140
+                - course: EL ENG.141
+            - OR:
+                - course: MAT SCI.111
+                - course: EL ENG.130
+            - course: MAT SCI.130
+            - course: PHYSICS.141A
+            - AND: # technical electives
+                - OR:
+                    - course: COMPSCI.150
+                    - course: EL ENG.119
+                    - course: EL ENG.143
+                - OR:
+                    - course: MAT SCI.120
+                    - course: MAT SCI.121
+                    - course: MAT SCI.122
+                    - course: MAT SCI.123
+                    - course: MAT SCI.125
+            - AND: # HSS
+            	- university_rc_A
+            	- university_rc_B
+            	- university_AC
+            	- numcourses:
+            		min: 4
+            		courses:
+            			- coe_humanities_and_social_sciences
+                            - numcourses:
+                                min: 2
+                                rule: upper_division
+                            - numcorses:
+                                min: 2
+                                rule: same_department # 1 up, 1 low

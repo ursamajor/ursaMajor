@@ -1,0 +1,198 @@
+rules:
+
+
+    cnr_genetics_and_plant_biology_major:
+        description: "Genetics and Plant Biology Major"
+        rule: AND
+        args:
+            - rule: university_all
+            - rule: cnr_hss_genetics_requirements
+            - rule: cnr_core_upperdiv_genetics_requirements
+            - rule: cnr_track_genetics_requirement
+            - rule: cnr_units_upperdiv
+            - rule: units_upperdiv
+            - rule: units_total
+
+
+
+    cnr_lowerdiv_genetics_requirements:
+        description: "Lower Division Genetics and Plant Biology Requirements"
+        rule: AND
+        args:
+            - rule: math_a
+            - rule: math_b
+            - course: CHEM.1A
+            - course: CHEM.1AL
+            - course: CHEM.3A
+            - course: CHEM.3AL
+            - course: CHEM.3B
+            - course: CHEM.3BL
+            - rule: gpb_stat
+            - rule: es_bio1
+            - course: PHYSICS.8A
+
+    gpb_stat:
+        hidden: true
+        rule: OR
+        args:
+            - course: STAT.2 
+            - course: STAT.20
+            - course: STAT.131A
+
+
+    cnr_hss_genetics_requirements:
+        description: "Humanities & Social Sciences Genetics and Plant Biology Requirements"
+        rule: units
+        args:
+            min: 15
+            rule: OR
+            args:
+                - rule: cnr_breadth_arts_history_philosophy
+                - rule: cnr_breadth_social_international
+            # maximum of six can be foreign language
+
+
+    cnr_core_upperdiv_genetics_requirements:
+        description: "Upper Division Core Requirements for Genetics and Plant Biology"
+        rule: AND
+        args:
+            - course: PLANTBI.101L
+            - course: PLANTBI.C107L
+            - course: PLANTBI.135
+            - course: PLANTBI.150
+            - course: PLANTBI.160
+
+    cnr_track_genetics_requirement:
+        description: "Plant Biology Tracks: Biotechnology and Bioenergy, Plant Genetics, Genomics and Bioinformatics, Plant Diversity and Evolution, Plant Microbe Interactions, Experimental Plant Biology"
+        rule: OR
+        args:
+            - rule: cnr_track_genetics_biotechnology
+            - rule: cnr_track_genetics_plant_genetics
+            - rule: cnr_track_genetics_plant_diversity
+            - rule: cnr_track_genetics_plant_microbe
+            - rule: cnr_track_genetics_experimental
+
+    cnr_track_genetics_biotechnology:
+        description: "Plant Biology Track: Biotechnology and Bioenergy"
+        rule: count_courses
+        args:
+            min: 5
+            rule: OR
+            args:
+                - course: ENE,RES.C100
+                - course: ESPM.108A
+                - course: ESPM.108B
+                - course: ESPM.152
+                - course: ESPM.162
+                - rule: ib117
+                - course: INTEGBI.151
+                - course: INTEGBI.162
+                - course: MCELLBI.102
+                - course: PLANTBI.C103
+                - course: PLANTBI.C112
+                - rule: pmb120
+                - course: PLANTBI.122
+                - course: PLANTBI.C124
+                - rule: pmb142_c144
+                - course: PLANTBI.C148
+                - course: PLANTBI.170
+                - course: PLANTBI.180
+                - course: PLANTBI.185
+                - course: PLANTBI.H196
+                - course: PLANTBI.199
+
+
+    cnr_track_genetics_plant_genetics:
+        description: "Plant Biology Track: Plant Genetics, Genomics and Bioinformatics"
+        rule: count_courses
+        args:
+            min: 5
+            rule: OR
+            args:
+                - course: BIO ENG.131
+                - course: BIO ENG.143
+                - course: MATH.127
+                - course: STAT.C143
+                - course: ESPM.108B
+                - course: INTEGBI.162
+                - course: INTEGBI.163
+                - course: MCELLBI.102
+                - course: MCELLBI.130A
+                - course: PLANTBI.C134
+                - rule: pmb142_c144
+                - course: PLANTBI.C144
+                - course: PLANTBI.C148
+                - course: PLANTBI.165
+                - course: PLANTBI.185
+                - course: PLANTBI.H196
+                - course: PLANTBI.199
+
+    cnr_track_genetics_plant_diversity:
+        description: "Plant Biology Track: Plant Diversity and Evolution"
+        rule: count_courses
+        args:
+            min: 5
+            rule: OR
+            args:
+                - course: ESPM.108A
+                - course: ESPM.108B
+                - course: ESPM.149
+                - course: ESPM.152
+                - course: INTEGBI.C102LF
+                - rule: ib117
+                - course: INTEGBI.151
+                - course: INTEGBI.154
+                - course: INTEGBI.157
+                - course: INTEGBI.160
+                - course: INTEGBI.161
+                - course: INTEGBI.162
+                - course: INTEGBI.163
+                - course: INTEGBI.168L
+                - course: INTEGBI.181
+                - rule: pmbc102
+                - rule: pmb110
+                - course: PLANTBI.113
+                - rule: pmb120
+                - rule: pmb142_c144
+                - course: PLANTBI.180
+                - course: PLANTBI.185
+                - course: PLANTBI.H196
+                - course: PLANTBI.199
+
+    cnr_track_genetics_plant_microbe:
+        description: "Plant Biology Track: Plant Microbe Interactions"
+        rule: count_courses
+        args:
+            min: 5
+            rule: OR
+            args:
+                - course: ESPM.131
+                - course: MCELLBI.102
+                - rule: pmbc102
+                - course: PLANTBI.C103
+                - rule: pmb110
+                - rule: pmbc112
+                - course: PLANTBI.113
+                - course: PLANTBI.C114
+                - course: PLANTBI.C116
+                - rule: pmb120
+                - rule: pmb142_c144
+                - course: PLANTBI.C148
+                - course: PLANTBI.165
+                - course: PLANTBI.180
+                - course: PLANTBI.185
+                - course: PLANTBI.H196
+                - course: PLANTBI.199
+
+    cnr_track_genetics_experimental:
+        description: "Plant Biology Experimental Track"
+        rule: count_courses
+        args:
+            min: 5
+            rule: OR
+            args:
+                - rule: cnr_track_genetics_biotechnology
+                - rule: cnr_track_genetics_plant_genetics
+                - rule: cnr_track_genetics_plant_diversity
+                - rule: cnr_track_genetics_plant_microbe
+

@@ -1,0 +1,46 @@
+rules:
+
+    ls_geophysics_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # lower division
+            - course: EPS.50
+            - course: MATH.1A
+            - course: MATH.1B
+            - course: MATH.53
+            - course: MATH.54
+            - course: PHYSICS.7A
+            - course: PHYSICS.7B
+            - course: PHYSICS.7C
+            - course: CHEM.1A
+        - AND: # upper division
+            - course: EPS.102
+            - course: EPS.130
+            - course: EPS.150
+            - OR:
+                - course: MATH.121A
+                - course: EPS.104
+            - units:
+                min: 11
+                courses:
+                    - course: EPS.100A
+                    - course: EPS.100B
+                    - course: EPS.101
+                    - course: EPS.108
+                    - course: EPS.109
+                    - course: EPS.111
+                    - course: EPS.116
+                    - course: EPS.117
+                    - course: EPS.122
+                    - course: EPS.C162
+                    - course: EPS.C178
+                    - course: PHYSICS.105
+                    - course: PHYSICS.110A
+                    # and more! ...
+
+
+
+
+

@@ -1,0 +1,99 @@
+rules:
+
+    ls_music_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # lower division
+            - AND: # musicianship
+                - course: MUSIC.49B
+                - course: MUSIC.50
+                - course: MUSIC.51
+            - AND: # harmony
+                - course: MUSIC.49C
+                - course: MUSIC.60
+                - course: MUSIC.61
+            - AND: # history and culture
+                - course: MUSIC.76
+                - OR: # twice
+                    - course: MUSIC.73
+                    - course: MUSIC.74
+                - OR: # twice
+                    - course: MUSIC.73
+                    - course: MUSIC.74
+                - OR:
+                    - course: MUSIC.75
+                    - course: MUSIC.77
+        - AND: # upper division
+            - OR: # seminar
+                - course: MUSIC.171D
+                - course: MUSIC.172A
+                - course: MUSIC.174C
+                - course: MUSIC.179
+                - course: MUSIC.189
+            - units:
+                min: 21
+                courses:
+                    - numcourses:
+                        min: 3
+                        courses:
+                            - course: MUSIC.140
+                            - course: MUSIC.N140
+                            - course: MUSIC.141
+                            - course: MUSIC.142
+                            - course: MUSIC.143
+                            - course: MUSIC.144
+                            - course: MUSIC.145
+                            - course: MUSIC.146B
+                            - course: MUSIC.147
+                            - course: MUSIC.148
+                            - course: MUSIC.N148
+                            - course: MUSIC.149
+                            - course: MUSIC.150A
+                            - course: MUSIC.150B
+                            - course: MUSIC.150C
+                            - course: MUSIC.150D
+                            - course: MUSIC.150E
+                            - course: MUSIC.150G
+                            - course: MUSIC.150H
+                            - course: MUSIC.151
+                            - course: MUSIC.152
+                            - course: MUSIC.154A
+                            - course: MUSIC.154B
+                            - course: MUSIC.155
+                            - course: MUSIC.156
+                            - course: MUSIC.157A
+                            - course: MUSIC.157B
+                            - course: MUSIC.158
+                            - course: MUSIC.159
+                    - course: MUSIC.101M
+                    - course: MUSIC.108M
+                    - course: MUSIC.109M
+                    - course: MUSIC.116AM
+                    - course: MUSIC.116BM
+                    - course: MUSIC.128AM
+                    - course: MUSIC.128BM
+                    - course: MUSIC.130B
+                    - course: MUSIC.N130B
+                    - course: MUSIC.132
+                    - course: MUSIC.133AX
+                    - course: MUSIC.133C
+                    - course: MUSIC.133D
+                    - course: MUSIC.134A34B
+                    - course: MUSIC.135A
+                    - course: MUSIC.136
+                    - course: MUSIC.137AC
+                    - course: MUSIC.139
+                    - course: MUSIC.161A
+                    - course: MUSIC.161B
+                    - course: MUSIC.162
+                    - course: MUSIC.163
+                    - course: MUSIC.164
+                    - course: MUSIC.165
+                    - course: MUSIC.171D
+                    - course: MUSIC.172A
+                    - course: MUSIC.174C
+                    - course: MUSIC.179
+                    - course: MUSIC.189
+

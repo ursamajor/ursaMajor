@@ -1,0 +1,88 @@
+rules:
+
+    ls_operations_research_and_management_science_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # lower division
+            - course: MATH.1A
+            - course: MATH.1B
+            - course: MATH.53
+            - course: MATH.54
+            - course: ENGIN.7
+            - course: UGBA.10
+            - OR:
+                - course: ECON.1
+                - course: ECON.2
+                - course: ECON.C3
+                - course: ENVECON.C3
+        - AND: # upper division
+            - OR:
+                - course: STAT.134
+                - course: IND ENG.172
+            - course: ECON.101A
+            - course: IND ENG.131
+            - OR:
+                - course: IND ENG.160
+                - course: IND ENG.162
+            - course: IND ENG.161
+        - OR: # concentration (these are suggested...not mandatory)
+            - AND: # decision making in economic systems
+                - numcourses:
+                    min: 4
+                    courses:
+                        - course: ECON.101B
+                        - course: ECON.104
+                        - course: ECON.141
+                        - course: ECON.C142
+                        - course: ECON.C110
+                        - course: UGBA.143
+                        - course: IND ENG.165
+                        - course: MATH.104
+            - AND: # decision making in industrial and service systems
+                - numcourses:
+                    min: 4
+                    courses:
+                        - course: IND ENG.150
+                        - course: IND ENG.151
+                        - course: IND ENG.153
+                        - OR:
+                            - course: IND ENG.160
+                            - course: IND ENG.162
+                        - course: IND ENG.165
+                        - course: IND ENG.130
+                        - course: IND ENG.166
+                        - course: IND ENG.170
+                        - course: UGBA.102B
+                        - course: UGBA.141
+                        - course: UGBA.143
+                        - course: IND ENG.115
+            - AND: # decision making in societal systems
+                - numcourses:
+                    min: 4
+                    courses:
+                        - course: SOCIOL.101A
+                        - course: SOCIOL.105
+                        - course: SOCIOL.106
+                        - course: SOCIOL.119
+                        - course: IND ENG.165
+                        - course: ECON.C110
+                        - course: ECON.101A
+                        - course: UGBA.143
+            - AND: # algorithmic decision making
+                - numcourses: 
+                    min: 4
+                    courses:
+                        - course: COMPSCI.61B
+                        - course: COMPSCI.170
+                        - course: COMPSCI.172
+                        - course: COMPSCI.174
+                        - course: IND ENG.115
+                        - OR:
+                            - course: IND ENG.160
+                            - course: IND ENG.162
+                        - course: IND ENG.166
+                        - course: MATH.110
+
+

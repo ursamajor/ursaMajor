@@ -1,0 +1,43 @@
+rules:
+
+    ls_planetary_science_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # lower division
+            - course: EPS.50
+            - course: MATH.1A
+            - course: MATH.1B
+            - course: MATH.53
+            - course: MATH.54
+            - course: PHYSICS.7A
+            - course: PHYSICS.7B
+            - course: PHYSICS.7C
+            - course: CHEM.1A
+        - AND: # upper division
+            - course: EPS.102
+            - course: EPS.150
+            - course: EPS.C162
+            - course: ASTRON.C162
+            - units:
+                min: 14
+                courses:
+                    - course: EPS.108
+                    - course: EPS.109
+                    - course: EPS.117
+                    - course: EPS.122
+                    - OR:
+                        - course: EPS.C180
+                        - course: EPS.C181
+                        - course: EPS.C182
+                    - OR:
+                        - course: ASTRON.120
+                        - course: ASTRON.121
+                    - course: MATH.121A
+                    # and more! ...
+
+
+
+
+

@@ -1,0 +1,16 @@
+rules:
+
+    cnr_breadth_arts_history_philosophy:
+        description: "Arts, History, or Philosophy Breadth"
+        rule: OR
+        args:
+            - rule: ls_breadth_history
+            - rule: ls_breadth_philosophy
+            - rule: ls_breadth_arts
+
+    cnr_breadth_social_international:
+        description: "Social or International Breadth"
+        rule: OR
+        args:
+            - rule: ls_breadth_social
+            - rule: ls_breadth_international

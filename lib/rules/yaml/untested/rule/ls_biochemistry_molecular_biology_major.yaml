@@ -1,0 +1,77 @@
+rules:
+
+    ls_biochemistry_molecular_biology_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - OR:
+            - AND: # track 1, biochemistry & molecular biology
+                - AND: # lower division
+                    - ls_molecular_cell_biology_lower_division
+                    - course: CHEM.3A
+                    - course: CHEM.3AL
+                    - course: CHEM.3B
+                    - course: CHEM.3BL
+                - AND: # upper div
+                    - course: MCELLBI.C100A
+                    - course: MCELLBI.100B
+                    - course: MCELLBI.110
+                    - course: MCELLBI.110L
+                    - OR:
+                        - course: MCELLBI.140
+                        - course: MCELLBI.C148
+                - OR: # elective
+                    - dept: MCELLBI
+                        - NOT:
+                            - course: MCELLBI.130L
+                            - course: MCELLBI.133L
+                            - course: MCELLBI.140L
+                            - course: MCELLBI.150L
+                            - course: MCELLBI.160L
+                            - course: MCELLBI.102
+                            - course: MCELLBI.104
+                            - course: MCELLBI.130
+                            - course: MCELLBI.180
+                            - course: MCELLBI.190
+                            - course: MCELLBI.H196
+                            - course: MCELLBI.198
+                            - course: MCELLBI.199
+                    - course: CHEM.113
+                    - course: CHEM.115
+                    - course: CHEM.130B
+                    - course: ESPM.C148
+                    - course: MATH.110
+                    - course: NEUROSC.C160
+                    - course: NUSCTX.C114
+                    - course: PHYSICS.112
+                    - course: PHYSICS.177
+                    - course: PLANTBI.C112
+                    - course: PLANTBI.C114
+                    - course: PLANTBI.C116
+                    - course: PLANTBI.C134
+                    - course: PLANTBI.135
+                    - course: PLANTBI.150
+                    - course: PLANTBI.160
+                    - course: PB HLTH.141
+                    - course: PB HLTH.142
+                    - course: STAT.131A
+                    - course: BIO ENG.C141
+                    - course: MATH.127
+                    - course: PHYSICS.132
+                    - course: STAT.C141
+            - AND: # track 2, biological chemistry major
+                - ls_molecular_cell_biology_lower_division
+                - course: CHEM.1B
+                - course: CHEM.112A
+                - course: CHEM.112B
+                - course: MCELLBI.C100A
+                - course: CHEM.130B
+                - course: CHEM.135
+                - OR:
+                    - course: MCELLBI.130A
+                    - course: MCELLBI.140
+                - course: MCELLBI.C110L
+
+
+

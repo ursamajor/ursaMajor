@@ -1,0 +1,29 @@
+rules:
+
+    coe_computer_science_minor:
+    rule: AND
+    args:
+        - AND: # prereqs
+            - course: COMPSCI.61A
+            - course: COMPSCI.61B
+            - course: COMPSCI.61C
+            - course: COMPSCI.70
+        - AND: # upper division
+            - numcourses:
+                 min: 3
+                courses:
+                    - course: EL ENG.122
+                    - course: COMPSCI.149
+                    - course: COMPSCI.150
+                    - course: COMPSCI.152
+                    - course: COMPSCI.160
+                    - course: COMPSCI.161
+                    - course: COMPSCI.162
+                    - course: COMPSCI.164
+                    - course: COMPSCI.169
+                    - course: COMPSCI.170
+                    - course: COMPSCI.172
+                    - course: COMPSCI.176
+                    - course: COMPSCI.184
+                    - course: COMPSCI.186
+                    - course: COMPSCI.188

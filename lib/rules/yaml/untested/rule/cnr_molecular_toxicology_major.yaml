@@ -1,0 +1,91 @@
+rules:
+
+# ap credit of breadth / requirements
+# not sure if requirements can count as breadth
+
+    cnr_molecular_toxicology_major:
+        rule: AND
+        args:
+            - cnr_upper_division
+            - AND: # Humanities and Social Sciences (22 units)
+                - units:
+                    min: 22
+                    courses: 
+                        - university_ac
+                        - university_rc_A
+                        - university_rc_B
+                        - cnr_breadth_arts_history_philosophy
+                        - cnr_breadth_social_international
+            - AND: # Physical Sciences and Math (26 units)
+                - units:
+                    min: 26
+                    courses:
+                        - OR:
+                            - AND:
+                                - course: MATH.16A
+                                - course: MATH.16B
+                                - course: STAT.2
+                            - AND:
+                                - course: MATH.1A
+                                - course: STAT.2
+                            - AND:
+                                - course: MATH.10A
+                                - course: MATH.10B
+                        - course: CHEM.1A
+                        - course: CHEM.1AL
+                        - course: CHEM.3A
+                        - course: CHEM.3AL
+                        - course: CHEM.3B
+                        - course: CHEM.3BL
+                        - course: PHYSICS.8A
+            - AND: # Biological and Natural Resource Science (11 units)
+                - units:
+                    min: 11
+                    courses:
+                        - course: NUSCTX.11
+                        - course: MCELLBI.32
+                        - course: MCELLBI.32L
+                        - course: BIOLOGY.1A
+                        - course: BIOLOGY.1AL
+            - AND: # Upper Division Required Courses
+                - units:
+                    min: 36
+                    courses:
+                        - course: MCELLBI.102
+                        - course: MCELLBI.104
+                        - course: INTEGBI.141
+                        - OR:
+                            - course: PLANTBI.C112
+                            - course: MCELLBI.C112
+                        - course: PB HLTH.162A
+                        - OR:
+                            - course: PLANTBI.C112
+                            - course: MCELLBI.C112L
+                            - course: PB HLTH.162L
+                        - course: NUSCTX.110
+                        - course: NUSCTX.121
+                        - course: NUSCTX.171
+                        - course: NUSCTX.193
+                        - OR: # Approved Electives List: # all upp-div add to 36
+                            - course: CIV ENG.114
+                            - course: CIV ENG.115
+                            - course: ESPM.100
+                            - course: ESPM.119
+                            - course: ESPM.126
+                            - course: ESPM.162
+                            - course: ESPM.C180
+                            - course: NUSCTX.103
+                            - OR:
+                                - course: NUSCTX.C114
+                                - course: ESPM.C148
+                            - course: NUSCTX.C115
+                            - course: NUSCTX.160
+                            - course: NUSCTX.C196
+                            - course: NUSCTX.199
+                            - course: PB HLTH.150A
+                            - course: PB HLTH.150B
+                            - course: PB HLTH.170B
+                            - course: UGIS.192C
+                            - dept: INTEGBI
+                            - dept: MCELLBI
+                            - dept: PLANTBI

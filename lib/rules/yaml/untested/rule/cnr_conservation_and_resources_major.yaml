@@ -1,0 +1,58 @@
+rules:
+# things to do:
+# eight student designed area of interest classes for min
+# of 24 units
+# ap credit of breadth / requirements
+# not sure if requirements can count as breadth
+    cnr_conservation_and_resource_studies_major:
+        rule: AND
+        args:
+            - university_all
+            - cnr_upper_division
+            - AND: # Lower-Div
+                - cnr_espm_environmental_science_core
+                - cnr_espm_social_science_core
+                - OR: # biology
+                    - AND:
+                        - course: BIOLOGY.1A
+                        - course: BIOLOGY.1AL
+                    - AND:
+                        - course: BIOLOGY.1B
+                        - course: BIOLOGY.1BL
+                    - AND:
+                        - course: BIOLOGY.11
+                        - course: BIOLOGY.11L
+                - AND: # breadth
+                    - cnr_breadth_arts_history_philosophy
+                    - cnr_breadth_social_international
+                    - cnr_breadth_physical
+                - OR: #can waive
+                    - course: MATH.16A
+                    - course: MATH.16B
+                    - course: MATH.1A
+                    - course: MATH.1B
+                    - course: STAT.2
+                    - course: STAT.20
+                    - course: STAT.25
+                    - course: STAT.131A
+                    - course: PB HLTH.142A
+                - course: ESPM.90
+            - AND: # upper div
+                - course: ESPM.100
+                - course: ESPM.194A
+            - AND: # area of interest courses.... self-designed
+            # 6-8 lower div
+            # 24 upper div
+            # includes: marine resource management, sustainable agriculture
+            # in the developing world, environmental justice and education,
+            # population & conservation policy, etc...
+                - OR:
+                    - course_regex: # upper division
+                    - units:
+                        min: 15
+                        dept:
+                            - dept: ENVECON
+                            - dept: ENV SCI
+                            - dept: ESPM
+                            - dept: NUSCITX
+                            - dept: PLANTBI

@@ -1,0 +1,77 @@
+rules:
+
+    ls_environmental_earth_science_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # lower division
+            - course: EPS.50
+            - OR:
+                - course: MATH.16A
+                - course: MATH.1A
+            - OR:
+                - course: MATH.16B
+                - course: MATH.1B
+            - OR:
+                - AND:
+                    - course: PHYSICS.7A
+                    - course: PHYSICS.7B
+                - AND:
+                    - course: PHYSICS.8A
+                    - course: PHYSICS.8B
+            - course: CHEM.1A
+            - course: BIOLOGY.1B
+        - AND: # upper division
+            - course: EPS.102
+            - course: EPS.117
+            - course: EPS.150
+            - course: ENE,RES.102
+            - units:
+                min: 12
+                courses:
+                    - course: EPS.100A
+                    - course: EPS.100B
+                    - course: EPS.C100
+                    - course: EPS.103
+                    - course: EPS.203
+                    - course: EPS.105
+                    - course: EPS.109
+                    - course: EPS.115
+                    - course: EPS.122
+                    - course: EPS.131
+                    - course: EPS.C141
+                    - course: EPS.C146
+                    - course: EPS.C178
+                    - course: EPS.170AC
+                    - course: EPS.180
+                    - course: EPS.181
+                    - course: EPS.185
+                    - course: ESPM.120
+                    - course: ESPM.124
+                    - course: ESPM.125
+                    - course: ESPM.126
+                    - course: ESPM.127
+                    - course: ESPM.C128
+                    - course: ESPM.130
+                    - AND:
+                        - course: CIV ENG.115
+                        - course: CIV ENG.115L
+                    - course: CIV ENG.117
+                    - course: GEOG.134
+                    - course: GEOG.236
+                    - course: GEOG.139
+                    - course: GEOG.140A
+                    - course: GEOG.140B
+                    - course: GEOG.142
+                    - course: GEOG.143
+                    - course: GEOG.144
+                    - course: INTEGBI.108
+                    - course: INTEGBI.152
+                    - course: INTEGBI.153
+                    - course: INTEGBI.144
+                    - course: INTEGBI.155
+                    - course: INTEGBI.160
+
+
+

@@ -1,0 +1,105 @@
+rules:
+
+    ls_religious_studies_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # lower division
+            - course: RELIGST.90A
+            - course: RELIGST.90B
+        - AND: # upper division
+            - units:
+                min: 30
+                courses:
+                    - numcourses: # methodology
+                        min: 2
+                        courses:
+                            - course: ANTHRO.158
+                            - course: GEOG.107
+                            - course: SOCIOL.112
+                            - course: RELIGST.190 # methodological topic
+                    - numcourses: # thematic
+                        min: 2
+                        courses:
+                            - course: CLASSIC.178
+                            - course: COM LIT.165
+                            - course: RELIST.115
+                            - course: COM LIT.125
+                            - course: RELIGST.190 # mthematic topic
+                    - OR: # fields of study
+                        - numcourses: # buddhism
+                            min: 3
+                            courses:
+                                - course: EA LANG.120
+                                - course: EA LANG.122
+                                - course: EA LANG.130
+                                - course: EA LANG.140
+                                - course: S ASIAN.127
+                                - course: S ASIAN.140
+                        - numcourses: # hinduism
+                            min: 3
+                            courses:
+                                - course: S ASIAN.121
+                                - course: S ASIAN.127
+                                - course: S ASIAN.140
+                                - course: S ASIAN.147
+                                - course: S ASIAN.155
+                                - course: HISTART.136A
+                                - course: HISTART.136B
+                                - course: HISTART.136C
+                        - numcourses: # judaism
+                            min: 3
+                            courses:
+                                - course: NE STUD.130A
+                                - course: NE STUD.130B
+                                - course: NE STUD.131
+                                - course: NE STUD.132
+                                - course: NE STUD.133
+                                - course: NE STUD.134
+                                - course: NE STUD.137
+                                - course: RELIGST.120A
+                                - course: HEBREW.101A
+                                - course: HEBREW.101B
+                                - course: HEBREW.102A
+                                - course: HEBREW.102B
+                                - course: HEBREW.103A
+                                - course: HEBREW.103B
+                        - numcourses: # islam
+                            min: 3
+                            courses:
+                                - course: NE STUD.121A
+                                - course: NE STUD.121B
+                                - course: NE STUD.140
+                                - course: NE STUD.141
+                                - course: NE STUD.142
+                                - course: NE STUD.143A
+                                - course: NE STUD.143B
+                                - course: NE STUD.144
+                                - course: HISTORY.109A
+                                - course: ARABIC.209A
+                                - course: ARABIC.209B
+                        - numcourses: # christianity
+                            min: 3
+                            courses:
+                                - course: RELIGST.120A
+                                - course: HISTORY.185A
+                                - course: RELIGST.120B
+                                - course: HISTORY.156A
+                                - course: HISTORY.185B
+                                - course: RELIGST.115
+                                - course: CLASSIC.105
+                                - course: ENGLISH.107
+                                - course: ENGLISH.110A
+                                - course: ENGLISH.110B
+                                - course: HISTORY.108
+                                - course: ITALIAN.109
+                                - course: ITALIAN.130
+                                - course: NE STUD.131
+                                - course: NE STUD.132
+                                - course: NE STUD.134
+                                - course: PHILOS.182
+                                - course: PHILOS.184
+                                - course: RELIGST.190 # when christianity topic
+
+

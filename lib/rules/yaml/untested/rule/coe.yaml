@@ -1,0 +1,478 @@
+
+coe_bioengineering_topics_bioengineering:
+    description: "Bioengineering Topics"
+    rule: OR
+    args:
+        - AND:
+            - course: BIO ENG.22
+            - course: BIO ENG.22L
+        - course: BIO ENG.101
+        - course: BIO ENG.102
+        - course: BIO ENG.104
+        - course: BIO ENG.C105B
+        - course: BIO ENG.110
+        - course: BIO ENG.111
+        - course: BIO ENG.112
+        - course: BIO ENG.113
+        - course: BIO ENG.115
+        - course: BIO ENG.116
+        - course: BIO ENG.C117
+        - course: BIO ENG.C118
+        - course: BIO ENG.C119
+        - course: BIO ENG.121
+        - course: BIO ENG.121L
+        - course: BIO ENG.C125
+        - course: BIO ENG.131
+        - course: BIO ENG.132
+        - course: BIO ENG.135
+        - course: BIO ENG.C136L
+        - course: BIO ENG.C140L
+        - course: BIO ENG.C141
+        - course: BIO ENG.142
+        - course: BIO ENG.143
+        - course: BIO ENG.C144
+        - course: BIO ENG.C144L
+        - course: BIO ENG.C145L
+        - course: BIO ENG.C145M
+        - course: BIO ENG.C146
+        - course: BIO ENG.150
+        - course: BIO ENG.151
+        - course: BIO ENG.163
+        - course: BIO ENG.164
+        - course: BIO ENG.C165
+        - course: BIO ENG.168L
+        - course: BIO ENG.190A
+        - course: BIO ENG.190B
+        - course: BIO ENG.190C
+        - course: BIO ENG.190D
+        - course: BIO ENG.190E
+        - course: BIO ENG.190F
+        - course: BIO ENG.190G
+        - course: BIO ENG.190H
+
+
+coe_bioengineering_topics_engineering:
+    description: "Engineering Topics"
+    rule: OR
+    args:
+        - coe_bioengineering_topics_bioengineering
+        - course: BIO ENG.192
+        - course: BIO ENG.H194
+        - course: CHM ENG.140
+        - course: CHM ENG.141
+        - course: CHM ENG.150A
+        - course: CHM ENG.150B
+        - course: CHM ENG.170A
+        - course: CHM ENG.170B
+        - course: CHM ENG.170L
+        - course: CHM ENG.171
+        - course: CHM ENG.C178
+        - course: CIV ENG.C30
+        - course: CIV ENG.130N
+        - course: COMPSCI.61A
+        - course: COMPSCI.61B
+        - course: COMPSCI.61BL
+        - course: COMPSCI.170
+        - course: COMPSCI.186
+        - course: COMPSCI.C191
+        - course: ENGIN.7
+        - course: ENGIN.45
+        - course: ENGIN.115
+        - course: ENGIN.170
+        - course: EL ENG.20N
+        - course: EL ENG.40
+        - course: EL ENG.100
+        - course: EL ENG.100
+        - course: EL ENG.105
+        - course: EL ENG.117
+        - course: EL ENG.120
+        - course: EL ENG.126
+        - course: EL ENG.129
+        - course: EL ENG.142
+        - course: EL ENG.143
+        - course: EL ENG.192
+        - course: IND ENG.162
+        - course: MEC ENG.C85
+        - course: MEC ENG.102B
+        - course: MEC ENG.104
+        - course: MEC ENG.106
+        - course: MEC ENG.109
+        - course: MEC ENG.118
+        - course: MEC ENG.119
+        - course: MEC ENG.128
+        - course: MEC ENG.132
+        - course: MEC ENG.133
+        - course: MEC ENG.167
+        - course: MEC ENG.185
+        - course: MAT SCI.102
+        - course: MAT SCI.104
+        - course: MAT SCI.111
+        - course: MAT SCI.113
+        - course: MAT SCI.151
+        - course: NUC ENG.101
+        - course: NUC ENG.107
+        - course: NUC ENG.170B
+
+
+coe_bioengineering_upper_division_biology:
+    description: "COE Bioengineering Upper Division Biology"
+    rule: OR
+    args:
+        - course: INTEGBI.115
+        - OR:
+            - course: INTEGBI.127
+            - course: INTEGBI.127L
+        - course: INTEGBI.131
+        - course: INTEGBI.132
+        - course: INTEGBI.135
+        - course: INTEGBI.148
+        - course: INTEGBI.163
+        - course: CHEM.C130
+        - course: CHEM.135
+        - course: MCELLBI.C100A
+        - course: MCELLBI.100B
+        - course: MCELLBI.102
+        - course: MCELLBI.110
+        - course: MCELLBI.111
+        - course: MCELLBI.C112
+        - course: MCELLBI.130A
+        - course: MCELLBI.132
+        - course: MCELLBI.133L
+        - course: MCELLBI.136
+        - course: MCELLBI.140
+        - course: MCELLBI.140L
+        - course: MCELLBI.C145
+        - course: MCELLBI.C148
+        - course: MCELLBI.150
+        - course: MCELLBI.C160
+        - course: NEUROSC.C160
+        - course: MCELLBI.160L
+        - course: MCELLBI.166
+        - course: PLANTBI.185
+        - course: PLANTBI.C112
+        - course: PLANTBI.C145
+        - course: PLANTBI.C148
+
+
+coe_humanities_and_social_sciences:
+    description: "COE Humanities and Social Sciences Requirement"
+    rule: OR
+    args: # two must be upper division, two must be in the same
+    # department, at least one must be upper division
+        - units:
+            min: 3
+            courses:
+                - ls_breadth_arts
+                - ls_breadth_history
+                - ls_breadth_philosophy
+                    - NOT:
+                        - course: ENGIN.124
+                - ls_breadth_international
+                - ls_breadth_social
+                    - NOT:
+                        - course: IND ENG.172
+                        - course: IND ENG.171
+                        - course: IND ENG.170
+                        - course: IND ENG.166
+                        - course: IND ENG.39A
+                        - course: IND ENG.39
+                        - course: CIV ENG.167
+                        - course: CIV ENG.151
+                        - course: CIV ENG.
+                        - course: ENGIN.39D
+                        - course: ENGIN.49
+                        - course: ENGIN.120
+                        - course: MEC ENG.39B
+                        - course: NUC ENG.170
+                - university_rc_A
+                - university_rc_B
+                - coe_foreign_language
+
+
+coe_foreign_language:
+    description: "COE Foreign Language"
+    rules: OR
+    args:
+        - course: AFRICAM.10A
+        - course: AFRICAM.10B
+        - course: AFRICAM.11A
+        - course: AFRICAM.11B
+        - course: AFRICAM.15A
+        - course: AFRICAM.15B
+        - course: AFRICAM.7A
+        - course: AFRICAM.7B
+        - course: AFRICAM.C7A
+        - course: AFRICAM.C7B
+        - course: AFRICAM.8A
+        - course: AFRICAM.8B
+        - course: AFRICAM.9A
+        - course: AFRICAM.9B
+        - course: AFRICAM.13A
+        - course: AFRICAM.13B
+        - course: AFRICAM.14A
+        - course: AFRICAM.14B
+        - course: AFRICAM.19A
+        - course: AFRICAM.19B
+        - course: AFRICAM.30A
+        - course: AFRICAM.30B
+        - course: AFRICAM.31A
+        - course: AFRICAM.31B
+        - course: ARABIC.1A
+        - course: ARABIC.1B
+        - course: ARABIC.15B
+        - course: ARABIC.20A
+        - course: ARABIC.20B
+        - course: ARABIC.100A
+        - course: ARABIC.100B
+        - course: BANGLA.1A
+        - course: BANGLA.1B
+        - course: BANGLA.101A
+        - course: BANGLA.101B
+        - course: CATALAN.101
+        - course: CELTIC.15
+        - course: CELTIC.85
+        - course: CELTIC.105A
+        - course: CELTIC.145A
+        - course: CELTIC.145B
+        - course: CELTIC.16
+        - course: CELTIC.86
+        - course: CELTIC.144A
+        - course: CELTIC.144B
+        - course: CELTIC.146A
+        - course: CELTIC.146B
+        - course: CELTIC.102A
+        - course: CELTIC.102B
+        - course: CHINESE.1A
+        - course: CHINESE.1B
+        - course: CHINESE.1X
+        - course: CHINESE.1Y
+        - course: CHINESE.10A
+        - course: CHINESE.10B
+        - course: CHINESE.10X
+        - course: CHINESE.10Y
+        - course: CHINESE.100A
+        - course: CHINESE.100B
+        - course: CHINESE.100XA
+        - course: CHINESE.100XB
+        - course: CHINESE.111
+        - course: CHINESE.112
+        - course: COM LIT.112A
+        - course: COM LIT.112B
+        - course: CUNEIF.112A
+        - course: CUNEIF.112B
+        - course: CUNEIF.100A
+        - course: CUNEIF.100B
+        - course: CUNEIF.102A
+        - course: CUNEIF.102B
+        - course: CUNEIF.106A
+        - course: CUNEIF.106B
+        - course: EAEURST.1A
+        - course: EAEURST.1B
+        - course: EAEURST.2A
+        - course: EAEURST.2B
+        - course: EAEURST.101A
+        - course: EAEURST.101B
+        - course: EAEURST.102A
+        - course: EAEURST.102B
+        - course: EGYPT.100A
+        - course: EGYPT.100B
+        - course: EGYPT.101A
+        - course: EGYPT.101B
+        - course: FILIPN.1A
+        - course: FILIPN.1B
+        - course: FILIPN.100A
+        - course: FILIPN.100B
+        - course: FILIPN.101A
+        - course: FILIPN.101B
+        - course: FRENCH.1
+        - course: FRENCH.2
+        - course: FRENCH.3
+        - course: FRENCH.4
+        - course: FRENCH.13
+        - course: FRENCH.14
+        - course: FRENCH.35
+        - course: FRENCH.102
+        - course: FRENCH.138
+        - course: GERMAN.1
+        - course: GERMAN.1E
+        - course: GERMAN.2
+        - course: GERMAN.3
+        - course: GERMAN.4
+        - course: GERMAN.40
+        - course: GERMAN.101
+        - course: GERMAN.102A
+        - course: GERMAN.102B
+        - course: GERMAN.102D
+        - course: GERMAN.105
+        - course: GERMAN.172
+        - course: GREEK.1
+        - course: GREEK.2
+        - course: GREEK.10
+        - course: GREEK.40
+        - course: HEWBREW.1A
+        - course: HEWBREW.1B
+        - course: HEWBREW.20A
+        - course: HEWBREW.20B
+        - course: HEWBREW.100A
+        - course: HEWBREW.100B
+        - course: HIN-URD.1A
+        - course: HIN-URD.1B
+        - course: HIN-URD.100A
+        - course: HIN-URD.100B
+        - course: HIN-URD.2A
+        - course: HIN-URD.2B
+        - course: HIN-URD.103A
+        - course: HIN-URD.103B
+        - course: HIN-URD.104A
+        - course: HIN-URD.104B
+        - course: IRANIAN.110A
+        - course: ITALIAN.1
+        - course: ITALIAN.2
+        - course: ITALIAN.3
+        - course: ITALIAN.4
+        - course: ITALIAN.12
+        - course: ITALIAN.101A
+        - course: ITALIAN.101B
+        - course: JAPAN.1A
+        - course: JAPAN.1B
+        - course: JAPAN.10A
+        - course: JAPAN.10B
+        - course: JAPAN.10X
+        - course: JAPAN.100A
+        - course: JAPAN.100B
+        - course: JAPAN.100X
+        - course: KHMER.1A
+        - course: KHMER.1B
+        - course: KHMER.100A
+        - course: KHMER.100B
+        - course: KHMER.101A
+        - course: KHMER.101B
+        - course: KOREAN.1A
+        - course: KOREAN.1AX
+        - course: KOREAN.1B
+        - course: KOREAN.1BX
+        - course: KOREAN.10A
+        - course: KOREAN.10B
+        - course: KOREAN.10BX
+        - course: KOREAN.100A
+        - course: KOREAN.110B
+        - course: KOREAN.111
+        - course: KOREAN.112
+        - course: LATIN.1
+        - course: LATIN.2
+        - course: LATIN.10
+        - course: LATIN.40
+        - course: MALAY/I.1A
+        - course: MALAY/I.1B
+        - course: MALAY/I.100A
+        - course: MALAY/I.100B
+        - course: PERSIAN.1A
+        - course: PERSIAN.1B
+        - course: PERSIAN.11A
+        - course: PERSIAN.11B
+        - course: PERSIAN.100A
+        - course: PERSIAN.100B
+        - course: PORTUG.11
+        - course: PORTUG.12
+        - course: PORTUG.101A
+        - course: PORTUG.101B
+        - course: PORTUG.103
+        - course: PUNJABI.1A
+        - course: PUNJABI.1B
+        - course: PUNJABI.100A
+        - course: PUNJABI.100B
+        - course: SANSKR.100A
+        - course: SANSKR.100B
+        - course: SANSKR.101A
+        - course: SANSKR.101B
+        - course: SCANDIN.1A
+        - course: SCANDIN.1B
+        - course: SCANDIN.100A
+        - course: SCANDIN.100B
+        - course: SCANDIN.2A
+        - course: SCANDIN.2B
+        - course: SCANDIN.102A
+        - course: SCANDIN.102B
+        - course: SCANDIN.3A
+        - course: SCANDIN.3B
+        - course: SCANDIN.4A
+        - course: SCANDIN.4B
+        - course: SEMITIC.100A
+        - course: SEMITIC.100B
+        - course: SLAVIC.1
+        - course: SLAVIC.2
+        - course: SLAVIC.3
+        - course: SLAVIC.4
+        - course: SLAVIC.6A
+        - course: SLAVIC.6B
+        - course: SLAVIC.101
+        - course: SLAVIC.103A
+        - course: SLAVIC.103B
+        - course: SLAVIC.106A
+        - course: SLAVIC.106B
+        - course: SLAVIC.109
+        - course: SLAVIC.120A
+        - course: SLAVIC.120B
+        - course: SLAVIC.25A
+        - course: SLAVIC.25B
+        - course: SLAVIC.115A
+        - course: SLAVIC.115B
+        - course: SLAVIC.26A
+        - course: SLAVIC.26B
+        - course: SLAVIC.116A
+        - course: SLAVIC.116B
+        - course: SLAVIC.26A
+        - course: SLAVIC.26B
+        - course: SLAVIC.117A
+        - course: SLAVIC.117B
+        - course: SLAVIC.28A
+        - course: SLAVIC.28B
+        - course: SLAVIC.118A
+        - course: SLAVIC.118B
+        - course: S,SEASN.1A
+        - course: S,SEASN.1B
+        - course: S,SEASN.100A
+        - course: S,SEASN.100B
+        - course: SPANISH.1
+        - course: SPANISH.2
+        - course: SPANISH.3
+        - course: SPANISH.4
+        - course: SPANISH.8
+        - course: SPANISH.12
+        - course: SPANISH.21
+        - course: SPANISH.22
+        - course: SPANISH.102A
+        - course: TAGALG.1A
+        - course: TAGALG.1B
+        - course: TAGALG.100A
+        - course: TAGALG.100B
+        - course: TAMIL.1A
+        - course: TAMIL.1B
+        - course: TAMIL.101A
+        - course: TAMIL.101B
+        - course: TELUGU.1A
+        - course: TELUGU.1B
+        - course: THAI.1A
+        - course: THAI.1B
+        - course: THAI.100A
+        - course: THAI.100B
+        - course: THAI.101A
+        - course: THAI.101B
+        - course: TIBETAN.1A
+        - course: TIBETAN.1B
+        - course: TIBETAN.10A
+        - course: TIBETAN.10B
+        - course: TURKISH.1A
+        - course: TURKISH.1B
+        - course: TURKISH.100A
+        - course: TURKISH.100B
+        - course: VIETNMS.1A
+        - course: VIETNMS.1B
+        - course: VIETNMS.100A
+        - course: VIETNMS.100B
+        - course: VIETNMS.101A
+        - course: VIETNMS.101B
+        - course: YIDDISH.101
+        - course: YIDDISH.102
+
+

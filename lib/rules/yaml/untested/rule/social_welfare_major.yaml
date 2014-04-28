@@ -1,0 +1,485 @@
+rules:
+
+    social_welfare_major:
+    rules: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # Pre-reqs
+            - OR:
+                - course: PSYCH.1
+                - course: PSYCH.2
+            - OR:
+                - course: STAT.2
+                - course: STAT.20
+                - course: STAT.21
+                - course: SOCIOL.5
+                - course: POL SCI.3
+                - course: PB HLTH.142
+            - OR:
+                - course: SOCIOL.1
+                - course: SOCIOL.3AC
+            # RC is part of these Pre-reqs
+        - AND: # core
+            - course: SOC WEL.110
+            - course: SOC WEL.112
+            - course: SOC WEL.114
+            - course: SOC WEL.116
+        - AND: # Social Science Electives
+            - AND:
+                - units:
+                    min: 18
+                    courses:
+                        - AND: # primary
+                            - numcourses:
+                                min: 3
+                                courses:
+                                    - course: ANTHRO.112
+                                    - course: ANTHRO.115
+                                    - course: ANTHRO.119
+                                    - course: ANTHRO.121AC
+                                    - course: ANTHRO.139
+                                    - course: ANTHRO.141
+                                    - course: ANTHRO.142
+                                    - course: ANTHRO.147A
+                                    - course: ANTHRO.147B
+                                    - course: ANTHRO.149
+                                    - course: ANTHRO.156B
+                                    - course: ANTHRO.167
+                                    - course: ANTHRO.158
+                                    - course: ECON.100A
+                                    - course: ECON.100B
+                                    - course: ECON.101A
+                                    - course: ECON.101B
+                                    - course: ECON.105
+                                    - course: ECON.110
+                                    - course: ECON.113
+                                    - course: ECON.115
+                                    - course: ECON.119
+                                    - course: ECON.121
+                                    - course: ECON.125
+                                    - course: ECON.131
+                                    - course: ECON.151
+                                    - course: ECON.152
+                                    - course: ECON.153
+                                    - course: ECON.155
+                                    - course: ECON.157
+                                    - course: ECON.171
+                                    - course: ECON.174
+                                    - course: ECON.175
+                                    - course: POL SCI.102
+                                    - course: POL SCI.103
+                                    - course: POL SCI.104
+                                    - course: POL SCI.105
+                                    - course: POL SCI.106
+                                    - course: POL SCI.118AC
+                                    - course: POL SCI.131A
+                                    - course: POL SCI.135
+                                    - course: POL SCI.137A
+                                    - course: POL SCI.138A
+                                    - course: POL SCI.138D
+                                    - course: POL SCI.138E
+                                    - course: POL SCI.138F
+                                    - course: POL SCI.147G
+                                    - course: POL SCI.150
+                                    - course: POL SCI.157A
+                                    - course: POL SCI.157B
+                                    - course: POL SCI.161
+                                    - course: POL SCI.164A
+                                    - course: POL SCI.166
+                                    - course: POL SCI.167AC
+                                    - course: POL SCI.171
+                                    - course: POL SCI.175A
+                                    - course: POL SCI.181
+                                    - course: POL SCI.183
+                                    - course: POL SCI.186
+                                    - course: PSYCH.105
+                                    - course: PSYCH.106
+                                    - course: PSYCH.109
+                                    - course: PSYCH.112
+                                    - course: PSYCH.119
+                                    - course: PSYCH.120
+                                    - course: PSYCH.129
+                                    - course: PSYCH.130
+                                    - course: PSYCH.131
+                                    - course: PSYCH.132AC
+                                    - course: PSYCH.133
+                                    - course: PSYCH.136
+                                    - course: PSYCH.138
+                                    - course: PSYCH.140
+                                    - course: PSYCH.141
+                                    - course: PSYCH.146
+                                    - course: PSYCH.150
+                                    - course: PSYCH.156
+                                    - course: PSYCH.160
+                                    - course: PSYCH.163
+                                    - course: PSYCH.164
+                                    - course: PSYCH.166AC
+                                    - course: PSYCH.167AC
+                                    - course: PSYCH.180
+                                    - dept: SOC.WEL
+                                    - course: SOCIOL.110
+                                    - course: SOCIOL.111
+                                    - course: SOCIOL.111C
+                                    - course: SOCIOL.111P
+                                    - course: SOCIOL.112
+                                    - course: SOCIOL.113AC
+                                    - course: SOCIOL.114
+                                    - course: SOCIOL.115
+                                    - course: SOCIOL.116
+                                    - course: SOCIOL.117
+                                    - course: SOCIOL.120
+                                    - course: SOCIOL.121
+                                    - course: SOCIOL.123
+                                    - course: SOCIOL.124
+                                    - course: SOCIOL.126
+                                    - course: SOCIOL.127
+                                    - course: SOCIOL.128
+                                    - course: SOCIOL.130AC
+                                    - course: SOCIOL.131
+                                    - course: SOCIOL.131A
+                                    - course: SOCIOL.131AC
+                                    - course: SOCIOL.131F
+                                    - course: SOCIOL.133
+                                    - course: SOCIOL.135
+                                    - course: SOCIOL.136
+                                    - course: SOCIOL.137AC
+                                    - course: SOCIOL.139
+                                    - course: SOCIOL.140
+                                    - course: SOCIOL.141
+                                    - course: SOCIOL.145
+                                    - course: SOCIOL.145AC
+                                    - course: SOCIOL.145L
+                                    - course: SOCIOL.146
+                                    - course: SOCIOL.148
+                                    - course: SOCIOL.150
+                                    - course: SOCIOL.150A
+                                    - course: SOCIOL.151
+                                    - course: SOCIOL.152
+                                    - course: SOCIOL.160
+                                    - course: SOCIOL.165
+                                    - course: SOCIOL.166
+                                    - course: SOCIOL.167
+                                    - course: SOCIOL.169
+                                    - course: SOCIOL.180C
+                                    - course: SOCIOL.180I
+                                    - course: SOCIOL.183
+                                    - course: SOCIOL.184
+                                    - course: SOCIOL.186
+                                    - course: SOCIOL.189
+                        - AND: # secondary
+                            - numcourses:
+                                min: 2
+                                courses:
+                                    - course: AFRICAM.107
+                                    - course: AFRICAM.109
+                                    - course: AFRICAM.111
+                                    - course: AFRICAM.116
+                                    - course: AFRICAM.117
+                                    - course: AFRICAM.121
+                                    - course: AFRICAM.122
+                                    - course: AFRICAM.124
+                                    - course: AFRICAM.125
+                                    - course: AFRICAM.126
+                                    - course: AFRICAM.131
+                                    - course: AFRICAM.132
+                                    - course: AFRICAM.133A
+                                    - course: AFRICAM.137
+                                    - course: AFRICAM.138
+                                    - course: AFRICAM.139
+                                    - course: AMERSTD.101
+                                    - course: AMERSTD.102
+                                    - course: ASAMST.120
+                                    - course: ASAMST.121
+                                    - course: ASAMST.122
+                                    - course: ASAMST.123
+                                    - course: ASAMST.124
+                                    - course: ASAMST.125
+                                    - course: ASAMST.126
+                                    - course: ASAMST.127
+                                    - course: ASAMST.128AC
+                                    - course: ASAMST.130
+                                    - course: ASAMST.141
+                                    - course: ASAMST.143
+                                    - course: ASAMST.145
+                                    - course: ASAMST.146
+                                    - course: ASAMST.150
+                                    - course: ASAMST.151
+                                    - course: ANTHRO.112
+                                    - course: ANTHRO.115
+                                    - course: ANTHRO.119
+                                    - course: ANTHRO.121AC
+                                    - course: ANTHRO.139
+                                    - course: ANTHRO.141
+                                    - course: ANTHRO.142
+                                    - course: ANTHRO.147A
+                                    - course: ANTHRO.147B
+                                    - course: ANTHRO.149
+                                    - course: ANTHRO.156B
+                                    - course: ANTHRO.167
+                                    - course: ANTHRO.158
+                                    - course: UGBA.107
+                                    - course: UGBA.170
+                                    - course: CHICANO.135A
+                                    - course: CHICANO.135B
+                                    - course: CHICANO.145
+                                    - course: CHICANO.150A
+                                    - course: CHICANO.150B
+                                    - course: CHICANO.159
+                                    - course: CHICANO.161
+                                    - course: CHICANO.165
+                                    - course: CHICANO.172
+                                    - course: CHICANO.174
+                                    - course: CHICANO.176
+                                    - course: CHICANO.179
+                                    - course: CHICANO.180
+                                    - course: CY PLAN.110
+                                    - course: CY PLAN.111
+                                    - course: CY PLAN.113B
+                                    - course: CY PLAN.114
+                                    - course: CY PLAN.118AC
+                                    - course: CY PLAN.119
+                                    - course: CY PLAN.120
+                                    - course: DEMOG.145AC
+                                    - course: DEMOG.164
+                                    - course: DEMOG.165
+                                    - course: DEMOG.175
+                                    - course: ECON.100A
+                                    - course: ECON.100B
+                                    - course: ECON.101A
+                                    - course: ECON.101B
+                                    - course: ECON.105
+                                    - course: ECON.110
+                                    - course: ECON.113
+                                    - course: ECON.115
+                                    - course: ECON.119
+                                    - course: ECON.121
+                                    - course: ECON.125
+                                    - course: ECON.131
+                                    - course: ECON.151
+                                    - course: ECON.152
+                                    - course: ECON.153
+                                    - course: ECON.155
+                                    - course: ECON.157
+                                    - course: ECON.171
+                                    - course: ECON.174
+                                    - course: ECON.175
+                                    - course: EDUC.114A
+                                    - course: EDUC.140AC
+                                    - course: EDUC.181
+                                    - course: EDUC.182AC
+                                    - course: EDUC.185
+                                    - course: EDUC.186AC
+                                    - course: EDUC.187
+                                    - course: EDUC.189
+                                    - course: EDUC.190
+                                    - course: EDUC.191P
+                                    - course: EDUC.193B
+                                    - course: ESPM.160AC
+                                    - course: ESPM.161
+                                    - course: ESPM.163AC
+                                    - course: ESPM.167
+                                    - course: ETH STD.126
+                                    - course: ETH STD.130
+                                    - course: ETH STD.135
+                                    - course: ETH STD.136
+                                    - course: ETH STD.141
+                                    - course: ETH STD.144AC
+                                    - course: ETH STD.147
+                                    - course: ETH STD.150
+                                    - course: ETH STD.159AC
+                                    - course: GWS.100AC
+                                    - course: GWS.103
+                                    - course: GWS.111
+                                    - course: GWS.130AC
+                                    - course: GWS.139
+                                    - course: GWS.143
+                                    - course: GWS.146
+                                    - course: GPP.115
+                                    - course: HMEDSCI.133
+                                    - course: HMEDSCI.150
+                                    - course: HISTORY.111B
+                                    - course: HISTORY.111C
+                                    - course: HISTORY.114B
+                                    - course: HISTORY.120AC
+                                    - course: HISTORY.125A
+                                    - course: HISTORY.125B
+                                    - course: HISTORY.127AC
+                                    - course: HISTORY.131B
+                                    - course: HISTORY.136
+                                    - course: HISTORY.137AC
+                                    - course: HISTORY.139B
+                                    - course: HISTORY.139C
+                                    - course: HISTORY.140B
+                                    - course: HISTORY.141B
+                                    - course: HISTORY.146
+                                    - course: ISF.100A
+                                    - course: ISF.100B
+                                    - course: LEGALST.102
+                                    - course: LEGALST.132AC
+                                    - course: LEGALST.145
+                                    - course: LEGALST.147
+                                    - course: LEGALST.151
+                                    - course: LEGALST.155
+                                    - course: LEGALST.160
+                                    - course: LEGALST.163
+                                    - course: LEGALST.168
+                                    - course: LEGALST.170
+                                    - course: LEGALST.181
+                                    - course: LEGALST.182
+                                    - course: LEGALST.184
+                                    - course: LEGALST.186
+                                    - course: LEGALST.187
+                                    - course: LGBT.100
+                                    - course: LGBT.145
+                                    - course: LGBT.146
+                                    - course: LGBT.146A
+                                    - course: LGBT.147B
+                                    - course: LGBT.148
+                                    - course: NATAMST.100
+                                    - course: NATAMST.101
+                                    - course: NATAMST.104
+                                    - course: NATAMST.149
+                                    - course: NATAMST.176
+                                    - course: NATAMST.178AC
+                                    - course: NATAMST.190
+                                    - course: PACS.125AC
+                                    - course: PACS.126
+                                    - course: PACS.150
+                                    - course: PACS.154
+                                    - course: PACS.164A
+                                    - course: PACS.170
+                                    - course: ART.165
+                                    - course: POL SCI.102
+                                    - course: POL SCI.103
+                                    - course: POL SCI.104
+                                    - course: POL SCI.105
+                                    - course: POL SCI.106
+                                    - course: POL SCI.118AC
+                                    - course: POL SCI.131A
+                                    - course: POL SCI.135
+                                    - course: POL SCI.137A
+                                    - course: POL SCI.138A
+                                    - course: POL SCI.138D
+                                    - course: POL SCI.138E
+                                    - course: POL SCI.138F
+                                    - course: POL SCI.147G
+                                    - course: POL SCI.150
+                                    - course: POL SCI.157A
+                                    - course: POL SCI.157B
+                                    - course: POL SCI.161
+                                    - course: POL SCI.164A
+                                    - course: POL SCI.166
+                                    - course: POL SCI.167AC
+                                    - course: POL SCI.171
+                                    - course: POL SCI.175A
+                                    - course: POL SCI.181
+                                    - course: POL SCI.183
+                                    - course: POL SCI.186
+                                    - course: PSYCH.105
+                                    - course: PSYCH.106
+                                    - course: PSYCH.109
+                                    - course: PSYCH.112
+                                    - course: PSYCH.119
+                                    - course: PSYCH.120
+                                    - course: PSYCH.129
+                                    - course: PSYCH.130
+                                    - course: PSYCH.131
+                                    - course: PSYCH.132AC
+                                    - course: PSYCH.133
+                                    - course: PSYCH.136
+                                    - course: PSYCH.138
+                                    - course: PSYCH.140
+                                    - course: PSYCH.141
+                                    - course: PSYCH.146
+                                    - course: PSYCH.150
+                                    - course: PSYCH.156
+                                    - course: PSYCH.160
+                                    - course: PSYCH.163
+                                    - course: PSYCH.164
+                                    - course: PSYCH.166AC
+                                    - course: PSYCH.167AC
+                                    - course: PSYCH.180
+                                    - course: PB HLTH.103
+                                    - course: PB HLTH.105
+                                    - course: PB HLTH.107
+                                    - course: PB HLTH.113
+                                    - course: PB HLTH.114
+                                    - course: PB HLTH.126
+                                    - course: PB HLTH.130AC
+                                    - course: PB HLTH.131AC
+                                    - course: PB HLTH.150A
+                                    - course: PB HLTH.150D
+                                    - course: PB HLTH.150E
+                                    - course: PB HLTH.155
+                                    - course: PB HLTH.180
+                                    - course: PB HLTH.181
+                                    - course: PB HLTH.183
+                                    - course: PUB POL.101
+                                    - course: PUB POL.103
+                                    - course: PUB POL.117AC
+                                    - course: PUB POL.156
+                                    - course: PUB POL.164
+                                    - course: PUB POL.179
+                                    - course: PUB POL.184
+                                    - course: PUB POL.190
+                                    - course: RHETOR.152AC
+                                    - dept: SOC.WEL
+                                    - course: SOCIOL.110
+                                    - course: SOCIOL.111
+                                    - course: SOCIOL.111C
+                                    - course: SOCIOL.111P
+                                    - course: SOCIOL.112
+                                    - course: SOCIOL.113AC
+                                    - course: SOCIOL.114
+                                    - course: SOCIOL.115
+                                    - course: SOCIOL.116
+                                    - course: SOCIOL.117
+                                    - course: SOCIOL.120
+                                    - course: SOCIOL.121
+                                    - course: SOCIOL.123
+                                    - course: SOCIOL.124
+                                    - course: SOCIOL.126
+                                    - course: SOCIOL.127
+                                    - course: SOCIOL.128
+                                    - course: SOCIOL.130AC
+                                    - course: SOCIOL.131
+                                    - course: SOCIOL.131A
+                                    - course: SOCIOL.131AC
+                                    - course: SOCIOL.131F
+                                    - course: SOCIOL.133
+                                    - course: SOCIOL.135
+                                    - course: SOCIOL.136
+                                    - course: SOCIOL.137AC
+                                    - course: SOCIOL.139
+                                    - course: SOCIOL.140
+                                    - course: SOCIOL.141
+                                    - course: SOCIOL.145
+                                    - course: SOCIOL.145AC
+                                    - course: SOCIOL.145L
+                                    - course: SOCIOL.146
+                                    - course: SOCIOL.148
+                                    - course: SOCIOL.150
+                                    - course: SOCIOL.150A
+                                    - course: SOCIOL.151
+                                    - course: SOCIOL.152
+                                    - course: SOCIOL.160
+                                    - course: SOCIOL.165
+                                    - course: SOCIOL.166
+                                    - course: SOCIOL.167
+                                    - course: SOCIOL.169
+                                    - course: SOCIOL.180C
+                                    - course: SOCIOL.180I
+                                    - course: SOCIOL.183
+                                    - course: SOCIOL.184
+                                    - course: SOCIOL.186
+                                    - course: SOCIOL.189
+                                    - course: UGIS.110
+                                    - course: UGIS.112
+                                    - course: UGIS.132
+                                    - course: UGIS.133
+
+
+
+
+

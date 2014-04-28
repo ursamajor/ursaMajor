@@ -1,0 +1,79 @@
+rules:
+
+    ls_geography_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # lower division
+            - OR: # basic physical geography
+                - course: GEOG.1
+                - course: GEOG.40
+            - OR: # world geography
+                - course: GEOG.10
+                - course: GEOG.20
+                - course: GEOG.31
+                - course: GEOG.35
+            - OR: # regional geographies
+                - course: GEOG.50AC
+                - course: GEOG.C32
+                - course: GEOG.51
+                - course: GEOG.70AC
+        - OR: # upper division
+            - OR: # 5-2-1
+                - AND: # earth system science
+                    - numcourses:
+                        min: 5
+                        courses:
+                            - course: GEOG.140A
+                            - ls_geography_specialty_earth_system_science
+                    - numcourses: # economy, culture & society
+                        min: 2
+                        courses:
+                            - ls_geography_specialty_economy_culture_society
+                    - ls_geography_methodology
+                - AND: # economy, culture & society
+                    - numcourses:
+                        min: 5
+                        courses:
+                            - OR:
+                                - course: GEOG.C110
+                                - course: GOEG.130
+                            - ls_geography_specialty_economy_culture_society
+                    - numcourses: # earth system science
+                        min: 2
+                        courses:
+                            - ls_geography_specialty_earth_system_science
+                    - ls_geography_methodology
+            - OR: # 4-2-2
+                - AND: # earth system science
+                    - numcourses:
+                        min: 4
+                        courses:
+                            - course: GEOG.140A
+                            - ls_geography_specialty_earth_system_science
+                    - numcourses: # economy, culture & society
+                        min: 2
+                        courses:
+                            - ls_geography_specialty_economy_culture_society
+                    - numcourses:
+                        min: 2
+                        courses:
+                        - ls_geography_methodology
+                - AND: # economy, culture & society
+                    - numcourses:
+                        min: 4
+                        courses:
+                            - OR:
+                                - course: GEOG.C110
+                                - course: GOEG.130
+                            - ls_geography_specialty_economy_culture_society
+                    - numcourses: # earth system science
+                        min: 2
+                        courses:
+                            - ls_geography_specialty_earth_system_science
+                    - numcourses:
+                        min: 2
+                        courses:
+                        - ls_geography_methodology
+

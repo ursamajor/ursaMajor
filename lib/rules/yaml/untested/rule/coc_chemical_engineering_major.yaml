@@ -1,0 +1,161 @@
+rules:
+
+    coc_chemical_engineering_major:
+    rule: AND
+    args:
+        - university_rc_A
+        - # foreign language count? 4 breadth or 2??
+        - AND: # breadth
+            - numcourses:
+                min: 2
+                courses:
+                    - coc_breadth_humanities_and_social_sciences # 2 diff depts, one upper div
+        - AND: # Math
+            - course: MATH.1A
+            - course: MATH.1B
+            - course: MATH.53
+            - course: MATH.54
+        - AND: # chemistry
+            - course: CHEM.4A
+            - course: CHEM.4B
+            - course: CHEM.112A
+        - AND: # physics
+            - course: PHYSICS.7A
+            - course: PHYSICS.7B
+        - AND:
+            - course: ENGIN.7
+            - course: ENGIN.45
+            - course: CHEM.C96
+            - course: BIOLOGY.1A
+            - course: EL ENG.100
+            - OR:
+                - course: CHEM.120A
+                - course: PHYSICS.137A
+        - AND: # chemical engineering
+            - course: CHM ENG.140
+            - course: CHM ENG.141
+            - course: CHM ENG.150A
+            - course: CHM ENG.142
+            - course: CHM ENG.150B
+            - course: CHM ENG.154
+            - course: CHM ENG.160
+            - course: CHM ENG.162
+        - OR:
+            - AND: # open electives
+                - AND: # Suggested Physical and Biological Science Courses
+                    - units:
+                        min: 3
+                        courses:
+                            - coc_electives_physical_biological_science
+                - AND: # chem e elective
+                    - units:
+                        min: 3
+                        courses:
+                            - dept: CHM ENG
+                - AND: # Suggested Engineering Electives
+                    - units:
+                        min: 6
+                        courses:
+                            - coc_electives_engineering
+            - OR: # concentration
+                - AND: # Biotechnology
+                    - OR: 
+                        - course: CHEM.112B
+                        - course: MCELLBI.C112
+                    - course: CHM ENG.170A
+                    - course: CHM ENG.170B
+                    - course: CHM ENG.C170L
+                    - OR: # can't take biology 1a, take these instead...?
+                        - course: MCELLBI.102
+                        - course: CHEM.135
+                - AND: # Chemical Processing
+                        - OR:
+                            - course: CHEM.104A
+                            - course: CHEM.112B
+                        - units: # chemical engineering
+                            min: 6
+                            courses:
+                                - course: CHM ENG.170A
+                                - course: CHM ENG.170B
+                                - course: CHM ENG.C170L
+                                - course: CHM ENG.171
+                                - course: CHM ENG.176
+                                - course: CHM ENG.C178
+                                - course: CHM ENG.179
+                                - course: CHM ENG.H194
+                        - units: # engineering
+                            min: 3
+                            courses:
+                                - course: CIV ENG.C30
+                                - course: CIV ENG.111
+                                - course: CIV ENG.114
+                                - course: CIV ENG.173
+                                - course: MAT SCI.111
+                                - course: MAT SCI.112
+                                - course: MAT SCI.113
+                                - course: MAT SCI.C118
+                                - course: MAT SCI.120
+                                - course: MAT SCI.121
+                                - course: MAT SCI.122
+                                - course: MAT SCI.123
+                                - course: MEC ENG.140
+                                - course: MEC ENG.151
+                        - AND: # Environmental Techonology
+                            - OR:
+                                - course: CHEM.104A
+                                - course: CHEM.112B
+                            - units:
+                                min: 6
+                                courses:
+                                    - course: CIV ENG.108
+                                    - course: CIV ENG.111
+                                    - course: CIV ENG.113N
+                                    - course: CIV ENG.C116
+                                    - course: CIV ENG.173
+                                    - course: MEC ENG.140
+                        - AND: # Materials Science and Technology
+                            - OR: 
+                                - course: CHEM.104A
+                                - course: CHEM.108
+                                - course: CHEM.112B
+                            - units:
+                                min: 3
+                                courses:
+                                    - course: CHM ENG.176
+                                    - course: CHM ENG.C178
+                                    - course: CHM ENG.179
+                            - units:
+                                min: 6
+                                courses:
+                                    - course: CIV ENG.C30
+                                    - course: EL ENG.130
+                                    - course: EL ENG.143
+                                    - course: MAT SCI.102
+                                    - course: MAT SCI.103
+                                    - course: MAT SCI.111
+                                    - course: MAT SCI.112
+                                    - course: MAT SCI.120
+                                    - course: MAT SCI.121
+                                    - course: MAT SCI.122
+                                    - course: MAT SCI.123
+                                    - course: MAT SCI.125
+                                    - course: MEC ENG.122
+                                    - course: MEC ENG.127
+                        - AND: # Applied Physical Sciecne
+                            - units: # chem or physics
+                                min: 6
+                                dept:
+                                    - dept: CHEM
+                                    - dept: PHYSICS
+                            - units: # chemical engineering
+                                min: 3
+                                courses:
+                                    - dept: CHM ENG
+                            - units:
+                                min: 3
+                                courses:
+                                    - coc_electives_engineering
+
+
+
+

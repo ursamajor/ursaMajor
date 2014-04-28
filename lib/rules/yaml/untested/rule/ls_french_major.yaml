@@ -1,0 +1,87 @@
+rules:
+
+    ls_french_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - numcourses: # historical period req
+            min: 2
+            courses: # focuses on 18th century or earlier...?
+        - course: FRENCH.35
+        - course: FRENCH.102
+        - numcourses: # french cultural studies and french linguistics
+            min: 2
+            courses:
+                - course: FRENCH.145
+                - course: FRENCH.146A
+                - course: FRENCH.147
+                - course: FRENCH.150A
+                - course: FRENCH.150B
+                - course: FRENCH.151A
+                - course: FRENCH.151B
+                - course: FRENCH.161A
+                - course: FRENCH.161B
+                - course: FRENCH.162A
+                - course: FRENCH.162B
+                - course: FRENCH.170
+                - course: FRENCH.171A
+                - course: FRENCH.171B
+                - course: FRENCH.175A
+                - course: FRENCH.177A
+                - course: FRENCH.177B
+                - course: FRENCH.180A
+                - course: FRENCH.180B
+                - course: FRENCH.180C
+                - course: FRENCH.180D
+                - course: FRENCH.183A
+                - course: FRENCH.183B
+                - course: FRENCH.185
+        - numcourses: # french literature of various historical periods
+            min: 2
+            courses: 
+                - course: FRENCH.112A
+                - course: FRENCH.112B
+                - course: FRENCH.114A
+                - course: FRENCH.116A
+                - course: FRENCH.117A
+                - course: FRENCH.118A
+                - course: FRENCH.119A
+                - course: FRENCH.119B
+                - course: FRENCH.120
+        - numcourses: # electives
+            min: 3
+            courses:
+                - dept: FRENCH
+                # only one of these...?
+                - course: AFRICAM.154
+                - course: AFRICAM.155
+                - course: AFRICAM.160
+                - course: AFRICAM.161
+                - course: HISTORY.155A
+                - course: HISTORY.155B
+                - course: HISTORY.156B
+                - course: HISTORY.163A
+                - course: HISTORY.163B
+                - course: HISTORY.166A
+                - course: HISTORY.166B
+                - course: HISTORY.166C
+                - course: HISTART.155
+                - course: HISTART.156A
+                - course: HISTART.156B
+                - course: HISTART.157
+                - course: HISTART.176
+                - course: HISTART.180A
+                - course: HISTART.180B
+                - course: HISTART.180C
+                - course: HISTART.181
+                - course: MED ST.150
+                - course: PHILOS.170
+                - course: PHILOS.187
+                - course: PHILOS.188
+                - course: PHILOS.189
+                - course: POL SCI.147A
+                - course: POL SCI.147B
+
+
+

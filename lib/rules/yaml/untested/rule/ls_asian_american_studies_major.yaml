@@ -1,0 +1,48 @@
+rules:
+
+    ls_asian_american_studies_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - ls_ethnic_studies_core
+        - AND: # lower division
+            - course: ASAMST.20A
+            - course: ASAMST.20B
+        - AND: # upper division
+            - course: ETH STD.103
+            - numcourses:
+                min: 4
+                courses:
+                    - course: ASAMST.120
+                    - course: ASAMST.121
+                    - course: ASAMST.122
+                    - course: ASAMST.123
+                    - course: ASAMST.124
+                    - course: ASAMST.125
+                    - course: ASAMST.126
+                    - course: ASAMST.127
+                    - course: ASAMST.128AC
+                    - course: ASAMST.130
+                    - course: ASAMST.141
+                    - course: ASAMST.145
+                    - course: ASAMST.146
+                    - course: ASAMST.150
+                    - course: ASAMST.151
+                    - course: ASAMST.165
+                    - course: ASAMST.171
+                    - course: ASAMST.172
+                    - course: ASAMST.173
+                    - course: ASAMST.175
+                    - course: ASAMST.176
+                    - course: ASAMST.177
+                    - course: ASAMST.178
+                    - course: ASAMST.179
+                    - course: ASAMST.180
+                    - course: ASAMST.181
+                    - course: ASAMST.183
+                    - course: ASAMST.190
+                    - course: ASAMST.190AC
+            - course: ASAMST.197
+
+

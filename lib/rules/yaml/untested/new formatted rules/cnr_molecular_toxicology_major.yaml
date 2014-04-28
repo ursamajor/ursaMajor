@@ -1,0 +1,158 @@
+rules:
+
+
+    cnr_molecular_toxicology_major:
+        description: "Molecular Toxicology Major"
+        rule: AND
+        args:
+            - rule: university_all
+            - rule: cnr_lowerdiv_molecular_toxicology_requirements
+            - rule: cnr_upperdiv_molecular_toxicology_requirements
+            - rule: cnr_units_upperdiv
+            - rule: units_upperdiv
+            - rule: units_total
+
+
+    cnr_lowerdiv_molecular_toxicology_requirements:
+        description: "Lower Division Molecular Toxicology Requirements"
+        rule: AND
+        args:
+            - rule: mtx_hss
+            - rule: mtx_phys_math
+            - rule: mtx_bio
+
+    mtx_hss:
+        hidden: true
+        rule: units
+        args: 
+            min: 22
+            rule: AND
+            args:
+                - rule: cnr_breadth_all
+                - rule: university_all
+
+    mtx_phys_math:
+        hidden: true
+        rule: units
+        args:
+            min: 26
+            rule: OR
+            args:
+                - rule: mtx_math
+                - course: CHEM.1A
+                - course: CHEM.1AL
+                - course: CHEM.3A
+                - course: CHEM.3AL
+                - course: CHEM.3B
+                - course: CHEM.3BL
+                - course: PHYSICS.8A
+
+    mtx_bio:
+        hidden: true
+        rule: units
+        args:
+            min: 11
+            rule: OR
+            args:
+                - course: NUSCTX.11
+                - course: MCELLBI.32
+                - course: MCELLBI.32L
+                - course: BIOLOGY.1A
+                - course: BIOLOGY.1AL
+
+    mtx_math:
+        hidden: true
+        rule: OR
+        args:
+            - rule: mtx_math1
+            - rule: mtx_math2
+            - rule: mtx_math3
+
+    mtx_math1:
+        hidden: true
+        rule: AND
+        args:
+            - course: MATH.16A
+            - course: MATH.16B
+            - course: STAT.2
+
+    mtx_math2:
+        hidden: true
+        rule: AND
+        args:
+            - course: MATH.1A
+            - course: STAT.2
+
+    mtx_math3:
+        hidden: true
+        rule: AND
+        args:
+            - course: MATH.10A
+            - course: MATH.10B
+
+    cnr_upperdiv_molecular_toxicology_requirements:
+        description: "Upper Division Molecular Toxicology Requirements"
+        rule: AND
+        args:
+            - course: MCELLBI.102
+            - course: MCELLBI.104
+            - course: INTEGBI.141
+            - rule: pmb_mcbc112
+            - rule: pmb_mcbc112L
+            - course: PB HLTH.162A
+            - course: NUSCTX.110
+            - course: NUSCTX.121
+            - course: NUSCTX.171
+            - course: NUSCTX.193
+            - rule: mtx_more
+
+    pmb_mcbc112:
+        hidden: true
+        rule: OR
+        args:
+            - course: PLANTBI.C112
+            - course: MCELLBI.C112
+
+    pmb_mcbc112L:
+        hidden: true
+        rule: OR
+        args:
+            - course: PLANTBI.C112
+            - course: MCELLBI.C112L
+            - course: PB HLTH.162L
+
+    mtx_more:
+        hidden: true
+        rule: units
+        args:
+            min: 36
+            rule: OR
+            args:
+                - course: CIV ENG.114
+                - course: CIV ENG.115
+                - course: ESPM.100
+                - course: ESPM.119
+                - course: ESPM.126
+                - course: ESPM.162
+                - course: ESPM.C180
+                - course: NUSCTX.103
+                - rule: nutric114_espmc148
+                - course: NUSCTX.C115
+                - course: NUSCTX.160
+                - course: NUSCTX.C196
+                - course: NUSCTX.199
+                - course: PB HLTH.150A
+                - course: PB HLTH.150B
+                - course: PB HLTH.170B
+                - course: UGIS.192C
+                - rule: upperdiv_integrative_biology
+                - rule: upperdiv_molecular_cell_biology
+                - rule: upperdiv_plant_biology
+
+    nutric114_espmc148:
+        hidden: true
+        rule: OR
+        args:
+            - course: NUSCTX.C114
+            - course: ESPM.C148
+

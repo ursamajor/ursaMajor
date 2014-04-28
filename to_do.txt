@@ -6,6 +6,8 @@ In Progress
   - flag as an exclusive rule, which removes course from plan when checking rest
   
 Next Tasks
+- site tour
+- scrolling highlights of site
 - hide angular bindings on load
 - tag line
 - better mappings of department names, also search by title/description

@@ -1,0 +1,39 @@
+rules:
+
+    ls_luso-brazilian_language_and_literature_major: # option B in spanish&portuguese
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # pre-requisites
+            - OR:
+                - course: PORTUG.11
+                - course: PORTUG.12
+                - course: PORTUG.101A
+                - course: PORTUG.101B
+        - course: PORTUG.103
+        - AND: # brazillian literature
+            - course: PORTUG.104
+            - OR:
+                - course: PORTUG.128
+                - course: PORTUG.135 # maybe?
+        - AND: # portuguese literature
+            - course: PORTUG.107A
+            - course: PORTUG.107B # anything else??? not sure
+        # - theoretical approaches to literature portuguese???
+        - AND: # electives, upper div; 2 of which may be in spanish or spanish-american literature, linguistics, or culture?
+            - numcourses:
+                min: 4
+                courses:
+                    - dept: PORTUG 
+                    - numcourses:
+                        max: 2
+                        courses:
+                            - dept: SPANISH
+                                - NOT:
+                                    - course: SPANISH.102A
+                                    - course: SPANISH.102C
+        - AND: # related...but outside the dept
+            - numcourses:
+                min: 2
+                courses: # ????????

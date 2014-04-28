@@ -1,0 +1,35 @@
+rules:
+
+    ls_dutch_studies_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # pre-reqs
+            - course: DUTCH.1
+            - course: DUTCH.2
+        - AND: # upper division
+            - course: DUTCH.110
+            - course: DUTCH.125
+            - course: DUTCH.107
+            - course: DUTCH.100
+            - course: DUTCH.140
+            - course: DUTCH.177
+            - course: DUTCH.190
+            - OR: # dutch 160 series
+                - course: DUTCH.C164
+                - course: DUTCH.166
+            - OR: # dutch 170 series
+                - course: DUTCH.170
+                - course: DUTCH.C170
+                - course: DUTCH.171AC
+                - course: DUTCH.173
+                - course: DUTCH.174
+                - course: DUTCH.177
+                - course: DUTCH.C178
+                - course: DUTCH.179
+            # maximum of two related upper div courses outside department
+
+
+
+

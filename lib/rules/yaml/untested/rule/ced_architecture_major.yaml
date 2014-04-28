@@ -1,0 +1,74 @@
+rules:
+
+    ced_architecture_major:
+        description: "Architecture Major"
+        rules: AND
+        args:
+            - university_all
+            - ced_breadth_all
+                - NOT: 
+                    - ced_upperdiv_architecture
+            - ced_lower_division_environmental_design
+            - ced_lowerdiv_architecture
+            - units_total
+# R&C
+# seven course breadth, up to two CED courses can use this
+# lower div enviro design
+# upper div ced outside arch
+# lower div arch major
+# upper div arch major
+# 120 units total
+
+
+    ced_lowerdiv_architecture:
+        description: "Lower Division Architecture Requirements"
+        rules: AND
+        args:
+            - course: ENV DES.11A
+            - course: ENV DES.11B
+            - OR:
+                - course: MATH.1A
+                - course: MATH.16A
+            - OR:
+                - course: PHYSICS.7A
+                - course: PHYSICS.8A
+
+
+
+    ced_architecture_major:
+    rules: AND
+    args:
+        - university_all
+        - ced_breadth_all
+            - NOT:
+                - dept: ARCH # upper div reqs cannot simultaneously count for breadth
+                - # courses you used to satisfy non-arch upper divs
+        - AND: # upper division
+            - course: ARCH.100A
+            - course: ARCH.100B
+            - course: ARCH.170A
+            - course: ARCH.170B
+            - OR:
+                - course: ARCH.110AC
+                - course: ARCH.130
+            - OR:
+                - course: ARCH.140
+                - course: ARCH.160
+            - OR: 
+                - AND: # senior year project track
+                    - course: ARCH.102A
+                    - course: ARCH.102B
+                    - # capstone electives
+                - AND: # senior year studio track
+                    - course: ARCH.100C
+                    - course: ARCH.100D
+                    - OR:
+                        - course: ARCH.140
+                        - course: ARCH.160
+                    - ARCH.150
+            - AND: # outside architecture
+                - numcourses:
+                    min: 3
+                    courses:
+                        - NOT:
+                            - dept: ARCH
