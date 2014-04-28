@@ -38,6 +38,18 @@ margin-top: 29px;
   height: auto;
 }
 
+a.show-text {
+  display: none;
+}
+
+a.hide-text {
+  display: none;
+}
+
+a.show {
+  display: block;
+}
+
 .thumbnail { 
   height: 100% !important; 
   width: 140px; 

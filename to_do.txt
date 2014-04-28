@@ -1,13 +1,15 @@
 In Progress
 - fix button for inplace editing of name
-- for long course descriptions, continue/more button
-- link text in landing blends in 
 - remove course if used for rule and can only be used once
   - all different combinations to decide which one to remove/use for a certain rule
     - utility function of numRulesSatisfied, proportion of courses left to fulfill other requirements
   - flag as an exclusive rule, which removes course from plan when checking rest
   
 Next Tasks
+- hide angular bindings on load
+- tag line
+- better mappings of department names, also search by title/description
+- consistent displaying of rules (only main, no hidden)
 - show units in course page
 - show unit count of fulfilling set
 - selecting which rules you want
@@ -19,6 +21,9 @@ Next Tasks
   - more efficient -> place garbage course in right place instead of sorting everything
 
 Functionality
+- make front-end checking more efficient 
+  - fail fast
+  - check subrules at same time as main rule
 - autopopulate plans from user information (major, years of semester)
 - query partial matches across spaces
 - updating rule (can only use up to 2 from same dept for breadths)

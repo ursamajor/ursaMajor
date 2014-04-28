@@ -9,8 +9,8 @@
           %b Description:
         .course-description(ng-class="{show: show}")
           {{course.description || "Sorry, something's missing!"}}
-        %a.show-text(ng-click="show = true") Show more
-        %a.hide-text(ng-click="show = false") Hide more
+        %a.show-text(ng-class="{show: !show}" ng-click="show = true") Show more
+        %a.hide-text(ng-class="{show: show}" ng-click="show = false") Show less
         %br 
         %br
         %b Units: 
