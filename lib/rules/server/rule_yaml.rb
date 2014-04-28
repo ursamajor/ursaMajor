@@ -13,6 +13,7 @@ class YamlRule < Rule
     @entry = entry
     @description = entry['description']
     @hidden = entry['hidden']
+    @core = false
     @rule, @args = Rule.parse_entry @entry
   end
 

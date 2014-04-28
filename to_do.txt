@@ -1,24 +1,19 @@
-Next Tasks
-- selecting which rules you want
-- switch plans without reload
-- editing of course info in ui
+In Progress
+- fix button for inplace editing of name
 - for long course descriptions, continue/more button
 - link text in landing blends in 
-- display rule description in modal
-- sort courses beforehand in rails
-  - more efficient -> place garbage course in right place instead of sorting everything
-
-Brainstorm
-- front-end rule parser, checking multipart rules(ones that can't be satisfied just seeing numcourses/numunits, ex. a major)
-  - rule passes if meets num_courses, num_units + all sub_rules pass (AND)/one subrule passes (OR)
-  - when hitting a rule:, treat as subrule to current rule
-  - when hitting a course:, treat as subrule op:"COURSE", but instead of checking tagged_with, check course name, means have to keep course uid
-  - when hitting an or, treat as a subrule op:"OR" whose subrules are the things in the or
-
 - remove course if used for rule and can only be used once
   - all different combinations to decide which one to remove/use for a certain rule
     - utility function of numRulesSatisfied, proportion of courses left to fulfill other requirements
   - flag as an exclusive rule, which removes course from plan when checking rest
+  
+Next Tasks
+- selecting which rules you want
+- switch plans without reload
+- editing of course info in ui
+- display rule description in modal
+- sort courses beforehand in rails
+  - more efficient -> place garbage course in right place instead of sorting everything
 
 Functionality
 - autopopulate plans from user information (major, years of semester)

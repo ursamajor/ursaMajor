@@ -4,9 +4,19 @@
 
 .plan-name { 
   color: #404040;
+  float: left;
+  width: 90%;
 }
 
-.plan-name input { border-style: 1px solid; width: 95%; }
+.plan-name input { 
+  border-style: 1px solid; 
+  width: 90%;
+}
+
+a.btn-link {
+float: right;
+margin-top: 29px;
+}
 
 .course-input { 
   width: 140px; 

@@ -25,7 +25,7 @@ class Result
   end
 
   def tag_courses
-    # unless @rule.hidden?
+    # unless @rule.core?
     #   @courses.each { |course| course.rule_list.add @rule.name.to_s; course.save }
     #   @subresults.each { |result| result.tag_courses }
     # end

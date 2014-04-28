@@ -1,9 +1,7 @@
 require "#{Rails.root}/lib/rules/server/rule"
 
 class ClientRule < Rule
-  # attr_accessor :name, :description, :hidden, :num_courses, :num_units, :operator, :subrules
-    attr_accessor :num_courses, :num_units, :operator, :subrules
-  # alias_method :hidden?, :hidden
+  attr_accessor :num_courses, :num_units, :operator, :subrules, :course
 
   @source = :client
   @rules = {}
@@ -16,47 +14,24 @@ class ClientRule < Rule
     end
   end
 
-  # def initialize(name = nil, description = nil, hidden = true)
-  #   @name = name
-  #   @description = description
-  #   @hidden = hidden
-  #   fail 'abstract' if abstract?
-  # end
-
-  # def abstract?
-  #   self.class == Rule
-  # end
-
-  # def self.check_type(desc, obj, expected_class)
-  #   unless obj.is_a? expected_class
-  #     fail TypeError,
-  #       "#{desc}: expected #{expected_class} but got #{obj.class} #{obj.inspect}"
-  #   end
-  # end
-
-  # def self.get(name)
-  #   name = name.downcase.to_sym if name.is_a? String
-  #   check_type 'name', name, Symbol
-  #   fail "rule #{name.inspect} does not exist" unless @rules.include? name
-  #   @rules[name]
-  # end
-
-  # def self.add(rule)
-  #   check_type 'rule', rule, Rule
-  #   check_type 'rule.name', rule.name, Symbol
-  #   @rules[rule.name] = rule
-  # end
-
-  def initialize(name, entry)
+  def initialize(name, entry={})
     @name = name.to_sym
-    @entry = entry
+    entries = entry['args']
     @description = entry['description']
     @hidden = entry['hidden'] || false
-    @operator = ClientRule.get_operator(entry)
-    @num_courses = ClientRule.get_num_courses(entry)
-    @num_units = ClientRule.get_num_units(entry)
+    @operator = get_operator(entry)
+    @num_courses = get_num_courses(entry)
+    @num_units = get_num_units(entry)
     @subrules = []
-    ClientRule.parse_entry @entry
+    @course = nil
+    parse_entries entries if variable?
+  end
+
+  def self.course_rule(name)
+    rule = ClientRule.new(name)
+    rule.hidden = true
+    rule.num_courses = 1
+    rule
   end
 
   def json
@@ -66,22 +41,25 @@ class ClientRule < Rule
     rule["operator"] = @operator
     rule["numCourses"] = @num_courses
     rule["numUnits"] = @num_units
+    rule["course"] = @course
     rule["subrules"] = []
     @subrules.each { |subrule| rule["subrules"] << subrule.json }
     rule["url"] = Rails.application.routes.url_helpers.display_rules_path(:rule => @name)
     rule
   end
 
-  def self.get_operator(entry)
+  def get_operator(entry)
     rule = entry['rule']
-    if rule == 'AND' || rule == 'OR'
+    if rule == 'AND'
       rule
+    elsif rule == 'OR'
+      rule if @hidden
     else
-      false
+      nil
     end
   end
 
-  def self.get_num_courses(entry)
+  def get_num_courses(entry)
     if entry['rule'] == 'count_courses'
       entry['args']['min'] || 1
     else
@@ -89,7 +67,7 @@ class ClientRule < Rule
     end
   end
 
-  def self.get_num_units(entry)
+  def get_num_units(entry)
     if entry['rule'] == 'units'
       entry['args']['min'] || 0
     else
@@ -97,27 +75,29 @@ class ClientRule < Rule
     end
   end
 
-  def self.parse_entry(entry, allow_implicit = true)
-    if entry.is_a? String
-      name = entry
-      args = nil
-    elsif entry.include? 'rule'
+  def variable?
+    @operator == "AND" || @operator == "OR"
+  end
+
+  def parse_entry(entry)
+    if entry.include? 'rule'
       name = entry['rule']
-      args = entry.include?('args') ? entry['args'] : nil
-    elsif allow_implicit && entry.length == 1
+      @subrules << ClientRule.get(name)
+    elsif entry.include? 'course'
+      name = entry['course']
+      @subrules << ClientRule.course_rule(name)
+    elsif entry.length == 1
         begin 
           name = entry.keys[0]
-          args = entry.values[0]
         rescue
           puts entry
         end
     else
       fail ArgumentError, "invalid rule entry: #{entry}"
     end
-    # [ClientRule.get(name), args]
   end
 
-  def self.parse_entries(entries)
+  def parse_entries(entries)
     entries.map { |entry| parse_entry entry }
   end
 

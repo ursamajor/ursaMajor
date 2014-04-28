@@ -11,3 +11,4 @@
     .gridLabel garbage
     .btn.btn-info.btn-draggable(data-ng-repeat="course in garbage" data-ng-show="course.name" data-drag="{{course.drag}}" data-jqyoui-options="{revert: 'invalid'}" data-ng-model="garbage" jqyoui-draggable="{index: {{$index}},animate:true}")
       {{course.name}}
+.btn.btn-info(data-ng-click="update()") Save Plan

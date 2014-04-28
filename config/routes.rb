@@ -31,7 +31,8 @@ Rails.application.routes.draw do
   end
 
   get '/tag', to: 'tags#tag'
-  get '/tag_all', to: 'tags#tag_all'  
+  get '/tag_all', to: 'tags#tag_all'
+  get '/tag_only_hidden', to: 'tags#tag_only_hidden'
 
   get '/' => redirect('/landing')
   root :to => "home#index"

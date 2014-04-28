@@ -15,7 +15,19 @@ class TagsController < ApplicationController
       all_courses = Semester.new
       all_courses.courses = Course.all
       Rule.all.values.each do |rule|
-        next if rule.hidden?
+        next if rule.core?
+        rule.check_print all_courses, nil
+      end
+    end
+    redirect_to root_path
+  end
+
+  def tag_only_hidden
+    if ENV['TAG_ALL'] == "true"
+      all_courses = Semester.new
+      all_courses.courses = Course.all
+      Rule.all.values.each do |rule|
+        next if rule.core? or not rule.hidden?
         rule.check_print all_courses, nil
       end
     end

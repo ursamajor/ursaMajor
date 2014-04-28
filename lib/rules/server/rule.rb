@@ -1,5 +1,6 @@
 class Rule
-  attr_accessor :name, :description, :hidden
+  attr_accessor :name, :description, :core, :hidden
+  alias_method :core?, :core
   alias_method :hidden?, :hidden
 
   @source = :raw
@@ -13,10 +14,10 @@ class Rule
     end
   end
 
-  def initialize(name = nil, description = nil, hidden = true)
+  def initialize(name = nil, description = nil)
     @name = name
     @description = description
-    @hidden = hidden
+    @core = true
     fail 'abstract' if abstract?
   end
 

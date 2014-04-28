@@ -22,7 +22,7 @@ class Plan < ActiveRecord::Base
   def check
     results = []
     Rule.all.values.each do |rule|
-      next if rule.hidden?
+      next if rule.core?
       result = {}
       value = rule.check_print self, nil
       result["name"] = rule.name.to_s

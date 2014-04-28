@@ -67,6 +67,7 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
     []
 
   $scope.tagged_with = (course, rule) ->
+    return true if course.uid is rule.name
     for tags in course.tagged_with
       return true if tags is rule.name
     false
@@ -85,9 +86,12 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
         numCourses += 1
         numUnits += course["units"]
     pass = numUnits >= rule.numUnits and numCourses >= rule.numCourses
-    if pass
+    if pass and rule.operator
       for subrule in rule["subrules"]
-        pass = false if not $scope.checkRule(subrule)["pass"]
+        if rule.operator == "AND"
+          pass = false unless $scope.checkRule(subrule)["pass"]
+        if rule.operator == "OR"
+          pass = true if $scope.checkRule(subrule)["pass"]
     {
       "pass": pass
       "courses": {id: course["id"], name: course["name"]} for course in fulfillingSet
