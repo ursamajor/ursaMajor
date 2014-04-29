@@ -5,12 +5,12 @@
 .plan-name { 
   color: #404040;
   float: left;
-  width: 90%;
+  width: 100%;
 }
 
 .plan-name input { 
   border-style: 1px solid; 
-  width: 90%;
+  width: 100%;
 }
 
 a.btn-link {
@@ -19,12 +19,12 @@ margin-top: 29px;
 }
 
 .course-input { 
-  width: 140px; 
+  width: 100%; 
   font-size: 0.9em; 
 }
 
 .query { 
-  width: 147px; 
+  width: 100%; 
 }
 
 /* Show more course description. */
@@ -33,6 +33,7 @@ margin-top: 29px;
   height: 32px;
   overflow: hidden;
 }
+
 .show {
   overflow: visible;
   height: auto;
@@ -50,28 +51,49 @@ a.show {
   display: block;
 }
 
-.thumbnail { 
-  height: 100% !important; 
-  width: 140px; 
+.gridItem { 
+  height: 100% !important;
+  display: block;
+  padding: 4px;
+  margin-bottom: 20px;
+  line-height: 1.428571429;
+  background-color: white;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  position: relative;
 }
 
-#semesters .thumbnail, .thumbnail.backpack { 
-  min-height: 180px
+#semesters .gridItem { 
+  min-height: 180px;
+  width: 100%;
+}
+
+.gridItem.backpack {
+  min-height: 180px;
+  width: 100%
 }
 
 .profile { 
   opacity: 0.9; 
   border-color: #B1B3B1; 
-  border-style: solid; 
+  border-style: solid;
+  width: 100%;
 }
 
 .backpack, #garbage, { 
   border-color: grey; 
-  border-style: dashed; 
+  border-style: dashed;
+  width: 100%;
 }
 
 #garbage { 
-  min-height: 100px;
+  min-height: 90px;
+}
+
+.save {
+  width: 100%;
 }
 
 .btn-droppable { 
@@ -82,7 +104,7 @@ a.show {
 
 .btn-draggable { 
   width: 100%; 
-  margin-top: 1px; 
+  margin-top: 1px;
 }
 
 .gridLabel { 
@@ -100,17 +122,23 @@ a.show {
   display: inline-block; 
 }
 
-#semesters { 
-  float: left; 
+.units.backpack {
+  display: none;
 }
 
-a.fa.fa-times-circle { 
-  color: #990000; 
-  font-size: 0.9em; 
-  float: right; 
-  display: inline-block; 
-  cursor: pointer; 
-  cursor: hand; 
+.tabs {
+  font-size: 1.7em; 
+  opacity: 0.4; 
+  right: 100%;
+  -webkit-transform-origin: 100% 100%;
+  -webkit-transform: rotate(-90deg);
+  transform-origin: 100% 100%;
+  transform: rotate(-90deg);
+  position: absolute;
+}
+
+.caption {
+  padding: 2px !important;
 }
 
 a.fa.fa-cog {
@@ -131,28 +159,10 @@ a.fa.fa-times-circle:hover, a.fa.fa-cog:hover {
 #rules {
   margin-left: 0px; 
   padding-left: 0px; 
-  float: right; 
-  width: 30%; 
+  width: 100%; 
+  float: right;
   height: 585px; 
   overflow:auto 
-}
-
-.caption {
-  padding: 2px !important;
-}
-
-.semester-name {
-  padding-right: 30% !important;
-  font-size: 1.7em; 
-  opacity: 0.9; 
-  -moz-transform: rotate(-90deg);
-  -webkit-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1)
-}
-
-.semester-name#fall { 
-  float: left; 
 }
 
 td#result.red a.result { 

@@ -38,6 +38,8 @@ Functionality
 - updating rule (can only use up to 2 from same dept for breadths)
 
 Appearance
+- in course modal, show which requirements satisfies, drop down to add to a semester
+- ability to hide a year
 - color code (breadth, major, university)
 - show remaining requirements unsatisfied in course catalog, click to display 
   courses that satisfy, show course that will fulfill multiple requirements

@@ -1,17 +1,18 @@
-%div(data-ng-controller="PlanDetailCtrl")
-  .row#shift
-    .left-column-container.column.col-md-2.plan-name-text
-      - if @demo
-        %h2.plan-name= @plan.name
-      - else
-        .plan-name
-          %h2= best_in_place @plan, :name, type: :input, :activator => "#edit#{@plan.id}"
-        %a.btn-link{id: "edit#{@plan.id}"}
-          %i.fa.fa-pencil.pencil-icon
-      = render 'plans/leftColumn'
-    .right-column-container.column.container.col-md-10
-      %br
+.div(data-ng-controller="PlanDetailCtrl")
+  .col-md-2
+    - if @demo
+      %h2.plan-name= @plan.name
+    - else
+      .plan-name
+        %h2= best_in_place @plan, :name, type: :input, :activator => "#edit#{@plan.id}"
+      %a.btn-link{id: "edit#{@plan.id}"}
+        %i.fa.fa-pencil.pencil-icon
+    = render 'plans/leftColumn'
+  .col-md-10
+    .col-md-8
       %br
       = render 'plans/courseModals'
       = render 'plans/semesterGrid'
+    .col-md-4
+      %br
       = render 'plans/rules'

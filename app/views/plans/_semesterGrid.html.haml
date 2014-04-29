@@ -1,29 +1,33 @@
 #semesters
-  %div(class="contentWrapper")
-    .row 
-      .col-md-1
-        .semester-name#fall Fall
-      = render partial: "plans/semester", locals: {semester: 'fall1', label: '2013', type: 'semester'}
-      = render partial: "plans/semester", locals: {semester: 'fall2', label: '2014', type: 'semester'}
-      = render partial: "plans/semester", locals: {semester: 'fall3', label: '2015', type: 'semester'}
-      = render partial: "plans/semester", locals: {semester: 'fall4', label: '2016', type: 'semester'}
-    
+  .col-md-3
+    .tabs-container
+      .row
+        .tabs Fall
+        = render partial: "plans/semester", locals: {semester: 'fall1', label: "2013", type: 'semester'}
+      .row
+        .tabs Spring
+        = render partial: "plans/semester", locals: {semester: 'spring1', label: "2014", type: 'semester'}
+      .row
+        .tabs Summer
+        = render partial: "plans/semester", locals: {semester: 'summer1', label: "2014", type: 'semester'}
+  .col-md-3
     .row
-      .col-md-1
-        %br
-        %br
-        .semester-name Spring
-      = render partial: "plans/semester", locals: {semester: 'spring1', label: '2014', type: 'semester'}
-      = render partial: "plans/semester", locals: {semester: 'spring2', label: '2015', type: 'semester'}
-      = render partial: "plans/semester", locals: {semester: 'spring3', label: '2016', type: 'semester'}
-      = render partial: "plans/semester", locals: {semester: 'spring4', label: '2017', type: 'semester'}
+      = render partial: "plans/semester", locals: {semester: 'fall2', label: "2014", type: 'semester'}
     .row
-      .col-md-1
-        %br
-        %br
-        %br
-        .semester-name Summer
-      = render partial: "plans/semester", locals: {semester: 'summer1', label: '2014', type: 'semester'}
-      = render partial: "plans/semester", locals: {semester: 'summer2', label: '2015', type: 'semester'}
-      = render partial: "plans/semester", locals: {semester: 'summer3', label: '2016', type: 'semester'}
-      = render partial: "plans/semester", locals: {semester: 'summer4', label: '2017', type: 'semester'}
+      = render partial: "plans/semester", locals: {semester: 'spring2', label: "2015", type: 'semester'}
+    .row
+      = render partial: "plans/semester", locals: {semester: 'summer2', label: "2015", type: 'semester'}
+  .col-md-3
+    .row
+      = render partial: "plans/semester", locals: {semester: 'fall3', label: "2015", type: 'semester'}
+    .row
+      = render partial: "plans/semester", locals: {semester: 'spring3', label: "2016", type: 'semester'}
+    .row
+      = render partial: "plans/semester", locals: {semester: 'summer3', label: "2016", type: 'semester'}
+  .col-md-3
+    .row
+      = render partial: "plans/semester", locals: {semester: 'fall4', label: "2016", type: 'semester'}
+    .row
+      = render partial: "plans/semester", locals: {semester: 'spring4', label: "2017", type: 'semester'}
+    .row
+      = render partial: "plans/semester", locals: {semester: 'summer4', label: "2017", type: 'semester'}

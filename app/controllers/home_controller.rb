@@ -5,9 +5,8 @@ class HomeController < ApplicationController
     if signed_in?
       redirect_to demo_path and return
     else
-      @landing_page = true 
       @user = User.new
-      render :layout => "no_header"
+      render :layout => "landing"
     end
   end
 

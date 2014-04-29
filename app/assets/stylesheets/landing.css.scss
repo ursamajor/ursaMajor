@@ -3,6 +3,7 @@
   font-family: 'Pacifico';
   src: font-url('Pacifico.ttf') format('truetype');
 }
+
 body.landing_page { 
   height: 100%; width: 100%; 
   background: url('http://i.imgur.com/qVof81w.jpg') no-repeat center center fixed; 
@@ -108,8 +109,5 @@ body.landing_page {
     color: white; 
     font-size: 14px; 
     line-height: 13px; 
-  }
-  #error_explanation {
-    
   }
 }
