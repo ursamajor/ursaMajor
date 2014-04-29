@@ -7,6 +7,7 @@ class HomeController < ApplicationController
     else
       @landing_page = true 
       @user = User.new
+      render :layout => "no_header"
     end
   end
 

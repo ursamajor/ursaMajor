@@ -6,9 +6,7 @@ In Progress
   - flag as an exclusive rule, which removes course from plan when checking rest
   
 Next Tasks
-- site tour
-- scrolling highlights of site
-- hide angular bindings on load
+- switch things to minified js
 - tag line
 - better mappings of department names, also search by title/description
 - consistent displaying of rules (only main, no hidden)
@@ -31,6 +29,9 @@ Functionality
 - updating rule (can only use up to 2 from same dept for breadths)
 
 Appearance
+- site tour
+- scrolling highlights of site
+- drop down navbar
 - handling display of plan names that are long
 - ability to move courses within a semester around
 - handling semester box expansion

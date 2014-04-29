@@ -1,4 +1,5 @@
 class PasswordsController < Devise::PasswordsController
+  layout "no_header"
 
   before_action :landing
 
