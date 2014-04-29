@@ -1,21 +1,22 @@
-.left-column-container.column.col-md-3
-.right-column-container.column.container.col-md-8
-  %h2= @course.name
-  %h4= @course.title
-  %h3 Description
-  #description= @course.description
-  %h3 Rules Met
-  %table.table
-    %thead
-      %tr
-        %th Rule
-        %th Description
-    .body
-      - @course.rule_list.each do |rule|
-        - begin
-          - Rule.get(rule)
-        - rescue
-          - next
+.col-md-3
+.col-md-9
+  .col-md-12
+    %h2= @course.name
+    %h4= @course.title
+    %h3 Description
+    #description= @course.description
+    %h3 Rules Met
+    %table.table
+      %thead
         %tr
-          %td= link_to rule, display_rules_path(:rule => rule)
-          %td= Rule.get(rule).description
+          %th Rule
+          %th Description
+      .body
+        - @course.rule_list.each do |rule|
+          - begin
+            - Rule.get(rule)
+          - rescue
+            - next
+          %tr
+            %td= link_to rule, display_rules_path(:rule => rule)
+            %td= Rule.get(rule).description

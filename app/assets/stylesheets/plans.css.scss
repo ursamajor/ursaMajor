@@ -63,11 +63,20 @@ a.show {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   position: relative;
+  width: 100%;
 }
 
-#semesters .gridItem { 
-  min-height: 180px;
+#semesters {
   width: 100%;
+}
+
+#semesters .gridItem.semester { 
+  min-height: 180px;
+}
+
+.no-gutter {
+  padding-left:0;
+  padding-right:0;
 }
 
 .gridItem.backpack {
@@ -108,7 +117,7 @@ a.show {
 }
 
 .gridLabel { 
-  color: green; 
+  color: grey; 
   opacity: 0.5; 
   font-size: 1.3em; 
   display: inline-block; 
@@ -128,8 +137,8 @@ a.show {
 
 .tabs {
   font-size: 1.7em; 
-  opacity: 0.4; 
-  right: 100%;
+  opacity: 0.8; 
+  right: 98%;
   -webkit-transform-origin: 100% 100%;
   -webkit-transform: rotate(-90deg);
   transform-origin: 100% 100%;
