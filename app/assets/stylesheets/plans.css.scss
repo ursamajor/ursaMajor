@@ -68,7 +68,6 @@ a.show {
 .backpack, #garbage, { 
   border-color: grey; 
   border-style: dashed; 
-  background: rgba(142, 142, 142, 0.05);
 }
 
 #garbage { 
@@ -87,7 +86,7 @@ a.show {
 }
 
 .gridLabel { 
-  color: grey; 
+  color: green; 
   opacity: 0.5; 
   font-size: 1.3em; 
   display: inline-block; 

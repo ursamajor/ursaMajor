@@ -8,6 +8,13 @@
     = csrf_meta_tags
 
   %body{:class => @landing_page? "landing_page" : ""}
+    - flash.each do |name, msg|
+      .flash
+        - if not msg.nil?
+          - if msg.is_a?(String)
+            %div{:class => "alert alert-#{name == :notice ? "success" : "warning"}", :id => "flash"}
+              %a.close{"data-dismiss" => "alert"} ×
+              = content_tag :div, msg, :id => "flash_#{name}"
     .container
       .content.row
         = yield

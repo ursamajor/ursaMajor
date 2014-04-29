@@ -4,8 +4,17 @@ In Progress
   - all different combinations to decide which one to remove/use for a certain rule
     - utility function of numRulesSatisfied, proportion of courses left to fulfill other requirements
   - flag as an exclusive rule, which removes course from plan when checking rest
+- scrolling highlights of site
+  - fast
+  - easy to use
+  - all your courses are here
+  - discover courses you'll love
+  - a schedule that's personal
+  - courses bring us together
+  - want the right schedule? just browse
   
 Next Tasks
+- favicon
 - switch things to minified js
 - tag line
 - better mappings of department names, also search by title/description
@@ -29,8 +38,10 @@ Functionality
 - updating rule (can only use up to 2 from same dept for breadths)
 
 Appearance
+- color code (breadth, major, university)
+- show remaining requirements unsatisfied in course catalog, click to display 
+  courses that satisfy, show course that will fulfill multiple requirements
 - site tour
-- scrolling highlights of site
 - drop down navbar
 - handling display of plan names that are long
 - ability to move courses within a semester around
@@ -46,6 +57,7 @@ Appearance
 Chores
 - going through completed rules, make sure they work
 - separate courses and plans controller again (combined for sake of duplicate removal)
+- documentation
 
 After First Release
 - able to flag a course under a certain rule
@@ -64,6 +76,8 @@ Possible Features
 - allow input of grades, display gpa overall/per semester
 - share plan
 - sample major plan
+- different gradients for semesters
+- user picks color of classes, heavier load can tell by color (based on #units, diff reqs, etc)
 
 Optional Tasks
 - loading bars/progress wheel
