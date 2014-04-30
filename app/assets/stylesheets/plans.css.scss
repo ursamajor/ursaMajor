@@ -63,7 +63,7 @@ a.show {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   position: relative;
-  width: 100%;
+  width: 25%;
 }
 
 #semesters {
@@ -85,7 +85,7 @@ a.show {
   width: 90%;
 }
 
-.backpack, #garbage, { 
+.gridItem.backpack, .gridItem#garbage, { 
   border-color: grey; 
   border-style: dashed;
   width: 90%;
@@ -132,7 +132,7 @@ a.show {
 .tabs {
   font-size: 1.7em; 
   opacity: 0.8; 
-  right: 98%;
+  right: 100%;
   -webkit-transform-origin: 100% 100%;
   -webkit-transform: rotate(-90deg);
   transform-origin: 100% 100%;

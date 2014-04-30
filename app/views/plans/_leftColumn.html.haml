@@ -5,7 +5,13 @@
       {{course.name}}
 %br
 = render 'plans/profile'
-= render partial: 'plans/semester', locals: {semester: 'backpack', label: 'backpack', type: 'backpack'}
+.gridItem.backpack(data-drop="true" data-ng-model="backpack" data-jqyoui-options="{accept:'.btn-draggable:not([data-ng-model=backpack])'}" jqyoui-droppable="{multiple:true}")
+  .caption 
+    .gridLabel backpack
+    %a.fa.fa-cog(data-ng-click="semesterSettings('backpack')")
+    .btn.btn-primary.btn-draggable(data-ng-click="courseDisplay(course.id)" data-ng-repeat="course in backpack" data-ng-show="course.name" data-drag="{{course.drag}}" data-jqyoui-options="{revert: 'invalid'}" data-ng-model="backpack" jqyoui-draggable="{onStart: 'startDragging', index: {{$index}},animate:true}")
+      {{course.name}}
+    .units(class="backpack") {{backpack.units}} units
 .gridItem#garbage(data-drop="true" data-ng-model="garbage" data-jqyoui-options="{accept:'.btn-draggable:not([data-ng-model=garbage])'}" jqyoui-droppable="{multiple:true}")
   .caption
     .gridLabel garbage
