@@ -5,12 +5,12 @@
 .plan-name { 
   color: #404040;
   float: left;
-  width: 100%;
+  width: 90%;
 }
 
 .plan-name input { 
   border-style: 1px solid; 
-  width: 100%;
+  width: 90%;
 }
 
 a.btn-link {
@@ -19,12 +19,12 @@ margin-top: 29px;
 }
 
 .course-input { 
-  width: 100%; 
+  width: 90%; 
   font-size: 0.9em; 
 }
 
 .query { 
-  width: 100%; 
+  width: 90%; 
 }
 
 /* Show more course description. */
@@ -74,27 +74,21 @@ a.show {
   min-height: 180px;
 }
 
-.no-gutter {
-  padding-left:0;
-  padding-right:0;
-}
-
 .gridItem.backpack {
   min-height: 180px;
-  width: 100%
 }
 
 .profile { 
   opacity: 0.9; 
   border-color: #B1B3B1; 
   border-style: solid;
-  width: 100%;
+  width: 90%;
 }
 
 .backpack, #garbage, { 
   border-color: grey; 
   border-style: dashed;
-  width: 100%;
+  width: 90%;
 }
 
 #garbage { 
@@ -102,7 +96,7 @@ a.show {
 }
 
 .save {
-  width: 100%;
+  width: 90%;
 }
 
 .btn-droppable { 
