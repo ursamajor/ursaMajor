@@ -3,9 +3,8 @@
     - if @demo
       %h2.plan-name= @plan.name
     - else
-      .plan-name
-        %h2= best_in_place @plan, :name, type: :input, :activator => "#edit#{@plan.id}"
-      %a.btn-link{id: "edit#{@plan.id}"}
+      %h2.plan-name= best_in_place @plan, :name, type: :input, :activator => "#edit#{@plan.id}"
+      %a.btn-link.edit-plan-name{id: "edit#{@plan.id}"}
         %i.fa.fa-pencil.pencil-icon
     = render 'plans/leftColumn'
   .col-md-10.col-sm-10

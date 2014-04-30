@@ -1,16 +1,19 @@
 .col-md-3
 .col-md-9
   .col-md-12
-    %h2= @course.name
+    %h2= @course.search_name
     %h4= @course.title
     %h3 Description
     #description= @course.description
+    %h3 Units
+    #units= @course.units
     %h3 Rules Met
     %table.table
       %thead
         %tr
           %th Rule
           %th Description
+          %th Units
       .body
         - @course.rule_list.each do |rule|
           - begin

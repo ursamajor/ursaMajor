@@ -95,6 +95,7 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
     {
       "pass": pass
       "courses": {id: course["id"], name: course["name"]} for course in fulfillingSet
+      "units": numUnits
     }
 
   $scope.checkRules = ->

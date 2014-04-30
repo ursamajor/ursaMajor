@@ -8,4 +8,7 @@
         .course(data-ng-repeat="course in rule.result.courses")
           %a(href="/courses/{{course.id}}") {{course.name}}
       .modal-footer
+        .units
+          %b Units:
+          {{rule.result.units}}
         %button.btn.btn-default{"data-dismiss" => "modal", type: "button"} Close

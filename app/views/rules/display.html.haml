@@ -10,4 +10,4 @@
       .body
         - @courses.each do |course|
           %tr
-            %th= link_to course.name, course_path(course)
+            %th= link_to course.search_name, course_path(course)

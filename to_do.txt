@@ -1,5 +1,4 @@
 In Progress
-- fix button for inplace editing of name
 - remove course if used for rule and can only be used once
   - all different combinations to decide which one to remove/use for a certain rule
     - utility function of numRulesSatisfied, proportion of courses left to fulfill other requirements
@@ -14,18 +13,13 @@ In Progress
   - want the right schedule? just browse
   
 Next Tasks
-- favicon
-- switch things to minified js
 - tag line
 - better mappings of department names, also search by title/description
-- consistent displaying of rules (only main, no hidden)
-- show units in course page
-- show unit count of fulfilling set
+  - mappings field (array of mappings)
 - selecting which rules you want
 - switch plans without reload
 - editing of course info in ui
 - display rule description in modal, plus courses that satisfy
-- display course names as search_name ones all throughout site
 - sort courses beforehand in rails
   - more efficient -> place garbage course in right place instead of sorting everything
 
