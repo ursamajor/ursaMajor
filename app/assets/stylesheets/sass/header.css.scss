@@ -13,7 +13,20 @@ $menu-unit-width: (100% / $units);
     margin: 0;
     border: 0;
     border-radius: 0;
-    height: 20px;
+}
+
+.navbar {
+    min-height: 30px;
+}
+
+button.navbar-toggle {
+    padding: 0;
+    height: 15px;
+}
+
+.nav > li > a {
+    padding-top: 5px;
+    padding-bottom: 0;
 }
 
 .navbar .navbar-toggle .icon-bar {
@@ -25,19 +38,13 @@ $menu-unit-width: (100% / $units);
     text-decoration: none;
 }
 
-
-$link-top-padding: 8px;
-$link-bottom-padding: 5px;
-$menu-text-height: 16px;
-$icon-text-height: 19px;
-$total-menu-height: $link-top-padding + $link-bottom-padding + $menu-text-height + $icon-text-height;
 #main-menu {
     @include font($main-font, 300);
     display: block;
     ul.main-navigation {
         list-style: none;
         .tab {
-            background-color: $ld-grey;
+            background-color: $um-header;
             cursor: pointer;
             display: inline-block;
             text-align: center;
@@ -45,15 +52,9 @@ $total-menu-height: $link-top-padding + $link-bottom-padding + $menu-text-height
                 cursor: pointer;
                 text-decoration: none;
                 color: white;
-                padding: $link-top-padding 30px $link-bottom-padding 30px;
                 p {
                     width: 100%;
-                    @include height($menu-text-height, 12px);
                     display: block;
-                }
-                i {
-                    @include height($icon-text-height, 15px);
-                    
                 }
             }
             a:hover {
@@ -63,38 +64,27 @@ $total-menu-height: $link-top-padding + $link-bottom-padding + $menu-text-height
                 margin-bottom: 0;
             }
         }
-
-        li:hover {
-         background: lighten($ld-grey, 10%);
-        }
     }
 }
 
 #main-menu {
-    background-color: $ld-grey;
+    background-color: $um-header;
     @include font($main-font, 300);
     .navbar-header {
-        img {
-        margin-left: 8px;
-        margin-top: 4px;
-        height: 40px;
-        }
         .menu-text {
             color: white;
-            padding-top: 15px;
             font-size: 16px;
         }
     }
-    .home-link {
-        display: block;
-        height: $total-menu-height;
-        .menu-text {
+    .menu-text {
+        .home-link {
+            display: block;
             font-size: 17px;
             vertical-align: top;
             display: inline-block;
-            padding-top: 15px;
             font-weight: 400;
             padding-left: 40px;
+            padding-top: 0;
         }
     }
 }
@@ -114,11 +104,9 @@ $total-menu-height: $link-top-padding + $link-bottom-padding + $menu-text-height
     li {
         list-style: none;
         padding: 0;
-        // padding: 4px 0px 4px 0px;
         cursor: pointer;
         color: black;
         font-size: 13px;
-        line-height: 20px;
         a {
             color: black;
             text-decoration: none;
