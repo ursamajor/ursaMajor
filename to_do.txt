@@ -44,12 +44,9 @@ Appearance
 - show remaining requirements unsatisfied in course catalog, click to display 
   courses that satisfy, show course that will fulfill multiple requirements
 - site tour
-- drop down navbar
 - handling display of plan names that are long
 - ability to move courses within a semester around
-- handling semester box expansion
-- sizing glitches drag and drop
-- make ui more responsive
+- make ui more responsive, mobile friendly
 - semester settings?
   - flip card to confirm clear
   - favorite schedule
