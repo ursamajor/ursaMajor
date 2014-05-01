@@ -66,7 +66,7 @@ class Course < ActiveRecord::Base
     @@dept_mappings[dept_name].each do |mapping|
       search_names << name.gsub(".", " ").gsub(dept_name, mapping)
     end
-    search_names << title
+    search_names
   end
 
   def self.add(department)

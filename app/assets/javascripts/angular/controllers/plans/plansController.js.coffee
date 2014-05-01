@@ -21,22 +21,18 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
     $scope.courses.sort $scope.sortCourses #todo: sort in rails controller so don't have to here
     $scope.updatePlan()
     $scope.removeDuplicates() #todo: find way to only have to do this once and avoid data race
-    $scope.totalDisplayed = 20
- 
-  $scope.addMoreCourses = ->
-    $scope.totalDisplayed += 30
 
   $scope.filterCourses = ->
     $filter('filter') $scope.courses, {searchNames: $scope.query}
+    # names = $filter('filter') $scope.courses, {searchNames: $scope.query}
+    # titles = $filter('filter') $scope.courses, {title: $scope.query}
+    # names.concat titles
 
   $scope.$watchCollection 'garbage', ->
     garbageCourse = $scope.garbage[0]
     $scope.courses.push garbageCourse
     $scope.courses.sort $scope.sortCourses
     $scope.garbage = []
-
-  $scope.$watch 'query', ->
-    $scope.totalDisplayed = 20
 
   # END CoursesController
   # later make one method for returning garbage to $scope.courses

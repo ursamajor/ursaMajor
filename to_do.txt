@@ -14,6 +14,8 @@ In Progress
   - degree auditing in an instant
   
 Next Tasks
+- filter by course name first, then by title
+- semester object should have year+fa/sp/su
 - save dept name as field
 - tag line
 - selecting which rules you want
@@ -46,6 +48,7 @@ Appearance
 
 Chores
 - going through completed rules, make sure they work
+- online/summer versions of classes should also work with rules
 - documentation
 - tag rules by major
 
