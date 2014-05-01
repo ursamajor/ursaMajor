@@ -1,5 +1,6 @@
 .div(data-ng-controller="PlanDetailCtrl")
-  .col-md-2.col-sm-2
+  / .col-md-2.col-sm-2
+  .col-md-2
     - if @demo
       %h2.plan-name= @plan.name
     - else
@@ -7,11 +8,14 @@
       %a.btn-link.edit-plan-name{id: "edit#{@plan.id}"}
         %i.fa.fa-pencil.pencil-icon
     = render 'plans/leftColumn'
-  .col-md-10.col-sm-10
-    .col-md-8.col-sm-8
+  / .col-md-10.col-sm-10
+  .col-md-10
+    / .col-md-8.col-sm-8
+    .col-md-8
       %br
       = render 'plans/courseModals'
       = render 'plans/semesterGrid'
-    .col-md-4.col-sm-4
+    / .col-md-4.col-sm-4
+    .col-md-4
       %br
       = render 'plans/rules'
