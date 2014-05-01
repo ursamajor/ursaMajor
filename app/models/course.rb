@@ -106,14 +106,14 @@ class Course < ActiveRecord::Base
   #   name[" "]
   # end
 
-  # def self.add_back_double_quotes
-  #   Course.all.each do |course|
-  #     if course.description
-  #       course.description = course.description.gsub("<", '"').gsub(">", '"')
-  #       course.save
-  #     end
-  #   end
-  # end
+  def self.add_back_double_quotes
+    Course.all.each do |course|
+      if course.description
+        course.description = course.description.gsub("<", '"').gsub(">", '"')
+        course.save
+      end
+    end
+  end
 
   def self.remove_double_quotes
     Course.all.each do |course|
