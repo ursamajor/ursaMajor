@@ -48,7 +48,6 @@ Chores
 - going through completed rules, make sure they work
 - documentation
 - tag rules by major
-- fix seeds.rb (replace quotes)
 
 After First Release
 - able to flag a course under a certain rule

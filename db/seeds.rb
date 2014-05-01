@@ -599,7 +599,7 @@ courses = [
     "number": 201, 
     "units": 4, 
     "title": "Interdisciplinary Research Methods", 
-    "description": "This seminar will provide a detailed introduction and working knowledge of the various methodological techniques appropriate for interdisciplinary research on the African Diaspora." 
+    "description": "This seminar will provide a detailed introduction and working knowledge of the various methodological techniques appropriate for interdisciplinary research on the African Diaspora."
   }, 
   { 
     "name": "AFRICAM.201B", 
@@ -942,14 +942,14 @@ courses = [
     "number": 286, 
     "units": 3, 
     "title": "The Education of African-American Students", 
-    "description": "This seminar will examine a wide range of perspectives on the education of African American children and adolescents in the United States. Readings will support students in understanding some of the key issues and tensions in African American education and school achievement, including the roles that culture, identity, parents, families, and communities play in the education and schooling of African American students; systemic issues in educational improvement and the perpetuation of "achievement gaps"; and language and power. Also listed as Education C286." 
+    "description": "This seminar will examine a wide range of perspectives on the education of African American children and adolescents in the United States. Readings will support students in understanding some of the key issues and tensions in African American education and school achievement, including the roles that culture, identity, parents, families, and communities play in the education and schooling of African American students; systemic issues in educational improvement and the perpetuation of 'achievement gaps'; and language and power. Also listed as Education C286." 
   }, 
   { 
     "name": "AFRICAM.C375", 
     "number": 375, 
     "units": 4, 
     "title": "Critical Pedagogy: Instructor Training", 
-    "description": "The seminar provides a systemic approach to theories and practices of critical pedagogy at the university level. Examines the arts of teaching and learning and current disciplinary and cross-disciplinary issues in African/diaspora and Ethnic Studies. Participation two hours per week as practicum in 39, "Introduction to the University: African American Perspectives" is mandatory. The course is required for students expecting to serve as graduate student instructors in the department. Also listed as Ethnic Studies Graduate Group C375."
+    "description": "The seminar provides a systemic approach to theories and practices of critical pedagogy at the university level. Examines the arts of teaching and learning and current disciplinary and cross-disciplinary issues in African/diaspora and Ethnic Studies. Participation two hours per week as practicum in 39, 'Introduction to the University: African American Perspectives' is mandatory. The course is required for students expecting to serve as graduate student instructors in the department. Also listed as Ethnic Studies Graduate Group C375." 
   }, 
   { 
     "name": "AFRICAM.H195A", 
@@ -1061,7 +1061,7 @@ courses = [
     "number": 190, 
     "units": 4, 
     "title": "Senior Thesis", 
-    "description": "All American Studies majors must satisfy the senior thesis requirement. Three options are available:AS 190-Senior Thesis, AS 191-Senior Seminar, or students may (with prior Faculty Advisor approval) enroll in an upper division seminar appropriate to their concentration for which they write a substantial research paper. Students planning to enroll in AS 190 must complete the "Thesis Proposal/Adviser Agreement" (available in the departmental office) prior to the semester in which the thesis is written." 
+    "description": "All American Studies majors must satisfy the senior thesis requirement. Three options are available:AS 190-Senior Thesis, AS 191-Senior Seminar, or students may (with prior Faculty Advisor approval) enroll in an upper division seminar appropriate to their concentration for which they write a substantial research paper. Students planning to enroll in AS 190 must complete the 'Thesis Proposal/Adviser Agreement' (available in the departmental office) prior to the semester in which the thesis is written." 
   }, 
   { 
     "name": "AMERSTD.191", 
@@ -1124,7 +1124,7 @@ courses = [
     "number": 10, 
     "units": 4, 
     "title": "Introduction to American Studies: Hollywood: the Place, the Industry, the Fantasy", 
-    "description": "This course will introduce students to the interdisciplinary field of American Studies, taking the "Hollywood Dream Factory" as the central theme. Focusing on both parts of that phrase, the course will proceed along a double path. We will examine the historical and geographical development of the motion picture industry from the rise of the studio system to the "new" entertainment economy of the 1980's and we will examine ways Hollywood is represented in literature and film. Also listed as Letters and Science C40T." 
+    "description": "This course will introduce students to the interdisciplinary field of American Studies, taking the 'Hollywood Dream Factory' as the central theme. Focusing on both parts of that phrase, the course will proceed along a double path. We will examine the historical and geographical development of the motion picture industry from the rise of the studio system to the 'new' entertainment economy of the 1980's and we will examine ways Hollywood is represented in literature and film. Also listed as Letters and Science C40T." 
   }, 
   { 
     "name": "AMERSTD.C111A", 
@@ -1138,7 +1138,7 @@ courses = [
     "number": 111, 
     "units": 4, 
     "title": "Topics in American Studies", 
-    "description": "A course on the intellectual, cultural, historical, and social backgrounds to American literature. Topics will vary from semester to semester. Students should consult the department's "Announcement of Classes" for current offerings well before the start of the semester. Also listed as English C136." 
+    "description": "A course on the intellectual, cultural, historical, and social backgrounds to American literature. Topics will vary from semester to semester. Students should consult the department's 'Announcement of Classes' for current offerings well before the start of the semester. Also listed as English C136." 
   }, 
   { 
     "name": "AMERSTD.C112A", 
@@ -1313,7 +1313,7 @@ courses = [
     "number": 122, 
     "units": 4, 
     "title": "Archaeology of North America", 
-    "description": "<Formerly 122>. Prehistory of North American Indians; prehistoric culture areas; relations with historic Indians." 
+    "description": "'Formerly 122'. Prehistory of North American Indians; prehistoric culture areas; relations with historic Indians." 
   }, 
   { 
     "name": "ANTHRO.122C", 
@@ -1635,7 +1635,7 @@ courses = [
     "number": 156, 
     "units": 4, 
     "title": "Anthropology of the Contemporary", 
-    "description": "This course is an introduction to the conceptual field of "the contemporary," a stylization of both old and new elements that stands in contrast to "modernity", and "post modernity", and which opens up inquiries into the actual state of things, particulary for anthropology. Anthropology 155, while not required, is highly recommended as a prerequisite." 
+    "description": "This course is an introduction to the conceptual field of 'the contemporary,' a stylization of both old and new elements that stands in contrast to 'modernity', and 'post modernity', and which opens up inquiries into the actual state of things, particulary for anthropology. Anthropology 155, while not required, is highly recommended as a prerequisite." 
   }, 
   { 
     "name": "ANTHRO.156B", 
@@ -2020,7 +2020,7 @@ courses = [
     "number": 270, 
     "units": 4, 
     "title": "Semantics", 
-    "description": "<Formerly 270A and 271A-271B.>" 
+    "description": "'Formerly 270A and 271A-271B.'" 
   }, 
   { 
     "name": "ANTHRO.270B", 
@@ -2216,7 +2216,7 @@ courses = [
     "number": 129, 
     "units": 3, 
     "title": "Holocene Paleoecology: How Humans Changed the Earth", 
-    "description": "Since the end of the Pleistocene and especially with the development of agriculturally based societies humans have had cumulative and often irreversible impacts on natural landscapes and biotic resources worldwide. Thus "global change" and the biodiversity crisis are not exclusively developments of the industrial and post-industrial world. This course uses a multi-disciplinary approach, drawing upon methods and data from archaeology, palynology, geomorphology, paleontology, and historical ecology to unravel the broad trends of human ecodynamics over the past 10,000 years. Also listed as Integrative Biology C155." 
+    "description": "Since the end of the Pleistocene and especially with the development of agriculturally based societies humans have had cumulative and often irreversible impacts on natural landscapes and biotic resources worldwide. Thus 'global change' and the biodiversity crisis are not exclusively developments of the industrial and post-industrial world. This course uses a multi-disciplinary approach, drawing upon methods and data from archaeology, palynology, geomorphology, paleontology, and historical ecology to unravel the broad trends of human ecodynamics over the past 10,000 years. Also listed as Integrative Biology C155." 
   }, 
   { 
     "name": "ANTHRO.C129F", 
@@ -2237,7 +2237,7 @@ courses = [
     "number": 146, 
     "units": 5, 
     "title": "Mobile City Chronicles: Gaming with New Technologies of Detection and Security", 
-    "description": "This course studies the city through cases of 19th and 21st century urban detection, including detective fiction, epidemiology, urban planning, surveillance, ethnography, and related technologies. Students develop and playtest cellphone games that in turn require players to investigate cities. This "gaming the city" uses smart phones not only to read existing databases but also to write to them, producing new urban practice and knowledge. The course is organized as a research and game lab. Also listed as Practice of Art C179." 
+    "description": "This course studies the city through cases of 19th and 21st century urban detection, including detective fiction, epidemiology, urban planning, surveillance, ethnography, and related technologies. Students develop and playtest cellphone games that in turn require players to investigate cities. This 'gaming the city' uses smart phones not only to read existing databases but also to write to them, producing new urban practice and knowledge. The course is organized as a research and game lab. Also listed as Practice of Art C179." 
   }, 
   { 
     "name": "ANTHRO.C147B", 
@@ -2538,7 +2538,7 @@ courses = [
     "number": 108, 
     "units": 5, 
     "title": "Architectural Internship", 
-    "description": "An intensive and structured exposure to the professional practice, using the resources of practicing architects' offices as the "laboratory." The seminar discussion focus on understanding how design happens, how projects are managed and how buildings are constructed." 
+    "description": "An intensive and structured exposure to the professional practice, using the resources of practicing architects' offices as the 'laboratory.' The seminar discussion focus on understanding how design happens, how projects are managed and how buildings are constructed." 
   }, 
   { 
     "name": "ARCH.109", 
@@ -2608,7 +2608,7 @@ courses = [
     "number": 136, 
     "units": 3, 
     "title": "The Literature of Space", 
-    "description": "The concept of space as it is applied to the fields of architecture, geography and urbanism can be understood as a barometer of the condition that we call "modernity." This course explores connections between the larger cultural frameworks of the past century, and the idea of space as it has been perceived, conceived and lived during this period. Readings include essays from the disciplines of philosophy, geography, architecture, landscape, and urbanism, and short works of fiction that illustrate and elucidate the spatial concepts. The readings are grouped according to themes that form the foundation for weekly seminar discussions. Chronological and thematic readings reveal the force of history upon the conceptualization of space, and its contradictions." 
+    "description": "The concept of space as it is applied to the fields of architecture, geography and urbanism can be understood as a barometer of the condition that we call 'modernity.' This course explores connections between the larger cultural frameworks of the past century, and the idea of space as it has been perceived, conceived and lived during this period. Readings include essays from the disciplines of philosophy, geography, architecture, landscape, and urbanism, and short works of fiction that illustrate and elucidate the spatial concepts. The readings are grouped according to themes that form the foundation for weekly seminar discussions. Chronological and thematic readings reveal the force of history upon the conceptualization of space, and its contradictions." 
   }, 
   { 
     "name": "ARCH.139", 
@@ -2734,7 +2734,7 @@ courses = [
     "number": 178, 
     "units": 3, 
     "title": "Visionary Architecture", 
-    "description": "This course explores architectural visions as historical windows, examining them from a number of angles. Using a variety of case studies drawn from different media (architectural theory, film, advertisements, architectural projects, and so on) and periods (turn of the century, the Modern Movement, Depression, World War II, 1960's, etc,) it provides a sampling of possibilities and models for the final student project, an in-depth, original research paper. Several themes thread their way through the course, including the role of the "unbuilt" in architectural practice; the uses of the future in the construction of national and personal identities, cultural narratives, and modern mythologies; and the importance of the future as cliche, and the role of play in cultural production." 
+    "description": "This course explores architectural visions as historical windows, examining them from a number of angles. Using a variety of case studies drawn from different media (architectural theory, film, advertisements, architectural projects, and so on) and periods (turn of the century, the Modern Movement, Depression, World War II, 1960's, etc,) it provides a sampling of possibilities and models for the final student project, an in-depth, original research paper. Several themes thread their way through the course, including the role of the 'unbuilt' in architectural practice; the uses of the future in the construction of national and personal identities, cultural narratives, and modern mythologies; and the importance of the future as cliche, and the role of play in cultural production."
   }, 
   { 
     "name": "ARCH.179", 
@@ -2748,7 +2748,7 @@ courses = [
     "number": 180, 
     "units": 4, 
     "title": "Prison", 
-    "description": "Taking a broad interdisciplinary approach, this course embraces the longue duree of critical prison studies, questioning the shadows of normality that cloak mass incarceration both across the globe and, more particularly, in the contemporary United States. This course thus explores a series of visceral, unsettling juxtapositions: "freedom" and "slavery"; "citizenship" and "subjugation"; "marginalization" and "inclusion", in each case explicating the ways that story making, political demagoguery, and racial, class, and sexual inequalities have wrought an untenable social condition. Also listed as Ethnic Studies 181AC and Legal Studies 185AC." 
+    "description": "Taking a broad interdisciplinary approach, this course embraces the longue duree of critical prison studies, questioning the shadows of normality that cloak mass incarceration both across the globe and, more particularly, in the contemporary United States. This course thus explores a series of visceral, unsettling juxtapositions: 'freedom' and 'slavery'; 'citizenship' and 'subjugation'; 'marginalization' and 'inclusion', in each case explicating the ways that story making, political demagoguery, and racial, class, and sexual inequalities have wrought an untenable social condition. Also listed as Ethnic Studies 181AC and Legal Studies 185AC." 
   }, 
   { 
     "name": "ARCH.198", 
@@ -2958,7 +2958,7 @@ courses = [
     "number": 218, 
     "units": 4, 
     "title": "Housing, Urbanization, and Urbanism: Design, Planning, and Policy Issues in Developing Countries", 
-    "description": "This seminar is concerned with the study of housing, urbanization, and urbanism in developing countries, studying not only the physical landscapes of settlements, but also the social, economic, political, and cultural dimensions. This course's focus will be on housing, its lens will be their processes of urbanization, and its intent will be to investigate the space for action by the professionals of the "urban" in the arena of housing. While the emphasis of the course will be on the diverse trajectories of developing countries, "First World" experiences will also be used to illuminate the specific transnational connections and their use in the making of housing theory and policy. The seminar complements the series of lectures offered in 111 and City Planning 111." 
+    "description": "This seminar is concerned with the study of housing, urbanization, and urbanism in developing countries, studying not only the physical landscapes of settlements, but also the social, economic, political, and cultural dimensions. This course's focus will be on housing, its lens will be their processes of urbanization, and its intent will be to investigate the space for action by the professionals of the 'urban' in the arena of housing. While the emphasis of the course will be on the diverse trajectories of developing countries, 'First World' experiences will also be used to illuminate the specific transnational connections and their use in the making of housing theory and policy. The seminar complements the series of lectures offered in 111 and City Planning 111." 
   }, 
   { 
     "name": "ARCH.219", 
@@ -3042,7 +3042,7 @@ courses = [
     "number": 236, 
     "units": 3, 
     "title": "The Literature of Space", 
-    "description": "The concept of space as it is applied to the fields of architecture, geography, and urbanism can be understood as a barometer of the condition that we call "modernity." This course explores connections between the larger cultural frameworks of the past century, and the idea of space as it has been perceived, conceived, and lived during this period. Readings include key essays from the disciplines of philosophy, geography, architecture, landscape, and urbanism, and short works of fiction that illustrate and elucidate the spatial concepts. The readings are grouped according to themes that form the foundation for weekly seminar discussions. Chronological and thematic readings reveal the force of history upon the conceptualization of space, and its contradictions." 
+    "description": "The concept of space as it is applied to the fields of architecture, geography, and urbanism can be understood as a barometer of the condition that we call 'modernity.' This course explores connections between the larger cultural frameworks of the past century, and the idea of space as it has been perceived, conceived, and lived during this period. Readings include key essays from the disciplines of philosophy, geography, architecture, landscape, and urbanism, and short works of fiction that illustrate and elucidate the spatial concepts. The readings are grouped according to themes that form the foundation for weekly seminar discussions. Chronological and thematic readings reveal the force of history upon the conceptualization of space, and its contradictions." 
   }, 
   { 
     "name": "ARCH.237", 
@@ -3231,7 +3231,7 @@ courses = [
     "number": 273, 
     "units": 3, 
     "title": "Case Studies in Modern Architecture", 
-    "description": "This course examines developments in design, theory, graphic representation, construction technology, and interior programming through case studies of individual buildings. Our survey technique will be highly focused rather than panoptic. Each lecture will delve deeply into one or two buildings to examine program, spatial organization, graphic representation, critical building details, construction technology, and the relationship of the case study building with regard to other contemporary structures and the "architect's overall body of work". From this nucleus, we will spiral outward to consider how the case study is embedded within a constellation of social and economic factors crucial to its design and physical realization. This survey of "modernism's built discourses" provides multiple perspectives on the variety of architectural propositions advanced to express the nature of modernity as a way of life." 
+    "description": "This course examines developments in design, theory, graphic representation, construction technology, and interior programming through case studies of individual buildings. Our survey technique will be highly focused rather than panoptic. Each lecture will delve deeply into one or two buildings to examine program, spatial organization, graphic representation, critical building details, construction technology, and the relationship of the case study building with regard to other contemporary structures and the 'architect's overall body of work'. From this nucleus, we will spiral outward to consider how the case study is embedded within a constellation of social and economic factors crucial to its design and physical realization. This survey of 'modernism's built discourses' provides multiple perspectives on the variety of architectural propositions advanced to express the nature of modernity as a way of life." 
   }, 
   { 
     "name": "ARCH.275", 
@@ -3252,7 +3252,7 @@ courses = [
     "number": 278, 
     "units": 3, 
     "title": "Visionary Architecture", 
-    "description": "This course explores architectural visions as historical windows, examining them from a number of angles. Using a variety of cases studies drawn from different media (architectural theory, film, advertisements, architectural projects, and so on) and periods (turn of the century, the Modern Movement, Depression, World War II, 1860's, etc.) It provides a sampling of possibilities and models for the final student project, an in-depth, original research paper. Several themes thread their way through the course, including the role of the "unbuilt" in architectural history and architectural practice; the uses of the future in the construction of national and personal identities, cultural narratives, and modern mythologies; the importance of the future as cliche, and the role of play in cultural production." 
+    "description": "This course explores architectural visions as historical windows, examining them from a number of angles. Using a variety of cases studies drawn from different media (architectural theory, film, advertisements, architectural projects, and so on) and periods (turn of the century, the Modern Movement, Depression, World War II, 1860's, etc.) It provides a sampling of possibilities and models for the final student project, an in-depth, original research paper. Several themes thread their way through the course, including the role of the 'unbuilt' in architectural history and architectural practice; the uses of the future in the construction of national and personal identities, cultural narratives, and modern mythologies; the importance of the future as cliche, and the role of play in cultural production." 
   }, 
   { 
     "name": "ARCH.279", 
@@ -3616,7 +3616,7 @@ courses = [
     "number": 138, 
     "units": 4, 
     "title": "Approaches to Sculpture: Installations", 
-    "description": "In this class we will consider sculptural issues of (and beyond) the object itself, notions of "site specific," and of whether an object is distinct from its environment or is part of it. We will also question issues of space, placement, installation, context, and public interaction. Students will engage with a variety of sites, both on and off campus, with drawings and written proposals being an intergral part of all projects. Lectures and demonstrations will introduce students to techniques and varied applications." 
+    "description": "In this class we will consider sculptural issues of (and beyond) the object itself, notions of 'site specific,' and of whether an object is distinct from its environment or is part of it. We will also question issues of space, placement, installation, context, and public interaction. Students will engage with a variety of sites, both on and off campus, with drawings and written proposals being an intergral part of all projects. Lectures and demonstrations will introduce students to techniques and varied applications." 
   }, 
   { 
     "name": "ART.14", 
@@ -3686,7 +3686,7 @@ courses = [
     "number": 171, 
     "units": 4, 
     "title": "Digital Video: The Architecture of Time", 
-    "description": "This hands-on studio course is designed to present students with a foundation-level introduction to the skills, theories and concepts used in digital video production. Non-linear and non-destructive editing methods used in digital video are defining new "architectures of time" for cinematic creation and experience, and offer new and innovative possibilities for authoring new forms of the moving image. This course will expose students to a broad range of industry standard equipment, film and video history, theory, terminology, field and post-production skills. Students will be required to techinically master the digital media tools introduced in the course. Each week will include relevant readings, class discussions, guest speakers, demonstration of examples, and studio time for training and working on student assignments." 
+    "description": "This hands-on studio course is designed to present students with a foundation-level introduction to the skills, theories and concepts used in digital video production. Non-linear and non-destructive editing methods used in digital video are defining new 'architectures of time' for cinematic creation and experience, and offer new and innovative possibilities for authoring new forms of the moving image. This course will expose students to a broad range of industry standard equipment, film and video history, theory, terminology, field and post-production skills. Students will be required to techinically master the digital media tools introduced in the course. Each week will include relevant readings, class discussions, guest speakers, demonstration of examples, and studio time for training and working on student assignments." 
   }, 
   { 
     "name": "ART.172", 
@@ -3840,7 +3840,7 @@ courses = [
     "number": 171, 
     "units": 4, 
     "title": "Digital Video: The Architecture of Time", 
-    "description": "This hands-on studio course is designed to present students with a foundation-level introduction to the skills, theories, and concepts used in digital video production. As digital technologies continue to expand our notion of time and space, value and meaning, artists are using these tools to envision the impossible. Nonlinear and nondestructive editing methods used in digital video are defining new "architectures of time" for cinematic creation and experience, and offer new and innovative possibilities for authoring new forms of the moving image. Through direct experimentation, this course will expose students to a broad range of industry-standard equipment, film and video history, theory, terminology, field, and post-production skills. Students will be required to technically master the digital media tools introduced in the course, and personalize the new possibilities digital video brings to time-based art forms. Also listed as Film and Media C185." 
+    "description": "This hands-on studio course is designed to present students with a foundation-level introduction to the skills, theories, and concepts used in digital video production. As digital technologies continue to expand our notion of time and space, value and meaning, artists are using these tools to envision the impossible. Nonlinear and nondestructive editing methods used in digital video are defining new 'architectures of time' for cinematic creation and experience, and offer new and innovative possibilities for authoring new forms of the moving image. Through direct experimentation, this course will expose students to a broad range of industry-standard equipment, film and video history, theory, terminology, field, and post-production skills. Students will be required to technically master the digital media tools introduced in the course, and personalize the new possibilities digital video brings to time-based art forms. Also listed as Film and Media C185." 
   }, 
   { 
     "name": "ART.C174", 
@@ -3861,7 +3861,7 @@ courses = [
     "number": 179, 
     "units": 5, 
     "title": "Mobile City Chronicles: Gaming with New Technologies of Detection and Security", 
-    "description": "This course studies the city through cases of 19th and 21st century urban detection, including detective fiction, epidemiology, urban planning, surveillance, ethnography, and related technologies. Students develop and playtest cellphone games that in turn require players to investigate cities. This "gaming the city" uses smart phones not only to read existing databases but also to write to them, producing new urban practice and knowledge. The course is organized as a research and game lab. Also listed as Anthropology C146." 
+    "description": "This course studies the city through cases of 19th and 21st century urban detection, including detective fiction, epidemiology, urban planning, surveillance, ethnography, and related technologies. Students develop and playtest cellphone games that in turn require players to investigate cities. This 'gaming the city' uses smart phones not only to read existing databases but also to write to them, producing new urban practice and knowledge. The course is organized as a research and game lab. Also listed as Anthropology C146." 
   }, 
   { 
     "name": "ART.H195A", 
@@ -3924,7 +3924,7 @@ courses = [
     "number": 126, 
     "units": 4, 
     "title": "Southeast Asian Migration and Community Formation", 
-    "description": "This course will examine Southeast Asian migration and resettlement in the U.S. in the context of the United States involvement in Vietnam, Laos, and Cambodia during the Vietnam War. It will also address the post-war "legacies" and their impact on the societies and politics of the three countries as well as neighboring states in the region. Asylum politics and refugee camp experiences will be addressed in the discussion of the formation of U.S. resettlement policies and of the adaptation of Southeast Asian refugees." 
+    "description": "This course will examine Southeast Asian migration and resettlement in the U.S. in the context of the United States involvement in Vietnam, Laos, and Cambodia during the Vietnam War. It will also address the post-war 'legacies' and their impact on the societies and politics of the three countries as well as neighboring states in the region. Asylum politics and refugee camp experiences will be addressed in the discussion of the formation of U.S. resettlement policies and of the adaptation of Southeast Asian refugees." 
   }, 
   { 
     "name": "ASAMST.127", 
@@ -4351,14 +4351,14 @@ courses = [
     "number": 201, 
     "units": 4, 
     "title": "Radiation Processes in Astronomy", 
-    "description": "<Formerly 201A.> An introduction to the basic physics of astronomy and astrophysics at the graduate level. Principles of energy transfer by radiation. Elements of classical and quantum theory of photon emission; bremsstrahlung, cyclotron and synchrotron radiation. Compton scattering, atomic, molecular and nuclear electromagnetic transitions. Collisional excitation of atoms, molecules and nuclei." 
+    "description": "'Formerly 201A.' An introduction to the basic physics of astronomy and astrophysics at the graduate level. Principles of energy transfer by radiation. Elements of classical and quantum theory of photon emission; bremsstrahlung, cyclotron and synchrotron radiation. Compton scattering, atomic, molecular and nuclear electromagnetic transitions. Collisional excitation of atoms, molecules and nuclei." 
   }, 
   { 
     "name": "ASTRON.203", 
     "number": 203, 
     "units": 3, 
     "title": "Astrophysical Techniques", 
-    "description": "Introduction to the flow of astronomical signals through telescope optics and into detectors; subsequent calibration, deconvolution of instrumental artifacts, and analysis. A broad wavelength approach is maintained with focus on shared fundamental concepts. Students "adopt a wavelength band" for assignments and presentations. Analysis and simulation of astronomical signals, noise, and errors." 
+    "description": "Introduction to the flow of astronomical signals through telescope optics and into detectors; subsequent calibration, deconvolution of instrumental artifacts, and analysis. A broad wavelength approach is maintained with focus on shared fundamental concepts. Students 'adopt a wavelength band' for assignments and presentations. Analysis and simulation of astronomical signals, noise, and errors." 
   }, 
   { 
     "name": "ASTRON.204", 
@@ -4617,28 +4617,28 @@ courses = [
     "number": 101, 
     "units": 5, 
     "title": "Intermediate Bengali", 
-    "description": "Students are expected to be able to read, with the aid of a dictionary, modern Bengali literature, and speak at a "high-intermediate" level by the end of the year. There will be viewing of Bengali videos at a mutually agreed upon time and in class from time to time." 
+    "description": "Students are expected to be able to read, with the aid of a dictionary, modern Bengali literature, and speak at a 'high-intermediate' level by the end of the year. There will be viewing of Bengali videos at a mutually agreed upon time and in class from time to time." 
   }, 
   { 
     "name": "BANGLA.101B", 
     "number": 101, 
     "units": 5, 
     "title": "Intermediate Bengali", 
-    "description": "Students are expected to be able to read, with the aid of a dictionary, modern Bengali literature, and speak at a "high-intermediate" level by the end of the year. There will be viewing of Bengali videos at a mutually agreed upon time and in class from time to time." 
+    "description": "Students are expected to be able to read, with the aid of a dictionary, modern Bengali literature, and speak at a 'high-intermediate' level by the end of the year. There will be viewing of Bengali videos at a mutually agreed upon time and in class from time to time." 
   }, 
   { 
     "name": "BANGLA.1A", 
     "number": 1, 
     "units": 5, 
     "title": "Introductory Bengali", 
-    "description": "Students will be expected to acquire knowledge of the basic grammar of Bengali, such that they learn to read simple graded texts and to speak at the "low intermediate" level by the end of the year." 
+    "description": "Students will be expected to acquire knowledge of the basic grammar of Bengali, such that they learn to read simple graded texts and to speak at the 'low intermediate' level by the end of the year." 
   }, 
   { 
     "name": "BANGLA.1B", 
     "number": 1, 
     "units": 5, 
     "title": "Introductory Bengali", 
-    "description": "Students will be expected to acquire knowledge of the basic grammar of Bengali, such that they learn to read simple graded texts and to speak at the "low intermediate" level by the end of the year." 
+    "description": "Students will be expected to acquire knowledge of the basic grammar of Bengali, such that they learn to read simple graded texts and to speak at the 'low intermediate' level by the end of the year." 
   }, 
   { 
     "name": "BIO ENG.10", 
@@ -4736,14 +4736,14 @@ courses = [
     "number": 131, 
     "units": 4, 
     "title": "Introduction to Computational Molecular and Cell Biology", 
-    "description": "Topics include computational approaches and techniques to gene structure and genome annotation, sequence alignment using dynamic programming, protein domain analysis, RNA folding and structure prediction, RNA sequence design for synthetic biology, genetic and biochemical pathways and networks, UNIX and scripting languages, basic probability and information theory. Various "case studies" in these areas are reviewed; web-based computational biology tools will be used by students and programming projects will be given. Computational biology research connections to biotechnology will be explored." 
+    "description": "Topics include computational approaches and techniques to gene structure and genome annotation, sequence alignment using dynamic programming, protein domain analysis, RNA folding and structure prediction, RNA sequence design for synthetic biology, genetic and biochemical pathways and networks, UNIX and scripting languages, basic probability and information theory. Various 'case studies' in these areas are reviewed; web-based computational biology tools will be used by students and programming projects will be given. Computational biology research connections to biotechnology will be explored." 
   }, 
   { 
     "name": "BIO ENG.132", 
     "number": 132, 
     "units": 4, 
     "title": "Genetic Devices", 
-    "description": "This senior-level course is a comprehensive survey of genetic devices. These DNA-based constructs are comprised of multiple "parts" that together encode a higher-level biological behavior and perform useful human-defined functions. Such constructs are the engineering target for most projects in synthetic biology. Included within this class of constructs are genetic circuits, sensors, biosynthetic pathways, and microbiological functions." 
+    "description": "This senior-level course is a comprehensive survey of genetic devices. These DNA-based constructs are comprised of multiple 'parts' that together encode a higher-level biological behavior and perform useful human-defined functions. Such constructs are the engineering target for most projects in synthetic biology. Included within this class of constructs are genetic circuits, sensors, biosynthetic pathways, and microbiological functions." 
   }, 
   { 
     "name": "BIO ENG.135", 
@@ -4764,7 +4764,7 @@ courses = [
     "number": 143, 
     "units": 4, 
     "title": "Computational Methods in Biology", 
-    "description": "An introduction to biophysical simulation methods and algorithms, including molecular dynamics, Monte Carlo, mathematical optimization, and "non-algorithmic" computation such as neural networks. Various case studies in applying these areas in the areas of protein folding, protein structure prediction, drug docking, and enzymatics will be covered. Core Specialization: Core B (Informatics and Genomics); Core D (Computational Biology); BioE Content: Biological." 
+    "description": "An introduction to biophysical simulation methods and algorithms, including molecular dynamics, Monte Carlo, mathematical optimization, and 'non-algorithmic' computation such as neural networks. Various case studies in applying these areas in the areas of protein folding, protein structure prediction, drug docking, and enzymatics will be covered. Core Specialization: Core B (Informatics and Genomics); Core D (Computational Biology); BioE Content: Biological." 
   }, 
   { 
     "name": "BIO ENG.147", 
@@ -4778,7 +4778,7 @@ courses = [
     "number": 148, 
     "units": 3, 
     "title": "Bioenergy and Sustainable Chemical Synthesis: Metabolic Engineering and Synthetic Biology Approaches", 
-    "description": "This course will cover metabolic engineering and the various synthetic biology approaches for optimizing pathway performance. Use of metabolic engineering to produce biofuels and general "green technology" will be emphasized since these aims are currently pushing these fields. The course is meant to be a practical guide for metabolic engineering and the related advances in synthetic biology as well the related industrial research and opportunities." 
+    "description": "This course will cover metabolic engineering and the various synthetic biology approaches for optimizing pathway performance. Use of metabolic engineering to produce biofuels and general 'green technology' will be emphasized since these aims are currently pushing these fields. The course is meant to be a practical guide for metabolic engineering and the related advances in synthetic biology as well the related industrial research and opportunities." 
   }, 
   { 
     "name": "BIO ENG.150", 
@@ -4848,7 +4848,7 @@ courses = [
     "number": 192, 
     "units": 4, 
     "title": "Senior Design Projects", 
-    "description": "This semester-long course introduces students to bioengineering project-based learning in small teams, with a strong emphasis on need-based solutions for real medical and research problems through prototype solution selection, design, and testing. The course is designed to provide a "capstone" design experience for bioengineering seniors. The course is structured around didactic lectures, and a textbook, from which assigned readings will be drawn, and supplemented by additional handouts, readings, and lecture material. Where appropriate, the syllabus includes guest lectures from clinicians and practicing engineers from academia and industry. The course includes active learning through organized activities, during which teams will participate in exercises meant to reinforce lecture material through direct application to the team design project." 
+    "description": "This semester-long course introduces students to bioengineering project-based learning in small teams, with a strong emphasis on need-based solutions for real medical and research problems through prototype solution selection, design, and testing. The course is designed to provide a 'capstone' design experience for bioengineering seniors. The course is structured around didactic lectures, and a textbook, from which assigned readings will be drawn, and supplemented by additional handouts, readings, and lecture material. Where appropriate, the syllabus includes guest lectures from clinicians and practicing engineers from academia and industry. The course includes active learning through organized activities, during which teams will participate in exercises meant to reinforce lecture material through direct application to the team design project." 
   }, 
   { 
     "name": "BIO ENG.196", 
@@ -4925,14 +4925,14 @@ courses = [
     "number": 231, 
     "units": 4, 
     "title": "Introduction to Computational Molecular and Cellular Biology", 
-    "description": "Topics include computational approaches and techniques to gene structure and genome annotation, sequence alignment using dynamic programming, protein domain analysis, RNA folding and structure prediction, RNA sequence design for synthetic biology, genetic and biochemical pathways and networks, UNIX and scripting languages, basic probability and information theory. Various "case studies" in these areas are reviewed and web-based computational biology tools will be used by students and programming projects will be given." 
+    "description": "Topics include computational approaches and techniques to gene structure and genome annotation, sequence alignment using dynamic programming, protein domain analysis, RNA folding and structure prediction, RNA sequence design for synthetic biology, genetic and biochemical pathways and networks, UNIX and scripting languages, basic probability and information theory. Various 'case studies' in these areas are reviewed and web-based computational biology tools will be used by students and programming projects will be given." 
   }, 
   { 
     "name": "BIO ENG.232", 
     "number": 232, 
     "units": 4, 
     "title": "Genetic Devices", 
-    "description": "This graduate-level course is a comprehensive survey of genetic devices. These DNA-based constructs are comprised of multiple "parts" that together encode a higher-level biological behavior and perform useful human-defined functions. Such constructs are the engineering target for most projects in synthetic biology. Included within this class of constructs are genetic circuits, sensors, biosynthetic pathways, and microbiological functions." 
+    "description": "This graduate-level course is a comprehensive survey of genetic devices. These DNA-based constructs are comprised of multiple 'parts' that together encode a higher-level biological behavior and perform useful human-defined functions. Such constructs are the engineering target for most projects in synthetic biology. Included within this class of constructs are genetic circuits, sensors, biosynthetic pathways, and microbiological functions." 
   }, 
   { 
     "name": "BIO ENG.235", 
@@ -4953,14 +4953,14 @@ courses = [
     "number": 241, 
     "units": 4, 
     "title": "Probabilistic Modeling in Computational Biology", 
-    "description": "This course reviews the statistical and algorithmic foundations of bioinformatics viewed through the lens of paleogenetics, the science of "Jurassic Park", i.e., the reconstruction of ancient genes and genomes by reverse Bayesian inference under various stochastic models of molecular evolution. Such methods, first proposed in the 1960s by Linus Pauling (and others), are now in reach of practical experimentation due to the falling cost of DNA synthesis technology. Applications of these methods are granting insight into the origin of life and of the human species, and may be powerful tools of synthetic biology. Lectures will review the theoretical content; homework and laboratory exercises will involve writing and applying programs for computational reconstruction of ancient protein and DNA sequences and other measurably evolving entities, both biological (e.g., gene families) and otherwise (e.g., natural language)." 
+    "description": "This course reviews the statistical and algorithmic foundations of bioinformatics viewed through the lens of paleogenetics, the science of 'Jurassic Park', i.e., the reconstruction of ancient genes and genomes by reverse Bayesian inference under various stochastic models of molecular evolution. Such methods, first proposed in the 1960s by Linus Pauling (and others), are now in reach of practical experimentation due to the falling cost of DNA synthesis technology. Applications of these methods are granting insight into the origin of life and of the human species, and may be powerful tools of synthetic biology. Lectures will review the theoretical content; homework and laboratory exercises will involve writing and applying programs for computational reconstruction of ancient protein and DNA sequences and other measurably evolving entities, both biological (e.g., gene families) and otherwise (e.g., natural language)." 
   }, 
   { 
     "name": "BIO ENG.243", 
     "number": 243, 
     "units": 4, 
     "title": "Computational Methods in Biology", 
-    "description": "An introduction to biophysical simulation methods and algorithms, including molecular dynamics, Monte Carlo, mathematical optimization, and "non-algorithmic" computation such as neural networks. Various case studies in applying these areas in the areas of protein folding, protein structure prediction, drug docking, and enzymatics will be covered. Core Specialization: Core B (Informatics and Genomics); Core D (Computational Biology); Bioengineering Content: Biological." 
+    "description": "An introduction to biophysical simulation methods and algorithms, including molecular dynamics, Monte Carlo, mathematical optimization, and 'non-algorithmic' computation such as neural networks. Various case studies in applying these areas in the areas of protein folding, protein structure prediction, drug docking, and enzymatics will be covered. Core Specialization: Core B (Informatics and Genomics); Core D (Computational Biology); Bioengineering Content: Biological." 
   }, 
   { 
     "name": "BIO ENG.247", 
@@ -4974,7 +4974,7 @@ courses = [
     "number": 248, 
     "units": 3, 
     "title": "Bioenergy and Sustainable Chemical Synthesis: Metabolic Engineering and Synthetic Biology Approaches", 
-    "description": "This course will cover metabolic engineering and the various synthetic biology approaches for optimizing pathway performance. Use of metabolic engineering to produce biofuels and general "green technology" will be emphasized since these aims are currently pushing these fields. The course is meant to be a practical guide for metabolic engineering and the related advances in synthetic biology as well the related industrial research and opportunities." 
+    "description": "This course will cover metabolic engineering and the various synthetic biology approaches for optimizing pathway performance. Use of metabolic engineering to produce biofuels and general 'green technology' will be emphasized since these aims are currently pushing these fields. The course is meant to be a practical guide for metabolic engineering and the related advances in synthetic biology as well the related industrial research and opportunities." 
   }, 
   { 
     "name": "BIO ENG.25", 
@@ -5415,7 +5415,7 @@ courses = [
     "number": 200, 
     "units": 1, 
     "title": "Proseminar in Buddhist Studies", 
-    "description": "This seminar provides an opportunity for all students and faculty in the Group in Buddhist Studies to gather together on a regular basis to discuss recent theoretically significant works in the field of Buddhist Studies, as well as pertinent and important works in related disciplines (anthropology, art history, literature, history, philosophy, and religious studies). The content of the course will be adjusted from semester to semester so as to best accommodate the needs and interest of the students, but the focus will be on recent works representing the "state of the field."" 
+    "description": "This seminar provides an opportunity for all students and faculty in the Group in Buddhist Studies to gather together on a regular basis to discuss recent theoretically significant works in the field of Buddhist Studies, as well as pertinent and important works in related disciplines (anthropology, art history, literature, history, philosophy, and religious studies). The content of the course will be adjusted from semester to semester so as to best accommodate the needs and interest of the students, but the focus will be on recent works representing the 'state of the field.'" 
   }, 
   { 
     "name": "BUDDSTD.220", 
@@ -5492,14 +5492,14 @@ courses = [
     "number": 115, 
     "units": 4, 
     "title": "Japanese Buddhism", 
-    "description": "A critical survey of the main themes in the history of Japanese Buddhism as they are treated in modern scholarship. The course covers the transmission of Buddhism from China and Korea to Japan; the subsequent evolution in Japan of the Tendai, Shingon, Pure Land, Nichiren, and Zen schools of Buddhism; the organization and function of Buddhist institutions (monastic and lay) in Japanese society; the interaction between Buddhism and other modes of religious belief and practice prevalent in Japan, notably those that go under the headings of "Shinto" and "folk religion." Also listed as Japanese C115." 
+    "description": "A critical survey of the main themes in the history of Japanese Buddhism as they are treated in modern scholarship. The course covers the transmission of Buddhism from China and Korea to Japan; the subsequent evolution in Japan of the Tendai, Shingon, Pure Land, Nichiren, and Zen schools of Buddhism; the organization and function of Buddhist institutions (monastic and lay) in Japanese society; the interaction between Buddhism and other modes of religious belief and practice prevalent in Japan, notably those that go under the headings of 'Shinto' and 'folk religion.' Also listed as Japanese C115." 
   }, 
   { 
     "name": "BUDDSTD.C120", 
     "number": 120, 
     "units": 4, 
     "title": "Buddhism on the Silk Road", 
-    "description": "This course will discuss the social, economic, and cultural aspects of Buddhism as it moved along the ancient Eurasian trading network referred to as the "Silk Road". Instead of relying solely on textual sources, the course will focus on material culture as it offers evidence concerning the spread of Buddhism. Through an examination of the Buddhist archaeological remains of the Silk Road, the course will address specific topics, such as the symbiotic relationship between Buddhism and commerce; doctrinal divergence; ideological shifts in the iconography of the Buddha; patronage (royal, religious and lay); Buddhism and political power; and art and conversion. All readings will be in English. Also listed as East Asian Languages and Cultures C120." 
+    "description": "This course will discuss the social, economic, and cultural aspects of Buddhism as it moved along the ancient Eurasian trading network referred to as the 'Silk Road'. Instead of relying solely on textual sources, the course will focus on material culture as it offers evidence concerning the spread of Buddhism. Through an examination of the Buddhist archaeological remains of the Silk Road, the course will address specific topics, such as the symbiotic relationship between Buddhism and commerce; doctrinal divergence; ideological shifts in the iconography of the Buddha; patronage (royal, religious and lay); Buddhism and political power; and art and conversion. All readings will be in English. Also listed as East Asian Languages and Cultures C120." 
   }, 
   { 
     "name": "BUDDSTD.C122", 
@@ -5520,7 +5520,7 @@ courses = [
     "number": 128, 
     "units": 4, 
     "title": "Buddhism in Contemporary Society", 
-    "description": "A study of the Buddhist tradition as it is found today in Asia. The course will focus on specific living traditions of East, South, and/or Southeast Asia. Themes to be addressed may include contemporary Buddhist ritual practices; funerary and mortuary customs; the relationship between Buddhism and other local religious traditions; the relationship between Buddhist institutions and the state; Buddhist monasticism and its relationship to the laity; Buddhist ethics; Buddhist "modernism," and so on. Also listed as South and Southeast Asian Studies C145 and East Asian Languages and Cultures C128." 
+    "description": "A study of the Buddhist tradition as it is found today in Asia. The course will focus on specific living traditions of East, South, and/or Southeast Asia. Themes to be addressed may include contemporary Buddhist ritual practices; funerary and mortuary customs; the relationship between Buddhism and other local religious traditions; the relationship between Buddhist institutions and the state; Buddhist monasticism and its relationship to the laity; Buddhist ethics; Buddhist 'modernism,' and so on. Also listed as South and Southeast Asian Studies C145 and East Asian Languages and Cultures C128." 
   }, 
   { 
     "name": "BUDDSTD.C130", 
@@ -5548,7 +5548,7 @@ courses = [
     "number": 140, 
     "units": 4, 
     "title": "Readings in Chinese Buddhist Texts", 
-    "description": "This course is an introduction to the study of medieval Buddhist literature written in classical Chinese. We will read samples from a variety of genres, including early Chinese translations of Sanskrit and Central Asian Buddhist scriptures, indigenous Chinese commentaries, philosophical treatises, and sectarian works, including Chan <gongan> (Zen koans). The course will also serve as an introduction to resource materials used in the study of Chinese Buddhist texts, and students will be expected to make use of a variety of reference tools in preparation for class. Readings in Chinese will be supplemented by a range of secondary readings in English on Mahayana doctrine and Chinese Buddhist history. Also listed as Chinese C140." 
+    "description": "This course is an introduction to the study of medieval Buddhist literature written in classical Chinese. We will read samples from a variety of genres, including early Chinese translations of Sanskrit and Central Asian Buddhist scriptures, indigenous Chinese commentaries, philosophical treatises, and sectarian works, including Chan 'gongan' (Zen koans). The course will also serve as an introduction to resource materials used in the study of Chinese Buddhist texts, and students will be expected to make use of a variety of reference tools in preparation for class. Readings in Chinese will be supplemented by a range of secondary readings in English on Mahayana doctrine and Chinese Buddhist history. Also listed as Chinese C140." 
   }, 
   { 
     "name": "BUDDSTD.C154", 
@@ -5667,7 +5667,7 @@ courses = [
     "number": 129, 
     "units": 4, 
     "title": "Aspects of Modern Celtic Cultures and Folklore", 
-    "description": "A comparative introduction to modern Celtic cultures: principally Irish, Welsh, Scottish Gaelic and Breton. The development of the distinctive cultures of the Celtic "nations without states" from 1500 to the present; an examination of the role of minority cultures and minority languages in larger political cultural entities. Theme topics will vary, but will include folklore, nationalism and linguistic history from time to time." 
+    "description": "A comparative introduction to modern Celtic cultures: principally Irish, Welsh, Scottish Gaelic and Breton. The development of the distinctive cultures of the Celtic 'nations without states' from 1500 to the present; an examination of the role of minority cultures and minority languages in larger political cultural entities. Theme topics will vary, but will include folklore, nationalism and linguistic history from time to time." 
   }, 
   { 
     "name": "CELTIC.138", 
@@ -5765,7 +5765,7 @@ courses = [
     "number": 173, 
     "units": 4, 
     "title": "Celtic Christianity", 
-    "description": "This course considers the evidence for the presence of early Christian believers in the so-called "Celtic" areas of western Europe. Students will examine how the Celtic peoples received Christianity in the context of native (pagan) religion; they will look specifically at how the Roman Church doctrine influenced the doctrinal stands of the early Celtic church(es), and vice versa, with particular attention to the Pelagian controversy, the date of Easter, the monastic tonsure, and the use of penitentials. The period covered is approximately 70 CE to 800 CE." 
+    "description": "This course considers the evidence for the presence of early Christian believers in the so-called 'Celtic' areas of western Europe. Students will examine how the Celtic peoples received Christianity in the context of native (pagan) religion; they will look specifically at how the Roman Church doctrine influenced the doctrinal stands of the early Celtic church(es), and vice versa, with particular attention to the Pelagian controversy, the date of Easter, the monastic tonsure, and the use of penitentials. The period covered is approximately 70 CE to 800 CE." 
   }, 
   { 
     "name": "CELTIC.198", 
@@ -5842,14 +5842,14 @@ courses = [
     "number": 1, 
     "units": 4, 
     "title": "Voices of the Celtic World", 
-    "description": "Reading and composition course based on works of Celtic writers both in English and in translations from Celtic languages. In addition to training in textual analysis and descriptive and argumentative writing, the courses will discuss the notion of Celtic "voices": distinctive modes of cultural expression chosen by important authors from a Celtic milieu. Readings will be chosen from a variety of modern Irish, Welsh, highland Scots, and Breton writers. R1A satisfies the first half of the Reading and Composition requirement, and R1B satisfies the second half." 
+    "description": "Reading and composition course based on works of Celtic writers both in English and in translations from Celtic languages. In addition to training in textual analysis and descriptive and argumentative writing, the courses will discuss the notion of Celtic 'voices': distinctive modes of cultural expression chosen by important authors from a Celtic milieu. Readings will be chosen from a variety of modern Irish, Welsh, highland Scots, and Breton writers. R1A satisfies the first half of the Reading and Composition requirement, and R1B satisfies the second half." 
   }, 
   { 
     "name": "CELTIC.R1B", 
     "number": 1, 
     "units": 4, 
     "title": "Voices of the Celtic World", 
-    "description": "Reading and composition course based on works of Celtic writers both in English and in translations from Celtic languages. In addition to training in textual analysis and descriptive and argumentative writing, the courses will discuss the notion of Celtic "voices": distinctive modes of cultural expression chosen by important authors from a Celtic milieu. Readings will be chosen from a variety of modern Irish, Welsh, highland Scots, and Breton writers. R1A satisfies the first half of the Reading and Composition requirement, and R1B satisfies the second half." 
+    "description": "Reading and composition course based on works of Celtic writers both in English and in translations from Celtic languages. In addition to training in textual analysis and descriptive and argumentative writing, the courses will discuss the notion of Celtic 'voices': distinctive modes of cultural expression chosen by important authors from a Celtic milieu. Readings will be chosen from a variety of modern Irish, Welsh, highland Scots, and Breton writers. R1A satisfies the first half of the Reading and Composition requirement, and R1B satisfies the second half." 
   }, 
   { 
     "name": "CHEM.100", 
@@ -6038,7 +6038,7 @@ courses = [
     "number": 199, 
     "units": 1, 
     "title": "Supervised Independent Study and Research", 
-    "description": "Enrollment is restricted by regulations listed in the <General Catalog>." 
+    "description": "Enrollment is restricted by regulations listed in the 'General Catalog'." 
   }, 
   { 
     "name": "CHEM.1A", 
@@ -6255,7 +6255,7 @@ courses = [
     "number": 263, 
     "units": 1, 
     "title": "Synthetic Design I", 
-    "description": "This course will describe the application of modern reactions to the total synthesis of complex target molecules. Natural products, such as alkaloids, terpenes, or polypropionates, as well as theoretically interesting "non-natural" molecules will be covered." 
+    "description": "This course will describe the application of modern reactions to the total synthesis of complex target molecules. Natural products, such as alkaloids, terpenes, or polypropionates, as well as theoretically interesting 'non-natural' molecules will be covered." 
   }, 
   { 
     "name": "CHEM.263B", 
@@ -6976,7 +6976,7 @@ courses = [
     "number": 122, 
     "units": 4, 
     "title": "Ancient Chinese Poetry", 
-    "description": "Readings from the <Shijing>, the <Chuci>, and selections from other early compilations of poetry." 
+    "description": "Readings from the 'Shijing', the 'Chuci', and selections from other early compilations of poetry." 
   }, 
   { 
     "name": "CHINESE.130", 
@@ -6990,7 +6990,7 @@ courses = [
     "number": 134, 
     "units": 4, 
     "title": "Readings in Classical Chinese Poetry", 
-    "description": "Introduction to the forms and subtypes of classical <shi> poetry, focusing on both learning to read poems in the original as well as developing the critical and analytical tools to discuss and respond to them in an informed way." 
+    "description": "Introduction to the forms and subtypes of classical 'shi' poetry, focusing on both learning to read poems in the original as well as developing the critical and analytical tools to discuss and respond to them in an informed way." 
   }, 
   { 
     "name": "CHINESE.136", 
@@ -7018,7 +7018,7 @@ courses = [
     "number": 156, 
     "units": 4, 
     "title": "Modern Chinese Literature", 
-    "description": "This course will introduce students to selected works of modern Chinese literature produced in the first half of the 20th century, as well as their cultural and historical context. How did writers such as Lu Xun, Shen Congwen, Eileen Chang, and others attempt to make themselves "at home" in a world profoundly dislocated by the forces of colonialism, war, and revolution? We will examine the politics of literary style, questions of nationalism, representations of gender, and the problem of colonial modernity in these texts. All primary texts are presented in the original Chinese, supplemented by critical and biographical articles in English." 
+    "description": "This course will introduce students to selected works of modern Chinese literature produced in the first half of the 20th century, as well as their cultural and historical context. How did writers such as Lu Xun, Shen Congwen, Eileen Chang, and others attempt to make themselves 'at home' in a world profoundly dislocated by the forces of colonialism, war, and revolution? We will examine the politics of literary style, questions of nationalism, representations of gender, and the problem of colonial modernity in these texts. All primary texts are presented in the original Chinese, supplemented by critical and biographical articles in English." 
   }, 
   { 
     "name": "CHINESE.157", 
@@ -7039,7 +7039,7 @@ courses = [
     "number": 159, 
     "units": 4, 
     "title": "Cities and the Country", 
-    "description": "This course explores one of the most central and potent areas of cultural politics in modern China: the city and its relations to the countryside. We will explore how urban space and native soil became central places of imagination and desire in modernity; how Beijing and Shanghai become mediums of imagining differing meanings of "modernity" and "tradition," "Chinese" and "Western," and cultural authenticity; the repeated reformist and revolutionary desire to return from the city back to the countryside; as well as more recent mass migrations from the countryside during a time of (and as part of) drastic urban destruction and "renewal." Throughout the course, we will examine fiction, essays, photographs, films, and theoretical writings in order to consider a variety of ways in which people have sought to picture or narrate the shifting relations of cities and country." 
+    "description": "This course explores one of the most central and potent areas of cultural politics in modern China: the city and its relations to the countryside. We will explore how urban space and native soil became central places of imagination and desire in modernity; how Beijing and Shanghai become mediums of imagining differing meanings of 'modernity' and 'tradition,' 'Chinese' and 'Western,' and cultural authenticity; the repeated reformist and revolutionary desire to return from the city back to the countryside; as well as more recent mass migrations from the countryside during a time of (and as part of) drastic urban destruction and 'renewal.' Throughout the course, we will examine fiction, essays, photographs, films, and theoretical writings in order to consider a variety of ways in which people have sought to picture or narrate the shifting relations of cities and country." 
   }, 
   { 
     "name": "CHINESE.161", 
@@ -7060,7 +7060,7 @@ courses = [
     "number": 172, 
     "units": 4, 
     "title": "Contemporary Chinese Language Cinema", 
-    "description": "This course introduces Chinese language cinema since the late 1970s across the geopolitical divides between Mainland, Taiwan, and Hong Kong. We will focus on the distinct new waves in the three regions, as cinematic engagement of their respective political and cultural history, but also examine to what extent these "New Cinemas" share similar concerns on questions of gender, politics, remembrance, and urbanization." 
+    "description": "This course introduces Chinese language cinema since the late 1970s across the geopolitical divides between Mainland, Taiwan, and Hong Kong. We will focus on the distinct new waves in the three regions, as cinematic engagement of their respective political and cultural history, but also examine to what extent these 'New Cinemas' share similar concerns on questions of gender, politics, remembrance, and urbanization." 
   }, 
   { 
     "name": "CHINESE.176", 
@@ -7116,7 +7116,7 @@ courses = [
     "number": 189, 
     "units": 4, 
     "title": "Chinese Landscapes: Space, Place, and Travel", 
-    "description": "What do landscapes "do"? How do landscape images and travel narratives mediate experiences of land, nature, and other peoples? How do landscapes map one's place in the world, shaping both cultural identities and real geographic spaces? Can landscapes travel? This course explores such questions by examining one of the world's longest-running traditions of landscape representation. We will consider such landscape genres as poetry, prose description, fiction, travel narrative, maps, painting, and photography, and consider their work across China's long history of imperial expansion, colonization, and globalization. We will also consider China's places in thinking about landscape and travel in the West." 
+    "description": "What do landscapes 'do'? How do landscape images and travel narratives mediate experiences of land, nature, and other peoples? How do landscapes map one's place in the world, shaping both cultural identities and real geographic spaces? Can landscapes travel? This course explores such questions by examining one of the world's longest-running traditions of landscape representation. We will consider such landscape genres as poetry, prose description, fiction, travel narrative, maps, painting, and photography, and consider their work across China's long history of imperial expansion, colonization, and globalization. We will also consider China's places in thinking about landscape and travel in the West." 
   }, 
   { 
     "name": "CHINESE.198", 
@@ -7172,7 +7172,7 @@ courses = [
     "number": 221, 
     "units": 2, 
     "title": "Reading the Zhuangzi", 
-    "description": "This course sets out to examine a set of "focus chapters" from the Zhuangzi along several dimensions: 1) in the context of Warring States thought, 2) as independent stories that need to be puzzled through and read critically, and 3) tracing the influence of those chapters on subsequent periods of Chinese thought." 
+    "description": "This course sets out to examine a set of 'focus chapters' from the Zhuangzi along several dimensions: 1) in the context of Warring States thought, 2) as independent stories that need to be puzzled through and read critically, and 3) tracing the influence of those chapters on subsequent periods of Chinese thought." 
   }, 
   { 
     "name": "CHINESE.222", 
@@ -7186,7 +7186,7 @@ courses = [
     "number": 230, 
     "units": 2, 
     "title": "Seminar in Chinese Literary History", 
-    "description": "Readings in major genres and authors of Chinese literature, with attention to relevant "nonliterary" (philosophical, scholarly, historiographical, etc.) sources where useful; period and thematic focus varies from semester to semester." 
+    "description": "Readings in major genres and authors of Chinese literature, with attention to relevant 'nonliterary' (philosophical, scholarly, historiographical, etc.) sources where useful; period and thematic focus varies from semester to semester." 
   }, 
   { 
     "name": "CHINESE.234", 
@@ -7319,7 +7319,7 @@ courses = [
     "number": 140, 
     "units": 4, 
     "title": "Readings in Chinese Buddhist Texts", 
-    "description": "This course is an introduction to the study of medieval Buddhist literature written in classical Chinese. We will read samples from a variety of genres, including early Chinese translations of Sanskrit and Central Asian Buddhist scriptures, indigenous Chinese commentaries, philosophical treatises, and sectarian works, including Chan <gongan> (Zen koans). The course will also serve as an introduction to resource materials used in the study of Chinese Buddhist texts, and students will be expected to make use of a variety of reference tools in preparation for class. Readings in Chinese will be supplemented by a range of secondary readings in English on Mahayana doctrine and Chinese Buddhist history. Also listed as Group in Buddhist Studies C140." 
+    "description": "This course is an introduction to the study of medieval Buddhist literature written in classical Chinese. We will read samples from a variety of genres, including early Chinese translations of Sanskrit and Central Asian Buddhist scriptures, indigenous Chinese commentaries, philosophical treatises, and sectarian works, including Chan 'gongan' (Zen koans). The course will also serve as an introduction to resource materials used in the study of Chinese Buddhist texts, and students will be expected to make use of a variety of reference tools in preparation for class. Readings in Chinese will be supplemented by a range of secondary readings in English on Mahayana doctrine and Chinese Buddhist history. Also listed as Group in Buddhist Studies C140." 
   }, 
   { 
     "name": "CHINESE.C184", 
@@ -7585,7 +7585,7 @@ courses = [
     "number": 295, 
     "units": 3, 
     "title": "Polymer Physics", 
-    "description": "This course, which is based on Gert Strobl's book <The Physics of Polymers> addresses the origin of some of the important physical properties of polymer liquids and solids. This includes phase transitions, crystallization, morphology of multiphase polymer systems, mechanical properties, response to mechanical and electric fields, and fracture. When possible, we will develop quantitative molecular models that predict macroscopic behavior. The course will address experimental data obtained by microscopy, light and neutron scattering, rheology, and dielectric relaxation." 
+    "description": "This course, which is based on Gert Strobl's book 'The Physics of Polymers' addresses the origin of some of the important physical properties of polymer liquids and solids. This includes phase transitions, crystallization, morphology of multiphase polymer systems, mechanical properties, response to mechanical and electric fields, and fracture. When possible, we will develop quantitative molecular models that predict macroscopic behavior. The course will address experimental data obtained by microscopy, light and neutron scattering, rheology, and dielectric relaxation." 
   }, 
   { 
     "name": "CHM ENG.295P", 
@@ -7648,7 +7648,7 @@ courses = [
     "number": 602, 
     "units": 1, 
     "title": "Individual Studies for Graduate Students", 
-    "description": "Individual study in consultation with the major field adviser for qualified students to prepare themselves for the various examinations required of candidates for the Ph.D."
+    "description": "Individual study in consultation with the major field adviser for qualified students to prepare themselves for the various examinations required of candidates for the Ph.D." 
   }, 
   { 
     "name": "CHM ENG.84", 
@@ -7844,7 +7844,7 @@ courses = [
     "number": 122, 
     "units": 1, 
     "title": "Structural Steel Design Project", 
-    "description": "Introduction to one or more comprehensive structural design problems. Design teams will conceive structural system; determine design loads; conduct preliminary and final design of structure and its foundation; prepare construction cost estimate; prepare final report containing project description, design criteria, cost estimate, structural drawings, and supporting calculations; and make "client" presentations as required." 
+    "description": "Introduction to one or more comprehensive structural design problems. Design teams will conceive structural system; determine design loads; conduct preliminary and final design of structure and its foundation; prepare construction cost estimate; prepare final report containing project description, design criteria, cost estimate, structural drawings, and supporting calculations; and make 'client' presentations as required." 
   }, 
   { 
     "name": "CIV ENG.122N", 
@@ -7858,7 +7858,7 @@ courses = [
     "number": 123, 
     "units": 1, 
     "title": "Structural Concrete Design Project", 
-    "description": "Introduction to one or more comprehensive structural design problems. Design teams will conceive structural system; determine design loads; conduct preliminary and final design of structure and its foundation; prepare construction cost estimate; prepare final report containing project description, design criteria, cost estimate, structural drawings, and supporting calculations; make "client" presentations as required." 
+    "description": "Introduction to one or more comprehensive structural design problems. Design teams will conceive structural system; determine design loads; conduct preliminary and final design of structure and its foundation; prepare construction cost estimate; prepare final report containing project description, design criteria, cost estimate, structural drawings, and supporting calculations; make 'client' presentations as required." 
   }, 
   { 
     "name": "CIV ENG.123N", 
@@ -8334,7 +8334,7 @@ courses = [
     "number": 255, 
     "units": 3, 
     "title": "Highway Traffic Operations", 
-    "description": "Operational planning and management of the highway transportation system. The highway system is presented as a set of operating environments with each having its unique analytical framework. Major topics to be covered include policy and institutional issues, selection of strategies and tactics, evaluation of objectives and measures of effectiveness."
+    "description": "Operational planning and management of the highway transportation system. The highway system is presented as a set of operating environments with each having its unique analytical framework. Major topics to be covered include policy and institutional issues, selection of strategies and tactics, evaluation of objectives and measures of effectiveness." 
   }, 
   { 
     "name": "CIV ENG.256", 
@@ -8397,14 +8397,14 @@ courses = [
     "number": 268, 
     "units": 3, 
     "title": "Lean Construction Concepts and Methods", 
-    "description": "Inspired by the "lean" resolution in manufacturing, production management concepts and methods are woven into a lean project delivery system. Key concepts include flow, value, variability, and waste. Key methods include proecution system design, target costing, value stream mapping, and work flow control. Student teams apply concepts and methods in field studies of real project management processes and construction operations. The course includes a tour of the NUMMI Auto Plant in Fremont." 
+    "description": "Inspired by the 'lean' resolution in manufacturing, production management concepts and methods are woven into a lean project delivery system. Key concepts include flow, value, variability, and waste. Key methods include proecution system design, target costing, value stream mapping, and work flow control. Student teams apply concepts and methods in field studies of real project management processes and construction operations. The course includes a tour of the NUMMI Auto Plant in Fremont." 
   }, 
   { 
     "name": "CIV ENG.268B", 
     "number": 268, 
     "units": 3, 
     "title": "Lean Construction and Supply Chain Management", 
-    "description": "Principles and practices of "lean" production are applied to project delivery in the AEC industry. Case studies illustrate the concepts. Project delivery is viewed holistically with a focus on work structuring and supply chain management. Topics include systems dynamics, uncertainty, and variation; materials management; logistics; e-commerce; building information modeling (BIM); and integrated product and process design. Students use process simulation to assess performance of different system configurations and develop a case study applying concepts on a real project." 
+    "description": "Principles and practices of 'lean' production are applied to project delivery in the AEC industry. Case studies illustrate the concepts. Project delivery is viewed holistically with a focus on work structuring and supply chain management. Topics include systems dynamics, uncertainty, and variation; materials management; logistics; e-commerce; building information modeling (BIM); and integrated product and process design. Students use process simulation to assess performance of different system configurations and develop a case study applying concepts on a real project." 
   }, 
   { 
     "name": "CIV ENG.268D", 
@@ -8649,7 +8649,7 @@ courses = [
     "number": 116, 
     "units": 3, 
     "title": "Chemistry of Soils", 
-    "description": "Chemical mechanisms of reactions controlling the fate and mobility of nutrients and pollutants in soils. Role of soil minerals and humus in geochemical pathways of nutrient biovailability and pollutant detoxification. Chemical modeling of nutrient and pollutant soil chemistry. Applications to soil acidity and salinity. Also listed as Environ Sci, Policy, and Management C128." 
+    "description": "Chemical mechanisms of reactions controlling the fate and mobility of nutrients and pollutants in soils. Role of soil minerals and humus in geochemical pathways of nutrient biovailability and pollutant detoxification. Chemical modeling of nutrient and pollutant soil chemistry. Applications to soil acidity and salinity. Also listed as Environ Sci, Policy, and Management C128."
   }, 
   { 
     "name": "CIV ENG.C133", 
@@ -8964,21 +8964,21 @@ courses = [
     "number": 211, 
     "units": 2, 
     "title": "Archaic Greek Poetry", 
-    "description": "<Formerly 210C-D>. Topics in iambic, elegiac, and lyric poets from Archilochus to Pindar." 
+    "description": "'Formerly 210C-D'. Topics in iambic, elegiac, and lyric poets from Archilochus to Pindar." 
   }, 
   { 
     "name": "CLASSIC.213", 
     "number": 213, 
     "units": 2, 
     "title": "Hellenistic Poetry", 
-    "description": "<Formerly 210E>. Study of Callimachus, Theocritus, Apollonius, or other topics in Hellenistic poetry and poetics." 
+    "description": "'Formerly 210E'. Study of Callimachus, Theocritus, Apollonius, or other topics in Hellenistic poetry and poetics." 
   }, 
   { 
     "name": "CLASSIC.214", 
     "number": 214, 
     "units": 2, 
     "title": "Greek Drama", 
-    "description": "<Formerly 215A-E>. Study of Aeschylus, Sophocles, Euripides, Aristophanes, Menander, or other topics in Greek drama and dramatic theory." 
+    "description": "'Formerly 215A-E'. Study of Aeschylus, Sophocles, Euripides, Aristophanes, Menander, or other topics in Greek drama and dramatic theory." 
   }, 
   { 
     "name": "CLASSIC.218", 
@@ -9034,14 +9034,14 @@ courses = [
     "number": 228, 
     "units": 2, 
     "title": "Ancient Society and Law", 
-    "description": "<Formerly 238>. Study of social, legal, or administrative structures of the Greek or Roman world." 
+    "description": "'Formerly 238'. Study of social, legal, or administrative structures of the Greek or Roman world." 
   }, 
   { 
     "name": "CLASSIC.230", 
     "number": 230, 
     "units": 2, 
     "title": "Latin Poetry of the Republic and Early Empire", 
-    "description": "<Formerly 230A-G>. Study of Lucretius, Vergil, Horace, Ovid, or other topics in Latin poetry from Ennius to Juvenal." 
+    "description": "'Formerly 230A-G'. Study of Lucretius, Vergil, Horace, Ovid, or other topics in Latin poetry from Ennius to Juvenal." 
   }, 
   { 
     "name": "CLASSIC.239", 
@@ -9118,7 +9118,7 @@ courses = [
     "number": 34, 
     "units": 4, 
     "title": "Epic Poetry: Homer and Vergil", 
-    "description": "Greek and Roman epics including the <Iliad>, <Odyssey>, <Aeneid>." 
+    "description": "Greek and Roman epics including the 'Iliad', 'Odyssey', 'Aeneid'." 
   }, 
   { 
     "name": "CLASSIC.35", 
@@ -9335,7 +9335,7 @@ courses = [
     "number": 103, 
     "units": 3, 
     "title": "History of Information", 
-    "description": "This course explores the history of information and associated technologies, uncovering why we think of ours as "the information age." We will select moments in the evolution of production, recording, and storage from the earliest writing systems to the world of Short Message Service (SMS) and blogs. In every instance, we'll be concerned with both what and when and how and why, and we will keep returning to the question of technological determinism: how do technological developments affect society and vice versa? Also listed as Media Studies C104C, History C192, and Information C103." 
+    "description": "This course explores the history of information and associated technologies, uncovering why we think of ours as 'the information age.' We will select moments in the evolution of production, recording, and storage from the earliest writing systems to the world of Short Message Service (SMS) and blogs. In every instance, we'll be concerned with both what and when and how and why, and we will keep returning to the question of technological determinism: how do technological developments affect society and vice versa? Also listed as Media Studies C104C, History C192, and Information C103." 
   }, 
   { 
     "name": "COG SCI.C104", 
@@ -9545,7 +9545,7 @@ courses = [
     "number": 375, 
     "units": 2, 
     "title": "Introduction to Theories and Practices of Teaching College Composition", 
-    "description": "The course will focus on teaching philosophies, course designs, instructional methods, and assessment issues in relation to teaching composition in a pluralistic setting."
+    "description": "The course will focus on teaching philosophies, course designs, instructional methods, and assessment issues in relation to teaching composition in a pluralistic setting." 
   }, 
   { 
     "name": "COLWRIT.50AC", 
@@ -9601,7 +9601,7 @@ courses = [
     "number": 4, 
     "units": 4, 
     "title": "Reading, Composition, and Research", 
-    "description": "This writing seminar satisfies the second half of the Reading and Composition requirement. It is designed to offer students structured, sustained, and highly articulated practice in the recursive processes entailed in reading, critical analysis, and composing. In like manner, the seminar affords students guided practice through the stages involved in creating a research paper. Students will read five thematically related book-length texts, or the equivalent, drawn from a range of genres, in addition to various non-print sources. In response to these materials, they will craft several short pieces leading up to two longer essays--works of exposition and/or argumentation. Students will also draft a research paper, developing a research question, gathering, evaluating, and synthesizing information from texts and other sources. Elements of the research process, such as a proposal, an annotated bibliography, an abstract, a "work cited" list, and the like, will be submitted, along with the final report, in a research portfolio. Students will write a minimum of 32 pages of expository prose during the semester." 
+    "description": "This writing seminar satisfies the second half of the Reading and Composition requirement. It is designed to offer students structured, sustained, and highly articulated practice in the recursive processes entailed in reading, critical analysis, and composing. In like manner, the seminar affords students guided practice through the stages involved in creating a research paper. Students will read five thematically related book-length texts, or the equivalent, drawn from a range of genres, in addition to various non-print sources. In response to these materials, they will craft several short pieces leading up to two longer essays--works of exposition and/or argumentation. Students will also draft a research paper, developing a research question, gathering, evaluating, and synthesizing information from texts and other sources. Elements of the research process, such as a proposal, an annotated bibliography, an abstract, a 'work cited' list, and the like, will be submitted, along with the final report, in a research portfolio. Students will write a minimum of 32 pages of expository prose during the semester." 
   }, 
   { 
     "name": "COLWRIT.W180", 
@@ -10322,14 +10322,14 @@ courses = [
     "number": 273, 
     "units": 3, 
     "title": "Foundations of Parallel Computation", 
-    "description": "<Formerly 292K>. Fundamental theoretical issues in designing parallel algorithms and architectures. Shared memory models of parallel computation. Parallel algorithms for linear algegra, sorting, Fourier Transform, recurrence evaluation, and graph problems. Interconnection network based models. Algorithm design techniques for networks like hypercubes, shuffle-exchanges, threes, meshes and butterfly networks. Systolic arrays and techniques for generating them. Message routing." 
+    "description": "'Formerly 292K'. Fundamental theoretical issues in designing parallel algorithms and architectures. Shared memory models of parallel computation. Parallel algorithms for linear algegra, sorting, Fourier Transform, recurrence evaluation, and graph problems. Interconnection network based models. Algorithm design techniques for networks like hypercubes, shuffle-exchanges, threes, meshes and butterfly networks. Systolic arrays and techniques for generating them. Message routing." 
   }, 
   { 
     "name": "COMPSCI.274", 
     "number": 274, 
     "units": 3, 
     "title": "Computational Geometry", 
-    "description": "<Formerly 292T>. Constructive problems in computational geometry: convex hulls, triangulations, Voronoi diagrams, arrangements of hyperplanes; relationships among these problems. Search problems: advanced data structures; subdivision search; various kinds of range searches. Models of computation; lower bounds." 
+    "description": "'Formerly 292T'. Constructive problems in computational geometry: convex hulls, triangulations, Voronoi diagrams, arrangements of hyperplanes; relationships among these problems. Search problems: advanced data structures; subdivision search; various kinds of range searches. Models of computation; lower bounds." 
   }, 
   { 
     "name": "COMPSCI.276", 
@@ -10784,7 +10784,7 @@ courses = [
     "number": 200, 
     "units": 4, 
     "title": "Critique in 19th-Century Thought", 
-    "description": "This course will examine various formulations of critique in 19th-century theory. Thinkers who may be studied include Kant, Hegel, Marx, Nietzsche, and Weber, though the selection will vary by instructor. This is the "foundations" course for the Designated Emphasis in Critical Theory." 
+    "description": "This course will examine various formulations of critique in 19th-century theory. Thinkers who may be studied include Kant, Hegel, Marx, Nietzsche, and Weber, though the selection will vary by instructor. This is the 'foundations' course for the Designated Emphasis in Critical Theory." 
   }, 
   { 
     "name": "CRIT TH.205", 
@@ -10889,7 +10889,7 @@ courses = [
     "number": 199, 
     "units": 1, 
     "title": "Supervised Independent Study and Research", 
-    "description": "Enrollment is restricted by regulations shown in the <General Catalog>." 
+    "description": "Enrollment is restricted by regulations shown in the 'General Catalog'." 
   }, 
   { 
     "name": "CUNEIF.200A", 
@@ -10931,7 +10931,7 @@ courses = [
     "number": 111, 
     "units": 3, 
     "title": "Introduction to Housing: An International Survey", 
-    "description": "Housing problems, government housing policy, and housing as a field of urban planning practice. Emphasis on critical International Issues in the Third World and the United States." 
+    "description": "Housing problems, government housing policy, and housing as a field of urban planning practice. Emphasis on critical International Issues in the Third World and the United States."
   }, 
   { 
     "name": "CY PLAN.113A", 
@@ -11218,7 +11218,7 @@ courses = [
     "number": 271, 
     "units": 3, 
     "title": "Development Theories and Practices", 
-    "description": "This course covers the theory and praxis of international development. It studies the project of development, from its Cold War launching to its metamorphosis into the current era of economic globalization and liberalization. And it examines the theoretical models and discursive debates that have accompanied each phase, including the recent critiques put forth by feminism and postcolonialism. The course also locates development in the industrialized world, "here" rather than "elsewhere," thereby unsettling the normalized hierarchy of First and Third Worlds." 
+    "description": "This course covers the theory and praxis of international development. It studies the project of development, from its Cold War launching to its metamorphosis into the current era of economic globalization and liberalization. And it examines the theoretical models and discursive debates that have accompanied each phase, including the recent critiques put forth by feminism and postcolonialism. The course also locates development in the industrialized world, 'here' rather than 'elsewhere,' thereby unsettling the normalized hierarchy of First and Third Worlds." 
   }, 
   { 
     "name": "CY PLAN.275", 
@@ -11372,7 +11372,7 @@ courses = [
     "number": 251, 
     "units": 3, 
     "title": "Environmental Planning and Regulation", 
-    "description": "This course will examine emerging trends in environmental planning and policy and the basic regulatory framework for environmental planning encountered in the U.S. We will also relate the institutional and policy framework of California and the United States to other nations and emerging international institutions. The emphasis of the course will be on regulating "residuals" as they affect three media: air, water, and land. Also listed as Landscape Architecture C231." 
+    "description": "This course will examine emerging trends in environmental planning and policy and the basic regulatory framework for environmental planning encountered in the U.S. We will also relate the institutional and policy framework of California and the United States to other nations and emerging international institutions. The emphasis of the course will be on regulating 'residuals' as they affect three media: air, water, and land. Also listed as Landscape Architecture C231." 
   }, 
   { 
     "name": "CY PLAN.C257", 
@@ -11862,7 +11862,7 @@ courses = [
     "number": 199, 
     "units": 1, 
     "title": "Special Studies in Dutch", 
-    "description": "Enrollment is restricted by regulations in <General Catalog>." 
+    "description": "Enrollment is restricted by regulations in 'General Catalog'." 
   }, 
   { 
     "name": "DUTCH.2", 
@@ -11890,7 +11890,7 @@ courses = [
     "number": 164, 
     "units": 4, 
     "title": "The Indonesian Connection: Dutch Literature About the Indies in English Translation", 
-    "description": "In postcolonial thought on European claims to cultural supremacy, the case of the "Dutch East-Indies" (the future Indonesia) still arouses questions like: What made the Dutch colonial policy different from that of other European powers? What were the main characteristics of the "Dutch East-Indies"? How did a small country like the Netherlands manage to rule a territory that was fifty-two times its own in scale? And how can we explain that 350 years of Dutch domination left so few traces in contemporary Indonesia? Also listed as Southeast Asian C164." 
+    "description": "In postcolonial thought on European claims to cultural supremacy, the case of the 'Dutch East-Indies' (the future Indonesia) still arouses questions like: What made the Dutch colonial policy different from that of other European powers? What were the main characteristics of the 'Dutch East-Indies'? How did a small country like the Netherlands manage to rule a territory that was fifty-two times its own in scale? And how can we explain that 350 years of Dutch domination left so few traces in contemporary Indonesia? Also listed as Southeast Asian C164." 
   }, 
   { 
     "name": "DUTCH.C170", 
@@ -11925,7 +11925,7 @@ courses = [
     "number": 103, 
     "units": 4, 
     "title": "Writing, Visuality, and the Powers of Images", 
-    "description": "This course examines how fictional and historical texts from Asia and the West explore beliefs in the powers of images and their implication in questions of knowledge and power, the borders of life and death, and the politics of gender, history, memory, and culture. We'll track how such beliefs change, persist, and are re-appropriated across historical time and cultural space, and consider the critical light "premodern" texts from our "modern" world of images project upon each other." 
+    "description": "This course examines how fictional and historical texts from Asia and the West explore beliefs in the powers of images and their implication in questions of knowledge and power, the borders of life and death, and the politics of gender, history, memory, and culture. We'll track how such beliefs change, persist, and are re-appropriated across historical time and cultural space, and consider the critical light 'premodern' texts from our 'modern' world of images project upon each other." 
   }, 
   { 
     "name": "EA LANG.105", 
@@ -11946,14 +11946,14 @@ courses = [
     "number": 107, 
     "units": 4, 
     "title": "War, Empire, and Literature in East Asia", 
-    "description": "This course will examine war, empire, and the writing and memorialization of history through an eclectic group of literary, graphic, and cinematic texts from China, Japan, Europe, and the U.S. We will begin by examining crucial issues of imperial power, violence, and historical representation through the lens of the Han dynasty historian Sima Qian's classic accounts of "terrorism" in the Warring States period, the rise of the Han empire, and its conflicts with the Hsiung-nu "barbarians" to the north. With these earlier examples in mind, we will turn our focus to two crucial conflicts in modern history - the Boxer Uprising of 1899-1900, and the Sino-Japanese War of 1937-1945 - and their diverse representations in a number of different times, places, and media." 
+    "description": "This course will examine war, empire, and the writing and memorialization of history through an eclectic group of literary, graphic, and cinematic texts from China, Japan, Europe, and the U.S. We will begin by examining crucial issues of imperial power, violence, and historical representation through the lens of the Han dynasty historian Sima Qian's classic accounts of 'terrorism' in the Warring States period, the rise of the Han empire, and its conflicts with the Hsiung-nu 'barbarians' to the north. With these earlier examples in mind, we will turn our focus to two crucial conflicts in modern history - the Boxer Uprising of 1899-1900, and the Sino-Japanese War of 1937-1945 - and their diverse representations in a number of different times, places, and media." 
   }, 
   { 
     "name": "EA LANG.108", 
     "number": 108, 
     "units": 4, 
     "title": "Revising the Classics: Chinese and Greek Poetry in Translation", 
-    "description": "An introductory course on Chinese poetry, both ancient and modern, in English translation. The course will explore poetic translation, across languages, across cultures, and across historical ages, not merely from the perspective of the "accuracy" with which a classic text is represented in the translation, but as a window into the nature of poetic tradition and poetic writing itself. Works to be covered in the course will be primarily drawn from the Chinese tradition, but in the interest of allowing a comparative discussion of the course's central themes, a significant amount of reading, also in translation, from ancient and modern Greek poetry will be included as well. The goal of the class is not simply to gain familiarity with Chinese poetry and poets, but more fundamentally to gain skill and sophistication in reading, responding to, and thinking about poetry." 
+    "description": "An introductory course on Chinese poetry, both ancient and modern, in English translation. The course will explore poetic translation, across languages, across cultures, and across historical ages, not merely from the perspective of the 'accuracy' with which a classic text is represented in the translation, but as a window into the nature of poetic tradition and poetic writing itself. Works to be covered in the course will be primarily drawn from the Chinese tradition, but in the interest of allowing a comparative discussion of the course's central themes, a significant amount of reading, also in translation, from ancient and modern Greek poetry will be included as well. The goal of the class is not simply to gain familiarity with Chinese poetry and poets, but more fundamentally to gain skill and sophistication in reading, responding to, and thinking about poetry." 
   }, 
   { 
     "name": "EA LANG.109", 
@@ -12233,7 +12233,7 @@ courses = [
     "number": 120, 
     "units": 4, 
     "title": "Buddhism on the Silk Road", 
-    "description": "This course will discuss the social, economic, and cultural aspects of Buddhism as it moved along the ancient Eurasian trading network referred to as the "Silk Road". Instead of relying solely on textual sources, the course will focus on material culture as it offers evidence concerning the spread of Buddhism. Through an examination of the Buddhist archaeological remains of the Silk Road, the course will address specific topics, such as the symbiotic relationship between Buddhism and commerce; doctrinal divergence; ideological shifts in the iconography of the Buddha; patronage (royal, religious and lay); Buddhism and political power; and art and conversion. All readings will be in English. Also listed as Group in Buddhist Studies C120." 
+    "description": "This course will discuss the social, economic, and cultural aspects of Buddhism as it moved along the ancient Eurasian trading network referred to as the 'Silk Road'. Instead of relying solely on textual sources, the course will focus on material culture as it offers evidence concerning the spread of Buddhism. Through an examination of the Buddhist archaeological remains of the Silk Road, the course will address specific topics, such as the symbiotic relationship between Buddhism and commerce; doctrinal divergence; ideological shifts in the iconography of the Buddha; patronage (royal, religious and lay); Buddhism and political power; and art and conversion. All readings will be in English. Also listed as Group in Buddhist Studies C120." 
   }, 
   { 
     "name": "EA LANG.C126", 
@@ -12247,7 +12247,7 @@ courses = [
     "number": 128, 
     "units": 4, 
     "title": "Buddhism in Contemporary Society", 
-    "description": "A study of the Buddhist tradition as it is found today in Asia. The course will focus on specific living traditions of East, South, and/or Southeast Asia. Themes to be addressed may include contemporary Buddhist ritual practices; funerary and mortuary customs; the relationship between Buddhism and other local religious traditions; the relationship between Buddhist institutions and the state; Buddhist monasticism and its relationship to the laity; Buddhist ethics; Buddhist "modernism," and so on. Also listed as Group in Buddhist Studies C128 and South and Southeast Asian Studies C145." 
+    "description": "A study of the Buddhist tradition as it is found today in Asia. The course will focus on specific living traditions of East, South, and/or Southeast Asia. Themes to be addressed may include contemporary Buddhist ritual practices; funerary and mortuary customs; the relationship between Buddhism and other local religious traditions; the relationship between Buddhist institutions and the state; Buddhist monasticism and its relationship to the laity; Buddhist ethics; Buddhist 'modernism,' and so on. Also listed as Group in Buddhist Studies C128 and South and Southeast Asian Studies C145." 
   }, 
   { 
     "name": "EA LANG.C130", 
@@ -12268,7 +12268,7 @@ courses = [
     "number": 135, 
     "units": 4, 
     "title": "Tantric Traditions of Asia", 
-    "description": "The emergence of the tantras in seventh and eighth-century India marked a watershed for religious practice throughout Asia. These esoteric scriptures introduced complex new ritual technologies that transformed the religious traditions of India, from Brahmanism to Jainism and Buddhism, as well as those of Southeast Asia, Tibet, Mongolia, China, Korea, and Japan. This course provides an overview of tantric religion across these regions. Also listed as Group in Buddhist Studies C135 and South and Southeast Asian Studies C135."
+    "description": "The emergence of the tantras in seventh and eighth-century India marked a watershed for religious practice throughout Asia. These esoteric scriptures introduced complex new ritual technologies that transformed the religious traditions of India, from Brahmanism to Jainism and Buddhism, as well as those of Southeast Asia, Tibet, Mongolia, China, Korea, and Japan. This course provides an overview of tantric religion across these regions. Also listed as Group in Buddhist Studies C135 and South and Southeast Asian Studies C135." 
   }, 
   { 
     "name": "EA LANG.C220", 
@@ -12660,7 +12660,7 @@ courses = [
     "number": 206, 
     "units": 3, 
     "title": "Mechanism Design and Agency Theory", 
-    "description": "This course will study the optimal design of mechanisms in the presence of incomplete information and imperfect observability. The course will begin with the "classic" principal-agent problem and will then develop its applications to the "implicit contracts" theory of agency and to the choice of government policies for regulated industries. The second half of the course will treat the design of auctions, regulation with costly or imperfect monitoring, mechanism design with limited contracts." 
+    "description": "This course will study the optimal design of mechanisms in the presence of incomplete information and imperfect observability. The course will begin with the 'classic' principal-agent problem and will then develop its applications to the 'implicit contracts' theory of agency and to the choice of government policies for regulated industries. The second half of the course will treat the design of auctions, regulation with costly or imperfect monitoring, mechanism design with limited contracts." 
   }, 
   { 
     "name": "ECON.207A", 
@@ -13206,7 +13206,7 @@ courses = [
     "number": 195, 
     "units": 1, 
     "title": "Senior Honors Thesis", 
-    "description": "Writing a thesis under the supervision of a faculty member. Applications and details through the departmental undergraduate office. H195A is not prerequisite to H195B."
+    "description": "Writing a thesis under the supervision of a faculty member. Applications and details through the departmental undergraduate office. H195A is not prerequisite to H195B." 
   }, 
   { 
     "name": "EDUC.112", 
@@ -13255,7 +13255,7 @@ courses = [
     "number": 142, 
     "units": 3, 
     "title": "Education in a Global World", 
-    "description": "What is globalization? What are the implications of living in a "global world" for education? How can education be used as a tool to promote global social justice and prosperity? In this course, we will address these and other related questions through collective reading assignments, class discussions, and online collaboration through our learning platform (bSpace or other)." 
+    "description": "What is globalization? What are the implications of living in a 'global world' for education? How can education be used as a tool to promote global social justice and prosperity? In this course, we will address these and other related questions through collective reading assignments, class discussions, and online collaboration through our learning platform (bSpace or other)." 
   }, 
   { 
     "name": "EDUC.143", 
@@ -13318,7 +13318,7 @@ courses = [
     "number": 185, 
     "units": 3, 
     "title": "Gender and Education: International Perspectives", 
-    "description": "This course is designed to provide an overview of the major discussions and debates in the area of gender and education, from a global perspective. Examines theoretical understandings of gender, and the intersection of gender, schooling, global poverty, and social justice. Explores strategies to "undo" gender, including the role of international donor agencies, the state, NGOs, popular education, the media, sport, and innovative curricula." 
+    "description": "This course is designed to provide an overview of the major discussions and debates in the area of gender and education, from a global perspective. Examines theoretical understandings of gender, and the intersection of gender, schooling, global poverty, and social justice. Explores strategies to 'undo' gender, including the role of international donor agencies, the state, NGOs, popular education, the media, sport, and innovative curricula." 
   }, 
   { 
     "name": "EDUC.186AC", 
@@ -13507,7 +13507,7 @@ courses = [
     "number": 212, 
     "units": 3, 
     "title": "Adolescent Development and the Teaching of Secondary English", 
-    "description": "This graduate seminar relates the goals of secondary English teaching to three major themes in the study of adolescent development: rationality, morality, and identity. These themes are then explored with reference to urban youth, along with other themes emerging from research in urban settings. The theme of identity is pursued further through a consideration of adolescents' "self-theories" and their motivational consequences. Students write papers on related topics for a class anthology." 
+    "description": "This graduate seminar relates the goals of secondary English teaching to three major themes in the study of adolescent development: rationality, morality, and identity. These themes are then explored with reference to urban youth, along with other themes emerging from research in urban settings. The theme of identity is pursued further through a consideration of adolescents' 'self-theories' and their motivational consequences. Students write papers on related topics for a class anthology." 
   }, 
   { 
     "name": "EDUC.213A", 
@@ -13584,14 +13584,14 @@ courses = [
     "number": 224, 
     "units": 3, 
     "title": "Mathematical Thinking and Problem Solving", 
-    "description": "This course explores contemporary research on mathematical cognition, with a particular emphasis on "higher order thinking skills" and mathematical problem solving. We discuss various frameworks for characterizing mathematical behavior and various methodologies for examining it. As an "action oriented" course in the EMST curricular sequence, this course includes a major course project. In their project, students engage in research incorporating the main ideas studied in the course." 
+    "description": "This course explores contemporary research on mathematical cognition, with a particular emphasis on 'higher order thinking skills' and mathematical problem solving. We discuss various frameworks for characterizing mathematical behavior and various methodologies for examining it. As an 'action oriented' course in the EMST curricular sequence, this course includes a major course project. In their project, students engage in research incorporating the main ideas studied in the course." 
   }, 
   { 
     "name": "EDUC.224B", 
     "number": 224, 
     "units": 3, 
     "title": "Paradigmatic Didactical Mathematical Problematic Situations", 
-    "description": "Paradigmatic Didactical Mathematical Problematic Situations are contexts for collaborative inquiry into the practice, epistemology, and pedagogy of mathematics. Building on the Learning Sciences literature, the course creates opportunities for students to engage in interesting mathematical problems from secondary-school content. Final projects include design, implementation, and analysis of a lesson. Meets the "Discipline" programmatic requirement of graduate students in EMST and MACSME." 
+    "description": "Paradigmatic Didactical Mathematical Problematic Situations are contexts for collaborative inquiry into the practice, epistemology, and pedagogy of mathematics. Building on the Learning Sciences literature, the course creates opportunities for students to engage in interesting mathematical problems from secondary-school content. Final projects include design, implementation, and analysis of a lesson. Meets the 'Discipline' programmatic requirement of graduate students in EMST and MACSME." 
   }, 
   { 
     "name": "EDUC.224C", 
@@ -13612,14 +13612,14 @@ courses = [
     "number": 226, 
     "units": 3, 
     "title": "Constructive Epistemology", 
-    "description": "Many approaches to education take the knowledge to be taught as fixed, and the manipulable objects to be things like methods. By focusing on knowledge per se: what is it; how is it organized and encoded in humans, we are led to questions about what should be taught, based on principles of learnability, etc., rather than just "effective methods." This tactic is valuable in view of the radical changes information technology may have on what we need to teach and what general areas are teachable." 
+    "description": "Many approaches to education take the knowledge to be taught as fixed, and the manipulable objects to be things like methods. By focusing on knowledge per se: what is it; how is it organized and encoded in humans, we are led to questions about what should be taught, based on principles of learnability, etc., rather than just 'effective methods.' This tactic is valuable in view of the radical changes information technology may have on what we need to teach and what general areas are teachable." 
   }, 
   { 
     "name": "EDUC.228A", 
     "number": 228, 
     "units": 3, 
     "title": "Qualitative Methodology", 
-    "description": "The course will be organized by principal activities: group readings, book reports, expert and novice methodology presentations, in-class research and analysis, and student research. For each activity, we will look at the full breadth of methodology, from "how-to" methods and specific areas of concern to general questions including: what constitutes objective data, what are strengths and weaknesses of methods in regard to various issues, and what are the relations between theory and data?" 
+    "description": "The course will be organized by principal activities: group readings, book reports, expert and novice methodology presentations, in-class research and analysis, and student research. For each activity, we will look at the full breadth of methodology, from 'how-to' methods and specific areas of concern to general questions including: what constitutes objective data, what are strengths and weaknesses of methods in regard to various issues, and what are the relations between theory and data?" 
   }, 
   { 
     "name": "EDUC.229D", 
@@ -13633,7 +13633,7 @@ courses = [
     "number": 229, 
     "units": 3, 
     "title": "Conceptual Change", 
-    "description": "'Conceptual change' concerns broad and deep changes in a person's knowledge about a domain. This opposes it, for example, to the learning of facts and skill acquisition. The course emphasizes recent cognitive science-oriented approaches to: defining "broad and deep" learning; understanding its properties. It draws on diverse other approaches including developmental psychology; analogies to the history of science; "misconceptions;" computational and epistemological approaches." 
+    "description": "'Conceptual change' concerns broad and deep changes in a person's knowledge about a domain. This opposes it, for example, to the learning of facts and skill acquisition. The course emphasizes recent cognitive science-oriented approaches to: defining 'broad and deep' learning; understanding its properties. It draws on diverse other approaches including developmental psychology; analogies to the history of science; 'misconceptions;' computational and epistemological approaches." 
   }, 
   { 
     "name": "EDUC.231", 
@@ -13661,14 +13661,14 @@ courses = [
     "number": 24, 
     "units": 1, 
     "title": "Freshman Seminar", 
-    "description": "The Freshman and Sophomore Seminar program has been designed to provide new students with the opportunity to explore an intellectual topic with a faculty member in a small seminar setting. Freshman Seminars are offered in all campus departments, and topics vary from department to department and semester to semester. Limited to 15 freshmen."
+    "description": "The Freshman and Sophomore Seminar program has been designed to provide new students with the opportunity to explore an intellectual topic with a faculty member in a small seminar setting. Freshman Seminars are offered in all campus departments, and topics vary from department to department and semester to semester. Limited to 15 freshmen." 
   }, 
   { 
     "name": "EDUC.240A", 
     "number": 240, 
     "units": 3, 
     "title": "Language Study for Educators", 
-    "description": "This course will introduce students to the broad areas of language study and explore the implications of such study for teaching and learning. Among course topics are: the nature of language, the meanings of "grammar," the varieties of English, the development of language in the preschool and school years. This course will be required for all Ed.D. students and recommended as an introductory course to all students who have had no formal coursework in linguistics." 
+    "description": "This course will introduce students to the broad areas of language study and explore the implications of such study for teaching and learning. Among course topics are: the nature of language, the meanings of 'grammar,' the varieties of English, the development of language in the preschool and school years. This course will be required for all Ed.D. students and recommended as an introductory course to all students who have had no formal coursework in linguistics." 
   }, 
   { 
     "name": "EDUC.240B", 
@@ -13731,7 +13731,7 @@ courses = [
     "number": 245, 
     "units": 3, 
     "title": "Approaches in Teaching English as a Second Language", 
-    "description": "This course is primarily concerned with methods of teaching English as a second language (ESL) to K-12 students and adults. Traditional methods emphasizing the development of structural knowledge, and new methods focused on the development of communications skills, will be examined. Topics include teaching English through content instruction, "structured English immersion," syllabus and curriculum design, second language reading, and language testing for placement and evaluation." 
+    "description": "This course is primarily concerned with methods of teaching English as a second language (ESL) to K-12 students and adults. Traditional methods emphasizing the development of structural knowledge, and new methods focused on the development of communications skills, will be examined. Topics include teaching English through content instruction, 'structured English immersion,' syllabus and curriculum design, second language reading, and language testing for placement and evaluation." 
   }, 
   { 
     "name": "EDUC.246A", 
@@ -14025,7 +14025,7 @@ courses = [
     "number": 276, 
     "units": 3, 
     "title": "Introduction to Program Evaluation", 
-    "description": "This course provides an introduction to the field of program evaluation ("programs" might be curriculum innovations, school reorganizations, teacher training reforms, instructional methods innovations, funding programs, or programs in the health or welfare areas). It will give an overview of issues of concern to practicing evaluators, researchers, program managers, and academics interested in field-based research. Those taking the course will be introduced to the history of the field, the basic concepts and intellectual disputes, the major methodological issues, and to some common "models" of how an evaluation ought to be conducted. Based on the understandings of the topics and issues discussed in this course, participants will be asked to conceptualize and design an evaluation in their area of personal and/or professional interests. The purpose of this exercise is for participants to develop skills for framing evaluation questions, designing, and describing an evaluation plan." 
+    "description": "This course provides an introduction to the field of program evaluation ('programs' might be curriculum innovations, school reorganizations, teacher training reforms, instructional methods innovations, funding programs, or programs in the health or welfare areas). It will give an overview of issues of concern to practicing evaluators, researchers, program managers, and academics interested in field-based research. Those taking the course will be introduced to the history of the field, the basic concepts and intellectual disputes, the major methodological issues, and to some common 'models' of how an evaluation ought to be conducted. Based on the understandings of the topics and issues discussed in this course, participants will be asked to conceptualize and design an evaluation in their area of personal and/or professional interests. The purpose of this exercise is for participants to develop skills for framing evaluation questions, designing, and describing an evaluation plan." 
   }, 
   { 
     "name": "EDUC.276C", 
@@ -14046,7 +14046,7 @@ courses = [
     "number": 276, 
     "units": 3, 
     "title": "Research Design and Methods for Program and Policy Evaluation", 
-    "description": "This course, designed to graduate students with some prior training to quantitative research methods, will introduce students to a toolkit of methods to enable them to address issues related to "what works" in program and policy evaluation. In addition, the course intends to help students understand the assumptions implicit in each of these approaches. Topics include (1) validity, threats to validity, and causal inference framework: (2) randomized experiments and quasi-experiment designs (regression discontinuity and propensity score matching); (3) multilevel modeling technique used in multi-site evaluation and longitudinal intervention studies; (4) mixed-methods approach; (5) meta-analysis for synthesizing evaluation/empirical studies; and (6) power and sample size in designing new evaluation studies." 
+    "description": "This course, designed to graduate students with some prior training to quantitative research methods, will introduce students to a toolkit of methods to enable them to address issues related to 'what works' in program and policy evaluation. In addition, the course intends to help students understand the assumptions implicit in each of these approaches. Topics include (1) validity, threats to validity, and causal inference framework: (2) randomized experiments and quasi-experiment designs (regression discontinuity and propensity score matching); (3) multilevel modeling technique used in multi-site evaluation and longitudinal intervention studies; (4) mixed-methods approach; (5) meta-analysis for synthesizing evaluation/empirical studies; and (6) power and sample size in designing new evaluation studies." 
   }, 
   { 
     "name": "EDUC.278B", 
@@ -14060,7 +14060,7 @@ courses = [
     "number": 278, 
     "units": 3, 
     "title": "Milestone 2: Mapping the Professional Knowledge Base", 
-    "description": "This second milestone course picks up on the work from the fall. In the fall, students began to identify a field of interest in which they most likely will conduct their research and write their dissertation. Also beginning in the fall, students familiarized themselves with templates for types of dissertations suggested for LEEP students. The second course in the milestone sequence assumes that students have made a selection of a field of interest and are ready to explore its knowledge base. The purpose of the course is to make this exploration fruitful and research-based, and for students to take first steps in applying their new knowledge to a dissertation project of a specific type. At the end of the course, students should be ready to pass the first milestone towards the dissertation: a paper mapping the professional knowledge base in their field of interest. At a later date, this paper will be submitted as one of three qualifying papers to the oral exam committee." 
+    "description": "This second milestone course picks up on the work from the fall. In the fall, students began to identify a field of interest in which they most likely will conduct their research and write their dissertation. Also beginning in the fall, students familiarized themselves with templates for types of dissertations suggested for LEEP students. The second course in the milestone sequence assumes that students have made a selection of a field of interest and are ready to explore its knowledge base. The purpose of the course is to make this exploration fruitful and research-based, and for students to take first steps in applying their new knowledge to a dissertation project of a specific type. At the end of the course, students should be ready to pass the first milestone towards the dissertation: a paper mapping the professional knowledge base in their field of interest. At a later date, this paper will be submitted as one of three qualifying papers to the oral exam committee."
   }, 
   { 
     "name": "EDUC.278D", 
@@ -14081,7 +14081,7 @@ courses = [
     "number": 279, 
     "units": 3, 
     "title": "Resource Management 2", 
-    "description": "In general, the purpose of this course is to prepare a new generation of superintendents. This course will expand on the foundation laid in the Budgeting 1 class, which serves as a "bootcamp" for fundamental management skills and concepts used in business and nonprofit organizations. The topics covered will be more focued on developing knowledge and skills needed by superintendents and educational leaders in the present." 
+    "description": "In general, the purpose of this course is to prepare a new generation of superintendents. This course will expand on the foundation laid in the Budgeting 1 class, which serves as a 'bootcamp' for fundamental management skills and concepts used in business and nonprofit organizations. The topics covered will be more focued on developing knowledge and skills needed by superintendents and educational leaders in the present." 
   }, 
   { 
     "name": "EDUC.280A", 
@@ -14151,7 +14151,7 @@ courses = [
     "number": 285, 
     "units": 3, 
     "title": "Globalization and International Education", 
-    "description": "What is globalization? What are the implications of living in a "global world" for educational systems? In this course, we explore these questions by first examining various theoretical perspectives on globalization. We will then discuss several major developments associated with globalization that are affecting different levels of education (from primary to university) including the rise in accountability and testing, skills for the "knowledge" economy, and immigration. We will consider the role of international organizations such as the World Bank and the United Nations in shaping international policy and programs. We will also examine the role that the state, local communities, and non-governmental agencies play in providing and improving the quality of education. In the final part of the course, we examine topics including language policy, technology, and strategies to combat educational inequality. To explore these topics, we will read and discuss case studies from Asia, Africa, Latin America, and the United States to provide concrete examples of how global forces are changing the context and content of education internationally." 
+    "description": "What is globalization? What are the implications of living in a 'global world' for educational systems? In this course, we explore these questions by first examining various theoretical perspectives on globalization. We will then discuss several major developments associated with globalization that are affecting different levels of education (from primary to university) including the rise in accountability and testing, skills for the 'knowledge' economy, and immigration. We will consider the role of international organizations such as the World Bank and the United Nations in shaping international policy and programs. We will also examine the role that the state, local communities, and non-governmental agencies play in providing and improving the quality of education. In the final part of the course, we examine topics including language policy, technology, and strategies to combat educational inequality. To explore these topics, we will read and discuss case studies from Asia, Africa, Latin America, and the United States to provide concrete examples of how global forces are changing the context and content of education internationally." 
   }, 
   { 
     "name": "EDUC.287", 
@@ -14256,7 +14256,7 @@ courses = [
     "number": 294, 
     "units": 1, 
     "title": "Seminar on Formulation of Educational Research", 
-    "description": "Discussion of criteria for useful educational research. Emphasis is on applying these criteria while developing plans for research on topics of interest to the participants."
+    "description": "Discussion of criteria for useful educational research. Emphasis is on applying these criteria while developing plans for research on topics of interest to the participants." 
   }, 
   { 
     "name": "EDUC.294E", 
@@ -14368,7 +14368,7 @@ courses = [
     "number": 393, 
     "units": 1, 
     "title": "Preparation for Completion of the Elementary Mathematics Performance Assessment", 
-    "description": "This course is designed to support candidates as they prepare for and complete the Elementary Mathematics Performance Assessment for CA teachers (PACT). The PACT is required for all credential candidates prior to recommendation for credentialing as designated by the state of California. Candidates will become familiar with the requirements for the PACT, begin planning their teaching event, view, share, and critique "work in progress," read and respond to relevant articles, review guidelines for preparing video records of teaching practice, and design scoring criteria for assessing student work." 
+    "description": "This course is designed to support candidates as they prepare for and complete the Elementary Mathematics Performance Assessment for CA teachers (PACT). The PACT is required for all credential candidates prior to recommendation for credentialing as designated by the state of California. Candidates will become familiar with the requirements for the PACT, begin planning their teaching event, view, share, and critique 'work in progress,' read and respond to relevant articles, review guidelines for preparing video records of teaching practice, and design scoring criteria for assessing student work." 
   }, 
   { 
     "name": "EDUC.39D", 
@@ -14515,7 +14515,7 @@ courses = [
     "number": 229, 
     "units": 3, 
     "title": "Proseminar: Problem Solving and Understanding", 
-    "description": "Students will examine problem solving in children and adults, from a predominantly cognitive science perspective, beginning with an examination of thinking involved in diverse problem types. Students will then analyze the literature concerning cognitive issues that transcend problem types, including representation, "understanding," access and availability of knowledge, access to one's own cognitive processing, categorization, the architecture of knowledge, and the control of cognition. Also listed as Psychology C223." 
+    "description": "Students will examine problem solving in children and adults, from a predominantly cognitive science perspective, beginning with an examination of thinking involved in diverse problem types. Students will then analyze the literature concerning cognitive issues that transcend problem types, including representation, 'understanding,' access and availability of knowledge, access to one's own cognitive processing, categorization, the architecture of knowledge, and the control of cognition. Also listed as Psychology C223." 
   }, 
   { 
     "name": "EDUC.C265C", 
@@ -14529,7 +14529,7 @@ courses = [
     "number": 286, 
     "units": 3, 
     "title": "The Education of African-American Students", 
-    "description": "This seminar will examine a wide range of perspectives on the education of African American children and adolescents in the United States. Readings will support students in understanding some of the key issues and tensions in African American education and school achievement, including the roles that culture, identity, parents, families, and communities play in the education and schooling of African American students; systemic issues in educational improvement and the perpetuation of "achievement gaps"; and language and power. Also listed as African American Studies C286." 
+    "description": "This seminar will examine a wide range of perspectives on the education of African American children and adolescents in the United States. Readings will support students in understanding some of the key issues and tensions in African American education and school achievement, including the roles that culture, identity, parents, families, and communities play in the education and schooling of African American students; systemic issues in educational improvement and the perpetuation of 'achievement gaps'; and language and power. Also listed as African American Studies C286." 
   }, 
   { 
     "name": "EDUC.W289", 
@@ -14578,7 +14578,7 @@ courses = [
     "number": 199, 
     "units": 1, 
     "title": "Supervised Independent Study and Research", 
-    "description": "Enrollment is restricted by regulations shown in the <General Catalog>." 
+    "description": "Enrollment is restricted by regulations shown in the 'General Catalog'." 
   }, 
   { 
     "name": "EGYPT.201A", 
@@ -14851,7 +14851,7 @@ courses = [
     "number": 222, 
     "units": 3, 
     "title": "Nonlinear Systems--Analysis, Stability and Control", 
-    "description": "Basic graduate course in non-linear systems. Second Order systems. Numerical solution methods, the describing function method, linearization. Stability - direct and indirect methods of Lyapunov. Applications to the Lure problem - Popov, circle criterion. Input-Output stability. Additional topics include: bifurcations of dynamical systems, introduction to the "geometric" theory of control for nonlinear systems, passivity concepts and dissipative dynamical systems." 
+    "description": "Basic graduate course in non-linear systems. Second Order systems. Numerical solution methods, the describing function method, linearization. Stability - direct and indirect methods of Lyapunov. Applications to the Lure problem - Popov, circle criterion. Input-Output stability. Additional topics include: bifurcations of dynamical systems, introduction to the 'geometric' theory of control for nonlinear systems, passivity concepts and dissipative dynamical systems." 
   }, 
   { 
     "name": "EL ENG.223", 
@@ -15187,7 +15187,7 @@ courses = [
     "number": 375, 
     "units": 1, 
     "title": "Teaching Techniques for Electrical Engineering", 
-    "description": "Weekly seminars and discussions of effective teaching techniques. Use of educational objectives, alternative forms of instruction, and special techniques for teaching key concepts and techniques in electrical engineering. Student and self-evaluation. Course is intended to orient new graduate student instructors to teaching in the Electrical Engineering Department at Berkeley." 
+    "description": "Weekly seminars and discussions of effective teaching techniques. Use of educational objectives, alternative forms of instruction, and special techniques for teaching key concepts and techniques in electrical engineering. Student and self-evaluation. Course is intended to orient new graduate student instructors to teaching in the Electrical Engineering Department at Berkeley."
   }, 
   { 
     "name": "EL ENG.40", 
@@ -15530,14 +15530,14 @@ courses = [
     "number": 170, 
     "units": 3, 
     "title": "Environmental Classics", 
-    "description": "Motivation: What is the history and evolution of environmental thinking and writing? How have certain "environmental classics" shaped the way in which we think about nature, society, and development? This course will use a selection of 20th-century books and papers that have had a major impact on academic and wider public thinking about the environment and development to probe these issues. The selection includes works and commentaries related to these works that have influenced environmental politics and policy in the U.S. as well as in the developing world. Through the classics and their critiques, reviews, and commentaries, the class will explore the evolution of thought on these transforming ideas." 
+    "description": "Motivation: What is the history and evolution of environmental thinking and writing? How have certain 'environmental classics' shaped the way in which we think about nature, society, and development? This course will use a selection of 20th-century books and papers that have had a major impact on academic and wider public thinking about the environment and development to probe these issues. The selection includes works and commentaries related to these works that have influenced environmental politics and policy in the U.S. as well as in the developing world. Through the classics and their critiques, reviews, and commentaries, the class will explore the evolution of thought on these transforming ideas." 
   }, 
   { 
     "name": "ENE,RES.175", 
     "number": 175, 
     "units": 4, 
     "title": "Water and Development", 
-    "description": "This course introduces students to water policy in developing countries. It is a course motivated by the fact that over one billion people in developing countries have no access to safe drinking water, three billion do not have sanitation facilities, and many millions of small farmers do not have reliable water supplies to ensure a healthy crop. Readings and discussions will cover: the problems of water access and use in developing countries; the potential for technological, social, and economic solutions to these problems; the role of institutions in access to water and sanitation; and the pitfalls of the assumptions behind some of today's popular "solutions."" 
+    "description": "This course introduces students to water policy in developing countries. It is a course motivated by the fact that over one billion people in developing countries have no access to safe drinking water, three billion do not have sanitation facilities, and many millions of small farmers do not have reliable water supplies to ensure a healthy crop. Readings and discussions will cover: the problems of water access and use in developing countries; the potential for technological, social, and economic solutions to these problems; the role of institutions in access to water and sanitation; and the pitfalls of the assumptions behind some of today's popular 'solutions.'" 
   }, 
   { 
     "name": "ENE,RES.190", 
@@ -15600,14 +15600,14 @@ courses = [
     "number": 273, 
     "units": 3, 
     "title": "Research Methods in Social Sciences", 
-    "description": "This course aims to introduce graduate students to the rich diversity of research methods that social scientists have developed for the empirical aspects of their work. Its primary goal is to encourage critical thinking about the research process: how we "know," how we match research methods to research questions, how we design and conduct our information/data collection, what we assume explicitly and implicitly, and the ethical dilemmas raised by fieldwork-oriented studies." 
+    "description": "This course aims to introduce graduate students to the rich diversity of research methods that social scientists have developed for the empirical aspects of their work. Its primary goal is to encourage critical thinking about the research process: how we 'know,' how we match research methods to research questions, how we design and conduct our information/data collection, what we assume explicitly and implicitly, and the ethical dilemmas raised by fieldwork-oriented studies." 
   }, 
   { 
     "name": "ENE,RES.275", 
     "number": 275, 
     "units": 4, 
     "title": "Water and Development", 
-    "description": "This class is an interdisciplinary graduate seminar for students of water policy in developing countries. It is not a seminar on theories and practices of development through the "lens" of water. Rather, it is a seminar motivated by the fact that over 1 billion people in developing countries have no access to safe drinking water, 3 billion don't have sanitation facilities and many millions of small farmers do not have reliable water supplies to ensure a healthy crop. Readings and discussions will cover: the problems of water access and use in developing countries; the potential for technological, social, and economic solutions to these problems; the role of institutions in access to water and sanitation; and the pitfalls of and assumptions behind some of today's popular "solutions."" 
+    "description": "This class is an interdisciplinary graduate seminar for students of water policy in developing countries. It is not a seminar on theories and practices of development through the 'lens' of water. Rather, it is a seminar motivated by the fact that over 1 billion people in developing countries have no access to safe drinking water, 3 billion don't have sanitation facilities and many millions of small farmers do not have reliable water supplies to ensure a healthy crop. Readings and discussions will cover: the problems of water access and use in developing countries; the potential for technological, social, and economic solutions to these problems; the role of institutions in access to water and sanitation; and the pitfalls of and assumptions behind some of today's popular 'solutions.'" 
   }, 
   { 
     "name": "ENE,RES.280", 
@@ -15922,7 +15922,7 @@ courses = [
     "number": 290, 
     "units": 2, 
     "title": "Biotechnology: Industry Perspectives and Business Development", 
-    "description": "This course is designed to examine the strategic issues that confront the management of the development stage biotech company, i.e., after its start-up via an initial capital infusion, but before it might be deemed successful (e.g., by virtue of a product launch), or otherwise has achieved "first-tier" status. Thus, the intention is to study the biotech organization during the process of it growth and maturation from an early stage existence through "adolescence" into an "adult" company. The focus of the class will be on business development, i.e., the deal making that must occur to accomplish the corporate objectives of bringing in new technologies and getting the initial products to market. We will explore the critical deal issues from both the perspective of the development stage company and the viewpoint of the larger, more mature biotech or big pharma company with which it seeks to partner." 
+    "description": "This course is designed to examine the strategic issues that confront the management of the development stage biotech company, i.e., after its start-up via an initial capital infusion, but before it might be deemed successful (e.g., by virtue of a product launch), or otherwise has achieved 'first-tier' status. Thus, the intention is to study the biotech organization during the process of it growth and maturation from an early stage existence through 'adolescence' into an 'adult' company. The focus of the class will be on business development, i.e., the deal making that must occur to accomplish the corporate objectives of bringing in new technologies and getting the initial products to market. We will explore the critical deal issues from both the perspective of the development stage company and the viewpoint of the larger, more mature biotech or big pharma company with which it seeks to partner." 
   }, 
   { 
     "name": "ENGIN.290E", 
@@ -15957,7 +15957,7 @@ courses = [
     "number": 290, 
     "units": 3, 
     "title": "Opportunity Recognition: Technology and Entrepreneurship in Silicon Valley", 
-    "description": "This course is intended to provide the core skills needed for the identification of opportunities that can lead to successful, entrepreneurial high technology ventures, regardless of the individual's "home" skill set, whether technical or managerial. We examine in depth the approaches most likely to succeed for entrepreneurial companies as a function of markets and technologies. Emphasis is placed on the special requirements for creating and executing strategy in a setting of rapid technological change and limited resources. This course is open to both MBA and Engineering students (who enroll through the College of Engineering), and is particularly suited for those who anticipate founding or operating technology companies." 
+    "description": "This course is intended to provide the core skills needed for the identification of opportunities that can lead to successful, entrepreneurial high technology ventures, regardless of the individual's 'home' skill set, whether technical or managerial. We examine in depth the approaches most likely to succeed for entrepreneurial companies as a function of markets and technologies. Emphasis is placed on the special requirements for creating and executing strategy in a setting of rapid technological change and limited resources. This course is open to both MBA and Engineering students (who enroll through the College of Engineering), and is particularly suited for those who anticipate founding or operating technology companies." 
   }, 
   { 
     "name": "ENGIN.290P", 
@@ -15985,14 +15985,14 @@ courses = [
     "number": 296, 
     "units": 2, 
     "title": "Master of Engineering Capstone Project", 
-    "description": "This course is the first of a sequence of two capstone project courses for candidates of the Masters of Engineering degree. Students engage in professionally oriented independent or group research or study under the supervision of a research advisor. The research and study synthesizes the technical, environmental, economic, and social issues involved in the design and operation of complex engineering devices, systems, and organization. This course is the second of a sequence of two capstone project courses for candidates of the Masters of Engineering degree. Students engage in professionally oriented independent or group research or study under the supervision of a research advisor. The research and study synthesizes the technical, environmental, economic, and social issues involved in the design and operation of complex engineering devices, systems, and organizations." 
+    "description": "# This course is the first of a sequence of two capstone project courses for candidates of the Masters of Engineering degree. Students engage in professionally oriented independent or group research or study under the supervision of a research advisor. The research and study synthesizes the technical, environmental, economic, and social issues involved in the design and operation of complex engineering devices, systems, and organization. # This course is the second of a sequence of two capstone project courses for candidates of the Masters of Engineering degree. Students engage in professionally oriented independent or group research or study under the supervision of a research advisor. The research and study synthesizes the technical, environmental, economic, and social issues involved in the design and operation of complex engineering devices, systems, and organizations." 
   }, 
   { 
     "name": "ENGIN.296MB", 
     "number": 296, 
     "units": 3, 
     "title": "Master of Engineering Capstone Project", 
-    "description": "This course is the first of a sequence of two capstone project courses for candidates of the Masters of Engineering degree. Students engage in professionally oriented independent or group research or study under the supervision of a research advisor. The research and study synthesizes the technical, environmental, economic, and social issues involved in the design and operation of complex engineering devices, systems, and organization. This course is the second of a sequence of two capstone project courses for candidates of the Masters of Engineering degree. Students engage in professionally oriented independent or group research or study under the supervision of a research advisor. The research and study synthesizes the technical, environmental, economic, and social issues involved in the design and operation of complex engineering devices, systems, and organizations." 
+    "description": "# This course is the first of a sequence of two capstone project courses for candidates of the Masters of Engineering degree. Students engage in professionally oriented independent or group research or study under the supervision of a research advisor. The research and study synthesizes the technical, environmental, economic, and social issues involved in the design and operation of complex engineering devices, systems, and organization. # This course is the second of a sequence of two capstone project courses for candidates of the Masters of Engineering degree. Students engage in professionally oriented independent or group research or study under the supervision of a research advisor. The research and study synthesizes the technical, environmental, economic, and social issues involved in the design and operation of complex engineering devices, systems, and organizations." 
   }, 
   { 
     "name": "ENGIN.298A", 
@@ -16349,7 +16349,7 @@ courses = [
     "number": 133, 
     "units": 4, 
     "title": "Topics in African American Literature and Culture", 
-    "description": "Topics vary from semester to semester. Students should consult the department's "Announcement of Classes" for offerings well before the beginning of the semester." 
+    "description": "Topics vary from semester to semester. Students should consult the department's 'Announcement of Classes' for offerings well before the beginning of the semester." 
   }, 
   { 
     "name": "ENGLISH.134", 
@@ -16363,7 +16363,7 @@ courses = [
     "number": 135, 
     "units": 4, 
     "title": "Literature of American Cultures", 
-    "description": "Study of the ethnic diversity of American literature. The course will take substantial account of the literature of three or more of the following groups: African Americans, Native Americans, Asian Americans, Chicanos/Latinos, and European Americans. Topics vary from semester to semester. Students should consult the department's "Announcement of Classes" well before the beginning of the semester for details." 
+    "description": "Study of the ethnic diversity of American literature. The course will take substantial account of the literature of three or more of the following groups: African Americans, Native Americans, Asian Americans, Chicanos/Latinos, and European Americans. Topics vary from semester to semester. Students should consult the department's 'Announcement of Classes' well before the beginning of the semester for details." 
   }, 
   { 
     "name": "ENGLISH.137B", 
@@ -16384,14 +16384,14 @@ courses = [
     "number": 138, 
     "units": 4, 
     "title": "Studies in World Literature in English", 
-    "description": "An examination of various aspects of the modern literature written in English in Africa, the Caribbean, India, and Southeast Asia. Topics will vary from semester to semester. Students should consult the department's "Announcement of Classes" for current offerings well before the start of the semester." 
+    "description": "An examination of various aspects of the modern literature written in English in Africa, the Caribbean, India, and Southeast Asia. Topics will vary from semester to semester. Students should consult the department's 'Announcement of Classes' for current offerings well before the start of the semester." 
   }, 
   { 
     "name": "ENGLISH.139", 
     "number": 139, 
     "units": 4, 
     "title": "The Cultures of English", 
-    "description": "Literatures of various regions in which English is one of the spoken languages, such as Canada, the Caribbean, Australia, Africa, India; and the writings of specific groups or distinctive cultures in the English-speaking world, including the U.S. and the British Isles. Topics vary from semester to semester. Students should consult the department's "Announcement of Classes" for current offerings well before the start of the semester." 
+    "description": "Literatures of various regions in which English is one of the spoken languages, such as Canada, the Caribbean, Australia, Africa, India; and the writings of specific groups or distinctive cultures in the English-speaking world, including the U.S. and the British Isles. Topics vary from semester to semester. Students should consult the department's 'Announcement of Classes' for current offerings well before the start of the semester." 
   }, 
   { 
     "name": "ENGLISH.141", 
@@ -16461,28 +16461,28 @@ courses = [
     "number": 165, 
     "units": 4, 
     "title": "Special Topics", 
-    "description": "Designed primarily for English majors. Topics vary from semester to semester. Students should consult the department's "Announcement of Classes" for offerings well before the beginning of the semester." 
+    "description": "Designed primarily for English majors. Topics vary from semester to semester. Students should consult the department's 'Announcement of Classes' for offerings well before the beginning of the semester." 
   }, 
   { 
     "name": "ENGLISH.165AC", 
     "number": 165, 
     "units": 4, 
     "title": "Special Topics in American Cultures", 
-    "description": "Designed primarily for English majors. Study of a special topic related to the diversity of the United States. Topics vary from semester to semester. Students should consult the department's "Announcement of Classes" for offerings well before the beginning of the semester." 
+    "description": "Designed primarily for English majors. Study of a special topic related to the diversity of the United States. Topics vary from semester to semester. Students should consult the department's 'Announcement of Classes' for offerings well before the beginning of the semester." 
   }, 
   { 
     "name": "ENGLISH.166", 
     "number": 166, 
     "units": 4, 
     "title": "Special Topics", 
-    "description": "Topics vary from semester to semester. Students should consult the department's "Announcement of Classes" for offerings well before the beginning of the semester." 
+    "description": "Topics vary from semester to semester. Students should consult the department's 'Announcement of Classes' for offerings well before the beginning of the semester." 
   }, 
   { 
     "name": "ENGLISH.166AC", 
     "number": 166, 
     "units": 4, 
     "title": "Special Topics in American Cultures", 
-    "description": "Study of a special topic related to the diversity of the United States. Topics vary from semester to semester. Student's should consult the department's "Announcement of Classes" for offerings well before the beginning of the semester." 
+    "description": "Study of a special topic related to the diversity of the United States. Topics vary from semester to semester. Student's should consult the department's 'Announcement of Classes' for offerings well before the beginning of the semester." 
   }, 
   { 
     "name": "ENGLISH.170", 
@@ -16503,7 +16503,7 @@ courses = [
     "number": 173, 
     "units": 4, 
     "title": "The Language and Literature of Films", 
-    "description": "Studies in film as a mode of representing reality; cinematic techniques and the "language" of film. Lectures, class discussions, and film viewings." 
+    "description": "Studies in film as a mode of representing reality; cinematic techniques and the 'language' of film. Lectures, class discussions, and film viewings." 
   }, 
   { 
     "name": "ENGLISH.174", 
@@ -16517,7 +16517,7 @@ courses = [
     "number": 175, 
     "units": 4, 
     "title": "Literature and Disability", 
-    "description": "Studies of the relationships among literature, culture, and "disability." The course may range broadly or concentrate on one historical period, genre, or issue." 
+    "description": "Studies of the relationships among literature, culture, and 'disability.' The course may range broadly or concentrate on one historical period, genre, or issue." 
   }, 
   { 
     "name": "ENGLISH.176", 
@@ -16566,7 +16566,7 @@ courses = [
     "number": 180, 
     "units": 4, 
     "title": "The Novel", 
-    "description": "Study of the novel as a literary genre, its formal development and variations, its technical possibilities, its cultural functions. Topics may vary from semester to semester."
+    "description": "Study of the novel as a literary genre, its formal development and variations, its technical possibilities, its cultural functions. Topics may vary from semester to semester." 
   }, 
   { 
     "name": "ENGLISH.180R", 
@@ -16587,7 +16587,7 @@ courses = [
     "number": 190, 
     "units": 4, 
     "title": "Research Seminar", 
-    "description": "Research-oriented and designed for upper-division English majors. Intensive examination of critical approaches, literary theory, or a special topic in literary and cultural studies. Topics vary from semester to semester. Students should consult the department's "Announcement of Classes" for offerings well before the beginning of the semester." 
+    "description": "Research-oriented and designed for upper-division English majors. Intensive examination of critical approaches, literary theory, or a special topic in literary and cultural studies. Topics vary from semester to semester. Students should consult the department's 'Announcement of Classes' for offerings well before the beginning of the semester." 
   }, 
   { 
     "name": "ENGLISH.198", 
@@ -16636,7 +16636,7 @@ courses = [
     "number": 203, 
     "units": 4, 
     "title": "Graduate Readings", 
-    "description": "Graduate lecture courses surveying broad areas and periods of literary history, and directing students in wide reading. Offerings vary from semester to semester. Students should consult the department's "Announcement of Classes" for offerings well before the beginning of the semester." 
+    "description": "Graduate lecture courses surveying broad areas and periods of literary history, and directing students in wide reading. Offerings vary from semester to semester. Students should consult the department's 'Announcement of Classes' for offerings well before the beginning of the semester." 
   }, 
   { 
     "name": "ENGLISH.205A", 
@@ -16783,7 +16783,7 @@ courses = [
     "number": 250, 
     "units": 4, 
     "title": "Research Seminars", 
-    "description": "Required of all Ph.D. students. Advanced study in various fields, leading to a substantial piece of writing. Offerings vary from semester to semester. Students should consult the department's "Announcement of Classes" for offerings well before the beginning of the semester." 
+    "description": "Required of all Ph.D. students. Advanced study in various fields, leading to a substantial piece of writing. Offerings vary from semester to semester. Students should consult the department's 'Announcement of Classes' for offerings well before the beginning of the semester." 
   }, 
   { 
     "name": "ENGLISH.26", 
@@ -16846,7 +16846,7 @@ courses = [
     "number": 31, 
     "units": 4, 
     "title": "Literature of American Cultures", 
-    "description": "An introduction to the ethnic diversity of American literature. The course will take substantial account of the literature of three or more of the following groups: African Americans, Native Americans, Asian Americans, Chicanos/Latinos, and European Americans. Topics vary from semester to semester. Students should consult the department's "Announcement of Classes" well before the beginning of the semester for details." 
+    "description": "An introduction to the ethnic diversity of American literature. The course will take substantial account of the literature of three or more of the following groups: African Americans, Native Americans, Asian Americans, Chicanos/Latinos, and European Americans. Topics vary from semester to semester. Students should consult the department's 'Announcement of Classes' well before the beginning of the semester for details." 
   }, 
   { 
     "name": "ENGLISH.37", 
@@ -16867,7 +16867,7 @@ courses = [
     "number": 39, 
     "units": 4, 
     "title": "Freshman Seminar", 
-    "description": "Topics vary from semester to semester. Students should consult the department's "Announcement of Classes" for current offerings well before the start of the semester. (Sections limited to 15 students each.)" 
+    "description": "Topics vary from semester to semester. Students should consult the department's 'Announcement of Classes' for current offerings well before the start of the semester. (Sections limited to 15 students each.)" 
   }, 
   { 
     "name": "ENGLISH.43A", 
@@ -16951,7 +16951,7 @@ courses = [
     "number": 136, 
     "units": 4, 
     "title": "Topics in American Studies", 
-    "description": "A course on the intellectual, cultural, historical, and social backgrounds to American literature. Topics will vary from semester to semester. Students should consult the department's "Announcement of Classes" for current offerings well before the start of the semester. Also listed as American Studies C111E." 
+    "description": "A course on the intellectual, cultural, historical, and social backgrounds to American literature. Topics will vary from semester to semester. Students should consult the department's 'Announcement of Classes' for current offerings well before the start of the semester. Also listed as American Studies C111E." 
   }, 
   { 
     "name": "ENGLISH.C77", 
@@ -16993,7 +16993,7 @@ courses = [
     "number": 50, 
     "units": 4, 
     "title": "Freshman and Sophomore Studies", 
-    "description": "Writing-intensive introduction to the study of literature; fulfills the second half of Reading and Composition requirement. Highly recommended for prospective English majors who have not yet taken R1B. Topics and readings vary from semester to semester. Students should consult the "Announcement of Classes" for current offerings well before the beginning of the semester. Sections limited to 17 students." 
+    "description": "Writing-intensive introduction to the study of literature; fulfills the second half of Reading and Composition requirement. Highly recommended for prospective English majors who have not yet taken R1B. Topics and readings vary from semester to semester. Students should consult the 'Announcement of Classes' for current offerings well before the beginning of the semester. Sections limited to 17 students." 
   }, 
   { 
     "name": "ENV DES.1", 
@@ -17014,7 +17014,7 @@ courses = [
     "number": 100, 
     "units": 4, 
     "title": "The City: Theories and Methods in Urban Studies", 
-    "description": "This course is concerned with the study of cities. Focusing on great cities around the world - from Chicago to Los Angeles, from Rio to Shanghai, from Vienna to Cairo it covers of historical and contemporary patterns of urbanization and urbanism. Through these case studies, it introduces the key ideas, debates, and research genres of the interdisciplinary field of urban studies. In other words, this is simultaneously a "great cities" and "great theories" course. Its purpose is to train students in critical analysis of the socio-spatial formations of their lived world." 
+    "description": "This course is concerned with the study of cities. Focusing on great cities around the world - from Chicago to Los Angeles, from Rio to Shanghai, from Vienna to Cairo it covers of historical and contemporary patterns of urbanization and urbanism. Through these case studies, it introduces the key ideas, debates, and research genres of the interdisciplinary field of urban studies. In other words, this is simultaneously a 'great cities' and 'great theories' course. Its purpose is to train students in critical analysis of the socio-spatial formations of their lived world." 
   }, 
   { 
     "name": "ENV DES.101A", 
@@ -17028,7 +17028,7 @@ courses = [
     "number": 101, 
     "units": 2, 
     "title": "Writing about Environmental Design: One Longer Composition", 
-    "description": "In 101B: The Notebook (one long composition in 14 weekly assignments) assigned readings (principally short stories) offer examples of writing which parallel the focus of the week's writing assignment. Prompts and assigned readings encourage the individual development of a "story" or "theme" that each student at the outset or in the process of writing, arrives at a personal narrative. Course approved for English department credit and UC Undergraduate Minor in Creative Writing." 
+    "description": "In 101B: The Notebook (one long composition in 14 weekly assignments) assigned readings (principally short stories) offer examples of writing which parallel the focus of the week's writing assignment. Prompts and assigned readings encourage the individual development of a 'story' or 'theme' that each student at the outset or in the process of writing, arrives at a personal narrative. Course approved for English department credit and UC Undergraduate Minor in Creative Writing." 
   }, 
   { 
     "name": "ENV DES.102", 
@@ -17126,7 +17126,7 @@ courses = [
     "number": 252, 
     "units": 3, 
     "title": "Urban Place Studies", 
-    "description": "Seminar focuses on individual urban design interests, the design and research work that students are pursuing in other courses, and development of thesis or final design projects." 
+    "description": "Seminar focuses on individual urban design interests, the design and research work that students are pursuing in other courses, and development of thesis or final design projects."
   }, 
   { 
     "name": "ENV DES.298", 
@@ -17140,7 +17140,7 @@ courses = [
     "number": 4, 
     "units": 3, 
     "title": "Design and Activism", 
-    "description": "This course explores the relationships between design and activism, raising critical questions about what design is, and how designers serve as guardians of culture and as agents of change. Students will participate in "spontaneous acts of design activism" that address contemporary issues through the making of forms and space to reinvent relationships between people and their environments." 
+    "description": "This course explores the relationships between design and activism, raising critical questions about what design is, and how designers serve as guardians of culture and as agents of change. Students will participate in 'spontaneous acts of design activism' that address contemporary issues through the making of forms and space to reinvent relationships between people and their environments." 
   }, 
   { 
     "name": "ENV DES.4B", 
@@ -17483,7 +17483,7 @@ courses = [
     "number": 104, 
     "units": 4, 
     "title": "Mathematical Methods in Geophysics", 
-    "description": "Linear systems. Linear inverse problems, least squares; generalized inverse, resolution; Fourier series, integral transforms; time series analysis, spherical harmonics; partial differntial equations of geophysics; functions of a complex variable; probability and significance tests, maximum likelihood methods. Intended for students in geophysics and other physical sciences." 
+    "description": "Linear systems. Linear inverse problems, least squares; generalized inverse, resolution; Fourier series, integral transforms; time series analysis, spherical harmonics; partial differntial equations of geophysics; functions of a complex variable; probability and significance tests, maximum likelihood methods. Intended for students in geophysics and other physical sciences."
   }, 
   { 
     "name": "EPS.108", 
@@ -17770,7 +17770,7 @@ courses = [
     "number": 260, 
     "units": 2, 
     "title": "Research in Earth Science", 
-    "description": "Weekly presentations to introduce new graduate students and senior undergraduates to current research conducted in the Department of Earth and Planetary Science."
+    "description": "Weekly presentations to introduce new graduate students and senior undergraduates to current research conducted in the Department of Earth and Planetary Science." 
   }, 
   { 
     "name": "EPS.271", 
@@ -17847,7 +17847,7 @@ courses = [
     "number": 8, 
     "units": 3, 
     "title": "Geologic Record of Climate Change", 
-    "description": "This course will review the geologic record of climate change emphasizing how such knowledge can constrain present day thinking about (and predictive models of) future climate change. We will cover the entire spectrum of climate variations, from the formation of the Earth's early atmosophere 4.6 billion years ago to the ice ages to the development of instrumental records." 
+    "description": "This course will review the geologic record of climate change emphasizing how such knowledge can constrain present day thinking about (and predictive models of) future climate change. We will cover the entire spectrum of climate variations, from the formation of the Earth's early atmosophere 4.6 billion years ago to the ice ages to the development of instrumental records."
   }, 
   { 
     "name": "EPS.80", 
@@ -18008,7 +18008,7 @@ courses = [
     "number": 82, 
     "units": 3, 
     "title": "Oceans", 
-    "description": "This course offers multidisciplinary approach to begin answering the question "Why are oceans important to us?" Upon a physical, chemical, and geologic base, we introduce the alien world of sea life, the importance of the ocean to the global carbon cycle, and the principles of ecology with a focus on the important concept of energy flow through food webs. Lectures expand beyond science to include current topics as diverse as music, movies, mythology, biomechanics, policy, and trade. Also listed as Geography C82 and Integrative Biology C82." 
+    "description": "This course offers multidisciplinary approach to begin answering the question 'Why are oceans important to us?' Upon a physical, chemical, and geologic base, we introduce the alien world of sea life, the importance of the ocean to the global carbon cycle, and the principles of ecology with a focus on the important concept of energy flow through food webs. Lectures expand beyond science to include current topics as diverse as music, movies, mythology, biomechanics, policy, and trade. Also listed as Geography C82 and Integrative Biology C82." 
   }, 
   { 
     "name": "EPS.H195", 
@@ -18414,7 +18414,7 @@ courses = [
     "number": 182, 
     "units": 3, 
     "title": "Forest Operations Management", 
-    "description": "Examination of "on the ground" activities necessary to manage forests. Planning, design, and implementation of activities such as road building, forest harvesting, erosion control, and fire suppression are the central focus of the course. Aspects of timber harvest planning, archaeological surveys related to forest management, road closure, stream bank stabilization, and legislative control of forest operations will also be explored." 
+    "description": "Examination of 'on the ground' activities necessary to manage forests. Planning, design, and implementation of activities such as road building, forest harvesting, erosion control, and fire suppression are the central focus of the course. Aspects of timber harvest planning, archaeological surveys related to forest management, road closure, stream bank stabilization, and legislative control of forest operations will also be explored." 
   }, 
   { 
     "name": "ESPM.183", 
@@ -18610,7 +18610,7 @@ courses = [
     "number": 233, 
     "units": 3, 
     "title": "Geographic Information Systems for Environmental Science and Management", 
-    "description": "The objectives of the course are to: 1) review the GIS basics (data, analysis, and product generation) with special reference to data used in managing California environments; 2) understand the issues surrounding, and algorithms used in, a particular GIS application; and 3) develop an operational GIS project in a chosen area. This course is divided into three sections: 1) an intensive GIS fundamentals section covering geospatial data input, manipulation, analysis, and effective communication using common geospatial data from California sources; 2) a section that discusses linkages with other GIScience disciplines; 3) a topic based case-study portion; and 4) a project development phase. Topics will need to have management appplicability for an agency, not-for-profit, or similar type of group involved in environmental management. There will be lectures and labs throughout the class, although lab time nearer the end of class will be focused on class projects. Reading will be assigned throughout, and class discussion held. The final class period will be used as an "illustrated paper" session, in which final projects are displayed and discussed." 
+    "description": "The objectives of the course are to: 1) review the GIS basics (data, analysis, and product generation) with special reference to data used in managing California environments; 2) understand the issues surrounding, and algorithms used in, a particular GIS application; and 3) develop an operational GIS project in a chosen area. This course is divided into three sections: 1) an intensive GIS fundamentals section covering geospatial data input, manipulation, analysis, and effective communication using common geospatial data from California sources; 2) a section that discusses linkages with other GIScience disciplines; 3) a topic based case-study portion; and 4) a project development phase. Topics will need to have management appplicability for an agency, not-for-profit, or similar type of group involved in environmental management. There will be lectures and labs throughout the class, although lab time nearer the end of class will be focused on class projects. Reading will be assigned throughout, and class discussion held. The final class period will be used as an 'illustrated paper' session, in which final projects are displayed and discussed." 
   }, 
   { 
     "name": "ESPM.238", 
@@ -18701,7 +18701,7 @@ courses = [
     "number": 262, 
     "units": 3, 
     "title": "Race, Identity, and the Environment", 
-    "description": "Advanced readings on environment and race. Shifting meanings of "race" and its application and usefulness in theorizing human-environment relationships. Foundations of environmental ideas and attitudes towards the natural environment and their connections to contemporary environmental practices. Construction of environmental narratives and images in defining ideas of racial and place identity. How representations of the natural environment are structurally and culturally racialized within environmental institutions and the media. Post-race possibilities." 
+    "description": "Advanced readings on environment and race. Shifting meanings of 'race' and its application and usefulness in theorizing human-environment relationships. Foundations of environmental ideas and attitudes towards the natural environment and their connections to contemporary environmental practices. Construction of environmental narratives and images in defining ideas of racial and place identity. How representations of the natural environment are structurally and culturally racialized within environmental institutions and the media. Post-race possibilities." 
   }, 
   { 
     "name": "ESPM.263", 
@@ -19303,7 +19303,7 @@ courses = [
     "number": 375, 
     "units": 4, 
     "title": "Critical Pedagogy: Instructor Training", 
-    "description": "The seminar provides a systemic approach to theories and practices of critical pedagogy at the university level. Examines the arts of teaching and learning and current disciplinary and cross-disciplinary issues in African/diaspora and Ethnic Studies. Participation two hours per week as practicum in 39, "Introduction to the University: African American Perspectives" is mandatory. The course is required for students expecting to serve as graduate student instructors in the department. Also listed as African American Studies C375." 
+    "description": "The seminar provides a systemic approach to theories and practices of critical pedagogy at the university level. Examines the arts of teaching and learning and current disciplinary and cross-disciplinary issues in African/diaspora and Ethnic Studies. Participation two hours per week as practicum in 39, 'Introduction to the University: African American Perspectives' is mandatory. The course is required for students expecting to serve as graduate student instructors in the department. Also listed as African American Studies C375." 
   }, 
   { 
     "name": "ETH STD.100", 
@@ -19324,7 +19324,7 @@ courses = [
     "number": 101, 
     "units": 4, 
     "title": "Humanities Methods in Ethnic Studies", 
-    "description": "The course provides an introduction to basic theoretical approaches to the literary and other cultural productions of ethnic or "minority" communities in the United States. It also involves the study of important writings by Latina/o, Native American, African American, Asian American, and mixed race writers, and to a lesser degree, the visual art production of these same communities. The course will focus with particular care on discourses of racialization, gender, and sexuality." 
+    "description": "The course provides an introduction to basic theoretical approaches to the literary and other cultural productions of ethnic or 'minority' communities in the United States. It also involves the study of important writings by Latina/o, Native American, African American, Asian American, and mixed race writers, and to a lesser degree, the visual art production of these same communities. The course will focus with particular care on discourses of racialization, gender, and sexuality." 
   }, 
   { 
     "name": "ETH STD.103", 
@@ -19359,7 +19359,7 @@ courses = [
     "number": 10, 
     "units": 4, 
     "title": "A History of Race and Ethnicity in Western North America, 1598-Present", 
-    "description": "This course explores the role of "race" and ethnicity in the history of what became the Western United States from the Spanish invasion of the Southwest to contemporary controversies surrounding 'race' in California. Rather than providing a continuous historical narrative, or treating each racialized "other" separately, the course works through a series of chronologically organized events in which issues of racial differences played key roles in creating what became a western identity." 
+    "description": "This course explores the role of 'race' and ethnicity in the history of what became the Western United States from the Spanish invasion of the Southwest to contemporary controversies surrounding 'race' in California. Rather than providing a continuous historical narrative, or treating each racialized 'other' separately, the course works through a series of chronologically organized events in which issues of racial differences played key roles in creating what became a western identity." 
   }, 
   { 
     "name": "ETH STD.11AC", 
@@ -19471,7 +19471,7 @@ courses = [
     "number": 181, 
     "units": 4, 
     "title": "Prison", 
-    "description": "Taking a broad interdisciplinary approach, this course embraces the longue duree of critical prison studies, questioning the shadows of normality that cloak mass incarceration both across the globe and, more particularly, in the contemporary United States. This course thus explores a series of visceral, unsettling juxtapositions: "freedom" and "slavery"; "citizenship" and "subjugation"; "marginalization" and "inclusion", in each case explicating the ways that story making, political demagoguery, and racial, class, and sexual inequalities have wrought an untenable social condition. Also listed as Architecture 180AC and Legal Studies 185AC." 
+    "description": "Taking a broad interdisciplinary approach, this course embraces the longue duree of critical prison studies, questioning the shadows of normality that cloak mass incarceration both across the globe and, more particularly, in the contemporary United States. This course thus explores a series of visceral, unsettling juxtapositions: 'freedom' and 'slavery'; 'citizenship' and 'subjugation'; 'marginalization' and 'inclusion', in each case explicating the ways that story making, political demagoguery, and racial, class, and sexual inequalities have wrought an untenable social condition. Also listed as Architecture 180AC and Legal Studies 185AC." 
   }, 
   { 
     "name": "ETH STD.190", 
@@ -19653,7 +19653,7 @@ courses = [
     "number": 200, 
     "units": 1, 
     "title": "Problem Finding, Problem Solving", 
-    "description": "Problem Finding, Problem Solving (PFPS) teaches basic skills drawn from the fields of critical thinking, design thinking and systems thinking that support innovation. Specifically, it covers ways of collecting information to characterize a problem, framing and re-framing that problem, coming up with a range of solutions and then gathering feedback to assess those solutions. Following Confucius's notion: "I hear and I forget. I see and I remember. I do and I understand." The class consists primarily of hands-on exercises to experiment with and learn the tools and techniques presented, applying them to the design and testing of alternative business models for start-up and other businesses." 
+    "description": "Problem Finding, Problem Solving (PFPS) teaches basic skills drawn from the fields of critical thinking, design thinking and systems thinking that support innovation. Specifically, it covers ways of collecting information to characterize a problem, framing and re-framing that problem, coming up with a range of solutions and then gathering feedback to assess those solutions. Following Confucius's notion: 'I hear and I forget. I see and I remember. I do and I understand.' The class consists primarily of hands-on exercises to experiment with and learn the tools and techniques presented, applying them to the design and testing of alternative business models for start-up and other businesses." 
   }, 
   { 
     "name": "EWMBA.201A", 
@@ -19842,7 +19842,7 @@ courses = [
     "number": 236, 
     "units": 1, 
     "title": "Behavioral Finance", 
-    "description": "This course looks at the influence of decision heuristics and biases on investor welfare, financial markets, and corporate decisions. Topics include overconfidence, attribution theory, representative heuristic, availability heuristic, anchoring and adjustment, prospect theory, "Winner's Curse," speculative bubbles, IPOs, market efficiency, limits of arbitrage, relative mis-pricing of common stocks, the tendency to trade in a highly correlated fashion, investor welfare, and market anomalies." 
+    "description": "This course looks at the influence of decision heuristics and biases on investor welfare, financial markets, and corporate decisions. Topics include overconfidence, attribution theory, representative heuristic, availability heuristic, anchoring and adjustment, prospect theory, 'Winner's Curse,' speculative bubbles, IPOs, market efficiency, limits of arbitrage, relative mis-pricing of common stocks, the tendency to trade in a highly correlated fashion, investor welfare, and market anomalies." 
   }, 
   { 
     "name": "EWMBA.236G", 
@@ -19905,14 +19905,14 @@ courses = [
     "number": 254, 
     "units": 2, 
     "title": "Power and Politics in Organizations", 
-    "description": "This course will provide students with a sense of "political intelligence." After taking this course, students will be able to: (1) diagnose the true distribution of power in organizations, (2) identify strategie for building sources of power, (3) develop techniques for influencing others, (4) understand the role of power in building cooperation and leading change in organizations, and (5) make sense of others' attempts to influence them. These skills are essential for effective and satisfying career building." 
+    "description": "This course will provide students with a sense of 'political intelligence.' After taking this course, students will be able to: (1) diagnose the true distribution of power in organizations, (2) identify strategie for building sources of power, (3) develop techniques for influencing others, (4) understand the role of power in building cooperation and leading change in organizations, and (5) make sense of others' attempts to influence them. These skills are essential for effective and satisfying career building." 
   }, 
   { 
     "name": "EWMBA.255", 
     "number": 255, 
     "units": 1, 
     "title": "Leadership", 
-    "description": "This course will increase your awareness of your own strengths and opportunities for improvement while gaining an understanding of the qualities essential to being an extraordinary leader. By the end of the course, we are hoping that you will have: Increased your understanding of what distinguishes between more and less successful leaders and construct a plan for your own development as a leader; sharpened your ability to diagnose situations and determine how you can add value; gained experience and confidence in leadership situations, such as dealing with difficult people and inspiring others to accomplish shared team and organizational goals; and developed the ability to accept and leverage feedback and offer useful feedback to others." 
+    "description": "This course will increase your awareness of your own strengths and opportunities for improvement while gaining an understanding of the qualities essential to being an extraordinary leader. By the end of the course, we are hoping that you will have: Increased your understanding of what distinguishes between more and less successful leaders and construct a plan for your own development as a leader; sharpened your ability to diagnose situations and determine how you can add value; gained experience and confidence in leadership situations, such as dealing with difficult people and inspiring others to accomplish shared team and organizational goals; and developed the ability to accept and leverage feedback and offer useful feedback to others."
   }, 
   { 
     "name": "EWMBA.256", 
@@ -20073,7 +20073,7 @@ courses = [
     "number": 290, 
     "units": 2, 
     "title": "Biotechnology Industry Perspectives and Business Development", 
-    "description": "This course is designed to examine the strategic issues that confront the management of the development-stage biotech company, i.e., after its startup via an initial capital infusion, but before it might be deemed successful, or otherwise has achieved "first-tier" status. The intention is to study the biotech organization during the process of its growth and maturation from an early-stage existence through "adolescence" into an early-stage existence." 
+    "description": "This course is designed to examine the strategic issues that confront the management of the development-stage biotech company, i.e., after its startup via an initial capital infusion, but before it might be deemed successful, or otherwise has achieved 'first-tier' status. The intention is to study the biotech organization during the process of its growth and maturation from an early-stage existence through 'adolescence' into an early-stage existence." 
   }, 
   { 
     "name": "EWMBA.290H", 
@@ -20150,7 +20150,7 @@ courses = [
     "number": 291, 
     "units": 1, 
     "title": "Storytelling for Leadership", 
-    "description": "This course provides students with personal leadership development through the ability to tell "Who Am I" leadership journey stories, for use in the business context. For leaders, whose job it is to manage change, the approach to storytelling facilitates learning and is a vehicle to assist others in overcoming obstacles, generating enthusiasm and team work, sharing knowledge and ultimately leading to build trust and connection. This course give strategies, skills and practices for the three elements of telling powerful leadership stories: Story Content, Story Structure and Story Delivery. The course is highly interactive." 
+    "description": "This course provides students with personal leadership development through the ability to tell 'Who Am I' leadership journey stories, for use in the business context. For leaders, whose job it is to manage change, the approach to storytelling facilitates learning and is a vehicle to assist others in overcoming obstacles, generating enthusiasm and team work, sharing knowledge and ultimately leading to build trust and connection. This course give strategies, skills and practices for the three elements of telling powerful leadership stories: Story Content, Story Structure and Story Delivery. The course is highly interactive." 
   }, 
   { 
     "name": "EWMBA.291T", 
@@ -20178,7 +20178,7 @@ courses = [
     "number": 292, 
     "units": 1, 
     "title": "Strategic CSR and Consulting Projects", 
-    "description": "Discuss the field of strategic CSR through a series of lectures, guest speakers, and projects. This course will examine best practices used by companies to engage in socially responsible practices. It will provide students with a flavor of the complex dilemmas one can face in business in trying to do both "good for society" and "well for shareholders." It looks at CSR from a corporate strategy perspective, and how it supports core business objectives, core competencies, and bottom line profits." 
+    "description": "Discuss the field of strategic CSR through a series of lectures, guest speakers, and projects. This course will examine best practices used by companies to engage in socially responsible practices. It will provide students with a flavor of the complex dilemmas one can face in business in trying to do both 'good for society' and 'well for shareholders.' It looks at CSR from a corporate strategy perspective, and how it supports core business objectives, core competencies, and bottom line profits." 
   }, 
   { 
     "name": "EWMBA.292F", 
@@ -20269,7 +20269,7 @@ courses = [
     "number": 295, 
     "units": 2, 
     "title": "The Lean Launch Pad", 
-    "description": "This course provides real world, hands-on learning on what it's like to actually start a high-tech company. This class is not about how to write a business plan. It's not an exercise on how smart you are in a classroom, or how well you use the research library to size markets. And the end result is not a PowerPoint slide deck for a VC presentation. And it is most definitely not an incubator where you come to build the "hot-idea" that you have in mind. This is a practical class: Our goal, within the constraints of a classroom and a limited amount of time, is to create an entrepreneurial experience for you with all of the pressures and demands of the real world in an early stage start up." 
+    "description": "This course provides real world, hands-on learning on what it's like to actually start a high-tech company. This class is not about how to write a business plan. It's not an exercise on how smart you are in a classroom, or how well you use the research library to size markets. And the end result is not a PowerPoint slide deck for a VC presentation. And it is most definitely not an incubator where you come to build the 'hot-idea' that you have in mind. This is a practical class: Our goal, within the constraints of a classroom and a limited amount of time, is to create an entrepreneurial experience for you with all of the pressures and demands of the real world in an early stage start up." 
   }, 
   { 
     "name": "EWMBA.295G", 
@@ -20367,7 +20367,7 @@ courses = [
     "number": 254, 
     "units": 2, 
     "title": "Power and Politics in Organizations", 
-    "description": "This course will provide students with a sense of "political intelligence," enabling them to: 1) Diagnose the true distribution of power in organizations, 2) Identify strategies for building sources of power, 3) Develop techniques for influencing others, 4) Understand the role of power in building cooperation and leading change, and 5) Make sense of others' attempts to influence them. This is an online course, utilizing multiple media and providing flexibility in when and how students learn." 
+    "description": "This course will provide students with a sense of 'political intelligence,' enabling them to: 1) Diagnose the true distribution of power in organizations, 2) Identify strategies for building sources of power, 3) Develop techniques for influencing others, 4) Understand the role of power in building cooperation and leading change, and 5) Make sense of others' attempts to influence them. This is an online course, utilizing multiple media and providing flexibility in when and how students learn." 
   }, 
   { 
     "name": "FILIPN.100A", 
@@ -20388,14 +20388,14 @@ courses = [
     "number": 101, 
     "units": 3, 
     "title": "Advanced Filipino", 
-    "description": "Students read and discuss essays on language, literature, and Phillippine society, and literary texts. Topics include language and the nation; poetry and discourse; language and ideology; and "pananalinghaga" (tropes/metaphors) in understanding society. The students choose whether they would like to go on a creative (poetry, fiction) or a research track (essay)." 
+    "description": "Students read and discuss essays on language, literature, and Phillippine society, and literary texts. Topics include language and the nation; poetry and discourse; language and ideology; and 'pananalinghaga' (tropes/metaphors) in understanding society. The students choose whether they would like to go on a creative (poetry, fiction) or a research track (essay)." 
   }, 
   { 
     "name": "FILIPN.101B", 
     "number": 101, 
     "units": 3, 
     "title": "Advanced Filipino", 
-    "description": "Students read and discuss essays on language, literature, and Phillippine society, and literary texts. Topics include language and the nation; poetry and discourse; language and ideology; and "pananalinghaga" (tropes/metaphors) in understanding society. The students choose whether they would like to go on a creative (poetry, fiction) or a research track (essay)." 
+    "description": "Students read and discuss essays on language, literature, and Phillippine society, and literary texts. Topics include language and the nation; poetry and discourse; language and ideology; and 'pananalinghaga' (tropes/metaphors) in understanding society. The students choose whether they would like to go on a creative (poetry, fiction) or a research track (essay)." 
   }, 
   { 
     "name": "FILIPN.1A", 
@@ -20514,14 +20514,14 @@ courses = [
     "number": 197, 
     "units": 2, 
     "title": "Film Curating Internship", 
-    "description": "Experience "behind-the-scenes" at the Pacific Film Archive! Interns will learn about film curating through creating a program of works by UC Berkeley students to present at PFA the following spring semester. Students will solicit films and videos, preview them, and make a final selection as a group. Students will write short analyses of local film exhibition programs and will do projects related to PFA's ongoing exhibition program." 
+    "description": "Experience 'behind-the-scenes' at the Pacific Film Archive! Interns will learn about film curating through creating a program of works by UC Berkeley students to present at PFA the following spring semester. Students will solicit films and videos, preview them, and make a final selection as a group. Students will write short analyses of local film exhibition programs and will do projects related to PFA's ongoing exhibition program." 
   }, 
   { 
     "name": "FILM.197D", 
     "number": 197, 
     "units": 2, 
     "title": "Field Study at <Film Quarterly>", 
-    "description": "Interning at <Film Quarterly.> Interns will gain experience in the editorial process. This internship will help the student refine critical skills, develop editorial skills, and experience working on a film journal." 
+    "description": "Interning at 'Film Quarterly.' Interns will gain experience in the editorial process. This internship will help the student refine critical skills, develop editorial skills, and experience working on a film journal." 
   }, 
   { 
     "name": "FILM.198", 
@@ -20675,7 +20675,7 @@ courses = [
     "number": 185, 
     "units": 4, 
     "title": "Digital Video: The Architecture of Time", 
-    "description": "This hands-on studio course is designed to present students with a foundation-level introduction to the skills, theories, and concepts used in digital video production. As digital technologies continue to expand our notion of time and space, value and meaning, artists are using these tools to envision the impossible. Nonlinear and nondestructive editing methods used in digital video are defining new "architectures of time" for cinematic creation and experience, and offer new and innovative possibilities for authoring new forms of the moving image. Through direct experimentation, this course will expose students to a broad range of industry-standard equipment, film and video history, theory, terminology, field, and post-production skills. Students will be required to technically master the digital media tools introduced in the course, and personalize the new possibilities digital video brings to time-based art forms. Also listed as Practice of Art C171." 
+    "description": "This hands-on studio course is designed to present students with a foundation-level introduction to the skills, theories, and concepts used in digital video production. As digital technologies continue to expand our notion of time and space, value and meaning, artists are using these tools to envision the impossible. Nonlinear and nondestructive editing methods used in digital video are defining new 'architectures of time' for cinematic creation and experience, and offer new and innovative possibilities for authoring new forms of the moving image. Through direct experimentation, this course will expose students to a broad range of industry-standard equipment, film and video history, theory, terminology, field, and post-production skills. Students will be required to technically master the digital media tools introduced in the course, and personalize the new possibilities digital video brings to time-based art forms. Also listed as Practice of Art C171." 
   }, 
   { 
     "name": "FILM.C187", 
@@ -20773,14 +20773,14 @@ courses = [
     "number": 112, 
     "units": 4, 
     "title": "Medieval Literature", 
-    "description": "Medieval literature from the <Chanson de Roland> to the <Roman de la Rose>." 
+    "description": "Medieval literature from the 'Chanson de Roland' to the 'Roman de la Rose'." 
   }, 
   { 
     "name": "FRENCH.112B", 
     "number": 112, 
     "units": 4, 
     "title": "Medieval Literature", 
-    "description": "Medieval literature from the <Chanson de Roland> to the <Roman de la Rose>." 
+    "description": "Medieval literature from the 'Chanson de Roland' to the 'Roman de la Rose'." 
   }, 
   { 
     "name": "FRENCH.114A", 
@@ -20815,7 +20815,7 @@ courses = [
     "number": 118, 
     "units": 4, 
     "title": "Eighteenth-Century Literature", 
-    "description": "???A. Authors from the first half of the 18th century, with emphasis on the origins of the philosophical movement and the development of modern art forms in the theater and the novel. ???B. A study of authors of the second half of the 18th century stressing the importance of the "Movement Philosophique" and the development of libertine values as well as the emergence of the pre-Romantic aesthetics." 
+    "description": "???A. Authors from the first half of the 18th century, with emphasis on the origins of the philosophical movement and the development of modern art forms in the theater and the novel. ???B. A study of authors of the second half of the 18th century stressing the importance of the 'Movement Philosophique' and the development of libertine values as well as the emergence of the pre-Romantic aesthetics." 
   }, 
   { 
     "name": "FRENCH.119A", 
@@ -20857,14 +20857,14 @@ courses = [
     "number": 121, 
     "units": 4, 
     "title": "Literary Themes, Genres, and Structures", 
-    "description": "Topics vary from year to year. Past topics have included "litterature fantastique," science fiction, autobiography, French lyric poetry." 
+    "description": "Topics vary from year to year. Past topics have included 'litterature fantastique,' science fiction, autobiography, French lyric poetry." 
   }, 
   { 
     "name": "FRENCH.121B", 
     "number": 121, 
     "units": 4, 
     "title": "Literary Themes, Genres, and Structures", 
-    "description": "Topics vary from year to year. Past topics have included "litterature fantastique," science fiction, autobiography, French lyric poetry." 
+    "description": "Topics vary from year to year. Past topics have included 'litterature fantastique,' science fiction, autobiography, French lyric poetry." 
   }, 
   { 
     "name": "FRENCH.123", 
@@ -20948,7 +20948,7 @@ courses = [
     "number": 145, 
     "units": 4, 
     "title": "History of the French Language", 
-    "description": "Mainly devoted to "external" history of French, tracing spread of Latin to what is now France, its break-up into different languages and dialects, emergence of Parisian French as standard. Influence of other languages on French vocabulary. Study of brief texts from different periods to illustrate evolution of pronunciation and grammar." 
+    "description": "Mainly devoted to 'external' history of French, tracing spread of Latin to what is now France, its break-up into different languages and dialects, emergence of Parisian French as standard. Influence of other languages on French vocabulary. Study of brief texts from different periods to illustrate evolution of pronunciation and grammar." 
   }, 
   { 
     "name": "FRENCH.146A", 
@@ -21032,14 +21032,14 @@ courses = [
     "number": 171, 
     "units": 4, 
     "title": "A Concept in French Cultural History", 
-    "description": "An examination of certain large cultural concepts, such as "the Baroque" or "Romanticism," in French cultural history. Topics vary from year to year." 
+    "description": "An examination of certain large cultural concepts, such as 'the Baroque' or 'Romanticism,' in French cultural history. Topics vary from year to year." 
   }, 
   { 
     "name": "FRENCH.171B", 
     "number": 171, 
     "units": 4, 
     "title": "A Concept in French Cultural History", 
-    "description": "An examination of certain large cultural concepts, such as "the Baroque" or "Romanticism," in French cultural history. Topics vary from year to year." 
+    "description": "An examination of certain large cultural concepts, such as 'the Baroque' or 'Romanticism,' in French cultural history. Topics vary from year to year." 
   }, 
   { 
     "name": "FRENCH.172A", 
@@ -21116,7 +21116,7 @@ courses = [
     "number": 185, 
     "units": 4, 
     "title": "Literature and Colonialism", 
-    "description": "Studies in the literature developed in France at the height of the colonial era. The themes of travel, <exotisme>, neo-civilisation, the reaction of European countries to the discovery of Africa." 
+    "description": "Studies in the literature developed in France at the height of the colonial era. The themes of travel, 'exotisme', neo-civilisation, the reaction of European countries to the discovery of Africa." 
   }, 
   { 
     "name": "FRENCH.197", 
@@ -21151,7 +21151,7 @@ courses = [
     "number": 201, 
     "units": 4, 
     "title": "History of the French Language", 
-    "description": "A history of the French language from its Latin origins through the modern period. Emphasis on "external history" (development of the language in relation to other social and cultural phenomena) with some historical grammar (phonology, morphology, syntax, orthography) introduced through textual readings from the various historical periods. Sociolinguistic emphasis, focusing on the emergence of a standard language and its relationship to other varieties of French." 
+    "description": "A history of the French language from its Latin origins through the modern period. Emphasis on 'external history' (development of the language in relation to other social and cultural phenomena) with some historical grammar (phonology, morphology, syntax, orthography) introduced through textual readings from the various historical periods. Sociolinguistic emphasis, focusing on the emergence of a standard language and its relationship to other varieties of French." 
   }, 
   { 
     "name": "FRENCH.205", 
@@ -21172,42 +21172,42 @@ courses = [
     "number": 210, 
     "units": 4, 
     "title": "Studies in Medieval Literature", 
-    "description": "Offerings vary from year to year. Students should consult the Department's <Course Description> for current topics." 
+    "description": "Offerings vary from year to year. Students should consult the Department's 'Course Description' for current topics." 
   }, 
   { 
     "name": "FRENCH.211A", 
     "number": 211, 
     "units": 4, 
     "title": "Reading and Interpretation of Old French Texts", 
-    "description": "Offerings vary from year to year. Current topics may be found in the Department's <Course Description>." 
+    "description": "Offerings vary from year to year. Current topics may be found in the Department's 'Course Description'." 
   }, 
   { 
     "name": "FRENCH.220A", 
     "number": 220, 
     "units": 4, 
     "title": "Studies in 16th-Century Literature", 
-    "description": "Offerings vary from year to year. See the Department's <Course Description> for current topics." 
+    "description": "Offerings vary from year to year. See the Department's 'Course Description' for current topics." 
   }, 
   { 
     "name": "FRENCH.220B", 
     "number": 220, 
     "units": 4, 
     "title": "Studies in 16th-Century Literature", 
-    "description": "Offerings vary from year to year. See the Department's <Course Description> for current topics." 
+    "description": "Offerings vary from year to year. See the Department's 'Course Description' for current topics." 
   }, 
   { 
     "name": "FRENCH.230A", 
     "number": 230, 
     "units": 4, 
     "title": "Studies in 17th-Century Literature", 
-    "description": "Offerings vary from year to year. See the Department's <Course Description> for current topic." 
+    "description": "Offerings vary from year to year. See the Department's 'Course Description' for current topic." 
   }, 
   { 
     "name": "FRENCH.230B", 
     "number": 230, 
     "units": 4, 
     "title": "Studies in 17th-Century Literature", 
-    "description": "Offerings vary from year to year. See the Department's <Course Description> for current topic." 
+    "description": "Offerings vary from year to year. See the Department's 'Course Description' for current topic." 
   }, 
   { 
     "name": "FRENCH.24", 
@@ -21221,14 +21221,14 @@ courses = [
     "number": 240, 
     "units": 4, 
     "title": "Studies in 18th-Century Literature", 
-    "description": "Offerings vary from year to year. See the Department's <Course Description> for current topic." 
+    "description": "Offerings vary from year to year. See the Department's 'Course Description' for current topic." 
   }, 
   { 
     "name": "FRENCH.240B", 
     "number": 240, 
     "units": 4, 
     "title": "Studies in 18th-Century Literature", 
-    "description": "Offerings vary from year to year. See the Department's <Course Description> for current topic." 
+    "description": "Offerings vary from year to year. See the Department's 'Course Description' for current topic." 
   }, 
   { 
     "name": "FRENCH.245A", 
@@ -21249,14 +21249,14 @@ courses = [
     "number": 250, 
     "units": 4, 
     "title": "Studies in 19th-Century Literature", 
-    "description": "Offerings vary from year to year. See the Department's <Course Description> for current topic." 
+    "description": "Offerings vary from year to year. See the Department's 'Course Description' for current topic." 
   }, 
   { 
     "name": "FRENCH.250B", 
     "number": 250, 
     "units": 4, 
     "title": "Studies in 19th-Century Literature", 
-    "description": "Offerings vary from year to year. See the Department's <Course Description> for current topic." 
+    "description": "Offerings vary from year to year. See the Department's 'Course Description' for current topic." 
   }, 
   { 
     "name": "FRENCH.251", 
@@ -21270,14 +21270,14 @@ courses = [
     "number": 260, 
     "units": 4, 
     "title": "Studies in 20th-Century Literature", 
-    "description": "Offerings vary from year to year. See the Department's <Course Description> for current topics." 
+    "description": "Offerings vary from year to year. See the Department's 'Course Description' for current topics." 
   }, 
   { 
     "name": "FRENCH.260B", 
     "number": 260, 
     "units": 4, 
     "title": "Studies in 20th-Century Literature", 
-    "description": "Offerings vary from year to year. See the Department's <Course Description> for current topics." 
+    "description": "Offerings vary from year to year. See the Department's 'Course Description' for current topics." 
   }, 
   { 
     "name": "FRENCH.265A", 
@@ -21319,7 +21319,7 @@ courses = [
     "number": 275, 
     "units": 4, 
     "title": "Problems of Literary Theory", 
-    "description": "Offerings vary from year to year. See the Department's <Course Description> for current topics." 
+    "description": "Offerings vary from year to year. See the Department's 'Course Description' for current topics." 
   }, 
   { 
     "name": "FRENCH.298", 
@@ -21445,14 +21445,14 @@ courses = [
     "number": 195, 
     "units": 2, 
     "title": "Honors Sequence", 
-    "description": "Students will write an essay on a topic relating to French literature or culture under the supervision of a member of the faculty during two semesters of their senior year."
+    "description": "Students will write an essay on a topic relating to French literature or culture under the supervision of a member of the faculty during two semesters of their senior year." 
   }, 
   { 
     "name": "FRENCH.H195B", 
     "number": 195, 
     "units": 2, 
     "title": "Honors Sequence", 
-    "description": "Students will write an essay on a topic relating to French literature or culture under the supervision of a member of the faculty during two semesters of their senior year."
+    "description": "Students will write an essay on a topic relating to French literature or culture under the supervision of a member of the faculty during two semesters of their senior year." 
   }, 
   { 
     "name": "FRENCH.R1A", 
@@ -21557,7 +21557,7 @@ courses = [
     "number": 148, 
     "units": 4, 
     "title": "Biogeography", 
-    "description": "Changing distribution patterns of plants and animals on a variety of spatial and temporal scales. The effects of "continental drift," Pleistocene climatic change, agricultural origins and dispersals. The ecology of invasions and extinctions. Island biogeography." 
+    "description": "Changing distribution patterns of plants and animals on a variety of spatial and temporal scales. The effects of 'continental drift,' Pleistocene climatic change, agricultural origins and dispersals. The ecology of invasions and extinctions. Island biogeography." 
   }, 
   { 
     "name": "GEOG.159AC", 
@@ -21704,7 +21704,7 @@ courses = [
     "number": 214, 
     "units": 4, 
     "title": " Development Theories and Practices", 
-    "description": "This course examines how concepts and theories of "development" have been produced, maintained, used, and challenged in different regions of the world economy. It will offer a framework for analyzing how changing and contending models of development both reflect and shape social processes and practices." 
+    "description": "This course examines how concepts and theories of 'development' have been produced, maintained, used, and challenged in different regions of the world economy. It will offer a framework for analyzing how changing and contending models of development both reflect and shape social processes and practices." 
   }, 
   { 
     "name": "GEOG.215", 
@@ -21718,7 +21718,7 @@ courses = [
     "number": 220, 
     "units": 4, 
     "title": "Capital, Value, and Scale", 
-    "description": "This seminar focuses on major works in political economy and social theory concerning capitalism, human action, and space-time. First we grapple with what "value" means in volume 1 of <Capital>, paying particular attention to issues of historical specificity, abstract labor time, and the "value theory of labor," then we spatialize the argument by a close reading of David Harvey's classic, <Limits to Capital.> Next, we look at attempts to understand capital's relation to human action and other forms of value, specifically in anthropology and the work of Pierre Bourdieu. Finally, we take up the issue of scale in hope of formulating a coherent conceptual framework for integrating across scales, from the human-body (or even smaller scales) up to global economic, cultural, and ecological processes." 
+    "description": "This seminar focuses on major works in political economy and social theory concerning capitalism, human action, and space-time. First we grapple with what 'value' means in volume 1 of 'Capital', paying particular attention to issues of historical specificity, abstract labor time, and the 'value theory of labor,' then we spatialize the argument by a close reading of David Harvey's classic, 'Limits to Capital.' Next, we look at attempts to understand capital's relation to human action and other forms of value, specifically in anthropology and the work of Pierre Bourdieu. Finally, we take up the issue of scale in hope of formulating a coherent conceptual framework for integrating across scales, from the human-body (or even smaller scales) up to global economic, cultural, and ecological processes." 
   }, 
   { 
     "name": "GEOG.24", 
@@ -21900,7 +21900,7 @@ courses = [
     "number": 50, 
     "units": 4, 
     "title": "California", 
-    "description": "California had been called "the great exception" and "America, only more so." Yet few of us pay attention to its distinctive traits and to its effects beyond our borders. California may be "a state of mind," but it is also the most dynamic place in the most powerful country in the world, and would be the 5th largest economy if it were a country. Its wealth has been built on mining, agriculture, industry, trade, and finance. Natural abundance and geographic advantage have played their parts, but the state's greatest resource has been its wealth and diversity of people, who have made it a center of technological and cultural innovation from Hollywood to Silicon Valley. Yet California has a dark side of exploitation and racialization of many peoples, and of violent efforts to exclude immigrants and control the poor. This course pursues classic themes in geography, such as regional difference, the transformation of nature, the space of cities, and the changing landscape." 
+    "description": "California had been called 'the great exception' and 'America, only more so.' Yet few of us pay attention to its distinctive traits and to its effects beyond our borders. California may be 'a state of mind,' but it is also the most dynamic place in the most powerful country in the world, and would be the 5th largest economy if it were a country. Its wealth has been built on mining, agriculture, industry, trade, and finance. Natural abundance and geographic advantage have played their parts, but the state's greatest resource has been its wealth and diversity of people, who have made it a center of technological and cultural innovation from Hollywood to Silicon Valley. Yet California has a dark side of exploitation and racialization of many peoples, and of violent efforts to exclude immigrants and control the poor. This course pursues classic themes in geography, such as regional difference, the transformation of nature, the space of cities, and the changing landscape." 
   }, 
   { 
     "name": "GEOG.51", 
@@ -22040,7 +22040,7 @@ courses = [
     "number": 82, 
     "units": 3, 
     "title": "Oceans", 
-    "description": "This course offers multidisciplinary approach to begin answering the question "Why are oceans important to us?" Upon a physical, chemical, and geologic base, we introduce the alien world of sea life, the importance of the ocean to the global carbon cycle, and the principles of ecology with a focus on the important concept of energy flow through food webs. Lectures expand beyond science to include current topics as diverse as music, movies, mythology, biomechanics, policy, and trade. Also listed as Earth and Planetary Science C82 and Integrative Biology C82." 
+    "description": "This course offers multidisciplinary approach to begin answering the question 'Why are oceans important to us?' Upon a physical, chemical, and geologic base, we introduce the alien world of sea life, the importance of the ocean to the global carbon cycle, and the principles of ecology with a focus on the important concept of energy flow through food webs. Lectures expand beyond science to include current topics as diverse as music, movies, mythology, biomechanics, policy, and trade. Also listed as Earth and Planetary Science C82 and Integrative Biology C82." 
   }, 
   { 
     "name": "GEOG.H195A", 
@@ -22264,7 +22264,7 @@ courses = [
     "number": 160, 
     "units": 4, 
     "title": "Multicultural Germany", 
-    "description": "This course will deal with the culture and politics of minorities in contemporary Germany. We will discuss how ethnic identities are perceived, constructed, and marketed. We also engage critically with such concepts as migration, assimilation, citizenship, diaspora, hybridity, and authenticity, as well as rhetorical strategies of "speaking back." We will focus on exemplary texts and films from Germany, but include comparisons with minority experiences in other countries." 
+    "description": "This course will deal with the culture and politics of minorities in contemporary Germany. We will discuss how ethnic identities are perceived, constructed, and marketed. We also engage critically with such concepts as migration, assimilation, citizenship, diaspora, hybridity, and authenticity, as well as rhetorical strategies of 'speaking back.' We will focus on exemplary texts and films from Germany, but include comparisons with minority experiences in other countries." 
   }, 
   { 
     "name": "GERMAN.160K", 
@@ -22285,7 +22285,7 @@ courses = [
     "number": 170, 
     "units": 3, 
     "title": "History of the German Language", 
-    "description": "Designed for undergraduate and graduate students interested in the history of the language of the newly united Germanys, which transverses a rich linguistic legacy from the <Lay of Hildebrand>, through Luther and Grimm, to Grass and <Der Spiegel>. Discussion, via linguistic principles, of language processes in the genetic development of the German language, as well as its interchange over time with closely and remotely related languages such as English and Russian." 
+    "description": "Designed for undergraduate and graduate students interested in the history of the language of the newly united Germanys, which transverses a rich linguistic legacy from the 'Lay of Hildebrand', through Luther and Grimm, to Grass and 'Der Spiegel'. Discussion, via linguistic principles, of language processes in the genetic development of the German language, as well as its interchange over time with closely and remotely related languages such as English and Russian." 
   }, 
   { 
     "name": "GERMAN.172", 
@@ -22355,7 +22355,7 @@ courses = [
     "number": 186, 
     "units": 4, 
     "title": "Transnational Cinemas", 
-    "description": "This course will explore how experiences of migration, dislocation, or exile are visualized in cinema, and how processes of internationalization in film production and distribution intersect with the projection of a transnational global imagery. Some examples of transnational cinematic connections will be analyzed in historical perspective as well as contemporary examples of "migrant cinema." We will investigate how these films engage with debates about multiculturalism and assimilation/segregation of minorities, as scenarios of itinerancy and mobility are often intertwined with representations of ethnicity and gender." 
+    "description": "This course will explore how experiences of migration, dislocation, or exile are visualized in cinema, and how processes of internationalization in film production and distribution intersect with the projection of a transnational global imagery. Some examples of transnational cinematic connections will be analyzed in historical perspective as well as contemporary examples of 'migrant cinema.' We will investigate how these films engage with debates about multiculturalism and assimilation/segregation of minorities, as scenarios of itinerancy and mobility are often intertwined with representations of ethnicity and gender." 
   }, 
   { 
     "name": "GERMAN.198", 
@@ -22390,7 +22390,7 @@ courses = [
     "number": 200, 
     "units": 2, 
     "title": "Proseminar in German Literature", 
-    "description": "The course will give a brief introduction to the history of <Germanistik>, draw attention to bibliographical and research tools, dwell on problems relating to critical editions of modern authors, familiarize students with <Germanistik> as a profession in the U.S.A., and focus upon literary theory. Required of all M.A. candidates." 
+    "description": "The course will give a brief introduction to the history of 'Germanistik', draw attention to bibliographical and research tools, dwell on problems relating to critical editions of modern authors, familiarize students with 'Germanistik' as a profession in the U.S.A., and focus upon literary theory. Required of all M.A. candidates." 
   }, 
   { 
     "name": "GERMAN.201", 
@@ -22474,7 +22474,7 @@ courses = [
     "number": 210, 
     "units": 4, 
     "title": "Age of Enlightenment", 
-    "description": "<Formerly 211A>. Literary texts will be studied as historical documents illuminating changes in literary theory and in religious and philosophical thought during the Enlightenment. Texts by Lessing, Herder, and Lenz, and some Storm and Stress plays." 
+    "description": "'Formerly 211A'. Literary texts will be studied as historical documents illuminating changes in literary theory and in religious and philosophical thought during the Enlightenment. Texts by Lessing, Herder, and Lenz, and some Storm and Stress plays." 
   }, 
   { 
     "name": "GERMAN.212", 
@@ -22523,7 +22523,7 @@ courses = [
     "number": 256, 
     "units": 4, 
     "title": "Problems of Literary Theory", 
-    "description": "Topics vary from year to year. For current topic see the department's "Course Descriptions" booklet." 
+    "description": "Topics vary from year to year. For current topic see the department's 'Course Descriptions' booklet." 
   }, 
   { 
     "name": "GERMAN.263", 
@@ -22544,7 +22544,7 @@ courses = [
     "number": 265, 
     "units": 4, 
     "title": "Film Theory: Historical and Systematic Perspectives", 
-    "description": "<Formerly 260C.> This seminar will examine traditional and recent critical approaches to the study of film. Knowledge of German and background in literary theory required." 
+    "description": "'Formerly 260C.' This seminar will examine traditional and recent critical approaches to the study of film. Knowledge of German and background in literary theory required." 
   }, 
   { 
     "name": "GERMAN.268", 
@@ -22558,7 +22558,7 @@ courses = [
     "number": 270, 
     "units": 4, 
     "title": "History of the German Language", 
-    "description": "Designed for students interested in the history of the language and culture of united Germany, Austria, Switzerland, and Liechtenstein, which transverses a rich legacy from the <Lay of Hildebrand>, through Luther and Grimm, to Grass and <Der Spiegel>. Discussion, via linguistic principles, of language processes in the genetic development of the German language, as well as its interchange over time with closely and remotely related languages." 
+    "description": "Designed for students interested in the history of the language and culture of united Germany, Austria, Switzerland, and Liechtenstein, which transverses a rich legacy from the 'Lay of Hildebrand', through Luther and Grimm, to Grass and 'Der Spiegel'. Discussion, via linguistic principles, of language processes in the genetic development of the German language, as well as its interchange over time with closely and remotely related languages." 
   }, 
   { 
     "name": "GERMAN.271", 
@@ -22593,7 +22593,7 @@ courses = [
     "number": 282, 
     "units": 4, 
     "title": "Old Saxon", 
-    "description": "Study of the most provocative of the major Germanic languages in terms of structural identification. The literary and ethnographic setting of the <Heliand> and its shared isogrammar." 
+    "description": "Study of the most provocative of the major Germanic languages in terms of structural identification. The literary and ethnographic setting of the 'Heliand' and its shared isogrammar." 
   }, 
   { 
     "name": "GERMAN.285", 
@@ -22908,21 +22908,21 @@ courses = [
     "number": 100, 
     "units": 4, 
     "title": "Plato and Attic Prose", 
-    "description": "Readings from Plato's <Apology> or <Crito>, and from other Attic prose authors (e.g., Xenophon, Lysias); some review of grammar." 
+    "description": "Readings from Plato's 'Apology' or 'Crito', and from other Attic prose authors (e.g., Xenophon, Lysias); some review of grammar." 
   }, 
   { 
     "name": "GREEK.101", 
     "number": 101, 
     "units": 4, 
     "title": "Homer", 
-    "description": "Selected readings in the <Iliad> or <Odyssey>." 
+    "description": "Selected readings in the 'Iliad' or 'Odyssey'." 
   }, 
   { 
     "name": "GREEK.102", 
     "number": 102, 
     "units": 4, 
     "title": "Drama and Society", 
-    "description": "<Formerly Greek 103.> Reading of one Greek tragedy, and of further selections from the dramatists and/or prose literature of fifth century Athens." 
+    "description": "'Formerly Greek 103.' Reading of one Greek tragedy, and of further selections from the dramatists and/or prose literature of fifth century Athens." 
   }, 
   { 
     "name": "GREEK.105", 
@@ -23013,7 +23013,7 @@ courses = [
     "number": 40, 
     "units": 4, 
     "title": "Intermediate Greek Prose Composition", 
-    "description": "<Formerly Greek 40A>. Development of skills in writing Attic prose and sight reading; grammar review." 
+    "description": "'Formerly Greek 40A'. Development of skills in writing Attic prose and sight reading; grammar review." 
   }, 
   { 
     "name": "GREEK.98", 
@@ -23090,7 +23090,7 @@ courses = [
     "number": 102, 
     "units": 4, 
     "title": "Transnational Feminism", 
-    "description": "An overview of transnational feminist theories and practices, which address the workings of power that shape our world, and women's practices of resistance within and beyond the U.S. The course engages with genealogies of transnational feminist theories, including analyses of women, gender, sexuality, "race," racism, ethnicity, class, nation; postcoloniality; international relations; post-"development"; globalization; area studies; and cultural studies." 
+    "description": "An overview of transnational feminist theories and practices, which address the workings of power that shape our world, and women's practices of resistance within and beyond the U.S. The course engages with genealogies of transnational feminist theories, including analyses of women, gender, sexuality, 'race,' racism, ethnicity, class, nation; postcoloniality; international relations; post-'development'; globalization; area studies; and cultural studies." 
   }, 
   { 
     "name": "GWS.103", 
@@ -23181,7 +23181,7 @@ courses = [
     "number": 134, 
     "units": 4, 
     "title": "Gender and the Politics of Childhood", 
-    "description": "Explores gender and age as interrelated dimensions of social structure, meaning, identity, and embodiment. Emphasis on the gendered politics of childhood--for example, in the social regulation of reproduction; child-rearing, motherhood, fatherhood, care, and rights; the changing global political economy of childhoods and varied constructions of "the child"; child laborers, soldiers, street children; consumption by and for children; growing up in schools, neighborhoods, and families." 
+    "description": "Explores gender and age as interrelated dimensions of social structure, meaning, identity, and embodiment. Emphasis on the gendered politics of childhood--for example, in the social regulation of reproduction; child-rearing, motherhood, fatherhood, care, and rights; the changing global political economy of childhoods and varied constructions of 'the child'; child laborers, soldiers, street children; consumption by and for children; growing up in schools, neighborhoods, and families." 
   }, 
   { 
     "name": "GWS.139", 
@@ -23195,7 +23195,7 @@ courses = [
     "number": 14, 
     "units": 4, 
     "title": "Gender, Sexuality, and Race in Global Political Issues", 
-    "description": "The production of gender, sexuality, and processes of racialization in contemporary global political issues. Topics and geographical foci may vary. Examples: the post-9-11 situation in the U.S. and U.S. wars in Afghanistan and Iraq; Hindu-Muslim conflict in India; the wars in the former Yugoslavia and Rwanda; the Israel/Palestine situation; global right-wing movements; state and social movement terrorisms and transnational "security" measures." 
+    "description": "The production of gender, sexuality, and processes of racialization in contemporary global political issues. Topics and geographical foci may vary. Examples: the post-9-11 situation in the U.S. and U.S. wars in Afghanistan and Iraq; Hindu-Muslim conflict in India; the wars in the former Yugoslavia and Rwanda; the Israel/Palestine situation; global right-wing movements; state and social movement terrorisms and transnational 'security' measures." 
   }, 
   { 
     "name": "GWS.140", 
@@ -23209,14 +23209,14 @@ courses = [
     "number": 141, 
     "units": 4, 
     "title": "Interrogating Global Economic "Development"", 
-    "description": "An introduction to women and gender in "development." Addresses theories of "development" (modernization, demographic transition, dependency, world systems, post-development, postcolonial, and transnational feminist): productions and representations of "underdevelopment"; national and international "development" apparatuses; "development" practices about labor, population, resources, environment, literacy, technologies, media; and women's resistance and alternatives." 
+    "description": "An introduction to women and gender in 'development.' Addresses theories of 'development' (modernization, demographic transition, dependency, world systems, post-development, postcolonial, and transnational feminist): productions and representations of 'underdevelopment'; national and international 'development' apparatuses; 'development' practices about labor, population, resources, environment, literacy, technologies, media; and women's resistance and alternatives." 
   }, 
   { 
     "name": "GWS.142", 
     "number": 142, 
     "units": 4, 
     "title": "Women in the Muslim and Arab Worlds", 
-    "description": "Examines differences and similarities in women's lives in the Muslim/Arab worlds, including diasporas in Europe and North America. Analysis of issues of gender in relation to "race," ethnicity, nation, religion, and culture." 
+    "description": "Examines differences and similarities in women's lives in the Muslim/Arab worlds, including diasporas in Europe and North America. Analysis of issues of gender in relation to 'race,' ethnicity, nation, religion, and culture." 
   }, 
   { 
     "name": "GWS.143", 
@@ -23349,7 +23349,7 @@ courses = [
     "number": 250, 
     "units": 4, 
     "title": "Queer Translation", 
-    "description": "This seminar aims for both a familiarization and a potential reworking of selected contemporary debates in queer theory: those concerning migration, race, globalization, and movements of theory. How do queer theories, queer theories-as-practice, queer practices travel? Furthermore, do critiques of stability found in queer theory invite presumptions of mobility? We will interrogate the shadow of "mobility" in queer theory by considering queer tourism, gender identity, sub-class labor migration, and the outer zones of citizenship." 
+    "description": "This seminar aims for both a familiarization and a potential reworking of selected contemporary debates in queer theory: those concerning migration, race, globalization, and movements of theory. How do queer theories, queer theories-as-practice, queer practices travel? Furthermore, do critiques of stability found in queer theory invite presumptions of mobility? We will interrogate the shadow of 'mobility' in queer theory by considering queer tourism, gender identity, sub-class labor migration, and the outer zones of citizenship." 
   }, 
   { 
     "name": "GWS.299", 
@@ -23412,7 +23412,7 @@ courses = [
     "number": 146, 
     "units": 4, 
     "title": "Cultural Representations of Sexualities: Queer Visual Culture", 
-    "description": "This course examines modern visual cultures that construct ways of seeing diverse sexualities. Considering Western conventions of representation during the modern period, we will investigate film, television, and video. How and when do "normative" and "queer" sexualities become visually defined? Also listed as Lesbian Gay Bisexual Transgender St C146B." 
+    "description": "This course examines modern visual cultures that construct ways of seeing diverse sexualities. Considering Western conventions of representation during the modern period, we will investigate film, television, and video. How and when do 'normative' and 'queer' sexualities become visually defined? Also listed as Lesbian Gay Bisexual Transgender St C146B." 
   }, 
   { 
     "name": "GWS.C196A", 
@@ -23566,7 +23566,7 @@ courses = [
     "number": 199, 
     "units": 1, 
     "title": "Supervised Independent Study and Research", 
-    "description": "Enrollment is restricted by regulations shown in the <General Catalog>." 
+    "description": "Enrollment is restricted by regulations shown in the 'General Catalog'." 
   }, 
   { 
     "name": "HEBREW.1A", 
@@ -23790,7 +23790,7 @@ courses = [
     "number": 100, 
     "units": 4, 
     "title": "Theories and Methods of Art History", 
-    "description": "How art has been studied in the past and how it is currently studied, its historiography and methodology. Consideration of the earliest writers (Pliny, Vasari) but also modern approaches, from traditional style analysis and connoisseurship through the "founders" of modern art history (Panofsky, Riegl) to more recent approaches, e.g. psychoanalysis, feminism, social history, anthropology, semiotics, etc." 
+    "description": "How art has been studied in the past and how it is currently studied, its historiography and methodology. Consideration of the earliest writers (Pliny, Vasari) but also modern approaches, from traditional style analysis and connoisseurship through the 'founders' of modern art history (Panofsky, Riegl) to more recent approaches, e.g. psychoanalysis, feminism, social history, anthropology, semiotics, etc." 
   }, 
   { 
     "name": "HISTART.107", 
@@ -24056,7 +24056,7 @@ courses = [
     "number": 183, 
     "units": 4, 
     "title": "Art and Colonialism", 
-    "description": "Consideration of the relationship between visual representation and conquest, colonialism and imperialism. Topics include the history of visual ethnographies, representations and constructions of "race," exoticism, orientalism, and primitivism." 
+    "description": "Consideration of the relationship between visual representation and conquest, colonialism and imperialism. Topics include the history of visual ethnographies, representations and constructions of 'race,' exoticism, orientalism, and primitivism." 
   }, 
   { 
     "name": "HISTART.185A", 
@@ -24175,7 +24175,7 @@ courses = [
     "number": 192, 
     "units": 4, 
     "title": "Undergraduate Seminar: Folk Art in America", 
-    "description": "This seminar will look at specific case studies of the production and use of architecture, paintings, and quilting within specific communities in what is now the United States. We will look, for instance, at Shaker watercolors and design; Puritan painting and city planning; Amish, Hawaiian, and Hmong quilting; the ledger drawings and domestic structures of specific Native American groups; and the sacred architecture of the Hispanic southwest. Our timeframe spans four centuries but our "geographies" will be very focused. We will consider vernacular or folk production within the context of politics and economics as well as aesthetic and social theory." 
+    "description": "This seminar will look at specific case studies of the production and use of architecture, paintings, and quilting within specific communities in what is now the United States. We will look, for instance, at Shaker watercolors and design; Puritan painting and city planning; Amish, Hawaiian, and Hmong quilting; the ledger drawings and domestic structures of specific Native American groups; and the sacred architecture of the Hispanic southwest. Our timeframe spans four centuries but our 'geographies' will be very focused. We will consider vernacular or folk production within the context of politics and economics as well as aesthetic and social theory." 
   }, 
   { 
     "name": "HISTART.192B", 
@@ -24266,14 +24266,14 @@ courses = [
     "number": 200, 
     "units": 4, 
     "title": "Graduate Proseminar in the Interpretation of Art Historical Materials", 
-    "description": "An introduction to the fundamentals of art history, including traditional and innovative perspectives designed for candidates for higher degrees. Offerings vary from year to year. Students should consult the department's "Announcement of Classes" for offerings before the beginning of the semester." 
+    "description": "An introduction to the fundamentals of art history, including traditional and innovative perspectives designed for candidates for higher degrees. Offerings vary from year to year. Students should consult the department's 'Announcement of Classes' for offerings before the beginning of the semester." 
   }, 
   { 
     "name": "HISTART.203", 
     "number": 203, 
     "units": 2, 
     "title": "Seminar in Material Culture: The Interpretation of Objects", 
-    "description": "This seminar looks at both material culture theory and the practice of interpreting objects in the West and in Asia. It draws on the practices and inquiries of multiple disciplines including archaeology, anthropology, cultural geography, and art history . We will consider the variety of ways and contexts in which objects have been understood to "speak" as aesthetic vehicles and as cultural texts. Taught by two faculty members who have extensive experience as museum curators--one of American Art, the other of Asian Art, this class will combine theory with hands-on learning." 
+    "description": "This seminar looks at both material culture theory and the practice of interpreting objects in the West and in Asia. It draws on the practices and inquiries of multiple disciplines including archaeology, anthropology, cultural geography, and art history . We will consider the variety of ways and contexts in which objects have been understood to 'speak' as aesthetic vehicles and as cultural texts. Taught by two faculty members who have extensive experience as museum curators--one of American Art, the other of Asian Art, this class will combine theory with hands-on learning." 
   }, 
   { 
     "name": "HISTART.230", 
@@ -24336,7 +24336,7 @@ courses = [
     "number": 263, 
     "units": 2, 
     "title": "Seminar in European Art: Mimesis", 
-    "description": "Mimesis, Greek for "imitation" is a key term in recent debates in a number of disciplines. However, what is at its core is often astonishingly undefined, open and ambivalent. Starting with antique and medieval works addressing key moments of mimesis we will also explore modern theories of mimesis. Crossing the threshold between pre-modern and modern examples will help us to understand the premises for the visual culture involving the rise of naturalism, and more generally the nature of representation in medieval and early modern culture." 
+    "description": "Mimesis, Greek for 'imitation' is a key term in recent debates in a number of disciplines. However, what is at its core is often astonishingly undefined, open and ambivalent. Starting with antique and medieval works addressing key moments of mimesis we will also explore modern theories of mimesis. Crossing the threshold between pre-modern and modern examples will help us to understand the premises for the visual culture involving the rise of naturalism, and more generally the nature of representation in medieval and early modern culture." 
   }, 
   { 
     "name": "HISTART.270", 
@@ -25071,7 +25071,7 @@ courses = [
     "number": 111, 
     "units": 4, 
     "title": "Political and Cultural History of Vietnam", 
-    "description": "This course provides an introduction to the main issues in Vietnamese history from the mythic and archaeological origins of the modern nation-state to the end of the Second Indochina War in 1975. Special emphasis will be placed on "modern" developments from the late 18th century. In addition to history texts, readings will be taken from novels, short stories, poetry, and memoirs." 
+    "description": "This course provides an introduction to the main issues in Vietnamese history from the mythic and archaeological origins of the modern nation-state to the end of the Second Indochina War in 1975. Special emphasis will be placed on 'modern' developments from the late 18th century. In addition to history texts, readings will be taken from novels, short stories, poetry, and memoirs." 
   }, 
   { 
     "name": "HISTORY.111D", 
@@ -25134,7 +25134,7 @@ courses = [
     "number": 114, 
     "units": 4, 
     "title": "Modern South Asia", 
-    "description": "Here we will deal with the history of South Asia between the coming of the Europeans and the present. It will be organized around a series of contested formulations about the recent South Asian past. One of these problems is: how was India comprehended and manipulated by the Europeans? The second problem is: How was India conquered, by the sword or by the word? The third is: How did Indians resist the British? Finally, how was the voice of women, lower classes, and others expressed and heard? We will read books about language, gender, the "subaltern" classes, and women in an attempt to understand these questions." 
+    "description": "Here we will deal with the history of South Asia between the coming of the Europeans and the present. It will be organized around a series of contested formulations about the recent South Asian past. One of these problems is: how was India comprehended and manipulated by the Europeans? The second problem is: How was India conquered, by the sword or by the word? The third is: How did Indians resist the British? Finally, how was the voice of women, lower classes, and others expressed and heard? We will read books about language, gender, the 'subaltern' classes, and women in an attempt to understand these questions." 
   }, 
   { 
     "name": "HISTORY.116", 
@@ -25155,7 +25155,7 @@ courses = [
     "number": 116, 
     "units": 4, 
     "title": "Two Golden Ages: China During the Tang and Song Dynasties", 
-    "description": "This course explores Chinese history and culture in the period from the 7th to the 13th centuries, when China achieved unprecedented military, political, and cultural power in East Asia. It concentrates on the fundamental transformation of state and society that took place between the 8th and 12th centuries, and on the nature of the new "early modern" order that had come into existence by the end of the Southern Song. Topics of special concern are economic and political power, technology, religion and philosophy, and poetry and painting." 
+    "description": "This course explores Chinese history and culture in the period from the 7th to the 13th centuries, when China achieved unprecedented military, political, and cultural power in East Asia. It concentrates on the fundamental transformation of state and society that took place between the 8th and 12th centuries, and on the nature of the new 'early modern' order that had come into existence by the end of the Southern Song. Topics of special concern are economic and political power, technology, religion and philosophy, and poetry and painting." 
   }, 
   { 
     "name": "HISTORY.116C", 
@@ -25197,7 +25197,7 @@ courses = [
     "number": 117, 
     "units": 4, 
     "title": "The Chinese Body: Gender and Sex, Health, and Medicine", 
-    "description": "This course brings a thematic approach to the critical analysis of the "Chinese body," as constructed before the 20th century, from four main perspectives, those of (1) gender, (2) sexual activity, (3) health, and (4) medicine. A variety of sources, material and literary, attest to changing perceptions over time, through the continuing use of standard vocabulary for Yin/Yang and the Five Phases frequently masked innovations." 
+    "description": "This course brings a thematic approach to the critical analysis of the 'Chinese body,' as constructed before the 20th century, from four main perspectives, those of (1) gender, (2) sexual activity, (3) health, and (4) medicine. A variety of sources, material and literary, attest to changing perceptions over time, through the continuing use of standard vocabulary for Yin/Yang and the Five Phases frequently masked innovations." 
   }, 
   { 
     "name": "HISTORY.118", 
@@ -25232,7 +25232,7 @@ courses = [
     "number": 119, 
     "units": 4, 
     "title": "Postwar Japan", 
-    "description": "This course considers the history of Japan since the end of World War II, beginning with an exploration of the war itself and its complex legacy to the postwar era. Using the best recent scholarship and a selection of translated novels, essays, and poetry along with film and art, we look at the six postwar decades and the transformations of Japanese life that those years have brought. We try, finally, to answer the question: has "postwar" itself come to an end?" 
+    "description": "This course considers the history of Japan since the end of World War II, beginning with an exploration of the war itself and its complex legacy to the postwar era. Using the best recent scholarship and a selection of translated novels, essays, and poetry along with film and art, we look at the six postwar decades and the transformations of Japanese life that those years have brought. We try, finally, to answer the question: has 'postwar' itself come to an end?" 
   }, 
   { 
     "name": "HISTORY.12", 
@@ -25344,7 +25344,7 @@ courses = [
     "number": 130, 
     "units": 4, 
     "title": "American Foreign Policy", 
-    "description": "This course will explore the history of American foreign policy since 1776, focusing on diplomatic and military interactions and the evolution of American strategic thought. Students will also traverse the broader history of international relations and will engage some of the basic vocabulary of IR theory. Topics will range from the territorial expansion of the United States to the making of Cold War strategy and beyond. Students will be asked to consider how historical knowledge and reasoning might inform the making of foreign policy."
+    "description": "This course will explore the history of American foreign policy since 1776, focusing on diplomatic and military interactions and the evolution of American strategic thought. Students will also traverse the broader history of international relations and will engage some of the basic vocabulary of IR theory. Topics will range from the territorial expansion of the United States to the making of Cold War strategy and beyond. Students will be asked to consider how historical knowledge and reasoning might inform the making of foreign policy." 
   }, 
   { 
     "name": "HISTORY.130B", 
@@ -25407,7 +25407,7 @@ courses = [
     "number": 137, 
     "units": 4, 
     "title": "The Repeopling of America", 
-    "description": "This course examines the coming together of people from five continents to the United States and provides an historical overview of the shifting patterns of immigration. The course begins in the colonial era when servants and slaves typified the migrant to America. It then follows the migration of the pre-industrial immigrants, through migration streams during the industrial and "post-industrial" eras of the nation." 
+    "description": "This course examines the coming together of people from five continents to the United States and provides an historical overview of the shifting patterns of immigration. The course begins in the colonial era when servants and slaves typified the migrant to America. It then follows the migration of the pre-industrial immigrants, through migration streams during the industrial and 'post-industrial' eras of the nation." 
   }, 
   { 
     "name": "HISTORY.138", 
@@ -25421,7 +25421,7 @@ courses = [
     "number": 138, 
     "units": 4, 
     "title": "History of Science in the US CalTeach", 
-    "description": "This course is a parallel course to 138, intended for students interested in teaching elementary or secondary school science and math. Students in the "T" course will attend the regular 138 lectures and a special section; this section will focus on techniques, skills, and perspectives necessary to apply the history of science in the juvenile and adolescent science classroom, including pedagogy, devising lesson plans for their classrooms, finding reliable historical information, and writing." 
+    "description": "This course is a parallel course to 138, intended for students interested in teaching elementary or secondary school science and math. Students in the 'T' course will attend the regular 138 lectures and a special section; this section will focus on techniques, skills, and perspectives necessary to apply the history of science in the juvenile and adolescent science classroom, including pedagogy, devising lesson plans for their classrooms, finding reliable historical information, and writing." 
   }, 
   { 
     "name": "HISTORY.139", 
@@ -25491,7 +25491,7 @@ courses = [
     "number": 149, 
     "units": 4, 
     "title": "Italy in the Age of Dante (1000-1350)", 
-    "description": "This course is a survey of the history of northern Italy during the central Middle Ages (ca. 1000-1350). It traces the emergence, flowering, and decline of the "communes," the independent city republics that made Italian political life distinctive during the Middle Ages. The course explores the culture of these dynamic urban communities, especially emphasizing the rich visual and material culture, as well as the particular relationship between religion and society in Italy before the Renaissance." 
+    "description": "This course is a survey of the history of northern Italy during the central Middle Ages (ca. 1000-1350). It traces the emergence, flowering, and decline of the 'communes,' the independent city republics that made Italian political life distinctive during the Middle Ages. The course explores the culture of these dynamic urban communities, especially emphasizing the rich visual and material culture, as well as the particular relationship between religion and society in Italy before the Renaissance." 
   }, 
   { 
     "name": "HISTORY.150", 
@@ -25596,7 +25596,7 @@ courses = [
     "number": 158, 
     "units": 4, 
     "title": "Old Regime and Revolutionary Europe, 1715-1815", 
-    "description": "The eighteenth century in Europe witnessed a series of "revolutions"--intellectual, political, and to a lesser extent, social and economic--that together constitute the birth rites of modern European society and culture. Historians collectively agree that the Enlightenment, the French Revolution, and the European expansion of Napoleonic France were events of world-historical significance, yet the causes and precise meaning of these events are the subjects of substantial disagreement. We will study the transformations of the eighteenth century that announced our modern world, and we will also try to make sense of the different ways that historians disagree about the meaning of what happened." 
+    "description": "The eighteenth century in Europe witnessed a series of 'revolutions'--intellectual, political, and to a lesser extent, social and economic--that together constitute the birth rites of modern European society and culture. Historians collectively agree that the Enlightenment, the French Revolution, and the European expansion of Napoleonic France were events of world-historical significance, yet the causes and precise meaning of these events are the subjects of substantial disagreement. We will study the transformations of the eighteenth century that announced our modern world, and we will also try to make sense of the different ways that historians disagree about the meaning of what happened." 
   }, 
   { 
     "name": "HISTORY.158B", 
@@ -25708,21 +25708,21 @@ courses = [
     "number": 165, 
     "units": 4, 
     "title": "The Reformations of Christendom", 
-    "description": "This course examines not a period but a process: the reform and disruption of the civilization called "Christendom" during the 16th and 17th centuries and its transformation into the familiar Europe of the nation states." 
+    "description": "This course examines not a period but a process: the reform and disruption of the civilization called 'Christendom' during the 16th and 17th centuries and its transformation into the familiar Europe of the nation states." 
   }, 
   { 
     "name": "HISTORY.165B", 
     "number": 165, 
     "units": 4, 
     "title": "The World, the Picture, and the Page: The Revolution in European Culture since the late 18th Century", 
-    "description": "Europe has experienced three revolutions in the past two centuries. The first was political, the second was economic, and the third was what Raymond Williams called the "cultural revolution" - the dramatic shift from a largely oral and iconographic world to one of universal literacy and the technology of modern communications. By means of readings, lectures, discussions, films and slides, the class will examine the meaning of the revolutionary change for the lives of ordinary men and women, as well as the responses of selected writers, artists, and social theorists to the culture of democratization." 
+    "description": "Europe has experienced three revolutions in the past two centuries. The first was political, the second was economic, and the third was what Raymond Williams called the 'cultural revolution' - the dramatic shift from a largely oral and iconographic world to one of universal literacy and the technology of modern communications. By means of readings, lectures, discussions, films and slides, the class will examine the meaning of the revolutionary change for the lives of ordinary men and women, as well as the responses of selected writers, artists, and social theorists to the culture of democratization." 
   }, 
   { 
     "name": "HISTORY.165D", 
     "number": 165, 
     "units": 4, 
     "title": "The Social and Cultural History of Early Modern Europe", 
-    "description": "This course examines the lives of ordinary people in Europe from roughly 1300-1800. Its goal, in the words of the great social historian E.P. Thompson, is to rescue them from "the enormous condescension of posterity," exploring how the common people made their own history and used their ingenuity to shape not only their own lives but also, at key moments, the development of European modernity." 
+    "description": "This course examines the lives of ordinary people in Europe from roughly 1300-1800. Its goal, in the words of the great social historian E.P. Thompson, is to rescue them from 'the enormous condescension of posterity,' exploring how the common people made their own history and used their ingenuity to shape not only their own lives but also, at key moments, the development of European modernity." 
   }, 
   { 
     "name": "HISTORY.166", 
@@ -25743,7 +25743,7 @@ courses = [
     "number": 166, 
     "units": 4, 
     "title": "Old Regime and Revolutionary France", 
-    "description": "France from the rise of Louis XIV to the fall of Napoleon Bonaparte. The course will explore the socio-economic and political factors that allowed France to emerge as the most powerful nation in Europe under Louis XIV. We will assess the extent of the kingdom's cultural influence and the realities of everyday life under the "old regime." We will then examine the intellectual, social, political, and religious developments of the eighteenth century--such as the Enlightenment, Jansenism, and colonialism--that ultimately led to a total assault against the monarchy in 1789, and finally, the outbreak, course, and consequences of the first great democratic revolution in modern Europe." 
+    "description": "France from the rise of Louis XIV to the fall of Napoleon Bonaparte. The course will explore the socio-economic and political factors that allowed France to emerge as the most powerful nation in Europe under Louis XIV. We will assess the extent of the kingdom's cultural influence and the realities of everyday life under the 'old regime.' We will then examine the intellectual, social, political, and religious developments of the eighteenth century--such as the Enlightenment, Jansenism, and colonialism--that ultimately led to a total assault against the monarchy in 1789, and finally, the outbreak, course, and consequences of the first great democratic revolution in modern Europe." 
   }, 
   { 
     "name": "HISTORY.166C", 
@@ -25771,7 +25771,7 @@ courses = [
     "number": 167, 
     "units": 4, 
     "title": "The Rise and Fall of the Second Reich: Germany 1770-1918", 
-    "description": "This course provides the essential foundation for understanding the catastrophic history of Germany in the 20th Century, as well as some of its successes. A central theme is the struggle to define and impose a single national identity on socially, culturally, and religiously diverse peoples in an age of Great Power conflict. Although the region now known as Germany will be the focus of our investigation, considerable attention will also be paid to the Hapsburg Empire, for until 1866 Austria was officially a part of "Germany" and remained, for nearly a century thereafter, culturally and in popular consciousness a part of a "Greater Germany."" 
+    "description": "This course provides the essential foundation for understanding the catastrophic history of Germany in the 20th Century, as well as some of its successes. A central theme is the struggle to define and impose a single national identity on socially, culturally, and religiously diverse peoples in an age of Great Power conflict. Although the region now known as Germany will be the focus of our investigation, considerable attention will also be paid to the Hapsburg Empire, for until 1866 Austria was officially a part of 'Germany' and remained, for nearly a century thereafter, culturally and in popular consciousness a part of a 'Greater Germany.'" 
   }, 
   { 
     "name": "HISTORY.167C", 
@@ -25806,7 +25806,7 @@ courses = [
     "number": 169, 
     "units": 4, 
     "title": "Renaissance and Baroque Italy 1350-1800", 
-    "description": "This course will focus on the history of Italy during a period when it was the leading center of European artistic and cultural production and the driving force in the revival of classical learning and literary ideals. This was the Italy of Raphael and Michelangelo, Ariosto and Alberti, Brunelleschi and Botticelli. At the same time, Italy was also a political battleground through most of this period, both in the realm of ideas and theory but also in a literal sense. It was in Italy that "the art of war," as Machiavelli called it, took center stage as the peninsula became one of the major theaters of war between the great powers of the age, France and Spain. The course will combine a study of the artistic, intellectual, religious, and political history of Italy in this period both as it developed internally and as it was related to the rest of Europe and the Mediterranean world. Requirements will include a midterm, a final, and an optional final paper." 
+    "description": "This course will focus on the history of Italy during a period when it was the leading center of European artistic and cultural production and the driving force in the revival of classical learning and literary ideals. This was the Italy of Raphael and Michelangelo, Ariosto and Alberti, Brunelleschi and Botticelli. At the same time, Italy was also a political battleground through most of this period, both in the realm of ideas and theory but also in a literal sense. It was in Italy that 'the art of war,' as Machiavelli called it, took center stage as the peninsula became one of the major theaters of war between the great powers of the age, France and Spain. The course will combine a study of the artistic, intellectual, religious, and political history of Italy in this period both as it developed internally and as it was related to the rest of Europe and the Mediterranean world. Requirements will include a midterm, a final, and an optional final paper." 
   }, 
   { 
     "name": "HISTORY.170", 
@@ -25848,7 +25848,7 @@ courses = [
     "number": 172, 
     "units": 4, 
     "title": "Russian Intellectual History", 
-    "description": "This course introduces students to Russian intellectual history from the end of the eighteenth century to the beginning of the twentieth century, covering aspects of political, social, and religious thought. We will observe Russian thinkers elaborate conceptions of nationalism in a multi-ethnic empire, trying to resolve the eternal question of Russia's national identity: whether it belongs to the East or West? Next, we will move on to social thought, including debates on serfdom, populism, the "women question," the nature of progress, and the rise of Marxism. Finally, we will study debates on religion: the pertinence of Orthodox Christian faith in social and philosophical thought, including early twentieth century religious rebuttals to Marxism." 
+    "description": "This course introduces students to Russian intellectual history from the end of the eighteenth century to the beginning of the twentieth century, covering aspects of political, social, and religious thought. We will observe Russian thinkers elaborate conceptions of nationalism in a multi-ethnic empire, trying to resolve the eternal question of Russia's national identity: whether it belongs to the East or West? Next, we will move on to social thought, including debates on serfdom, populism, the 'women question,' the nature of progress, and the rise of Marxism. Finally, we will study debates on religion: the pertinence of Orthodox Christian faith in social and philosophical thought, including early twentieth century religious rebuttals to Marxism." 
   }, 
   { 
     "name": "HISTORY.173", 
@@ -25869,7 +25869,7 @@ courses = [
     "number": 173, 
     "units": 4, 
     "title": "History of Eastern Europe: From 1900 to the Present", 
-    "description": "This course will examine the history of 20th-century Eastern Europe, understood as the band of countries and peoples stretching from the Baltics to the Balkans. Poland, Czechoslovakia, and Hungary, however, will receive special attention. Topics of study will include foundation of the national states, Eastern European fascism, Nazi occupation, contructing Stalinist socialism, the fate of reform communism, reconstitution of "civil society," and the emergence of a new Eastern Europe. Given the paucity of historical writings on the region, the course will make extensive use of cinematic and literary portrayals of Eastern Europe." 
+    "description": "This course will examine the history of 20th-century Eastern Europe, understood as the band of countries and peoples stretching from the Baltics to the Balkans. Poland, Czechoslovakia, and Hungary, however, will receive special attention. Topics of study will include foundation of the national states, Eastern European fascism, Nazi occupation, contructing Stalinist socialism, the fate of reform communism, reconstitution of 'civil society,' and the emergence of a new Eastern Europe. Given the paucity of historical writings on the region, the course will make extensive use of cinematic and literary portrayals of Eastern Europe." 
   }, 
   { 
     "name": "HISTORY.174", 
@@ -25904,7 +25904,7 @@ courses = [
     "number": 177, 
     "units": 4, 
     "title": "Armenia from Ethnogenesis to the Dark Ages", 
-    "description": "This course will cover close to three millenia of Armenian history, from the process of ethnogenesis to the almost complete destruction of the Armenian "feudal" system by the end of the 15th century. This course is based on the broad framework of Armenian political history and institutions, but also emphasizes economic development, social change, and cultural transformations." 
+    "description": "This course will cover close to three millenia of Armenian history, from the process of ethnogenesis to the almost complete destruction of the Armenian 'feudal' system by the end of the 15th century. This course is based on the broad framework of Armenian political history and institutions, but also emphasizes economic development, social change, and cultural transformations." 
   }, 
   { 
     "name": "HISTORY.177B", 
@@ -25932,7 +25932,7 @@ courses = [
     "number": 180, 
     "units": 4, 
     "title": "History of the Life Sciences Since 1750 (Cal Teach)", 
-    "description": "This course is a parallel course to 180, intended for students interested in teaching elementary or secondary school science and math. Students in the "T" course will attend the regular 180 lectures and a special section; this section will focus on techniques, skills, and perspectives necessary to apply the history of science in the juvenile and adolescent science classroom, including pedagogy, devising lesson plans for their classrooms, finding reliable historical information, and writing." 
+    "description": "This course is a parallel course to 180, intended for students interested in teaching elementary or secondary school science and math. Students in the 'T' course will attend the regular 180 lectures and a special section; this section will focus on techniques, skills, and perspectives necessary to apply the history of science in the juvenile and adolescent science classroom, including pedagogy, devising lesson plans for their classrooms, finding reliable historical information, and writing." 
   }, 
   { 
     "name": "HISTORY.181", 
@@ -25946,7 +25946,7 @@ courses = [
     "number": 181, 
     "units": 4, 
     "title": "Modern Physics: From the Atom to Big Science", 
-    "description": "This course examines the establishment of the ideas and institutions of modern physics over the last century and a half. We begin with the nineteenth-century organization of the discipline and the debates over the classical world picture (mechanics, electromagnetism and optics, thermodynamics and statistical mechanics). We then follow the dramatic changes that undid the classical picture, from the discovery of radioactivity through Einstein's theories of relativity on to the creation of quantum mechanics and the accompanying philosophical disputes. Alongside these conceptual upheavals we will look at the evolving structure of the discipline, its links with industry and government, and the massive transformations of the Second World War, culminating in the atomic bomb. In the postwar period we will deal with the conceptual consolidation of the modern physical worldview and the emergence of "big science" in alliance with the state." 
+    "description": "This course examines the establishment of the ideas and institutions of modern physics over the last century and a half. We begin with the nineteenth-century organization of the discipline and the debates over the classical world picture (mechanics, electromagnetism and optics, thermodynamics and statistical mechanics). We then follow the dramatic changes that undid the classical picture, from the discovery of radioactivity through Einstein's theories of relativity on to the creation of quantum mechanics and the accompanying philosophical disputes. Alongside these conceptual upheavals we will look at the evolving structure of the discipline, its links with industry and government, and the massive transformations of the Second World War, culminating in the atomic bomb. In the postwar period we will deal with the conceptual consolidation of the modern physical worldview and the emergence of 'big science' in alliance with the state." 
   }, 
   { 
     "name": "HISTORY.182", 
@@ -25967,7 +25967,7 @@ courses = [
     "number": 182, 
     "units": 4, 
     "title": "Technology and Society (Cal Teach)", 
-    "description": "This course is a parallel course to 182A, intended for students interested in teaching elementary or secondary school science and math. Students in the "T" course will attend the regular 182A lectures and a special section; this section will focus on techniques, skills, and perspectives necessary to apply the history of science in the jevenile and adolescent science classroom, including pedagogy, devising lesson plans for their classrooms, finding reliable historical information, and writing." 
+    "description": "This course is a parallel course to 182A, intended for students interested in teaching elementary or secondary school science and math. Students in the 'T' course will attend the regular 182A lectures and a special section; this section will focus on techniques, skills, and perspectives necessary to apply the history of science in the jevenile and adolescent science classroom, including pedagogy, devising lesson plans for their classrooms, finding reliable historical information, and writing." 
   }, 
   { 
     "name": "HISTORY.183", 
@@ -25995,7 +25995,7 @@ courses = [
     "number": 185, 
     "units": 4, 
     "title": "History of Christianity to 1250", 
-    "description": "The course deals with the origins of Christianity and the first eleven centuries of its expansion into a major institutional, social, and intellectual force shaping Western Europe. The central themes are the mechanisms and conditions shaping this expansion, rather than a chronological account in order to present this process as a model of institutionalization of religious movements. The emphasis will be on patterns of crisis and reform; i.e., on conflicts arising within the church itself and as a result of its dealings with the "outside" world, and how these crises were resolved. The course is based on the study of primary sources and will include problems of historical method." 
+    "description": "The course deals with the origins of Christianity and the first eleven centuries of its expansion into a major institutional, social, and intellectual force shaping Western Europe. The central themes are the mechanisms and conditions shaping this expansion, rather than a chronological account in order to present this process as a model of institutionalization of religious movements. The emphasis will be on patterns of crisis and reform; i.e., on conflicts arising within the church itself and as a result of its dealings with the 'outside' world, and how these crises were resolved. The course is based on the study of primary sources and will include problems of historical method." 
   }, 
   { 
     "name": "HISTORY.185B", 
@@ -26478,7 +26478,7 @@ courses = [
     "number": 5, 
     "units": 4, 
     "title": "European Civilization from the Renaissance to the Present", 
-    "description": "This course is an introduction to European history from around 1500 to the present. The central questions that it addresses are how and why Europe--a small, relatively poor, and politically fragmented place-- became the motor of globalization and a world civilzation in its own right. Put differently how did "western" become an adjective that, for better and often for worse, stands in place of "modern"." 
+    "description": "This course is an introduction to European history from around 1500 to the present. The central questions that it addresses are how and why Europe--a small, relatively poor, and politically fragmented place-- became the motor of globalization and a world civilzation in its own right. Put differently how did 'western' become an adjective that, for better and often for worse, stands in place of 'modern'." 
   }, 
   { 
     "name": "HISTORY.6", 
@@ -26506,7 +26506,7 @@ courses = [
     "number": 6, 
     "units": 4, 
     "title": "History of China: Origins to the Mongol Conquest", 
-    "description": "The history of China from its beginnings to the destruction of the Song Dynasty by the Mongols in the 13th century. Topics to be covered include the emergence of Chinese civilization, the Chinese language, early rhetoric and philosophy, the creation of the first empire, law, Buddhism and religious Taoism, the socioeconomic revolution of the 10th to 12th centuries, identities (male and female, Chinese and "barbarian"), lyric poetry, and painting and calligraphy." 
+    "description": "The history of China from its beginnings to the destruction of the Song Dynasty by the Mongols in the 13th century. Topics to be covered include the emergence of Chinese civilization, the Chinese language, early rhetoric and philosophy, the creation of the first empire, law, Buddhism and religious Taoism, the socioeconomic revolution of the 10th to 12th centuries, identities (male and female, Chinese and 'barbarian'), lyric poetry, and painting and calligraphy." 
   }, 
   { 
     "name": "HISTORY.6B", 
@@ -26527,7 +26527,7 @@ courses = [
     "number": 7, 
     "units": 4, 
     "title": "The United States from Settlement to Civil War", 
-    "description": "This course is an introduction to the history of the United States from the beginning of the European colonization of North America to the end of the Civil War. It is also an introduction to the ways historians look at the past and think about evidence. There are two main themes: one is to understand the origin of the "groups" we call European-Americans, Native-Americans, and African-Americans; the second, is to understand how democratic political institutions emerged in the United States in this period in the context of an economy that depended on slave labor and violent land acquisition." 
+    "description": "This course is an introduction to the history of the United States from the beginning of the European colonization of North America to the end of the Civil War. It is also an introduction to the ways historians look at the past and think about evidence. There are two main themes: one is to understand the origin of the 'groups' we call European-Americans, Native-Americans, and African-Americans; the second, is to understand how democratic political institutions emerged in the United States in this period in the context of an economy that depended on slave labor and violent land acquisition." 
   }, 
   { 
     "name": "HISTORY.7B", 
@@ -26646,7 +26646,7 @@ courses = [
     "number": 192, 
     "units": 3, 
     "title": "History of Information", 
-    "description": "This course explores the history of information and associated technologies, uncovering why we think of ours as "the information age." We will select moments in the evolution of production, recording, and storage from the earliest writing systems to the world of Short Message Service (SMS) and blogs. In every instance, we'll be concerned with both what and when and how and why, and we will keep returning to the question of technological determinism: how do technological developments affect society and vice versa? Also listed as Media Studies C104C, Information C103, and Cognitive Science C103." 
+    "description": "This course explores the history of information and associated technologies, uncovering why we think of ours as 'the information age.' We will select moments in the evolution of production, recording, and storage from the earliest writing systems to the world of Short Message Service (SMS) and blogs. In every instance, we'll be concerned with both what and when and how and why, and we will keep returning to the question of technological determinism: how do technological developments affect society and vice versa? Also listed as Media Studies C104C, Information C103, and Cognitive Science C103." 
   }, 
   { 
     "name": "HISTORY.C194", 
@@ -26681,7 +26681,7 @@ courses = [
     "number": 231, 
     "units": 2, 
     "title": "Japanese Studies: Past, Present... and Future?", 
-    "description": " Offers an overview of the history and current state of the field in Japanese studies, with faculty presentations, selected readings, and orientation sessions with East Asian Library staff to acquaint participants with relevant resources for research. Requirements will include completion of course readings and preparation of a research prospectus. Also listed as Japanese C231." 
+    "description": " Offers an overview of the history and current state of the field in Japanese studies, with faculty presentations, selected readings, and orientation sessions with East Asian Library staff to acquaint participants with relevant resources for research. Requirements will include completion of course readings and preparation of a research prospectus. Also listed as Japanese C231."
   }, 
   { 
     "name": "HISTORY.C250", 
@@ -26723,7 +26723,7 @@ courses = [
     "number": 150, 
     "units": 2, 
     "title": "Introduction to Aging Issues and Opportunities in Aging Professions", 
-    "description": "This course will explore current issues in aging from biological, demographic, psycho-social, and policy perspectives. To begin, lectures will focus on: The changing demographics of the general population of which older adults are becoming a larger and larger percentage; How men and women age differently; The historical context within which aging has been viewed; The physical and mental changes that occur over time. These initial lectures will provide the foundation for the lectures that follow in which professionals present issues--unique to their field--that they encounter in meeting the needs of their elderly clientele. Representative professions will include law, medicine, dentistry, architecture, social welfare, optometry, speech and physical therapy. The importance of an interdisciplinary approach to problem solving will be emphasized as speakers highlight pertinent issues in this population through case study scenarios. By using case studies we will shift the focus from "the disease" or "condition" to "the person." Speakers will discuss how they became interested in their respective professions and what opportunities/ challenges await a new generation of professionals." 
+    "description": "This course will explore current issues in aging from biological, demographic, psycho-social, and policy perspectives. To begin, lectures will focus on: The changing demographics of the general population of which older adults are becoming a larger and larger percentage; How men and women age differently; The historical context within which aging has been viewed; The physical and mental changes that occur over time. These initial lectures will provide the foundation for the lectures that follow in which professionals present issues--unique to their field--that they encounter in meeting the needs of their elderly clientele. Representative professions will include law, medicine, dentistry, architecture, social welfare, optometry, speech and physical therapy. The importance of an interdisciplinary approach to problem solving will be emphasized as speakers highlight pertinent issues in this population through case study scenarios. By using case studies we will shift the focus from 'the disease' or 'condition' to 'the person.' Speakers will discuss how they became interested in their respective professions and what opportunities/ challenges await a new generation of professionals." 
   }, 
   { 
     "name": "HMEDSCI.197", 
@@ -26842,14 +26842,14 @@ courses = [
     "number": 211, 
     "units": 1, 
     "title": "Narrative and Medicine", 
-    "description": "This course's goal is to provide a method for medical students to think, write about, and discuss feelings engendered by clinical encounters. Medical students are taught the need to be emotionally detached from patients, yet being emotionally detached does not mean devoid of emotion. This course offers a means to express and analyze those feelings. Also considered is the value of regarding the medical history as "text" which can be written and read from differing, equally valid viewpoints." 
+    "description": "This course's goal is to provide a method for medical students to think, write about, and discuss feelings engendered by clinical encounters. Medical students are taught the need to be emotionally detached from patients, yet being emotionally detached does not mean devoid of emotion. This course offers a means to express and analyze those feelings. Also considered is the value of regarding the medical history as 'text' which can be written and read from differing, equally valid viewpoints." 
   }, 
   { 
     "name": "HMEDSCI.212", 
     "number": 212, 
     "units": 1, 
     "title": "Health and Human Rights", 
-    "description": "Public health and human rights are two complementary approaches to protecting and promoting human well-being and dignity. Enshrined in international law, human rights describe how governments must create conditions where individuals can achieve their full potential. Human rights abuses profoundly affect health; health policies can directly or indirectly impact human rights adversely. We explore these interrelationships and examine how the "right to health" is challenged both in war and peace." 
+    "description": "Public health and human rights are two complementary approaches to protecting and promoting human well-being and dignity. Enshrined in international law, human rights describe how governments must create conditions where individuals can achieve their full potential. Human rights abuses profoundly affect health; health policies can directly or indirectly impact human rights adversely. We explore these interrelationships and examine how the 'right to health' is challenged both in war and peace." 
   }, 
   { 
     "name": "HMEDSCI.215", 
@@ -27171,7 +27171,7 @@ courses = [
     "number": 180, 
     "units": 3, 
     "title": "Advanced Studies in Indigenous Languages of the Americas", 
-    "description": "This course is designed to introduce students to Nahuatl textuality by drawing examples from poetry and painting. Addresses interrelations between alphabetical writing, pictography, and orality. The course will also offer students an introduction to Ancient Nahuatl through the study of James Lockhart's <Nahauatl as Written> (one day per week will be dedicated to the study of Nahuatl). Students will also be introduced to the paleography of colonial Nahuatl texts." 
+    "description": "This course is designed to introduce students to Nahuatl textuality by drawing examples from poetry and painting. Addresses interrelations between alphabetical writing, pictography, and orality. The course will also offer students an introduction to Ancient Nahuatl through the study of James Lockhart's 'Nahauatl as Written' (one day per week will be dedicated to the study of Nahuatl). Students will also be introduced to the paleography of colonial Nahuatl texts." 
   }, 
   { 
     "name": "IND ENG.115", 
@@ -27549,7 +27549,7 @@ courses = [
     "number": 267, 
     "units": 3, 
     "title": "Queueing Theory", 
-    "description": "The result "L = (lambda) w" and other conservation laws. Elementary queueing models; comparing single- and multiple-server queues. PASTA. Work. Markovian queues; product form results. Overflow models. Embedded Markov chains. Random walks and the GI/G/l queues. Work conservation; priorities. Bounds and approximations." 
+    "description": "The result 'L = (lambda) w' and other conservation laws. Elementary queueing models; comparing single- and multiple-server queues. PASTA. Work. Markovian queues; product form results. Overflow models. Embedded Markov chains. Random walks and the GI/G/l queues. Work conservation; priorities. Bounds and approximations." 
   }, 
   { 
     "name": "IND ENG.268", 
@@ -27850,7 +27850,7 @@ courses = [
     "number": 218, 
     "units": 3, 
     "title": "Concepts of Information", 
-    "description": "As it's generally used, "information" is a collection of notions, rather than a single coherent concept. In this course, we'll examine conceptions of information based in information theory, philosophy, social science, economics, and history. Issues include: How compatible are these conceptions; can we talk about "information" in the abstract? What work do these various notions play in discussions of literacy, intellectual property, advertising, and the political process? And where does this leave "information studies" and "the information society"?" 
+    "description": "As it's generally used, 'information' is a collection of notions, rather than a single coherent concept. In this course, we'll examine conceptions of information based in information theory, philosophy, social science, economics, and history. Issues include: How compatible are these conceptions; can we talk about 'information' in the abstract? What work do these various notions play in discussions of literacy, intellectual property, advertising, and the political process? And where does this leave 'information studies' and 'the information society'?" 
   }, 
   { 
     "name": "INFO.219", 
@@ -27892,7 +27892,7 @@ courses = [
     "number": 234, 
     "units": 3, 
     "title": "Information Technology Economics, Strategy, and Policy", 
-    "description": "Application of economic tools and principles, including game theory, industrial organization, information economics, and behavioral economics, to analyze business strategies and public policy issues surrounding information technologies and IT industries. Topics include: economics of information; economics of information goods, services, and platforms; strategic pricing; strategic complements and substitutes; competition models; network industry structure and telecommunications regulation; search and the "long tail"; network cascades and social epidemics; network formation and network structure; peer production and crowdsourcing; interdependent security and privacy." 
+    "description": "Application of economic tools and principles, including game theory, industrial organization, information economics, and behavioral economics, to analyze business strategies and public policy issues surrounding information technologies and IT industries. Topics include: economics of information; economics of information goods, services, and platforms; strategic pricing; strategic complements and substitutes; competition models; network industry structure and telecommunications regulation; search and the 'long tail'; network cascades and social epidemics; network formation and network structure; peer production and crowdsourcing; interdependent security and privacy." 
   }, 
   { 
     "name": "INFO.235", 
@@ -28326,7 +28326,7 @@ courses = [
     "number": 103, 
     "units": 3, 
     "title": "History of Information", 
-    "description": "This course explores the history of information and associated technologies, uncovering why we think of ours as "the information age." We will select moments in the evolution of production, recording, and storage from the earliest writing systems to the world of Short Message Service (SMS) and blogs. In every instance, we'll be concerned with both what and when and how and why, and we will keep returning to the question of technological determinism: how do technological developments affect society and vice versa? Also listed as Media Studies C104C, History C192, and Cognitive Science C103." 
+    "description": "This course explores the history of information and associated technologies, uncovering why we think of ours as 'the information age.' We will select moments in the evolution of production, recording, and storage from the earliest writing systems to the world of Short Message Service (SMS) and blogs. In every instance, we'll be concerned with both what and when and how and why, and we will keep returning to the question of technological determinism: how do technological developments affect society and vice versa? Also listed as Media Studies C104C, History C192, and Cognitive Science C103." 
   }, 
   { 
     "name": "INFO.C167", 
@@ -28725,7 +28725,7 @@ courses = [
     "number": 166, 
     "units": 4, 
     "title": "Evolutionary Biogeography", 
-    "description": "The goals of the course are to (a) examine how geographically-linked characteristics of species influence their potential for evolution and extinction; and (b) provide an overview of the analytical techniques and applications for studying the interplay between geographic ranges, environment, evolution, and extinction. Accordingly, the course begins by examining what geographic ranges of species are and what controls them. We then will explore how geographic-range characteristics influence and interact with speciation and extinction processes. With that foundation, we will examine how species assemble into communities and how ecological processes govern distributions at the community and landscape levels, touching on such topics as community energetics, scaling issues, and the influences of humans on "natural" ecosystems. The last third of the course will be devoted to an overview of quantitative analytical techniques that commonly are used to study interactions between biogeogeographic ranges, evolutionary processes, extinction, and environmental change." 
+    "description": "The goals of the course are to (a) examine how geographically-linked characteristics of species influence their potential for evolution and extinction; and (b) provide an overview of the analytical techniques and applications for studying the interplay between geographic ranges, environment, evolution, and extinction. Accordingly, the course begins by examining what geographic ranges of species are and what controls them. We then will explore how geographic-range characteristics influence and interact with speciation and extinction processes. With that foundation, we will examine how species assemble into communities and how ecological processes govern distributions at the community and landscape levels, touching on such topics as community energetics, scaling issues, and the influences of humans on 'natural' ecosystems. The last third of the course will be devoted to an overview of quantitative analytical techniques that commonly are used to study interactions between biogeogeographic ranges, evolutionary processes, extinction, and environmental change." 
   }, 
   { 
     "name": "INTEGBI.167", 
@@ -28893,7 +28893,7 @@ courses = [
     "number": 234, 
     "units": 1, 
     "title": "Seminar on Biology of Amphibians and Reptiles", 
-    "description": "<Formerly Zoology 265> Review of current research activity and literature concerning the biology of amphibians and reptiles." 
+    "description": "'Formerly Zoology 265' Review of current research activity and literature concerning the biology of amphibians and reptiles." 
   }, 
   { 
     "name": "INTEGBI.24", 
@@ -28935,7 +28935,7 @@ courses = [
     "number": 248, 
     "units": 1, 
     "title": "Comparative Physiology and Endocrinology Seminar", 
-    "description": "<Formerly Biology 221> Reviews and reports of current research in vertebrate endocrinology and physiology." 
+    "description": "'Formerly Biology 221' Reviews and reports of current research in vertebrate endocrinology and physiology." 
   }, 
   { 
     "name": "INTEGBI.249", 
@@ -28991,14 +28991,14 @@ courses = [
     "number": 264, 
     "units": 1, 
     "title": "Seminar in Evolutionary Biology of the Vertebrates", 
-    "description": "Formerly <Zoology 260> Presentation of results of original research by students, faculty, and visitors." 
+    "description": "Formerly 'Zoology 260' Presentation of results of original research by students, faculty, and visitors." 
   }, 
   { 
     "name": "INTEGBI.268", 
     "number": 268, 
     "units": 2, 
     "title": "Seminar in Evolution above the Species Level", 
-    "description": "<Formerly Paleontology 246.> Current issues in macroevolution and paleobiology, using both neontological and paleontological data." 
+    "description": "'Formerly Paleontology 246.' Current issues in macroevolution and paleobiology, using both neontological and paleontological data." 
   }, 
   { 
     "name": "INTEGBI.281", 
@@ -29019,28 +29019,28 @@ courses = [
     "number": 286, 
     "units": 2, 
     "title": "Seminars in Paleontology", 
-    "description": "<Formerly Paleontology 250> Advanced study and current literature in various fields of paleontology. Topics vary from year to year." 
+    "description": "'Formerly Paleontology 250' Advanced study and current literature in various fields of paleontology. Topics vary from year to year." 
   }, 
   { 
     "name": "INTEGBI.290", 
     "number": 290, 
     "units": 1, 
     "title": "Research Seminar", 
-    "description": "<Formerly Botany 290 and Zoology 290> Advanced study in various fields of Integrative Biology. Topics will be announced in advance of each semester. Enrollment in more than one section permitted." 
+    "description": "'Formerly Botany 290 and Zoology 290' Advanced study in various fields of Integrative Biology. Topics will be announced in advance of each semester. Enrollment in more than one section permitted." 
   }, 
   { 
     "name": "INTEGBI.291", 
     "number": 291, 
     "units": 1, 
     "title": "Research Seminar", 
-    "description": "<Formerly Zoology 240> Review and discussion of topics of current interest. Topics to vary." 
+    "description": "'Formerly Zoology 240' Review and discussion of topics of current interest. Topics to vary." 
   }, 
   { 
     "name": "INTEGBI.292", 
     "number": 292, 
     "units": 0, 
     "title": "Integrative Biology Colloquium", 
-    "description": "<Formerly Botany 280> Meetings for the presentation of original work by faculty, visiting lecturers, and graduate students." 
+    "description": "'Formerly Botany 280' Meetings for the presentation of original work by faculty, visiting lecturers, and graduate students." 
   }, 
   { 
     "name": "INTEGBI.296", 
@@ -29054,21 +29054,21 @@ courses = [
     "number": 297, 
     "units": 1, 
     "title": "Directed Field Studies", 
-    "description": "<Formerly Paleontology 297> Open to qualified students directly engaged in field studies." 
+    "description": "'Formerly Paleontology 297' Open to qualified students directly engaged in field studies." 
   }, 
   { 
     "name": "INTEGBI.298", 
     "number": 298, 
     "units": 1, 
     "title": "Special Study in Integrative Biology", 
-    "description": "<Formerly Physiology 298 and Anatomy 298> Graduate research by small groups." 
+    "description": "'Formerly Physiology 298 and Anatomy 298' Graduate research by small groups." 
   }, 
   { 
     "name": "INTEGBI.299", 
     "number": 299, 
     "units": 1, 
     "title": "Graduate Research", 
-    "description": "<Formerly Botany 299, Paleontology 299, Physiology 299, Anatomy 299, Zoology 299.> Credit awarded according to work planned and accomplished." 
+    "description": "'Formerly Botany 299, Paleontology 299, Physiology 299, Anatomy 299, Zoology 299.' Credit awarded according to work planned and accomplished." 
   }, 
   { 
     "name": "INTEGBI.304", 
@@ -29138,14 +29138,14 @@ courses = [
     "number": 601, 
     "units": 1, 
     "title": "Individual Study for Master's Students", 
-    "description": "<Formerly Paleontology 601, Zoology 601> Individual study for the comprehensive requirements in consultation with the major adviser. Units may not be used to meet either unit or residence requirements for a master's degree." 
+    "description": "'Formerly Paleontology 601, Zoology 601' Individual study for the comprehensive requirements in consultation with the major adviser. Units may not be used to meet either unit or residence requirements for a master's degree." 
   }, 
   { 
     "name": "INTEGBI.602", 
     "number": 602, 
     "units": 1, 
     "title": "Individual Study for Doctoral Students", 
-    "description": "<Formerly Paleontology 602, Zoology 602, Botany 602, Physiology 602, Anatomy 602> Individual study in consultation with the major adviser. Intended to provide an opportunity for qualified students to prepare themselves for the various examinations required for candidates for the Ph.D." 
+    "description": "'Formerly Paleontology 602, Zoology 602, Botany 602, Physiology 602, Anatomy 602' Individual study in consultation with the major adviser. Intended to provide an opportunity for qualified students to prepare themselves for the various examinations required for candidates for the Ph.D." 
   }, 
   { 
     "name": "INTEGBI.84", 
@@ -29306,7 +29306,7 @@ courses = [
     "number": 155, 
     "units": 3, 
     "title": "Holocene Paleoecology: How Humans Changed the Earth", 
-    "description": "Since the end of the Pleistocene and especially with the development of agriculturally based societies humans have had cumulative and often irreversible impacts on natural landscapes and biotic resources worldwide. Thus "global change" and the biodiversity crisis are not exclusively developments of the industrial and post-industrial world. This course uses a multi-disciplinary approach, drawing upon methods and data from archaeology, palynology, geomorphology, paleontology, and historical ecology to unravel the broad trends of human ecodynamics over the past 10,000 years. Also listed as Anthropology C129D." 
+    "description": "Since the end of the Pleistocene and especially with the development of agriculturally based societies humans have had cumulative and often irreversible impacts on natural landscapes and biotic resources worldwide. Thus 'global change' and the biodiversity crisis are not exclusively developments of the industrial and post-industrial world. This course uses a multi-disciplinary approach, drawing upon methods and data from archaeology, palynology, geomorphology, paleontology, and historical ecology to unravel the broad trends of human ecodynamics over the past 10,000 years. Also listed as Anthropology C129D." 
   }, 
   { 
     "name": "INTEGBI.C156", 
@@ -29341,7 +29341,7 @@ courses = [
     "number": 195, 
     "units": 2, 
     "title": "Introduction to Global Health Disparities Research", 
-    "description": "This course is designed to prepare trainees in the UC Berkeley "Minority Health/Global Health" (MH/GH) program to conduct a ten-week infectious disease research project in a disease-endemic country. The course provides a background in neglected tropical disease research, international research ethics, and the conduct of health research in low-resource settings. Also listed as Public Health C117." 
+    "description": "This course is designed to prepare trainees in the UC Berkeley 'Minority Health/Global Health' (MH/GH) program to conduct a ten-week infectious disease research project in a disease-endemic country. The course provides a background in neglected tropical disease research, international research ethics, and the conduct of health research in low-resource settings. Also listed as Public Health C117." 
   }, 
   { 
     "name": "INTEGBI.C204", 
@@ -29411,14 +29411,14 @@ courses = [
     "number": 82, 
     "units": 3, 
     "title": "Oceans", 
-    "description": "This course offers multidisciplinary approach to begin answering the question "Why are oceans important to us?" Upon a physical, chemical, and geologic base, we introduce the alien world of sea life, the importance of the ocean to the global carbon cycle, and the principles of ecology with a focus on the important concept of energy flow through food webs. Lectures expand beyond science to include current topics as diverse as music, movies, mythology, biomechanics, policy, and trade. Also listed as Geography C82 and Earth and Planetary Science C82." 
+    "description": "This course offers multidisciplinary approach to begin answering the question 'Why are oceans important to us?' Upon a physical, chemical, and geologic base, we introduce the alien world of sea life, the importance of the ocean to the global carbon cycle, and the principles of ecology with a focus on the important concept of energy flow through food webs. Lectures expand beyond science to include current topics as diverse as music, movies, mythology, biomechanics, policy, and trade. Also listed as Geography C82 and Earth and Planetary Science C82." 
   }, 
   { 
     "name": "INTEGBI.C96", 
     "number": 96, 
     "units": 1, 
     "title": "Studying the Biological Sciences", 
-    "description": "Freshmen will be introduced to the "culture" of the biological sciences, along with an in-depth orientation to the academic life and the culture of the university as they relate to majoring in biology. Students will learn concepts, skills, and information that they can use in their major course, and as future science professionals. Restricted to freshmen in the biology scholars program. Also listed as Plant and Microbial Biology C96 and Molecular and Cell Biology C96." 
+    "description": "Freshmen will be introduced to the 'culture' of the biological sciences, along with an in-depth orientation to the academic life and the culture of the university as they relate to majoring in biology. Students will learn concepts, skills, and information that they can use in their major course, and as future science professionals. Restricted to freshmen in the biology scholars program. Also listed as Plant and Microbial Biology C96 and Molecular and Cell Biology C96." 
   }, 
   { 
     "name": "INTEGBI.H196A", 
@@ -29593,7 +29593,7 @@ courses = [
     "number": 100, 
     "units": 4, 
     "title": "Word and Image", 
-    "description": "This course is designed to sharpen our skills in understanding what happens when the world of images and words meet. Starting with the work from the Western "classical" tradition we will proceed to investigate how word/image constellations operate in a variety of media, including sculpture and poetry, painting and prose, death masks, tableaux vivants, photography, and advertising. Also listed as Scandinavian C114." 
+    "description": "This course is designed to sharpen our skills in understanding what happens when the world of images and words meet. Starting with the work from the Western 'classical' tradition we will proceed to investigate how word/image constellations operate in a variety of media, including sculpture and poetry, painting and prose, death masks, tableaux vivants, photography, and advertising. Also listed as Scandinavian C114." 
   }, 
   { 
     "name": "ISF.C101", 
@@ -29663,14 +29663,14 @@ courses = [
     "number": 109, 
     "units": 4, 
     "title": "Dante's <Commedia> (in Italian)", 
-    "description": "A close introductory reading of Dante's <Commedia>. Taught in Italian." 
+    "description": "A close introductory reading of Dante's 'Commedia'. Taught in Italian." 
   }, 
   { 
     "name": "ITALIAN.110", 
     "number": 110, 
     "units": 4, 
     "title": "Literature and Culture of the 13th and 14th Centuries", 
-    "description": "Emphasis on the literature and culture of the 13th and 14th centuries. Literature will emphasize the "Stil Novo" and Dante's minor works as well as Boccaccio's <Decameron> and Petrarch's <Rime>." 
+    "description": "Emphasis on the literature and culture of the 13th and 14th centuries. Literature will emphasize the 'Stil Novo' and Dante's minor works as well as Boccaccio's 'Decameron' and Petrarch's 'Rime'." 
   }, 
   { 
     "name": "ITALIAN.112", 
@@ -29712,7 +29712,7 @@ courses = [
     "number": 130, 
     "units": 4, 
     "title": "Dante's <Inferno> (in English)", 
-    "description": "An introduction to Dante's <Inferno> in the context of his other works. Taught in English." 
+    "description": "An introduction to Dante's 'Inferno' in the context of his other works. Taught in English." 
   }, 
   { 
     "name": "ITALIAN.160", 
@@ -29796,7 +29796,7 @@ courses = [
     "number": 212, 
     "units": 2, 
     "title": "Seminar on Dante", 
-    "description": "Studies in the <Commedia> and other works." 
+    "description": "Studies in the 'Commedia' and other works." 
   }, 
   { 
     "name": "ITALIAN.215", 
@@ -30083,7 +30083,7 @@ courses = [
     "number": 10, 
     "units": 5, 
     "title": "Intermediate Japanese", 
-    "description": "In this course, students will learn how to integrate the basic structures and vocabulary that they acquired in their first year so they can communicate and comprehend reading materials. They will study new structures and vocabulary needed to enhance their language skills. While aural/oral skills are continuously emphasized, an increased amount of reading and writing will also be required. Each course will introduce approximately 150 new <kanji>." 
+    "description": "In this course, students will learn how to integrate the basic structures and vocabulary that they acquired in their first year so they can communicate and comprehend reading materials. They will study new structures and vocabulary needed to enhance their language skills. While aural/oral skills are continuously emphasized, an increased amount of reading and writing will also be required. Each course will introduce approximately 150 new 'kanji'." 
   }, 
   { 
     "name": "JAPAN.10AG", 
@@ -30097,14 +30097,14 @@ courses = [
     "number": 10, 
     "units": 1, 
     "title": "Supplementary Work in Kanji--Intermediate", 
-    "description": "These supplementary courses are designed for students who are concurrently enrolled in 10A and 10B to acquire a better understanding of <kanji> writing system and to improve overall <kanji> performance." 
+    "description": "These supplementary courses are designed for students who are concurrently enrolled in 10A and 10B to acquire a better understanding of 'kanji' writing system and to improve overall 'kanji' performance." 
   }, 
   { 
     "name": "JAPAN.10B", 
     "number": 10, 
     "units": 5, 
     "title": "Intermediate Japanese", 
-    "description": "In this course, students will learn how to integrate the basic structures and vocabulary that they acquired in their first year so they can communicate and comprehend reading materials. They will study new structures and vocabulary needed to enhance their language skills. While aural/oral skills are continuously emphasized, an increased amount of reading and writing will also be required. Each course will introduce approximately 150 new <kanji>." 
+    "description": "In this course, students will learn how to integrate the basic structures and vocabulary that they acquired in their first year so they can communicate and comprehend reading materials. They will study new structures and vocabulary needed to enhance their language skills. While aural/oral skills are continuously emphasized, an increased amount of reading and writing will also be required. Each course will introduce approximately 150 new 'kanji'." 
   }, 
   { 
     "name": "JAPAN.10BG", 
@@ -30118,7 +30118,7 @@ courses = [
     "number": 10, 
     "units": 1, 
     "title": "Supplementary Work in Kanji--Intermediate", 
-    "description": "These supplementary courses are designed for students who are concurrently enrolled in 10A and 10B to acquire a better understanding of <kanji> writing system and to improve overall <kanji> performance." 
+    "description": "These supplementary courses are designed for students who are concurrently enrolled in 10A and 10B to acquire a better understanding of 'kanji' writing system and to improve overall 'kanji' performance." 
   }, 
   { 
     "name": "JAPAN.10X", 
@@ -30139,7 +30139,7 @@ courses = [
     "number": 112, 
     "units": 4, 
     "title": "Fifth-Year Japanese B", 
-    "description": "This course is designed for students who have studied Japanese for at least four years (540 hours). It aims to develop further their reading, writing, speaking, and listening skills with special emphasis on essay and research paper writing on topics relevant to the student's major or intended career. Part of this written work will become the material on which the student will give an end-of-the-term oral presentation. Students are expected to fully prepare for and dynamically participate in the discussions and debates that occur in class."
+    "description": "This course is designed for students who have studied Japanese for at least four years (540 hours). It aims to develop further their reading, writing, speaking, and listening skills with special emphasis on essay and research paper writing on topics relevant to the student's major or intended career. Part of this written work will become the material on which the student will give an end-of-the-term oral presentation. Students are expected to fully prepare for and dynamically participate in the discussions and debates that occur in class." 
   }, 
   { 
     "name": "JAPAN.120", 
@@ -30153,7 +30153,7 @@ courses = [
     "number": 130, 
     "units": 4, 
     "title": "Classical Japanese Poetry", 
-    "description": "An introduction to the critical analysis and translation of traditional Japanese poetry, a genre that reaches from early declarative work redolent of an even earlier oral tradition to medieval and Early Modern verses evoking exquisitely differentiated emotional states via complex rhetoric and literary allusion. Topics may include the poetry of the <Man'yoshu>, <Kokinshu>, and <Shinkokinshu> poetic anthologies, linked verse (<renga>), and the <haikai> of Basho and other Early modern poets." 
+    "description": "An introduction to the critical analysis and translation of traditional Japanese poetry, a genre that reaches from early declarative work redolent of an even earlier oral tradition to medieval and Early Modern verses evoking exquisitely differentiated emotional states via complex rhetoric and literary allusion. Topics may include the poetry of the 'Man'yoshu', 'Kokinshu', and 'Shinkokinshu' poetic anthologies, linked verse ('renga'), and the 'haikai' of Basho and other Early modern poets." 
   }, 
   { 
     "name": "JAPAN.132", 
@@ -30167,21 +30167,21 @@ courses = [
     "number": 140, 
     "units": 4, 
     "title": "Heian Prose", 
-    "description": "The course focuses on select masterpieces from the Japanese narrative tradition, including Murasaki Shikibu's <The Tale of Genji> and Sei Shonagon's <Pillow Book>." 
+    "description": "The course focuses on select masterpieces from the Japanese narrative tradition, including Murasaki Shikibu's 'The Tale of Genji' and Sei Shonagon's 'Pillow Book'." 
   }, 
   { 
     "name": "JAPAN.144", 
     "number": 144, 
     "units": 4, 
     "title": "Edo Literature", 
-    "description": "Critical reading and translation of important literary texts from the Edo period, including poetic diaries, merchant fiction, and <joruri> drama." 
+    "description": "Critical reading and translation of important literary texts from the Edo period, including poetic diaries, merchant fiction, and 'joruri' drama." 
   }, 
   { 
     "name": "JAPAN.146", 
     "number": 146, 
     "units": 4, 
     "title": "Japanese Historical Documents", 
-    "description": "Writings in the Japanese vernacular constitute only a limited part of the total pre-modern Japanese written corpus. Until the 20th century, the preferred medium for most historical texts and male diaries was Sino-Japanese (<kanbun>). Familiarity with the grammar of this extraordinarily rich tradition is therefore essential for all students of pre-modern Japanese disciplines." 
+    "description": "Writings in the Japanese vernacular constitute only a limited part of the total pre-modern Japanese written corpus. Until the 20th century, the preferred medium for most historical texts and male diaries was Sino-Japanese ('kanbun'). Familiarity with the grammar of this extraordinarily rich tradition is therefore essential for all students of pre-modern Japanese disciplines." 
   }, 
   { 
     "name": "JAPAN.155", 
@@ -30258,7 +30258,7 @@ courses = [
     "number": 188, 
     "units": 4, 
     "title": "Japanese Visual Culture: Introduction to Anime", 
-    "description": "This course is an introduction to Japanese animation, or anime, from its earliest forms (in relationship to manga) to recent digital culture, art, and games. We will analyze and study mainly animated feature films and read the critical work they inspired. We will address such issues as cultural memory and apocalyptic imagination, robots and the post-human, cities, nature, and the transnational; gender, shojo, and the aesthetics of "cute," as well as consider specific issues in the theoretical understanding of anime within technology and media theory." 
+    "description": "This course is an introduction to Japanese animation, or anime, from its earliest forms (in relationship to manga) to recent digital culture, art, and games. We will analyze and study mainly animated feature films and read the critical work they inspired. We will address such issues as cultural memory and apocalyptic imagination, robots and the post-human, cities, nature, and the transnational; gender, shojo, and the aesthetics of 'cute,' as well as consider specific issues in the theoretical understanding of anime within technology and media theory." 
   }, 
   { 
     "name": "JAPAN.189", 
@@ -30286,7 +30286,7 @@ courses = [
     "number": 1, 
     "units": 5, 
     "title": "Elementary Japanese", 
-    "description": "In this course, students will develop basic communication skills in Japanese and an understanding of Japanese society and culture. Students will learn vocabulary and grammar structures that will enable them to talk about themselves, their studies, their family and friends, the weather, and many other topics. Students will learn how to read and write in Japanese from the onset, learning approximately 150 <kanji> (Chinese characters) by the end of each semester." 
+    "description": "In this course, students will develop basic communication skills in Japanese and an understanding of Japanese society and culture. Students will learn vocabulary and grammar structures that will enable them to talk about themselves, their studies, their family and friends, the weather, and many other topics. Students will learn how to read and write in Japanese from the onset, learning approximately 150 'kanji' (Chinese characters) by the end of each semester." 
   }, 
   { 
     "name": "JAPAN.1AL", 
@@ -30307,7 +30307,7 @@ courses = [
     "number": 1, 
     "units": 5, 
     "title": "Elementary Japanese", 
-    "description": "In this course, students will develop basic communication skills in Japanese and an understanding of Japanese society and culture. Students will learn vocabulary and grammar structures that will enable them to talk about themselves, their studies, their family and friends, the weather, and many other topics. Students will learn how to read and write in Japanese from the onset, learning approximately 150 <kanji> (Chinese characters) by the end of each semester." 
+    "description": "In this course, students will develop basic communication skills in Japanese and an understanding of Japanese society and culture. Students will learn vocabulary and grammar structures that will enable them to talk about themselves, their studies, their family and friends, the weather, and many other topics. Students will learn how to read and write in Japanese from the onset, learning approximately 150 'kanji' (Chinese characters) by the end of each semester." 
   }, 
   { 
     "name": "JAPAN.1BL", 
@@ -30328,7 +30328,7 @@ courses = [
     "number": 230, 
     "units": 2, 
     "title": "Seminar in Classical Japanese Poetry", 
-    "description": "Topics run from Japan's earliest extant anthology of vernacular literature (<Man'yoshu>) to late-medieval linked-verse (<renga>) and Edo <haikai>." 
+    "description": "Topics run from Japan's earliest extant anthology of vernacular literature ('Man'yoshu') to late-medieval linked-verse ('renga') and Edo 'haikai'." 
   }, 
   { 
     "name": "JAPAN.232", 
@@ -30342,7 +30342,7 @@ courses = [
     "number": 234, 
     "units": 2, 
     "title": "Seminar in Classical Japanese Drama", 
-    "description": "Topics include <No>, <joruri>, and early puppet theatre." 
+    "description": "Topics include 'No', 'joruri', and early puppet theatre." 
   }, 
   { 
     "name": "JAPAN.24", 
@@ -30356,7 +30356,7 @@ courses = [
     "number": 240, 
     "units": 2, 
     "title": "Seminar in Classical Japanese Texts", 
-    "description": "Topics may include <The Tale of Genji> or other prose works in the classical corpus." 
+    "description": "Topics may include 'The Tale of Genji' or other prose works in the classical corpus." 
   }, 
   { 
     "name": "JAPAN.255", 
@@ -30412,7 +30412,7 @@ courses = [
     "number": 7, 
     "units": 4, 
     "title": "Introduction to Pre-Modern Japanese Literature and Culture", 
-    "description": "This course provides an overview of Japanese literature and cultural history, from the seventh to the 18th century. 7A will begin with Japan's early myth-history, <Kojiki>, and its first extant poetry anthology, <Man'yoshu>, which show the first stages of transition from a preliterate, communal society to a highly developed courtly culture. Readings from noblewomen's diaries, poetry anthologies, and a selection of chapters from the classical Japanese literary masterpiece <The Tale of Genji>, offer a window into that courtly culture as its height of refinement. We will examine the intermingling traces of oral culture and high literary art in popular tales from the Kamakura period and explore the early representations of samurai heroism in military chronicles and medieval noh drama. After considering the development of linked verse in late medieval times, we will read several types of vernacular literature that emerged in the urban culture of the early modern Edo period, including the poetic diaries of the haiku poet Basho. This course does not assume or require any previous exposure to or course work in Japanese literature, history, or language." 
+    "description": "This course provides an overview of Japanese literature and cultural history, from the seventh to the 18th century. 7A will begin with Japan's early myth-history, 'Kojiki', and its first extant poetry anthology, 'Man'yoshu', which show the first stages of transition from a preliterate, communal society to a highly developed courtly culture. Readings from noblewomen's diaries, poetry anthologies, and a selection of chapters from the classical Japanese literary masterpiece 'The Tale of Genji', offer a window into that courtly culture as its height of refinement. We will examine the intermingling traces of oral culture and high literary art in popular tales from the Kamakura period and explore the early representations of samurai heroism in military chronicles and medieval noh drama. After considering the development of linked verse in late medieval times, we will read several types of vernacular literature that emerged in the urban culture of the early modern Edo period, including the poetic diaries of the haiku poet Basho. This course does not assume or require any previous exposure to or course work in Japanese literature, history, or language." 
   }, 
   { 
     "name": "JAPAN.7B", 
@@ -30440,7 +30440,7 @@ courses = [
     "number": 115, 
     "units": 4, 
     "title": "Japanese Buddhism", 
-    "description": "A critical survey of the main themes in the history of Japanese Buddhism as they are treated in modern scholarship. The course covers the transmission of Buddhism from China and Korea to Japan; the subsequent evolution in Japan of the Tendai, Shingon, Pure Land, Nichiren, and Zen schools of Buddhism; the organization and function of Buddhist institutions (monastic and lay) in Japanese society; the interaction between Buddhism and other modes of religious belief and practice prevalent in Japan, notably those that go under the headings of "Shinto" and "folk religion." Also listed as Group in Buddhist Studies C115." 
+    "description": "A critical survey of the main themes in the history of Japanese Buddhism as they are treated in modern scholarship. The course covers the transmission of Buddhism from China and Korea to Japan; the subsequent evolution in Japan of the Tendai, Shingon, Pure Land, Nichiren, and Zen schools of Buddhism; the organization and function of Buddhist institutions (monastic and lay) in Japanese society; the interaction between Buddhism and other modes of religious belief and practice prevalent in Japan, notably those that go under the headings of 'Shinto' and 'folk religion.' Also listed as Group in Buddhist Studies C115." 
   }, 
   { 
     "name": "JAPAN.C174", 
@@ -30755,7 +30755,7 @@ courses = [
     "number": 197, 
     "units": 1, 
     "title": "Field Study in Journalism", 
-    "description": "Supervised experience in the practice of journalism in off-campus organizations. Individual meetings with faculty sponsor and written reports required. See Additional Information, "Field Study and Internships."" 
+    "description": "Supervised experience in the practice of journalism in off-campus organizations. Individual meetings with faculty sponsor and written reports required. See Additional Information, 'Field Study and Internships.'" 
   }, 
   { 
     "name": "JOURN.198", 
@@ -30811,7 +30811,7 @@ courses = [
     "number": 212, 
     "units": 1, 
     "title": "Advanced Radio", 
-    "description": "Radio students may continue to develop their news and production skills in several formats: (1) the reporting and production of the weekly "Inside Oakland" program (broadcast on KALX-FM). Each episode explores a specific theme with focus on the geographic, cultural, and political entity known as Oakland; (2) the collaborative production of a documentary program focusing on a particular topic; (3) the development and production of independent long-form pieces for broadcast on different outlets." 
+    "description": "Radio students may continue to develop their news and production skills in several formats: (1) the reporting and production of the weekly 'Inside Oakland' program (broadcast on KALX-FM). Each episode explores a specific theme with focus on the geographic, cultural, and political entity known as Oakland; (2) the collaborative production of a documentary program focusing on a particular topic; (3) the development and production of independent long-form pieces for broadcast on different outlets." 
   }, 
   { 
     "name": "JOURN.213", 
@@ -30846,7 +30846,7 @@ courses = [
     "number": 217, 
     "units": 3, 
     "title": "Introduction to Visual Journalism", 
-    "description": ""Visual Journalism" explores narratives as they are designed, produced, and consumed in various digital forms. This course serves as your introduction to visual journalism. There is no question that the modern journalist requires a platform-agnostic mindset, along with a broad set of multi-platform newsgathering skills and fluency in the current tools while also upholding the timeless journalistic standards of news judgment, accuracy, fairness and truth." 
+    "description": "'Visual Journalism' explores narratives as they are designed, produced, and consumed in various digital forms. This course serves as your introduction to visual journalism. There is no question that the modern journalist requires a platform-agnostic mindset, along with a broad set of multi-platform newsgathering skills and fluency in the current tools while also upholding the timeless journalistic standards of news judgment, accuracy, fairness and truth." 
   }, 
   { 
     "name": "JOURN.219", 
@@ -30881,7 +30881,7 @@ courses = [
     "number": 223, 
     "units": 3, 
     "title": "Advanced Visual Journalism", 
-    "description": ""Visual journalism" explores narratives as they are designed, produced, and consumed in various digital forms. Students will have the opportunity to explore various digital technologies, create and produce narratives, and analyze stories in digital forms. DSLR video narrative, animated visual explainers, data visualization design will all be explored and will serve as the primary areas of inquiry for this project-driven course." 
+    "description": "'Visual journalism' explores narratives as they are designed, produced, and consumed in various digital forms. Students will have the opportunity to explore various digital technologies, create and produce narratives, and analyze stories in digital forms. DSLR video narrative, animated visual explainers, data visualization design will all be explored and will serve as the primary areas of inquiry for this project-driven course." 
   }, 
   { 
     "name": "JOURN.226", 
@@ -30965,7 +30965,7 @@ courses = [
     "number": 260, 
     "units": 2, 
     "title": "Investigative Reporting for TV and Print", 
-    "description": "Students will be required to investigate leads that are received by the faculty, and prepare briefing papers for the class to introduce guest speakers. They will work on researching and reporting assignments related to documentary productions and print stories for different outlets. "Sources," people with informtion critical to developing a story, need to be developed. The responsibilites of a reporter engaged in developing sourses will be a constant theme of the seminar." 
+    "description": "Students will be required to investigate leads that are received by the faculty, and prepare briefing papers for the class to introduce guest speakers. They will work on researching and reporting assignments related to documentary productions and print stories for different outlets. 'Sources,' people with informtion critical to developing a story, need to be developed. The responsibilites of a reporter engaged in developing sourses will be a constant theme of the seminar." 
   }, 
   { 
     "name": "JOURN.275", 
@@ -31014,7 +31014,7 @@ courses = [
     "number": 287, 
     "units": 1, 
     "title": "Inside <Frontline>", 
-    "description": "This seminar course provides students with the opportunity to meet with and discuss projects with <Frontline> producers and reporters. Each session will focus on a single documentary episode and take an in-depth look on the development of the story out of an idea, the journalistic approach and methods used by the team, the process of finding and creating the appropriate dramatic structure, and the public impact and critique of the program." 
+    "description": "This seminar course provides students with the opportunity to meet with and discuss projects with 'Frontline' producers and reporters. Each session will focus on a single documentary episode and take an in-depth look on the development of the story out of an idea, the journalistic approach and methods used by the team, the process of finding and creating the appropriate dramatic structure, and the public impact and critique of the program." 
   }, 
   { 
     "name": "JOURN.290", 
@@ -31035,7 +31035,7 @@ courses = [
     "number": 297, 
     "units": 1, 
     "title": "Field Study in Journalism", 
-    "description": "Supervised experience in the practice of journalism in off-campus organizations. Individual meeting with faculty sponsor and written reports required. See Additional Information, "Field Study and Internships."" 
+    "description": "Supervised experience in the practice of journalism in off-campus organizations. Individual meeting with faculty sponsor and written reports required. See Additional Information, 'Field Study and Internships.'" 
   }, 
   { 
     "name": "JOURN.298", 
@@ -31119,7 +31119,7 @@ courses = [
     "number": 100, 
     "units": 5, 
     "title": "Intermediate Khmer", 
-    "description": "Non-native speakers who have completed Beginning Khmer will build spoken proficiency with emphasis on everyday "storytelling" and the expression of emotions, feelings, and opinions. Students will gain experience reading progressively difficult authentic Khmer texts, including folk tales and newspaper articles. Native speakers with family exposure to Khmer will be introduced to the writing system. They will quickly "catch up" with non-native classmates who have studied the writing system before. All students will study important patterns and structures in Khmer grammar and morphology, and gain a foundation in formal spoken Khmer, express opinions and positions, form arguments, and learn to discuss a variety of topics with educated Khmer speakers. These include Khmer religion, village culture, news, and advertising." 
+    "description": "Non-native speakers who have completed Beginning Khmer will build spoken proficiency with emphasis on everyday 'storytelling' and the expression of emotions, feelings, and opinions. Students will gain experience reading progressively difficult authentic Khmer texts, including folk tales and newspaper articles. Native speakers with family exposure to Khmer will be introduced to the writing system. They will quickly 'catch up' with non-native classmates who have studied the writing system before. All students will study important patterns and structures in Khmer grammar and morphology, and gain a foundation in formal spoken Khmer, express opinions and positions, form arguments, and learn to discuss a variety of topics with educated Khmer speakers. These include Khmer religion, village culture, news, and advertising." 
   }, 
   { 
     "name": "KHMER.100B", 
@@ -31133,7 +31133,7 @@ courses = [
     "number": 101, 
     "units": 3, 
     "title": "Advanced Khmer", 
-    "description": "This course continues the themes and goals of 100B. Students will focus on the same broad topics covered in Intermediate Khmer--religion, traditional culture, and the language of public information (news and advertising)--but they will learn more advanced vocabulary and grammatical structures necessary for the discussion of these topics with educated native speakers, and read more advanced texts dealing with these topics than the Intermediate students. Additional material beyond the Intermediate curriculum includes reading and analyzing historical folk tales, learning to discuss the rice-farming cycle, and acquiring the tools to discuss research and "development" work in Cambodia at a sophisticated level." 
+    "description": "This course continues the themes and goals of 100B. Students will focus on the same broad topics covered in Intermediate Khmer--religion, traditional culture, and the language of public information (news and advertising)--but they will learn more advanced vocabulary and grammatical structures necessary for the discussion of these topics with educated native speakers, and read more advanced texts dealing with these topics than the Intermediate students. Additional material beyond the Intermediate curriculum includes reading and analyzing historical folk tales, learning to discuss the rice-farming cycle, and acquiring the tools to discuss research and 'development' work in Cambodia at a sophisticated level." 
   }, 
   { 
     "name": "KHMER.101B", 
@@ -31147,14 +31147,14 @@ courses = [
     "number": 1, 
     "units": 5, 
     "title": "Introductory Khmer", 
-    "description": "Provides a command of the basic structures of standard spoken Cambodian and tools for reading and writing elementary texts. Through use of computer-based materials, a textbook, and communicative practice, students gain a foundation in "survival" spoken Khmer. This involves memorization of question and answer exchanges in Khmer which students are likely to encounter in modern Cambodia. Topics include greetings, speaking to teachers and elders and discussing language learning, talking about family and personal history, and food. Students learn the Khmer alphabet and important sight-words and to read and write simple sentences on everyday topics. Intended for non-native speakers of Khmer with no oral or aural comprehension in the language. Students will also learn important basic behaviors and courtesies necessary for smooth interaction in Khmer society and culture." 
+    "description": "Provides a command of the basic structures of standard spoken Cambodian and tools for reading and writing elementary texts. Through use of computer-based materials, a textbook, and communicative practice, students gain a foundation in 'survival' spoken Khmer. This involves memorization of question and answer exchanges in Khmer which students are likely to encounter in modern Cambodia. Topics include greetings, speaking to teachers and elders and discussing language learning, talking about family and personal history, and food. Students learn the Khmer alphabet and important sight-words and to read and write simple sentences on everyday topics. Intended for non-native speakers of Khmer with no oral or aural comprehension in the language. Students will also learn important basic behaviors and courtesies necessary for smooth interaction in Khmer society and culture." 
   }, 
   { 
     "name": "KHMER.1B", 
     "number": 1, 
     "units": 5, 
     "title": "Introductory Khmer", 
-    "description": "Students complete their study of everyday standard Khmer to a "survival" level. While the memorization of vocabulary and common personal exchanges practiced in 1A will make up the majority of material studied, students will have some opportunity to learn to improvise and talk about personal work and research interests in Khmer. Topics include transportation and directions, the world of work, religion, health, and conducting daily life in Cambodia. Students learn to read simple authentic texts such as folk tales, personal letters, forms, and roadside signs. Students continue their study of culturally appropriate behavior in the context of Khmer culture, including notions of "saving face" and maintaining social harmony, and how these are expressed in both spoken language and in one's actions." 
+    "description": "Students complete their study of everyday standard Khmer to a 'survival' level. While the memorization of vocabulary and common personal exchanges practiced in 1A will make up the majority of material studied, students will have some opportunity to learn to improvise and talk about personal work and research interests in Khmer. Topics include transportation and directions, the world of work, religion, health, and conducting daily life in Cambodia. Students learn to read simple authentic texts such as folk tales, personal letters, forms, and roadside signs. Students continue their study of culturally appropriate behavior in the context of Khmer culture, including notions of 'saving face' and maintaining social harmony, and how these are expressed in both spoken language and in one's actions." 
   }, 
   { 
     "name": "KOREAN.100A", 
@@ -31245,7 +31245,7 @@ courses = [
     "number": 130, 
     "units": 4, 
     "title": "Genre and Occasion in Traditional Poetry", 
-    "description": "This course will examine traditional <hyangga, sijo, kasa, hansi,> and <akchang> poetry, and consider the performative and cultural contexts of compositional practice before the 20th century. The course is intended to introduce key verse forms as well as basic reading knowledge of premodern Korean texts. Topics will vary." 
+    "description": "This course will examine traditional 'hyangga, sijo, kasa, hansi,' and 'akchang' poetry, and consider the performative and cultural contexts of compositional practice before the 20th century. The course is intended to introduce key verse forms as well as basic reading knowledge of premodern Korean texts. Topics will vary." 
   }, 
   { 
     "name": "KOREAN.140", 
@@ -31294,7 +31294,7 @@ courses = [
     "number": 185, 
     "units": 4, 
     "title": "Picturing Korea", 
-    "description": "This course explores the role of modern visual media in shaping geopolitical, cultural, and historical imaginations of Korea during the last hundred years. Drawing examples from photographs, films, and literature, produced in and outside Korea, the course aims to consider the idea of "Korea" primarily via images constructed through transnational cultural networks. Consideration will be given to the relationship between visual media and cultural memory. We will think in particular about the ways in which globally accessible visual media such as photography and film narrate the key local sites of contested memories of colonization, war, and political violence." 
+    "description": "This course explores the role of modern visual media in shaping geopolitical, cultural, and historical imaginations of Korea during the last hundred years. Drawing examples from photographs, films, and literature, produced in and outside Korea, the course aims to consider the idea of 'Korea' primarily via images constructed through transnational cultural networks. Consideration will be given to the relationship between visual media and cultural memory. We will think in particular about the ways in which globally accessible visual media such as photography and film narrate the key local sites of contested memories of colonization, war, and political violence." 
   }, 
   { 
     "name": "KOREAN.186", 
@@ -31420,7 +31420,7 @@ courses = [
     "number": 7, 
     "units": 4, 
     "title": "Introduction to Modern Korean Literature and Culture", 
-    "description": "A survey of modern Korean literature and culture in the 20th century, focusing on the development of nationalist aesthetics in both North and South Korea. Topics include "new woman" narratives, urban culture, colonial modernity, war and trauma, and diaspora. Texts to be examined include works of fiction, poetry, art, and film. All readings are in English." 
+    "description": "A survey of modern Korean literature and culture in the 20th century, focusing on the development of nationalist aesthetics in both North and South Korea. Topics include 'new woman' narratives, urban culture, colonial modernity, war and trauma, and diaspora. Texts to be examined include works of fiction, poetry, art, and film. All readings are in English." 
   }, 
   { 
     "name": "KOREAN.84", 
@@ -31609,7 +31609,7 @@ courses = [
     "number": 116, 
     "units": 4, 
     "title": "Lucretius, Vergil's <Georgics>", 
-    "description": "Readings in the <De Rerum Natura> and the <Georgics>." 
+    "description": "Readings in the 'De Rerum Natura' and the 'Georgics'." 
   }, 
   { 
     "name": "LATIN.119", 
@@ -31679,7 +31679,7 @@ courses = [
     "number": 40, 
     "units": 4, 
     "title": "Intermediate Latin Prose Composition", 
-    "description": "<Formerly Latin 40A.> Development of skills in writing Latin prose and sight reading; review of grammar." 
+    "description": "'Formerly Latin 40A.' Development of skills in writing Latin prose and sight reading; review of grammar." 
   }, 
   { 
     "name": "LATIN.98", 
@@ -31812,7 +31812,7 @@ courses = [
     "number": 132, 
     "units": 2, 
     "title": "Computer Applications for Environmental Design", 
-    "description": "This course consists of both a lecture and a "hands-on" laboratory session each week. The lecture is structured as a seminar in which the instructor and students discuss problems and CAD solutions in landscape design. The laboratory provides a practical introduction to some tools for spatial data manipulation in CAD." 
+    "description": "This course consists of both a lecture and a 'hands-on' laboratory session each week. The lecture is structured as a seminar in which the instructor and students discuss problems and CAD solutions in landscape design. The laboratory provides a practical introduction to some tools for spatial data manipulation in CAD." 
   }, 
   { 
     "name": "LD ARCH.134A", 
@@ -31931,7 +31931,7 @@ courses = [
     "number": 202, 
     "units": 5, 
     "title": "Design of Landscape Sites", 
-    "description": "A site design studio stressing the shaping and coordination of ideas from initial concept to complete design of open space in various contexts. Typical projects will be of an intermediate scale and might include a park, plaza, museum sculpture garden, playground, office park, or housing project. Modules on social factors and planting design are included."
+    "description": "A site design studio stressing the shaping and coordination of ideas from initial concept to complete design of open space in various contexts. Typical projects will be of an intermediate scale and might include a park, plaza, museum sculpture garden, playground, office park, or housing project. Modules on social factors and planting design are included." 
   }, 
   { 
     "name": "LD ARCH.203", 
@@ -32015,7 +32015,7 @@ courses = [
     "number": 232, 
     "units": 3, 
     "title": "The Landscape As a Sacred Place", 
-    "description": "Visual and cultural analysis of landscapes, inventory procedures for "place" values, and problems related to sustainable design development, with special emphasis on highly valued places." 
+    "description": "Visual and cultural analysis of landscapes, inventory procedures for 'place' values, and problems related to sustainable design development, with special emphasis on highly valued places." 
   }, 
   { 
     "name": "LD ARCH.24", 
@@ -32085,7 +32085,7 @@ courses = [
     "number": 271, 
     "units": 2, 
     "title": "The Literature of the Landscape Architecture Profession", 
-    "description": "Investigation of ideas in landscape architecture through the study of <Landscape Architecture,> the discipline's primary American professional magazine. Beginning with the premier 1911 issue, five to ten year blocks of time will be studied to identify major values, theories and methods covered by the magazine in each given period. The content of the magazine articles will be related to other design and planning publications of the same period. The intent is to trace and understand the evolving focus of the landscape architecture profession and how it has responded to broader cultural movements. Topics may include aesthetics, ecological determinism, artistic movements, social values, preservation/conservation issues and the role of the professional in public life." 
+    "description": "Investigation of ideas in landscape architecture through the study of 'Landscape Architecture,' the discipline's primary American professional magazine. Beginning with the premier 1911 issue, five to ten year blocks of time will be studied to identify major values, theories and methods covered by the magazine in each given period. The content of the magazine articles will be related to other design and planning publications of the same period. The intent is to trace and understand the evolving focus of the landscape architecture profession and how it has responded to broader cultural movements. Topics may include aesthetics, ecological determinism, artistic movements, social values, preservation/conservation issues and the role of the professional in public life." 
   }, 
   { 
     "name": "LD ARCH.295", 
@@ -32218,7 +32218,7 @@ courses = [
     "number": 231, 
     "units": 3, 
     "title": "Environmental Planning and Regulation", 
-    "description": "This course will examine emerging trends in environmental planning and policy and the basic regulatory framework for environmental planning encountered in the U.S. We will also relate the institutional and policy framework of California and the United States to other nations and emerging international institutions. The emphasis of the course will be on regulating "residuals" as they affect three media: air, water, and land. Also listed as City and Regional Planning C251." 
+    "description": "This course will examine emerging trends in environmental planning and policy and the basic regulatory framework for environmental planning encountered in the U.S. We will also relate the institutional and policy framework of California and the United States to other nations and emerging international institutions. The emphasis of the course will be on regulating 'residuals' as they affect three media: air, water, and land. Also listed as City and Regional Planning C251." 
   }, 
   { 
     "name": "LD ARCH.C237", 
@@ -32288,7 +32288,7 @@ courses = [
     "number": 107, 
     "units": 4, 
     "title": "Theories of Justice", 
-    "description": "Major perspectives in social and economic thought, e.g., natural law, natural right, laissez faire, "possessive individualism," contractualism, pluralism, and social equality as they affect contemporary discussion of "higher law," fairness, civic competence, and distributive justice." 
+    "description": "Major perspectives in social and economic thought, e.g., natural law, natural right, laissez faire, 'possessive individualism,' contractualism, pluralism, and social equality as they affect contemporary discussion of 'higher law,' fairness, civic competence, and distributive justice." 
   }, 
   { 
     "name": "LEGALST.109", 
@@ -32316,7 +32316,7 @@ courses = [
     "number": 132, 
     "units": 4, 
     "title": "Immigration and Citizenship", 
-    "description": "We often hear that America is a "nation of immigrants." This representation of the U.S. does not explain why some are presumed to belong and others are not. We will examine both historical and contemporary law of immigration and citizenship to see how law has shaped national identity and the identity of immigrant communities. In addition to scholarly texts, we will read and analyze excerpts of cases and the statute that governs immigration and citizenship, the Immigration and Nationality Act." 
+    "description": "We often hear that America is a 'nation of immigrants.' This representation of the U.S. does not explain why some are presumed to belong and others are not. We will examine both historical and contemporary law of immigration and citizenship to see how law has shaped national identity and the identity of immigrant communities. In addition to scholarly texts, we will read and analyze excerpts of cases and the statute that governs immigration and citizenship, the Immigration and Nationality Act." 
   }, 
   { 
     "name": "LEGALST.138", 
@@ -32379,21 +32379,21 @@ courses = [
     "number": 155, 
     "units": 4, 
     "title": "Government and the Family", 
-    "description": "How has the law constructed and deconstructed "family" relationships? What are the common law, statutory, and constitutional principles that affect the formation, regulation, and dissolution of families? How do these principles, as well as diverse cultural and social values, guide the state in determining marriage, family, and child welfare policies?" 
+    "description": "How has the law constructed and deconstructed 'family' relationships? What are the common law, statutory, and constitutional principles that affect the formation, regulation, and dissolution of families? How do these principles, as well as diverse cultural and social values, guide the state in determining marriage, family, and child welfare policies?" 
   }, 
   { 
     "name": "LEGALST.158", 
     "number": 158, 
     "units": 4, 
     "title": "Law and Development", 
-    "description": "Focusing on developing countries, this course considers the relationship between legal institutions and rules--including informal and traditional ones--and development--defined by different actors by economic growth, education, health, or a wide spectrum of freedoms. It examines efforts by national leaders, international organizations, foreign aid agencies, and NGOs to "reform" law to promote development, along with the resistance and unplanned consequences that often ensue." 
+    "description": "Focusing on developing countries, this course considers the relationship between legal institutions and rules--including informal and traditional ones--and development--defined by different actors by economic growth, education, health, or a wide spectrum of freedoms. It examines efforts by national leaders, international organizations, foreign aid agencies, and NGOs to 'reform' law to promote development, along with the resistance and unplanned consequences that often ensue." 
   }, 
   { 
     "name": "LEGALST.160", 
     "number": 160, 
     "units": 4, 
     "title": "Punishment, Culture, and Society", 
-    "description": "This course surveys the development of Western penal practices, institutions, and ideas (what David Garland calls "penality") from the eighteenth-century period to the present. Our primary focus will be on penal practices and discourses in the United States in the early 21st century. In particular we will examine the extraordinary growth of US penal sanctions in the last quarter century and the sources and consequences of what some have called "mass imprisonment."" 
+    "description": "This course surveys the development of Western penal practices, institutions, and ideas (what David Garland calls 'penality') from the eighteenth-century period to the present. Our primary focus will be on penal practices and discourses in the United States in the early 21st century. In particular we will examine the extraordinary growth of US penal sanctions in the last quarter century and the sources and consequences of what some have called 'mass imprisonment.'" 
   }, 
   { 
     "name": "LEGALST.161", 
@@ -32442,7 +32442,7 @@ courses = [
     "number": 174, 
     "units": 4, 
     "title": "Comparative Constitutional Law: The Case of Israel", 
-    "description": "This course will provide an introduction to constitutional law using Israel as a case study. Topics include: Constitutionalism and judicial review, state neutrality and self-determination, minority rights, state and religion, Human Rights Law, the concept of "defensive democracy" and ban of non-democratic political parties, legal aspects of the fight on terror, freedom of expression, equality and anti-discrimination, social rights, and constitutional limitations on privatization." 
+    "description": "This course will provide an introduction to constitutional law using Israel as a case study. Topics include: Constitutionalism and judicial review, state neutrality and self-determination, minority rights, state and religion, Human Rights Law, the concept of 'defensive democracy' and ban of non-democratic political parties, legal aspects of the fight on terror, freedom of expression, equality and anti-discrimination, social rights, and constitutional limitations on privatization." 
   }, 
   { 
     "name": "LEGALST.176", 
@@ -32505,21 +32505,21 @@ courses = [
     "number": 184, 
     "units": 4, 
     "title": "Sociology of Law", 
-    "description": "This course explores major issues and debates in the sociology of law. Topics include theoretical perspectives on the relationship between law and society, theories of why people obey (and disobey) the law, the relationship between law and social norms, the "law in action" in litigation and dispute resolution, the roles of lawyers, judges, and juries in the legal system and in society, and the role of law in social change. The course will examine these issues from an empirical perspective." 
+    "description": "This course explores major issues and debates in the sociology of law. Topics include theoretical perspectives on the relationship between law and society, theories of why people obey (and disobey) the law, the relationship between law and social norms, the 'law in action' in litigation and dispute resolution, the roles of lawyers, judges, and juries in the legal system and in society, and the role of law in social change. The course will examine these issues from an empirical perspective." 
   }, 
   { 
     "name": "LEGALST.185AC", 
     "number": 185, 
     "units": 4, 
     "title": "Prison", 
-    "description": "Taking a broad interdisciplinary approach, this course embraces the longue duree of critical prison studies, questioning the shadows of normality that cloak mass incarceration both across the globe and, more particularly, in the contemporary United States. This course thus explores a series of visceral, unsettling juxtapositions: "freedom" and "slavery"; "citizenship" and "subjugation"; "marginalization" and "inclusion", in each case explicating the ways that story making, political demagoguery, and racial, class, and sexual inequalities have wrought an untenable social condition. Also listed as Ethnic Studies 181AC and Architecture 180AC." 
+    "description": "Taking a broad interdisciplinary approach, this course embraces the longue duree of critical prison studies, questioning the shadows of normality that cloak mass incarceration both across the globe and, more particularly, in the contemporary United States. This course thus explores a series of visceral, unsettling juxtapositions: 'freedom' and 'slavery'; 'citizenship' and 'subjugation'; 'marginalization' and 'inclusion', in each case explicating the ways that story making, political demagoguery, and racial, class, and sexual inequalities have wrought an untenable social condition. Also listed as Ethnic Studies 181AC and Architecture 180AC." 
   }, 
   { 
     "name": "LEGALST.189", 
     "number": 189, 
     "units": 4, 
     "title": "Feminist Jurisprudence", 
-    "description": "This course will explore the ways in which feminist theory has shaped conceptions of the law, as well as examine a range of feminist legal theories, including equality, difference, dominance, intersectional, poststructural, postcolonial theories. It will ask how these theories have shaped legal interventions in areas including workplace/educational access, sexualized coercion, work/family conflict, "cultural" defenses, and globalized sweatshop labor." 
+    "description": "This course will explore the ways in which feminist theory has shaped conceptions of the law, as well as examine a range of feminist legal theories, including equality, difference, dominance, intersectional, poststructural, postcolonial theories. It will ask how these theories have shaped legal interventions in areas including workplace/educational access, sexualized coercion, work/family conflict, 'cultural' defenses, and globalized sweatshop labor." 
   }, 
   { 
     "name": "LEGALST.190", 
@@ -32652,14 +32652,14 @@ courses = [
     "number": 146, 
     "units": 4, 
     "title": "Cultural Representations of Sexualities: Queer Literary Culture", 
-    "description": "This course examines modern literary cultures that construct ways of seeing diverse sexualities. Considering Western conventions of representation during the modern period, we will investigate the social forces and institutions that would be necessary to sustain a newly imagined or re-imagined sexual identity across time. Also listed as Gender and Women's Studies C146A." 
+    "description": "This course examines modern literary cultures that construct ways of seeing diverse sexualities. Considering Western conventions of representation during the modern period, we will investigate the social forces and institutions that would be necessary to sustain a newly imagined or re-imagined sexual identity across time. Also listed as Gender and Women's Studies C146A."
   }, 
   { 
     "name": "LGBT.C146B", 
     "number": 146, 
     "units": 4, 
     "title": "Cultural Representations of Sexualities: Queer Visual Culture", 
-    "description": "This course examines modern visual cultures that construct ways of seeing diverse sexualities. Considering Western conventions of representation during the modern period, we will investigate film, television, and video. How and when do "normative" and "queer" sexualities become visually defined? Also listed as Gender and Women's Studies C146B."
+    "description": "This course examines modern visual cultures that construct ways of seeing diverse sexualities. Considering Western conventions of representation during the modern period, we will investigate film, television, and video. How and when do 'normative' and 'queer' sexualities become visually defined? Also listed as Gender and Women's Studies C146B." 
   }, 
   { 
     "name": "LGBT.C147B", 
@@ -32792,7 +32792,7 @@ courses = [
     "number": 146, 
     "units": 3, 
     "title": "Language Acquisition", 
-    "description": "An overview of topics and theories in language acquisition: early development of speech perception and production, word learning, generalizing linguistic structure, and differences between first language acquisition, second language acquisition, and bilingualism. We will also compare different theoretical approaches, and address the classic "nature vs. nurture" question by examining both traditional generativist approaches and more recent usage based models." 
+    "description": "An overview of topics and theories in language acquisition: early development of speech perception and production, word learning, generalizing linguistic structure, and differences between first language acquisition, second language acquisition, and bilingualism. We will also compare different theoretical approaches, and address the classic 'nature vs. nurture' question by examining both traditional generativist approaches and more recent usage based models." 
   }, 
   { 
     "name": "LINGUIS.150", 
@@ -32932,7 +32932,7 @@ courses = [
     "number": 210, 
     "units": 3, 
     "title": "Phonetic Theory", 
-    "description": "A reading course focusing on theories of speech production, perception, and acoustics as they relate to phonetic and phonological patterns found in the languages of the world. Students write 5-8 "responses" to target articles, and the class as a whole reads background articles and books that place the target articles into their context." 
+    "description": "A reading course focusing on theories of speech production, perception, and acoustics as they relate to phonetic and phonological patterns found in the languages of the world. Students write 5-8 'responses' to target articles, and the class as a whole reads background articles and books that place the target articles into their context." 
   }, 
   { 
     "name": "LINGUIS.211A", 
@@ -33212,7 +33212,7 @@ courses = [
     "number": 375, 
     "units": 2, 
     "title": "Training for Linguistics Teaching Assistants", 
-    "description": "A teaching-methods "clinic" for first-time Linguistics GSI's. Sessions will deal with the presentation of linguistic concepts in each of the foundation courses, the creation of homework assignments and examination, policies and practices regarding correction of students' work, grading, and feedback." 
+    "description": "A teaching-methods 'clinic' for first-time Linguistics GSI's. Sessions will deal with the presentation of linguistic concepts in each of the foundation courses, the creation of homework assignments and examination, policies and practices regarding correction of students' work, grading, and feedback." 
   }, 
   { 
     "name": "LINGUIS.39", 
@@ -33226,7 +33226,7 @@ courses = [
     "number": 40, 
     "units": 3, 
     "title": "Language of Advertising", 
-    "description": "The ways in which language is used in advertising. An introduction to basic linguistic principles of how speech acts work, the semantic effects of framing, and the contribution of language to multimodal print and video advertising: the division of labor between images and words, and different strategies in integrating them into a single message. Cultural differences both in advertising "message strategies" (what content is presented) and in "formal strategies" (how is it presented?)." 
+    "description": "The ways in which language is used in advertising. An introduction to basic linguistic principles of how speech acts work, the semantic effects of framing, and the contribution of language to multimodal print and video advertising: the division of labor between images and words, and different strategies in integrating them into a single message. Cultural differences both in advertising 'message strategies' (what content is presented) and in 'formal strategies' (how is it presented?)." 
   }, 
   { 
     "name": "LINGUIS.47", 
@@ -33331,7 +33331,7 @@ courses = [
     "number": 146, 
     "units": 3, 
     "title": "Language Acquisition", 
-    "description": "An overview of topics and theories in language acquisition: early development of speech perception and production, word learning, generalizing linguistic structure, and differences between first language acquisition, second language acquisition, and bilingualism. We will also compare different theoretical approaches, and address the classic "nature vs. nurture" question by examining both traditional generativist approaches and more recent usage based models. Also listed as Psychology C143." 
+    "description": "An overview of topics and theories in language acquisition: early development of speech perception and production, word learning, generalizing linguistic structure, and differences between first language acquisition, second language acquisition, and bilingualism. We will also compare different theoretical approaches, and address the classic 'nature vs. nurture' question by examining both traditional generativist approaches and more recent usage based models. Also listed as Psychology C143." 
   }, 
   { 
     "name": "LINGUIS.C147", 
@@ -33569,7 +33569,7 @@ courses = [
     "number": 22, 
     "units": 3, 
     "title": "Sense and Sensibility and Science", 
-    "description": "The approaches to problem solving developed by scientists have proven to be effective, and yet we as individuals, groups, and larger societies do not often seem to be able to take advantage even of rational approaches to problems--let alone the "hyperrationality" offered by science. Rationality by itself does not solve any problems or answer any questions. Its efficaciousness depends on how we combine it with our drives, goals, and desires--and perhaps our less-linear algorithm-based intuitions." 
+    "description": "The approaches to problem solving developed by scientists have proven to be effective, and yet we as individuals, groups, and larger societies do not often seem to be able to take advantage even of rational approaches to problems--let alone the 'hyperrationality' offered by science. Rationality by itself does not solve any problems or answer any questions. Its efficaciousness depends on how we combine it with our drives, goals, and desires--and perhaps our less-linear algorithm-based intuitions." 
   }, 
   { 
     "name": "LNS.24", 
@@ -33863,7 +33863,7 @@ courses = [
     "number": 160, 
     "units": 4, 
     "title": "Philosophy of Mind", 
-    "description": "Mind and matter; other minds; the concept of "person." Also listed as Philosophy C132." 
+    "description": "Mind and matter; other minds; the concept of 'person.' Also listed as Philosophy C132." 
   }, 
   { 
     "name": "LNS.C160V", 
@@ -33891,7 +33891,7 @@ courses = [
     "number": 180, 
     "units": 4, 
     "title": "Social Psychology: Self and Society", 
-    "description": "This survey course provides tools from social psychology to help students develop a better understanding of their own and others' behavior. Social psychology is a field that bridges sociology and psychology and is primarily concerned with how individuals view and interact with one another in everyday life. The class is organized around a survey of the great ideas from the history of social psychology. We will study research on a wide variety of topics including conformity, obedience, identity, power, status, and interpersonal perception. Also listed as Sociology C150A." 
+    "description": "This survey course provides tools from social psychology to help students develop a better understanding of their own and others' behavior. Social psychology is a field that bridges sociology and psychology and is primarily concerned with how individuals view and interact with one another in everyday life. The class is organized around a survey of the great ideas from the history of social psychology. We will study research on a wide variety of topics including conformity, obedience, identity, power, status, and interpersonal perception. Also listed as Sociology C150A."
   }, 
   { 
     "name": "LNS.C180W", 
@@ -33905,7 +33905,7 @@ courses = [
     "number": 180, 
     "units": 4, 
     "title": "Arts and Cultural Policy", 
-    "description": "Survey of government policy toward the arts (especially direct subsidy, copyright and regulation, and indirect assistance) and its effects on artists, audiences, and institutions. Emphasizes "highbrow" arts, U.S. policy, and the social and economic roles of participants in the arts. Readings, field trips, and case discussion. One paper in two drafts required for undergraduate credit; graduate credit awarded for an additional short paper to be arranged and attendance at four advanced colloquia throughout the term. Undergraduate level of 257. Also listed as Public Policy C157." 
+    "description": "Survey of government policy toward the arts (especially direct subsidy, copyright and regulation, and indirect assistance) and its effects on artists, audiences, and institutions. Emphasizes 'highbrow' arts, U.S. policy, and the social and economic roles of participants in the arts. Readings, field trips, and case discussion. One paper in two drafts required for undergraduate credit; graduate credit awarded for an additional short paper to be arranged and attendance at four advanced colloquia throughout the term. Undergraduate level of 257. Also listed as Public Policy C157." 
   }, 
   { 
     "name": "LNS.C30T", 
@@ -33940,7 +33940,7 @@ courses = [
     "number": 40, 
     "units": 4, 
     "title": "Introduction to American Studies: Hollywood: the Place, the Industry, the Fantasy", 
-    "description": "This course will introduce students to the interdisciplinary field of American Studies, taking the "Hollywood Dream Factory" as the central theme. Focusing on both parts of that phrase, the course will proceed along a double path. We will examine the historical and geographical development of the motion picture industry from the rise of the studio system to the "new" entertainment economy of the 1980's and we will examine ways Hollywood is represented in literature and film. Also listed as American Studies C10." 
+    "description": "This course will introduce students to the interdisciplinary field of American Studies, taking the 'Hollywood Dream Factory' as the central theme. Focusing on both parts of that phrase, the course will proceed along a double path. We will examine the historical and geographical development of the motion picture industry from the rise of the studio system to the 'new' entertainment economy of the 1980's and we will examine ways Hollywood is represented in literature and film. Also listed as American Studies C10." 
   }, 
   { 
     "name": "LNS.C5", 
@@ -34052,7 +34052,7 @@ courses = [
     "number": 194, 
     "units": 3, 
     "title": "On-Line Research and Digital Production for Middle Eastern Studies", 
-    "description": "This workshop is intended for Middle Eastern Studies majors undertaking senior theses projects. It should be taken in the spring semester, while students are enrolled in MES 190/H195: "Senior Thesis in MES." Students in this workshop will explore online research tools and web-building techniques with an aim to complement their theses with multimedia websites that disseminate their findings and demonstrate their capacity for research to a wider audience. Moreover, the study of these tools, techniques, and publishing platforms will enable students to hone their digital literacy in an increasingly connected online world." 
+    "description": "This workshop is intended for Middle Eastern Studies majors undertaking senior theses projects. It should be taken in the spring semester, while students are enrolled in MES 190/H195: 'Senior Thesis in MES.' Students in this workshop will explore online research tools and web-building techniques with an aim to complement their theses with multimedia websites that disseminate their findings and demonstrate their capacity for research to a wider audience. Moreover, the study of these tools, techniques, and publishing platforms will enable students to hone their digital literacy in an increasingly connected online world." 
   }, 
   { 
     "name": "M E STU.198", 
@@ -35053,7 +35053,7 @@ courses = [
     "number": 206, 
     "units": 4, 
     "title": "Banach Algebras and Spectral Theory", 
-    "description": "Banach algebras. Spectrum of a Banach algebra element. Gelfand theory of commutative Banach algebras. Analytic functional calculus. Hilbert space operators. C*-algebras of operators. Commutative C*-algebras. Spectral theorem for bounded self-adjoint and normal operators (both forms: the spectral integral and the "multiplication operator" formulation). Riesz theory of compact operators. Hilbert-Schmidt operators. Fredholm operators. The Fredholm index. Selected additional topics." 
+    "description": "Banach algebras. Spectrum of a Banach algebra element. Gelfand theory of commutative Banach algebras. Analytic functional calculus. Hilbert space operators. C*-algebras of operators. Commutative C*-algebras. Spectral theorem for bounded self-adjoint and normal operators (both forms: the spectral integral and the 'multiplication operator' formulation). Riesz theory of compact operators. Hilbert-Schmidt operators. Fredholm operators. The Fredholm index. Selected additional topics." 
   }, 
   { 
     "name": "MATH.207", 
@@ -35676,7 +35676,7 @@ courses = [
     "number": 200, 
     "units": 1, 
     "title": "Problem Finding, Problem Solving", 
-    "description": "Problem Finding, Problem Solving (PFPS) teaches basic skills drawn from the fields of critical thinking, design thinking and systems thinking that support innovation. Specifically, it covers ways of collecting information to characterize a problem, framing and re-framing that problem, coming up with a range of solutions and then gathering feedback to assess those solutions. Following Confucius's notion: "I hear and I forget. I see and I remember. I do and I understand." The class consists primarily of hands-on exercises to experiment with and learn the tools and techniques presented, applying them to the design and testing of alternative business models for start-up and other businesses." 
+    "description": "Problem Finding, Problem Solving (PFPS) teaches basic skills drawn from the fields of critical thinking, design thinking and systems thinking that support innovation. Specifically, it covers ways of collecting information to characterize a problem, framing and re-framing that problem, coming up with a range of solutions and then gathering feedback to assess those solutions. Following Confucius's notion: 'I hear and I forget. I see and I remember. I do and I understand.' The class consists primarily of hands-on exercises to experiment with and learn the tools and techniques presented, applying them to the design and testing of alternative business models for start-up and other businesses." 
   }, 
   { 
     "name": "MBA.200S", 
@@ -35872,7 +35872,7 @@ courses = [
     "number": 236, 
     "units": 1, 
     "title": "Behavioral Finance", 
-    "description": "This course looks at the influence of decision heuristics and biases on investor welfare, financial markets, and corporate decisions. Topics include overconfidence, attribution theory, representative heuristic, availability heuristic, anchoring and adjustment, prospect theory, "Winner's Curse," speculative bubbles, IPOs, market efficiency, limits of arbitrage, relative mis-pricing of common stocks, the tendency to trade in a highly correlated fashion, investor welfare, and market anomalies." 
+    "description": "This course looks at the influence of decision heuristics and biases on investor welfare, financial markets, and corporate decisions. Topics include overconfidence, attribution theory, representative heuristic, availability heuristic, anchoring and adjustment, prospect theory, 'Winner's Curse,' speculative bubbles, IPOs, market efficiency, limits of arbitrage, relative mis-pricing of common stocks, the tendency to trade in a highly correlated fashion, investor welfare, and market anomalies." 
   }, 
   { 
     "name": "MBA.236G", 
@@ -35907,7 +35907,7 @@ courses = [
     "number": 243, 
     "units": 3, 
     "title": "Decisions, Games, and Strategies", 
-    "description": "The course considers two techniques for guiding a managerial decision maker who has to make a choice now but will only know later whether the choice was good. Decision analysis helps if the outcome of the choice depends on "nature"; game models help if the outcome depends on human opponents (e.g., competitors). Foundations of the two techniques, and a variety of applications, are studied." 
+    "description": "The course considers two techniques for guiding a managerial decision maker who has to make a choice now but will only know later whether the choice was good. Decision analysis helps if the outcome of the choice depends on 'nature'; game models help if the outcome depends on human opponents (e.g., competitors). Foundations of the two techniques, and a variety of applications, are studied." 
   }, 
   { 
     "name": "MBA.246A", 
@@ -35942,14 +35942,14 @@ courses = [
     "number": 254, 
     "units": 2, 
     "title": "Power and Politics in Organizations", 
-    "description": "This course will provide students with a sense of "political intelligence." After taking this course, students will be able to: (1) diagnose the true distribution of power in organizations, (2) identify strategies for building sources of power, (3) develop techniques for influencing others, (4) understand the role of power in building cooperation and leading change in organizations, and (5) make sense of others' attempts to influence them. These skills are essential for effective and satisfying career building." 
+    "description": "This course will provide students with a sense of 'political intelligence.' After taking this course, students will be able to: (1) diagnose the true distribution of power in organizations, (2) identify strategies for building sources of power, (3) develop techniques for influencing others, (4) understand the role of power in building cooperation and leading change in organizations, and (5) make sense of others' attempts to influence them. These skills are essential for effective and satisfying career building." 
   }, 
   { 
     "name": "MBA.255", 
     "number": 255, 
     "units": 1, 
     "title": "Leadership", 
-    "description": "This course will increase your awareness of your own strengths and opportunities for improvement while gaining an understanding of the qualities essential to being an extraordinary leader. By the end of the course, we are hoping that you will have: Increased your understanding of what distinguishes between more and less successful leaders and construct a plan for your own development as a leader; sharpened your ability to diagnose situations and determine how you can add value; gained experience and confidence in leadership situations, such as dealing with difficult people and inspiring others to accomplish shared team and organizational goals; and developed the ability to accept and leverage feedback and offer useful feedback to others." 
+    "description": "This course will increase your awareness of your own strengths and opportunities for improvement while gaining an understanding of the qualities essential to being an extraordinary leader. By the end of the course, we are hoping that you will have: Increased your understanding of what distinguishes between more and less successful leaders and construct a plan for your own development as a leader; sharpened your ability to diagnose situations and determine how you can add value; gained experience and confidence in leadership situations, such as dealing with difficult people and inspiring others to accomplish shared team and organizational goals; and developed the ability to accept and leverage feedback and offer useful feedback to others."
   }, 
   { 
     "name": "MBA.256", 
@@ -36124,7 +36124,7 @@ courses = [
     "number": 290, 
     "units": 2, 
     "title": "Biotechnology Industry Perspectives and Business Development", 
-    "description": "This course is designed to examine the strategic issues that confront the management of the development-stage biotech company, i.e., after its startup via an initial capital infusion, but before it might be deemed successful (e.g., by virtue of a product launch), or otherwise has achieved "first-tier" status. The intention is to study the biotech organization during the process of its growth and maturation from an early-stage existence through "adolescence" into an "adult" company." 
+    "description": "This course is designed to examine the strategic issues that confront the management of the development-stage biotech company, i.e., after its startup via an initial capital infusion, but before it might be deemed successful (e.g., by virtue of a product launch), or otherwise has achieved 'first-tier' status. The intention is to study the biotech organization during the process of its growth and maturation from an early-stage existence through 'adolescence' into an 'adult' company." 
   }, 
   { 
     "name": "MBA.290D", 
@@ -36138,7 +36138,7 @@ courses = [
     "number": 290, 
     "units": 3, 
     "title": "Innovation Strategies for Emerging Technologies", 
-    "description": "Every successful entrepreneurial high tech venture has at its core individuals with mastery of two skill sets: marketing and management expertise, and technological skill. This course is intended to provide the marketing skills needed for the management of an entrepreneurial high technology venture, regardless of whether the individual's "home" skill set is technical or managerial. We examine in depth successful marketing approaches for entrepreneurial companies as a function of markets and technologies. Emphasis is placed on the special requirements for creating and executing marketing plans and programs in a setting of rapid technological change and limited resources." 
+    "description": "Every successful entrepreneurial high tech venture has at its core individuals with mastery of two skill sets: marketing and management expertise, and technological skill. This course is intended to provide the marketing skills needed for the management of an entrepreneurial high technology venture, regardless of whether the individual's 'home' skill set is technical or managerial. We examine in depth successful marketing approaches for entrepreneurial companies as a function of markets and technologies. Emphasis is placed on the special requirements for creating and executing marketing plans and programs in a setting of rapid technological change and limited resources." 
   }, 
   { 
     "name": "MBA.290G", 
@@ -36229,7 +36229,7 @@ courses = [
     "number": 291, 
     "units": 1, 
     "title": "Storytelling for Leadership", 
-    "description": "This course provides students with personal leadership development through the ability to tell "Who Am I" leadership journey stories, for use in the business context. For leaders, whose job it is to manage change, the approach to storytelling facilitates learning and is a vehicle to assist others in overcoming obstacles, generating enthusiasm and team work, sharing knowledge and ultimately leading to build trust and connection. This course give strategies, skills and practices for the three elements of telling powerful leadership stories: Story Content, Story Structure and Story Delivery. The course is highly interactive." 
+    "description": "This course provides students with personal leadership development through the ability to tell 'Who Am I' leadership journey stories, for use in the business context. For leaders, whose job it is to manage change, the approach to storytelling facilitates learning and is a vehicle to assist others in overcoming obstacles, generating enthusiasm and team work, sharing knowledge and ultimately leading to build trust and connection. This course give strategies, skills and practices for the three elements of telling powerful leadership stories: Story Content, Story Structure and Story Delivery. The course is highly interactive." 
   }, 
   { 
     "name": "MBA.291T", 
@@ -36257,7 +36257,7 @@ courses = [
     "number": 292, 
     "units": 3, 
     "title": "Strategic CSR and Consulting Projects", 
-    "description": "Discusses the field strategic of CSR through a series of lectures, guest speakers, and projects. It will examine best practices used by companies to engage in socially responsible practices. It will provide students with a flavor of the complex dilemmas one can face in business in trying to do both "good for society" and "well for shareholders." It looks at CSR from a corporate strategy perspective and how it supports core business objectives, core competencies, and bottom-line profits." 
+    "description": "Discusses the field strategic of CSR through a series of lectures, guest speakers, and projects. It will examine best practices used by companies to engage in socially responsible practices. It will provide students with a flavor of the complex dilemmas one can face in business in trying to do both 'good for society' and 'well for shareholders.' It looks at CSR from a corporate strategy perspective and how it supports core business objectives, core competencies, and bottom-line profits." 
   }, 
   { 
     "name": "MBA.292F", 
@@ -36341,7 +36341,7 @@ courses = [
     "number": 295, 
     "units": 3, 
     "title": "Opportunity Recognition: Technology and Entrepreneurship in Silicon Valley", 
-    "description": "This course is intended to provide the core skills needed for the identification of opportunities that can lead to successful, entrepreneurial high technology ventures, regardless of the individual's "home" skill set, whether technical or managerial. We examine in depth the approaches most likely to succeed for entrepreneurial companies as a function of markets and technologies. Emphasis is placed on the special requirements for creating and executing strategy in a setting of rapid technological change and limited resources. This course is particularly suited for those who anticipate founding or operating technology companies." 
+    "description": "This course is intended to provide the core skills needed for the identification of opportunities that can lead to successful, entrepreneurial high technology ventures, regardless of the individual's 'home' skill set, whether technical or managerial. We examine in depth the approaches most likely to succeed for entrepreneurial companies as a function of markets and technologies. Emphasis is placed on the special requirements for creating and executing strategy in a setting of rapid technological change and limited resources. This course is particularly suited for those who anticipate founding or operating technology companies." 
   }, 
   { 
     "name": "MBA.295D", 
@@ -36362,7 +36362,7 @@ courses = [
     "number": 295, 
     "units": 2, 
     "title": "The Lean Launch Pad", 
-    "description": "This course provides real world, hands-on learning on what it's like to actually start a hightech company. This class is not about how to write a business plan. It's not an exercise on how smart you are in a classroom, or how well you use the research library to size markets. And the end result is not a PowerPoint slide deck for a VC presentation. And it is most definitely not an incubator where you come to build the "hot-idea" that you have in mind. This is a practical class: Our goal, within the constraints of a classroom and a limited amount of time, is to create an entrepreneurial experience for you with all of the pressures and demands of the real world in an early stage start up." 
+    "description": "This course provides real world, hands-on learning on what it's like to actually start a hightech company. This class is not about how to write a business plan. It's not an exercise on how smart you are in a classroom, or how well you use the research library to size markets. And the end result is not a PowerPoint slide deck for a VC presentation. And it is most definitely not an incubator where you come to build the 'hot-idea' that you have in mind. This is a practical class: Our goal, within the constraints of a classroom and a limited amount of time, is to create an entrepreneurial experience for you with all of the pressures and demands of the real world in an early stage start up." 
   }, 
   { 
     "name": "MBA.295G", 
@@ -36383,7 +36383,7 @@ courses = [
     "number": 295, 
     "units": 2, 
     "title": "Entrepreneurship Workshop for Start-ups", 
-    "description": "This workshop is intended for students who have their own experiemental venture project under development. The business concept may be in the startup mode, or further along in its evolution. The pedagogy is one of "guided" entrepreneurship where students, often working in teams, undertake the real challenges of building a venture. Students must be willing to discuss their project with others in the workshop as group deliberation of the entrepreneurial challenges is a key component of the class." 
+    "description": "This workshop is intended for students who have their own experiemental venture project under development. The business concept may be in the startup mode, or further along in its evolution. The pedagogy is one of 'guided' entrepreneurship where students, often working in teams, undertake the real challenges of building a venture. Students must be willing to discuss their project with others in the workshop as group deliberation of the entrepreneurial challenges is a key component of the class." 
   }, 
   { 
     "name": "MBA.295J", 
@@ -36516,7 +36516,7 @@ courses = [
     "number": 254, 
     "units": 2, 
     "title": "Power and Politics in Organizations", 
-    "description": "This course will provide students with a sense of "political intelligence," enabling them to: 1) Diagnose the true distribution of power in organizations, 2) Identify strategies for building sources of power, 3) Develop techniques for influencing others, 4) Understand the role of power in building cooperation and leading change, and 5) Make sense of others' attempts to influence them. This is an online course, utilizing multiple media and providing flexibility in when and how students learn." 
+    "description": "This course will provide students with a sense of 'political intelligence,' enabling them to: 1) Diagnose the true distribution of power in organizations, 2) Identify strategies for building sources of power, 3) Develop techniques for influencing others, 4) Understand the role of power in building cooperation and leading change, and 5) Make sense of others' attempts to influence them. This is an online course, utilizing multiple media and providing flexibility in when and how students learn." 
   }, 
   { 
     "name": "MCELLBI.100B", 
@@ -36747,14 +36747,14 @@ courses = [
     "number": 200, 
     "units": 3, 
     "title": "Fundamentals of Molecular and Cell Biology", 
-    "description": "The goal of this course is to provide graduate-level instruction on molecular and cellular biosciences from a highly-integrated systems perspective, rather than using a more classic, techniques-oriented format. A collection of approaches, and a focus on critical thinking and problem solving, will be used to show how fundamental, highly-significant biological problems are "cracked open." Reading will be assigned from a mix of classic and current peer-reviewed papers selected by the instructors." 
+    "description": "The goal of this course is to provide graduate-level instruction on molecular and cellular biosciences from a highly-integrated systems perspective, rather than using a more classic, techniques-oriented format. A collection of approaches, and a focus on critical thinking and problem solving, will be used to show how fundamental, highly-significant biological problems are 'cracked open.' Reading will be assigned from a mix of classic and current peer-reviewed papers selected by the instructors." 
   }, 
   { 
     "name": "MCELLBI.200B", 
     "number": 200, 
     "units": 3, 
     "title": "Fundamentals of Molecular and Cell Biology", 
-    "description": "The goal of this course is to provide graduate-level instruction on molecular and cellular biosciences from a highly-integrated systems perspective, rather than using a more classic, techniques-oriented format. A collection of approaches, and a focus on critical thinking and problem solving, will be used to show how fundamental, highly-significant biological problems are "cracked open." Reading will be assigned from a mix of classic and current peer-reviewed papers selected by the instructors." 
+    "description": "The goal of this course is to provide graduate-level instruction on molecular and cellular biosciences from a highly-integrated systems perspective, rather than using a more classic, techniques-oriented format. A collection of approaches, and a focus on critical thinking and problem solving, will be used to show how fundamental, highly-significant biological problems are 'cracked open.' Reading will be assigned from a mix of classic and current peer-reviewed papers selected by the instructors." 
   }, 
   { 
     "name": "MCELLBI.206", 
@@ -36964,7 +36964,7 @@ courses = [
     "number": 219, 
     "units": 2, 
     "title": "Molecular and Cell Biology of <Listeria monocytogenes> Pathogenesis", 
-    "description": "Discussion of recent research on the genetics, cell biology, and immunology of the model facultative intracellular bacterical pathogen, <Listeria monocytogenes.>" 
+    "description": "Discussion of recent research on the genetics, cell biology, and immunology of the model facultative intracellular bacterical pathogen, 'Listeria monocytogenes.'" 
   }, 
   { 
     "name": "MCELLBI.219J", 
@@ -36992,7 +36992,7 @@ courses = [
     "number": 219, 
     "units": 2, 
     "title": "Signal Transduction Mechanisms", 
-    "description": "Discussion of recent research on various aspects of signal transduction mechanisms in eukaryotic cells, including G protein-coupled receptors, protein kinase cascades, synthesis and mobilization of lipid mediators, calcium sensing and response pathways, activation and inhibition of gene expression, and the biochemical basis of signal desensitization and physiological adaptation, with strong emphasis on genetic and molecular analysis of these systems, especially in the yeast <Saccharomyces cerevisiae.>" 
+    "description": "Discussion of recent research on various aspects of signal transduction mechanisms in eukaryotic cells, including G protein-coupled receptors, protein kinase cascades, synthesis and mobilization of lipid mediators, calcium sensing and response pathways, activation and inhibition of gene expression, and the biochemical basis of signal desensitization and physiological adaptation, with strong emphasis on genetic and molecular analysis of these systems, especially in the yeast 'Saccharomyces cerevisiae.'" 
   }, 
   { 
     "name": "MCELLBI.219U", 
@@ -37237,7 +37237,7 @@ courses = [
     "number": 240, 
     "units": 4, 
     "title": "Advanced Genetic Analysis", 
-    "description": "Principles and practice of classical and modern genetic analysis as applied to eukaryotic organisms, including yeast, nematodes, <Drosophila>, mice and humans; isolation and analysis of mutations; gene mapping; suppressor analysis; chromosome structure; control of gene expression; and developmental genetics." 
+    "description": "Principles and practice of classical and modern genetic analysis as applied to eukaryotic organisms, including yeast, nematodes, 'Drosophila', mice and humans; isolation and analysis of mutations; gene mapping; suppressor analysis; chromosome structure; control of gene expression; and developmental genetics." 
   }, 
   { 
     "name": "MCELLBI.241", 
@@ -37279,14 +37279,14 @@ courses = [
     "number": 249, 
     "units": 2, 
     "title": "Nucleic Acid-Protein Interactions and Control of Gene Expression", 
-    "description": "Biochemical and molecular genetic aspects of eukaryotic messenger RNA splicing and transposition, with an emphasis on <Drosophila melanogaster> as an experimental system." 
+    "description": "Biochemical and molecular genetic aspects of eukaryotic messenger RNA splicing and transposition, with an emphasis on 'Drosophila melanogaster' as an experimental system." 
   }, 
   { 
     "name": "MCELLBI.249D", 
     "number": 249, 
     "units": 2, 
     "title": "Mechanisms of Genetic Regulation in Yeast", 
-    "description": "Genes, gene products and molecular mechanisms that control cell types in the unicellular eukaryote <Saccharomyces cerevisiae>." 
+    "description": "Genes, gene products and molecular mechanisms that control cell types in the unicellular eukaryote 'Saccharomyces cerevisiae'." 
   }, 
   { 
     "name": "MCELLBI.249E", 
@@ -37300,7 +37300,7 @@ courses = [
     "number": 249, 
     "units": 2, 
     "title": "Neuronal Development", 
-    "description": "Molecular and genetic approaches to the problem of how neurons develop, with emphasis on <Drosophila melanogaster> and <Caenorhabditis elegans>." 
+    "description": "Molecular and genetic approaches to the problem of how neurons develop, with emphasis on 'Drosophila melanogaster' and 'Caenorhabditis elegans'." 
   }, 
   { 
     "name": "MCELLBI.249G", 
@@ -37321,14 +37321,14 @@ courses = [
     "number": 249, 
     "units": 2, 
     "title": "Molecular Genetics of Insect Neuronal Development", 
-    "description": "Cell adhesion, cell recognition, and cell determination during neuronal development in <Drosophila> and other insects." 
+    "description": "Cell adhesion, cell recognition, and cell determination during neuronal development in 'Drosophila' and other insects." 
   }, 
   { 
     "name": "MCELLBI.249J", 
     "number": 249, 
     "units": 2, 
     "title": "Developmental and Molecular Genetics of <C. elegans>", 
-    "description": "Molecular and genetical analysis of sex determination and dosage compensation in the nematode <C. elegans>." 
+    "description": "Molecular and genetical analysis of sex determination and dosage compensation in the nematode 'C. elegans'." 
   }, 
   { 
     "name": "MCELLBI.249K", 
@@ -37566,7 +37566,7 @@ courses = [
     "number": 269, 
     "units": 2, 
     "title": "Taste Recognition in Drosophila", 
-    "description": "The molecular and cellular basis of taste perception in the model organism <Drosophila melanogaster>." 
+    "description": "The molecular and cellular basis of taste perception in the model organism 'Drosophila melanogaster'." 
   }, 
   { 
     "name": "MCELLBI.269M", 
@@ -37951,7 +37951,7 @@ courses = [
     "number": 116, 
     "units": 3, 
     "title": "Microbial Diversity", 
-    "description": "This course for upper-division and graduate students will broadly survey myriad types of microbial organisms, both procaryote and eucaryote, using a phylogenetic framework to organize the concept of "biodiversity." Emphasis will be on the evolutionary development of the many biochemical themes, how they mold our biosphere, and the organisms that affect the global biochemistry. Molecular mechanisms that occur in different lineages will be compared and contrasted to illustrate fundamental biological strategies. Graduate students additionally should enroll in C216, Microbial Diversity Workshop. Also listed as Plant and Microbial Biology C116." 
+    "description": "This course for upper-division and graduate students will broadly survey myriad types of microbial organisms, both procaryote and eucaryote, using a phylogenetic framework to organize the concept of 'biodiversity.' Emphasis will be on the evolutionary development of the many biochemical themes, how they mold our biosphere, and the organisms that affect the global biochemistry. Molecular mechanisms that occur in different lineages will be compared and contrasted to illustrate fundamental biological strategies. Graduate students additionally should enroll in C216, Microbial Diversity Workshop. Also listed as Plant and Microbial Biology C116." 
   }, 
   { 
     "name": "MCELLBI.C134", 
@@ -38098,7 +38098,7 @@ courses = [
     "number": 96, 
     "units": 1, 
     "title": "Studying the Biological Sciences", 
-    "description": "Freshmen will be introduced to the "culture" of the biological sciences, along with an in-depth orientation to the academic life and the culture of the university as they relate to majoring in biology. Students will learn concepts, skills, and information that they can use in their major course, and as future science professionals. Restricted to freshmen in the biology scholars program. Also listed as Plant and Microbial Biology C96 and Integrative Biology C96." 
+    "description": "Freshmen will be introduced to the 'culture' of the biological sciences, along with an in-depth orientation to the academic life and the culture of the university as they relate to majoring in biology. Students will learn concepts, skills, and information that they can use in their major course, and as future science professionals. Restricted to freshmen in the biology scholars program. Also listed as Plant and Microbial Biology C96 and Integrative Biology C96." 
   }, 
   { 
     "name": "MCELLBI.H196A", 
@@ -38175,14 +38175,14 @@ courses = [
     "number": 110, 
     "units": 3, 
     "title": "Introduction to Product Development", 
-    "description": "Provides project-based learning experience in innovative new product development, with a focus on mechanical engineering systems. Design concepts and techniques are introduced, and the student's design ability is developed in a design or feasibility study chosen to emphasize ingenuity and provide wide coverage of engineering topics. Relevant software will be integrated into studio sessions, including solid modeling and environmental life cycle analysis. Design optimization and social, economic, and political implications are included. All product ideas will be evaluated against the "triple bottom line": economic, societal, and environmental. Both individual and group oral presentations are made, and participation in a final tradeshow type presentation is required." 
+    "description": "Provides project-based learning experience in innovative new product development, with a focus on mechanical engineering systems. Design concepts and techniques are introduced, and the student's design ability is developed in a design or feasibility study chosen to emphasize ingenuity and provide wide coverage of engineering topics. Relevant software will be integrated into studio sessions, including solid modeling and environmental life cycle analysis. Design optimization and social, economic, and political implications are included. All product ideas will be evaluated against the 'triple bottom line': economic, societal, and environmental. Both individual and group oral presentations are made, and participation in a final tradeshow type presentation is required." 
   }, 
   { 
     "name": "MEC ENG.118", 
     "number": 118, 
     "units": 3, 
     "title": "Introduction to Nanotechnology and Nanoscience", 
-    "description": "This course introduces engineering students (juniors and seniors) to the field of nanotechnology and nanoscience. The course has two components: (1) Formal lectures. Students receive a set of formal lectures introducing them to the field of nanotechnology and nanoscience. The material covered includes nanofabrication technology (how one achieves the nanometer length scale, from "bottom up" to "top down" technologies), the interdisciplinary nature of nanotechnology and nanoscience (including areas of chemistry, material science, physics, and molecular biology), examples of nanoscience phenomena (the crossover from bulk to quantum mechanical properties), and applications (from integrated circuits, quantum computing, MEMS, and bioengineering). (2) Projects. Students are asked to read and present a variety of current journal papers to the class and lead a discussion on the various works." 
+    "description": "This course introduces engineering students (juniors and seniors) to the field of nanotechnology and nanoscience. The course has two components: (1) Formal lectures. Students receive a set of formal lectures introducing them to the field of nanotechnology and nanoscience. The material covered includes nanofabrication technology (how one achieves the nanometer length scale, from 'bottom up' to 'top down' technologies), the interdisciplinary nature of nanotechnology and nanoscience (including areas of chemistry, material science, physics, and molecular biology), examples of nanoscience phenomena (the crossover from bulk to quantum mechanical properties), and applications (from integrated circuits, quantum computing, MEMS, and bioengineering). (2) Projects. Students are asked to read and present a variety of current journal papers to the class and lead a discussion on the various works." 
   }, 
   { 
     "name": "MEC ENG.119", 
@@ -38308,7 +38308,7 @@ courses = [
     "number": 165, 
     "units": 3, 
     "title": "Ocean-Environment Mechanics", 
-    "description": "Ocean environment. Physical properties and characteristics of the oceans. Global conservation laws. Surface-waves generation. Gravity-wave mechanics, kinematics, and dynamics. Design consideration of ocean vehicles and systems. Model-testing techniques. Prediction of resistance and response in waves--physical modeling and computer models."
+    "description": "Ocean environment. Physical properties and characteristics of the oceans. Global conservation laws. Surface-waves generation. Gravity-wave mechanics, kinematics, and dynamics. Design consideration of ocean vehicles and systems. Model-testing techniques. Prediction of resistance and response in waves--physical modeling and computer models." 
   }, 
   { 
     "name": "MEC ENG.167", 
@@ -38441,7 +38441,7 @@ courses = [
     "number": 211, 
     "units": 3, 
     "title": "The Cell as a Machine", 
-    "description": "This course offers a modular and systems mechanobiology (or "machine") perspective of the cell. Two vitally important components of the cell machinery will be studied in depth: (1) the integrin-mediated focal adhesions system that enables the cell to adhere to, and communicate mechano-chemical signals with, the extracellular environment, and (2) the nuclear pore complex, a multi-protein gateway for traffic in and out of the nucleus that regulates gene expression and affects protein synthesis." 
+    "description": "This course offers a modular and systems mechanobiology (or 'machine') perspective of the cell. Two vitally important components of the cell machinery will be studied in depth: (1) the integrin-mediated focal adhesions system that enables the cell to adhere to, and communicate mechano-chemical signals with, the extracellular environment, and (2) the nuclear pore complex, a multi-protein gateway for traffic in and out of the nucleus that regulates gene expression and affects protein synthesis." 
   }, 
   { 
     "name": "MEC ENG.220", 
@@ -38819,7 +38819,7 @@ courses = [
     "number": 290, 
     "units": 3, 
     "title": "Green Product Development: Design for Sustainability", 
-    "description": "The focus of the course is management of innovation processes for sustainable products, from product definition to sustainable manufacturing and financial models. Using a project in which students will be asked to design and develop a product or service focused on sustainability, we will teach processes for collecting customer and user needs data, prioritizing that data, developing a product specification, sketching and building product prototypes, and interacting with the customer/community during product development. The course is intended as a very hands-on experience in the "green" product development process. The course will be a Management of Technology course offered jointly with the College of Engineering and the Haas School of Business. In addition, it will also receive credit towards the new Certificate on Engineering Sustainability and Environmental Management program. We aim to have half MBA students and half Engineering students (with a few other students, such as from the School of Information) in the class. The instructors will facilitate students to form mixed disciplinary reams for the development of their "green" products." 
+    "description": "The focus of the course is management of innovation processes for sustainable products, from product definition to sustainable manufacturing and financial models. Using a project in which students will be asked to design and develop a product or service focused on sustainability, we will teach processes for collecting customer and user needs data, prioritizing that data, developing a product specification, sketching and building product prototypes, and interacting with the customer/community during product development. The course is intended as a very hands-on experience in the 'green' product development process. The course will be a Management of Technology course offered jointly with the College of Engineering and the Haas School of Business. In addition, it will also receive credit towards the new Certificate on Engineering Sustainability and Environmental Management program. We aim to have half MBA students and half Engineering students (with a few other students, such as from the School of Information) in the class. The instructors will facilitate students to form mixed disciplinary reams for the development of their 'green' products." 
   }, 
   { 
     "name": "MEC ENG.290I", 
@@ -38840,7 +38840,7 @@ courses = [
     "number": 290, 
     "units": 2, 
     "title": "Innovation through Design Thinking", 
-    "description": "Designed for professionally-oriented graduate students, this course explores key concepts in design innovation based on the human-centered design approach called "design thinking." Topics covered include human-centered design research, analysis of research to develop design principles, creativity techniques, user needs framing and strategic business modeling." 
+    "description": "Designed for professionally-oriented graduate students, this course explores key concepts in design innovation based on the human-centered design approach called 'design thinking.' Topics covered include human-centered design research, analysis of research to develop design principles, creativity techniques, user needs framing and strategic business modeling." 
   }, 
   { 
     "name": "MEC ENG.290KB", 
@@ -38854,7 +38854,7 @@ courses = [
     "number": 290, 
     "units": 3, 
     "title": "Introduction to Nano-Biology", 
-    "description": "This course introduces graduate students in Mechanical Engineering to the nascent field of Nano-Biology. The course is comprised of both formal lectures and projects. Lectures will include an introduction to both molecular biology (components of cells, protein structure and function, DNA, gene regulation, etc.) and nanotechnology ("bottom up" and "top down" nanotechnologies), an overview of current instrumentation in biology, an in-depth description of the recent integration of molecular biology with nanotechnology (for sensing or labeling purposes, elucidating information on cells, etc.), and an introduction to Systems Biology (design principles of biological circuits). Students will read and present a variety of current journal papers to the class and lead a discussion on the various works." 
+    "description": "This course introduces graduate students in Mechanical Engineering to the nascent field of Nano-Biology. The course is comprised of both formal lectures and projects. Lectures will include an introduction to both molecular biology (components of cells, protein structure and function, DNA, gene regulation, etc.) and nanotechnology ('bottom up' and 'top down' nanotechnologies), an overview of current instrumentation in biology, an in-depth description of the recent integration of molecular biology with nanotechnology (for sensing or labeling purposes, elucidating information on cells, etc.), and an introduction to Systems Biology (design principles of biological circuits). Students will read and present a variety of current journal papers to the class and lead a discussion on the various works." 
   }, 
   { 
     "name": "MEC ENG.290M", 
@@ -39204,7 +39204,7 @@ courses = [
     "number": 102, 
     "units": 4, 
     "title": "Effects of Mass Media", 
-    "description": "This course examines the often contentious history of communication theory concerning media effects. At issue among scholars working within different research traditions are core disagreements about what should be studied (institutions, texts, audiences, technologies), how they should be studied, and even what constitutes an "effect." Course readings and lectures stress an understanding of different empirical and critical research traditions by focusing on the social, political, and historical contexts surrounding them, the research models and methods they employ, as well as the findings and conclusions they have reached. Course assignments and exams assess student understanding of course readings as well as the ability to apply mass media theory to new media texts." 
+    "description": "This course examines the often contentious history of communication theory concerning media effects. At issue among scholars working within different research traditions are core disagreements about what should be studied (institutions, texts, audiences, technologies), how they should be studied, and even what constitutes an 'effect.' Course readings and lectures stress an understanding of different empirical and critical research traditions by focusing on the social, political, and historical contexts surrounding them, the research models and methods they employ, as well as the findings and conclusions they have reached. Course assignments and exams assess student understanding of course readings as well as the ability to apply mass media theory to new media texts." 
   }, 
   { 
     "name": "MEDIAST.104A", 
@@ -39239,7 +39239,7 @@ courses = [
     "number": 140, 
     "units": 4, 
     "title": "Media and Politics", 
-    "description": "This course will examine the influence of consumer marketing trends and techniques on presidential campaigns, and on political culture more broadly. How much truth is there to the idea that selling politicians is like "selling soap"? What is the difference between the psychology of the citizen and the psychology of the consumer? How are the political process and democratic discourse being transformed, for better or worse, by the use of such techniques?" 
+    "description": "This course will examine the influence of consumer marketing trends and techniques on presidential campaigns, and on political culture more broadly. How much truth is there to the idea that selling politicians is like 'selling soap'? What is the difference between the psychology of the citizen and the psychology of the consumer? How are the political process and democratic discourse being transformed, for better or worse, by the use of such techniques?" 
   }, 
   { 
     "name": "MEDIAST.150", 
@@ -39505,7 +39505,7 @@ courses = [
     "number": 104, 
     "units": 3, 
     "title": "History of Information", 
-    "description": "This course explores the history of information and associated technologies, uncovering why we think of ours as "the information age." We will select moments in the evolution of production, recording, and storage from the earliest writing systems to the world of Short Message Service (SMS) and blogs. In every instance, we'll be concerned with both what and when and how and why, and we will keep returning to the question of technological determinism: how do technological developments affect society and vice versa? Also listed as History C192, Information C103, and Cognitive Science C103." 
+    "description": "This course explores the history of information and associated technologies, uncovering why we think of ours as 'the information age.' We will select moments in the evolution of production, recording, and storage from the earliest writing systems to the world of Short Message Service (SMS) and blogs. In every instance, we'll be concerned with both what and when and how and why, and we will keep returning to the question of technological determinism: how do technological developments affect society and vice versa? Also listed as History C192, Information C103, and Cognitive Science C103." 
   }, 
   { 
     "name": "MEDIAST.C196A", 
@@ -39694,7 +39694,7 @@ courses = [
     "number": 145, 
     "units": 3, 
     "title": "Preparation for Active Duty", 
-    "description": "This course focuses on commissioning of cadets and their transition to active duty. The primary focus of instruction is officership, professionalism, and leadership. Topics for specific discussion include the military justice system, military ethics, core values, military professionalism and current issues affecting the Air Force, and a general introduction to base functions designed to ease cadets' transition to active duty. This course combines lecture and discussion with increased emphasis on the students' written and oral communication skills."
+    "description": "This course focuses on commissioning of cadets and their transition to active duty. The primary focus of instruction is officership, professionalism, and leadership. Topics for specific discussion include the military justice system, military ethics, core values, military professionalism and current issues affecting the Air Force, and a general introduction to base functions designed to ease cadets' transition to active duty. This course combines lecture and discussion with increased emphasis on the students' written and oral communication skills." 
   }, 
   { 
     "name": "MIL AFF.154", 
@@ -39778,7 +39778,7 @@ courses = [
     "number": 2, 
     "units": 1, 
     "title": "Foundations of Officership", 
-    "description": "The purpose of this one credit hour seminar style course is to introduce the student to issues and competencies that are central to a commissioned officer's responsibilities. These initial lessons establish a framework for understanding officership, leadership, and Army values. Additionally, the semester addresses "life skills" including fitness and time management. This course is designed to give accurate insight into the Army profession and the officer's role within the Army and to lay the foundation for further leadership development. This course is structured in modules. There are five modules containing 15 one-hour (50- minute) lessons, as follows: ???Module 1 - The Army Profession: Officership (what officers/leaders do, customs/courtesies). ???Module 2 - Personal Development (time/personal management). ???Module 3 - Physical Well-Being (physical fitness, stress management). ???Module 4 - Leadership (definition, AOR model, Army Be-Know-Do-model, character, and competence). ???Module 5 - Values and Ethics (morals vs. ethnics, ethical decision making, Army (Institutional) Values)." 
+    "description": "The purpose of this one credit hour seminar style course is to introduce the student to issues and competencies that are central to a commissioned officer's responsibilities. These initial lessons establish a framework for understanding officership, leadership, and Army values. Additionally, the semester addresses 'life skills' including fitness and time management. This course is designed to give accurate insight into the Army profession and the officer's role within the Army and to lay the foundation for further leadership development. This course is structured in modules. There are five modules containing 15 one-hour (50- minute) lessons, as follows: ???Module 1 - The Army Profession: Officership (what officers/leaders do, customs/courtesies). ???Module 2 - Personal Development (time/personal management). ???Module 3 - Physical Well-Being (physical fitness, stress management). ???Module 4 - Leadership (definition, AOR model, Army Be-Know-Do-model, character, and competence). ???Module 5 - Values and Ethics (morals vs. ethnics, ethical decision making, Army (Institutional) Values)." 
   }, 
   { 
     "name": "MIL SCI.3", 
@@ -39848,14 +39848,14 @@ courses = [
     "number": 116, 
     "units": 3, 
     "title": "Jazz Theory and Performance 2", 
-    "description": "Advanced concepts in theory and performance in the jazz vernacular tradition, including melodic minor and diminished chords and scales, reharmonization, <I Got Rhythm> changes, Coltrane changes, use of pentatonics and 4ths, playing outside, solo analysis, piano voicings, and an introduction to jazz arranging and composition. Activities will include short writing and playing exercises, transcription and analysis, historical and analytical readings, arranging and composition projects for small ensemble, and three hours of small ensemble rehearsal each week." 
+    "description": "Advanced concepts in theory and performance in the jazz vernacular tradition, including melodic minor and diminished chords and scales, reharmonization, 'I Got Rhythm' changes, Coltrane changes, use of pentatonics and 4ths, playing outside, solo analysis, piano voicings, and an introduction to jazz arranging and composition. Activities will include short writing and playing exercises, transcription and analysis, historical and analytical readings, arranging and composition projects for small ensemble, and three hours of small ensemble rehearsal each week." 
   }, 
   { 
     "name": "MUSIC.116BM", 
     "number": 116, 
     "units": 3, 
     "title": "Jazz Theory and Performance 2", 
-    "description": "Advanced concepts in theory and performance in the jazz vernacular tradition, including melodic minor and diminished chords and scales, reharmonization, <I Got Rhythm> changes, Coltrane changes, use of pentatonics and 4ths, playing outside, solo analysis, piano voicings, and an introduction to jazz arranging and composition. Activities will include short writing and playing exercises, transcription and analysis, historical and analytical readings, arranging and composition projects for small ensemble, and three hours of small ensemble rehearsal each week." 
+    "description": "Advanced concepts in theory and performance in the jazz vernacular tradition, including melodic minor and diminished chords and scales, reharmonization, 'I Got Rhythm' changes, Coltrane changes, use of pentatonics and 4ths, playing outside, solo analysis, piano voicings, and an introduction to jazz arranging and composition. Activities will include short writing and playing exercises, transcription and analysis, historical and analytical readings, arranging and composition projects for small ensemble, and three hours of small ensemble rehearsal each week." 
   }, 
   { 
     "name": "MUSIC.128", 
@@ -40009,7 +40009,7 @@ courses = [
     "number": 136, 
     "units": 4, 
     "title": "World Music: Power, Aesthetics, and Connections", 
-    "description": "This course focuses on selected "world musics" to examine how, through their soundings, they make audible their entanglements with particular locales, times, and spaces. In focusing on their soundings, we will examine not only the music technologies they use, but also the diasporic connections they establish. Issues of power relations will be central to our exploration of how these musics circulate and what values (social, economic, and aesthetic) they have acquired on specific markets. In so doing, we will situate these musics in relation to colonial legacies, the politics of labeling, globalization, and music industries." 
+    "description": "This course focuses on selected 'world musics' to examine how, through their soundings, they make audible their entanglements with particular locales, times, and spaces. In focusing on their soundings, we will examine not only the music technologies they use, but also the diasporic connections they establish. Issues of power relations will be central to our exploration of how these musics circulate and what values (social, economic, and aesthetic) they have acquired on specific markets. In so doing, we will situate these musics in relation to colonial legacies, the politics of labeling, globalization, and music industries." 
   }, 
   { 
     "name": "MUSIC.137AC", 
@@ -40380,7 +40380,7 @@ courses = [
     "number": 208, 
     "units": 4, 
     "title": "Music in Mind", 
-    "description": "Research seminar dealing with "what goes on in your mind" when you make music. Topics include conceptualization, processes of learning, retention, and recall. In the context of interaction among musicians, variation and other forms of alteration (from relatively free improvisation to formulaic recomposition) with varing degrees of intentionality manifested in performances will be considered. Perception is implicated, but not a central issue." 
+    "description": "Research seminar dealing with 'what goes on in your mind' when you make music. Topics include conceptualization, processes of learning, retention, and recall. In the context of interaction among musicians, variation and other forms of alteration (from relatively free improvisation to formulaic recomposition) with varing degrees of intentionality manifested in performances will be considered. Perception is implicated, but not a central issue." 
   }, 
   { 
     "name": "MUSIC.209", 
@@ -40646,7 +40646,7 @@ courses = [
     "number": 41, 
     "units": 2, 
     "title": "Private Carillon Lessons for Advanced Students", 
-    "description": "This course is designed for students to reach an advanced level of proficiency. Students are required to play one ten-minute concert per week plus participate in the student recital." 
+    "description": "This course is designed for students to reach an advanced level of proficiency. Students are required to play one ten-minute concert per week plus participate in the student recital."
   }, 
   { 
     "name": "MUSIC.42", 
@@ -40660,7 +40660,7 @@ courses = [
     "number": 43, 
     "units": 3, 
     "title": "Introduction to Improvisation", 
-    "description": "This course will serve as an introduction to performance practices in contemporary improvisation. Several approaches to improvising will be presented including African American jazz and blues traditions, North Indian Raga, gaming strategies, graphic notation, and conducted improvisation or "sound painting." Class activities will include improvisation exercises and games and repertoire development. Assignments will include listening to and analysis of recorded and live performances and the creation of student works." 
+    "description": "This course will serve as an introduction to performance practices in contemporary improvisation. Several approaches to improvising will be presented including African American jazz and blues traditions, North Indian Raga, gaming strategies, graphic notation, and conducted improvisation or 'sound painting.' Class activities will include improvisation exercises and games and repertoire development. Assignments will include listening to and analysis of recorded and live performances and the creation of student works." 
   }, 
   { 
     "name": "MUSIC.44", 
@@ -40884,7 +40884,7 @@ courses = [
     "number": 120, 
     "units": 4, 
     "title": "Topics in Native American Arts", 
-    "description": "This course explores the practice of Native American art forms from the perspective of Native American Artists and scholars. Focused on specific art forms such as dance, music, film, crafts, and other traditions, this course provides a critique of conventional understandings of the relationships of Native American cultural traditions and their place in the world of "art."" 
+    "description": "This course explores the practice of Native American art forms from the perspective of Native American Artists and scholars. Focused on specific art forms such as dance, music, film, crafts, and other traditions, this course provides a critique of conventional understandings of the relationships of Native American cultural traditions and their place in the world of 'art.'" 
   }, 
   { 
     "name": "NATAMST.120AC", 
@@ -40898,7 +40898,7 @@ courses = [
     "number": 145, 
     "units": 4, 
     "title": "Making History/Making "Indians"", 
-    "description": "This course explores the ways in which an invented, generic "Indian" has played a variety of roles in master narratives of United States history. We shall examine changes in images of key figures and events constituting "our" collective historical memory." 
+    "description": "This course explores the ways in which an invented, generic 'Indian' has played a variety of roles in master narratives of United States history. We shall examine changes in images of key figures and events constituting 'our' collective historical memory." 
   }, 
   { 
     "name": "NATAMST.149", 
@@ -40954,7 +40954,7 @@ courses = [
     "number": 178, 
     "units": 4, 
     "title": "Africans in Indian Country", 
-    "description": "This seminar will explore the intersections of Native American and African American histories and communities in the context of the United States which was formerly "Indian Country." We will read historical texts, first-person accounts, fiction, and primary documents primarily from the perspective of Native American, African American, and Black-Indian scholars and writers." 
+    "description": "This seminar will explore the intersections of Native American and African American histories and communities in the context of the United States which was formerly 'Indian Country.' We will read historical texts, first-person accounts, fiction, and primary documents primarily from the perspective of Native American, African American, and Black-Indian scholars and writers." 
   }, 
   { 
     "name": "NATAMST.190", 
@@ -41073,7 +41073,7 @@ courses = [
     "number": 73, 
     "units": 4, 
     "title": "Indigenous Peoples in Global Inequality", 
-    "description": "This course examines the history of indigenous, aboriginal, native, or "tribal" peoples over the last five centuries. Particular attention is paid to how these groups were brought into relations with an expanding Europe, capitalist development, and modern nation-states. How have these peoples survived, what are the contemporary challenges they face, and what resources and allies have they drawn on in the present? Also listed as Ethnic Studies C73AC." 
+    "description": "This course examines the history of indigenous, aboriginal, native, or 'tribal' peoples over the last five centuries. Particular attention is paid to how these groups were brought into relations with an expanding Europe, capitalist development, and modern nation-states. How have these peoples survived, what are the contemporary challenges they face, and what resources and allies have they drawn on in the present? Also listed as Ethnic Studies C73AC." 
   }, 
   { 
     "name": "NATAMST.H195", 
@@ -41381,7 +41381,7 @@ courses = [
     "number": 155, 
     "units": 3, 
     "title": "Wonder and the Fantastic: <The Thousand and One Nights> in World Literary Imagination", 
-    "description": "After studying the tales themselves and examining their structure and how they fit into the genre of folk literature, we will investigate how the <Nights> was transmitted, translated, and received in Europe, as a window on 19th-century gender and racial attitudes, especially Western views of the "oriental" other. How the <Nights> was creatively manipulated by Western writers will be studied, as will the influence of these tales on modern Arabic literature itself. Several examples of how the <Nights> have been represented in Western films will be considered. All works will be read in English translation." 
+    "description": "After studying the tales themselves and examining their structure and how they fit into the genre of folk literature, we will investigate how the 'Nights' was transmitted, translated, and received in Europe, as a window on 19th-century gender and racial attitudes, especially Western views of the 'oriental' other. How the 'Nights' was creatively manipulated by Western writers will be studied, as will the influence of these tales on modern Arabic literature itself. Several examples of how the 'Nights' have been represented in Western films will be considered. All works will be read in English translation." 
   }, 
   { 
     "name": "NE STUD.160", 
@@ -41584,7 +41584,7 @@ courses = [
     "number": 199, 
     "units": 1, 
     "title": "Supervised Independent Study and Research", 
-    "description": "Enrollment is restricted by regulations shown in the <General Catalog.>" 
+    "description": "Enrollment is restricted by regulations shown in the 'General Catalog.'" 
   }, 
   { 
     "name": "NE STUD.200", 
@@ -41710,7 +41710,7 @@ courses = [
     "number": 297, 
     "units": 2, 
     "title": "Topics in Ancient Ceramics of Egypt and the Levant", 
-    "description": "Changing topics in the study of ancient ceramics, stressing the relationship between pottery on the one hand, and archaeological practice and research in Egypt and/or the Levant on the other hand. Emphasis is placed on the relationship between pottery and broader issues involving the history and culture of these regions. Where appropriate, extensive use is made of slides and "hands-on" experience with available ceramic collections (e.g., Hearst Museum collection.)" 
+    "description": "Changing topics in the study of ancient ceramics, stressing the relationship between pottery on the one hand, and archaeological practice and research in Egypt and/or the Levant on the other hand. Emphasis is placed on the relationship between pottery and broader issues involving the history and culture of these regions. Where appropriate, extensive use is made of slides and 'hands-on' experience with available ceramic collections (e.g., Hearst Museum collection.)" 
   }, 
   { 
     "name": "NE STUD.298", 
@@ -41997,7 +41997,7 @@ courses = [
     "number": 242, 
     "units": 3, 
     "title": "Computational Nanoscience", 
-    "description": "A multidisciplinary overview of computational nanoscience for both theorists and experimentalists. This course teaches the main ideas behind different simulation methods; how to decompose a problem into "simulatable" constituents; how to simulate the same thing two different ways; knowing what you are doing and why thinking is still important; the importance of talking to experimentalists; what to do with your data and how to judge its validity; why multiscale modeling is both important and nonsense. Also listed as Physics C203." 
+    "description": "A multidisciplinary overview of computational nanoscience for both theorists and experimentalists. This course teaches the main ideas behind different simulation methods; how to decompose a problem into 'simulatable' constituents; how to simulate the same thing two different ways; knowing what you are doing and why thinking is still important; the importance of talking to experimentalists; what to do with your data and how to judge its validity; why multiscale modeling is both important and nonsense. Also listed as Physics C203." 
   }, 
   { 
     "name": "NUC ENG.101", 
@@ -42319,7 +42319,7 @@ courses = [
     "number": 194, 
     "units": 1, 
     "title": "Honors Undergraduate Research", 
-    "description": "Supervised research. Students who have completed three or more upper division courses may pursue original research under the direction of one of the members of the staff. A final report or presentation is required. A maximum of three units of H194 may be used to fulfill a technical elective requirement in the Nuclear Engineering general program or joint major programs." 
+    "description": "Supervised research. Students who have completed three or more upper division courses may pursue original research under the direction of one of the members of the staff. A final report or presentation is required. A maximum of three units of H194 may be used to fulfill a technical elective requirement in the Nuclear Engineering general program or joint major programs."
   }, 
   { 
     "name": "NUSCTX.10", 
@@ -42844,7 +42844,7 @@ courses = [
     "number": 226, 
     "units": 2, 
     "title": "Ocular Pharmacology", 
-    "description": "Basic pharmacology, terminology, and concepts (both pharmacodynamic and pharmacokinetic) as applied to the eye and ophthalmic drugs, clinical prescribing issues including formulation, dosing and prescribing, and pharmacotherapy of anti-inflammatory, centrally acting, hormonal and other "specialist" systemic drugs." 
+    "description": "Basic pharmacology, terminology, and concepts (both pharmacodynamic and pharmacokinetic) as applied to the eye and ophthalmic drugs, clinical prescribing issues including formulation, dosing and prescribing, and pharmacotherapy of anti-inflammatory, centrally acting, hormonal and other 'specialist' systemic drugs." 
   }, 
   { 
     "name": "OPTOM.230A", 
@@ -43054,7 +43054,7 @@ courses = [
     "number": 435, 
     "units": 2, 
     "title": "Advanced Procedures in Ocular Disease Diagnosis", 
-    "description": "Instrumentation, techniques, and principles for examination, diagnosis, and treatment of ocular disease. Introduction to optometric informatics related to ocular disease."
+    "description": "Instrumentation, techniques, and principles for examination, diagnosis, and treatment of ocular disease. Introduction to optometric informatics related to ocular disease." 
   }, 
   { 
     "name": "OPTOM.440B", 
@@ -43173,7 +43173,7 @@ courses = [
     "number": 127, 
     "units": 4, 
     "title": "Human Rights and Global Politics", 
-    "description": "After World War II, we witnessed a "revolution" in human rights theory, practice, and institution building. The implications of viewing individuals as equal and endowed with certain rights is potentially far reaching as in the declaration that individuals hold many of those rights irrespective of the views of their government. Yet, we also live in a world of sovereign states with sovereign state's rights. We see everyday a clash between the rights of the individual and lack of duty to fulfill those rights when an individual's home state is unwilling or unable to do so. After introducing the idea of human rights, its historic development and various international human rights mechanisms, this course will ask what post-World War II conceptions of human rights mean for a number of specific issues including humanitarian intervention, international criminal justice, U.S. foreign policy, immigration, and economic rights. Looking in-depth at these five areas, we will ask how ideas about human rights, laws about human rights, and institutions to protect human rights have on how states and other global actors act, and how individuals have fared." 
+    "description": "After World War II, we witnessed a 'revolution' in human rights theory, practice, and institution building. The implications of viewing individuals as equal and endowed with certain rights is potentially far reaching as in the declaration that individuals hold many of those rights irrespective of the views of their government. Yet, we also live in a world of sovereign states with sovereign state's rights. We see everyday a clash between the rights of the individual and lack of duty to fulfill those rights when an individual's home state is unwilling or unable to do so. After introducing the idea of human rights, its historic development and various international human rights mechanisms, this course will ask what post-World War II conceptions of human rights mean for a number of specific issues including humanitarian intervention, international criminal justice, U.S. foreign policy, immigration, and economic rights. Looking in-depth at these five areas, we will ask how ideas about human rights, laws about human rights, and institutions to protect human rights have on how states and other global actors act, and how individuals have fared." 
   }, 
   { 
     "name": "PACS.128AC", 
@@ -43495,7 +43495,7 @@ courses = [
     "number": 181, 
     "units": 3, 
     "title": "Poverty and Population", 
-    "description": "Globally one million more births than deaths occur every 112 hours, 90% in the poorest countries. Between 1960 and 1980, considerable attention was focused on rapid population growth. Afterwards, the attention has faded and investment in family planning evaporated. Family size among some of the poorest women is increasing. This course seeks to provide an understanding of the relationships between population growth, poverty, women's autonomy, and health. It explores the political "fashions" underlying changing paradigms among demographers, and economists, and development specialists." 
+    "description": "Globally one million more births than deaths occur every 112 hours, 90% in the poorest countries. Between 1960 and 1980, considerable attention was focused on rapid population growth. Afterwards, the attention has faded and investment in family planning evaporated. Family size among some of the poorest women is increasing. This course seeks to provide an understanding of the relationships between population growth, poverty, women's autonomy, and health. It explores the political 'fashions' underlying changing paradigms among demographers, and economists, and development specialists." 
   }, 
   { 
     "name": "PB HLTH.183", 
@@ -43754,7 +43754,7 @@ courses = [
     "number": 216, 
     "units": 2, 
     "title": "Biological Embedding of Social Factors", 
-    "description": "This is an interdisciplinary course which will adopt a broad-based ecological perspective of health and behavior. This class will emphasize the interconnected and multidirectional relationships between biology, behavior, and the social environment. This course will be conducted as a seminar series (with a focus on biological processes). We will investigate the assertion that biological, psychological, and social processes interact over a lifetime to influence health and vulnerability to disease (a developmental epigenetic perspective). Rather than focusing on "if" social factors can influence health and disease we will focus on "how" social factors may regulate/change biological measures. Three very general themes will be addressed: development, "social" neuroscience and gene-environment interactions as they relate to behavior. Topics such as constraints/plasticity and behavior, genetic determinism, vulnerability versus resilience, gene-environment interactions, fetal/developmental programming, and stress will all be touched upon." 
+    "description": "This is an interdisciplinary course which will adopt a broad-based ecological perspective of health and behavior. This class will emphasize the interconnected and multidirectional relationships between biology, behavior, and the social environment. This course will be conducted as a seminar series (with a focus on biological processes). We will investigate the assertion that biological, psychological, and social processes interact over a lifetime to influence health and vulnerability to disease (a developmental epigenetic perspective). Rather than focusing on 'if' social factors can influence health and disease we will focus on 'how' social factors may regulate/change biological measures. Three very general themes will be addressed: development, 'social' neuroscience and gene-environment interactions as they relate to behavior. Topics such as constraints/plasticity and behavior, genetic determinism, vulnerability versus resilience, gene-environment interactions, fetal/developmental programming, and stress will all be touched upon." 
   }, 
   { 
     "name": "PB HLTH.217C", 
@@ -44209,7 +44209,7 @@ courses = [
     "number": 255, 
     "units": 3, 
     "title": "Mental Health and Psychopathology", 
-    "description": "This doctoral seminar is designed to provide an understanding of the complex (and often interactive) individual and environmental conditions that increase the risk of psychopathology in individuals across the life span. We will start by learning about general concepts important to an understanding of psychopathology and prevention of psychopathology, including the "biopsychosocial model," "psychological resilence," and different levels of preventive interventions. For each different area of psychopathology, we will consider: a) the core feature of disorder; b) key theory and empirical evidence regarding etiology and course, with a particular emphasis on understanding the range of risk and protective factors on the individual, family, and community level; and c) the implications of etiological understanding for public health efforts to prevent the particular disorder." 
+    "description": "This doctoral seminar is designed to provide an understanding of the complex (and often interactive) individual and environmental conditions that increase the risk of psychopathology in individuals across the life span. We will start by learning about general concepts important to an understanding of psychopathology and prevention of psychopathology, including the 'biopsychosocial model,' 'psychological resilence,' and different levels of preventive interventions. For each different area of psychopathology, we will consider: a) the core feature of disorder; b) key theory and empirical evidence regarding etiology and course, with a particular emphasis on understanding the range of risk and protective factors on the individual, family, and community level; and c) the implications of etiological understanding for public health efforts to prevent the particular disorder." 
   }, 
   { 
     "name": "PB HLTH.255D", 
@@ -44265,7 +44265,7 @@ courses = [
     "number": 259, 
     "units": 3, 
     "title": "History of Epidemiology", 
-    "description": "This course traces the development of epidemiological methodology and theory from the "Golden Age" of Greece in the sixth century B.C. to modern practice at the turn of the 21st century. Consideration will also be given to historical events such as major epidemics and important research activities. The course provides students preparing for academic careers in epidemiology the background to teach and research the field. Case studies will be a major vehicle for accomplishing the course objectives. Original readings will be discussed."
+    "description": "This course traces the development of epidemiological methodology and theory from the 'Golden Age' of Greece in the sixth century B.C. to modern practice at the turn of the 21st century. Consideration will also be given to historical events such as major epidemics and important research activities. The course provides students preparing for academic careers in epidemiology the background to teach and research the field. Case studies will be a major vehicle for accomplishing the course objectives. Original readings will be discussed." 
   }, 
   { 
     "name": "PB HLTH.259B", 
@@ -44342,7 +44342,7 @@ courses = [
     "number": 265, 
     "units": 3, 
     "title": "Molecular Parasitology", 
-    "description": "Advanced course in the molecular aspects of parasite immunology, molecular biology, genetics, biochemistry, and genomics. For each parasite, the following areas will be covered: biology; disease spectrum; epidemiology; pathogenesis, immunology; and vaccine development. The lectures will focus on "state-of-the-art" research in relation to molecular mechanisms of pathogenesis, parasite adaptations for survival within the host, and strategies for drug and vaccine development and disease control and prevention. Course content will rely heavily on current literature." 
+    "description": "Advanced course in the molecular aspects of parasite immunology, molecular biology, genetics, biochemistry, and genomics. For each parasite, the following areas will be covered: biology; disease spectrum; epidemiology; pathogenesis, immunology; and vaccine development. The lectures will focus on 'state-of-the-art' research in relation to molecular mechanisms of pathogenesis, parasite adaptations for survival within the host, and strategies for drug and vaccine development and disease control and prevention. Course content will rely heavily on current literature." 
   }, 
   { 
     "name": "PB HLTH.266", 
@@ -44426,7 +44426,7 @@ courses = [
     "number": 271, 
     "units": 3, 
     "title": "Global Burden of Disease and Comparative Risk Assessment", 
-    "description": "The Global Burden of Disease (GBD) database utilized by <who> provides estimates of illness, injury, and death by disease type, age, sex, and world region in a consistent and coherent manner. The course will explore the ways such a detailed database makes possible a wide range of new types of analysis of health priorities and the relationship of database will also be introduced. This seminar will also provide an opportunity for reading and discussion of the basic assumptions, data limitations, critiques, and methodological difficulties of the GBD. It is intended to be a true seminar relying heavy on class participation. The homework assignments will be greatly facilitated by use of computer spreadsheets." 
+    "description": "The Global Burden of Disease (GBD) database utilized by 'who' provides estimates of illness, injury, and death by disease type, age, sex, and world region in a consistent and coherent manner. The course will explore the ways such a detailed database makes possible a wide range of new types of analysis of health priorities and the relationship of database will also be introduced. This seminar will also provide an opportunity for reading and discussion of the basic assumptions, data limitations, critiques, and methodological difficulties of the GBD. It is intended to be a true seminar relying heavy on class participation. The homework assignments will be greatly facilitated by use of computer spreadsheets." 
   }, 
   { 
     "name": "PB HLTH.271E", 
@@ -44447,7 +44447,7 @@ courses = [
     "number": 272, 
     "units": 4, 
     "title": "Geographic Information Science for Public and Environmental Health", 
-    "description": "Geographic information systems (GIS) have emerged as an important tool for performing health and environmental analyses. GIS is generally seen as a spatial analysis system for the organization, storage, retrieval, and analysis of data for which the location and other spatial attributes are considered important (e.g., incidence of a specific disease condition in relation to a pollution source). GIS also encompasses the organizational structure, personnel, software, and hardware needed to support spatial analysis. For many health and social scientists, GIS has evolved into a new lens for viewing their work. The course will provide students with an introduction to this exciting and expanding field of inquiry. On successful completion of the course you should possess the following skills and knowledge: 1) A basic understanding of the fundamental geographic and cartographic concepts that underlie GIS. 2) Working knowledge of ArcGIS, a powerful "desktop" GIS software package that runs in a Windows environment. 3) Introductory knowledge of past, present, and possible future applications of GIS for health and environmental studies." 
+    "description": "Geographic information systems (GIS) have emerged as an important tool for performing health and environmental analyses. GIS is generally seen as a spatial analysis system for the organization, storage, retrieval, and analysis of data for which the location and other spatial attributes are considered important (e.g., incidence of a specific disease condition in relation to a pollution source). GIS also encompasses the organizational structure, personnel, software, and hardware needed to support spatial analysis. For many health and social scientists, GIS has evolved into a new lens for viewing their work. The course will provide students with an introduction to this exciting and expanding field of inquiry. On successful completion of the course you should possess the following skills and knowledge: 1) A basic understanding of the fundamental geographic and cartographic concepts that underlie GIS. 2) Working knowledge of ArcGIS, a powerful 'desktop' GIS software package that runs in a Windows environment. 3) Introductory knowledge of past, present, and possible future applications of GIS for health and environmental studies." 
   }, 
   { 
     "name": "PB HLTH.272B", 
@@ -44461,7 +44461,7 @@ courses = [
     "number": 275, 
     "units": 2, 
     "title": "Current Topics in Vaccinology", 
-    "description": "This is an advanced level course designed to cover current issues related to the biological and analytical aspects of vaccine development and utilization. Latest developments in recombinant vaccine technology, vaccine delivery systems, "naked DNA" vaccines, "designer" vaccines, new adjuvants, anti-tumor vaccines, epidemiological approaches to assess vaccine efficacy, effectiveness, and safety will be discussed and covered." 
+    "description": "This is an advanced level course designed to cover current issues related to the biological and analytical aspects of vaccine development and utilization. Latest developments in recombinant vaccine technology, vaccine delivery systems, 'naked DNA' vaccines, 'designer' vaccines, new adjuvants, anti-tumor vaccines, epidemiological approaches to assess vaccine efficacy, effectiveness, and safety will be discussed and covered." 
   }, 
   { 
     "name": "PB HLTH.276", 
@@ -44671,7 +44671,7 @@ courses = [
     "number": 117, 
     "units": 2, 
     "title": "Introduction to Global Health Disparities Research", 
-    "description": "This course is designed to prepare trainees in the UC Berkeley "Minority Health/Global Health" (MH/GH) program to conduct a ten-week infectious disease research project in a disease-endemic country. The course provides a background in neglected tropical disease research, international research ethics, and the conduct of health research in low-resource settings. Also listed as Integrative Biology C195." 
+    "description": "This course is designed to prepare trainees in the UC Berkeley 'Minority Health/Global Health' (MH/GH) program to conduct a ten-week infectious disease research project in a disease-endemic country. The course provides a background in neglected tropical disease research, international research ethics, and the conduct of health research in low-resource settings. Also listed as Integrative Biology C195." 
   }, 
   { 
     "name": "PB HLTH.C129", 
@@ -44867,7 +44867,7 @@ courses = [
     "number": 204, 
     "units": 4, 
     "title": "Mass Communication in Public Health", 
-    "description": "The purpose of this course is to provide students with an understanding of how the media can be used to promote healthy public policy. The primary focus of the course is on "media advocacy." Students will learn how to frame issues from a public health perspective. In learning more about how the media operate, they will be better equipped to work effectively with journalists." 
+    "description": "The purpose of this course is to provide students with an understanding of how the media can be used to promote healthy public policy. The primary focus of the course is on 'media advocacy.' Students will learn how to frame issues from a public health perspective. In learning more about how the media operate, they will be better equipped to work effectively with journalists." 
   }, 
   { 
     "name": "PB HLTH.W205", 
@@ -45021,7 +45021,7 @@ courses = [
     "number": 199, 
     "units": 1, 
     "title": "Supervised Independent Study and Research", 
-    "description": "Enrollment is restricted by regulations shown in the <General Catalog>." 
+    "description": "Enrollment is restricted by regulations shown in the 'General Catalog'." 
   }, 
   { 
     "name": "PERSIAN.1A", 
@@ -45294,7 +45294,7 @@ courses = [
     "number": 279, 
     "units": 3, 
     "title": "The Political Economy of Capitalism", 
-    "description": "Comprehensive introduction to historical development of contemporary capitalism. Class will (1) compare the "classics" in political economy and their alternative explanations of markets, politics, class, and culture in industrial development; (2) provide an overview of the history of the United States economic system and business institutions; and (3) examine competing theories of the corporation." 
+    "description": "Comprehensive introduction to historical development of contemporary capitalism. Class will (1) compare the 'classics' in political economy and their alternative explanations of markets, politics, class, and culture in industrial development; (2) provide an overview of the history of the United States economic system and business institutions; and (3) examine competing theories of the corporation." 
   }, 
   { 
     "name": "PHDBA.279C", 
@@ -45497,7 +45497,7 @@ courses = [
     "number": 132, 
     "units": 4, 
     "title": "Philosophy of Mind", 
-    "description": "Mind and matter; other minds; the concept "person."" 
+    "description": "Mind and matter; other minds; the concept 'person.'" 
   }, 
   { 
     "name": "PHILOS.133", 
@@ -45686,7 +45686,7 @@ courses = [
     "number": 185, 
     "units": 4, 
     "title": "Heidegger", 
-    "description": "A study of Heidegger's <Being and Time>." 
+    "description": "A study of Heidegger's 'Being and Time'." 
   }, 
   { 
     "name": "PHILOS.186B", 
@@ -45903,7 +45903,7 @@ courses = [
     "number": 132, 
     "units": 4, 
     "title": "Philosophy of Mind", 
-    "description": "Mind and matter; other minds; the concept of "person." Also listed as Letters and Science C160T." 
+    "description": "Mind and matter; other minds; the concept of 'person.' Also listed as Letters and Science C160T." 
   }, 
   { 
     "name": "PHILOS.H195", 
@@ -45924,21 +45924,21 @@ courses = [
     "number": 1, 
     "units": 0, 
     "title": "Physical Education Activities", 
-    "description": "Instruction in a variety of sports, exercise, and conditioning activities is offered at the elementary level. Students select section by activity and time preferences. Students should consult the <Schedule of Classes> each semester to determine the particular activities available." 
+    "description": "Instruction in a variety of sports, exercise, and conditioning activities is offered at the elementary level. Students select section by activity and time preferences. Students should consult the 'Schedule of Classes' each semester to determine the particular activities available." 
   }, 
   { 
     "name": "PHYS ED.11", 
     "number": 11, 
     "units": 0, 
     "title": "Physical Education Activities", 
-    "description": "Variety of intercollegiate sports for men. Students should select section by activity and time preferences. Students should consult the <Schedule of Classes> each semester to determine the particular activities available." 
+    "description": "Variety of intercollegiate sports for men. Students should select section by activity and time preferences. Students should consult the 'Schedule of Classes' each semester to determine the particular activities available." 
   }, 
   { 
     "name": "PHYS ED.12", 
     "number": 12, 
     "units": 0, 
     "title": "Physical Education Activities", 
-    "description": "Variety of intercollegiate sports for women. Students should select section by activity and time preferences. Students should consult the <Schedule of Classes> each semester to determine the particular activities available." 
+    "description": "Variety of intercollegiate sports for women. Students should select section by activity and time preferences. Students should consult the 'Schedule of Classes' each semester to determine the particular activities available." 
   }, 
   { 
     "name": "PHYS ED.197", 
@@ -45959,14 +45959,14 @@ courses = [
     "number": 2, 
     "units": 0, 
     "title": "Physical Education Activities", 
-    "description": "Instruction in a variety of sports, exercise, and conditioning activities is offered at the low intermediate level. Students select section by activity and time preferences. Students should consult the <Schedule of Classes> each semester to determine the particular activities available." 
+    "description": "Instruction in a variety of sports, exercise, and conditioning activities is offered at the low intermediate level. Students select section by activity and time preferences. Students should consult the 'Schedule of Classes' each semester to determine the particular activities available." 
   }, 
   { 
     "name": "PHYS ED.3", 
     "number": 3, 
     "units": 0, 
     "title": "Physical Education Activities", 
-    "description": "Instruction in a variety of sports, exercise, and conditioning activities is offered at the intermediate level. Students select section by activity and time preferences. Students should consult the <Schedule of Classes> each semester to determine the particular activities available." 
+    "description": "Instruction in a variety of sports, exercise, and conditioning activities is offered at the intermediate level. Students select section by activity and time preferences. Students should consult the 'Schedule of Classes' each semester to determine the particular activities available." 
   }, 
   { 
     "name": "PHYS ED.32", 
@@ -45980,7 +45980,7 @@ courses = [
     "number": 4, 
     "units": 0, 
     "title": "Physical Education Activities", 
-    "description": "Instruction in a variety of sports, exercise, and conditioning activities is offered at the high intermediate level. Students select section by activity and time preferences. Students should consult the <Schedule of Classes> each semester to determine the particular activities available." 
+    "description": "Instruction in a variety of sports, exercise, and conditioning activities is offered at the high intermediate level. Students select section by activity and time preferences. Students should consult the 'Schedule of Classes' each semester to determine the particular activities available." 
   }, 
   { 
     "name": "PHYS ED.47A", 
@@ -46001,7 +46001,7 @@ courses = [
     "number": 5, 
     "units": 0, 
     "title": "Physical Education Activities", 
-    "description": "Instruction in a variety of sports, exercise, and conditioning activities is offered at the advanced level. Students select section by activity and time preferences. Students should consult the <Schedule of Classes> each semester to determine the particular activities available." 
+    "description": "Instruction in a variety of sports, exercise, and conditioning activities is offered at the advanced level. Students select section by activity and time preferences. Students should consult the 'Schedule of Classes' each semester to determine the particular activities available." 
   }, 
   { 
     "name": "PHYS ED.60", 
@@ -46645,7 +46645,7 @@ courses = [
     "number": 203, 
     "units": 3, 
     "title": "Computational Nanoscience", 
-    "description": "A multidisciplinary overview of computational nanoscience for both theorists and experimentalists. This course teaches the main ideas behind different simulation methods; how to decompose a problem into "simulatable" constituents; how to simulate the same thing two different ways; knowing what you are doing and why thinking is still important; the importance of talking to experimentalists; what to do with your data and how to judge its validity; why multiscale modeling is both important and nonsense. Also listed as Nanoscale Science and Engineering C242." 
+    "description": "A multidisciplinary overview of computational nanoscience for both theorists and experimentalists. This course teaches the main ideas behind different simulation methods; how to decompose a problem into 'simulatable' constituents; how to simulate the same thing two different ways; knowing what you are doing and why thinking is still important; the importance of talking to experimentalists; what to do with your data and how to judge its validity; why multiscale modeling is both important and nonsense. Also listed as Nanoscale Science and Engineering C242." 
   }, 
   { 
     "name": "PHYSICS.C207", 
@@ -47163,7 +47163,7 @@ courses = [
     "number": 116, 
     "units": 3, 
     "title": "Microbial Diversity", 
-    "description": "This course for upper-division and graduate students will broadly survey myriad types of microbial organisms, both procaryote and eucaryote, using a phylogenetic framework to organize the concept of "biodiversity." Emphasis will be on the evolutionary development of the many biochemical themes, how they mold our biosphere, and the organisms that affect the global biochemistry. Molecular mechanisms that occur in different lineages will be compared and contrasted to illustrate fundamental biological strategies. Graduate students additionally should enroll in C216, Microbial Diversity Workshop. Also listed as Molecular and Cell Biology C116." 
+    "description": "This course for upper-division and graduate students will broadly survey myriad types of microbial organisms, both procaryote and eucaryote, using a phylogenetic framework to organize the concept of 'biodiversity.' Emphasis will be on the evolutionary development of the many biochemical themes, how they mold our biosphere, and the organisms that affect the global biochemistry. Molecular mechanisms that occur in different lineages will be compared and contrasted to illustrate fundamental biological strategies. Graduate students additionally should enroll in C216, Microbial Diversity Workshop. Also listed as Molecular and Cell Biology C116." 
   }, 
   { 
     "name": "PLANTBI.C124", 
@@ -47240,7 +47240,7 @@ courses = [
     "number": 96, 
     "units": 1, 
     "title": "Studying the Biological Sciences", 
-    "description": "Freshmen will be introduced to the "culture" of the biological sciences, along with an in-depth orientation to the academic life and the culture of the university as they relate to majoring in biology. Students will learn concepts, skills, and information that they can use in their major course, and as future science professionals. Restricted to freshmen in the biology scholars program. Also listed as Integrative Biology C96 and Molecular and Cell Biology C96." 
+    "description": "Freshmen will be introduced to the 'culture' of the biological sciences, along with an in-depth orientation to the academic life and the culture of the university as they relate to majoring in biology. Students will learn concepts, skills, and information that they can use in their major course, and as future science professionals. Restricted to freshmen in the biology scholars program. Also listed as Integrative Biology C96 and Molecular and Cell Biology C96." 
   }, 
   { 
     "name": "PLANTBI.H196", 
@@ -47408,7 +47408,7 @@ courses = [
     "number": 112, 
     "units": 4, 
     "title": "History of European Political Theory: The 20th Century", 
-    "description": "This is a survey course that will examine developments in 20th-century European Political Theory. It will focus on theorists' contributions and reactions to various major political and intellectual shifts, including Marxism (as "Western Marxism" and Critical Theory, as well as institutionalized Soviet communism in its heyday); psychoanalysis; and fascism." 
+    "description": "This is a survey course that will examine developments in 20th-century European Political Theory. It will focus on theorists' contributions and reactions to various major political and intellectual shifts, including Marxism (as 'Western Marxism' and Critical Theory, as well as institutionalized Soviet communism in its heyday); psychoanalysis; and fascism." 
   }, 
   { 
     "name": "POL SCI.114A", 
@@ -47877,7 +47877,7 @@ courses = [
     "number": 147, 
     "units": 4, 
     "title": "Contemporary French Politics: The Republican Model in Transition", 
-    "description": "French political life has long gravitated around a "Republican model" marked by an unmediated relationship between the citizen and the state, socialization into French values through secular public education, a special vocation for France on the international stage, and an activist state. Recent developments have called the Republican model into question. This course will examine the transformation of France's Republican model - its origins, operations, and responses to contemporary challenges." 
+    "description": "French political life has long gravitated around a 'Republican model' marked by an unmediated relationship between the citizen and the state, socialization into French values through secular public education, a special vocation for France on the international stage, and an activist state. Recent developments have called the Republican model into question. This course will examine the transformation of France's Republican model - its origins, operations, and responses to contemporary challenges." 
   }, 
   { 
     "name": "POL SCI.147G", 
@@ -48206,7 +48206,7 @@ courses = [
     "number": 209, 
     "units": 4, 
     "title": "Post Fordism: New Patterns of Production, Time, and Meaning in Contemporary Capitalism", 
-    "description": "With changes in technology, the internationalization of production and the massive increase in trans-border transactions of all kinds, it has been argued that we live and work in an era of substantively different capitalism. Were this true, it has deep implications for politics and for political economy. This graduate seminar explores the validity of this claim of a "new capitalism" through a variety of materials, starting with the question of whether "Fordism" ever existed, moving on to the question of whether "Post-Fordism" exists and ending with a variety of ethnographic studies that show how global production chains shape culture, gender, and hieraarchy/power." 
+    "description": "With changes in technology, the internationalization of production and the massive increase in trans-border transactions of all kinds, it has been argued that we live and work in an era of substantively different capitalism. Were this true, it has deep implications for politics and for political economy. This graduate seminar explores the validity of this claim of a 'new capitalism' through a variety of materials, starting with the question of whether 'Fordism' ever existed, moving on to the question of whether 'Post-Fordism' exists and ending with a variety of ethnographic studies that show how global production chains shape culture, gender, and hieraarchy/power." 
   }, 
   { 
     "name": "POL SCI.210", 
@@ -48311,7 +48311,7 @@ courses = [
     "number": 225, 
     "units": 4, 
     "title": "The Empirical Analysis of International Security", 
-    "description": "This course offers an introduction to the empirical analysis of International Security. The primary goals are 1) to acquaint students with the empirical knowledge in the field of International Security that has been produced with quantitative approaches and 2) to help students develop and hone their skills in empirical analysis. Therefore, particular emphasis will be given on how to go beyond being "consumers" of empirical research and how to become "producers" of novel empirical knowledge." 
+    "description": "This course offers an introduction to the empirical analysis of International Security. The primary goals are 1) to acquaint students with the empirical knowledge in the field of International Security that has been produced with quantitative approaches and 2) to help students develop and hone their skills in empirical analysis. Therefore, particular emphasis will be given on how to go beyond being 'consumers' of empirical research and how to become 'producers' of novel empirical knowledge." 
   }, 
   { 
     "name": "POL SCI.226", 
@@ -48374,21 +48374,21 @@ courses = [
     "number": 235, 
     "units": 4, 
     "title": "Introduction to Research Methods", 
-    "description": "Overview of methods of political research. Theories, concepts, variables, hypotheses. Research design, quantitative and qualitative methodology. Basic data collection techniques. Approaches to data analysis. Provides an overview of different statistical techniques, but does not teach statistics <per se>." 
+    "description": "Overview of methods of political research. Theories, concepts, variables, hypotheses. Research design, quantitative and qualitative methodology. Basic data collection techniques. Approaches to data analysis. Provides an overview of different statistical techniques, but does not teach statistics 'per se'." 
   }, 
   { 
     "name": "POL SCI.236A", 
     "number": 236, 
     "units": 4, 
     "title": "Quantitative Methodology in the Social Sciences Seminar", 
-    "description": "Approaches to causal inference using the potential outcomes framework. Covers observational studies with and without ignorable treatment assignment, randomized experiments with and without noncompliance, instrumental variables, regression discontinuity, sensitivity analysis, and random inference. Applications are drawn from a variety of fields including political science, economics, sociology, public health, and medicine.  A seminar on successful research designs and a forum for students to discuss the research methods needed in their own work, supplemented by lectures on relevant statistical and computational topics such as matching methods, instrumental variables, regression discontinuity, and Bayesian, maximum likelihood and robust estimation. Applications are drawn from political science, economics, sociology, and public health. Experience with R is assumed." 
+    "description": "# Approaches to causal inference using the potential outcomes framework. Covers observational studies with and without ignorable treatment assignment, randomized experiments with and without noncompliance, instrumental variables, regression discontinuity, sensitivity analysis, and random inference. Applications are drawn from a variety of fields including political science, economics, sociology, public health, and medicine. # A seminar on successful research designs and a forum for students to discuss the research methods needed in their own work, supplemented by lectures on relevant statistical and computational topics such as matching methods, instrumental variables, regression discontinuity, and Bayesian, maximum likelihood and robust estimation. Applications are drawn from political science, economics, sociology, and public health. Experience with R is assumed." 
   }, 
   { 
     "name": "POL SCI.236B", 
     "number": 236, 
     "units": 4, 
     "title": "Quantitative Methodology in the Social Sciences Seminar", 
-    "description": "Approaches to causal inference using the potential outcomes framework. Covers observational studies with and without ignorable treatment assignment, randomized experiments with and without noncompliance, instrumental variables, regression discontinuity, sensitivity analysis, and random inference. Applications are drawn from a variety of fields including political science, economics, sociology, public health, and medicine.  A seminar on successful research designs and a forum for students to discuss the research methods needed in their own work, supplemented by lectures on relevant statistical and computational topics such as matching methods, instrumental variables, regression discontinuity, and Bayesian, maximum likelihood and robust estimation. Applications are drawn from political science, economics, sociology, and public health. Experience with R is assumed." 
+    "description": "# Approaches to causal inference using the potential outcomes framework. Covers observational studies with and without ignorable treatment assignment, randomized experiments with and without noncompliance, instrumental variables, regression discontinuity, sensitivity analysis, and random inference. Applications are drawn from a variety of fields including political science, economics, sociology, public health, and medicine. # A seminar on successful research designs and a forum for students to discuss the research methods needed in their own work, supplemented by lectures on relevant statistical and computational topics such as matching methods, instrumental variables, regression discontinuity, and Bayesian, maximum likelihood and robust estimation. Applications are drawn from political science, economics, sociology, and public health. Experience with R is assumed." 
   }, 
   { 
     "name": "POL SCI.239", 
@@ -48430,7 +48430,7 @@ courses = [
     "number": 244, 
     "units": 4, 
     "title": "Approaches to Chinese Politics", 
-    "description": "This course has three main objectives: to expose students to debates in the study of post-1949 Chinese politics; to consider how research on contemporary China both draws from and informs political science; and to explore characterizations of the Chinese state and state-society relations. Emphasis on questions such as: What can we learn by examining Chinese culture and institutions? Do concepts such as fragmented authoritarianism, neotraditionalism, state "reach," civil society, and corporatism produce insights into the structure and dynamics of Chinese politics?" 
+    "description": "This course has three main objectives: to expose students to debates in the study of post-1949 Chinese politics; to consider how research on contemporary China both draws from and informs political science; and to explore characterizations of the Chinese state and state-society relations. Emphasis on questions such as: What can we learn by examining Chinese culture and institutions? Do concepts such as fragmented authoritarianism, neotraditionalism, state 'reach,' civil society, and corporatism produce insights into the structure and dynamics of Chinese politics?" 
   }, 
   { 
     "name": "POL SCI.244D", 
@@ -48451,7 +48451,7 @@ courses = [
     "number": 245, 
     "units": 4, 
     "title": "International Relations in East Asia", 
-    "description": "This seminar will focus on postwar relations among the countries in East Asia. Asia was long divided by colonialism, the Cold War, and America's "hub and spoke" alliance system. Nationalist sentiments and suspicions remain strong; one scholar characterized the region as "the cockpit of great power rivalries." Northeast Asia has seen no shooting wars between states since the Korean armistice in 1953; Southeast Asia has been at peace since the pullback of Vietnam from Cambodia in 1979." 
+    "description": "This seminar will focus on postwar relations among the countries in East Asia. Asia was long divided by colonialism, the Cold War, and America's 'hub and spoke' alliance system. Nationalist sentiments and suspicions remain strong; one scholar characterized the region as 'the cockpit of great power rivalries.' Northeast Asia has seen no shooting wars between states since the Korean armistice in 1953; Southeast Asia has been at peace since the pullback of Vietnam from Cambodia in 1979." 
   }, 
   { 
     "name": "POL SCI.246B", 
@@ -48724,7 +48724,7 @@ courses = [
     "number": 375, 
     "units": 2, 
     "title": "Graduate Student Instructor Training Seminar", 
-    "description": "This course is intended for all new graduate student instructors (GSI) in the Department of Political Science, and is meant to be taken simultaneously with the first semester of teaching as a GSI. The course functions as a participatory workshop. Although the course is intended for first-time GSIs, it is not a course in "how to be a GSI," but rather, how to be an effective political science teacher, now and at later steps in professional careers. Workshop time will be divided among presentations by the instructor, discussion of required readings, and discussion of weekly assignments in relation to challenges encountered by GSIs in the course of their teaching." 
+    "description": "This course is intended for all new graduate student instructors (GSI) in the Department of Political Science, and is meant to be taken simultaneously with the first semester of teaching as a GSI. The course functions as a participatory workshop. Although the course is intended for first-time GSIs, it is not a course in 'how to be a GSI,' but rather, how to be an effective political science teacher, now and at later steps in professional careers. Workshop time will be divided among presentations by the instructor, discussion of required readings, and discussion of weekly assignments in relation to challenges encountered by GSIs in the course of their teaching." 
   }, 
   { 
     "name": "POL SCI.39", 
@@ -48899,7 +48899,7 @@ courses = [
     "number": 101, 
     "units": 4, 
     "title": "Contemporary Theories of Political Economy", 
-    "description": "This course is designed to introduce students to modern theoretical works of central intellectual debates on 20th century international political economy. The course explores alternative explanations for inequality in economic development among nations and economic declines of of the dominate powers. It will also examine tensions between the increasing "globalization" of that economy and continued fragmentation of the international political system in nation-states." 
+    "description": "This course is designed to introduce students to modern theoretical works of central intellectual debates on 20th century international political economy. The course explores alternative explanations for inequality in economic development among nations and economic declines of of the dominate powers. It will also examine tensions between the increasing 'globalization' of that economy and continued fragmentation of the international political system in nation-states." 
   }, 
   { 
     "name": "POLECON.130", 
@@ -49081,7 +49081,7 @@ courses = [
     "number": 112, 
     "units": 3, 
     "title": "Portuguese Civilization", 
-    "description": "This course offers a historical-cultural perspective on Portugal since its formation to the present. It looks at key themes in the development of a specifically Portuguese identity, and examines the concept of "Portuguese-ness" in terms of the foundation of not only European, but also African, Asian, and American Portuguese-speaking societies. Course materials include works of poetry, fiction, and non-fiction." 
+    "description": "This course offers a historical-cultural perspective on Portugal since its formation to the present. It looks at key themes in the development of a specifically Portuguese identity, and examines the concept of 'Portuguese-ness' in terms of the foundation of not only European, but also African, Asian, and American Portuguese-speaking societies. Course materials include works of poetry, fiction, and non-fiction." 
   }, 
   { 
     "name": "PORTUG.113", 
@@ -49102,7 +49102,7 @@ courses = [
     "number": 128, 
     "units": 3, 
     "title": "Twentieth-Century Brazilian Literature", 
-    "description": "An examination of the most important 20th-century writers from the 1920s through the present. Emphasis on the shifting definition of "brasileiridade" and on new directions in contemporary poetry and fiction." 
+    "description": "An examination of the most important 20th-century writers from the 1920s through the present. Emphasis on the shifting definition of 'brasileiridade' and on new directions in contemporary poetry and fiction." 
   }, 
   { 
     "name": "PORTUG.135", 
@@ -49396,7 +49396,7 @@ courses = [
     "number": 192, 
     "units": 3, 
     "title": "Child Development in Different Cultures", 
-    "description": "This course explores "culture" as a context for development from both global and American sub-group perspectives, through developmental stages from early childhood to adolescence, across physical, social and cognitive domains. It will examine traditional theories and modern systems theories with respect to individual and social contexts, discuss the experience of sub-groups of American children and conclude with a comprehensive analysis of the development of an individual." 
+    "description": "This course explores 'culture' as a context for development from both global and American sub-group perspectives, through developmental stages from early childhood to adolescence, across physical, social and cognitive domains. It will examine traditional theories and modern systems theories with respect to individual and social contexts, discuss the experience of sub-groups of American children and conclude with a comprehensive analysis of the development of an individual." 
   }, 
   { 
     "name": "PSYCH.197", 
@@ -49942,7 +49942,7 @@ courses = [
     "number": 143, 
     "units": 3, 
     "title": "Language Acquisition", 
-    "description": "An overview of topics and theories in language acquisition: early development of speech perception and production, word learning, generalizing linguistic structure, and differences between first language acquisition, second language acquisition, and bilingualism. We will also compare different theoretical approaches, and address the classic "nature vs. nurture" question by examining both traditional generativist approaches and more recent usage based models. Also listed as Linguistics C146." 
+    "description": "An overview of topics and theories in language acquisition: early development of speech perception and production, word learning, generalizing linguistic structure, and differences between first language acquisition, second language acquisition, and bilingualism. We will also compare different theoretical approaches, and address the classic 'nature vs. nurture' question by examining both traditional generativist approaches and more recent usage based models. Also listed as Linguistics C146." 
   }, 
   { 
     "name": "PSYCH.C162", 
@@ -49970,7 +49970,7 @@ courses = [
     "number": 223, 
     "units": 3, 
     "title": "Proseminar: Problem Solving and Understanding", 
-    "description": "Students will examine problem solving in children and adults, from a predominantly cognitive science perspective, beginning with an examination of thinking involved in diverse problem types. Students will then analyze the literature concerning cognitive issues that transcend problem types, including representation, "understanding," access and availability of knowledge, access to one's own cognitive processing, categorization, the architecture of knowledge, and the control of cognition. Also listed as Education C229A." 
+    "description": "Students will examine problem solving in children and adults, from a predominantly cognitive science perspective, beginning with an examination of thinking involved in diverse problem types. Students will then analyze the literature concerning cognitive issues that transcend problem types, including representation, 'understanding,' access and availability of knowledge, access to one's own cognitive processing, categorization, the architecture of knowledge, and the control of cognition. Also listed as Education C229A." 
   }, 
   { 
     "name": "PSYCH.C61", 
@@ -50054,7 +50054,7 @@ courses = [
     "number": 157, 
     "units": 4, 
     "title": "Arts and Cultural Policy", 
-    "description": "Survey of government policy toward the arts (especially direct subsidy, copyright and regulation, and indirect assistance) and its effects on artists, audiences, and institutions. Emphasizes "highbrow" arts, U.S. policy, and the social and economic roles of participants in the arts. Readings, field trips, and case discussion. One paper in two drafts required for undergraduate credit; graduate credit awarded for an additional short paper to be arranged and attendance at four advanced colloquia throughout the term. Undergraduate level of 257." 
+    "description": "Survey of government policy toward the arts (especially direct subsidy, copyright and regulation, and indirect assistance) and its effects on artists, audiences, and institutions. Emphasizes 'highbrow' arts, U.S. policy, and the social and economic roles of participants in the arts. Readings, field trips, and case discussion. One paper in two drafts required for undergraduate credit; graduate credit awarded for an additional short paper to be arranged and attendance at four advanced colloquia throughout the term. Undergraduate level of 257." 
   }, 
   { 
     "name": "PUB POL.179", 
@@ -50068,7 +50068,7 @@ courses = [
     "number": 182, 
     "units": 4, 
     "title": "Environment and Technology from the Policy and Business Perspective", 
-    "description": "Most environmental issues involve technology, either in the role of "villain" or "hero." This course uses the lens of specific technologies to survey environmental policy and management, with an emphasis on the complexities of policy-making with diverse interest groups. The class includes case studies, guest practitioners, and a group project in which students employ a range of analytic tools and frameworks in order to develop creative, effective, and actionable environmental solutions." 
+    "description": "Most environmental issues involve technology, either in the role of 'villain' or 'hero.' This course uses the lens of specific technologies to survey environmental policy and management, with an emphasis on the complexities of policy-making with diverse interest groups. The class includes case studies, guest practitioners, and a group project in which students employ a range of analytic tools and frameworks in order to develop creative, effective, and actionable environmental solutions." 
   }, 
   { 
     "name": "PUB POL.190", 
@@ -50173,7 +50173,7 @@ courses = [
     "number": 257, 
     "units": 4, 
     "title": "Arts and Cultural Policy", 
-    "description": "Survey of government policy toward the arts (especially direct subsidy, copyright and regulation, and indirect assistance) and its effects on artists, audiences, and institutions. Emphasizes "highbrow" arts, U.S. policy, and the social and economic roles of participants in the arts. Readings, field trips, and case discussion. One paper in two drafts required for undergraduate credit; graduate credit awarded for an additional short paper to be arranged and attendance at four advanced colloquia throughout the term. Graduate level of 157." 
+    "description": "Survey of government policy toward the arts (especially direct subsidy, copyright and regulation, and indirect assistance) and its effects on artists, audiences, and institutions. Emphasizes 'highbrow' arts, U.S. policy, and the social and economic roles of participants in the arts. Readings, field trips, and case discussion. One paper in two drafts required for undergraduate credit; graduate credit awarded for an additional short paper to be arranged and attendance at four advanced colloquia throughout the term. Graduate level of 157." 
   }, 
   { 
     "name": "PUB POL.259", 
@@ -50215,14 +50215,14 @@ courses = [
     "number": 280, 
     "units": 4, 
     "title": "Ethics, Policy, and the Power of Ideas", 
-    "description": "This seminar brings together two related frames for policy thinking: the ethics of policy, that is, what does it mean to do the right thing? and the intervention of policy, that is, how do new policy paradigms emerge? <Ethics:> Those who seek to govern well inescapably confront questions of value in their political, professional, and personal choices. the discussion of ethical dilemmas, which will take up the first half of the semester, is designed to provoke analytic reflection on the moral challenges and responsibilities of public policymaking in a democracy. The focus is on the many and often competing obligations, commitments and values that should guide public actors, as well as on the public principles that guide the design of good public policy. <Big Ideas:> Politics and conventional analytics dominate policy in the short run. But over the longer term, conceptualizations as varied as exit/voice/loyalty, satisficing, the tipping point, memes, winner-take-all, strong democracy, broken windows, and the prisoners dilemma profoundly influence the policy conservation." 
+    "description": "This seminar brings together two related frames for policy thinking: the ethics of policy, that is, what does it mean to do the right thing? and the intervention of policy, that is, how do new policy paradigms emerge? 'Ethics:' Those who seek to govern well inescapably confront questions of value in their political, professional, and personal choices. the discussion of ethical dilemmas, which will take up the first half of the semester, is designed to provoke analytic reflection on the moral challenges and responsibilities of public policymaking in a democracy. The focus is on the many and often competing obligations, commitments and values that should guide public actors, as well as on the public principles that guide the design of good public policy. 'Big Ideas:' Politics and conventional analytics dominate policy in the short run. But over the longer term, conceptualizations as varied as exit/voice/loyalty, satisficing, the tipping point, memes, winner-take-all, strong democracy, broken windows, and the prisoners dilemma profoundly influence the policy conservation." 
   }, 
   { 
     "name": "PUB POL.282", 
     "number": 282, 
     "units": 4, 
     "title": "Environment and Technology from the Policy and Business Perspective", 
-    "description": "Most environmental issues involve technology, either in the role of "villain" or "hero." This course uses the lens of specific technologies to survey environmental policy and management, with an emphasis on the complexities of policy-making with diverse interest groups. The class includes case studies, guest practitioners, and a group project in which students employ a range of analytic tools and frameworks in order to develop creative, effective, and actionable environmental solutions." 
+    "description": "Most environmental issues involve technology, either in the role of 'villain' or 'hero.' This course uses the lens of specific technologies to survey environmental policy and management, with an emphasis on the complexities of policy-making with diverse interest groups. The class includes case studies, guest practitioners, and a group project in which students employ a range of analytic tools and frameworks in order to develop creative, effective, and actionable environmental solutions." 
   }, 
   { 
     "name": "PUB POL.286", 
@@ -50327,7 +50327,7 @@ courses = [
     "number": 157, 
     "units": 4, 
     "title": "Arts and Cultural Policy", 
-    "description": "Survey of government policy toward the arts (especially direct subsidy, copyright and regulation, and indirect assistance) and its effects on artists, audiences, and institutions. Emphasizes "highbrow" arts, U.S. policy, and the social and economic roles of participants in the arts. Readings, field trips, and case discussion. One paper in two drafts required for undergraduate credit; graduate credit awarded for an additional short paper to be arranged and attendance at four advanced colloquia throughout the term. Undergraduate level of 257. Also listed as Letters and Science C180X." 
+    "description": "Survey of government policy toward the arts (especially direct subsidy, copyright and regulation, and indirect assistance) and its effects on artists, audiences, and institutions. Emphasizes 'highbrow' arts, U.S. policy, and the social and economic roles of participants in the arts. Readings, field trips, and case discussion. One paper in two drafts required for undergraduate credit; graduate credit awarded for an additional short paper to be arranged and attendance at four advanced colloquia throughout the term. Undergraduate level of 257. Also listed as Letters and Science C180X." 
   }, 
   { 
     "name": "PUB POL.C164", 
@@ -50376,14 +50376,14 @@ courses = [
     "number": 100, 
     "units": 5, 
     "title": "Intermediate Punjabi", 
-    "description": "Focus on reading, writing and speaking Punjabi more fluently in formal and informal contexts. Selected readings vary every semester. These form the starting point to stimulate students' own writings which include a long interview with a Punjabi elder from the wider community. These may be recorded in the students' own voices and form a contribution to the ongoing "Punjabi Voices" project. Review of grammar provided as needed in addition to the introduction of more complex grammatical structures. Grading based on performance in class and final presentation, weekly quizzes, two midterms, and a final." 
+    "description": "Focus on reading, writing and speaking Punjabi more fluently in formal and informal contexts. Selected readings vary every semester. These form the starting point to stimulate students' own writings which include a long interview with a Punjabi elder from the wider community. These may be recorded in the students' own voices and form a contribution to the ongoing 'Punjabi Voices' project. Review of grammar provided as needed in addition to the introduction of more complex grammatical structures. Grading based on performance in class and final presentation, weekly quizzes, two midterms, and a final." 
   }, 
   { 
     "name": "PUNJABI.100B", 
     "number": 100, 
     "units": 5, 
     "title": "Intermediate Punjabi", 
-    "description": "Focus on reading, writing and speaking Punjabi more fluently in formal and informal contexts. Selected readings vary every semester. These form the starting point to stimulate students' own writings which include a long interview with a Punjabi elder from the wider community. These may be recorded in the students' own voices and form a contribution to the ongoing "Punjabi Voices" project. Review of grammar provided as needed in addition to the introduction of more complex grammatical structures. Grading based on performance in class and final presentation, weekly quizzes, two midterms, and a final." 
+    "description": "Focus on reading, writing and speaking Punjabi more fluently in formal and informal contexts. Selected readings vary every semester. These form the starting point to stimulate students' own writings which include a long interview with a Punjabi elder from the wider community. These may be recorded in the students' own voices and form a contribution to the ongoing 'Punjabi Voices' project. Review of grammar provided as needed in addition to the introduction of more complex grammatical structures. Grading based on performance in class and final presentation, weekly quizzes, two midterms, and a final." 
   }, 
   { 
     "name": "PUNJABI.1A", 
@@ -50530,7 +50530,7 @@ courses = [
     "number": 162, 
     "units": 3, 
     "title": "Religion in South India", 
-    "description": "The development and practice of religion in South India. Emphasis will be on sources translated directly from Indian languages. Subjects covered include: the indigenous religion, the effect of Brahmanical religion, <bhakti> movements, and the practice of Hinduism in modern South India. Also listed as South Asian C141." 
+    "description": "The development and practice of religion in South India. Emphasis will be on sources translated directly from Indian languages. Subjects covered include: the indigenous religion, the effect of Brahmanical religion, 'bhakti' movements, and the practice of Hinduism in modern South India. Also listed as South Asian C141." 
   }, 
   { 
     "name": "RELIGST.C163", 
@@ -50733,7 +50733,7 @@ courses = [
     "number": 127, 
     "units": 4, 
     "title": "Novel, Society, and Politics", 
-    "description": "This course examines the complex links between novelistic discourse, society, and politics. Topics to be studied may include the social and political vocation of the <Bildungsroman> and the realist novel; autobiography and the rise of liberal individualism; political censorship; and the role of the novel in imagining the nation." 
+    "description": "This course examines the complex links between novelistic discourse, society, and politics. Topics to be studied may include the social and political vocation of the 'Bildungsroman' and the realist novel; autobiography and the rise of liberal individualism; political censorship; and the role of the novel in imagining the nation." 
   }, 
   { 
     "name": "RHETOR.128T", 
@@ -50789,7 +50789,7 @@ courses = [
     "number": 135, 
     "units": 4, 
     "title": "Selected Topics in Film", 
-    "description": "A study of a film topic not covered by the other film categories. This course might focus on a particular cinematic "theme," or a nonhistoric and nongeneric category. Examples: Feminist Film Practice, Gay and Lesbian Cinema, Race and Cinematic Representation." 
+    "description": "A study of a film topic not covered by the other film categories. This course might focus on a particular cinematic 'theme,' or a nonhistoric and nongeneric category. Examples: Feminist Film Practice, Gay and Lesbian Cinema, Race and Cinematic Representation." 
   }, 
   { 
     "name": "RHETOR.136", 
@@ -50824,14 +50824,14 @@ courses = [
     "number": 151, 
     "units": 4, 
     "title": "Rhetoric of Contact and Conquest", 
-    "description": "This course charts the discovery and conquest of the New World; it treats the ways in which New World peoples were understood--and exploited--by Europeans. It explores not only questions relating to the origins of New World peoples, but also climate and zonal theories of race, and racial ideas of degeneration and corruption. In examining Europe's multivalent relationship with the "other," the course investigates the legal, moral, and spiritual status of New World peoples." 
+    "description": "This course charts the discovery and conquest of the New World; it treats the ways in which New World peoples were understood--and exploited--by Europeans. It explores not only questions relating to the origins of New World peoples, but also climate and zonal theories of race, and racial ideas of degeneration and corruption. In examining Europe's multivalent relationship with the 'other,' the course investigates the legal, moral, and spiritual status of New World peoples." 
   }, 
   { 
     "name": "RHETOR.152", 
     "number": 152, 
     "units": 4, 
     "title": "Rhetoric of Constitutional Discourse", 
-    "description": "The rhetorical context of <The Federalist>. Examines the tradition of Anglo-American constitutional argumentation in the eighteenth century, its sources, and its implications. Readings include Locke, Hume, Montesquieu, pamphlets of the American Revolution, and Anti-Federalist writings." 
+    "description": "The rhetorical context of 'The Federalist'. Examines the tradition of Anglo-American constitutional argumentation in the eighteenth century, its sources, and its implications. Readings include Locke, Hume, Montesquieu, pamphlets of the American Revolution, and Anti-Federalist writings." 
   }, 
   { 
     "name": "RHETOR.152AC", 
@@ -50852,7 +50852,7 @@ courses = [
     "number": 155, 
     "units": 4, 
     "title": "Discourses of Colonialism and Postcoloniality", 
-    "description": "This course critically explores key concepts and figures used in the public discourse of European colonialism to justify territorial expansion in the 19th century such as "race," "culture," "civility," and "the Orient" and their disturbing legacies for the knowledges, practical projects, and problems of contemporary postcolonial societies in a globalizing world." 
+    "description": "This course critically explores key concepts and figures used in the public discourse of European colonialism to justify territorial expansion in the 19th century such as 'race,' 'culture,' 'civility,' and 'the Orient' and their disturbing legacies for the knowledges, practical projects, and problems of contemporary postcolonial societies in a globalizing world." 
   }, 
   { 
     "name": "RHETOR.156", 
@@ -50950,7 +50950,7 @@ courses = [
     "number": 170, 
     "units": 4, 
     "title": "Rhetoric of Social Science", 
-    "description": "Analysis of the ways in which political scientists, sociologists, anthropologists, economists and psychologists establish the authoritativeness of their claims. Focus is on the presentation of data as fact, the use of quantitative methods, and other "strategies" through which social knowledge is transformed into objective information." 
+    "description": "Analysis of the ways in which political scientists, sociologists, anthropologists, economists and psychologists establish the authoritativeness of their claims. Focus is on the presentation of data as fact, the use of quantitative methods, and other 'strategies' through which social knowledge is transformed into objective information." 
   }, 
   { 
     "name": "RHETOR.171", 
@@ -51083,7 +51083,7 @@ courses = [
     "number": 243, 
     "units": 4, 
     "title": "Special Topics in Film", 
-    "description": "A theoretical examination of a film topic which falls outside the purview of traditional categories of film analysis, such as "genre," "history," or "theory." Examples: Rainer Werner Fassbinder, The Essay Film, Feminist Film Practice, Cinema and the Phantasmagoria of History." 
+    "description": "A theoretical examination of a film topic which falls outside the purview of traditional categories of film analysis, such as 'genre,' 'history,' or 'theory.' Examples: Rainer Werner Fassbinder, The Essay Film, Feminist Film Practice, Cinema and the Phantasmagoria of History." 
   }, 
   { 
     "name": "RHETOR.244", 
@@ -51223,14 +51223,14 @@ courses = [
     "number": 146, 
     "units": 4, 
     "title": "Mughal India through Memoirs, Chronicles and other Texts", 
-    "description": "This course is designed to provide a dual chronological and thematic approach to the study of one of the greatest empires in human civilization: the Mughal Empire. Although the bulk of this course will focus on the Mughal Empire during its heyday between the 1550s and the early 1700s, careful attention will be paid to the larger historical and geographical contexts that both enabled the emergence and, ultimately, decentralization of Mughal power. In so doing, this course will not only study South Asia's complex history on its own terms but also examine the intricate web of political, economic, and social links that connected South Asia to the rest of the world. Simultaneously, this course will also pay particular attention to a series of common misconceptions that dog the study of pre-modern Islamic polities. Among them, the supposedly lesser role played by women in politics; the dogmatic and central role of Islam in "Muslim" states; and the economic and political superiority of Western Europe. Crucial to these questions also is an examination of the historiography and historiographical traditions that have come to define contemporary understanding of the Mughal Empire." 
+    "description": "This course is designed to provide a dual chronological and thematic approach to the study of one of the greatest empires in human civilization: the Mughal Empire. Although the bulk of this course will focus on the Mughal Empire during its heyday between the 1550s and the early 1700s, careful attention will be paid to the larger historical and geographical contexts that both enabled the emergence and, ultimately, decentralization of Mughal power. In so doing, this course will not only study South Asia's complex history on its own terms but also examine the intricate web of political, economic, and social links that connected South Asia to the rest of the world. Simultaneously, this course will also pay particular attention to a series of common misconceptions that dog the study of pre-modern Islamic polities. Among them, the supposedly lesser role played by women in politics; the dogmatic and central role of Islam in 'Muslim' states; and the economic and political superiority of Western Europe. Crucial to these questions also is an examination of the historiography and historiographical traditions that have come to define contemporary understanding of the Mughal Empire." 
   }, 
   { 
     "name": "S ASIAN.148", 
     "number": 148, 
     "units": 4, 
     "title": "Religious Nationalism in South Asia", 
-    "description": "This course seeks to interrogate the highly contentious and controversial issue of Hindu and Muslim religious nationalism (otherwise known as "communalism") in South Asia. In so doing, we will interrogate the historical trajectory and development of religious nationalism from the colonial period through to the present. We will examine issues relating to the rise of (non-religious) nationalism outside of South Asia; Hindu and Muslim relations in the pre-colonial period; colonial attempts to construct South Asia's past along religious lines; the dialectical interplay of early Hindu and Muslim religious nationalism; the interplay between secular and religious nationalism; different intellectual attempts to articulate notions of bounded religious communities; the success of religious nationalism in contemporary South Asia; and the implications of religious nationalism for the future of South Asia." 
+    "description": "This course seeks to interrogate the highly contentious and controversial issue of Hindu and Muslim religious nationalism (otherwise known as 'communalism') in South Asia. In so doing, we will interrogate the historical trajectory and development of religious nationalism from the colonial period through to the present. We will examine issues relating to the rise of (non-religious) nationalism outside of South Asia; Hindu and Muslim relations in the pre-colonial period; colonial attempts to construct South Asia's past along religious lines; the dialectical interplay of early Hindu and Muslim religious nationalism; the interplay between secular and religious nationalism; different intellectual attempts to articulate notions of bounded religious communities; the success of religious nationalism in contemporary South Asia; and the implications of religious nationalism for the future of South Asia." 
   }, 
   { 
     "name": "S ASIAN.1A", 
@@ -51286,7 +51286,7 @@ courses = [
     "number": 141, 
     "units": 3, 
     "title": "Religion in South India", 
-    "description": "The development and practice of religion in South India. Emphasis will be on sources translated directly from Indian languages. Subjects covered include: the indigenous religion, the effect of Brahmanical religion, <bhakti> movements, and the practice of Hinduism in modern South India. Also listed as Religious Studies C162." 
+    "description": "The development and practice of religion in South India. Emphasis will be on sources translated directly from Indian languages. Subjects covered include: the indigenous religion, the effect of Brahmanical religion, 'bhakti' movements, and the practice of Hinduism in modern South India. Also listed as Religious Studies C162." 
   }, 
   { 
     "name": "S ASIAN.C142", 
@@ -51496,7 +51496,7 @@ courses = [
     "number": 24, 
     "units": 1, 
     "title": "Freshman Seminar", 
-    "description": "The Freshman Seminar Program has been designed to provide new students with the opportunity to explore an intellectual topic with a faculty member in a small seminar setting. Freshman seminars are offered in all campus departments and topics vary from department to department and semester to semester. Enrollment limited to 15 freshmen."
+    "description": "The Freshman Seminar Program has been designed to provide new students with the opportunity to explore an intellectual topic with a faculty member in a small seminar setting. Freshman seminars are offered in all campus departments and topics vary from department to department and semester to semester. Enrollment limited to 15 freshmen." 
   }, 
   { 
     "name": "S,SEASN.250", 
@@ -51804,7 +51804,7 @@ courses = [
     "number": 145, 
     "units": 4, 
     "title": "Buddhism in Contemporary Society", 
-    "description": "A study of the Buddhist tradition as it is found today in Asia. The course will focus on specific living traditions of East, South, and/or Southeast Asia. Themes to be addressed may include contemporary Buddhist ritual practices; funerary and mortuary customs; the relationship between Buddhism and other local religious traditions; the relationship between Buddhist institutions and the state; Buddhist monasticism and its relationship to the laity; Buddhist ethics; Buddhist "modernism," and so on. Also listed as Group in Buddhist Studies C128 and East Asian Languages and Cultures C128." 
+    "description": "A study of the Buddhist tradition as it is found today in Asia. The course will focus on specific living traditions of East, South, and/or Southeast Asia. Themes to be addressed may include contemporary Buddhist ritual practices; funerary and mortuary customs; the relationship between Buddhism and other local religious traditions; the relationship between Buddhist institutions and the state; Buddhist monasticism and its relationship to the laity; Buddhist ethics; Buddhist 'modernism,' and so on. Also listed as Group in Buddhist Studies C128 and East Asian Languages and Cultures C128." 
   }, 
   { 
     "name": "S,SEASN.C220", 
@@ -51923,21 +51923,21 @@ courses = [
     "number": 200, 
     "units": 4, 
     "title": "Sanskrit Literature", 
-    "description": "<Formerly 200, 201 and 202.> Advanced readings in Sanskrit literature, including Sanskrit ornate poetry with emphasis on the canons of poetic analysis of the Indian aesthetic tradition." 
+    "description": "'Formerly 200, 201 and 202.' Advanced readings in Sanskrit literature, including Sanskrit ornate poetry with emphasis on the canons of poetic analysis of the Indian aesthetic tradition." 
   }, 
   { 
     "name": "SANSKR.200B", 
     "number": 200, 
     "units": 4, 
     "title": "Sanskrit Literature", 
-    "description": "<Formerly 200, 201 and 202.> Advanced readings in Sanskrit literature, including Sanskrit ornate poetry with emphasis on the canons of poetic analysis of the Indian aesthetic tradition." 
+    "description": "'Formerly 200, 201 and 202.' Advanced readings in Sanskrit literature, including Sanskrit ornate poetry with emphasis on the canons of poetic analysis of the Indian aesthetic tradition." 
   }, 
   { 
     "name": "SANSKR.203", 
     "number": 203, 
     "units": 4, 
     "title": "Vedic Sanskrit", 
-    "description": "Readings from the <Rig-Veda> and other Vedic texts, including <Brahmanas> and <Upanishads>. Knowledge of German and/or French is recommended." 
+    "description": "Readings from the 'Rig-Veda' and other Vedic texts, including 'Brahmanas' and 'Upanishads'. Knowledge of German and/or French is recommended." 
   }, 
   { 
     "name": "SANSKR.206", 
@@ -52042,7 +52042,7 @@ courses = [
     "number": 149, 
     "units": 1, 
     "title": "Major Studies", 
-    "description": "Additional work, for majors in Scandinavian and other qualified students with permission of the instructor, in connection with one of the following: Scandinavian C107, C108, 115, 116, 117, 120, 165. Students attend lectures and do all written work in the "main" course and also read assignments in the Scandinavian languages and write a short paper." 
+    "description": "Additional work, for majors in Scandinavian and other qualified students with permission of the instructor, in connection with one of the following: Scandinavian C107, C108, 115, 116, 117, 120, 165. Students attend lectures and do all written work in the 'main' course and also read assignments in the Scandinavian languages and write a short paper." 
   }, 
   { 
     "name": "SCANDIN.150", 
@@ -52161,7 +52161,7 @@ courses = [
     "number": 249, 
     "units": 1, 
     "title": "Graduate Studies", 
-    "description": "Additional work in connection with one of the following courses: Scandinavian C107, C108, 115, 116, 117, 120, 123, 125, C160, 165. Students attend lectures and do all written work in the "main course," and also read assignments in the Scandinavian languages, and write a paper." 
+    "description": "Additional work in connection with one of the following courses: Scandinavian C107, C108, 115, 116, 117, 120, 123, 125, C160, 165. Students attend lectures and do all written work in the 'main course,' and also read assignments in the Scandinavian languages, and write a paper." 
   }, 
   { 
     "name": "SCANDIN.250", 
@@ -52217,7 +52217,7 @@ courses = [
     "number": 301, 
     "units": 3, 
     "title": "Scandinavian Teaching Methods", 
-    "description": "Course on practical teaching methods, grading, testing, classroom activities, and design of course materials and syllabi. Required of all Scandinavian Department GSIs."
+    "description": "Course on practical teaching methods, grading, testing, classroom activities, and design of course materials and syllabi. Required of all Scandinavian Department GSIs." 
   }, 
   { 
     "name": "SCANDIN.39", 
@@ -52301,7 +52301,7 @@ courses = [
     "number": 114, 
     "units": 4, 
     "title": "Word and Image", 
-    "description": "This course is designed to sharpen our skills in understanding what happens when the world of images and words meet. Starting with the work from the Western "classical" tradition we will proceed to investigate how word/image constellations operate in a variety of media, including sculpture and poetry, painting and prose, death masks, tableaux vivants, photography, and advertising. Also listed as Interdisciplinary Studies Field Maj C100C." 
+    "description": "This course is designed to sharpen our skills in understanding what happens when the world of images and words meet. Starting with the work from the Western 'classical' tradition we will proceed to investigate how word/image constellations operate in a variety of media, including sculpture and poetry, painting and prose, death masks, tableaux vivants, photography, and advertising. Also listed as Interdisciplinary Studies Field Maj C100C." 
   }, 
   { 
     "name": "SCANDIN.C160", 
@@ -52434,7 +52434,7 @@ courses = [
     "number": 164, 
     "units": 4, 
     "title": "The Indonesian Connection: Dutch Literature About the Indies in English Translation", 
-    "description": "In postcolonial thought on European claims to cultural supremacy, the case of the "Dutch East-Indies" (the future Indonesia) still arouses questions like: What made the Dutch colonial policy different from that of other European powers? What were the main characteristics of the "Dutch East-Indies"? How did a small country like the Netherlands manage to rule a territory that was fifty-two times its own in scale? And how can we explain that 350 years of Dutch domination left so few traces in contemporary Indonesia? Also listed as Dutch C164." 
+    "description": "In postcolonial thought on European claims to cultural supremacy, the case of the 'Dutch East-Indies' (the future Indonesia) still arouses questions like: What made the Dutch colonial policy different from that of other European powers? What were the main characteristics of the 'Dutch East-Indies'? How did a small country like the Netherlands manage to rule a territory that was fifty-two times its own in scale? And how can we explain that 350 years of Dutch domination left so few traces in contemporary Indonesia? Also listed as Dutch C164." 
   }, 
   { 
     "name": "SEMITIC.100A", 
@@ -52525,7 +52525,7 @@ courses = [
     "number": 106, 
     "units": 3, 
     "title": "Advanced Russian for Heritage Speakers", 
-    "description": "The course is aimed at "heritage speakers" of Russian, i.e., those who grew up speaking Russian in the family without a standard Russian educational background. The advanced course aims at building a sophisticated vocabulary, developing advanced reading ability, formal knowledge of grammar, and complete writing competency. This course fosters student's knowledge and understanding of Russian culture and society today. (Students with no or rudimentary reading proficiency should consider 6A or 6B by consent of instructor.)" 
+    "description": "The course is aimed at 'heritage speakers' of Russian, i.e., those who grew up speaking Russian in the family without a standard Russian educational background. The advanced course aims at building a sophisticated vocabulary, developing advanced reading ability, formal knowledge of grammar, and complete writing competency. This course fosters student's knowledge and understanding of Russian culture and society today. (Students with no or rudimentary reading proficiency should consider 6A or 6B by consent of instructor.)" 
   }, 
   { 
     "name": "SLAVIC.109", 
@@ -53176,7 +53176,7 @@ courses = [
     "number": 46, 
     "units": 3, 
     "title": "Twentieth-Century Russian Literature", 
-    "description": "Development of Russian literature from 1900 to the present: modernism, Soviet, and <emigre> literature. No knowledge of Russian required. Prerequisite to admission to the Slavic major and recommended for prospective graduate students." 
+    "description": "Development of Russian literature from 1900 to the present: modernism, Soviet, and 'emigre' literature. No knowledge of Russian required. Prerequisite to admission to the Slavic major and recommended for prospective graduate students." 
   }, 
   { 
     "name": "SLAVIC.50", 
@@ -53204,14 +53204,14 @@ courses = [
     "number": 6, 
     "units": 3, 
     "title": "Introductory Russian for Heritage Speakers", 
-    "description": "The course is aimed at "heritage speakers" of Russian, i.e., those who grew up speaking Russian in the family without a full Russian educational and cultural background. These courses are designed for students who have speaking and comprehension ability in Russian but have minimum exposure to writing and reading. This course teaches basic skills of writing, reading, and grammar. 6A focuses on basic writing and reading ability. 6B introduces further knowledge of grammar and syntax and develops writing skills. Both 6A and 6B include reading and cultural material. (Students with advanced reading proficiency should consider Slavic 114 or Slavic 190.)" 
+    "description": "The course is aimed at 'heritage speakers' of Russian, i.e., those who grew up speaking Russian in the family without a full Russian educational and cultural background. These courses are designed for students who have speaking and comprehension ability in Russian but have minimum exposure to writing and reading. This course teaches basic skills of writing, reading, and grammar. 6A focuses on basic writing and reading ability. 6B introduces further knowledge of grammar and syntax and develops writing skills. Both 6A and 6B include reading and cultural material. (Students with advanced reading proficiency should consider Slavic 114 or Slavic 190.)" 
   }, 
   { 
     "name": "SLAVIC.6B", 
     "number": 6, 
     "units": 3, 
     "title": "Introductory Russian for Heritage Speakers", 
-    "description": "The course is aimed at "heritage speakers" of Russian, i.e., those who grew up speaking Russian in the family without a full Russian educational and cultural background. These courses are designed for students who have speaking and comprehension ability in Russian but have minimum exposure to writing and reading. This course teaches basic skills of writing, reading, and grammar. 6A focuses on basic writing and reading ability. 6B introduces further knowledge of grammar and syntax and develops writing skills. Both 6A and 6B include reading and cultural material. (Students with advanced reading proficiency should consider Slavic 114 or Slavic 190.)" 
+    "description": "The course is aimed at 'heritage speakers' of Russian, i.e., those who grew up speaking Russian in the family without a full Russian educational and cultural background. These courses are designed for students who have speaking and comprehension ability in Russian but have minimum exposure to writing and reading. This course teaches basic skills of writing, reading, and grammar. 6A focuses on basic writing and reading ability. 6B introduces further knowledge of grammar and syntax and develops writing skills. Both 6A and 6B include reading and cultural material. (Students with advanced reading proficiency should consider Slavic 114 or Slavic 190.)" 
   }, 
   { 
     "name": "SLAVIC.98", 
@@ -53323,7 +53323,7 @@ courses = [
     "number": 199, 
     "units": 1, 
     "title": "Supervised Independent Study and Research", 
-    "description": "Enrollment is restricted by regulations specified in the <General Catalog.>" 
+    "description": "Enrollment is restricted by regulations specified in the 'General Catalog.'" 
   }, 
   { 
     "name": "SOC WEL.200", 
@@ -53932,14 +53932,14 @@ courses = [
     "number": 111, 
     "units": 4, 
     "title": "Sociology of the Family", 
-    "description": "In this course, we trace the history of the American family from the 19th-century farm--in which work, medical care, and entertainment went on--to the smaller, more diverse, and subjectively defined family of the 21st century. We also explore ways in which the family acts as a "shock absorber" of many trends including immigration, the increasing social class divide, and especially the growing domination of the marketplace. Finally, we also explore the diversity of family forms associated with social class, ethnicity, and sexual orientation." 
+    "description": "In this course, we trace the history of the American family from the 19th-century farm--in which work, medical care, and entertainment went on--to the smaller, more diverse, and subjectively defined family of the 21st century. We also explore ways in which the family acts as a 'shock absorber' of many trends including immigration, the increasing social class divide, and especially the growing domination of the marketplace. Finally, we also explore the diversity of family forms associated with social class, ethnicity, and sexual orientation." 
   }, 
   { 
     "name": "SOCIOL.111AC", 
     "number": 111, 
     "units": 4, 
     "title": "Sociology of the Family", 
-    "description": "In this course, we trace the history of the American family from the 19th-century farm--in which work, medical care, and entertainment went on--to the smaller, more diverse, and subjectively defined family of the 21st century. We also explore ways in which the family acts as a "shock absorber" of many trends including immigration, the increasing social class divide, and especially the growing domination of the marketplace. Finally, we also explore the diversity of family forms associated with social class, ethnicity, and sexual orientation." 
+    "description": "In this course, we trace the history of the American family from the 19th-century farm--in which work, medical care, and entertainment went on--to the smaller, more diverse, and subjectively defined family of the 21st century. We also explore ways in which the family acts as a 'shock absorber' of many trends including immigration, the increasing social class divide, and especially the growing domination of the marketplace. Finally, we also explore the diversity of family forms associated with social class, ethnicity, and sexual orientation." 
   }, 
   { 
     "name": "SOCIOL.111C", 
@@ -53953,7 +53953,7 @@ courses = [
     "number": 111, 
     "units": 4, 
     "title": "Families, Inequality and Social Policy", 
-    "description": "This course explores the relationships between changes in how Americans are experiencing family life, growing inequality in the U.S., and the social policy "solutions" aimed at families and children. While discussing these trends and changes and their social consequences, we will discuss government responses to these changes, how debates are framed, who debates, and how other industrialized countries consider these questions." 
+    "description": "This course explores the relationships between changes in how Americans are experiencing family life, growing inequality in the U.S., and the social policy 'solutions' aimed at families and children. While discussing these trends and changes and their social consequences, we will discuss government responses to these changes, how debates are framed, who debates, and how other industrialized countries consider these questions." 
   }, 
   { 
     "name": "SOCIOL.113", 
@@ -54023,7 +54023,7 @@ courses = [
     "number": 123, 
     "units": 4, 
     "title": "Corporate Social Responsibility and Green Business", 
-    "description": "A corporation is a "citizen" of a society and, like all other citizens, has certain legal, regulatory, moral, and ethical duties. This course will examine the definitions of corporate social responsibility and examples of good and bad corporate citizenship based on some of those definitions, with an emphasis on "green business", ways in which corporations minimize their impact on the environment." 
+    "description": "A corporation is a 'citizen' of a society and, like all other citizens, has certain legal, regulatory, moral, and ethical duties. This course will examine the definitions of corporate social responsibility and examples of good and bad corporate citizenship based on some of those definitions, with an emphasis on 'green business', ways in which corporations minimize their impact on the environment." 
   }, 
   { 
     "name": "SOCIOL.124", 
@@ -54086,7 +54086,7 @@ courses = [
     "number": 131, 
     "units": 4, 
     "title": "Four Centuries of Racial Vision and Division in the U.S.", 
-    "description": "This course mixes sociological theory and social history to trace the workings of race as a principle of social vision and division. It proceeds through a focused inquiry into the making, functioning, and contradictions of four "peculiar institutions" that have operated to define, confine, and control African Americans in the history of the United States: slavery; the Jim Crow system of legal discrimination and segregation; the ghetto of the Northern metropolis; and the novel institutional mesh formed by the hyperghetto and the prison." 
+    "description": "This course mixes sociological theory and social history to trace the workings of race as a principle of social vision and division. It proceeds through a focused inquiry into the making, functioning, and contradictions of four 'peculiar institutions' that have operated to define, confine, and control African Americans in the history of the United States: slavery; the Jim Crow system of legal discrimination and segregation; the ghetto of the Northern metropolis; and the novel institutional mesh formed by the hyperghetto and the prison." 
   }, 
   { 
     "name": "SOCIOL.133", 
@@ -54198,7 +54198,7 @@ courses = [
     "number": 150, 
     "units": 4, 
     "title": "Social Psychology: Self and Society", 
-    "description": "This survey course provides tools from social psychology to help students develop a better understanding of their own and others' behavior. Social psychology is a field that bridges sociology and psychology and is primarily concerned with how individuals view and interact with one another in everyday life. The class is organized around a survey of the great ideas from the history of social psychology. We will study research on a wide variety of topics including conformity, obedience, identity, power, status, and interpersonal perception."
+    "description": "This survey course provides tools from social psychology to help students develop a better understanding of their own and others' behavior. Social psychology is a field that bridges sociology and psychology and is primarily concerned with how individuals view and interact with one another in everyday life. The class is organized around a survey of the great ideas from the history of social psychology. We will study research on a wide variety of topics including conformity, obedience, identity, power, status, and interpersonal perception." 
   }, 
   { 
     "name": "SOCIOL.151", 
@@ -54226,7 +54226,7 @@ courses = [
     "number": 165, 
     "units": 4, 
     "title": "Social Networks", 
-    "description": "A "social network" can be an association of people or of groups of people. It is usually for some kind of exchange, with the network serving as a forum or medium. It can be personal or impersonal. This course will study the relations linking persons, organizations, interest groups, states, etc., analyze the structure of these relations, and review how such structures constrain behavior, and channel social change." 
+    "description": "A 'social network' can be an association of people or of groups of people. It is usually for some kind of exchange, with the network serving as a forum or medium. It can be personal or impersonal. This course will study the relations linking persons, organizations, interest groups, states, etc., analyze the structure of these relations, and review how such structures constrain behavior, and channel social change." 
   }, 
   { 
     "name": "SOCIOL.166", 
@@ -54345,7 +54345,7 @@ courses = [
     "number": 190, 
     "units": 4, 
     "title": "Seminar and Research in Sociology: American Cultures", 
-    "description": "Advanced study in sociology, with specific topics that satisfy the American Cultures requirement, e.g., immigration, to be announced at the beginning of each semester."
+    "description": "Advanced study in sociology, with specific topics that satisfy the American Cultures requirement, e.g., immigration, to be announced at the beginning of each semester." 
   }, 
   { 
     "name": "SOCIOL.191", 
@@ -54835,7 +54835,7 @@ courses = [
     "number": 280, 
     "units": 3, 
     "title": "Sociology of Globalization", 
-    "description": "Sociology now analyzes social organization that transcends national boundaries, not just as linking national societies or as influencing national societies, but as a phenomenon in its own right. This course brings together a selection of literature that looks at transnational social organizations and the distinctive dynamics of global political economy and culture and offers a sociological perspective on what lies behind the vague and confusing label of "globalization."" 
+    "description": "Sociology now analyzes social organization that transcends national boundaries, not just as linking national societies or as influencing national societies, but as a phenomenon in its own right. This course brings together a selection of literature that looks at transnational social organizations and the distinctive dynamics of global political economy and culture and offers a sociological perspective on what lies behind the vague and confusing label of 'globalization.'" 
   }, 
   { 
     "name": "SOCIOL.280Z", 
@@ -55157,7 +55157,7 @@ courses = [
     "number": 113, 
     "units": 3, 
     "title": "Topics in Latin American Culture", 
-    "description": "The purpose of this course is to explore the roots of Latin American cultures, the region's search for identity, and some of the main problems it faces today. We will study great social movements, like the Mexican and Cuban revolutions, and analyze their causes and consequences and, especially, their expression in art (e.g. the muralist movement in Mexico, the "corridos" and the narrative of the Mexican revolution, etc.)." 
+    "description": "The purpose of this course is to explore the roots of Latin American cultures, the region's search for identity, and some of the main problems it faces today. We will study great social movements, like the Mexican and Cuban revolutions, and analyze their causes and consequences and, especially, their expression in art (e.g. the muralist movement in Mexico, the 'corridos' and the narrative of the Mexican revolution, etc.)." 
   }, 
   { 
     "name": "SPANISH.115", 
@@ -55171,7 +55171,7 @@ courses = [
     "number": 117, 
     "units": 3, 
     "title": "The Picaresque Novel", 
-    "description": "This course will examine the discourse of poverty in (primarily) Spanish narrative literature, both thematically and formally. Readings will include ancient Roman novels and medieval Arabic and Italian stories, the "core" readings of Renaissance Spanish texts, and modern expressions of the picaresque sensibility." 
+    "description": "This course will examine the discourse of poverty in (primarily) Spanish narrative literature, both thematically and formally. Readings will include ancient Roman novels and medieval Arabic and Italian stories, the 'core' readings of Renaissance Spanish texts, and modern expressions of the picaresque sensibility." 
   }, 
   { 
     "name": "SPANISH.12", 
@@ -55192,7 +55192,7 @@ courses = [
     "number": 135, 
     "units": 3, 
     "title": "Studies in Hispanic Literature - Writing Intensive", 
-    "description": "Special topics in Hispanic literature. Fulfills "writing intensive" course requirement for the major." 
+    "description": "Special topics in Hispanic literature. Fulfills 'writing intensive' course requirement for the major." 
   }, 
   { 
     "name": "SPANISH.161", 
@@ -55374,7 +55374,7 @@ courses = [
     "number": 234, 
     "units": 4, 
     "title": "Modern Spanish American Poetry", 
-    "description": "A comprehensive survey of poetry in Latin America from 1880-1920, on the poetics of <modernismo>. Special attention given to the work of Ruben Dario and the heritage of Symbolism in Latin America." 
+    "description": "A comprehensive survey of poetry in Latin America from 1880-1920, on the poetics of 'modernismo'. Special attention given to the work of Ruben Dario and the heritage of Symbolism in Latin America." 
   }, 
   { 
     "name": "SPANISH.24", 
@@ -55402,7 +55402,7 @@ courses = [
     "number": 260, 
     "units": 4, 
     "title": "Cervantes", 
-    "description": "The reading and interpretation of the works of Cervantes, such as <Don Quixote>, the <Novelas ejemplares>, the <Persiles>, the <Galatea>, and the dramatic works. Focus will change according to the needs and interests of members of the course, but will address such issues as the place of Cervantes' works in literary history, the background contexts of Cervantes' works, and contemporary approaches and movements in Cervantes criticism." 
+    "description": "The reading and interpretation of the works of Cervantes, such as 'Don Quixote', the 'Novelas ejemplares', the 'Persiles', the 'Galatea', and the dramatic works. Focus will change according to the needs and interests of members of the course, but will address such issues as the place of Cervantes' works in literary history, the background contexts of Cervantes' works, and contemporary approaches and movements in Cervantes criticism." 
   }, 
   { 
     "name": "SPANISH.280", 
@@ -56235,14 +56235,14 @@ courses = [
     "number": 121, 
     "units": 4, 
     "title": "Performance and Culture", 
-    "description": "An examination of performance as an aspect of cultural production, ranging from everyday-life enactment to more formal or aesthetic activities associated with "artistic" production; may involve visiting artists. Specific attention to the methods of ethnography, cultural studies, and intercultural performance analysis. Topics vary from semester to semester." 
+    "description": "An examination of performance as an aspect of cultural production, ranging from everyday-life enactment to more formal or aesthetic activities associated with 'artistic' production; may involve visiting artists. Specific attention to the methods of ethnography, cultural studies, and intercultural performance analysis. Topics vary from semester to semester." 
   }, 
   { 
     "name": "THEATER.122", 
     "number": 122, 
     "units": 4, 
     "title": "African Theater and Performance", 
-    "description": "African performance includes a wide range of vibrant forms: from scripted drama, theatre, dance, and music to oral traditions, storytelling, masquerading, and ritual. Using source materials that are neither "traditional" nor "modern," "African" nor "European," but a complex amalgamation of influences, African performances defy these limited but nevertheless tenacious dichotomies. In the performing arts, one sees the resilience and tenacity of African cultural forms as respositories of memory, sites of intercultural negotiation, and potent forums for political resistance." 
+    "description": "African performance includes a wide range of vibrant forms: from scripted drama, theatre, dance, and music to oral traditions, storytelling, masquerading, and ritual. Using source materials that are neither 'traditional' nor 'modern,' 'African' nor 'European,' but a complex amalgamation of influences, African performances defy these limited but nevertheless tenacious dichotomies. In the performing arts, one sees the resilience and tenacity of African cultural forms as respositories of memory, sites of intercultural negotiation, and potent forums for political resistance." 
   }, 
   { 
     "name": "THEATER.125", 
@@ -56340,7 +56340,7 @@ courses = [
     "number": 151, 
     "units": 3, 
     "title": "Theater History", 
-    "description": "A chronological survey of world theater to 1800, this course begins with an investigation of "performance behavior"--the human impulse to organize complex games, rituals, and other display activities. It explores the mythological and historical origins of theater in various cultures as well as the derivation of the first dramatic scripts. A heavy emphasis is placed on the analysis of the "promptbooks" and visual sources of early European and Asian theaters for a practical understanding of their scenic and acting styles." 
+    "description": "A chronological survey of world theater to 1800, this course begins with an investigation of 'performance behavior'--the human impulse to organize complex games, rituals, and other display activities. It explores the mythological and historical origins of theater in various cultures as well as the derivation of the first dramatic scripts. A heavy emphasis is placed on the analysis of the 'promptbooks' and visual sources of early European and Asian theaters for a practical understanding of their scenic and acting styles." 
   }, 
   { 
     "name": "THEATER.151B", 
@@ -56984,7 +56984,7 @@ courses = [
     "number": 115, 
     "units": 4, 
     "title": "Contemporary Tibet", 
-    "description": "This course seeks to develop a critical understanding of contemporary Tibet, characterized as it is by modernity, invasion, Maoism, liberalization, exile, and diaspora. It explores the cultural dynamism of the Tibetans over the last 100 years as expressed in literature, film, music, modern art, and political protest. The core topics include intra-Tibetan arguments regarding the preservation and "modernization" of traditional cultural forms, the development of new aesthetic creations and values, the constraints and opportunities on cultural life under colonialism and in the diaspora, and the religious nationalism of the recent political protests." 
+    "description": "This course seeks to develop a critical understanding of contemporary Tibet, characterized as it is by modernity, invasion, Maoism, liberalization, exile, and diaspora. It explores the cultural dynamism of the Tibetans over the last 100 years as expressed in literature, film, music, modern art, and political protest. The core topics include intra-Tibetan arguments regarding the preservation and 'modernization' of traditional cultural forms, the development of new aesthetic creations and values, the constraints and opportunities on cultural life under colonialism and in the diaspora, and the religious nationalism of the recent political protests." 
   }, 
   { 
     "name": "TIBETAN.1A", 
@@ -57117,7 +57117,7 @@ courses = [
     "number": 199, 
     "units": 1, 
     "title": "Supervised Independent Study and Research", 
-    "description": "Enrollment is restricted by regulations in the <General Catalog>." 
+    "description": "Enrollment is restricted by regulations in the 'General Catalog'." 
   }, 
   { 
     "name": "TURKISH.1A", 
@@ -57264,7 +57264,7 @@ courses = [
     "number": 120, 
     "units": 4, 
     "title": "Intermediate Financial Accounting 1", 
-    "description": "This Course introduces the student to concepts, theory and applications of financial accounting. The topics covered include accrual accounting concepts, financial statement analysis, inventory valuations, capital assets and their corresponding depreciation and impairment. Attention is given to examples on current reporting practices and to the study of reporting requirements promulgated by the Financial Accounting Standards Board ("FASB") with comparison to the International Accounting Standards Board ("IASB")." 
+    "description": "This Course introduces the student to concepts, theory and applications of financial accounting. The topics covered include accrual accounting concepts, financial statement analysis, inventory valuations, capital assets and their corresponding depreciation and impairment. Attention is given to examples on current reporting practices and to the study of reporting requirements promulgated by the Financial Accounting Standards Board ('FASB') with comparison to the International Accounting Standards Board ('IASB')." 
   }, 
   { 
     "name": "UGBA.120AB", 
@@ -57348,7 +57348,7 @@ courses = [
     "number": 136, 
     "units": 3, 
     "title": "Behavioral Finance", 
-    "description": "This course looks at the influence of decision heuristics and biases on investor welfare, financial markets, and corporate decisions. Topics include overconfidence, attribution theory, representative heuristic, availability heuristic, anchoring and adjustment, prospect theory, "Winner's Curse," speculative bubbles, IPOs, market efficiency, limits of arbitrage, relative mis-pricing of common stocks, the tendency to trade in a highly correlated fashion, investor welfare, and market anomalies." 
+    "description": "This course looks at the influence of decision heuristics and biases on investor welfare, financial markets, and corporate decisions. Topics include overconfidence, attribution theory, representative heuristic, availability heuristic, anchoring and adjustment, prospect theory, 'Winner's Curse,' speculative bubbles, IPOs, market efficiency, limits of arbitrage, relative mis-pricing of common stocks, the tendency to trade in a highly correlated fashion, investor welfare, and market anomalies." 
   }, 
   { 
     "name": "UGBA.137", 
@@ -57509,7 +57509,7 @@ courses = [
     "number": 180, 
     "units": 3, 
     "title": "Introduction to Real Estate and Urban Land Economics", 
-    "description": "The nature of real property; market analysis; construction cycles; mortgage lending; equity investment; metropolitan growth; urban land use; real property valuation; public policies." 
+    "description": "The nature of real property; market analysis; construction cycles; mortgage lending; equity investment; metropolitan growth; urban land use; real property valuation; public policies."
   }, 
   { 
     "name": "UGBA.183", 
@@ -57600,7 +57600,7 @@ courses = [
     "number": 192, 
     "units": 3, 
     "title": "Strategic Corporate Social Responsibility and Consulting Projects", 
-    "description": "Discuss the field of strategic CSR through a series of lectures, guest speakers, and projects. The course will examine best practices used by companies to engage in socially responsible business practices. It will provide students with a flavor of the complex dilemmas one can face in business in trying to do both "good for society" and "well for shareholders." It looks at CSR from a corporation perspective, and how this supports core business objectives, core competencies, and bottom-line profits." 
+    "description": "Discuss the field of strategic CSR through a series of lectures, guest speakers, and projects. The course will examine best practices used by companies to engage in socially responsible business practices. It will provide students with a flavor of the complex dilemmas one can face in business in trying to do both 'good for society' and 'well for shareholders.' It looks at CSR from a corporation perspective, and how this supports core business objectives, core competencies, and bottom-line profits." 
   }, 
   { 
     "name": "UGBA.192T", 
@@ -57635,7 +57635,7 @@ courses = [
     "number": 195, 
     "units": 3, 
     "title": "Entrepreneurship", 
-    "description": "Do you have an idea for a new business, but want to learn how to more fully develop this idea? Would you like to receive funding for your business idea, but lack a framework to ask for capital? This course takes students through the new venture process using a business plan as the main deliverable. A well-written business plan sets key milestones and indicates the resources needed to achieve them, in an increasingly complex business environment. Through the planning process that tightly links market and financial planning a business plan creates a set of standards to which investors and teammates can evaluate actual performance, laying the foundation for an "operating plan" once the business is launched." 
+    "description": "Do you have an idea for a new business, but want to learn how to more fully develop this idea? Would you like to receive funding for your business idea, but lack a framework to ask for capital? This course takes students through the new venture process using a business plan as the main deliverable. A well-written business plan sets key milestones and indicates the resources needed to achieve them, in an increasingly complex business environment. Through the planning process that tightly links market and financial planning a business plan creates a set of standards to which investors and teammates can evaluate actual performance, laying the foundation for an 'operating plan' once the business is launched." 
   }, 
   { 
     "name": "UGBA.195P", 
@@ -57705,7 +57705,7 @@ courses = [
     "number": 96, 
     "units": 1, 
     "title": "Lower Division Special Topics in Business Administration", 
-    "description": "Study in various fields of business administration for lower division students. Topics will vary from year to year and will be announced at the beginning of each semester."
+    "description": "Study in various fields of business administration for lower division students. Topics will vary from year to year and will be announced at the beginning of each semester." 
   }, 
   { 
     "name": "UGBA.98", 
@@ -57747,7 +57747,7 @@ courses = [
     "number": 113, 
     "units": 3, 
     "title": "Disability Studies in Practice", 
-    "description": "A graded service-learning internship course in disability studies. Students will draw lessons from working in collaboration with major disability rights and independent living organizations. Each student will do an internship at one of these organizations for six hours a week. In an additional one-hour a week seminar together, students will first prepare for the internships, setting objectives for skills to be learned and planning effective projects, and then analyze and reflect on the work done, both in order to create greater understanding of each intern's individual experiences and in order to think critically about how "service" and "organizing" can address the needs and goals of the disability community. Students must apply in advance for admission into this course." 
+    "description": "A graded service-learning internship course in disability studies. Students will draw lessons from working in collaboration with major disability rights and independent living organizations. Each student will do an internship at one of these organizations for six hours a week. In an additional one-hour a week seminar together, students will first prepare for the internships, setting objectives for skills to be learned and planning effective projects, and then analyze and reflect on the work done, both in order to create greater understanding of each intern's individual experiences and in order to think critically about how 'service' and 'organizing' can address the needs and goals of the disability community. Students must apply in advance for admission into this course." 
   }, 
   { 
     "name": "UGIS.120", 
@@ -57831,7 +57831,7 @@ courses = [
     "number": 162, 
     "units": 4, 
     "title": "Environmental Policymaking and the Politics of Climate Change", 
-    "description": "World leaders at the United Nations Framework Convention on Climate Change (UNFCCC) held in Copenhagen this past December announced that they reached "a meaningful agreement" that will lead to a global treaty to address climate change. Many observers see the politics of the Copenhagen Accord as a glimpse into the new world order in which international diplomatic power will increasingly be shared by the United States (U.S.) and emerging powers, such as China. Climate change policy also offers a lens through which the U.S. domestic environmental policymaking process can be viewed and its evolution better understood. This course will examine the dynamics of global environmental treaty-making after first studying the development of U.S. environmental protection efforts. Students will then analyze the international and domestic efforts that led up to the Copenhagen Accord and assess what is needed and likely to result from the next UNFCCC meeting to be held in Mexico City in 2010." 
+    "description": "World leaders at the United Nations Framework Convention on Climate Change (UNFCCC) held in Copenhagen this past December announced that they reached 'a meaningful agreement' that will lead to a global treaty to address climate change. Many observers see the politics of the Copenhagen Accord as a glimpse into the new world order in which international diplomatic power will increasingly be shared by the United States (U.S.) and emerging powers, such as China. Climate change policy also offers a lens through which the U.S. domestic environmental policymaking process can be viewed and its evolution better understood. This course will examine the dynamics of global environmental treaty-making after first studying the development of U.S. environmental protection efforts. Students will then analyze the international and domestic efforts that led up to the Copenhagen Accord and assess what is needed and likely to result from the next UNFCCC meeting to be held in Mexico City in 2010." 
   }, 
   { 
     "name": "UGIS.162F", 
@@ -57866,14 +57866,14 @@ courses = [
     "number": 162, 
     "units": 4, 
     "title": "Spies! The Politics of Intelligence", 
-    "description": "In this course, students will be introduced to recent issues concerning intelligence, such as intelligence failure, reform, and oversight, with a focus on how the change in U.S. intelligence in the post-9/11 context has increasingly emphasized domestic or "homeland" intelligence. Students will gain an understanding of the different types of intelligence, the range of responsibilities that the different Intelligence Community members hold, and the relationship between intelligence and the policymaking process." 
+    "description": "In this course, students will be introduced to recent issues concerning intelligence, such as intelligence failure, reform, and oversight, with a focus on how the change in U.S. intelligence in the post-9/11 context has increasingly emphasized domestic or 'homeland' intelligence. Students will gain an understanding of the different types of intelligence, the range of responsibilities that the different Intelligence Community members hold, and the relationship between intelligence and the policymaking process." 
   }, 
   { 
     "name": "UGIS.162L", 
     "number": 162, 
     "units": 4, 
     "title": "Middle East Politics and the Arab "Spring"", 
-    "description": "This course provides an overview of modern Middle Eastern politics with the aim of gaining a deeper understanding of the recent events of the Arab "Spring." This course begins with a historical analysis outlining the development of the states in the Middle East. Through this course, students will gain an understanding of the dynamics of the Middle Eastern politics and society." 
+    "description": "This course provides an overview of modern Middle Eastern politics with the aim of gaining a deeper understanding of the recent events of the Arab 'Spring.' This course begins with a historical analysis outlining the development of the states in the Middle East. Through this course, students will gain an understanding of the dynamics of the Middle Eastern politics and society." 
   }, 
   { 
     "name": "UGIS.162M", 
@@ -57936,7 +57936,7 @@ courses = [
     "number": 173, 
     "units": 3, 
     "title": "Museums and Society: The Power of Display in Washington DC", 
-    "description": "This course explores museums as dynamic sites of intellectual and cultural debate, and as institutions vested with the authority to define aesthetics, history, heritage, and even citizenship. Now more than ever, as the process of globalization raises questions about the fluidity, preservation, and "authenticity" of culture, museums of all kinds are attracting great interest both as places to visit and as a subject of critical analysis in their own right. As places defined by the collection, display, and interpretation of objects, museums are bound up in questions of permanence and transience, difference and identity, equity and privilege--issues that lie at the heart of what is termed the "new museology." But as institutional repositories of community memory or indigenous knowledge, they are also bound up in questions of representation, access and ownership--issues that move the debate over museum collections squarely into the politics of local, state, and national control over heritage. If ownership and control are the new realities of international heritage policy (and law), museums have quickly emerged as important sites on which and through which these claims are being made." 
+    "description": "This course explores museums as dynamic sites of intellectual and cultural debate, and as institutions vested with the authority to define aesthetics, history, heritage, and even citizenship. Now more than ever, as the process of globalization raises questions about the fluidity, preservation, and 'authenticity' of culture, museums of all kinds are attracting great interest both as places to visit and as a subject of critical analysis in their own right. As places defined by the collection, display, and interpretation of objects, museums are bound up in questions of permanence and transience, difference and identity, equity and privilege--issues that lie at the heart of what is termed the 'new museology.' But as institutional repositories of community memory or indigenous knowledge, they are also bound up in questions of representation, access and ownership--issues that move the debate over museum collections squarely into the politics of local, state, and national control over heritage. If ownership and control are the new realities of international heritage policy (and law), museums have quickly emerged as important sites on which and through which these claims are being made." 
   }, 
   { 
     "name": "UGIS.175", 
@@ -57957,7 +57957,7 @@ courses = [
     "number": 176, 
     "units": 4, 
     "title": "Negotiating with Terrorists", 
-    "description": "This course will serve to teach and discuss the topic "Negotiating with Terrorists." The focus will be on negotiations with collective terrorist movements, not on bargaining with hostage takers in the course of single-event hostage taking incidences. The course will be organized in four thematic blocks with three classes each. All of the classes will be based on working on analytic themes. During classes, case studies will be equally discussed to foster understanding of these matters." 
+    "description": "This course will serve to teach and discuss the topic 'Negotiating with Terrorists.' The focus will be on negotiations with collective terrorist movements, not on bargaining with hostage takers in the course of single-event hostage taking incidences. The course will be organized in four thematic blocks with three classes each. All of the classes will be based on working on analytic themes. During classes, case studies will be equally discussed to foster understanding of these matters." 
   }, 
   { 
     "name": "UGIS.176B", 
@@ -58692,7 +58692,7 @@ courses = [
     "number": 291, 
     "units": 1, 
     "title": "Storytelling for Leadership", 
-    "description": "This course provides students with personal leadership development through the ability to tell "Who Am I" leadership journey stories, for use in the business context. For leaders, whose job it is to manage change, the approach to storytelling facilitates learning and is a vehicle to assist others in overcoming obstacles, generating enthusiasm and team work, sharing knowledge and ultimately leading to build trust and connection. This course give strategies, skills and practices for the three elements of telling powerful leadership stories: Story Content, Story Structure and Story Delivery. The course is highly interactive." 
+    "description": "This course provides students with personal leadership development through the ability to tell 'Who Am I' leadership journey stories, for use in the business context. For leaders, whose job it is to manage change, the approach to storytelling facilitates learning and is a vehicle to assist others in overcoming obstacles, generating enthusiasm and team work, sharing knowledge and ultimately leading to build trust and connection. This course give strategies, skills and practices for the three elements of telling powerful leadership stories: Story Content, Story Structure and Story Delivery. The course is highly interactive." 
   }, 
   { 
     "name": "XMBA.291T", 
@@ -58706,7 +58706,7 @@ courses = [
     "number": 292, 
     "units": 1, 
     "title": "Strategic CSR", 
-    "description": "Discuss the field of strategic CSR through a series of lecture, guest speakers, and projects. It will examine best practices used by companies to engage in socially responsible practices. It will provide students with a flavor of the complex dilemmas one can face in business in trying to do both "good for society" and "well for shareholders." It looks at CSR from a corporate strategy perspective, and how it supports core business objectives, core competencies, and bottom line profits." 
+    "description": "Discuss the field of strategic CSR through a series of lecture, guest speakers, and projects. It will examine best practices used by companies to engage in socially responsible practices. It will provide students with a flavor of the complex dilemmas one can face in business in trying to do both 'good for society' and 'well for shareholders.' It looks at CSR from a corporate strategy perspective, and how it supports core business objectives, core competencies, and bottom line profits." 
   }, 
   { 
     "name": "XMBA.293", 
@@ -58734,7 +58734,7 @@ courses = [
     "number": 295, 
     "units": 2, 
     "title": "Customer and Business Development in High-Tech Enterprise", 
-    "description": "This course is about how to successfully organize sales, marketing, and business development in a startup. For the purpose of this course, a "startup" can either be a new venture, or an existing company entering a new market. Both must solve a common set of issues: Where is our market? Who are our customers? How do we build the right team? How do we scale sales? These issues are at the heart of the "Customer Development" process covered in this course." 
+    "description": "This course is about how to successfully organize sales, marketing, and business development in a startup. For the purpose of this course, a 'startup' can either be a new venture, or an existing company entering a new market. Both must solve a common set of issues: Where is our market? Who are our customers? How do we build the right team? How do we scale sales? These issues are at the heart of the 'Customer Development' process covered in this course." 
   }, 
   { 
     "name": "XMBA.295T", 

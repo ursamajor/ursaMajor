@@ -106,6 +106,24 @@ class Course < ActiveRecord::Base
   #   name[" "]
   # end
 
+  # def self.add_back_double_quotes
+  #   Course.all.each do |course|
+  #     if course.description
+  #       course.description = course.description.gsub("<", '"').gsub(">", '"')
+  #       course.save
+  #     end
+  #   end
+  # end
+
+  def self.remove_double_quotes
+    Course.all.each do |course|
+      if course.description
+        course.description = course.description.gsub('"', "'")
+        course.save
+      end
+    end
+  end
+
   def update
     uri = "https://apis-dev.berkeley.edu/cxf/asws/course?courseUID=#{CGI.escape name}&_type=xml&app_id=#{ENV['APP_ID']}&app_key=#{ENV['APP_KEY']}"
     begin
