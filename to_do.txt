@@ -73,8 +73,8 @@ Possible Features
 - user picks color of classes, heavier load can tell by color (based on #units, diff reqs, etc)
 
 Optional Tasks
+- about us page
 - maybe don't use .concat?
-- allow searching by title
 - loading bars/progress wheel
 - alphabetically sort course when swapping between query list and ones already in plan
 - in results, adding a checkmark shifts everything a bit
