@@ -6,30 +6,32 @@ class Course < ActiveRecord::Base
   scope :search_query, lambda { |query| where("name LIKE ?", query) }
 
   @@dept_mappings = {
-    "COMPSCI" => "CS",
-    "INTEGBI" => "IB",
-    "MCELLBI" => "MCB",
-    "IND ENG" => "IEOR",
-    "BIO ENG" => "BIO E",
-    "CHM ENG" => "CHEM E",
-    "EL ENG" => "EECS",
-    "MEC ENG" => "MECH E",
-    "CIV ENG" => "CIV E",
-    "ENGIN" => "E",
-    "LNS" => "L&S",
-    "MAT SCI" => "MSE",
-    "NUC ENG" => "NE",
-    "POL SCI" => "POLI SCI",
-    "POLECON" => "POLI ECON",
-    "LINGUIS" => "LING",
-    "STAT" => "STATS",
-    "NUSCTX" => "NUTRI SCI",
-    "PLANTBI" => "PMB",
-    "COM LIT" => "COMP LIT",
-    "ASTRON" => "ASTRO",
-    "AMERSTD" => "AMST",
-    "ASAMST" => "ASIAN AM"
+    "COMPSCI" => ["CS"],
+    "INTEGBI" => ["IB"],
+    "MCELLBI" => ["MCB"],
+    "IND ENG" => ["IEOR"],
+    "BIO ENG" => ["BIO E"],
+    "CHM ENG" => ["CHEM E"],
+    "EL ENG" => ["EECS", "EE"],
+    "MEC ENG" => ["MECH E"],
+    "CIV ENG" => ["CIV E"],
+    "ENGIN" => ["E"],
+    "LNS" => ["L&S"],
+    "MAT SCI" => ["MSE"],
+    "NUC ENG" => ["NE"],
+    "POL SCI" => ["POLI SCI"],
+    "POLECON" => ["POLI ECON"],
+    "LINGUIS" => ["LING"],
+    "STAT" => ["STATS"],
+    "NUSCTX" => ["NUTRI SCI", "NST"],
+    "PLANTBI" => ["PMB"],
+    "COM LIT" => ["COMP LIT"],
+    "ASTRON" => ["ASTRO"],
+    "AMERSTD" => ["AMST"],
+    "ASAMST" => ["ASIAN AM"]
   }
+
+  @@dept_mappings.default = []
 
   def pnp?
     pnp
@@ -49,11 +51,22 @@ class Course < ActiveRecord::Base
   end
 
   def search_dept
-    dept.gsub(dept, @@dept_mappings[dept] || dept)
+    dept_name = dept
+    dept.gsub(dept, @@dept_mappings[dept_name][0] || dept_name)
+  end
+
+  def search_names
+    search_names = []
+    dept_name = dept
+    @@dept_mappings[dept_name].concat([dept_name]).each do |mapping|
+      search_names << name.gsub(".", " ").gsub(dept_name, mapping)
+    end
+    search_names
   end
 
   def search_name
-    name.gsub(".", " ").gsub(dept, @@dept_mappings[dept] || dept)
+    dept_name = dept
+    name.gsub(".", " ").gsub(dept_name, @@dept_mappings[dept_name][0] || dept_name)
   end
 
   def self.add(department)

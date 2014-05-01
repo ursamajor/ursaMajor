@@ -17,9 +17,10 @@ class CoursesController < ApplicationController
 
   def search
     @courses = Course.order 'name ASC'
-    unless params[:course] == 'all'
-      query = "%"+params[:course].upcase+"%"
-      @courses = @courses.where("upper(name) like ?", query)
+    unless params[:course] == 'all' && ENV['TAG_ALL'] == "true"
+      redirect_to landing_path and return
+      # query = "%"+params[:course].upcase+"%"
+      # @courses = @courses.where("upper(name) like ?", query)
     end
     render :partial => "courses/all.json"
   end
