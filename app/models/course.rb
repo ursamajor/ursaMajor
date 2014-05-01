@@ -55,18 +55,18 @@ class Course < ActiveRecord::Base
     dept.gsub(dept, @@dept_mappings[dept_name][0] || dept_name)
   end
 
-  def search_names
-    search_names = []
-    dept_name = dept
-    @@dept_mappings[dept_name].concat([dept_name]).each do |mapping|
-      search_names << name.gsub(".", " ").gsub(dept_name, mapping)
-    end
-    search_names
-  end
-
   def search_name
     dept_name = dept
     name.gsub(".", " ").gsub(dept_name, @@dept_mappings[dept_name][0] || dept_name)
+  end
+
+  def search_names
+    search_names = [search_name]
+    dept_name = dept
+    @@dept_mappings[dept_name].each do |mapping|
+      search_names << name.gsub(".", " ").gsub(dept_name, mapping)
+    end
+    search_names
   end
 
   def self.add(department)

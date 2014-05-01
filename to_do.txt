@@ -15,7 +15,6 @@ In Progress
   
 Next Tasks
 - save dept name as field
-- faster way to generate courses/all
 - tag line
 - selecting which rules you want
 - switch plans without reload
@@ -75,7 +74,7 @@ Possible Features
 - user picks color of classes, heavier load can tell by color (based on #units, diff reqs, etc)
 
 Optional Tasks
-- turn off course search all?
+- maybe don't use .concat?
 - allow searching by title
 - loading bars/progress wheel
 - alphabetically sort course when swapping between query list and ones already in plan
