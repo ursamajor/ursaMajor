@@ -1,0 +1,12 @@
+
+%ul.dropdown-menu{"role"=>"menu", "aria-labelledby"=>"dLabel"}
+  %li
+    %a.fa.fa-times-circle(data-ng-click="semesterSettings('#{semester}')")
+      Clear Semester
+    = link_to landing_path(:inactive => true) do
+      - if true
+        %i.fa.fa-check.icon
+      - else
+        %i.fa.fa-check.icon.trans
+      Show landing
+    
