@@ -35,10 +35,6 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
     $scope.garbage = []
 
   # END CoursesController
-  # later make one method for returning garbage to $scope.courses
-  $scope.semesterSettings = (semester) ->
-    if confirm "Delete #{semester}?"
-      $scope.clearSemester semester
 
   $scope.dragged = false
 
@@ -52,10 +48,16 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
 
   # later make one method for returning garbage to $scope.courses
   $scope.clearSemester = (semester) ->
+    if confirm "Delete #{semester}?"
+      semesterCourses = $scope[semester]
+      $scope[semester] = []
+      $scope.courses.push course for course in semesterCourses
+      $scope.courses.sort $scope.sortCourses
+
+  $scope.pushToBackpack = (semester) ->
     semesterCourses = $scope[semester]
     $scope[semester] = []
-    $scope.courses.push course for course in semesterCourses
-    $scope.courses.sort $scope.sortCourses
+    $scope.backpack.push course for course in semesterCourses
 
   $scope.findSemester = (data, name) ->
     for semester in data
