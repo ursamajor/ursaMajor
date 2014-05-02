@@ -11,7 +11,7 @@ In Progress
   - a schedule that's personal
   - courses bring us together
   - want the right schedule? just browse
-  - degree auditing in an instant
+    - degree auditing in an instant
 - make ui more responsive, mobile friendly
   - mobile options
     - drop down of semester to add course to

@@ -48,7 +48,7 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
 
   # later make one method for returning garbage to $scope.courses
   $scope.clearSemester = (semester) ->
-    if confirm "Delete #{semester}?"
+    if confirm "Clear #{semester}?"
       semesterCourses = $scope[semester]
       $scope[semester] = []
       $scope.courses.push course for course in semesterCourses
@@ -117,7 +117,7 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
     $scope.units = 0
     for course in $scope.plan["courses"]
       $scope.units += course.units
-    for semester in $scope.semesters.concat "backpack"
+    for semester in $scope.semesters
       $scope[semester]["units"] = 0
       for course in $scope[semester]
         $scope[semester]["units"] += course.units

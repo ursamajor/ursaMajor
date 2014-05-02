@@ -8,7 +8,11 @@
 .gridItem.backpack(data-drop="true" data-ng-model="backpack" data-jqyoui-options="{accept:'.btn-draggable:not([data-ng-model=backpack])'}" jqyoui-droppable="{multiple:true}")
   .caption 
     .gridLabel backpack
-    %a.fa.fa-cog(data-ng-click="semesterSettings('backpack')")
+    %a.fa.fa-cog{"data-toggle" => "dropdown"}
+    %ul.dropdown-menu{"role"=>"menu", "aria-labelledby"=>"dLabel"}
+      %li
+        %a.fa.fa-times-circle(data-ng-click="clearSemester('backpack')")
+          %span Clear Backpack
     .btn.btn-primary.btn-draggable(data-ng-click="courseDisplay(course.id)" data-ng-repeat="course in backpack" data-ng-show="course.name" data-drag="{{course.drag}}" data-jqyoui-options="{revert: 'invalid'}" data-ng-model="backpack" jqyoui-draggable="{onStart: 'startDragging', index: {{$index}}}")
       {{course.name}}
     .units(class="backpack") {{backpack.units}} units
