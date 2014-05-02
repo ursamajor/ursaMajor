@@ -12,6 +12,13 @@ In Progress
   - courses bring us together
   - want the right schedule? just browse
   - degree auditing in an instant
+- make ui more responsive, mobile friendly
+  - mobile options
+    - drop down of semester to add course to
+    - slider to switch between semestesrs (where backpack is)
+    - moving courses around?
+    - in course modal, show which requirements satisfies, drop down to add to a semesters
+
   
 Next Tasks
 - filter by course name first, then by title
@@ -31,7 +38,6 @@ Functionality
 - updating rule (can only use up to 2 from same dept for breadths)
 
 Appearance
-- in course modal, show which requirements satisfies, drop down to add to a semester
 - ability to hide a year
 - color code (breadth, major, university)
 - show remaining requirements unsatisfied in course catalog, click to display 
@@ -39,11 +45,6 @@ Appearance
 - site tour
 - handling display of plan names that are long
 - ability to move courses within a semester around
-- make ui more responsive, mobile friendly
-- semester settings?
-  - flip card to confirm clear
-  - favorite schedule
-  - option to save to backpack
 - more modal styling
 
 Chores
