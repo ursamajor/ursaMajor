@@ -53,6 +53,7 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
       $scope[semester] = []
       $scope.courses.push course for course in semesterCourses
       $scope.courses.sort $scope.sortCourses
+      $scope.updateUnits()
 
   $scope.pushToBackpack = (semester) ->
     semesterCourses = $scope[semester]
