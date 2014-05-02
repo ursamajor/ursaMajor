@@ -58,6 +58,7 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
     semesterCourses = $scope[semester]
     $scope[semester] = []
     $scope.backpack.push course for course in semesterCourses
+    $scope.updateUnits()
 
   $scope.findSemester = (data, name) ->
     for semester in data
