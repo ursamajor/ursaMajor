@@ -8,23 +8,29 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
   # CODE for INTROJS
   $scope.IntroOptions =
     steps: [
-      element: document.querySelector("#semester")
-      intro: "This is the first tooltip."
+      intro: "Hi! Welcome to your planner."
     ,
-      element: document.querySelectorAll("#semester")[0]
-      intro: "<strong>You</strong> can also <em>include</em> HTML"
+      intro: "ursaMajor helps you plan your progress towards graduation with a simple drag-and-drop interface."
+    ,
+      element: "#query"
+      intro: "Search here for courses."
       position: "right"
     ,
-      element: "#semester"
-      intro: "More features, more fun."
+      element: ".backpack"
+      intro: "Drag courses to your backpack for later use."
+      position: "right"
+    ,
+      element: "#garbage"
+      intro: "Or throw it away in the garbage."
+      position: "right"
+    ,
+      intro: "Drag your courses into your semester planner."
+    ,
+      element: "#rules"
+      intro: "The rules sidebar will instantly show you how close you are to satisfying your major requirements."
       position: "left"
     ,
-      element: "#step4"
-      intro: "Another step."
-      position: "bottom"
-    ,
-      element: "#step5"
-      intro: "Get it, use it."
+      intro: "That's it! Have fun planning. "
     ]
     showStepNumbers: false
     exitOnOverlayClick: true
