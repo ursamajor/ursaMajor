@@ -5,19 +5,33 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
   $scope.garbage = []
   $scope.plan = {}
   # CODE for INTROJS
-  $scope.IntroOptions = {
-    steps:[
-      {
-        element: '#semesters',
-        intro: "First tooltip"
-      },
-      {
-        element: '#step4',
-        intro: "Second tooltip",
-        position: 'right'
-      }
+  $scope.IntroOptions =
+    steps: [
+      element: document.querySelector("#semester")
+      intro: "This is the first tooltip."
+    ,
+      element: document.querySelectorAll("#semester")[0]
+      intro: "<strong>You</strong> can also <em>include</em> HTML"
+      position: "right"
+    ,
+      element: "#semester"
+      intro: "More features, more fun."
+      position: "left"
+    ,
+      element: "#step4"
+      intro: "Another step."
+      position: "bottom"
+    ,
+      element: "#step5"
+      intro: "Get it, use it."
     ]
-  }
+  showStepNumbers: false
+  exitOnOverlayClick: true
+  exitOnEsc: true
+  nextLabel: "<strong>NEXT!</strong>"
+  prevLabel: "<span style=\"color:green\">Previous</span>"
+  skipLabel: "Exit"
+  doneLabel: "Thanks"
   # BEGIN CoursesController, combinded for duplicate removal for now
 
   #todo: put garbage course in right place instead of sorting everything (since already sorted at beginning)
@@ -156,5 +170,4 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
         $scope.update()
     $scope.updatePlan()
     $scope.removeDuplicates()
-    $scope.CallMe()
 ]
