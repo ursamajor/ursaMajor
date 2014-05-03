@@ -11,6 +11,6 @@
 
     = render "layouts/flash"
 
-    .container
+    .container(data-ng-controller="LandingCtrl" data-ng-intro-options="IntroOptions" data-ng-intro-method="CallMe")
       .content.row
         = yield

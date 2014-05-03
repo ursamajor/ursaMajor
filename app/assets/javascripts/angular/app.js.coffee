@@ -9,6 +9,7 @@ ursamajor = angular.module 'ursamajor', [
   'ngDragDrop'
   'ngRoute'
   'infinite-scroll'
+  'angular-intro'
   'ursamajor.controllers'
   'ursamajor.filters'
 ]
