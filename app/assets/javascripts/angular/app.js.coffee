@@ -11,5 +11,6 @@ ursamajor = angular.module 'ursamajor', [
   'infinite-scroll'
   'ursamajor.controllers'
   'ursamajor.filters'
+  'angular-intro'
 ]
 
