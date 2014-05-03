@@ -12,6 +12,5 @@ ursamajor = angular.module 'ursamajor', [
   'angular-intro'
   'ursamajor.controllers'
   'ursamajor.filters'
-  'angular-intro'
 ]
 
