@@ -21,13 +21,13 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
       position: "right"
     ,
       element: "#garbage"
-      intro: "Or throw it away in the garbage."
+      intro: "Or throw them away in the garbage."
       position: "right"
     ,
-      intro: "Drag your courses into your semester planner."
+      intro: "Drag your courses into the semester planner."
     ,
       element: "#rules"
-      intro: "The rules sidebar will instantly show you how close you are to satisfying your major requirements."
+      intro: "The rules sidebar will instantly show how close you are to satisfying your major requirements."
       position: "left"
     ,
       intro: "That's it! Have fun planning. "

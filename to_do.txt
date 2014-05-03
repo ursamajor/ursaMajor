@@ -18,6 +18,7 @@ In Progress
     - slider to switch between semestesrs (where backpack is)
     - moving courses around?
     - in course modal, show which requirements satisfies, drop down to add to a semesters
+- set flag to determine whether to show intro or not
 
   
 Next Tasks
@@ -42,7 +43,6 @@ Appearance
 - color code (breadth, major, university)
 - show remaining requirements unsatisfied in course catalog, click to display 
   courses that satisfy, show course that will fulfill multiple requirements
-- site tour
 - handling display of plan names that are long
 - ability to move courses within a semester around
 - more modal styling
