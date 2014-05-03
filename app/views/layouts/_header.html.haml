@@ -32,6 +32,8 @@
           %p Rules
 
       - if signed_in?
+        %li{:class => "tab"}>
+          = link_to "Profile", edit_user_registration_path
 
         %li{:class => "tab"}>
           = link_to "Sign out", destroy_user_session_path, :method => :delete

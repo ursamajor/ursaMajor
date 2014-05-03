@@ -1,4 +1,4 @@
-.div(data-ng-controller="PlanDetailCtrl" data-ng-intro-options="IntroOptions" data-ng-intro-method="startIntro" data-ng-intro-autostart="true")
+.div(data-ng-controller="PlanDetailCtrl" data-ng-intro-options="IntroOptions" data-ng-intro-method="startIntro" data-ng-intro-autostart="#{!signed_in?}")
   / .col-md-2.col-sm-2
   .col-md-2
     - if @demo

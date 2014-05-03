@@ -1,5 +1,6 @@
 class Plan < ActiveRecord::Base
 
+  acts_as_taggable_on :rules
   has_many :semesters
   has_many :courses, through: :semesters
   belongs_to :user

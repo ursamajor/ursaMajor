@@ -1,109 +1,132 @@
-In Progress
-- remove course if used for rule and can only be used once
-  - all different combinations to decide which one to remove/use for a certain rule
-    - utility function of numRulesSatisfied, proportion of courses left to fulfill other requirements
-  - flag as an exclusive rule, which removes course from plan when checking rest
-- scrolling highlights of site
-  - fast
-  - easy to use
-  - all your courses are here
-  - discover courses you'll love
-  - a schedule that's personal
-  - courses bring us together
-  - want the right schedule? just browse
+Landing Page
+  - slider of site highlights
+    - fast
+    - easy to use
+    - all your courses are here
+    - discover courses you'll love
+    - a schedule that's personal
+    - courses bring us together
+    - want the right schedule? just browse
     - degree auditing in an instant
-- make ui more responsive, mobile friendly
+  - tag line
+
+Course Catalog
+  - show remaining requirements unsatisfied in course catalog, click to display 
+    courses that satisfy, show course that will fulfill multiple requirements
+
+Plan Page
+  - in results, adding a checkmark shifts everything a bit
   - mobile options
     - drop down of semester to add course to
     - slider to switch between semestesrs (where backpack is)
     - moving courses around?
     - in course modal, show which requirements satisfies, drop down to add to a semesters
-- set flag to determine whether to show intro or not
+  - more modal styling
+  - display rule description in modal, plus courses that satisfy
+  - handling display of plan names that are long
+  - ability to move courses within a semester around
+  - ability to hide a year
+  - tutorial button
 
-  
-Next Tasks
-- filter by course name first, then by title
-- semester object should have year+fa/sp/su
-- save dept name as field
-- tag line
-- selecting which rules you want
-- switch plans without reload
-- editing of course info in ui
-- display rule description in modal, plus courses that satisfy
-- sort courses beforehand in rails
-  - more efficient -> place garbage course in right place instead of sorting everything
+Rules Page
+  - popular rules
 
-Functionality
-- autopopulate plans from user information (major, years of semester)
-- query partial matches across spaces
-- updating rule (can only use up to 2 from same dept for breadths)
+Profile Page
+  - allow input of grades, display gpa overall/per semester
+  - user information (GPA, transcripts)
 
-Appearance
-- ability to hide a year
-- color code (breadth, major, university)
-- show remaining requirements unsatisfied in course catalog, click to display 
-  courses that satisfy, show course that will fulfill multiple requirements
-- handling display of plan names that are long
-- ability to move courses within a semester around
-- more modal styling
+About Us
+
+Courses
+  - save dept name as field
+  - prerequisites
+  - only show show more/less if it's been abbreviated
+  - editing of course info in ui
+Rules
+  - shorten names of rules
+  - online/summer versions of classes should also work with rules
+  - updating rule (can only use up to 2 from same dept for breadths)
+  - remove course if used for rule and can only be used once
+    - all different combinations to decide which one to remove/use for a certain rule
+      - utility function of numRulesSatisfied, proportion of courses left to fulfill other requirements
+    - flag as an exclusive rule, which removes course from plan when checking rest
+Plans
+  - autopopulate plans from user information (major, years of semester)
+  - selecting which rules you want
+  - share plan
+    - public flag
+    - allow nonowners to see if flag
+    - if nonowner, no drag/drop
+    - maybe don't show rules?
+    - don't show saveplan / garbage
+Semesters
+  - semester object should have year+fa/sp/su
+Users
+  - delete courses (admin)
 
 Chores
-- going through completed rules, make sure they work
-- online/summer versions of classes should also work with rules
-- documentation
-- tag rules by major
+  - going through completed rules, make sure they work
+  - documentation
+  - tag rules by major
 
 After First Release
-- able to flag a course under a certain rule
-- UI for editing rules/yaml
-- ability to add more semesters
-- handling more than one major
-- handling variable unit courses
-- labeling pnp courses
-- make front-end checking more efficient 
-  - fail fast
-  - check subrules at same time as main rule
+  - sample major plan
+  - when a course is offered
+  - able to flag a course under a certain rule
+  - handle ap/transfer
+  - UI for editing rules/yaml
+  - ability to add more semesters
+  - handling more than one major
+  - handling variable unit courses
+  - labeling pnp courses
 
 Possible Features
-- popular rules
-- prerequisites
-- user information (GPA, transcripts)
-- when a course is offered
-- ninjacourses/courserank semesterly calendar
-- allow input of grades, display gpa overall/per semester
-- share plan
-- sample major plan
-- different gradients for semesters
-- user picks color of classes, heavier load can tell by color (based on #units, diff reqs, etc)
+  - loading bars/progress wheel
+  - switch plans without reload
+  - ninjacourses/courserank semesterly calendar
+  - color code rules/courses (breadth, major, university)
+  - different gradients for semesters
+  - user picks color of classes, heavier load can tell by color (based on #units, diff reqs, etc)
 
-Optional Tasks
-- about us page
-- maybe don't use .concat?
-- loading bars/progress wheel
-- alphabetically sort course when swapping between query list and ones already in plan
-- in results, adding a checkmark shifts everything a bit
-- shorten names of rules
-- more consistent json object attribute accessing [] vs .
-- separate courses and plans controller again (combined for sake of duplicate removal)
-- colors for flash messages
-- delete courses
--structure
-  - move all requires 
-  config
-    initializers
-      ursarule.rb
-  model
-    rule
-      rule*.rb
-  lib
-    rule
-      yaml files
+Optional
+
+  Layout
+    - colors for flash messages
+
+  Course Filtering
+    - filter by course name first, then by title
+    - query partial matches across spaces
+    - sort courses beforehand in rails
+    - more efficient -> place garbage course in right place instead of sorting everything
+    - maybe don't use .concat?
+    - alphabetically sort course when swapping between query list and ones already in plan
+
+  Rule Checking
+    - make front-end checking more efficient
+      - fail fast
+      - check subrules at same time as main rule
+
+  Angular
+    - more consistent json object attribute accessing [] vs .
+    - separate courses and plans controller again (combined for sake of duplicate removal)
+
+  Structure
+    - move all requires
+    config
+      initializers
+        ursarule.rb
+    model
+      rule
+        rule*.rb
+    lib
+      rule
+        yaml files
 
 Errors
-- sometimes course modal doesn't pop up when you load plan initially
-  - replicate error by switching page from plan, then returning to plan using browser back
-  - course modal not rendered
-- sometimes doesn't save if exit too quickly
+  - sometimes course modal doesn't pop up when you load plan initially
+    - replicate error by switching page from plan, then returning to plan using browser back
+    - course modal not rendered
+  - sometimes doesn't save if exit too quickly
 
 404 not found
 
