@@ -4,7 +4,34 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
   $scope.semesters = ['fall1','fall2','fall3','fall4','spring1','spring2','spring3','spring4','summer1','summer2','summer3','summer4']
   $scope.garbage = []
   $scope.plan = {}
-
+  # CODE for INTROJS
+  $scope.IntroOptions =
+    steps: [
+      element: document.querySelector("#semester")
+      intro: "This is the first tooltip."
+    ,
+      element: document.querySelectorAll("#semester")[0]
+      intro: "<strong>You</strong> can also <em>include</em> HTML"
+      position: "right"
+    ,
+      element: "#semester"
+      intro: "More features, more fun."
+      position: "left"
+    ,
+      element: "#step4"
+      intro: "Another step."
+      position: "bottom"
+    ,
+      element: "#step5"
+      intro: "Get it, use it."
+    ]
+  showStepNumbers: false
+  exitOnOverlayClick: true
+  exitOnEsc: true
+  nextLabel: "<strong>NEXT!</strong>"
+  prevLabel: "<span style=\"color:green\">Previous</span>"
+  skipLabel: "Exit"
+  doneLabel: "Thanks"
   # BEGIN CoursesController, combinded for duplicate removal for now
 
   #todo: put garbage course in right place instead of sorting everything (since already sorted at beginning)
