@@ -8,7 +8,7 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
   $scope.IntroOptions = {
     steps:[
       {
-        element: '#step1',
+        element: '#semesters',
         intro: "First tooltip"
       },
       {
@@ -18,7 +18,6 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
       }
     ]
   }
-  $scope.CallMe();
   # BEGIN CoursesController, combinded for duplicate removal for now
 
   #todo: put garbage course in right place instead of sorting everything (since already sorted at beginning)
@@ -157,4 +156,5 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
         $scope.update()
     $scope.updatePlan()
     $scope.removeDuplicates()
+    $scope.CallMe()
 ]
