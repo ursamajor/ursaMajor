@@ -5,7 +5,7 @@
       #{label}
 
     %a.fa.fa-cog{"data-toggle" => "dropdown"}
-    =render partial: "plans/semester_settings", locals:{semester: semester}
+    = render partial: "plans/semester_settings", locals:{semester: semester}
     .btn.btn-primary.btn-draggable(data-ng-click="courseDisplay(course.id)" data-ng-repeat="course in #{semester}" data-ng-show="course.name" data-drag="{{course.drag}}" data-jqyoui-options="{revert: 'invalid'}" data-ng-model="#{semester}" jqyoui-draggable="{onStart: 'startDragging', index: {{$index}}}")
       {{course.name}}
     .units(class="#{type}") {{#{semester}.units}} units

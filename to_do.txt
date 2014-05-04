@@ -1,13 +1,4 @@
 Landing Page
-  - slider of site highlights
-    - fast
-    - easy to use
-    - all your courses are here
-    - discover courses you'll love
-    - a schedule that's personal
-    - courses bring us together
-    - want the right schedule? just browse
-    - degree auditing in an instant
   - tag line
 
 Course Catalog
@@ -109,6 +100,7 @@ Optional
   Angular
     - more consistent json object attribute accessing [] vs .
     - separate courses and plans controller again (combined for sake of duplicate removal)
+    - switch over bootstrap js to angular ui js
 
   Structure
     - move all requires
