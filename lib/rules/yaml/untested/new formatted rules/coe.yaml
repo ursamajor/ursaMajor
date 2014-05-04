@@ -1,34 +1,29 @@
 
-
-#    coe_bioengineering_major:
-#        description: "Bioengineering Major"
-#        rule: AND
-#        args:
-#            - coe_humanities_and_social_sciences
-#            - coe_lowerdiv
-#            - coe_upperdiv
-#            - units_upperdiv
-#            - units_total
+#            - rule: coe_humanities_and_social_sciences
+#            - rule: coe_lowerdiv
+#            - rule: coe_upperdiv
+#            - rule: units_upperdiv
+#            - rule: units_total
 
 
 # upper division
 
 upperdiv_engineering_courses:
     description: "Upper Division Engineering Courses"
-    rule: same_course
+    rule: OR
     args:
-        - upperdiv_bioengineering
-        - upperdiv_civil_engineering
-        - upperdiv_engineering
-        - upperdiv_electrical_engineering
-        - upperdiv_industrial_engineering
-        - upperdiv_mechanical_engineering
-        - upperdiv_nuclear_engineering
-        - upperdiv_materials_science_and_engineering
+        - rule: upperdiv_bioengineering
+        - rule: upperdiv_civil_engineering
+        - rule: upperdiv_engineering
+        - rule: upperdiv_electrical_engineering
+        - rule: upperdiv_industrial_engineering
+        - rule: upperdiv_mechanical_engineering
+        - rule: upperdiv_nuclear_engineering
+        - rule: upperdiv_materials_science_and_engineering
 
 
 upperdiv_bioengineering:
-    description: "Upper Division Biongineering"
+    description: "Upper Division Bioengineering"
     rule: same_course
     args:
         - upperdiv
@@ -86,98 +81,96 @@ upperdiv_nuclear_engineering:
 
 coe_engineering_electives:
     description: "Engineering Electives"
-    rule: same_course
+    rule: OR
     args:
-        - OR:
-            - dept: BIO ENG
-                - NOT:
-                    - course: BIO ENG.100
-            - dept: CHM ENG
-                - NOT:
-                    - course: CHM ENG.185
-            - dept: CIV ENG
-            - dept: COMPSCI
-                    - course: COMPSCI.195
-                    - course: COMPSCI.C195
-            - dept: EL ENG
-            - dept: ENGIN
-                - NOT:
-                    - course: ENGIN.100
-                    - course: ENGIN.110
-                    - course: ENGIN.C111
-                    - course: ENGIN.124
-                    - course: ENGIN.130AC
-                    - course: ENGIN.140
-                    - course: ENGIN.191
-                    - course: ENGIN.193
-                    - course: ENGIN.195
-                    - course: ENGIN.196
-            - dept: IND ENG
-                - NOT:
-                    - course: IND ENG.172
-                    - course: IND ENG.190A
-                    - course: IND ENG.190B
-                    - course: IND ENG.190C
-                    - course: IND ENG.190D
-                    - course: IND ENG.190E
-                    - course: IND ENG.190F
-                    - course: IND ENG.190G
-                    - course: IND ENG.190H
-                    - course: IND ENG.190I
-                    - course: IND ENG.190K
-            - dept: MEC ENG
-                - NOT:
-                    - course: MEC ENG.106
-            - dept: MAT SCI
-            - dept: NUC ENG
+       - rule: upperdiv_bioengineering
+            - NOT:
+                - course: BIO ENG.100
+        - rule: upperdiv_chemical_engineering
+        - rule: upperdiv_civil_engineering
+        - rule: upperdiv_computer_science
+            - NOT:
+                - course: COMPSCI.195
+                - course: COMPSCI.C195
+        - rule: upperdiv_electrical_engineering
+        - rule: upperdiv_engineering
+        - rule: upperdiv_industrial_engineering
+            - NOT:
+                - course: IND ENG.190A
+                - course: IND ENG.190B
+                - course: IND ENG.190C
+                - course: IND ENG.190D
+                - course: IND ENG.190E
+                - course: IND ENG.190F
+                - course: IND ENG.190G
+                - course: IND ENG.190H
+                - course: IND ENG.190I
+                - course: IND ENG.190K
+        - rule: upperdiv_mechanical_engineering
+        - rule: upperdiv_materials_science_and_engineering
+        - rule: upperdiv_nuclear_engineering
 
 
-coe_humanities_and_social_sciences:
+coe_humanities_and_social_sciences: # idk
     description: "COE Humanities and Social Sciences Requirement"
     rule: count_courses
     args:
-        min: 7
+        min: 4
+        rule: AND
         args:
-            rule: same_dept
-            args:
-                rule: AND
-                args:
-                    - same_course:
-                        - upperdiv
-                        - coe_humanities_and_social_sciences_courses
-                    - same_course:
-                        - lowerdiv
-                        - coe_humanities_and_social_sciences_courses
+            - rule: university_rc_A
+            - rule: university_rc_B
+            - rule: coe_humanities_and_social_sciences_courses
 
 coe_humanities_and_social_sciences_courses:
     description: "COE Humanities and Social Sciences Courses"
     rule: AND
-        - university_rc_A
-        - university_rc_B
-        - coe_foreign_language
-        - ls_breadth_arts
-        - ls_breadth_history
-        - ls_breadth_philosophy
+        - rule: coe_foreign_language
+        - rule: ls_breadth_arts
+        - rule: ls_breadth_history
+        - rule: ls_breadth_philosophy
             - NOT:
                 - course: ENGIN.124
-        - ls_breadth_international
-        - ls_breadth_social
+        - rule: ls_breadth_international
+        - rule: ls_breadth_social
             - NOT:
-                - course: IND ENG.172
-                - course: IND ENG.171
-                - course: IND ENG.170
-                - course: IND ENG.166
-                - course: IND ENG.39A
-                - course: IND ENG.39
-                - course: CIV ENG.167
                 - course: CIV ENG.151
-                - course: CIV ENG.
+                - course: CIV ENG.167
                 - course: ENGIN.39D
                 - course: ENGIN.49
                 - course: ENGIN.120
+                - course: IND ENG.39A
+                - course: IND ENG.39
+                - course: IND ENG.166
+                - course: IND ENG.172
+                - course: IND ENG.171
+                - course: IND ENG.170
                 - course: MEC ENG.39B
                 - course: NUC ENG.170
 
+coe_nuclear_engineering_ethics:
+    description: "Nuclear Engineering Ethics Requirement"
+    rule: OR
+    args:
+        - course: ANTHRO.156B
+        - course: BIO ENG.100
+        - course: ENGIN.125
+        - course: ESPM.161
+        - course: ESPM.162
+        - course: GEOG.31
+        - course: ISF.61
+        - course: ISF.100E
+        - course: IAS.105
+        - course: LEGALST.19AC
+        - course: LEGALST.100A
+        - course: MEC ENG.191AC
+        - course: PHILOS.2
+        - course: PHILOS.104
+        - course: PHILOS.107
+        - course: POL SCI.108A
+        - course: PB HLTH.116 # can't fullfil hss
+        - course: SOCIOL.116
+        - course: SOCIOL.123
 
 coe_foreign_language:
     description: "COE Foreign Language"
@@ -465,5 +458,89 @@ coe_foreign_language:
             - course: VIETNMS.101B
             - course: YIDDISH.101
             - course: YIDDISH.102
+
+# more rules
+
+bioeng22:
+    hidden: true
+    rule: AND
+    args: 
+        - course: BIO ENG.22
+        - course: BIO ENG.22L
+
+cs61b:
+    hidden: true
+    rule: OR
+    args:
+        - course: COMPSCI.61B
+        - course: COMPSCI.61BL
+
+cs61c:
+    hidden: true
+    rule: OR
+    args:
+        - course: COMPSCI.61C
+        - course: COMPSCI.61CL
+
+cs70_math55:
+    hidden: true
+    rule: OR
+    args:
+        - course: COMPSCI.70
+        - course: MATH.55
+
+ieor172_stat134:
+    hidden: true
+    rule: OR
+    args:
+        - course: IND ENG.172
+        - course: STAT.134
+
+e7_cs61a:
+    hidden: true
+    rule: OR
+    args:
+        - course: COMPSCI.61A
+        - course: ENGIN.7
+
+chem1_4a:
+    hidden: true
+    rule: OR
+    args:
+        - rule: chem1a
+        - course: CHEM.4A
+
+bio1b_cive70:
+    hidden: true
+    rule: OR
+    args:
+        - course: BIOLOGY.1B
+        - course: CIV ENG.70
+
+chem1b_4b:
+    hidden: true
+    rule: OR
+    args:
+        - course: CHEM.1B
+        - course: CHEM.4B
+
+chem1b_4b_phys:
+    hidden: true
+    rule: OR
+    args:
+        - course: CHEM.1B
+        - course: CHEM.4B
+        - course: PHYSICS.7C
+
+civec30_mecec85:
+    hidden: true
+    rule: OR
+    args:
+        - course: CIV ENG.C30
+        - course: MEC ENG.C85
+
+
+
+
 
 

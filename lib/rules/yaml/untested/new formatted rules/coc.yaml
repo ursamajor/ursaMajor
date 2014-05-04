@@ -1548,13 +1548,66 @@ coc_allied_subjects:
             - course: STAT.C143
 
 coc_bio:
-      hidden: true
-      rule: OR
-      args:
-            - rule: bio1a
-            - course: BIOLOGY.1B
+    hidden: true
+    rule: OR
+    args:
+        - rule: bio1a
+        - course: BIOLOGY.1B
 
+physics_7_8:
+    hidden: true
+    rule: OR
+    args:
+        - rule: physics_7ab
+        - rule: physics_8ab
 
+physics_7ab:
+    hidden: true
+    rule: AND
+    args:
+        - course: PHYSICS.7A
+        - course: PHYSICS.7B
+
+physics_8ab:
+    hidden: true
+    rule: AND
+    args:
+        - course: PHYSICS.8A
+        - course: PHYSICS.8B
+
+cheme_rc:
+    hidden: true
+    rule: OR
+    args:
+        - rule: university_rc_A
+        - rule: university_rc_B
+
+cheme_breadth:
+    hidden: true
+    rule: units
+        min: 15
+        rule: coc_breadth_humanities_and_social_sciences # 2 different depts, one upper div
+
+chem_1_4:
+    hidden: true
+    rule: OR
+    args:
+        - rule: chem1
+        - rule: chem4
+
+chem1:
+    hidden: true
+    rule: AND
+    args:
+        - course: CHEM.1A
+        - course: CHEM.1B
+
+chem4:
+    hidden: true
+    rule: AND
+    args:
+        - course: CHEM.4A
+        - course: CHEM.4B
 
 
 

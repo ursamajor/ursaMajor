@@ -1,0 +1,138 @@
+rules:
+
+    coe_energy_engineering_major:
+        description: "Energy Engineering Major"
+        rule: AND
+        args:
+            - rule: coe_humanities_and_social_sciences
+            - rule: coe_lowerdiv_energy_engineering
+            - rule: coe_upperdiv_energy_engineering
+            - rule: units_upperdiv
+            - rule: units_total
+
+    coe_energy_engineering_lowerdiv:
+        description: "Energy Engineering Lower Division Requirements"
+        rule: AND
+        args:
+            - rule: chem1_4a
+            - rule: e7_cs61a
+            - course: MATH.1A
+            - course: MATH.1B
+            - course: MATH.53
+            - course: MATH.54
+            - course: PHYSICS.7A
+            - course: PHYSICS.7B
+            - course: ENGIN.93
+            - rule: civec30_mecec85
+
+    coe_energy_engineering_upperdiv:
+        description: "Energy Engineering Upper Division Requirements"
+        rule: AND
+        args:
+            - course: ENE,RES.100
+            - rule: engprep1
+            - rule: engprep2
+            - rule: mece40_e115
+            - rule: cive100_mece106
+            - rule: energy_econ
+            - rule: energy_math
+            - course: EL ENG.137A
+            - course: MEC ENG.109
+            - course: MAT SCI.136
+            - course: NUC ENG.161
+            - course: ENGIN.194
+            - course: EL ENG.134
+            - rule: cive100_111
+            - rule: cive107_geo142
+            - rule: energy_sustainability
+            - rule: energy_technical
+
+    engprep1:
+        hidden: true
+        rule: OR
+        args:
+            - course: EL ENG.40
+            - course: EL ENG.100
+            - course: ENGIN.45
+
+    engprep2:
+        hidden: true
+        rule: OR
+        args:
+            - course: EL ENG.40
+            - course: EL ENG.100
+            - course: ENGIN.45
+            - course: CIV ENG.11
+            - course: CIV ENG.70
+            - course: CHEM.1B
+            - course: CHEM.3A
+            - course: EL ENG.20N
+            - course: PHYSICS.7C
+    mece40_e115:
+        hidden: true
+        rule: OR
+        args:
+            - course: MEC ENG.40
+            - course: ENGIN.115
+
+    cive100_mece106:
+        hidden: true
+        rule: OR
+        args:
+            - course: CIV ENG.100
+            - course: MEC ENG.106
+
+    energy_econ:
+        hidden: true
+        rule: OR
+        args:
+            - course: CIV ENG.156
+            - course: ENGIN.120
+            - course: ENVECON.147
+            - course: ENVECON.C151
+            - course: ENVECON.153
+            - course: ENVECON.154
+            - course: ENE,RES.C180
+            - course: ESPM.102D
+            - course: POLECON.101
+
+    energy_math:
+        hidden: true
+        rule: OR
+        args:
+            - course: CIV ENG.93
+            - course: COMPSCI.70
+            - course: ENGIN.117
+            - course: IND ENG.172
+            - course: MATH.55
+            - course: STAT.134
+
+    cive100_111:
+        hidden: true
+        rule: OR
+        args:
+            - course: CIV ENG.108
+            - course: CIV ENG.111
+
+    cive107_geo142:
+        hidden: true
+        rule: OR
+        args:
+            - course: CIV ENG.107
+            - course: GEOG.142
+
+    energy_sustainability:
+        hidden: true
+        rule: OR
+        args:
+            - course: CIV ENG.111
+            - course: CIV ENG.113N
+            - course: CIV ENG.115
+            - course: CY PLAN.119
+            - course: ENE,RES.101
+
+    energy_technical:
+        hidden: true
+        rule: OR
+        args: # one course, dk what it is
+

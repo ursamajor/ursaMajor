@@ -1,6 +1,5 @@
 rules: # not sure if I should combine lower/upper div into one concentration
 
-
     cnr_forestry_and_natural_resources_major:
         description: "Forestry and Natural Resources Major"
         rule: AND

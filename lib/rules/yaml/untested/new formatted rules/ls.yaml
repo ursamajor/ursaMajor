@@ -22,6 +22,33 @@ upperdiv_physics:
         - upperdiv
         - dept: PHYSICS
 
+chem1a:
+    hidden: true
+    rule: AND
+    args:
+        - course: CHEM.1A
+        - course: CHEM.1AL
+
+chem_a:
+    hidden: true
+    rule: OR
+    args:
+        - course: CHEM.1A
+        - course: CHEM.4A
+
+chem3a:
+    hidden: true
+    rule: AND
+        - course: CHEM.3A
+        - course: CHEM.3AL
+
+mcb32:
+    hidden: true
+    rule: AND
+    args:
+        - course: MCELLBI.32
+        - course: MCELLBI.32L
+
 
 rules:
 

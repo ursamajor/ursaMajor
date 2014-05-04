@@ -1,0 +1,98 @@
+rules:
+
+    coe_industrial_engineering_and_operations_research_major:
+        description: "Industrial Engineering and Operations Research Major"
+        rule: AND
+        args:
+            - rule: coe_humanities_and_social_sciences
+            - rule: coe_lowerdiv_industrial_engineering
+            - rule: coe_upperdiv_industrial_engineering
+            - rule: units_upperdiv
+            - rule: units_total
+
+    coe_lowerdiv_industrial_engineering:
+        description: "Industrial Engineering Lower Division Requirements"
+        rule: AND
+        args:
+            - rule: chem1_4a
+            - course: ENGIN.7
+            - course: MATH.1A
+            - course: MATH.1B
+            - course: MATH.53
+            - course: MATH.54
+            - course: PHYSICS.7A
+            - course: PHYSICS.7B
+            - rule: ieor_programming
+
+    ieor_programming:
+        hidden: true
+        rule: OR
+        args:
+            - course: COMPSCI.9C
+            - course: COMPSCI.9F
+            - course: COMPSCI.9G
+            - course: COMPSCI.61A
+
+    coe_upperdiv_industrial_engineering:
+        description: "Industrial Engineering Upper Division Requirements"
+        rule: AND
+        args:
+            - course: ENGIN.120
+            - course: IND ENG.160
+            - course: IND ENG.161
+            - course: IND ENG.162
+            - course: IND ENG.165
+            - rule: ieor172_stat134
+            - course: IND ENG.131
+            - course: IND ENG.180
+            - rule: coe_industrial_engineering_electives
+
+    coe_industrial_engineering_electives:
+        description: "Industrial Engineering Electives"
+        rule: count_courses
+            min: 6
+            rule: OR
+            args:
+                - course: IND ENG.115
+                - course: IND ENG.130
+                - course: IND ENG.140
+                - course: IND ENG.160
+                - course: IND ENG.150
+                - course: IND ENG.151
+                - course: IND ENG.153
+                - course: IND ENG.170
+                - course: IND ENG.171
+
+    coe_industrial_engineering_breadth:
+        description: "Industrial Engineering, Engineering Breadth Requirements"
+        rule: units
+            min: 9
+            rule: OR
+            args:
+                - course: BIO ENG.102
+                - course: CIV ENG.11
+                - course: CIV ENG.C30
+                - course: CIV ENG.60
+                - course: CIV ENG.70
+                - course: CIV ENG.115
+                - course: ENGIN.10
+                - course: ENGIN.28
+                - course: ENGIN.36
+                - course: ENGIN.45
+                - course: ENGIN.115
+                - rule: ee40_42_100
+                - course: MAT SCI.111
+                - course: MEC ENG.40
+                - course: MEC EHGN.C85
+                - course: MEC ENG.132
+
+    ee40_42_100:
+        hidden: true
+        rule: OR
+        args:
+            - course: EL ENG.40
+            - course: EL ENG.42
+            - course: EL ENG.100
+
+
+

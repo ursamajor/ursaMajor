@@ -1,6 +1,5 @@
 rules:
 
-
     cnr_microbial_biology_major:
         description: "Microbial Biology Major"
         rule: AND

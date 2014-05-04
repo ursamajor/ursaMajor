@@ -1,7 +1,8 @@
 class Rule
-  attr_accessor :name, :description, :core, :hidden
+  attr_accessor :name, :description, :core, :hidden, :majors, :colleges, :university
   alias_method :core?, :core
   alias_method :hidden?, :hidden
+  alias_method :university?, :university
 
   @source = :raw
   @rules = {}

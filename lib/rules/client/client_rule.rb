@@ -1,4 +1,5 @@
 require "#{Rails.root}/lib/rules/server/rule"
+require "#{Rails.root}/lib/university/university"
 
 class ClientRule < Rule
   attr_accessor :num_courses, :num_units, :operator, :subrules, :course
@@ -24,6 +25,9 @@ class ClientRule < Rule
     @num_units = get_num_units(entry)
     @subrules = []
     @course = nil
+    @majors = entry['majors'] || []
+    @colleges = entry['colleges'] || []
+    @university = entry['university'] || false
     parse_entries entries if variable?
   end
 
@@ -43,6 +47,9 @@ class ClientRule < Rule
     rule["numUnits"] = @num_units
     rule["course"] = @course
     rule["subrules"] = []
+    rule["majors"] = @majors
+    rule["colleges"] = @colleges
+    rule["university"] = @university
     @subrules.each { |subrule| rule["subrules"] << subrule.json }
     rule["url"] = Rails.application.routes.url_helpers.display_rules_path(:rule => @name)
     rule
@@ -101,11 +108,15 @@ class ClientRule < Rule
     entries.map { |entry| parse_entry entry }
   end
 
+  # def tagged_with(major)
+  #   majors.include?(major) or colleges.include?(University.get_college major) or university?
+  # end
+
   def self.json
     rules = []
     self.all.values.each do |rule|
       next if rule.hidden?
-      rules << rule.json
+      rules << rule.json #if rule.tagged_with major
     end
     rules
   end

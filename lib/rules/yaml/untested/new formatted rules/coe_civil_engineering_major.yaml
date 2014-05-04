@@ -4,11 +4,11 @@ rules:
         description: "Civil Engineering Major"
         rule: AND
         args:
-            - coe_humanities_and_social_sciences
-            - coe_lowerdiv_civil_engineering_requirements
-            - coe_electives_civil_engineering
-            - units_upperdiv
-            - units_total
+            - rule: coe_humanities_and_social_sciences
+            - rule: coe_lowerdiv_civil_engineering_requirements
+            - rule: coe_electives_civil_engineering
+            - rule: units_upperdiv
+            - rule: units_total
 
 
 
@@ -16,9 +16,7 @@ rules:
         description: "Lower Division Civil Engineering Requirements"
         rule: AND
         args:
-            - OR:
-                - course: CHEM.1A
-                - course: CHEM.4A
+            - rule: chem_a
             - course: ENGIN.7
             - course: MATH.1A
             - course: MATH.1B
@@ -26,52 +24,74 @@ rules:
             - course: MATH.54
             - course: PHYSICS.7A
             - course: PHYSICS.7B
-            - OR:
-                - course: BIOLOGY.1B
-                - course: CIV ENG.70
+            - rule: bio1b_cive70
             - course: CIV ENG.92
-            - OR:
-                - course: CHEM.1B
-                - course: CHEM.4B
-                - course: PHYSICS.7C
-            - OR:
-                - course: CIV ENG.C30
-                - course: MEC ENG.C85
+            - rule: chem1b_4b_phys
+            - rule: civec30_mecec85
             - course: CIV ENG.60
 
     coe_electives_civil_engineering:
         description: "Civil Engineering Electives"
         rule: AND
         args:
-            - OR: # engineering sophomore elective
-                - course: CIV ENG.11
-                - course: CIV ENG.70
+            - rule: eng_soph
             - course: CIV ENG.93
             - course: CIV ENG.100
             - course: CIV ENG.130N
-            - OR: # engineering science elective
-                - course: ENGIN.115
-                - course: MEC ENG.40
-                - course: MEC ENG.104
+            - rule: cive_eng_sci
             - course: CIV ENG.192
-            - AND: # elective core
-                - numcourses:
-                    min: 4
-                    rule: OR
-                    args:
-                        - course: CIV ENG.103
-                        - course: CIV ENG.111
-                        - course: CIV ENG.120
-                        - course: CIV ENG.155
-                        - course: CIV ENG.167
-                        - course: CIV ENG.175
-                        - course: CIV ENG.191
-            - units:
-                min: 15
-                rule: OR
-                args:
-                    - coe_engineering_electives
-                        - NOT:
-                            - course: CHM ENG.185
-                            - course: COMPSCI.194
-                            - course: EL ENG.194
+            - rule: cive_elective_core
+            - rule: cive_units
+
+    eng_soph:
+        hidden: true
+        rule: OR
+        args:
+            - course: CIV ENG.11
+            - course: CIV ENG.70
+
+    cive_eng_sci:
+        hidden: true
+        rule: OR
+        args:
+            - course: ENGIN.115
+            - course: MEC ENG.40
+            - course: MEC ENG.104
+
+    cive_elective_core:
+        hidden: true
+        rule: count_courses
+            min: 4
+            rule: OR
+            args:
+                - course: CIV ENG.103
+                - course: CIV ENG.111
+                - course: CIV ENG.120
+                - course: CIV ENG.155
+                - course: CIV ENG.167
+                - course: CIV ENG.175
+                - course: CIV ENG.191
+
+    cive_units:
+        hidden: true
+        rule: units
+            min: 15
+            rule: coe_engineering_electives
+                - NOT:
+                    - course: CHM ENG.185
+                    - course: COMPSCI.194
+                    - course: EL ENG.194
+                    - course: ENGIN.100
+                    - course: ENGIN.110
+                    - course: ENGIN.C111
+                    - course: ENGIN.124
+                    - course: ENGIN.130AC
+                    - course: ENGIN.140
+                    - course: ENGIN.191
+                    - course: ENGIN.193
+                    - course: ENGIN.195
+                    - course: ENGIN.196
+                    - course: MEC ENG.106
+
+
+

@@ -1,0 +1,108 @@
+rules:
+
+    coe_joint_materials_science_and_mechanical_engineering_major:
+        description: "Joint Materials Science and Mechanical Engineering Major"
+        rule: AND
+        args:
+            - rule: coe_humanities_and_social_sciences
+            - rule: coe_lowerdiv_materials_science_mechanical_engineering
+            - rule: coe_upperdiv_materials_science_mechanical_engineering
+            - rule: units_upperdiv
+            - rule: units_total
+
+    coe_lowerdiv_materials_science_mechanical_engineering:
+        description: "Joint Materials Science and Mechanical Engineering Lower Division Requirements"
+        rule: AND
+        args:
+            - rule: chem1_4a
+            - course: MATH.1A
+            - course: MATH.1B
+            - course: MATH.53
+            - course: MATH.54
+            - course: PHYSICS.7A
+            - course: PHYSICS.7B
+            - course: ENGIN.7
+            - course: ENGIN.10
+            - course: ENGIN.28
+            - course: ENGIN.45
+            - course: MEC ENG.40
+            - course: MEC ENG.C85
+
+    coe_upperdiv_materials_science_mechanical_engineering:
+        description: "Joint Materials Science and Mechanical Engineering Upper Division Requirements"
+        rule: AND
+            - course: EL ENG.100
+            - course: MAT SCI.102
+            - course: MAT SCI.103
+            - course: MAT SCI.104
+            - course: MAT SCI.112
+            - course: MAT SCI.130
+            - course: MEC ENG.104
+            - course: MEC ENG.102A
+            - course: MEC ENG.102B
+            - course: MEC ENG.106
+            - course: MEC ENG.107
+            - course: MEC ENG.109
+            - course: MEC ENG.132
+            - rule: mece108_mse113
+            - rule: mece_tech
+            - rule: mse_tech
+            - rule: mece_other
+            - rule: coe_joint_materials_science_mechanical_engineering_other
+
+    mece108_mse113:
+        hidden: true
+        rule: OR
+        args:
+            - course: MEC ENG.108
+            - course: MAT SCI.113
+
+    mece_tech:
+        hidden: true
+        rule: OR
+        args:
+            - course: MEC ENG.101
+            - course: MEC ENG.110
+            - course: MEC ENG.119
+            - course: MEC ENG.128
+            - course: MEC ENG.130
+            - course: MEC ENG.165
+
+    mse_tech:
+        hidden: true
+        rule: OR
+        args:
+            - course: MAT SCI.120
+            - course: MAT SCI.121
+            - course: MAT SCI.122
+            - course: MAT SCI.123
+            - course: MAT SCI.125
+
+    mece_other:
+        hidden: true
+        rule: units
+            min: 3
+            rule: upperdiv_mechanical_engineering # other than above
+
+    coe_joint_materials_science_mechanical_engineering_other:
+        description: "Joint Materials Science and Mechanical Engineering Other Electives"
+        rule: units
+            min: 3
+            rule: coe_engineering_electives
+                - NOT:
+                    - course: ENGIN.125
+                    - course: IND ENG.172
+                    - course: IND ENG.190A
+                    - course: IND ENG.190B
+                    - course: IND ENG.190C
+                    - course: IND ENG.190D
+                    - course: IND ENG.190E
+                    - course: IND ENG.190F
+                    - course: IND ENG.190G
+                    - course: IND ENG.190H
+                    - course: IND ENG.190I
+                    - course: IND ENG.190K
+                    - course: MEC ENG.191AC
+                    - course: MEC ENG.191K
+
+

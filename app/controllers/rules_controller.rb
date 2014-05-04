@@ -10,7 +10,7 @@ class RulesController < ApplicationController
   end
 
   def search
-    @rules = ClientRule.json
+    @rules = ClientRule.json #params[:major]
     respond_with @rules
   end
 

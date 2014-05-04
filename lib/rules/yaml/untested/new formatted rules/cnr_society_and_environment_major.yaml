@@ -1,6 +1,5 @@
 rule:
 
-
     cnr_society_and_environment_major:
         description: "Society and Environment Major"
         rule: AND

@@ -1,0 +1,110 @@
+rules:
+
+    coe_mechanical_engineering_major:
+        description: "Mechanical Engineering Major"
+        rule: AND
+        args:
+            - rule: coe_humanities_and_social_sciences
+            - rule: coe_lowerdiv_mechanical_engineering
+            - rule: coe_upperdiv_mechanical_engineering
+            - rule: units_upperdiv
+            - rule: units_total
+
+    coe_lowerdiv_mechanical_engineering:
+        description: "Mechanical Engineering Lower Division Requirements"
+        rule: AND
+        args:
+            - rule: chem1_4a
+            - course: ENGIN.7
+            - course: ENGIN.10
+            - course: ENGIN.28
+            - course: MEC ENG.40
+            - course: MEC ENG.C85
+            - course: MATH.1A
+            - course: MATH.1B
+            - course: MATH.53
+            - course: MATH.54
+            - course: PHYSICS.7A
+            - course: PHYSICS.7B
+
+    coe_upperdiv_mechanical_engineering:
+        description: "Mechanical Engineering Upper Division Requirements"
+        rule: AND
+        args:
+            - course: EL ENG.100
+            - course: MEC ENG.102A
+            - course: MEC ENG.102B
+            - course: MEC ENG.104
+            - course: MEC ENG.106
+            - course: MEC ENG.107
+            - course: MEC ENG.108
+            - course: MEC ENG.109
+            - course: MEC ENG.132
+            - rule: coe_mechanical_engineering_technical
+
+    coe_mechanical_engineering_technical:
+        description: "Mechanical Engineering Technical Electives"
+        rule: units
+            min: 18
+            rule: AND
+            args:
+                - rule: mece_stuff
+                - rule: mece_more
+                - rule: mece_units
+                - rule: mece_other
+
+    mece_stuff:
+        hidden: true
+        rule: OR
+        args:
+            - course: ENGIN.128
+            - course: MEC ENG.101
+            - course: MEC ENG.110
+            - course: MEC ENG.119
+            - course: MEC ENG.128
+            - course: MEC ENG.130
+            - course: MEC ENG.165
+
+    mece_more:
+        hidden: true
+        rule: OR
+        args:
+            - course: ENGIN.117
+            - course: MATH.128A
+            - course: MEC ENG.C180
+
+    mece_units:
+        hidden: true
+        rule: units
+            min: 15
+            rule: OR
+            args:
+                - rule: upperdiv_mechanical_engineering
+                - course: ENGIN.128
+                - course: ENGIN.117
+                - course: MATH.128A
+
+    mece_other:
+        hidden: true
+        rule: OR
+        args:
+            - rule: upperdiv_math
+            - rule: upperdiv_statistics
+            - rule: upperdiv_physics
+            - rule: upperdiv_chemistry
+            - rule: upperdiv_chemical_engineering
+            - rule: upperdiv_molecular_cell_biology
+            - rule: upperdiv_biology
+            - course: ASTRON.7A
+            - course: BIOLOGY.1A
+            - course: BIOLOGY.1B
+            - course: CHEM.1B
+            - course: CHEM.3A
+            - course: MCELLBI.11
+            - course: MCELLBI.32
+            - course: STAT.20
+            - course: STAT.25
+            - rule: coe_engineering_electives
+                - NOT:
+                    - course: ENGIN.125
+

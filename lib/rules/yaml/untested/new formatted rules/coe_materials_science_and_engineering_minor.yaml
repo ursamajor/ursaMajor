@@ -1,0 +1,40 @@
+rules:
+
+    coe_materials_science_and_engineering_minor:
+        description: "Materials Science and Engineering Minor"
+        rule: count_courses
+            min: 5
+            rule: AND
+            args:
+                - rule: coe_materials_science_minor_prereqs
+                - rule: coe_materials_science_minor_upperdiv
+                - rule: coe_materials_science_minor_electives
+
+    coe_materials_science_minor_prereqs:
+        description: "Materials Science and Engineering Minor Pre-Requisites"
+        rule: AND
+        args:
+            - course: ENGIN.45
+            - course: ENGIN.115
+
+    coe_materials_science_minor_upperdiv:
+        description: "Materials Science and Engineering Minor Course Requirements"
+        rule: AND
+        args:
+            - course: MAT SCI.102
+            - course: MAT SCI.103
+
+    coe_materials_science_minor_electives:
+        description: "Materials Science and Engineering Minor Electives"
+        rule: OR
+        args:
+            - course: MAT SCI.104
+            - course: MAT SCI.111
+            - course: MAT SCI.112
+            - course: MAT SCI.113C
+            - course: MAT SCI.117
+            - course: MAT SCI.120
+            - course: MAT SCI.121
+            - course: MAT SCI.122
+            - course: MAT SCI.123
+            - course: MAT SCI.125

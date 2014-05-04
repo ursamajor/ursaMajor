@@ -1,0 +1,156 @@
+rules:
+
+    coe_joint_bioengineering_and_materials_science_major:
+        description: "Joint Bioengineering and Materials Science Major"
+        rule: AND
+        args:
+            - rule: coe_humanities_and_social_sciences
+            - rule: coe_lowerdiv_joint_bioengineering_materials_science
+            - rule: coe_upperdiv_joint_bioengineering_materials_science
+            - rule: units_upperdiv
+            - rule: units_total
+
+    coe_lowerdiv_joint_bioengineering_materials_science:
+        description: "Joint Bioengineering and Materials Science Lower Division Requirements"
+        rule: AND
+        args:
+            - rule: chem1_4a
+            - rule: chem3a_112a
+            - rule: e7_cs61a
+            - course: BIO ENG.10
+            - course: MATH.1A
+            - course: MATH.1B
+            - course: MATH.53
+            - course: MATH.54
+            - course: PHYSICS.7A
+            - course: PHYSICS.7B
+            - course: BIO ENG.24
+            - course: BIOLOGY.1A
+            - course: BIOLOGY.1AL
+            - course: ENGIN.45
+            - rule: ee40_100_bioe101
+
+    chem3a_112a:
+        hidden: true
+        rule: OR
+        args:
+            - rule: chem3a
+            - course: CHEM.112A
+
+    ee40_100_bioe101:
+        hidden: true
+        rule: OR
+        args:
+            - course: EL ENG.40
+            - course: EL ENG.100
+            - course: BIO ENG.101
+
+    coe_upperdiv_joint_bioengineering_materials_science:
+        description: "Joint Bioengineering and Materials Science Upper Division Requirements"
+        rule: AND
+        args:
+            - course: BIO ENG.102
+            - course: BIO ENG.104
+            - rule: chem135_mcb102_110
+            - rule: chem120b_c130_mcbc100a_e115
+            - rule: bioe110_115_mse130
+            - rule: bioe111_116_c117
+            - course: MCELLBI.130A
+            - course: MAT SCI.102
+            - course: MAT SCI.104
+            - course: BIO ENG.C118
+            - course: MAT SCI.115
+            - rule: joint_bio_mse_choose
+            - rule: coe_joint_bioengineering_and_materials_science_design
+            - rule: coe_joint_bioengineering_and_materials_science_techincal
+            - rule: coe_joint_bioengineering_and_materials_science_ethics
+
+    chem135_mcb102_110:
+        hidden: true
+        rule: OR
+        args:
+            - course: CHEM.135
+            - course: MCELLBI.102
+            - course: MCELLBI.110
+
+    chem120b_c130_mcbc100a_e115:
+        hidden: true
+        rule: OR
+        args:
+            - course: CHEM.120B
+            - course: CHEM.C130
+            - course: MCELLBI.C100A
+            - course: ENGIN.115
+
+    bioe110_115_mse130:
+        hidden: true
+        rule: OR
+        args:
+            - course: BIO ENG.110
+            - course: BIO ENG.115
+            - course: MAT SCI.130
+
+    bioe111_116_c117:
+        hidden: true
+        rule: OR
+        args:
+            - course: BIO ENG.111
+            - course: BIO ENG.116
+            - course: BIO ENG.C117
+
+    joint_bio_mse_choose:
+        hidden: true
+        rule: count_courses
+            min: 2
+            rule: OR
+            args:
+                - course: BIO ENG.121
+                - course: BIO ENG.150
+                - course: MAT SCI.111
+                - course: MAT SCI.112
+                - course: MAT SCI.113
+
+    coe_joint_bioengineering_and_materials_science_design:
+        description: "Bioengineering Design Project and Research List"
+        rule: OR
+        args:
+            - course: BIO ENG.121L
+            - course: BIO ENG.140L
+            - course: BIO ENG.168L
+            - course: BIO ENG.192
+            - course: BIO ENG.H194
+            - course: BIO ENG.196
+
+    coe_joint_bioengineering_and_materials_science_techincal:
+        description: "Joint Bioengineering and Materials Science Technical Elective"
+        rule: OR
+        args:
+            - course: BIO ENG.111
+            - course: BIO ENG.113
+            - course: BIO ENG.116
+            - course: BIO ENG.C117
+            - course: BIO ENG.121
+            - course: BIO ENG.H194
+            - course: MAT SCI.103
+            - course: MAT SCI.111
+            - course: MAT SCI.112
+            - course: MAT SCI.113
+
+    coe_joint_bioengineering_and_materials_science_ethics:
+        description: "Joint Bioengineering and Materials Science Ethics Requirement"
+        rule: OR
+        args:
+            - course: ANTHRO.156B
+            - course: BIO ENG.100
+            - course: ENGIN.125
+            - course: ESPM.161
+            - course: ESPM.162
+            - course: LNS.160B
+            - course: MEC ENG.191AC
+            - course: PHILOS.2
+            - course: PHILOS.104
+            - course: PHILOS.107
+            - course: PB HLTH.116 # can't fullfil hss
+
+
+

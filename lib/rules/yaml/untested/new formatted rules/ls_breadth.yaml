@@ -6,54 +6,52 @@ ls_breadth_all:
         min: 7
         rule: AND
         args:
-            - ls_breadth_arts
-            - ls_breadth_bio
-            - ls_breadth_history
-            - ls_breadth_international
-            - ls_breadth_philosophy
-            - ls_breadth_physical
-            - ls_breadth_social
+            - rule: ls_breadth_arts
+            - rule: ls_breadth_bio
+            - rule: ls_breadth_history
+            - rule: ls_breadth_international
+            - rule: ls_breadth_philosophy
+            - rule: ls_breadth_physical
+            - rule: ls_breadth_social
         - rule: same_dept
             max: 2
 
 qu:
     description: "Quantitative Reasoning Requirement"
-    rule: same_course
+    rule: units
     args:
+        min: 2
+        rule: OR
         - units:
             min: 2
-        - OR: # choose a department
-            - AND:
                 - dept: MATH
-                - NOT:
-                    - course: MATH.10
-                    - course: MATH.15
-                    - course: MATH.24
-                    - course: MATH.30
-                    - course: MATH.49
-                    - course: MATH.84
-                    - course: MATH.96
-                    - course: MATH.98
-                    - course: MATH.103
-                    - course: MATH.160
-                    - course: MATH.199
-            - AND:
+                    - NOT:
+                        - course: MATH.10
+                        - course: MATH.15
+                        - course: MATH.24
+                        - course: MATH.30
+                        - course: MATH.49
+                        - course: MATH.84
+                        - course: MATH.96
+                        - course: MATH.98
+                        - course: MATH.103
+                        - course: MATH.160
+                        - course: MATH.199
                 - dept: STAT
-                - NOT:
-                    - course: STAT.24
-                    - course: STAT.39
-                    - course: STAT.98
-                    - course: STAT.198
-                    - course: STAT.199
-            - AND:
+                    - NOT:
+                        - course: STAT.24
+                        - course: STAT.39
+                        - course: STAT.98
+                        - course: STAT.198
+                        - course: STAT.199
                 - dept: COMPSCI
-                - NOT:
-                    - course: COMPSCI.24
-                    - course: COMPSCI.39
-                    - course: COMPSCI.99
-                    - course: COMPSCI.195
-                    - course: COMPSCI.198
-                    - course: COMPSCI.199
+                    - NOT:
+                        - course: COMPSCI.24
+                        - course: COMPSCI.39
+                        - course: COMPSCI.99
+                        - course: COMPSCI.195
+                        - course: COMPSCI.198
+                        - course: COMPSCI.199
 
 ls_breadth_arts:
     description: "Arts and Literature Breadth Requirement"

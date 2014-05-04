@@ -1,0 +1,57 @@
+rules:
+
+    coe_environmental_engineering_science_minor:
+        description: "Environmental Engineering Science Minor"
+        rule: AND
+        args:
+            - rule: env_eng_minor_prereqs
+            - rule: env_eng_minor_upperdiv
+
+    env_eng_minor_prereqs:
+        description: "Environmental Engineering Minor Pre-requisites"
+        rule: AND
+        args:
+            - rule: chem_1_4
+            - course: ENGIN.7
+            - course: MATH.1A
+            - course: MATH.1B
+            - course: MATH.53
+            - course: MATH.54
+            - course: PHYSICS.7A
+            - course: PHYSICS.7B
+            - course: CIV ENG.93
+            - rule: civec30_mecec85
+
+    env_eng_minor_upperdiv:
+        description: "Environmental Engineering Minor Upper Division"
+        rule: AND
+        args:
+            - rule: cive100_mece106
+            - course: CIV ENG.111
+            - rule: env_eng_upper_tech
+
+    cive100_mece106:
+        hidden: true
+        rule: OR
+        args:
+            - course: CIV ENG.100
+            - course: MEC ENG.106
+
+    env_eng_upper_tech:
+        hidden: true
+        rule: count_courses
+            min: 3
+            rule: OR
+            args:
+                - course: CIV ENG.101
+                - course: CIV ENG.103
+                - course: CIV ENG.C106
+                - course: CIV ENG.107
+                - course: CIV ENG.108
+                - course: CIV ENG.112
+                - course: CIV ENG.113N
+                - course: CIV ENG.114
+                - course: CIV ENG.115
+                - course: CIV ENG.C116
+                - course: CIV ENG.173
+

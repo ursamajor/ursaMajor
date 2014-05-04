@@ -2,81 +2,26 @@ rules:
 
     university_ac:
         description: "American Cultures"
+        university: true
         rule: course_regex
         args: ac$
 
     university_rc_a:
         description: "R&C A"
+        university: true
         rule: course_regex
         args: R\dA$
 
     university_rc_b:
         description: "R&C B"
+        university: true
         rule: course_regex
         args: R\dB$
 
-    lowerdiv:
-        description: "Lower Division"
-        rule: course_number
-        args:
-            min: 0
-            max: 99
-
-    upperdiv:
-        description: "Upper Division"
-        rule: course_number
-        args:
-            min: 100
-
-    four_units_ac:
-        description: "4-unit American Cultures course"
-        rule: units
-        args:
-            min: 4
-            rule: university_ac
-
-    four_cs_courses:
-        description: "4 CS courses"
-        rule: count_courses
-        args:
-            min: 4
-            rule: dept
-            args: COMPSCI
-
-    # series:
-    #     description: "Series Requirement"
-    #     rule: same_dept
-    #     args:
-    #         rule: AND
-    #         args:
-    #             - same_course:
-    #                 - upperdiv
-    #                 - OR:
-    #                     - university_ac
-    #                     - cnr_breadth_arts_history_philosophy
-    #                     - cnr_breadth_social_international
-    #             - same_course:
-    #                 - lowerdiv
-    #                 - OR:
-    #                     - university_ac
-    #                     - cnr_breadth_arts_history_philosophy
-    #                     - cnr_breadth_social_international
-
-    lowerdiv_units:
-        description: "EECS lower division requirement"
-        rule: count_courses
-        args:
-            min: 5
-            rule: AND
-            args:
-                - course: COMPSCI.61A
-                - course: COMPSCI.61B
-                - course: COMPSCI.61C
-                - course: EL ENG.20
-                - course: EL ENG.40
-
     ls_breadth_arts:
         description: "Arts and Literature Breadth Requirement"
+        colleges: 
+            - LS
         rule: same_course
         args:
             - OR:
@@ -927,6 +872,8 @@ rules:
 
     ls_breadth_history:
         description: "Historical Studies Breadth Requirement"
+        colleges:
+            - LS
         rule: same_course
         args:
             - OR:
@@ -1495,6 +1442,8 @@ rules:
 
     ls_breadth_international:
         description: "International Studies Breadth Requirement"
+        colleges:
+            - LS
         rule: OR
         args:
             - course: AFRICAM.4B
@@ -1944,6 +1893,8 @@ rules:
 
     ls_breadth_philosophy:
         description: "Philosophy and Values Breadth Requirement"
+        colleges:
+            - LS
         rule: same_course
         args:
             - OR:
@@ -2291,6 +2242,8 @@ rules:
 
     ls_breadth_social:
         description: "Social and Behavioral Sciences Breadth Requirement"
+        colleges:
+            - LS
         rule: same_course
         args:
             - OR:
@@ -3586,6 +3539,8 @@ rules:
 
     hss:
         description: "Humanities and Social Sciences (14 units)"
+        colleges:
+            - CNR
         rule: units
         args:
             min: 14
@@ -3646,6 +3601,8 @@ rules:
                 - course: PHYSICS.8A
     phys_math:
         description: "Physical Sciences and Math (26-28 units)"
+        majors:
+            - Molecular Toxicology
         rule: AND
         args:
             - rule: math
@@ -3653,6 +3610,8 @@ rules:
 
     bio_nr:
         description: "Biological and Natural Resource Science (11 units)"
+        majors:
+            - Molecular Toxicology
         rule: count_courses
         args:
             min: 5
@@ -3666,6 +3625,8 @@ rules:
 
     cnr_upper_division:
         description: "Upper Division CNR Requirement (15 units)"
+        colleges:
+            - CNR
         rule: units
         args:
             min: 15
@@ -3720,6 +3681,8 @@ rules:
                 - course: PB HLTH.162L
     molecular_toxicology_upper:
         description: "Upper Division Molecular Toxicology Requirement"
+        majors:
+            - Molecular Toxicology
         rule: AND
         args:
             - rule: mtu1
@@ -3729,6 +3692,8 @@ rules:
 
     molecular_toxicology_upper_units:
         description: "Upper Division Molecular Toxicology Unit Requirement (36 units)"
+        majors:
+            - Molecular Toxicology
         rule: units
         args:
             min: 36
@@ -3780,6 +3745,8 @@ rules:
 
     cnr_molecular_toxicology_major:
         description: "Molecular Toxicology Major"
+        majors:
+            - Molecular Toxicology
         rule: AND
         args:
             - rule: university_ac

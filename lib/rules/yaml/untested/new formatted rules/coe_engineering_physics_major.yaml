@@ -1,0 +1,139 @@
+rules:
+
+    coe_engineering_physics_major:
+        description: "Engineering Physics Major"
+        rule: AND
+        args:
+            - rule: coe_humanities_and_social_sciences
+            - rule: coe_lowerdiv_engineering_physics
+            - rule: coe_upperdiv_engineering_physics
+            - rule: units_upperdiv
+            - rule: units_total
+
+
+    coe_lowerdiv_engineering_physics:
+        description: "Engineering Physics Lower Division Requirements"
+        rule: AND
+        args:
+            - rule: chem1_4a
+            - rule: chem1b_4b
+            - rule: e7_cs71a
+            - course: MATH.1A
+            - course: MATH.1B
+            - course: MATH.53
+            - course: MATH.54
+            - course: PHYSICS.7A
+            - course: PHYSICS.7B
+            - course: PHYSICS.7C
+            - rule: eng_phys_lowerdiv_tech
+
+    eng_phys_lowerdiv_tech:
+        hidden: true
+        rule: count_courses
+            min: 2
+            rule: OR
+            args:
+                - course: ASTRON.7A
+                - course: ASTRON.7B
+                - course: BIOLOGY.1A
+                - course: BIOLOGY.1B
+                - course: CIV ENG.C30
+                - course: MEC ENG.C85
+                - course: CHEM.3A
+                - course: ENGIN.45
+                - rule: ee40_100
+
+    coe_upperdiv_engineering_physics:
+        description: "Engineering Physics Upper Division Requirements"
+        rule: AND
+        args:
+            - rule: eng_phys_tech
+            - rule: eng_phys_upperdiv_phys
+            - course: PHYSICS.137A
+            - course: PHYSICS.137B
+            - course: PHYSICS.110A
+            - course: PHYSICS.110B
+            - course: EL ENG.117
+            - rule: e115_phys112
+            - rule: eng_phys_math_or
+            - rule: mece105_phys105
+            - rule: ee143_nuc104_phys106
+            - rule: mats111_phys141a
+            - rule: ee119_bioe164
+
+    eng_phys_tech:
+        hidden: true
+        rule: units
+            min: 15
+            rule: coe_engineering_electives
+            args:
+                - NOT:
+                    - course: IND ENG.172
+                    - course: ENGIN.125
+                    - course: MEC ENG.191AC
+                    - course: MEC ENG.191K
+
+    eng_phys_upperdiv_phys: # ignore the other courses
+        hidden: true
+        rule: units
+            min: 14
+            rule: upperdiv_physics
+
+    e115_phys112: 
+        hidden: true
+        rule: OR
+        args:
+            - course: ENGIN.115
+            - course: PHYSICS.112
+
+    eng_phys_math_or:
+        hidden: true
+        rule: OR
+        args:
+            - rule: math104_185
+            - rule: math121
+
+    math104_185:
+        hidden: true
+        rule: AND
+        args:
+            - course: MATH.104
+            - course: MATH.185
+
+    math121:
+        hidden: true
+        rule: AND
+        args:
+            - course: MATH.121A
+            - course: MATH.121B
+
+    mece105_phys105: 
+        hidden: true
+        rule: OR
+        args:
+            - course: MEC ENG.104
+            - course: PHYSICS.105
+
+    ee143_nuc104_phys106: 
+        hidden: true
+        rule: OR
+        args:
+            - course: EL ENG.143
+            - course: NUC ENG.104
+            - course: PHYSICS.106
+
+    mats111_phys141a: 
+        hidden: true
+        rule: OR
+        args:
+            - course: MAT SCI.111
+            - course: PHYSICS.141A
+
+    ee119_bioe164:
+        hidden: true
+        rule: OR
+        args:
+            - course: EL ENG.119
+            - course: BIO ENG.164
+
+

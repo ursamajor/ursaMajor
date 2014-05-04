@@ -1,6 +1,5 @@
 rules: # not sure if I should combine lower/upper div into one concentration, since math split from rest
 
-
     cnr_molecular_environmental_biology_major:
         description: "Molecular Environmental Biology Major"
         rule: AND

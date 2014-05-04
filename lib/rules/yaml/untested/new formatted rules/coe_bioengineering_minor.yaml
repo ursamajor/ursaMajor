@@ -5,12 +5,17 @@ rules:
         rule: count_courses
             min: 5
             args:
-                - coe_bioengineering_fundamentals_courses
-                - coe_bioengineering_topics_engineering_courses
-                - OR: # technical electives
-                    - coe_bioengineering_technical_electives_courses
-                    - coe_bioengineering_topics_bioengineering_courses
-                    - coe_bioengineering_topics_engineering_courses
-                    - coe_bioengineering_upper_division_biology_courses
-                - coe_bioengineering_topics_bioengineering
+                - rule: coe_bioengineering_fundamentals_courses
+                - rule: coe_bioengineering_topics_engineering_courses
+                - rule: coe_bioengineering_topics_bioengineering
+                - rule: bioeng_minor_electives
+
+    bioeng_minor_electives:
+        hidden: true
+        rule: OR
+        args:
+            - rule: coe_bioengineering_technical_electives_courses
+            - rule: coe_bioengineering_topics_bioengineering_courses
+            - rule: coe_bioengineering_topics_engineering_courses
+            - rule: coe_bioengineering_upper_division_biology_courses
 

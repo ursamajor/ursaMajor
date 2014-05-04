@@ -557,6 +557,12 @@ ib117:
     args:
         - course: INTEGBI.117
         - course: INTEGBI.117L
+ib127:
+    hidden: true
+    rule: OR
+    args:
+        - course: INTEGBI.127
+        - course: INTEGBI.127L
 
 ib151:
     hidden: true

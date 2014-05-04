@@ -12,7 +12,10 @@ class YamlRule < Rule
     @name = name.to_sym
     @entry = entry
     @description = entry['description']
-    @hidden = entry['hidden']
+    @hidden = entry['hidden'] || false
+    @majors = entry['majors'] || []
+    @colleges = entry['colleges'] || []
+    @university = entry['university'] || false
     @core = false
     @rule, @args = Rule.parse_entry @entry
   end

@@ -1,5 +1,6 @@
 Landing Page
   - tag line
+  - highlights
 
 Course Catalog
   - show remaining requirements unsatisfied in course catalog, click to display 
@@ -26,7 +27,7 @@ Profile Page
   - allow input of grades, display gpa overall/per semester
   - user information (GPA, transcripts)
 
-About Us
+Contact
 
 Courses
   - save dept name as field
@@ -34,6 +35,7 @@ Courses
   - only show show more/less if it's been abbreviated
   - editing of course info in ui
 Rules
+  - get college/major info for rule from folder structure/name
   - shorten names of rules
   - online/summer versions of classes should also work with rules
   - updating rule (can only use up to 2 from same dept for breadths)
@@ -59,6 +61,7 @@ Chores
   - going through completed rules, make sure they work
   - documentation
   - tag rules by major
+  - clean up planscontroller
 
 After First Release
   - sample major plan

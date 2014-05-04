@@ -1,0 +1,46 @@
+rules:
+
+    coe_geoengineering_minor:
+        description: "Geoengineering Minor"
+        rule: AND
+        args:
+            - rule: geoeng_prereqs
+            - rule: geoeng_upperdiv
+
+    geoeng_prereqs:
+        description: "Geoengineering Pre-requisites"
+        rule: AND
+        args:
+            - rule: chem_a
+            - course: MATH.1A
+            - course: MATH.1B
+            - course: MATH.53
+            - course: MATH.54
+            - course: PHYSICS.7A
+            - course: CIV ENG.C30
+            - course: CIV ENG.70
+
+    geoeng_upperdiv:
+        description: "Geoengineering Upper Division"
+        rule: AND
+        args:
+            - course: CIV ENG.100
+            - course: CIV ENG.130N
+            - course: CIV ENG.175
+            - rule: geoeng_upper_tech
+
+    geoeng_upper_tech:
+        hidden: true
+        rule: count_courses
+            min: 2
+            rule: OR
+            args:
+                - course: CIV ENG.171
+                - course: CIV ENG.172
+                - course: CIV ENG.173
+                - course: CIV ENG.176
+                - course: CIV ENG.177
+                - course: CIV ENG.C178 
+
+
+

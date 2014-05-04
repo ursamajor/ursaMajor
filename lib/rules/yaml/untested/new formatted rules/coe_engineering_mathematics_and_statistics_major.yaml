@@ -1,0 +1,107 @@
+rules:
+
+    coe_engineering_mathematics_and_statistics_major:
+        description: "Engineering Mathematics and Statistics Major"
+        rule: AND
+        args:
+            - rule: coe_humanities_and_social_sciences
+            - rule: coe_lowerdiv_engineering_math
+            - rule: coe_upperdiv_engineering_math
+            - rule: units_upperdiv
+            - rule: units_total
+
+    coe_lowerdiv_engineering_math:
+        description: "Engineering Mathematics and Statistics Lower Division Requirements"
+        rule: AND
+        args:
+            - rule: chem1_4a
+            - rule: e7_cs61a
+            - course: MATH.1A
+            - course: MATH.1B
+            - course: MATH.53
+            - course: MATH.54
+            - course: PHYSICS.7A
+            - course: PHYSICS.7B
+            - course: PHYSICS.7C
+            - rule: e177_cs61b
+            - rule: eng_math_lowerdiv_tech
+
+    eng_math_lowerdiv_tech:
+        hidden: true
+        rule: count_courses
+            min: 2
+            rule: # lower div coe courses
+
+    e177_cs61b:
+        hidden: true
+        rule: OR
+        args:
+            - course: ENGIN.177
+            - course: COMPSCI.61B
+
+    coe_upperdiv_engineering_math:
+        description: "Engineering Mathematics and Statistics Upper Division Requirements"
+        rule: AND
+        args:
+            - course: MATH.110
+            - course: MATH.104
+            - course: MATH.105
+            - course: MATH.185
+            - course: MATH.128A
+            - rule: ieor172_stat134
+            - rule: eng_math_upperdiv_tech
+            - rule: eng_math_upperdiv_additional
+
+    eng_math_upperdiv_tech:
+        hidden: true
+        rule: units
+            min: 16
+            rule: OR
+            args:
+                - rule: eng_math_upperdiv_additional
+                - rule: coe_engineering_electives
+                    - NOT:
+                        - course: IND ENG.172
+                        - course: ENGIN.125
+                        - course: MEC ENG.191AC
+                        - course: MEC ENG.191K
+
+    eng_math_upperdiv_additional:
+        hidden: true
+        rule: count_courses
+            min: 3
+            rule: AND
+                - dept: MATH
+                - dept: STAT
+                - rule: eng_math_other
+
+    eng_math_other:
+        hidden: true
+        rule: OR
+        args:
+            - course: MATH.105
+            - course: MATH.113
+            - course: MATH.118
+            - course: MATH.123
+            - course: MATH.125A
+            - course: MATH.126
+            - course: MATH.130
+            - course: MATH.135
+            - course: MATH.140
+            - course: MATH.142
+            - course: MATH.170
+            - course: MATH.185
+            - course: MATH.187
+            - course: MATH.189
+            - course: ENG.117
+            - course: STAT.135
+            - course: STAT.C141
+            - course: STAT.150
+            - course: STAT.151A
+            - course: STAT.151B
+            - course: STAT.152
+            - course: STAT.157
+
+
+
+

@@ -1,18 +1,17 @@
 rules:
 
-
     coe_bioengineering_major:
         description: "Bioengineering Major"
         rule: AND
         args:
-            - coe_humanities_and_social_sciences
-            - coe_lowerdiv_bioengineering_requirements
-            - coe_upperdiv_bioengineering_requirements
-            - coe_bioengineering_upperdiv_technical_units
-            - coe_bioengineering_upperdiv_bioengineering_units
-            - coe_bioengineering_upperdiv_engineering_units
-            - units_upperdiv
-            - units_total
+            - rule: coe_humanities_and_social_sciences
+            - rule: coe_lowerdiv_bioengineering_requirements
+            - rule: coe_upperdiv_bioengineering_requirements
+            - rule: coe_bioengineering_upperdiv_technical_units
+            - rule: coe_bioengineering_upperdiv_bioengineering_units
+            - rule: coe_bioengineering_upperdiv_engineering_units
+            - rule: units_upperdiv
+            - rule: units_total
 
 
 
@@ -25,19 +24,13 @@ rules:
             - course: MATH.1B
             - course: MATH.53
             - course: MATH.54
-            - OR:
-                - AND:
-                    - course: CHEM.1A
-                    - course: CHEM.1AL
-                - course: CHEM.4A
+            - rule: chem1_4a
             - course: BIOLOGY.1A
             - course: BIOLOGY.1AL
             - course: PHYSICS.7A
             - course: PHYSICS.7B
             - course: BIO ENG.10
-            - OR:
-                - course: ENGIN.7
-                - course: COMPSCI.61A
+            - rule: e7_cs61a
             - course: BIO ENG.24
             - course: BIO ENG.25
 
@@ -47,13 +40,13 @@ rules:
             min: 42
             rule: OR
             args:
-                - upperdiv_engineering_courses
-                - upperdiv_chemistry
-                - upperdiv_physics
-                - upperdiv_integrative_biology
-                - upperdiv_molecular_cell_biology
-                - upperdiv_mathematics
-                - upperdiv_statistics
+                - rule: upperdiv_engineering_courses
+                - rule: upperdiv_chemistry
+                - rule: upperdiv_physics
+                - rule: upperdiv_integrative_biology
+                - rule: upperdiv_molecular_cell_biology
+                - rule: upperdiv_mathematics
+                - rule: upperdiv_statistics
 
     coe_bioengineering_upperdiv_bioengineering_units:
         description: "Upper Division Bioengineering Units for Bioengineering"
@@ -62,60 +55,77 @@ rules:
             min: 22
             rule: upperdiv_bioengineering
 
-  coe_bioengineering_upperdiv_engineering_units:
+    coe_bioengineering_upperdiv_engineering_units:
         description: "Upper Division Bioengineering Units for Bioengineering"
         rule: units
             min: 45
             rule: OR
             args:
-                - coe_bioengineering_topics_bioengineering
-                - coe_bioengineering_topics_engineering
+                - rule: coe_bioengineering_topics_bioengineering
+                - rule: coe_bioengineering_topics_engineering
 
     coe_upperdiv_bioengineering_requirements:
         description: "Upper Division Bioengineering Requirements"
         rule: AND
         args:
-            - OR: # ethics
-                - course: BIO ENG.100
-                - course: ANTHRO.156B
-                - course: ENGIN.125
-                - course: ESPM.161
-                - course: ESPM.162
-                - course: LNS.160B
-                - course: PHILOS.2
-                - course: PHILOS.104
-                - course: PHILOS.107
-                - course: PB HLTH.116
-            -OR: # bioE lab course
-                - AND:
-                    - course: BIO ENG.22
-                    - course: BIO ENG.22L
-                - course: BIO ENG.101
-                - course: BIO ENG.115
-                - course: BIO ENG.121L
-                - course: BIO ENG.C136L
-                - course: BIO ENG.140L
-                - course: BIO ENG.C144L
-                - course: BIO ENG.C145L
-                - course: BIO ENG.C145M
-                - course: BIO ENG.163L
-                - course: BIO ENG.168L
-            - OR: # bioeng design project/research
-                - course: BIO ENG.121L
-                - course: BIO ENG.140L
-                - course: BIO ENG.168L
-                - course: BIO ENG.192
-                - course: BIO ENG.H194
-                - course: BIO ENG.196
-            - numcourses:
-                min: 15
-                rule: AND
-                args:
-                    - coe_preparation_bioengineering_requirement
-                    - coe_bioengineering_fundamentals_requirement
-                    - coe_bioengineering_topics_bioengineering
-                    - coe_bioengineering_topics_engineering
-                    - coe_bioengineering_upper_division_biology
+            - rule: bioe_ethics
+            - rule: bioe_lab
+            - rule: bioe_design
+            - rule: bioe_units
+
+    bioe_ethics:
+        hidden: true
+        rule: OR
+        args:
+            - course: BIO ENG.100
+            - course: ANTHRO.156B
+            - course: ENGIN.125
+            - course: ESPM.161
+            - course: ESPM.162
+            - course: LNS.160B
+            - course: PHILOS.2
+            - course: PHILOS.104
+            - course: PHILOS.107
+            - course: PB HLTH.116
+
+    bioe_lab:
+        hidden: true
+        rule: OR
+        args:
+            - rule: bioeng22
+            - course: BIO ENG.101
+            - course: BIO ENG.115
+            - course: BIO ENG.121L
+            - course: BIO ENG.C136L
+            - course: BIO ENG.140L
+            - course: BIO ENG.C144L
+            - course: BIO ENG.C145L
+            - course: BIO ENG.C145M
+            - course: BIO ENG.163L
+            - course: BIO ENG.168L
+
+    bioe_design:
+        hidden: true
+        rule: OR
+        args:
+            - course: BIO ENG.121L
+            - course: BIO ENG.140L
+            - course: BIO ENG.168L
+            - course: BIO ENG.192
+            - course: BIO ENG.H194
+            - course: BIO ENG.196
+
+    bioe_units: 
+        hidden: true
+        rule: count_courses
+            min: 15
+            rule: AND
+            args:
+                - rule: coe_preparation_bioengineering_requirement
+                - rule: coe_bioengineering_fundamentals_requirement
+                - rule: coe_bioengineering_topics_bioengineering
+                - rule: coe_bioengineering_topics_engineering
+                - rule: coe_bioengineering_upper_division_biology
 
     coe_preparation_bioengineering_requirement:
         description: "Engineering and Biology Preparation for Bioengineering"
@@ -125,23 +135,30 @@ rules:
             args:
                 - course: ENGIN.45
                 - course: EL ENG.20N
-                - OR:
-                    - course: EL ENG.40
-                    - course: EL ENG.100
-                - OR:
-                    - course: CHEM.120B
-                    - course: BIO ENG.C105B
+                - rule: ee40_100
+                - rule: chem120b_bioec105b
                 - course: CHEM.C130
                 - course: MCELLBI.100A
                 - course: CIV ENG.C30
                 - course: MEC ENG.C85
-                - OR:
-                    - course: COMPSCI.61B
-                    - course: COMPSCI.61BL
+                - rule: cs61b
                 - course: MCELLBI.100A
                 - course: CHEM.C130
                 - course: MEC ENG.C85
                 - course: CIV ENG.C30
+    ee40_100:
+        hidden: true
+        rule: OR
+        args:
+            - course: EL ENG.40
+            - course: EL ENG.100
+
+    chem120b_bioec105b:
+        hidden: true
+        rule: OR
+        args:
+            - course: CHEM.120B
+            - course: BIO ENG.C105B
 
     coe_bioengineering_fundamentals_requirement:
         description: "Bioengineering Fundamentals for Bioengineering"
@@ -179,15 +196,9 @@ rules:
                 - course: CHEM.120B
                 - course: CHEM.C130
                 - course: CHEM.130B
-                - OR:
-                    - course: COMPSCI.61B
-                    - course: COMPSCI.61BL
-                - OR:
-                    - course: COMPSCI.70
-                    - course: MATH.55
-                - OR:
-                    - course: IND ENG.172
-                    - course: STAT.134
+                - rule: cs61b
+                - rule: cs70_math55
+                - rule: ieor172_stat134
                 - course: MATH.110
                 - course: MATH.118
                 - course: MATH.127
@@ -205,9 +216,9 @@ rules:
                 - course: STAT.133
                 - course: STAT.135
                 - course: STAT.150
-                - coe_bioengineering_topics_bioengineering_courses
-                - coe_bioengineering_topics_engineering_courses
-                - coe_bioengineering_upper_division_biology
+                - rule: coe_bioengineering_topics_bioengineering_courses
+                - rule: coe_bioengineering_topics_engineering_courses
+                - rule: coe_bioengineering_upper_division_biology
 
 
     coe_bioengineering_topics_bioengineering:
@@ -221,9 +232,7 @@ rules:
         rule: same_course
         args:
             - OR:
-                - AND:
-                    - course: BIO ENG.22
-                    - course: BIO ENG.22L
+                - rule: bioeng22
                 - course: BIO ENG.101
                 - course: BIO ENG.102
                 - course: BIO ENG.104
@@ -279,7 +288,7 @@ rules:
         rule: same_course
         args:
             - OR:
-                - coe_bioengineering_topics_bioengineering_courses
+                - rule: coe_bioengineering_topics_bioengineering_courses
                 - course: BIO ENG.192
                 - course: BIO ENG.H194
                 - course: CHM ENG.140
@@ -348,9 +357,7 @@ rules:
         rule: same_course
             - OR:
                 - course: INTEGBI.115
-                - OR:
-                    - course: INTEGBI.127
-                    - course: INTEGBI.127L
+                - rule: ib127
                 - course: INTEGBI.131
                 - course: INTEGBI.132
                 - course: INTEGBI.135

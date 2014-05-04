@@ -1,0 +1,104 @@
+rules:
+
+    coe_joint_electrical_engineering_computer_sciences_and_materials_science_major:
+        description: "Joint Electrical Engineering & Computer Sciences and Materials Science Major"
+        rule: AND
+        args:
+            - rule: coe_humanities_and_social_sciences
+            - rule: coe_lowerdiv_joint_electrical_engineering_materials_science
+            - rule: coe_upperdiv_joint_eletrical_engineering_materials_science
+            - rule: units_upperdiv
+            - rule: units_total
+
+    coe_lowerdiv_joint_electrical_engineering_materials_science:
+        description: "Joint Electrical Engineering & Computer Science and Materials Science Lower Division Requirements"
+        rule: AND
+        args:
+            - rule: chem1_4a
+            - course: MATH.1A
+            - course: MATH.1B
+            - course: MATH.53
+            - course: MATH.54
+            - course: PHYSICS.7A
+            - course: PHYSICS.7B
+            - course: PHYSICS.7C
+            - rule: e7_cs61a
+            - course: COMPSCI.61B
+            - rule: cs61c_ee20n
+            - course: ENGIN.45
+            - course: EL ENG.40
+
+    cs61c_ee20n:
+        hidden: true
+        rule: OR
+        args:
+            - course: COMPSCI.61C
+            - course: EL ENG.20N
+
+    coe_upperdiv_joint_eletrical_engineering_materials_science:
+        description: "Joint Eletrical Engineering & Computer Science and Materials Science Upper Division Requirements"
+        rule: AND
+        args:
+            - rule: e115_phys112
+            - course: EL ENG.105
+            - rule: ee126_stat25_134
+            - course: MAT SCI.102
+            - course: MAT SCI.103
+            - course: MAT SCI.104
+            - course: PHYSICS.137A
+            - course: EL ENG.117
+            - rule: ee140_141
+            - rule: mse111_ee130
+            - course: MAT SCI.130
+            - course: PHYSICS.141A
+            - rule: ee_mse1
+            - rule: ee_mse2
+
+    e115_phys112:
+        hidden: true
+        rule: OR
+        args:
+            - course: ENGIN.115
+            - course: PHYSICS.112
+
+    ee126_stat25_134:
+        hidden: true
+        rule: OR
+        args:
+            - course: EL ENG.126
+            - course: STAT.25
+            - course: STAT.134
+
+    ee140_141:
+        hidden: true
+        rule: OR
+        args:
+            - course: EL ENG.140
+            - course: EL ENG.141
+
+    mse111_ee130:
+        hidden: true
+        rule: OR
+        args:
+            - course: MAT SCI.111
+            - course: EL ENG.130
+
+    ee_mse1:
+        hidden: true
+        rule: OR
+        args:
+            - course: COMPSCI.150
+            - course: EL ENG.119
+            - course: EL ENG.143
+
+    ee_mse2:
+        hidden: true
+        rule: OR
+        args:
+            - course: MAT SCI.120
+            - course: MAT SCI.121
+            - course: MAT SCI.122
+            - course: MAT SCI.123
+            - course: MAT SCI.125
+
+

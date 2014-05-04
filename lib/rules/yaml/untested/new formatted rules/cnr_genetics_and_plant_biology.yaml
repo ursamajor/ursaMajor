@@ -1,6 +1,5 @@
 rules:
 
-
     cnr_genetics_and_plant_biology_major:
         description: "Genetics and Plant Biology Major"
         rule: AND

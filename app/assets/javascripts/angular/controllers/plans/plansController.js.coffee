@@ -40,6 +40,31 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
     skipLabel: "Exit"
     doneLabel: "Thanks"
 
+  # CODE for Majors
+  $scope.currentMajor = "EECS"
+  $scope.majors = [
+    "EECS"
+    "Molecular Toxicology"
+  ]
+
+  $scope.majorsMapping = 
+    "EECS": "COE"
+    "Molecular Toxicology": "CNR"
+
+  $scope.getCollege = (major) ->
+    $scope.majorsMapping[major]
+
+  $scope.filterByMajor = (major) ->
+    $filter('filter') $scope.rules, (rule) ->
+      rule if major in rule["majors"] or $scope.getCollege(major) in rule["colleges"] or rule["university"]
+
+  $scope.updateRules = ->
+    $scope.currentRules = $scope.filterByMajor $scope.currentMajor
+    $scope.checkRules()
+
+  $scope.$watch 'currentMajor', ->
+    $scope.updateRules()
+
   # BEGIN CoursesController, combinded for duplicate removal for now
 
   #todo: put garbage course in right place instead of sorting everything (since already sorted at beginning)
@@ -110,7 +135,7 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
   $scope.getRules = ->
     $http.get("/rules/search.json").success (data) ->
       $scope.rules = data
-      $scope.checkRules()
+      $scope.updateRules()
 
   $scope.checkRule = (rule) ->
     numCourses = numUnits = 0
@@ -135,7 +160,7 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
 
   $scope.checkRules = ->
     $scope.updatePlan()
-    for rule in $scope.rules
+    for rule in $scope.currentRules
       rule["result"] = $scope.checkRule rule
     
   $scope.updatePlan = ->

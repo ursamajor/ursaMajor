@@ -1,6 +1,5 @@
 rules:
 
-
     cnr_environmental_economics_and_policy_major:
         description: "Environmental Economics and Policy Major"
         rule: AND

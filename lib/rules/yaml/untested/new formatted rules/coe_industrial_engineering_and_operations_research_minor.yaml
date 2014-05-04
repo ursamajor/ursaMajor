@@ -1,0 +1,51 @@
+rules:
+
+    coe_industrial_engineering_and_operations_research_minor:
+        description: "Industrial Engineering and Operations Research Minor"
+        rule: count_courses
+            min: 4
+            rule: AND
+            args:
+                - rule: coe_industrial_engineering_minor_list_a
+                - rule: coe_industrial_engineering_minor_list_b
+                - rule: coe_industrial_engineering_minor_list_a_b
+                - rule: coe_industrial_engineering_minor_electives
+
+    coe_industrial_engineering_minor_list_a:
+        description: "Industiral Engineering and Operations Research Minor List A"
+        rule: OR
+        args:
+            - course: IND ENG.160
+            - course: IND ENG.162
+
+    coe_industrial_engineering_minor_list_b:
+        description: "Industiral Engineering and Operations Research Minor List B"
+        rule: OR
+        args:
+            - rule: ieor172_stat134
+            - course: IND ENG.131
+            - course: IND ENG.166
+
+
+    coe_industrial_engineering_minor_list_a_b:
+        description: "Industrial Engineering and Operations Research Minor Lists A and B"
+        rule: count_courses
+            min: 3
+            rule: AND
+            args:
+                - rule: coe_industrial_engineering_minor_list_a
+                - rule: coe_industrial_engineering_minor_list_b
+
+    coe_industrial_engineering_minor_electives:
+        description: "Industrial Engineering and Operations Research Minor Electives"
+        rule: OR
+        args:
+            - course: ENGIN.120
+            - course: IND ENG.115
+            - course: IND ENG.130
+            - course: IND ENG.165
+            - course: IND ENG.150
+            - course: IND ENG.151
+            - course: IND ENG.153
+            - course: IND ENG.170
+            - course: IND ENG.171

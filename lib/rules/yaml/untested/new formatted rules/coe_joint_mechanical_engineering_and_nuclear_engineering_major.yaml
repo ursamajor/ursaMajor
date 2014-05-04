@@ -1,0 +1,78 @@
+rules:
+
+    coe_joint_mechanical_engineering_and_nuclear_engineering_major:
+        description: "Joint Mechanical Engineering and Nuclear Engineering Major"
+        rule: AND
+        args:
+            - rule: coe_humanities_and_social_sciences
+            - rule: coe_lowerdiv_mechanical_nuclear_engineering
+            - rule: coe_upperdiv_mechanical_nuclear_engineering
+            - rule: units_upperdiv
+            - rule: units_total
+
+    coe_lowerdiv_mechanical_nuclear_engineering:
+        description: "Joint Mechanical Engineering and Nuclear Engineering Lower Division Requirements"
+        rule: AND
+        args:
+            - rule: chem1_4a
+            - course: MATH.1A
+            - course: MATH.1B
+            - course: MATH.53
+            - course: MATH.54
+            - course: PHYSICS.7A
+            - course: PHYSICS.7B
+            - course: PHYSICS.7C
+            - course: ENGIN.7
+            - course: ENGIN.28
+            - rule: e10_nuce92
+            - course: MEC ENG.40
+            - course: MEC ENG.C85
+            - rule: ee40_100
+
+    e10_nuce92:
+        hidden: true
+        rule: OR
+        args:
+            - course: ENGIN.10
+            - course: NUC ENG.92
+
+    coe_upperdiv_mechanical_nuclear_engineering:
+        description: "Joint Mechanical Engineering and Nuclear Engineering Upper Division Requirements"
+        rule: AND
+        args:
+            - course: MEC ENG.102A
+            - course: MEC ENG.102B
+            - course: MEC ENG.104
+            - course: MEC ENG.106
+            - course: MEC ENG.107
+            - course: MEC ENG.108
+            - course: MEC ENG.109
+            - course: MEC ENG.132
+            - course: NUC ENG.101
+            - course: NUC ENG.104
+            - course: NUC ENG.150
+            - course: NUC ENG.170A
+            - rule: coe_mechanical_nuclear_engineering_technical
+            - rule: coe_nuclear_engineering_ethics
+
+    coe_mechanical_nuclear_engineering_technical:
+        description: "Joint Mechanical Engineering and Nuclear Engineering Technical Electives"
+        rule: AND
+        args:
+            - rule: mece_nuce_mech
+            - rule: mece_nuce_nuc
+
+    mece_nuce_mech:
+        hidden: true
+        rule: units
+            min: 6
+            rule: upperdiv_mechanical_engineering # don't include others
+
+    mece_nuce_nuc:
+        hidden: true
+        rule: units
+            min: 6
+            rule: upperdiv_nuclear_engineering # don't include others
+
+
+

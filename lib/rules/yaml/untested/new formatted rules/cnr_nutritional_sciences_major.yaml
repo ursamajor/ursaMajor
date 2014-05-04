@@ -1,6 +1,5 @@
 rules: # same major, tracks COMPLETELY different
 
-
     cnr_nutritional_science_major:
         description: "Nutritional Science Major"
         rule: AND

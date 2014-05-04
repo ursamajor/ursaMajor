@@ -1,6 +1,5 @@
 rules:
 
-
     coc_chemical_biology_major:
         description: "Chemical Biology Major"
         rule: AND
@@ -18,12 +17,8 @@ rules:
         args:
             - rule: university_rc_A
             - rule: university_rc_B
-            - numcourses:
-                min: 2
-                rule: coc_foreign_language
-            - numcourses:
-                min: 2
-                rule: coc_breadth_humanities_and_social_sciences # 2 diff depts
+            - rule: coc_forlang
+            - rule: coc_breadth
             - course: CHEM.96
             - course: CHEM.4A
             - course: CHEM.4B
@@ -33,14 +28,23 @@ rules:
             - course: MATH.1B
             - course: MATH.53
             - course: MATH.54
-            - OR: # PHYSICS
-                - AND:
-                    - course: PHYSICS.7A
-                    - course: PHYSICS.7B
-                - AND:
-                    - course: PHYSICS.8A
-                    - course: PHYSICS.8B
+            - rule: physics_7_8
             - rule: bio1a
+
+    coc_forlang:
+        hidden: true
+        rule: count_courses
+        args:
+            min: 2
+            rule: coc_foreign_language
+
+    coc_breadth:
+        hidden: true
+        rule: count_courses
+        args:
+            min: 2
+            rule: coc_breadth_humanities_and_social_sciences # 2 diff depts
+
 
     coc_upperdiv_chemical_biology_requirements:
         description: "Upper Division Chemical Biology Requirements"
@@ -50,20 +54,28 @@ rules:
             - course: CHEM.120B
             - course: CHEM.103
             - course: CHEM.135
-            - OR:
-                - course: CHEM.105
-                - course: CHEM.125
-                - course: CHEM.C170L
-                - course: CHEM.C182
+            - rule: coc_chembio_more
+            - rule: chembio_other_units
+
+    coc_chembio_more:
+        hidden: true
+        rule: OR
+        args:
+            - course: CHEM.105
+            - course: CHEM.125
+            - course: CHEM.C170L
+            - course: CHEM.C182
             - course: MCELLBI.110
             - course: MCELLBI.110L
-            - units:
-                min: 7
-                rule: OR
-                args:
-                    - coc_allied_subjects
-                    - upperdiv_chemistry # don't include above
 
+    chembio_other_units:
+        hidden: true
+        rule: units
+            min: 7
+            rule: OR
+            args:
+                - rule: coc_allied_subjects
+                - rule: upperdiv_chemistry # don't include above
 
 
 

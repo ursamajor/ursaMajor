@@ -1,6 +1,5 @@
 rules:
 
-
     cnr_molecular_toxicology_major:
         description: "Molecular Toxicology Major"
         rule: AND

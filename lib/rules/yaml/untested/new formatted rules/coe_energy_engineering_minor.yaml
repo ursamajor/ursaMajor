@@ -1,0 +1,73 @@
+rules:
+
+    coe_energy_engineering_minor:
+        description: "Energy Engineering Minor"
+        rule: AND
+        args:
+            - rule: coe_energy_engineering_eligibility
+            - rule: coe_energy_engineering_course_req
+            - rule: coe_energy_engineering_minor_electives
+
+    coe_energy_engineering_eligibility:
+        description: "Eligibility Requirements for Energy Engineering"
+        rule: AND
+        args:
+            - rule: chem1_4a
+            - course: ENGIN.7
+            - course: MATH.1A
+            - course: MATH.1B
+            - course: MATH.53
+            - course: MATH.54
+            - course: PHYSICS.7A
+            - course: PHYSICS.7B
+
+    coe_energy_engineering_course_req:
+        description: "Energy Engineering Course Requirements"
+        rule: AND
+        args:
+            - rule: mece40_e115
+            - course: EL ENG.137A
+            - rule: eneres100_cive
+
+    eneres100_cive:
+        hidden: true
+        rule: OR
+        args:
+            - course: ENE,RES.100
+            - course: CIV ENG.106
+            - course: CIV ENG.107
+            - course: CIV ENG.111
+
+    coe_energy_engineering_minor_electives:
+        description: "Energy Engineering Electives for the Minor"
+        rule: OR
+        args:
+            - course: ARCH.140
+            - course: CY PLAN.119
+            - course: CIV ENG.106
+            - course: CIV ENG.107
+            - course: CIV ENG.108
+            - course: CIV ENG.111
+            - course: CIV ENG.113N
+            - course: CIV ENG.115
+            - course: CIV ENG.156
+            - course: ENGIN.120
+            - course: MEC ENG.106
+            - course: ENVECON.147
+            - course: ENVECON.C151
+            - course: ENVECON.153
+            - course: ENVECON.154
+            - course: ENE,RES.C180
+            - course: POLECON.101
+            - course: EL ENG.137B
+            - course: MEC ENG.109
+            - course: MAT SCI.136
+            - course: NUC ENG.161
+            - course: GEOG.142
+            - course: ENGIN.194
+            - course: EL ENG.134
+            - course: ESPM.102D
+
+
+
+

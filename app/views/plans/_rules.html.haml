@@ -1,7 +1,7 @@
 #rules
   %table.table
     %tbody
-      %tr(data-ng-repeat="rule in rules")
+      %tr(data-ng-repeat="rule in currentRules")
         %td 
           %a.rule(href="{{rule.url}}") {{rule.description}}
         %td#result(class="{{rule.result.pass | color}}") 

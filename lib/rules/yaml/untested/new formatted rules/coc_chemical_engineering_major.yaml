@@ -1,15 +1,14 @@
 rules:
 
-
     coc_chemical_engineering_major:
         description: "Chemical Engineering Major"
         rule: AND
         args:
-            - coc_lowerdiv_chemical_engineering_requirements
-            - coc_upperdiv_chemical_engineering_requirements
-            - coc_concentration_chemical_engineering_requirement
-            - units_upperdiv
-            - units_total
+            - rule: coc_lowerdiv_chemical_engineering_requirements
+            - rule: coc_upperdiv_chemical_engineering_requirements
+            - rule: coc_concentration_chemical_engineering_requirement
+            - rule: units_upperdiv
+            - rule: units_total
 
 
 
@@ -17,32 +16,22 @@ rules:
         description: "Lower Division Chemical Engineering Requirements"
         rule: AND
         args:
-            - OR:
-                - university_rc_A
-                - university_rc_B
-            - units:
-                min: 15
-                rule: OR
-                args:
-                    - coc_breadth_humanities_and_social_sciences # 2 different depts, one upper div
+            - rule: cheme_rc
+            - rule: cheme_breadth
             - course: CHEM.C96
-            - AND: # chemistry
-                - course: CHEM.4A
-                - course: CHEM.4B
-                - course: CHEM.112A
-            - AND: # chemical engineering
-                - course: CHM ENG.140
-                - course: CHM ENG.141
-                - course: CHM ENG.150A
+            - course: CHEM.4A
+            - course: CHEM.4B
+            - course: CHEM.112A
+            - course: CHM ENG.140
+            - course: CHM ENG.141
+            - course: CHM ENG.150A
             - course: ENGIN.7
-            - AND: # math
-                - course: MATH.1A
-                - course: MATH.1B
-                - course: MATH.53
-                - course: MATH.54
-            - AND: # physics
-                - course: PHYSICS.7A
-                - course: PHYSICS.7B
+            - course: MATH.1A
+            - course: MATH.1B
+            - course: MATH.53
+            - course: MATH.54
+            - course: PHYSICS.7A
+            - course: PHYSICS.7B
 
     coc_upperdiv_chemical_engineering_requirements:
         description: "Upper Division Chemical Engineering Requirements"
@@ -50,155 +39,210 @@ rules:
         args:
             - course: ENGIN.45
             - course: EL ENG.100
-            - OR:
-                - course: CHEM.120A
-                - course: PHYSICS.137A
-            - AND: # chemical engineering
-                - course: CHM ENG.142
-                - course: CHM ENG.150B
-                - course: CHM ENG.154
-                - course: CHM ENG.160
-                - course: CHM ENG.162
-            - coc_electives_engineering
+            - rule: cheme_other
+
+    cheme_other:
+        hidden: true
+        rule: OR
+        args:
+            - course: CHEM.120A
+            - course: PHYSICS.137A
+            - course: CHM ENG.142
+            - course: CHM ENG.150B
+            - course: CHM ENG.154
+            - course: CHM ENG.160
+            - course: CHM ENG.162
+
 
     coc_concentration_chemical_engineering_requirement:
         description: "Chemical Engineering Concentrations: Biotechnology, Chemical Processing, Environmental Technology, Materials Science and Technology, Applied Physical Science, and Open Elective Program"
         rule: OR
         args:
-            - coc_concentration_chemical_engineering_biotechnology
-            - coc_concentration_chemical_engineering_chemical_processing
-            - coc_concentration_chemical_engineering_environmental_technology
-            - coc_concentration_chemical_engineering_materials_science
-            - coc_concentration_chemical_engineering_applied_physical_science
-            - coc_concentration_chemical_engineering_open_electives
+            - rule: coc_concentration_chemical_engineering_biotechnology
+            - rule: coc_concentration_chemical_engineering_chemical_processing
+            - rule: coc_concentration_chemical_engineering_environmental_technology
+            - rule: coc_concentration_chemical_engineering_materials_science
+            - rule: coc_concentration_chemical_engineering_applied_physical_science
+            - rule: coc_concentration_chemical_engineering_open_electives
 
 
     coc_concentration_chemical_engineering_open_electives:
         description: "Chemical Engineering Concentration: Open Elective Program"
         rule: AND
         args:
-            - coc_electives_physical_biological_science
-            - upperdiv_chemical_engineering # others exclude
-            - units:
-                min: 6
-                rule: OR
-                args:
-                    - coc_electives_engineering
+            - rule: coc_electives_physical_biological_science
+            - rule: upperdiv_chemical_engineering # others exclude
+            - rule: coc_eng_el_6
+
+    coc_eng_el_6:
+        hidden: true
+        rule: units
+            min: 9
+            rule: coc_electives_engineering
 
     coc_concentration_chemical_engineering_biotechnology:
         description: "Chemical Engineering Concentration: Biotechnology"
         rule: AND
         args:
-            - OR: 
-                - course: CHEM.112B
-                - course: MCELLBI.C112
+            - rule: chem112b_mcbc112
             - course: CHM ENG.170A
             - course: CHM ENG.170B
             - course: CHM ENG.C170L
-            - OR:
-                - course: MCELLBI.102
-                - course: CHEM.135
+            - rule: mcb102_chem135
+            - rule: coc_electives_engineering
+
+    chem112b_mcbc112:
+        hidden: true
+        rule: OR
+        args:
+            - course: CHEM.112B
+            - course: MCELLBI.C112
+
+    mcb102_chem135:
+        hidden: true
+        rule: OR
+        args:
+            - course: MCELLBI.102
+            - course: CHEM.135
+
+    chem104a_112b:
+        hidden: true
+        rule: OR
+        args:
+            - course: CHEM.104A
+            - course: CHEM.112B
+
 
     coc_concentration_chemical_engineering_chemical_processing:
         description: "Chemical Engineering Concentration: Chemical Processing"
         rule: AND
         args:
             - course: BIOLOGY.1A
-            - OR:
-                - course: CHEM.104A
-                - course: CHEM.112B
-            - units: # chemical engineering
-                min: 6
-                rule: OR
-                args:
-                    - course: CHM ENG.170A
-                    - course: CHM ENG.170B
-                    - course: CHM ENG.C170L
-                    - course: CHM ENG.171
-                    - course: CHM ENG.176
-                    - course: CHM ENG.C178
-                    - course: CHM ENG.179
-                    - course: CHM ENG.H194
-            - OR: # engineering
-                - course: CIV ENG.C30
-                - course: CIV ENG.111
-                - course: CIV ENG.114
-                - course: CIV ENG.173
-                - course: MAT SCI.111
-                - course: MAT SCI.112
-                - course: MAT SCI.113
-                - course: MAT SCI.C118
-                - course: MAT SCI.120
-                - course: MAT SCI.121
-                - course: MAT SCI.122
-                - course: MAT SCI.123
-                - course: MEC ENG.140
-                - course: MEC ENG.151
+            - rule: chem104a_112b
+            - rule: cheme_chemical_processing
+            - rule: coc_electives_engineering
+            - rule: cheme_chemical_processing_eng
+
+    cheme_chemical_processing:
+        hidden: true
+        rule: units
+            min: 6
+            rule: OR
+            args:
+                - course: CHM ENG.170A
+                - course: CHM ENG.170B
+                - course: CHM ENG.C170L
+                - course: CHM ENG.171
+                - course: CHM ENG.176
+                - course: CHM ENG.C178
+                - course: CHM ENG.179
+                - course: CHM ENG.H194
+
+    cheme_chemical_processing_eng:
+        hidden: true
+        rule: OR
+        args:
+            - course: CIV ENG.C30
+            - course: CIV ENG.111
+            - course: CIV ENG.114
+            - course: CIV ENG.173
+            - course: MAT SCI.111
+            - course: MAT SCI.112
+            - course: MAT SCI.113
+            - course: MAT SCI.C118
+            - course: MAT SCI.120
+            - course: MAT SCI.121
+            - course: MAT SCI.122
+            - course: MAT SCI.123
+            - course: MEC ENG.140
+            - course: MEC ENG.151
 
     coc_concentration_chemical_engineering_environmental_technology:
         description: "Chemical Engineering Concentration: Environmental Technology"
         rule: AND
         args:
             - course: BIOLOGY.1A
-            - OR:
-                - course: CHEM.104A
-                - course: CHEM.112B
-            - units:
-                min: 6
-                rule: OR
-                args:
-                    - course: CIV ENG.108
-                    - course: CIV ENG.111
-                    - course: CIV ENG.113N
-                    - course: CIV ENG.C116
-                    - course: CIV ENG.173
-                    - course: MEC ENG.140
+            - rule: chem104a_112b
+            - rule: coc_electives_engineering
+            - rule: cheme_envtech_units
+
+    cheme_envtech_units:
+        hidden: true
+        rule: units
+            min: 6
+            rule: OR
+            args:
+                - course: CIV ENG.108
+                - course: CIV ENG.111
+                - course: CIV ENG.113N
+                - course: CIV ENG.C116
+                - course: CIV ENG.173
+                - course: MEC ENG.140
 
     coc_concentration_chemical_engineering_materials_science:
         description: "Chemical Engineering Concentration: Materials Science and Technology"
         rule: AND
         args:
             - course: BIOLOGY.1A
-            - OR: 
-                - course: CHEM.104A
-                - course: CHEM.108
-                - course: CHEM.112B
-            - OR:
-                - course: CHM ENG.176
-                - course: CHM ENG.C178
-                - course: CHM ENG.179
-            - units:
-                min: 6
-                rule: OR
-                args:
-                    - course: CIV ENG.C30
-                    - course: EL ENG.130
-                    - course: EL ENG.143
-                    - course: MAT SCI.102
-                    - course: MAT SCI.103
-                    - course: MAT SCI.111
-                    - course: MAT SCI.112
-                    - course: MAT SCI.120
-                    - course: MAT SCI.121
-                    - course: MAT SCI.122
-                    - course: MAT SCI.123
-                    - course: MAT SCI.125
-                    - course: MEC ENG.122
-                    - course: MEC ENG.127
+            - rule: chem104a_108_112b
+            - rule: cheme176_c178_179
+            - rule: cheme_matsci_units
+            - rule: coc_electives_engineering
+
+    chem104a_108_112b:
+        hidden: true
+        rule: OR
+        args:
+            - course: CHEM.104A
+            - course: CHEM.108
+            - course: CHEM.112B
+
+    cheme176_c178_179:
+        hidden: true
+        rule: OR
+        args:
+            - course: CHM ENG.176
+            - course: CHM ENG.C178
+            - course: CHM ENG.179
+
+    cheme_matsci_units:
+        hidden: true
+        rule: units
+            min: 6
+            rule: OR
+            args:
+                - course: CIV ENG.C30
+                - course: EL ENG.130
+                - course: EL ENG.143
+                - course: MAT SCI.102
+                - course: MAT SCI.103
+                - course: MAT SCI.111
+                - course: MAT SCI.112
+                - course: MAT SCI.120
+                - course: MAT SCI.121
+                - course: MAT SCI.122
+                - course: MAT SCI.123
+                - course: MAT SCI.125
+                - course: MEC ENG.122
+                - course: MEC ENG.127
 
     coc_concentration_chemical_engineering_applied_physical_science:
         description: "Chemical Engineering Concentration: Applied Physical Science"
         rule: AND
         args:
             - course: BIOLOGY.1A
-            - units: # chem or physics
-                min: 6
-                rule: OR
-                args:
-                    - rule: upperdiv_physics
-                    - rule: upperdiv_chemistry
+            - rule: cheme_app_phys_or
             - rule: upperdiv_chemical_engineering
-            - rule: coc_electives_engineering
+            - rule: coc_eng_el_6
+
+    cheme_app_phys_or:
+        hidden: true
+        rule: units
+            min: 6
+            rule: OR
+            args:
+                - rule: upperdiv_physics
+                - rule: upperdiv_chemistry
 
 
     coc_electives_physical_biological_science:
