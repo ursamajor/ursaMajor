@@ -32,6 +32,10 @@ a:hover {
   src: font-url('Pacifico.ttf') format('truetype');
 }
 
+.container, .container-fluid {
+  width: 100%;
+}
+
 .home-link {
 	font-family: 'Pacifico'
 }

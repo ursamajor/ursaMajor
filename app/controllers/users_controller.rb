@@ -13,6 +13,10 @@ class UsersController < ApplicationController
     end
   end
 
+  def landing_signin
+    
+  end
+
   private
 
   def user_params

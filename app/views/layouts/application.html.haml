@@ -7,11 +7,10 @@
     = javascript_include_tag 'application'
     = csrf_meta_tags
 
-  %body
+  %body(class="data-ng-cloak")
 
     = render "layouts/header"
     = render "layouts/flash"
 
     .container-fluid
-      .content.row-fluid(class="data-ng-cloak")
-        = yield
+      = yield

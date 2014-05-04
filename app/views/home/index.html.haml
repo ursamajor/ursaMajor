@@ -1,23 +1,23 @@
-.div(data-ng-controller="LandingCtrl")
-  %carousel
-    %slide(data-ng-repeat="slide in slides")
-      %img.carousel(src="holder.js/10x75")
-      .carousel-caption
-        %p {{slide.text}}
-  .header.signup
-    %h3 ursaMajor
-    %h2 The schedule explorer and planner that stays with you for longer than a semester. 
-    = form_tag '/landing', method: :post do
-      %div= email_field :user, :email, autofocus: true, placeholder: "Email", :class => "input-field-top"
+%h3 ursaMajor
+%carousel
+  %slide
+    .header
+      %h2 The schedule explorer and planner that stays with you for longer than a semester.
+      = form_tag '/landing', method: :post do
+        %div= email_field :user, :email, autofocus: true, placeholder: "Email", :class => "input-field-top"
 
-      %div= password_field :user, :password, autocomplete: "off", placeholder: "Password", :class => "input-field-middle"
+        %div= password_field :user, :password, autocomplete: "off", placeholder: "Password", :class => "input-field-middle"
 
-      %div= password_field :user, :password_confirmation, autocomplete: "off", placeholder: "Password Confirmation", :class => "input-field-bottom"
+        %div= password_field :user, :password_confirmation, autocomplete: "off", placeholder: "Password Confirmation", :class => "input-field-bottom"
 
-      %div= submit_tag "Sign up", :class => "user-submit btn-primary"
-    %hr
-    = link_to new_user_session_path do
-      Sign in
-    or try a 
-    = link_to demo_path do
-      demo
+        %div= submit_tag "Sign up", :class => "user-submit btn-primary"
+      %hr
+      = link_to new_user_session_path do
+        Sign in
+      or try a 
+      = link_to demo_path do
+        demo
+  %slide
+    .header
+      %h2
+      

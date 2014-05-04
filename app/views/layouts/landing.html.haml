@@ -7,10 +7,9 @@
     = javascript_include_tag 'application'
     = csrf_meta_tags
 
-  %body.landing_page
+  %body.landing_page(class="data-ng-cloak")
 
     = render "layouts/flash"
 
     .container(data-ng-controller="LandingCtrl")
-      .content.row
-        = yield
+      = yield
