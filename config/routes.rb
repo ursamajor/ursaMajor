@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  get '/contact' => 'home#contact', as: 'contact'
   get '/demo' => 'home#demo', as: 'demo'
   put '/demo/save' => 'home#demo_save'
   get '/demo/check' => 'home#demo_check'

@@ -10,6 +10,9 @@ class HomeController < ApplicationController
     end
   end
 
+  def contact
+  end
+
   def demo
     @plan = session[:demo_id] ? Plan.find_by(id: session[:demo_id]) : Plan.create_demo 
     @plan ||= Plan.create_demo 
