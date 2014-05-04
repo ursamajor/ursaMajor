@@ -1,0 +1,52 @@
+
+ls_breadth_all:
+    description: "L&S Seven Course Breadth"
+    rule: count_courses
+    args:
+        min: 7
+        rule: AND
+        args:
+            - rule: ls_breadth_arts
+            - rule: ls_breadth_bio
+            - rule: ls_breadth_history
+            - rule: ls_breadth_international
+            - rule: ls_breadth_philosophy
+            - rule: ls_breadth_physical
+            - rule: ls_breadth_social
+
+qu:
+    description: "Quantitative Reasoning Requirement"
+    rule: units
+    args:
+        min: 2
+        rule: OR
+        - units:
+            min: 2
+                - dept: MATH
+                    - NOT:
+                        - course: MATH.10
+                        - course: MATH.15
+                        - course: MATH.24
+                        - course: MATH.30
+                        - course: MATH.49
+                        - course: MATH.84
+                        - course: MATH.96
+                        - course: MATH.98
+                        - course: MATH.103
+                        - course: MATH.160
+                        - course: MATH.199
+                - dept: STAT
+                    - NOT:
+                        - course: STAT.24
+                        - course: STAT.39
+                        - course: STAT.98
+                        - course: STAT.198
+                        - course: STAT.199
+                - dept: COMPSCI
+                    - NOT:
+                        - course: COMPSCI.24
+                        - course: COMPSCI.39
+                        - course: COMPSCI.99
+                        - course: COMPSCI.195
+                        - course: COMPSCI.198
+                        - course: COMPSCI.199

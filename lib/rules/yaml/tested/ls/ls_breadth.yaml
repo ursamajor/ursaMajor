@@ -850,6 +850,220 @@ rules:
                 - course: FILM.R1B
                 - course: FILM.C181
 
+    ls_breadth_bio:
+        description: "Biological Sciences Breadth Requirement"
+        rule: same_course
+        args:
+            - OR:
+                - course: ANTHR0.1
+                - course: ANTHRO.C100
+                - course: ANTHRO.101
+                - course: ANTHRO.C103
+                - course: ANTHRO.105
+                - course: ANTHRO.106
+                - course: ANTHRO.107
+                - course: ANTHRO.108
+                - course: ANTHRO.109
+                - course: ANTHRO.110
+                - course: ANTHRO.112
+                - course: ANTHRO.135
+                - course: BIOCHEM.170B # doesn't exist
+                - course: BIO ENG.C119
+                - course: BIO ENG.155
+                - course: BIOLOGY.1A
+                - course: BIOLOGY.1B
+                - course: BIOLOGY.11
+                - course: CHM ENG.170A
+                - course: CHM ENG.170E
+                - course: CIV ENG.113
+                - course: COG SCI.C102
+                - course: COG SCI.C110
+                - course: COG SCI.C126
+                - course: COG SCI.C127
+                - course: COG SCI.C147
+                - course: EPS.C30
+                - course: EPS.C82
+                - course: EPS.C129
+                - course: EPS.185
+                - course: ENGLISH.C177
+                - course: ESPM.2
+                - course: ESPM.6
+                - course: ESPM.8
+                - course: ESPM.C10
+                - course: ESPM.C11
+                - course: ESPM.C12
+                - course: ESPM.15
+                - course: ESPM.36
+                - course: ESPM.40
+                - course: ESPM.42
+                - course: ESPM.44
+                - course: ESPM.100
+                - course: ESPM.101A
+                - course: ESPM.101B
+                - course: ESPM.102A
+                - course: ESPM.102B
+                - course: ESPM.102C
+                - course: ESPM.103A
+                - course: ESPM.105A
+                - course: ESPM.106
+                - course: ESPM.C107
+                - course: ESPM.108A
+                - course: ESPM.109
+                - course: ESPM.110
+                - course: ESPM.111
+                - course: ESPM.112
+                - course: ESPM.113
+                - course: ESPM.114
+                - course: ESPM.115A
+                - course: ESPM.115B
+                - course: ESPM.115C
+                - course: ESPM.116A
+                - course: ESPM.116B
+                - course: ESPM.116C
+                - course: ESPM.117
+                - course: ESPM.118
+                - course: ESPM.119
+                - course: ESPM.129
+                - course: ESPM.C129
+                - course: ESPM.131
+                - course: ESPM.132
+                - course: ESPM.133
+                - course: ESPM.134
+                - course: ESPM.135
+                - course: ESPM.136
+                - course: ESPM.137
+                - course: ESPM.138
+                - course: ESPM.140
+                - course: ESPM.141
+                - course: ESPM.142
+                - course: ESPM.143
+                - course: ESPM.144
+                - course: ESPM.145
+                - course: ESPM.146
+                - course: ESPM.149
+                - course: ESPM.152
+                - course: ESPM.164
+                - course: ESPM.167
+                - course: ESPM.181
+                - course: ESPM.185
+                - course: ESPM.186
+                - course: ESPM.187
+                - course: ESPM.189
+                - course: GEOG.30
+                - course: GEOG.40
+                - course: GEOG.C82
+                - course: GEOG.131
+                - course: GEOG.143
+                - course: GEOG.148
+                - course: GEOG.149
+                - course: GEOG.179D
+                - dept: INTEGBI
+                - course: LD ARCH.114A
+                - course: LD ARCH.114B
+                - course: LNS.18
+                - course: LNS.19
+                - course: LNS.23
+                - course: LNS.C30T
+                - course: LNS.C30U
+                - course: LNS.C30V
+                - course: LNS.C30W
+                - course: LNS.C30X
+                - course: LNS.117
+                - course: LNS.126
+                - course: LINGUIS.C109
+                - course: LINGUIS.C147
+                - course: LINGUIS.160
+                - course: MEC ENG.C176
+                - dept: MCELLBI
+                - course: NUSCTX.10
+                - course: NUSCTX.11
+                - course: NUSCTX.39A
+                - course: NUSCTX.39C
+                - course: NUSCTX.100
+                - course: NUSCTX.103
+                - course: NUSCTX.106
+                - course: NUSCTX.110
+                - course: NUSCTX.113
+                - course: NUSCTX.120
+                - course: NUSCTX.150
+                - course: NUSCTX.160
+                - course: NUSCTX.161
+                - course: NUSCTX.170
+                - course: OPTOM.10
+                - course: OPTOM.C10
+                - course: OPTOM.130
+                - course: PHYSED.32
+                - course: PHYSED.C129
+                - course: PHYSED.C165L
+                - course: PHYSICS.177
+                - course: PLANTBI.10
+                - course: PLANTBI.11
+                - course: PLANTBI.13
+                - course: PLANTBI.39A
+                - course: PLANTBI.39B
+                - course: PLANTBI.39C
+                - course: PLANTBI.39D
+                - course: PLANTBI.40
+                - course: PLANTBI.C41X
+                - course: PLANTBI.100
+                - course: PLANTBI.102
+                - course: PLANTBI.C103
+                - course: PLANTBI.105
+                - course: PLANTBI.110
+                - course: PLANTBI.111
+                - course: PLANTBI.112
+                - course: PLANTBI.114
+                - course: PLANTBI.C116
+                - course: PLANTBI.120
+                - course: PLANTBI.130
+                - course: PLANTBI.135
+                - course: PLANTBI.140
+                - course: PLANTBI.142
+                - course: PLANTBI.C148
+                - course: PLANTBI.150
+                - course: PLANTBI.160
+                - course: PLANTBI.165
+                - course: PLANTBI.170
+                - course: PLANTBI.180
+                - course: PSYCH.C19
+                - course: PSYCH.39L
+                - course: PSYCH.100A
+                - course: PSYCH.110
+                - course: PSYCH.111
+                - course: PSYCH.C112
+                - course: PSYCH.113
+                - course: PSYCH.114
+                - course: PSYCH.115A
+                - course: PSYCH.C115C
+                - course: PSYCH.116
+                - course: PSYCH.117
+                - course: PSYCH.118
+                - course: PSYCH.119
+                - course: PSYCH.121
+                - course: PSYCH.122
+                - course: PSYCH.125
+                - course: PSYCH.C126
+                - course: PSYCH.C127
+                - course: PSYCH.C129
+                - course: PSYCH.133
+                - course: PB HLTH.39C
+                - course: PB HLTH.39F
+                - course: PB HLTH.C102
+                - course: PB HLTH.150C
+                - course: PB HLTH.C160
+                - course: PB HLTH.161
+                - course: PB HLTH.162A
+                - course: PB HLTH.162B
+                - course: PB HLTH.170
+                - course: PB HLTH.170B
+                - course: PB HLTH.172
+                - course: UGIS.C10
+                - course: UGIS.C12
+                - course: UGIS.C130
+            - NOT:
+                - course: MCELLBI.168
+                - course: INTEGBI.39C
+
     ls_breadth_history:
         description: "Historical Studies Breadth Requirement"
         rule: same_course
@@ -2213,6 +2427,326 @@ rules:
                 - course: UGIS.170
             - NOT:
                 - course: PHILOS.R1B
+
+    ls_breadth_physical:
+        description: "Physical Sciences Breadth Requirement"
+        rule: same_course
+        args:
+            - OR:
+                - course: ANTHRO.131
+                - course: ANTHRO.132
+                - course: ANTHRO.133
+                - course: ANTHRO.134
+                - course: ANTHRO.134A
+                - course: ARCH.39A
+                - course: ARCH.140
+                - course: ARCH.149
+                - course: ARCH.150
+                - course: ARCH.152
+                - course: ARCH.154
+                - course: ARCH.160
+                - course: ARCH.162
+                - course: ARCH.170A
+                - course: ARCH.170E
+                - course: ARCH.171
+                - course: ARCH.173
+                - course: ARCH.174
+                - course: ARCH.175
+                - course: ARCH.176
+                - course: ARCH.178
+                - course: ARCH.179
+                - course: ARCH.181
+                - dept: ASTRON
+                - course: BIOCHEM.170B # doesn't exist
+                - course: BIO ENG.C125
+                - course: CHM ENG.40
+                - course: CHM ENG.124
+                - course: CHM ENG.140
+                - course: CHM ENG.141
+                - course: CHM ENG.142
+                - course: CHM ENG.150A
+                - course: CHM ENG.150B
+                - course: CHM ENG.152
+                - course: CHM ENG.154
+                - course: CHM ENG.160
+                - course: CHM ENG.170A
+                - course: CHM ENG.170E
+                - course: CHM ENG.171
+                - course: CHM ENG.173
+                - course: CHM ENG.174
+                - course: CHM ENG.175
+                - course: CHM ENG.176
+                - course: CHM ENG.178
+                - course: CHM ENG.179
+                - course: CHM ENG.181
+                - dept: CHEM
+                - course: CIV ENG.70
+                - course: CIV ENG.100
+                - course: CIV ENG.101
+                - course: CIV ENG.102
+                - course: CIV ENG.103
+                - course: CIV ENG.104
+                - course: CIV ENG.105
+                - course: CIV ENG.106
+                - course: CIV ENG.C106
+                - course: CIV ENG.108
+                - course: CIV ENG.109
+                - course: CIV ENG.110
+                - course: CIV ENG.111
+                - course: CIV ENG.112
+                - course: CIV ENG.113
+                - course: CIV ENG.115
+                - course: CIV ENG.116N
+                - course: CIV ENG.C116
+                - course: CIV ENG.117
+                - course: CIV ENG.118
+                - course: CIV ENG.119
+                - course: CIV ENG.120
+                - course: CIV ENG.120N
+                - course: CIV ENG.121
+                - course: CIV ENG.121N
+                - course: CIV ENG.122
+                - course: CIV ENG.124
+                - course: CIV ENG.125
+                - course: CIV ENG.130
+                - course: CIV ENG.131
+                - course: CIV ENG.131N
+                - course: CIV ENG.140
+                - course: CIV ENG.144
+                - course: CIV ENG.148A
+                - course: CIV ENG.148B
+                - course: CIV ENG.150
+                - course: CIV ENG.153
+                - course: CIV ENG.160
+                - course: CIV ENG.166
+                - course: CIV ENG.168N
+                - course: CIV ENG.170
+                - course: CIV ENG.171
+                - course: CIV ENG.172
+                - course: CIV ENG.173
+                - course: CIV ENG.175
+                - course: CIV ENG.176
+                - course: CIV ENG.177
+                - course: CIV ENG.185
+                - course: COMPSCI.39F
+                - course: COMPSCI.61C
+                - course: COMPSCI.61CL
+                - course: COMPSCI.188
+                - course: EL ENG.1
+                - course: EL ENG.20
+                - course: EL ENG.40
+                - course: EL ENG.41I
+                - course: EL ENG.100
+                - course: EL ENG.104
+                - course: EL ENG.110
+                - course: EL ENG.114
+                - course: EL ENG.117
+                - course: EL ENG.118
+                - course: EL ENG.121
+                - course: EL ENG.122
+                - course: EL ENG.123
+                - course: EL ENG.C125
+                - course: EL ENG.128
+                - course: EL ENG.129
+                - course: EL ENG.130
+                - course: EL ENG.131
+                - course: EL ENG.134
+                - course: EL ENG.135
+                - course: EL ENG.136
+                - course: EL ENG.140
+                - course: EL ENG.141
+                - course: EL ENG.142
+                - course: EL ENG.143
+                - course: EL ENG.145A
+                - course: EL ENG.145B
+                - course: EL ENG.145M
+                - course: EL ENG.146
+                - course: ENE,RES.100
+                - course: ENE,RES.C100
+                - course: ENE,RES.102
+                - course: ENE,RES.120
+                - course: ENE,RES.140
+                - course: ENE,RES.141
+                - course: ENGIN.11
+                - course: ENGIN.36
+                - course: ENGIN.45
+                - course: ENGIN.49
+                - course: ENGIN.101
+                - course: ENGIN.102
+                - course: ENGIN.117
+                - course: ENGIN.135
+                - course: ENGIN.145
+                - course: ENGIN.C150
+                - course: ENGIN.153
+                - course: ENGIN.160
+                - course: ENGIN.161
+                - course: ENGIN.162
+                - course: ENGIN.165
+                - course: ENGIN.166
+                - course: ENGIN.172
+                - course: ESPM.2
+                - course: ESPM.4
+                - course: ESPM.15
+                - course: ESPM.20
+                - course: ESPM.22
+                - course: ESPM.C107
+                - course: ESPM.120
+                - course: ESPM.121
+                - course: ESPM.124
+                - course: ESPM.125
+                - course: ESPM.126
+                - course: ESPM.127
+                - course: ESPM.128
+                - course: ESPM.C128
+                - course: ESPM.129
+                - course: ESPM.130
+                - course: ESPM.C130
+                - course: ESPM.148
+                - course: ESPM.172
+                - course: ESPM.177
+                - course: ESPM.179
+                - course: ESPM.180
+                - course: ESPM.C180
+                - course: ESPM.181
+                - course: ENV SCI.125
+                - course: GEOG.1
+                - course: GEOG.30
+                - course: GEOG.39C
+                - course: GEOG.40
+                - course: GEOG.C82
+                - course: GEOG.C136
+                - course: GEOG.C139
+                - course: GEOG.140
+                - course: GEOG.140A
+                - course: GEOG.140B
+                - course: GEOG.C141
+                - course: GEOG.142
+                - course: GEOG.143
+                - course: GEOG.144
+                - course: GEOG.146
+                - course: GEOG.147
+                - course: GEOG.171
+                - course: GEOG.184
+                - course: GEOG.185
+                - course: HISTORY.181B
+                - course: IEOR.39A
+                - course: IEOR.130
+                - course: IEOR.131
+                - course: IEOR.140
+                - course: IEOR.150
+                - course: IEOR.161
+                - course: IEOR.162
+                - course: IEOR.164
+                - course: IEOR.165
+                - course: IEOR.180
+                - course: INTEGBI.39D
+                - course: INTEGBI.C82
+                - course: INTEGBI.106
+                - course: INTEGBI.C158
+                - course: LNS.16
+                - course: LNS.70A
+                - course: LNS.70B
+                - course: LNS.C70T
+                - course: LNS.C70U
+                - course: LNS.C70V
+                - course: LNS.C70W
+                - course: LNS.C70X
+                - course: LNS.C70Y
+                - course: LNS.117
+                - course: LNS.122
+                - course: LNS.170AC
+                - course: LNS.C170AC
+                - course: MAT SCI.101
+                - course: MAT SCI.102
+                - course: MAT SCI.103
+                - course: MAT SCI.104
+                - course: MAT SCI.111
+                - course: MAT SCI.112
+                - course: MAT SCI.113
+                - course: MAT SCI.114
+                - course: MAT SCI.115
+                - course: MAT SCI.116
+                - course: MAT SCI.117
+                - course: MAT SCI.118
+                - course: MAT SCI.120
+                - course: MAT SCI.121
+                - course: MAT SCI.122
+                - course: MAT SCI.123
+                - course: MAT SCI.124
+                - course: MAT SCI.125
+                - course: MAT SCI.130
+                - course: MAT SCI.145
+                - course: MAT SCI.146
+                - course: MAT SCI.148
+                - course: MAT SCI.149
+                - course: MAT SCI.150
+                - course: MAT SCI.160
+                - course: MAT SCI.161
+                - course: MAT SCI.170
+                - course: MAT SCI.172
+                - course: MAT SCI.176
+                - course: MAT SCI.180
+                - course: MEC ENG.1
+                - course: MEC ENG.39A
+                - course: MEC ENG.39C
+                - course: MEC ENG.39D
+                - course: MEC ENG.39E
+                - course: MEC ENG.101
+                - course: MEC ENG.102A
+                - course: MEC ENG.104
+                - course: MEC ENG.105
+                - course: MEC ENG.106
+                - course: MEC ENG.107A
+                - course: MEC ENG.107B
+                - course: MEC ENG.109
+                - course: MEC ENG.110
+                - course: MEC ENG.122
+                - course: MEC ENG.130
+                - course: MEC ENG.132
+                - course: MEC ENG.133
+                - course: MEC ENG.134
+                - course: MEC ENG.135
+                - course: MEC ENG.140
+                - course: MEC ENG.142
+                - course: MEC ENG.145
+                - course: MEC ENG.151
+                - course: MEC ENG.161
+                - course: MEC ENG.162
+                - course: MEC ENG.163
+                - course: MEC ENG.170
+                - course: MEC ENG.173
+                - course: MEC ENG.175
+                - course: MEC ENG.185
+                - course: NUC ENG.39
+                - course: NUC ENG.92
+                - course: NUC ENG.104A
+                - course: NUC ENG.107
+                - course: NUC ENG.124
+                - course: NUC ENG.150
+                - course: NUC ENG.160
+                - course: NUC ENG.161
+                - course: NUC ENG.162
+                - course: NUC ENG.180
+                - course: OPTOM.39A
+                - dept: PHYSICS
+                - course: PB HLTH.C171
+                - course: PB HLTH.175
+                - course: PB HLTH.176
+                - course: PUB POL.C184
+                - course: STAT.39B
+                - course: UGIS.66
+            - NOT:
+                - course: PHYSICS.39
+                - course: EPS.39A
+                - course: EPS.60
+                - course: EPS.C100
+                - course: EPS.104
+                - course: EPS.106AC
+                - course: EPS.120
+                - course: CHEM.20
+                - course: CHEM.130A
+                - course: CHEM.130B
+                - course: ASTRON.100
 
     ls_breadth_social:
         description: "Social and Behavioral Sciences Breadth Requirement"

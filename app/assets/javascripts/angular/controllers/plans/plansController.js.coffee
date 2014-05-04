@@ -41,15 +41,17 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
     doneLabel: "Thanks"
 
   # CODE for Majors
-  $scope.currentMajor = "EECS"
+  $scope.currentMajor = "University"
   $scope.majors = [
-    "EECS"
+    "University"
+    "LS"
     "Molecular Toxicology"
   ]
 
   $scope.majorsMapping = 
     "EECS": "COE"
     "Molecular Toxicology": "CNR"
+    "LS": "LS"
 
   $scope.getCollege = (major) ->
     $scope.majorsMapping[major]
