@@ -174,14 +174,20 @@ a.fa.fa-times-circle:hover, a.fa.fa-cog:hover {
   overflow:auto 
 }
 
-td#result.red a.result { 
+td.result.red a.result { 
   color: #990000; 
   opacity: 0.7 
 }
 
-td#result.green a.result { 
+td.result.green a.result { 
   color: green; 
   opacity: 0.7 
+}
+
+tr.result.green {
+}
+
+tr.result.red {
 }
 
 a.result { 
