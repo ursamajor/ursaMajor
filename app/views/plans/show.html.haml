@@ -14,6 +14,7 @@
       = render 'plans/semesterGrid'
     .col-md-4.col-sm-4
       %br
-      %select(data-ng-model="currentMajor")
-        %option(data-ng-repeat="major in majors" value="{{major}}") {{major}}
+      #majors
+        %select(data-ng-model="currentMajor")
+          %option(data-ng-repeat="major in majors" value="{{major}}") {{major}}
       = render 'plans/rules'

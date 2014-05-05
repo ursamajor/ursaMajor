@@ -26,6 +26,10 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
     ,
       intro: "Drag your courses into the semester planner."
     ,
+      element: "#majors"
+      intro: "Select a major."
+      position: "left"
+    ,
       element: "#rules"
       intro: "The rules sidebar will instantly show how close you are to satisfying your major requirements."
       position: "left"
