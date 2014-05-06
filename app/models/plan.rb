@@ -16,6 +16,7 @@ class Plan < ActiveRecord::Base
   def self.create_demo
     plan = Plan.new :name => "Demo Plan"
     Plan.semesters.each { |semester| plan.semesters.build name: semester.to_s }
+    plan.start_year = 2013
     plan.save
     plan
   end

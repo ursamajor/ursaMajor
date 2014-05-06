@@ -1,2 +1,7 @@
 .gridItem.profile
-  units: {{units}}
+  .start-year
+    year:
+    %select(data-ng-model="startYearString")
+      %option(data-ng-repeat="year in years" value="{{year}}") {{year}}
+  .total-units
+    total units: {{units}}

@@ -202,6 +202,19 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
 
   $scope.getRules()
 
+  $scope.startYearString = "2010"
+
+  $scope.years = [
+    "2010"
+    "2011"
+    "2012"
+    "2013"
+    "2014"
+  ]
+
+  $scope.$watch 'startYearString', ->
+    $scope.startYear = parseInt $scope.startYearString
+
   $http.get("#{window.location.pathname}.json").success (data) ->
     for semester in $scope.semesters.concat "backpack"
       $scope[semester] = $scope.findSemester data, semester

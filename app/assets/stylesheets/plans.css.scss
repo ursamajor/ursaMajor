@@ -91,6 +91,12 @@ a.show {
   width: 90%;
 }
 
+.profile select {
+  float: right !important;
+  width: 50% !important;
+  position: absolute;
+}
+
 .gridItem.backpack, .gridItem#garbage, { 
   border-color: grey; 
   border-style: dashed;
