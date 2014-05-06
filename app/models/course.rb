@@ -28,7 +28,8 @@ class Course < ActiveRecord::Base
     "COM LIT" => ["COMP LIT"],
     "ASTRON" => ["ASTRO"],
     "AMERSTD" => ["AMST"],
-    "ASAMST" => ["ASIAN AM"]
+    "ASAMST" => ["ASIAN AM"],
+    "BIOLOGY" => ["BIO"]
   }
 
   @@dept_mappings.default = []

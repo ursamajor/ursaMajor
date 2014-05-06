@@ -9,17 +9,12 @@
     #units= @course.units
     %h3 Rules Met
     %table.table
-      %thead
-        %tr
-          %th Rule
-          %th Description
-          %th Units
-      .body
+      %tbody
         - @course.rule_list.each do |rule|
           - begin
             - Rule.get(rule)
           - rescue
             - next
           %tr
-            %td= link_to rule, display_rules_path(:rule => rule)
-            %td= Rule.get(rule).description
+            %td= rule
+            %td= link_to Rule.get(rule).description, display_rules_path(:rule => rule)
