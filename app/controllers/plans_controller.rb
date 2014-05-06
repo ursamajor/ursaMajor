@@ -58,6 +58,8 @@ class PlansController < ApplicationController
       end
       semester.courses = courses
     end
+    plan.start_year = params[:startYear]
+    plan.major = params[:major]
     @result = plan.save ? true : false
     render partial: 'save.json'
   end

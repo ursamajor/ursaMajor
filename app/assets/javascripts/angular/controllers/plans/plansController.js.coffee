@@ -45,7 +45,6 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
     doneLabel: "Thanks"
 
   # CODE for Majors
-  $scope.currentMajor = "University"
   $scope.majors = [
     "University"
     "LS"
@@ -172,6 +171,8 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
   $scope.updatePlan = ->
     $scope.plan["courses"] = []
     $scope.plan["backpack"] = $scope["backpack"]
+    $scope.plan["major"] = $scope["currentMajor"]
+    $scope.plan["startYear"] = $scope["startYear"]
     for semester in $scope.semesters
       $scope.plan[semester] = $scope[semester]
       for course in $scope.plan[semester]
@@ -202,8 +203,6 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
 
   $scope.getRules()
 
-  $scope.startYearString = "2010"
-
   $scope.years = [
     "2010"
     "2011"
@@ -216,9 +215,12 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
     $scope.startYear = parseInt $scope.startYearString
 
   $http.get("#{window.location.pathname}.json").success (data) ->
-    for semester in $scope.semesters.concat "backpack"
-      $scope[semester] = $scope.findSemester data, semester
-      $scope.$watchCollection semester, ->
+    $scope.startYearString = data[0]["startYear"]
+    $scope.currentMajor = data[0]["major"]
+    for section in $scope.semesters.concat ["backpack", "startYearString", "currentMajor"]
+      unless section is "startYearString" or section is "currentMajor"
+        $scope[section] = $scope.findSemester data, section
+      $scope.$watchCollection section, ->
         $scope.update()
     $scope.updatePlan()
     $scope.removeDuplicates()

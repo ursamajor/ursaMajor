@@ -22,6 +22,7 @@ Plan Page
   - tutorial button
   - highlight whole row for rules (green pass, red fail)
   - sort by tabs (university, college, major)
+  - do something to show if plan save succeeded or not
 
 Rules Page
   - popular rules
@@ -47,7 +48,8 @@ Rules
       - utility function of numRulesSatisfied, proportion of courses left to fulfill other requirements
     - flag as an exclusive rule, which removes course from plan when checking rest
 Plans
-  - autopopulate plans from user information (major, years of semester)
+  - fix show.json for plan to not repeat startyear/major in each array
+  - autopopulate plans from user information (years of semester)
   - selecting which rules you want
   - share plan
     - public flag
