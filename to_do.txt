@@ -63,7 +63,8 @@ Users
 
 Chores
   - going through completed rules, make sure they work
-  - documentation
+  - documentation 
+    -- refer to (http://stackoverflow.com/questions/2543979/example-of-a-well-documented-rails-project-and-or-best-pratices)
   - tag rules by major
   - clean up planscontroller
 
