@@ -69,6 +69,7 @@ Chores
     -- refer to (http://stackoverflow.com/questions/2543979/example-of-a-well-documented-rails-project-and-or-best-pratices)
   - tag rules by major
   - clean up planscontroller
+  - more progressive data-ng-cloak
 
 After First Release
   - sample major plan

@@ -203,6 +203,7 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
 
   $scope.getRules()
 
+  $scope.startYearString = "2013"
   $scope.years = [
     "2010"
     "2011"
