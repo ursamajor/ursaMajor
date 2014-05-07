@@ -124,8 +124,8 @@ Optional
         yaml files
 
 Errors
-  - sometimes course modal doesn't pop up when you load plan initially
-    - replicate error by switching page from plan, then returning to plan using browser back
+  - browser back/forward
+    - loses save
     - course modal not rendered
 
 404 not found
