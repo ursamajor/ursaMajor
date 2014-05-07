@@ -26,6 +26,7 @@ Plan Page
 
 Rules Page
   - popular rules
+  - maybe infinite scroll for rule/show
 
 Profile Page
   - allow input of grades, display gpa overall/per semester
@@ -113,13 +114,6 @@ Optional
     - more consistent json object attribute accessing [] vs .
     - separate courses and plans controller again (combined for sake of duplicate removal)
     - switch over bootstrap js to angular ui js
-
-  Performance
-    - is it worth it to not cache plan/show?
-      pros:
-        - fixes browser back/forward reverting any changes
-      cons:
-        - may have to reload all assets?
 
   Structure
     - move all requires

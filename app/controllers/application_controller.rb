@@ -6,6 +6,8 @@ class ApplicationController < ActionController::Base
   before_action :rules
   after_action :set_csrf_cookie_for_ng
 
+  protected
+
   def rules
     @rules = Rule.all
   end
@@ -23,7 +25,11 @@ class ApplicationController < ActionController::Base
     cookies['XSRF-TOKEN'] = form_authenticity_token if protect_against_forgery?
   end
 
-  protected
+  def set_cache_buster
+    response.headers["Cache-Control"] = "no-store, no-cache, must-revalidate, max-age='0', pre-check='0', post-check='0'"
+    response.headers["Pragma"] = "no-cache"
+    response.headers["Expires"] = "0"
+  end
 
   def verified_request?
     super || form_authenticity_token == request.headers['X-XSRF-TOKEN']

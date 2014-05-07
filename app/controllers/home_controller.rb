@@ -55,12 +55,4 @@ class HomeController < ApplicationController
     render partial: 'plans/save.json'
   end
 
-  protected
-
-  def set_cache_buster
-    response.headers["Cache-Control"] = "no-store, no-cache, must-revalidate, max-age='0', pre-check='0', post-check='0'"
-    response.headers["Pragma"] = "no-cache"
-    response.headers["Expires"] = "0"
-  end
-
 end
