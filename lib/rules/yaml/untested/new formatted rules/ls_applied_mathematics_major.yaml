@@ -1,0 +1,48 @@
+rules:
+
+    ls_applied_mathematics_major:
+        description: "Applied Mathematics Major"
+        rule: AND
+        args:
+            - rule: university_all
+            - rule: ls_breadth_all
+            - rule: ls_lowerdiv_applied_math
+            - rule: ls_upperdiv_applied_math
+            - rule: ls_applied_math_cluster
+            - rule: units_upperdiv
+            - rule: units_total
+
+    ls_lowerdiv_applied_math:
+        description: "Applied Mathematics Lower Division Requirements"
+        rule: AND
+        args:
+            - course: MATH.1A
+            - course: MATH.1B
+            - course: MATH.53
+            - course: MATH.54
+            - rule: math55_cs70
+
+    math55_cs70:
+        hidden: true
+        rule: OR
+        args:
+            - course: MATH.55
+            - course: COMPSCI.70
+
+    ls_upperdiv_applied_math: 
+        description: "Applied Mathematics Upper Division Requirements"
+        rule: AND
+        args:
+            - course: MATH.104
+            - course: MATH.110
+            - course: MATH.113
+            - course: MATH.128A
+            - course: MATH.185
+
+    ls_applied_math_cluster:
+        description: "Applied Mathematics Cluster Courses"
+        rule: count_courses
+            min: 3
+            rule: OR
+            args:
+

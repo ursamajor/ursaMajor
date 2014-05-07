@@ -1,40 +1,48 @@
 rules:
 
-    coe_environmental_engineering_science_major:
+    coe_structural_engineering_minor:
+        description: "Structural Engineering Minor"
         rule: AND
         args:
-            - AND: # pre-requsites
-                - OR:
-                    - AND:
-                        - course: MATH.1A
-                        - course: MATH.1B
-                    - AND:
-                        - course: MATH.16A
-                        - course: MATH.16B
-                - OR:
-                    - course: PHYSICS.7A
-                    - course: PHYSICS.8A
-                - OR:
-                    - course: CIV ENG.C30
-                    - course: MEC ENG.C85
-            - AND: # required
-                - course: CIV ENG.60
-                - course: CIV ENG.120
-                - OR:
-                    - course: CIV ENG.122N
-                    - course: CIV ENG.123N
-            - AND: # upper div
-                - numcourses:
-                    min: 2
-                    courses:
-                        - course: CIV ENG.121
-                        - OR: # exclude above
-                            - course: CIV ENG.122N
-                            - course: CIV ENG.123N
-                        - course: CIV ENG.124
-                        - course: CIV ENG.130N
-                        - course: CIV ENG.140
-                        - course: CIV ENG.165
-                        - course: CIV ENG.166
-                        - course: CIV ENG.175
-                        - course: CIV ENG.193
+            - rule: coe_structural_engineering_prereqs
+            - rule: coe_structural_engineering_required
+
+    coe_structural_engineering_prereqs:
+        description: "Structrual Engineering Pre-Requisites"
+        rule: AND
+        args:
+            - rule: math1_16
+            - rule: physics7_8a
+            - rule: civec30_mecec85
+
+    coe_structural_engineering_required:
+        description: "Structural Engineering Requirements"
+        rule: AND
+        args:
+            - course: CIV ENG.60
+            - course: CIV ENG.120
+            - rule: cive122_123
+            - rule: coe_structural_engineering_upperdiv
+
+    cive122_123:
+        hidden: true
+        rule: OR
+        args:
+            - course: CIV ENG.122N
+            - course: CIV ENG.123N
+
+    coe_structural_engineering_upperdiv:
+        description: "Structural Engineering Upper Division"
+        rule: count_courses
+            min: 2
+            rule: OR
+            args:
+                - course: CIV ENG.121
+                - rule: cive122_123 # the other one
+                - course: CIV ENG.124
+                - course: CIV ENG.130N
+                - course: CIV ENG.140
+                - course: CIV ENG.165
+                - course: CIV ENG.166
+                - course: CIV ENG.175
+                - course: CIV ENG.193

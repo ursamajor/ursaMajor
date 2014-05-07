@@ -1,0 +1,62 @@
+rules:
+
+    haas_business_administration_major:
+        description: "Business Administration Major"
+        rule: AND
+        args:
+            - rule: haas_business_preqs
+            - rule: haas_business_upperdiv_core
+            - rule: haas_business_units
+            - rule: ls_breadth_all # exclude UGBA
+            - rule: university_all # exclude UGBA
+            - rule: units_upperdiv
+            - rule: units_total
+
+    haas_business_preqs:
+        description: "Business Administration Pre-Requisites"
+        rule: AND
+        args:
+            - course: UGBA.10
+            - rule: econ1_2
+            - rule: stat20_21_25
+            - rule: math1_16 # or larger
+
+    haas_business_upperdiv_core:
+        description: "Business Administration Upper Division Core Requirements"
+        rule: AND
+        args:
+            - course: UGBA.100
+            - rule: microecon
+            - rule: macroecon
+            - course: UGBA.102A
+            - course: UGBA.102B
+            - course: UGBA.103
+            - course: UGBA.104
+            - course: UGBA.104
+            - course: UGBA.105
+            - course: UGBA.106
+            - course: UGBA.107
+
+    microecon:
+        hidden: true
+        rule: OR
+        args:
+            - course: UGBA.101A
+            - course: ECON.100A
+            - course: ECON.101A
+            - course: IAS.106
+
+    macroecon:
+        hidden: true
+        rule: OR
+        args:
+            - course: UGBA.101B
+            - course: ECON.100B
+            - course: ECON.101B
+            - course: IAS.107
+
+    haas_business_units:
+        hidden: true
+        rule: units
+            min: 38
+            rule: upperdiv_business

@@ -22,7 +22,7 @@ rule:
             - rule: cnr_society_breadth
 
     cnr_society_math:
-        hidden: true
+        description: "Society and Environment Math Requirement"
         rule: OR
         args:
             - course: MATH.1A
@@ -104,7 +104,7 @@ rule:
                 - rule: society_us_other
 
     society_us_primary:
-        hidden: true
+        description: "Society and Environment: US Concentration Primary Course"
         rule: OR
         args:
             - course: ESPM.102C
@@ -115,14 +115,14 @@ rule:
             - course: ESPM.C191
 
     society_us_electives:
-        hidden: true
+        description: "Society and Environment: US Concentration Electives"
         rule: count_courses
         args:
             min: 4
             rule: cnr_society_and_environment_area_us_environmental_policy_and_management
 
     society_us_other:
-        hidden: true
+        description: "Society and Environment: US Concentration Other Courses"
         rule: count_courses
         args:
             min: 3
@@ -143,7 +143,7 @@ rule:
                 - rule: society_global_other
 
     society_global_primary:
-        hidden: true
+        description: "Society and Environment: Global Concentration Primary Course"
         rule: OR
         args:
             - course: ESPM.151
@@ -153,14 +153,14 @@ rule:
             - course: ESPM.169
 
     society_global_electives:
-        hidden: true
+        description: "Society and Environment: Global Concentration Electives"
         rule: count_courses
         args:
             min: 4
             rule: cnr_society_and_environment_area_global_environmental_politics
 
     society_global_other:
-        hidden: true
+        description: "Society and Environment: Global Concentration Other Courses"
         rule: count_courses
         args:
             min: 4
@@ -181,7 +181,7 @@ rule:
                 - rule: society_justice_other
 
     society_justice_primary:
-        hidden: true
+        description: "Society and Environment: Justice Concentration Primary Course"
         rule: OR
         args:
             - course: ESPM.117
@@ -191,14 +191,14 @@ rule:
             - course: ESPM.C167
 
     society_justice_electives:
-        hidden: true
+        description: "Society and Environment: Justice Concentration Electives"
         rule: count_courses
         args:
             min: 4
             rule: cnr_society_and_environment_area_justice_and_sustainability
 
     society_justice_other:
-        hidden: true
+        description: "Society and Environment: Justice Concentration Other Courses"
         rule: count_courses
         args:
             min: 3

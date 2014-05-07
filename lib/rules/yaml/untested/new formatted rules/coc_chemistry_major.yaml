@@ -4,18 +4,6 @@ rules:
         description: "Chemistry Major"
         rule: AND
         args:
-            - rule: coc_lowerdiv_chemistry_requirements
-            - rule: coc_upperdiv_chemistry_requirements
-            - rule: units_upperdiv
-            - rule: units_total
-
-
-
-
-    coc_lowerdiv_chemistry_requirements:
-        description: "Lower Division Chemistry Requirements"
-        rule: AND
-        args:
             - rule: university_rc_A
             - rule: university_rc_B
             - rule: coc_forlang
@@ -31,12 +19,6 @@ rules:
             - course: MATH.54
             - course: PHYSICS.7A
             - course: PHYSICS.7B
-
-
-    coc_upperdiv_chemistry_requirements:
-        description: "Upper Division Chemistry Requirements"
-        rule: AND
-        args:
             - course: CHEM.104A
             - course: CHEM.104B
             - course: CHEM.120A
@@ -44,6 +26,22 @@ rules:
             - rule: chem_125_c182
             - rule: chem_more
             - rule: chem_other_units
+            - rule: units_upperdiv
+            - rule: units_total
+
+# not sure if we should do it like this or split into lowerdiv/upperdiv
+
+
+    coc_lowerdiv_chemistry_requirements:
+        description: "Lower Division Chemistry Requirements"
+        rule: AND
+        args:
+
+
+    coc_upperdiv_chemistry_requirements:
+        description: "Upper Division Chemistry Requirements"
+        rule: AND
+        args:
 
     chem_125_c182:
         hidden: true

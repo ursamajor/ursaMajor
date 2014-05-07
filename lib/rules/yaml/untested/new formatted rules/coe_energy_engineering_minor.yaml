@@ -2,11 +2,13 @@ rules:
 
     coe_energy_engineering_minor:
         description: "Energy Engineering Minor"
-        rule: AND
-        args:
-            - rule: coe_energy_engineering_eligibility
-            - rule: coe_energy_engineering_course_req
-            - rule: coe_energy_engineering_minor_electives
+        rule: count_courses
+            min: 14
+            rule: AND
+            args:
+                - rule: coe_energy_engineering_eligibility
+                - rule: coe_energy_engineering_course_req
+                - rule: coe_energy_engineering_minor_electives
 
     coe_energy_engineering_eligibility:
         description: "Eligibility Requirements for Energy Engineering"

@@ -24,7 +24,7 @@ rules:
             - rule: ld_arch_bio
 
     ld_arch_phys:
-        hidden: true
+        description: "Landsscape Architecture Physical Sciences Requirement"
         rule: OR
         args:
             - course: EPS.50
@@ -37,7 +37,7 @@ rules:
             - course: LNS.C70V
 
     ld_arch_bio:
-        hidden: true
+        description: "Landscape Architecture Biological Science Requirement"
         rule: OR
         args:
             - course: BIOLOGY.1B

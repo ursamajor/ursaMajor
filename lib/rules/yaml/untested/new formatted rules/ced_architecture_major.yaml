@@ -43,14 +43,14 @@ rules:
                 - course: ARCH.130
 
     arch_tracks:
-        hidden: true
+        description: "Architecture Tracks"
         rule: OR
         args:
             - rule: arch_capstone
             - rule: arch_senior_track
 
     arch_capstone:
-        hidden: true
+        description: "Architecture Capstone Track"
         rule: count_courses
         args:
             min: 3
@@ -71,17 +71,17 @@ rules:
 
 
     arch_senior_track:
-        hidden: true
+        description: "Architecture Senior Track"
         rule: count_courses
         args:
             min: 5
             rule: AND
             args:
-                    - course: ARCH.100C
-                    - course: ARCH.100D
-                    - course: ARCH.140
-                    - course: ARCH.160
-                    - course: ARCH.150
+                - course: ARCH.100C
+                - course: ARCH.100D
+                - course: ARCH.140
+                - course: ARCH.160
+                - course: ARCH.150
 
 
 

@@ -46,7 +46,7 @@ rules: # not sure if I should combine lower/upper div into one concentration
             - course: ESPM.C109
 
     cnr_forestry_field:
-        hidden: true
+        description: "Forestry and Natural Resources Field Requirement"
         rule: count_courses
         args:
             min: 4
@@ -79,7 +79,7 @@ rules: # not sure if I should combine lower/upper div into one concentration
             - rule: cnr_forestry_special
 
     cnr_forestry_phys:
-        hidden: true
+        description: "Forestry Physical Science Requirement"
         rule: OR
         args:
             - course: EPS.50
@@ -87,7 +87,7 @@ rules: # not sure if I should combine lower/upper div into one concentration
             - course: GEOG.40
 
     cnr_forestry_special:
-        hidden: true
+        description: "Forestry Specialty Requirements"
         rule: OR
         args:
             - rule: cnr_concentration_forestry_natural_sciences_specialization_professional_forestry
@@ -107,7 +107,7 @@ rules: # not sure if I should combine lower/upper div into one concentration
             - rule: fns_prof_electives
 
     fns_prof_electives:
-        hidden: true
+        description: "Professional Forestry Electives"
         rule: OR
         args:
             - rule: cnr_subject_forestry_physical_environment
@@ -168,7 +168,7 @@ rules: # not sure if I should combine lower/upper div into one concentration
             - rule: cnr_forestry_electives
 
     cnr_forestry_electives:
-        hidden: true
+        description: "Forestry Restricted Electives"
         rule: count_courses
         args:
             min: 6
@@ -180,14 +180,14 @@ rules: # not sure if I should combine lower/upper div into one concentration
                 - rule: cnr_subject_forestry_management_and_policy
 
     cnr_forestry_human_bio:
-        hidden: true
+        description: "Forestry Human Dimensions: Biology"
         rule: OR
         args:
             - course: BIOLOGY.1B
             - course: BIOLOGY.11
 
     cnr_forestry_human_math:
-        hidden: true
+        description: "Forestry Human Dimentions: Mathematics"
         rule: OR
         args:
             - course: MATH.16A
@@ -195,7 +195,7 @@ rules: # not sure if I should combine lower/upper div into one concentration
             - course: MATH.32
 
     cnr_forestry_human_stat:
-        hidden: true
+        description: "Forestry Human Dimensions: Statistics"
         rule: OR
         args:
             - course: STAT.2
@@ -204,7 +204,7 @@ rules: # not sure if I should combine lower/upper div into one concentration
             - course: SOCIOL.5
 
     cnr_forestry_human_econ:
-        hidden: true
+        description: "Forestry Human Dimentions: Economics"
         rule: OR
         args:
             - course: ENVECON.C1

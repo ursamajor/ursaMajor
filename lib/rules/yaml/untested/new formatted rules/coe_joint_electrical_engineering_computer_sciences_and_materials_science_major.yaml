@@ -5,15 +5,6 @@ rules:
         rule: AND
         args:
             - rule: coe_humanities_and_social_sciences
-            - rule: coe_lowerdiv_joint_electrical_engineering_materials_science
-            - rule: coe_upperdiv_joint_eletrical_engineering_materials_science
-            - rule: units_upperdiv
-            - rule: units_total
-
-    coe_lowerdiv_joint_electrical_engineering_materials_science:
-        description: "Joint Electrical Engineering & Computer Science and Materials Science Lower Division Requirements"
-        rule: AND
-        args:
             - rule: chem1_4a
             - course: MATH.1A
             - course: MATH.1B
@@ -27,18 +18,6 @@ rules:
             - rule: cs61c_ee20n
             - course: ENGIN.45
             - course: EL ENG.40
-
-    cs61c_ee20n:
-        hidden: true
-        rule: OR
-        args:
-            - course: COMPSCI.61C
-            - course: EL ENG.20N
-
-    coe_upperdiv_joint_eletrical_engineering_materials_science:
-        description: "Joint Eletrical Engineering & Computer Science and Materials Science Upper Division Requirements"
-        rule: AND
-        args:
             - rule: e115_phys112
             - course: EL ENG.105
             - rule: ee126_stat25_134
@@ -53,6 +32,27 @@ rules:
             - course: PHYSICS.141A
             - rule: ee_mse1
             - rule: ee_mse2
+            - rule: units_upperdiv
+            - rule: units_total
+
+# not sure if we should do it like this or split into lowerdiv/upperdiv
+
+    coe_lowerdiv_joint_electrical_engineering_materials_science:
+        description: "Joint Electrical Engineering & Computer Science and Materials Science Lower Division Requirements"
+        rule: AND
+        args:
+
+    cs61c_ee20n:
+        hidden: true
+        rule: OR
+        args:
+            - course: COMPSCI.61C
+            - course: EL ENG.20N
+
+    coe_upperdiv_joint_eletrical_engineering_materials_science:
+        description: "Joint Eletrical Engineering & Computer Science and Materials Science Upper Division Requirements"
+        rule: AND
+        args:
 
     e115_phys112:
         hidden: true

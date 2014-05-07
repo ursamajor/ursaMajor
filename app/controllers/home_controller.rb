@@ -1,5 +1,7 @@
 class HomeController < ApplicationController
   respond_to :html, :json
+
+  before_action :set_cache_buster, :only => [:demo]
   
   def index
     if signed_in?
@@ -51,6 +53,14 @@ class HomeController < ApplicationController
     plan.major = params[:major]
     @result = plan.save ? true : false
     render partial: 'plans/save.json'
+  end
+
+  protected
+
+  def set_cache_buster
+    response.headers["Cache-Control"] = "no-store, no-cache, must-revalidate, max-age='0', pre-check='0', post-check='0'"
+    response.headers["Pragma"] = "no-cache"
+    response.headers["Expires"] = "0"
   end
 
 end

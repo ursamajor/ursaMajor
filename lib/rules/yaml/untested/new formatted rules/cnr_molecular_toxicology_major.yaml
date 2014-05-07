@@ -21,7 +21,7 @@ rules:
             - rule: mtx_bio
 
     mtx_hss:
-        hidden: true
+        description: "Molecular Toxicology Humanities and Social Sciences Requirement"
         rule: units
         args: 
             min: 22
@@ -31,7 +31,7 @@ rules:
                 - rule: university_all
 
     mtx_phys_math:
-        hidden: true
+        description: "Molecular Toxicology Physical Sciences and Mathematics Requirement"
         rule: units
         args:
             min: 26
@@ -47,7 +47,7 @@ rules:
                 - course: PHYSICS.8A
 
     mtx_bio:
-        hidden: true
+        description: "Molecular Toxicology Biological Sciences Requirement"
         rule: units
         args:
             min: 11
@@ -65,7 +65,7 @@ rules:
         args:
             - rule: mtx_math1
             - rule: mtx_math2
-            - rule: mtx_math3
+            - rule: math10
 
     mtx_math1:
         hidden: true
@@ -81,13 +81,6 @@ rules:
         args:
             - course: MATH.1A
             - course: STAT.2
-
-    mtx_math3:
-        hidden: true
-        rule: AND
-        args:
-            - course: MATH.10A
-            - course: MATH.10B
 
     cnr_upperdiv_molecular_toxicology_requirements:
         description: "Upper Division Molecular Toxicology Requirements"
@@ -121,7 +114,7 @@ rules:
             - course: PB HLTH.162L
 
     mtx_more:
-        hidden: true
+        description: "Molecular Toxicology Upper Division Requirements"
         rule: units
         args:
             min: 36

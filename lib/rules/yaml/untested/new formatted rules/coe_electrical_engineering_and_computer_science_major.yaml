@@ -1,0 +1,139 @@
+rules:
+
+    coe_electrical_engineering_and_computer_science_major:
+        description: "Electrical Engineering and Computer Science Major"
+        rule: AND
+        args:
+            - rule: coe_humanities_and_social_sciences
+            - rule: coe_electrical_engineering_and_computer_science_natural_science
+            - course: MATH.1A
+            - course: MATH.1B
+            - course: MATH.53
+            - course: MATH.54
+            - course: COMPSCI.70
+            - rule: eecs_technical
+            - rule: eecs_cs
+            - rule: eecs_lowerdiv_core
+            - rule: eecs_eng_ethics
+            - rule: eecs_eng_design
+            - rule: coe_upperdiv
+            - rule: units_upperdiv
+            - rule: units_total
+
+# not sure if we should do it like this or split into lowerdiv/upperdiv
+
+
+    coe_lowerdiv_electrical_engineering_requirements:
+        description: "Lower Division Electrical Engineering & Computer Science Requirements"
+        rule: AND
+        args:
+
+    coe_electrical_engineering_and_computer_science_natural_science:
+        description: "Electrical Engineering & Computer Science Natural Science Requirements"
+        rule: AND
+        args:
+            - course: PHYSICS.7A
+            - course: PHYSICS.7B
+            - rule: eecs_nat_other
+
+    eecs_nat_other:
+        description: "Electrical Engineering Other Natural Science Courses"
+        rule: OR
+        args:
+            - rule: chem1a
+            - course: CHEM.1B
+            - course: CHEM.3A
+            - course: CHEM.3B
+            - course: CHEM.4A
+            - course: CHEM.4B
+            - course: BIOLOGY.1A
+            - course: BIOLOGY.1B
+            - course: BIOLOGY.1B
+            - course: ASTRON.7A
+            - course: ASTRON.7B
+            - course: PHYSICS.7C
+            - rule: mcb32
+            - rule: upperdiv_integrative_biology
+            - rule: upperdiv_astronomy
+            - rule: upperdiv_chemistry
+            - rule: upperdiv_biology
+            - rule: upperdiv_earth_planetary_science
+            - rule: upperdiv_molecular_cell_biology
+            - rule: upperdiv_physics
+            - rule: upperdiv_plant_biology
+
+    coe_upperdiv_electrical_engineering_requirements:
+        description: "Upper Division Electrical Engineering & Computer Science Requirements"
+        rule: AND
+        args:
+
+    eecs_technical:
+        description: "Electrical Engineering Technical Electives"
+        rule: units
+            min: 45
+            rule: coe_engineering_electives
+            args:
+                - NOT:
+                    - course: ENGIN.125
+                    - course: ENGIN.130AC
+                    - course: ENGIN.140
+                    - course: IND ENG.172
+                    - course: IND ENG.191
+                    - course: MEC ENG.191AC
+                    - course: MEC ENG.190K
+                    - course: MEC ENG.191K
+
+    eecs_cs:
+        hidden: true
+        rule: units
+            min: 22
+            rule: OR
+            args:
+                - dept: EL ENG
+                - dept: COMPSCI
+                    - NOT:
+                        - course: COMPSCI.C79
+                        - course: COMPSCI.195
+                        - course: COMPSCI.C195
+
+    eecs_lowerdiv_core: # also count towards technical
+        description: "Electrical Engineering Lower Division Core"
+        rule: AND
+        args:
+            - course: EL ENG.20N
+            - course: EL ENG.40
+            - course: COMPSCI.61A
+            - rule: cs61b
+            - rule: cs61c
+
+    eecs_eng_ethics:
+        description: "Electrical Engineering: Engineering Ethics"
+        rule: OR
+        args:
+            - course: COMPSCI.195
+            - course: COMPSCI.H195
+            - course: ENE,RES.100
+            - course: ENE,RES.C100
+            - course: ISF.60
+            - course: ISF.100D
+
+    eecs_eng_design:
+        description: "Electrical Engineering: Engineering Design Requirement"
+        rule: OR
+        args:
+            - course: EL ENG.C125
+            - course: EL ENG.C128
+            - course: EL ENG.130
+            - course: EL ENG.140
+            - course: EL ENG.141
+            - course: EL ENG.143
+            - course: EL ENG.C149
+            - course: EL ENG.192
+            - course: COMPSCI.C149
+            - course: COMPSCI.150
+            - course: COMPSCI.160
+            - course: COMPSCI.162
+            - course: COMPSCI.164
+            - course: COMPSCI.169
+            - course: COMPSCI.184
+            - course: COMPSCI.186

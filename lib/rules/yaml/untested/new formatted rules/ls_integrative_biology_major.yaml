@@ -1,0 +1,215 @@
+rules:
+
+    ls_integrative_biology_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # lower division
+            - OR:
+                - course: MATH.1A
+                - course: MATH.10A
+            - OR:
+                - course: MATH.1B
+                - course: MATH.10B
+            - course: CHEM.1A
+            - course: CHEM.1AL
+            - course: CHEM.3A
+            - course: CHEM.3AL
+            - course: CHEM.3B
+            - course: CHEM.3BL
+            - course: BIOLOGY.1A
+            - course: BIOLOGY.1AL
+            - course: BIOLOGY.1B
+            - OR:
+                - course: PHYSICS.8A
+                - course: PHYSICS.7A
+            - OR:
+                - course: PHYSICS.8B
+                - course: PHYSICS.7B
+        - AND: # upper division
+            - AND:
+                - units:
+                    min: 24
+                    courses:
+                        - OR: # evolution & genetics
+                            - course: INTEGBI.141
+                            - course: INTEGBI.160
+                            - course: INTEGBI.161
+                            - course: INTEGBI.162
+                            - course: INTEGBI.163
+                            - course: INTEGBI.164
+                            - course: INTEGBI.167
+                            - course: INTEGBI.169
+                        - OR: # track
+                            - AND: # ecology, evolution & organismal biology
+                                - numcourses:
+                                    min: 2
+                                    courses:
+                                        - ls_integrative_biology_group_B
+                                - ls_integrative_biology_group_C
+                                - AND: # ud lab
+                                    - OR: # field based lab
+                                        - course: INTEGBI.102LF
+                                        - course: INTEGBI.103LF
+                                        - course: INTEGBI.104LF
+                                        - course: INTEGBI.C107LF
+                                        - course: PLANTBI.C107
+                                        - course: INTEGBI.117LF
+                                        - course: INTEGBI.146LF
+                                        - course: INTEGBI.153LF
+                                        - course: INTEGBI.157LF
+                                        - course: INTEGBI.C158LF
+                                        - course: ESPM.C107
+                                        - course: INTEGBI.173LF
+                                        - course: INTEGBI.174LF
+                                        - course: INTEGBI.175LF
+                                    - ls_integrative_biology_lab
+                            - AND: # human biology & health sciences
+                                - ls_integrative_biology_group_B
+                                - numcourses:
+                                    min: 2
+                                    courses:
+                                        - ls_integrative_biology_group_C
+                                - numcourses:
+                                    min: 2
+                                    courses:
+                                        - ls_integrative_biology_lab
+
+    ls_integrative_biology_group_B:
+        description: "Integrative Biology Requirement Group B: Ecology, Behavior & Diversity"
+        rule: OR
+        args:
+            - course: PLANTBI.C102
+            - course: INTEGBI.102
+            - course: INTEGBI.102LF
+            - course: INTEGBI.103LF
+            - course: INTEGBI.104LF
+            - course: INTEGBI.106A
+            - course: INTEGBI.C107L
+            - course: PLANTBI.C107
+            - course: INTEGBI.C110L
+            - course: PLANTBI.C110L
+            - course: INTEGBI.113L
+            - course: INTEGBI.C144
+            - course: INTEGBI.146LF
+            - course: INTEGBI.C149
+            - course: ESPM.C149
+            - course: INTEGBI.151
+            - course: INTEGBI.152
+            - course: INTEGBI.153
+            - course: INTEGBI.154
+            - course: INTEGBI.C155
+            - course: ANTHRO.C129D
+            - course: INTEGBI.C156
+            - course: ESPM.C103
+            - course: INTEGBI.157LF
+            - course: INTEGBI.158LF
+            - course: ESPM.C107
+            - course: INTEGBI.159
+            - course: INTEGBI.160
+            - course: INTEGBI.162
+            - course: INTEGBI.166
+            - course: INTEGBI.167
+            - course: INTEGBI.168L
+            - course: INTEGBI.173LF
+            - course: INTEGBI.174LF
+            - course: INTEGBI.175LF
+            - course: INTEGBI.181L
+            - course: INTEGBI.183L
+            - course: INTEGBI.C185L
+            - course: ANTHRO.C100
+            - course: INTEGBI.C187
+            - course: ANTHRO.C124C
+
+
+    ls_integrative_biology_group_C:
+        description: "Integrative Biology Requiremeng Group C: Structure, Function & Human Health"
+        rule: OR
+        args:
+            - course: INTEGBI.115
+            - course: INTEGBI.116L
+            - course: INTEGBI.117LF
+            - course: INTEGBI.118
+            - course: INTEGBI.119
+            - course: INTEGBI.123AL
+            - course: INTEGBI.C125L
+            - course: PHYS ED.C165
+            - course: INTEGBI.127L
+            - course: INTEGBI.128
+            - course: INTEGBI.C129L
+            - course: PHYS ED.C129
+            - course: INTEGBI.C130
+            - course: SOCIOL.118
+            - AND:
+                - course: INTEGBI.131
+                - course: INTEGBI.131L
+            - AND:
+                - course: INTEGBI.132
+                - course: INTEGBI.132L
+            - AND:
+                - course: INTEGBI.C135
+                - course: INTEGBI.C135L
+            - course: INTEGBI.136
+            - course: INTEGBI.137
+            - course: INTEGBI.138
+            - course: INTEGBI.139
+            - course: INTEGBI.140
+            - course: INTEGBI.C142L
+            - course: ANTHRO.C103
+            - course: INTEGBI.C143A
+            - course: PSYCH.C113
+            - course: INTEGBI.C143B
+            - course: PSYCH.C116
+            - course: INTEGBI.148
+            - AND:
+                - course: INTEGBI.151
+                - course: INTEGBI.151L
+            - course: INTEGBI.184L
+
+    ls_integrative_biology_lab:
+        description: "Integrative Biology Lab Requirement"
+        rule: OR
+        args:
+            - course: INTEGBI.C101L
+            - course: PLANTBI.C102
+            - course: INTEGBI.113L
+            - course: INTEGBI.116L
+            - course: INTEGBI.123AL
+            - course: PHYS ED.C165
+            - course: INTEGBI.C125L
+            - course: INTEGBI.C129L
+            - course: PHYS ED.C129
+            - course: INTEGBI.131L
+            - course: INTEGBI.127L
+            - course: INTEGBI.132L
+            - course: INTEGBI.C135L
+            - course: EL ENG.C145O
+            - course: BIO ENG.C136L
+            - course: INTEGBI.C142L
+            - course: ANTHRO.C103
+            - course: INTEGBI.C149L
+            - course: ESPM.C149L
+            - course: INTEGBI.151L
+            - course: INTEGBI.154L
+            - course: INTEGBI.168L
+            - course: INTEGBI.181
+            - course: INTEGBI.183L
+            - course: INTEGBI.184L
+            - course: INTEGBI.C185L
+            - course: ANTHRO.C100
+            - course: INTEGBI.102LF
+            - course: INTEGBI.103LF
+            - course: INTEGBI.104LF
+            - course: INTEGBI.C107LF
+            - course: PLANTBI.C107
+            - course: INTEGBI.117LF
+            - course: INTEGBI.146LF
+            - course: INTEGBI.153LF
+            - course: INTEGBI.157LF
+            - course: INTEGBI.C158LF
+            - course: ESPM.C107
+            - course: INTEGBI.173LF
+            - course: INTEGBI.174LF
+            - course: INTEGBI.175LF
+

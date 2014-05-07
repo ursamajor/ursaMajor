@@ -2,10 +2,12 @@ rules:
 
     coe_environmental_engineering_science_minor:
         description: "Environmental Engineering Science Minor"
-        rule: AND
-        args:
-            - rule: env_eng_minor_prereqs
-            - rule: env_eng_minor_upperdiv
+        rule: count_courses
+            min: 15
+            rule: AND
+            args:
+                - rule: env_eng_minor_prereqs
+                - rule: env_eng_minor_upperdiv
 
     env_eng_minor_prereqs:
         description: "Environmental Engineering Minor Pre-requisites"

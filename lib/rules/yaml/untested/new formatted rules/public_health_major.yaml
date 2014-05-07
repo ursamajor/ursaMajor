@@ -1,0 +1,148 @@
+rules:
+
+    public_health_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # Pre-requisities
+            - AND: #Biological Science Pre-reqs
+                - OR:
+                    - AND:
+                        - course: BIOLOGY.1B
+                        - course: BIOLOGY.1A
+                        - course: BIOLOGY.1AL
+                        - course: CHEM.1A
+                        - course: CHEM.3A
+                        - course: ChEM.3AL
+                    - AND:
+                        - numcourses:
+                            min: 2
+                            courses:
+                                - course: NUSCTX.10
+                                - course: MCELLBI.11
+                                - course: MCELLBI.32
+                                - course: MCELLBI.50
+                                - course: MCELLBI.55
+                                - course: MCELLBI.61
+            - AND: # Math Pre-reqs
+                - OR:
+                    - course: MATH.32
+                    - course: MATH.1A
+                    - course: MATH.10A
+                    - course: MATH.16A
+                - OR:
+                    - course: MATH.1B
+                    - course: MATH.10B
+                    - course: MATH.16B
+            - AND: # Social Sciences Pre-reqs
+                - numcourses:
+                    min: 3
+                    courses:
+                        - OR:
+                            - course: PSYCH.1
+                            - course: PSYCH.2
+                        - course: SOCIOL.1
+                        - OR:
+                            - course: SOCIOL.3
+                            - course: SOCIOL.3AC
+                            - course: SOCIOL.5
+                        - OR:
+                            - course: ECON.1
+                            - course: ECON.2
+                            - course: ECON.C3
+                        - OR:
+                            - course: ANTHRO.3
+                            - course: ANTHRO.3AC
+                        - course: POL SCI.2
+                        - course: POL SCI.4
+        - AND: # Reqs
+            - AND: # Core
+                - OR:
+                    - course: PB HLTH.142
+                    - course: PB HLTH.141
+                    - course: STAT.131A
+                - course: PB HLTH.150A
+                - AND:
+                    - numcourses: 
+                        min: 2
+                        courses:
+                            - coures: PB HLTH.150B
+                            - course: PB HLTH.150D
+                            - course: PB HLTH.150E
+                            - course: PB HLTH.162A
+            - AND: # Electives
+                - units:
+                    min: 12
+                    courses:
+                        - course: CHEM.112A
+                        - course: CHEM.112B
+                        - course: CHM ENG.108
+                        - course: CHM ENG.109
+                        - course: CHM ENG.110
+                        - course: CHM ENG.111
+                        - course: CHM ENG.114
+                        - course: CY PLAN.112A
+                        - course: CY PLAN.120
+                        - course: DEMOG.110
+                        - course: ECON.157
+                        - course: ENE,RES.100
+                        - course: ENE,RES.102
+                        - course: ENE,RES.130
+                        - course: ESPM.102D
+                        - course: ESPM.145
+                        - course: ESPM.146
+                        - course: ESPM.167
+                        - course: GEOG.130
+                        - course: INTEGBI.131
+                        - course: INTEGBI.132
+                        - course: INTEGBI.137
+                        - course: INTEGBI.140
+                        - course: LNS.103
+                        - course: LNS.107
+                        - course: LNS.165
+                        - course: LNS.168
+                        - course: MATH.53
+                        - course: MATH.54
+                        - course: MEDIAST.102
+                        - course: MCELLBI.102
+                        - course: MCELLBI.114
+                        - course: MCELLBI.130
+                        - course: MCELLBI.140
+                        - course: MCELLBI.142
+                        - course: MCELLBI.152
+                        - course: MCELLBI.160
+                        - course: PB HLTH.14
+                        - course: PB HLTH.103
+                        - course: PB HLTH.104A
+                        - course: PB HLTH.104B
+                        - course: PB HLTH.105
+                        - course: PB HLTH.107
+                        - course: PB HLTH.112
+                        - course: PB HLTH.113
+                        - course: PB HLTH.114
+                        - course: PB HLTH.116
+                        - course: PB HLTH.126
+                        - course: PB HLTH.C129
+                        - course: PB HLTH.143
+                        - course: PB HLTH.145
+                        - course: PB HLTH.C155
+                        - course: PB HLTH.172
+                        - course: PB HLTH.180
+                        - course: PB HLTH.181
+                        - course: PB HLTH.183
+                        - course: PLANTBI.110
+                        - course: POL SCI.103
+                        - course: POL SCI.150
+                        - course: POL SCI.171
+                        - course: PUB POL.101
+                        - course: PUB POL.117AC
+                        - course: PUB POL.156
+                        - course: PUB POL.162C
+                        - course: PUB POL.179
+                        - course: SOC WEL.112
+                        - course: STAT.134
+                        - course: STAT.135
+                        - course: STAT.150
+                        - course: STAT.151AB
+                        - course: STAT.152

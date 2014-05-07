@@ -5,15 +5,6 @@ rules:
         rule: AND
         args:
             - rule: coe_humanities_and_social_sciences
-            - rule: coe_lowerdiv_mechanical_engineering
-            - rule: coe_upperdiv_mechanical_engineering
-            - rule: units_upperdiv
-            - rule: units_total
-
-    coe_lowerdiv_mechanical_engineering:
-        description: "Mechanical Engineering Lower Division Requirements"
-        rule: AND
-        args:
             - rule: chem1_4a
             - course: ENGIN.7
             - course: ENGIN.10
@@ -26,11 +17,6 @@ rules:
             - course: MATH.54
             - course: PHYSICS.7A
             - course: PHYSICS.7B
-
-    coe_upperdiv_mechanical_engineering:
-        description: "Mechanical Engineering Upper Division Requirements"
-        rule: AND
-        args:
             - course: EL ENG.100
             - course: MEC ENG.102A
             - course: MEC ENG.102B
@@ -41,6 +27,20 @@ rules:
             - course: MEC ENG.109
             - course: MEC ENG.132
             - rule: coe_mechanical_engineering_technical
+            - rule: units_upperdiv
+            - rule: units_total
+
+# not sure if we should do it like this or split into lowerdiv/upperdiv
+
+    coe_lowerdiv_mechanical_engineering:
+        description: "Mechanical Engineering Lower Division Requirements"
+        rule: AND
+        args:
+
+    coe_upperdiv_mechanical_engineering:
+        description: "Mechanical Engineering Upper Division Requirements"
+        rule: AND
+        args:
 
     coe_mechanical_engineering_technical:
         description: "Mechanical Engineering Technical Electives"

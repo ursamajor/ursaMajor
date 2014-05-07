@@ -5,15 +5,6 @@ rules:
         rule: AND
         args:
             - rule: coe_humanities_and_social_sciences
-            - rule: coe_lowerdiv_materials_science_mechanical_engineering
-            - rule: coe_upperdiv_materials_science_mechanical_engineering
-            - rule: units_upperdiv
-            - rule: units_total
-
-    coe_lowerdiv_materials_science_mechanical_engineering:
-        description: "Joint Materials Science and Mechanical Engineering Lower Division Requirements"
-        rule: AND
-        args:
             - rule: chem1_4a
             - course: MATH.1A
             - course: MATH.1B
@@ -27,10 +18,6 @@ rules:
             - course: ENGIN.45
             - course: MEC ENG.40
             - course: MEC ENG.C85
-
-    coe_upperdiv_materials_science_mechanical_engineering:
-        description: "Joint Materials Science and Mechanical Engineering Upper Division Requirements"
-        rule: AND
             - course: EL ENG.100
             - course: MAT SCI.102
             - course: MAT SCI.103
@@ -49,6 +36,19 @@ rules:
             - rule: mse_tech
             - rule: mece_other
             - rule: coe_joint_materials_science_mechanical_engineering_other
+            - rule: units_upperdiv
+            - rule: units_total
+
+# not sure if we should do it like this or split into lowerdiv/upperdiv
+
+    coe_lowerdiv_materials_science_mechanical_engineering:
+        description: "Joint Materials Science and Mechanical Engineering Lower Division Requirements"
+        rule: AND
+        args:
+
+    coe_upperdiv_materials_science_mechanical_engineering:
+        description: "Joint Materials Science and Mechanical Engineering Upper Division Requirements"
+        rule: AND
 
     mece108_mse113:
         hidden: true

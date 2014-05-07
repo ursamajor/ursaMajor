@@ -143,7 +143,7 @@ rules: # same major, tracks COMPLETELY different
             - rule: nutri_sci_phys_other
 
     nutri_sci_phys_other:
-        hidden: true
+        description: "Molecular Toxicology Physiology Other Upper Division Requirements"
         rule: units
         args:
             min: 20

@@ -23,11 +23,10 @@ rules:
             - rule: crs_math
             - course: ESPM.90
             - rule: crs_breadth
-            - rule: crs_breadth
             - rule: cnr_prepatory_conservation_requirements
 
     crs_bio:
-        hidden: true
+        description: "Conservation and Resource Studies General Biology Requirement"
         rule: OR
         args:
             - rule: bio1a
@@ -35,7 +34,7 @@ rules:
             - rule: bio11
 
     crs_math:
-        hidden: true
+        description: "Conservation and Resource Studies Calculus or Statistics Requirement"
         rule: OR
         args:
             - course: MATH.16A
@@ -48,8 +47,8 @@ rules:
             - course: STAT.131A
             - course: PB HLTH.142A
 
-    crs_breadth:
-        hidden: true
+    crs_breadth: # combined this in order to ensure 5 courses
+        description: "Conservation and Resource Studies Breadth"
         rule: count_courses
         args:
             min: 5

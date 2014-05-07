@@ -1,0 +1,75 @@
+rules:
+
+    coe_joint_materials_science_and_nuclear_engineering_major:
+        description: "Joint Materials Science and Nuclear Engineering Major"
+        rule: AND
+        args:
+            - rule: coe_humanities_and_social_sciences
+            - rule: chem1_4a
+            - course: MATH.1A
+            - course: MATH.1B
+            - course: MATH.53
+            - course: MATH.54
+            - course: PHYSICS.7A
+            - course: PHYSICS.7B
+            - course: PHYSICS.7C
+            - course: ENGIN.7
+            - course: ENGIN.45
+            - rule: ee40_100
+            - course: MEC ENG.C85
+            - course: NUC ENG.92
+            - course: ENGIN.115
+            - course: MAT SCI.102
+            - course: MAT SCI.103
+            - course: MAT SCI.104
+            - course: MAT SCI.111
+            - course: MAT SCI.112
+            - course: MAT SCI.113
+            - course: MAT SCI.130
+            - course: NUC ENG.101
+            - course: NUC ENG.104
+            - course: NUC ENG.120
+            - course: NUC ENG.150
+            - course: NUC ENG.170A
+            - rule: coe_materials_nuclear_engineering_technical_electives
+            - rule: coe_materials_nuclear_engineering_tech_nuclear_engineering
+            - rule: coe_nuclear_engineering_ethics
+            - rule: units_upperdiv
+            - rule: units_total
+
+# not sure if we should do it like this or split into lowerdiv/upperdiv
+
+    coe_lowerdiv_materials_nuclear_engineering:
+        description: "Joint Materials Science and Nuclear Engineering Lower Division Requirements"
+        rule: AND
+        args:
+
+    coe_upperdiv_materials_nuclear_engineering:
+        description: "Joint Materials Science and Nuclear Engineering Upper Division Requirements"
+        rule: AND
+        args:
+
+    coe_materials_nuclear_engineering_technical_electives:
+        description: "Joint Materials Science and Nuclear Engineering Technical Electives"
+        rule: AND
+        args:
+            - rule: mse_nuc_mse_tech
+            - rule: mse_nuc_nuc_tech
+
+    mse_nuc_mse_tech:
+        hidden: true
+        rule: OR
+        args:
+            - course: MAT SCI.120
+            - course: MAT SCI.121
+            - course: MAT SCI.122
+            - course: MAT SCI.123
+            - course: MAT SCI.125
+
+    mse_nuc_nuc_tech:
+        hidden: true
+        rule: units
+            min: 6
+            rule: upperdiv_nuclear_engineering # don't include others
+
+

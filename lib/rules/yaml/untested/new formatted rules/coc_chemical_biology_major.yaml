@@ -4,17 +4,6 @@ rules:
         description: "Chemical Biology Major"
         rule: AND
         args:
-            - rule: coc_lowerdiv_chemical_biology_requirements
-            - rule: coc_upperdiv_chemical_biology_requirements
-            - rule: units_upperdiv
-            - rule: units_total
-
-
-
-    coc_lowerdiv_chemical_biology_requirements:
-        description: "Lower Division Chemical Biology Requirements"
-        rule: AND
-        args:
             - rule: university_rc_A
             - rule: university_rc_B
             - rule: coc_forlang
@@ -30,6 +19,22 @@ rules:
             - course: MATH.54
             - rule: physics_7_8
             - rule: bio1a
+            - course: CHEM.120A
+            - course: CHEM.120B
+            - course: CHEM.103
+            - course: CHEM.135
+            - rule: coc_chembio_more
+            - rule: chembio_other_units
+            - rule: units_upperdiv
+            - rule: units_total
+
+
+# not sure if we should do it like this or split into lowerdiv/upperdiv
+
+    coc_lowerdiv_chemical_biology_requirements:
+        description: "Lower Division Chemical Biology Requirements"
+        rule: AND
+        args:
 
     coc_forlang:
         hidden: true
@@ -50,12 +55,6 @@ rules:
         description: "Upper Division Chemical Biology Requirements"
         rule: AND
         args:
-            - course: CHEM.120A
-            - course: CHEM.120B
-            - course: CHEM.103
-            - course: CHEM.135
-            - rule: coc_chembio_more
-            - rule: chembio_other_units
 
     coc_chembio_more:
         hidden: true

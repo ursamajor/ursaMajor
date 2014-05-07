@@ -5,16 +5,6 @@ rules:
         rule: AND
         args:
             - rule: coe_humanities_and_social_sciences
-            - rule: coe_lowerdiv_engineering_physics
-            - rule: coe_upperdiv_engineering_physics
-            - rule: units_upperdiv
-            - rule: units_total
-
-
-    coe_lowerdiv_engineering_physics:
-        description: "Engineering Physics Lower Division Requirements"
-        rule: AND
-        args:
             - rule: chem1_4a
             - rule: chem1b_4b
             - rule: e7_cs71a
@@ -26,9 +16,31 @@ rules:
             - course: PHYSICS.7B
             - course: PHYSICS.7C
             - rule: eng_phys_lowerdiv_tech
+            - rule: eng_phys_tech
+            - rule: eng_phys_upperdiv_phys
+            - course: PHYSICS.137A
+            - course: PHYSICS.137B
+            - course: PHYSICS.110A
+            - course: PHYSICS.110B
+            - course: EL ENG.117
+            - rule: e115_phys112
+            - rule: eng_phys_math_or
+            - rule: mece105_phys105
+            - rule: ee143_nuc104_phys106
+            - rule: mats111_phys141a
+            - rule: ee119_bioe164
+            - rule: units_upperdiv
+            - rule: units_total
+
+# not sure if we should do it like this or split into lowerdiv/upperdiv
+
+    coe_lowerdiv_engineering_physics:
+        description: "Engineering Physics Lower Division Requirements"
+        rule: AND
+        args:
 
     eng_phys_lowerdiv_tech:
-        hidden: true
+        description: "Engineering Physics Lower Division Technical Courses"
         rule: count_courses
             min: 2
             rule: OR
@@ -47,22 +59,9 @@ rules:
         description: "Engineering Physics Upper Division Requirements"
         rule: AND
         args:
-            - rule: eng_phys_tech
-            - rule: eng_phys_upperdiv_phys
-            - course: PHYSICS.137A
-            - course: PHYSICS.137B
-            - course: PHYSICS.110A
-            - course: PHYSICS.110B
-            - course: EL ENG.117
-            - rule: e115_phys112
-            - rule: eng_phys_math_or
-            - rule: mece105_phys105
-            - rule: ee143_nuc104_phys106
-            - rule: mats111_phys141a
-            - rule: ee119_bioe164
 
     eng_phys_tech:
-        hidden: true
+        description: "Engineering Physics Upper Division Technical Courses"
         rule: units
             min: 15
             rule: coe_engineering_electives

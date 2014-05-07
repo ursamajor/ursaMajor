@@ -207,7 +207,7 @@ econ_lowerdiv:
         - course: ECON.C3
         - course: ENVECON.C3
 
-stat2:
+stat2_20_21_25_131a:
     hidden: true
     rule: OR
     args:

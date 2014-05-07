@@ -1,0 +1,116 @@
+rules:
+
+    ls_history_major:
+        description: "History Major"
+        rule: AND
+        args:
+            - rule: university_all
+            - rule: ls_breadth_all
+            - rule: ls_lowerdiv_history
+            - rule: ls_upperdiv_history
+            - rule: ls_history_premodern
+            - rule: units_upperdiv
+            - rule: units_total
+
+    ls_lowerdiv_history:
+        description: "History Lower Division Requirements"
+        rule: count_courses
+            min: 4
+            args:
+                - rule: ls_history_survey_us
+                - rule: ls_history_survey_europe
+                - rule: ls_history_survey_other
+                - dept: HISTORY
+                    - NOT:
+                        - course: HISTORY.R1B
+                        - course: HISTORY.24
+                        - course: HISTORY.84
+                        - course: HISTORY.98
+
+    ls_history_survey_us:
+        description: "Survey in the History of the United States"
+        rule: OR
+        args:
+            - course: HISTORY.7A
+            - course: HISTORY.7B
+
+    ls_history_survey_europe:
+        description: "Survey in the History of Europe"
+        rule: OR
+        args:
+            - course: HISTORY.4A
+            - course: HISTORY.4B
+            - course: HISTORY.5
+
+    ls_history_survey_other:
+        description: "Survey in the History of Another World Area"
+        rule: OR
+        args:
+            - course: HISTORY.3
+            - course: HISTORY.6
+            - course: HISTORY.6A
+            - course: HISTORY.6B
+            - course: HISTORY.8A
+            - course: HISTORY.8B
+            - course: HISTORY.10
+            - course: HISTORY.11
+            - course: HISTORY.12
+            - course: HISTORY.14
+
+    ls_upperdiv_history:
+        description: "History Upper Division Requirements"
+        rule: count_courses
+            min: 8
+            rule: AND
+            args:
+                - course: HISTORY.103
+                - course: HISTORY.101
+                - rule: upperdiv_history
+                - rule: ls_history_concentration
+
+    ls_history_concentration:
+        description: "History Concentration"
+        rule: count_courses
+            min: 4
+            rule: OR
+
+    ls_history_premodern:
+        description: "History Premodern Requirement"
+        rule: OR
+        args:
+            - course: HISTORY.2
+            - course: HISTORY.3
+            - course: HISTORY.4A
+            - course: HISTORY.4B
+            - course: HISTORY.6A
+            - course: HISTORY.30A
+            - course: HISTORY.100AP
+            - course: HISTORY.105A
+            - course: HISTORY.105B
+            - course: HISTORY.105C
+            - course: HISTORY.106A
+            - course: HISTORY.106B
+            - course: HISTORY.107D
+            - course: HISTORY.108
+            - course: HISTORY.109A
+            - course: HISTORY.109B
+            - course: HISTORY.111A
+            - course: HISTORY.113A
+            - course: HISTORY.114A
+            - course: HISTORY.116A
+            - course: HISTORY.116B
+            - course: HISTORY.117A
+            - course: HISTORY.117C
+            - course: HISTORY.117D
+            - course: HISTORY.118A
+            - course: HISTORY.149B
+            - course: HISTORY.150A
+            - course: HISTORY.150B
+            - course: HISTORY.150C
+            - course: HISTORY.155A
+            - course: HISTORY.155B
+            - course: HISTORY.171A
+            - course: HISTORY.C175A
+            - course: HISTORY.177A
+            - course: HISTORY.185A
+

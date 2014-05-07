@@ -4,18 +4,6 @@ rules:
         description: "Chemical Engineering Major"
         rule: AND
         args:
-            - rule: coc_lowerdiv_chemical_engineering_requirements
-            - rule: coc_upperdiv_chemical_engineering_requirements
-            - rule: coc_concentration_chemical_engineering_requirement
-            - rule: units_upperdiv
-            - rule: units_total
-
-
-
-    coc_lowerdiv_chemical_engineering_requirements:
-        description: "Lower Division Chemical Engineering Requirements"
-        rule: AND
-        args:
             - rule: cheme_rc
             - rule: cheme_breadth
             - course: CHEM.C96
@@ -32,14 +20,24 @@ rules:
             - course: MATH.54
             - course: PHYSICS.7A
             - course: PHYSICS.7B
+            - course: ENGIN.45
+            - course: EL ENG.100
+            - rule: cheme_other
+            - rule: coc_concentration_chemical_engineering_requirement
+            - rule: units_upperdiv
+            - rule: units_total
+
+# not sure if we should do it like this or split into lowerdiv/upperdiv
+
+    coc_lowerdiv_chemical_engineering_requirements:
+        description: "Lower Division Chemical Engineering Requirements"
+        rule: AND
+        args:
 
     coc_upperdiv_chemical_engineering_requirements:
         description: "Upper Division Chemical Engineering Requirements"
         rule: AND
         args:
-            - course: ENGIN.45
-            - course: EL ENG.100
-            - rule: cheme_other
 
     cheme_other:
         hidden: true

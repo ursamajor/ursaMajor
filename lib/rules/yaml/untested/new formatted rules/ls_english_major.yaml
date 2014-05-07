@@ -1,0 +1,67 @@
+rules:
+
+    ls_english_major:
+        description: "English Major"
+        rule: AND
+        args:
+            - rule: university_all
+            - rule: ls_breadth_all
+            - rule: ls_english_foundational
+            - rule: ls_english_pre1800
+            - rule: ls_english_seminar
+            - rule: ls_english_electives
+            - rule: units_upperdiv
+            - rule: units_total
+
+    ls_english_foundational:
+        description: "English Foudnational Courses"
+        rule: AND
+        args:
+            - course: ENGLISH.45A
+            - course: ENGLISH.45B
+            - course: ENGLISH.45C
+            - rule: ls_english_shakespeare_courses
+
+    ls_english_shakespeare_courses:
+        description: "Shakespeare Courses"
+        rule: OR
+        args:
+            - course: ENGLISH.117
+            - course: ENGLISH.117A
+            - course: ENGLISH.117B
+            - course: ENGLISH.117J
+            - course: ENGLISH.117S
+
+    ls_english_pre1800:
+        description: "English Pre-1800 Courses"
+        rule: OR
+        args:
+            - course: ENGLISH.104
+            - course: ENGLISH.105
+            - course: ENGLISH.110
+            - course: ENGLISH.111
+            - course: ENGLISH.112
+            - course: ENGLISH.114A
+            - course: ENGLISH.115A
+            - course: ENGLISH.115B
+            - course: ENGLISH.118
+            - course: ENGLISH.119
+            - course: ENGLISH.120
+            - course: ENGLISH.125A
+            - course: ENGLISH.130A
+
+    ls_english_seminar:
+        description: "English Seminar"
+        rule: OR
+        args:
+            - course: ENGLISH.190
+            - course: ENGLISH.H195A
+            - course: ENGLISH.H195B
+
+    ls_english_electives:
+        description: "English Electives"
+        rule: count_courses
+            min: 9 # actually 6 electives, but include others
+            rule: upperdiv_english
+
+

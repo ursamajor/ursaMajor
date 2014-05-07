@@ -1,0 +1,358 @@
+rules:
+
+    ls_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # lower division
+            - numcourses:
+                min: 2
+                courses:
+                    - course: POL SCI.1 # can ap out of PS 1
+                    - course: POL SCI.2
+                    - course: POL SCI.4
+                    - course: POL SCI.5
+            - course: POL SCI.3
+        - OR: # history requirement
+            - course: HISTORY.10
+            - course: HISTORY.112A
+            - course: HISTORY.112B
+            - course: AFRICAM.4A
+            - course: AFRICAM.4B
+            - course: HISTORY.6A
+            - course: HISTORY.6B
+            - course: HISTORY.11
+            - course: HISTORY.12
+            - course: HISTORY.14
+            - course: HISTORY.109A
+            - course: HISTORY.109B
+            - course: HISTORY.109C
+            - course: HISTORY.111A
+            - course: HISTORY.111B
+            - course: HISTORY.111C
+            - course: HISTORY.113B
+            - course: HISTORY.114A
+            - course: HISTORY.114B
+            - course: HISTORY.116A
+            - course: HISTORY.116B
+            - course: HISTORY.116C
+            - course: HISTORY.116D
+            - course: HISTORY.118A
+            - course: HISTORY.118B
+            - course: HISTORY.118C
+            - course: ASIANST.10
+            - course: NE STUD.1O
+            - course: NE STUD.C26
+            - course: NE STUD.109
+            - course: NE STUD.130A
+            - course: NE STUD.130B
+            - course: NE STUD.147
+            - course: NE STUD.173A
+            - course: NE STUD.173B
+            - course: NE STUD.175
+            - course: HISTORY.154
+            - course: HISTORY.4A
+            - course: HISTORY.4B
+            - course: HISTORY.5
+            - course: HISTORY.105A
+            - course: HISTORY.105B
+            - course: HISTORY.105C
+            - course: HISTORY.106A
+            - course: HISTORY.106B
+            - course: HISTORY.108
+            - course: HISTORY.149B
+            - course: HISTORY.150A
+            - course: HISTORY.150B
+            - course: HISTORY.150C
+            - course: HISTORY.151A
+            - course: HISTORY.151B
+            - course: HISTORY.151C
+            - course: HISTORY.152A
+            - course: HISTORY.C153
+            - course: HISTORY.155A
+            - course: HISTORY.155B
+            - course: HISTORY.156A
+            - course: HISTORY.156B
+            - course: HISTORY.C157
+            - course: HISTORY.158A
+            - course: HISTORY.158B
+            - course: HISTORY.158C
+            - course: HISTORY.159A
+            - course: HISTORY.159B
+            - course: HISTORY.162A
+            - course: HISTORY.162B
+            - course: HISTORY.163A
+            - course: HISTORY.163B
+            - course: HISTORY.164A
+            - course: HISTORY.165A
+            - course: HISTORY.165B
+            - course: HISTORY.165C
+            - course: HISTORY.166A
+            - course: HISTORY.166B
+            - course: HISTORY.166C
+            - course: HISTORY.167A
+            - course: HISTORY.167B
+            - course: HISTORY.167C
+            - course: HISTORY.168A
+            - course: HISTORY.169A
+            - course: HISTORY.170
+            - course: HISTORY.171A
+            - course: HISTORY.171B
+            - course: HISTORY.171C
+            - course: HISTORY.173B
+            - course: HISTORY.173C
+            - course: HISTORY.C175A
+            - course: HISTORY.C175B
+            - course: HISTORY.177A
+            - course: HISTORY.177B
+            - course: CELTIC.70
+            - course: CLASSIC.10A
+            - course: CLASSIC.10B
+            - course: GERMAN.160A
+            - course: GERMAN.160C
+            - course: PORTUG.112
+            - course: SCANDIN.123
+            - course: SCANDIN.127
+            - course: SCANDIN.128
+            - course: UGIS.55A
+            - course: UGIS.55B
+            - course: HISTORY.8A
+            - course: HISTORY.8B
+            - course: HISTORY.140A
+            - course: HISTORY.140B
+            - course: HISTORY.141A
+            - course: HISTORY.141B
+            - course: HISTORY.143
+            - course: HISTORY.145
+            - course: AFRICAM.135
+            - course: PORTUG.113
+            - course: DEV STD.C100
+            - course: HISTORY.160
+            - course: ECON.115
+            - course: HISTORY.161
+            - course: HISTORY.185A
+            - course: HISTORY.185B
+            - course: IAS.45
+            - course: HISTORY.7A
+            - course: HISTORY.7B
+            - course: HISTORY.16AC
+            - course: HISTORY.121A
+            - course: HISTORY.121B
+            - course: HISTORY.122AC
+            - course: HISTORY.123
+            - course: HISTORY.124A
+            - course: HISTORY.124B
+            - course: HISTORY.126A
+            - course: HISTORY.126B
+            - course: HISTORY.130A
+            - course: HISTORY.130B
+            - course: HISTORY.131A
+            - course: HISTORY.131B
+            - course: HISTORY.132A
+            - course: HISTORY.132B
+            - course: HISTORY.137AC
+            - course: HISTORY.C139B
+            - course: HISTORY.139D
+            - course: AFRICAM.111
+            - course: ECON.113
+            - course: ETH STD.10A
+            - course: ETH STD.21AC
+            - course: ETH STD.130AC
+            - course: PACS.125AC
+        - AND: # upper div
+            - numcourses:
+                min: 8
+                courses:
+                    - AND: # distribution req, past lower divs can double count 
+                        - ls_political_science_specialization_american_politics
+                        - ls_political_science_specialization_comparative_politics
+                        - ls_political_science_specialization_empirical_theory
+                        - ls_political_science_specialization_political_theory
+                        - ls_political_science_specialization_international_relations
+                    - OR: # subfield specialization
+                        - AND:
+                            - numcourses:
+                                min: 2
+                                courses:
+                                    - ls_political_science_specialization_american_politics
+                        - AND:
+                            - numcourses:
+                                min: 2
+                                courses:
+                                    - ls_political_science_specialization_comparative_politics
+                        - AND:
+                            - numcourses:
+                                min: 2
+                                courses:
+                                    - ls_political_science_specialization_empirical_theory
+                        - AND:
+                            - numcourses:
+                                min: 2
+                                courses:
+                                    - ls_political_science_specialization_political_theory
+                        - AND:
+                            - numcourses:
+                                min: 2
+                                courses:
+                                    - ls_political_science_specialization_international_relations
+
+# this is really confusing. so the confusing parts in words:
+    # choose one of five specializations as shown. take the lower div based
+    # on your chosen specialization, and two other upper divs from the list of
+    # classes in that specialization. in addition, you have to take two out of 
+    # the four lower divs, which can also double count towards the distribution
+    # requirement. You have to take 8 upper divs in the POL SCI total. Idk
+    # how to represent all this.
+
+    ls_political_science_specialization_american_politics:
+        description: "Political Science Specialization: American Politics"
+        rule: OR
+        args:
+            - course: POL SCI.1
+            - course: POL SCI.102
+            - course: POL SCI.103W
+            - course: POL SCI.104
+            - course: POL SCI.105
+            - course: POL SCI.106A
+            - course: POL SCI.109A
+            - course: POL SCI.109B
+            - course: POL SCI.109G
+            - course: POL SCI.109H
+            - course: POL SCI.109L
+            - course: POL SCI.109M
+            - course: POL SCI.109R
+            - course: POL SCI.109W
+            - course: POL SCI.110B
+            - course: POL SCI.111AC
+            - course: POL SCI.150
+            - course: POL SCI.157A
+            - course: POL SCI.157B
+            - course: POL SCI.161
+            - course: POL SCI.164A
+            - course: POL SCI.N164A
+            - course: POL SCI.166
+            - course: POL SCI.167AC
+            - course: POL SCI.169
+            - course: POL SCI.171
+            - course: POL SCI.173S
+            - course: POL SCI.175A
+            - course: POL SCI.179
+            - course: POL SCI.181
+
+    ls_political_science_specialization_comparative_politics:
+        description: "Political Science Specialization: Comparative Politics"
+        rule: OR
+        args:
+            - course: POL SCI.2
+            - course: POL SCI.137A
+            - course: POL SCI.138E
+            - course: POL SCI.138G
+            - course: POL SCI.139B
+            - course: POL SCI.C139
+            - course: CY PLAN.C139
+            - course: POL SCI.139D
+            - course: POL SCI.140E
+            - course: POL SCI.140F
+            - course: POL SCI.140R
+            - course: POL SCI.140S
+            - course: POL SCI.140
+            - course: POL SCI.141C
+            - course: POL SCI.142A
+            - course: POL SCI.143A
+            - course: POL SCI.143B
+            - course: POL SCI.143C
+            - course: POL SCI.143T
+            - course: POL SCI.144
+            - course: POL SCI.144B
+            - course: POL SCI.145A
+            - course: POL SCI.145B
+            - course: POL SCI.W145A
+            - course: POL SCI.146A
+            - course: POL SCI.146D
+            - course: POL SCI.N146C
+            - course: POL SCI.147F
+            - course: POL SCI.147G
+            - course: POL SCI.147T
+            - course: POL SCI.148A
+            - course: POL SCI.149B
+            - course: POL SCI.149C
+            - course: POL SCI.149E
+            - course: POL SCI.149F
+            - course: POL SCI.149I
+            - course: POL SCI.149J
+            - course: POL SCI.149P
+            - course: POL SCI.149W
+            - course: POL SCI.149Y
+            - course: POL SCI.149Z
+
+    ls_political_science_specialization_empirical_theory:
+        description: "Political Science Specialization: Empirical Theory and Quantitative Methods"
+        rule: OR
+        args:
+            - course: POL SCI.3
+            - course: POL SCI.C131A
+            - course: ECON.C142
+            - course: PUB POL.C142
+            - course: POL SCI.C135
+            - course: ECON.C110
+            - course: POL SCI.161
+
+    ls_political_science_specialization_political_theory:
+        description: "Political Science Specialization: Political Theory"
+        rule: OR
+        args:
+            - course: POL SCI.4
+            - course: POL SCI.112A
+            - course: POL SCI.112B
+            - course: POL SCI.112C
+            - course: POL SCI.112D
+            - course: POL SCI.N113A
+            - course: POL SCI.114A
+            - course: POL SCI.116A
+            - course: POL SCI.116B
+            - course: POL SCI.116C
+            - course: POL SCI.116D
+            - course: POL SCI.116E
+            - course: POL SCI.116F
+            - course: POL SCI.116G
+            - course: POL SCI.116H
+            - course: POL SCI.116I
+            - course: POL SCI.116J
+            - course: POL SCI.116K
+            - course: POL SCI.116L
+            - course: POL SCI.116M
+            - course: POL SCI.116N
+            - course: POL SCI.116O
+            - course: POL SCI.116P
+            - course: POL SCI.116Q
+            - course: POL SCI.116R
+            - course: POL SCI.116S
+            - course: POL SCI.116T
+            - course: POL SCI.116U
+            - course: POL SCI.116V
+            - course: POL SCI.116W
+            - course: POL SCI.116X
+            - course: POL SCI.116Y
+            - course: POL SCI.116Z
+            - course: POL SCI.118AC
+
+    ls_political_science_specialization_international_relations:
+        description: "Political Science Specialization: International Relations"
+        rule: OR
+        args:
+            - course: POL SCI.122A
+            - course: POL SCI.123A
+            - course: POL SCI.123G
+            - course: POL SCI.123H
+            - course: POL SCI.123M
+            - course: POL SCI.123S
+            - course: POL SCI.124A
+            - course: POL SCI.124C
+            - course: POL SCI.126A
+            - course: POL SCI.128
+            - course: POL SCI.128A
+            - course: POL SCI.129B
+
+
+

@@ -1,0 +1,154 @@
+rules:
+
+    ls_cell_developmental_biology_major:
+        description: "Cell Developmental Biology Major"
+        rule: AND
+        args:
+            - rule: university_all
+            - rule: ls_breadth_all
+            - rule: ls_lowerdiv_cell_developmental
+            - rule: ls_upperdiv_cell_developmental
+            - rule: units_upperdiv
+            - rule: units_total
+
+    ls_lowerdiv_cell_developmental:
+        description: "Cell Developmental Biology Lower Division Requirements"
+        rule: AND
+        args:
+            - rule: ls_molecular_cell_biology_lower_division
+            - course: CHEM.3A
+            - course: CHEM.3AL
+            - course: CHEM.3B
+            - course: CHEM.3BL
+
+    ls_upperdiv_cell_developmental:
+        description: "Cell Developmental Biology Upper Division Requirements"
+        rule: AND
+        args:
+            - course: MCELLBI.102
+            - course: MCELLBI.104
+            - course: MCELLBI.133L
+            - rule: ls_cell_developmental_biology_tracks
+
+    ls_cell_developmental_biology_tracks:
+        description: "Cell Developmental Biology Tracks"
+        rule: OR
+        args:
+            - rule: ls_cell_developmental_biology_cell_systems
+            - rule: ls_cell_developmental_biology_medical_biology
+
+    ls_cell_developmental_biology_cell_systems:
+        description: "Cell Developmental Biology Track: Cell & Systems Biology"
+        rule: AND
+        args:
+            - course: MCELLBI.130A
+            - rule: ls_cell_developmental_biology_cell_systems_electives
+
+    ls_cell_developmental_biology_cell_systems_electives:
+        description: "Cell & Systems Biology Electives"
+        rule: count_courses
+            min: 2
+            rule: OR
+            args:
+                - course: MCELLBI.C100A
+                - course: MCELLBI.C103
+                - course: MCELLBI.C112
+                - course: MCELLBI.C114
+                - course: MCELLBI.C116
+                - course: MCELLBI.132
+                - course: MCELLBI.C134
+                - course: MCELLBI.135A
+                - course: MCELLBI.136
+                - course: MCELLBI.137
+                - course: MCELLBI.141
+                - course: MCELLBI.143
+                - course: MCELLBI.C148
+                - course: MCELLBI.149
+                - course: MCELLBI.150
+                - course: MCELLBI.C160
+                - course: MCELLBI.163
+                - course: MCELLBI.165
+                - course: MCELLBI.166
+                - course: MCELLBI.167
+                - course: MCELLBI.130L
+                - course: MCELLBI.133L
+                - course: MCELLBI.140L
+                - course: MCELLBI.150L
+                - course: MCELLBI.160L
+                - course: MCELLBI.102
+                - course: MCELLBI.104
+                - course: MCELLBI.130
+                - course: MCELLBI.180
+                - course: MCELLBI.190
+                - course: MCELLBI.H196
+                - course: MCELLBI.198
+                - course: MCELLBI.199
+
+    ls_cell_developmental_biology_medical_biology:
+        description: "Cell Developmental Biology Track: Medical Biology & Physiology"
+        rule: AND
+        args:
+            - course: MCELLBI.136
+            - rule: ls_cell_developmental_biology_medical_biology_electives
+
+    ls_cell_developmental_biology_medical_biology_electives:
+        description: "Medical Biology & Physiology Electives"
+        rule: count_courses
+            min: 2
+            rule: OR
+            args:
+                - course: INTEGBI.103LF
+                - course: INTEGBI.104LF
+                - rule: ib117
+                - course: INTEGBI.123AL
+                - course: INTEGBI.131
+                - course: INTEGBI.137
+                - course: INTEGBI.140
+                - course: INTEGBI.C143A
+                - course: INTEGBI.C143B
+                - course: INTEGBI.148
+                - course: MCELLBI.C100A
+                - course: MCELLBI.100B
+                - course: MCELLBI.C103
+                - course: MCELLBI.C112
+                - course: MCELLBI.C114
+                - course: MCELLBI.C116
+                - course: MCELLBI.118
+                - course: MCELLBI.130L
+                - course: MCELLBI.130A
+                - course: MCELLBI.132
+                - course: MCELLBI.C134
+                - course: MCELLBI.135A
+                - course: MCELLBI.137
+                - course: MCELLBI.140
+                - course: MCELLBI.141
+                - course: MCELLBI.143
+                - course: MCELLBI.C148
+                - course: MCELLBI.149
+                - course: MCELLBI.150
+                - course: MCELLBI.C160
+                - course: MCELLBI.163
+                - course: MCELLBI.165
+                - course: MCELLBI.166
+                - course: MCELLBI.167
+                - course: NUSCTX.103
+                - course: NUSCTX.108A
+                - course: NUSCTX.110
+                - course: NUSCTX.150
+                - course: NUSCTX.160
+                - course: NUSCTX.161A
+                - course: PLANTBI.135
+                - course: PLANTBI.150
+                - course: PLANTBI.160
+                - course: PSYCH.110
+                - course: PSYCH.C113
+                - course: PSYCH.C116
+                - course: PB HLTH.141
+                - course: PB HLTH.142
+                - course: PB HLTH.150A
+                - course: PB HLTH.150B
+                - course: PB HLTH.162A
+                - course: STAT.131A
+
+
+

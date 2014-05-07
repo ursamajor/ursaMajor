@@ -1,0 +1,149 @@
+rules:
+
+    ls_american_studies_major:
+        description: "American Studies Major"
+        rule: AND
+        args:
+            - rule: university_all
+            - rule: ls_breadth_all
+            - rule: ls_lowerdiv_american_studies
+            - rule: ls_american_core_time
+            - rule: ls_american_core_place
+            - rule: ls_american_concentration
+            - rule: ls_american_thesis
+            - rule: ls_american_historical
+            - rule: units_upperdiv
+            - rule: units_total
+
+    ls_lowerdiv_american_studies:
+        description: "American Studies Lower Division Requirements"
+        rule: AND
+        args:
+            - rule: amerstd10
+            - rule: ls_lowerdiv_american_electives
+
+    amerstd10:
+        hidden: true
+        rule: OR
+        args:
+            - course: AMERSTD.10
+            - course: AMERSTD.10AC
+
+    ls_lowerdiv_american_electives:
+        description: "American Studies Lower Division Electives"
+        rule: count_courses
+            min: 3
+            rule: OR
+            args:
+                - rule: american_aerospc
+                - rule: american_africam
+                - course: ANTHRO.3AC
+                - course: ART.23AC
+                - rule: american_asamst
+                - course: COLWRIT.25AC
+                - course: COM LIT.60AC
+                - course: EDUC.75AC
+                - course: ENGLISH.31AC
+                - course: ESPM.C11
+                - course: ETH STD.10AC
+                - course: GWS.50AC
+                - course: HISTORY.7A
+                - course: HISTORY.7B
+                - course: LNS.C30U
+                - course: LNS.C40T
+                - course: LGBT.20AC
+                - course: LINGUIS.55AC
+                - course: MEDIAST.10
+                - course: MUSIC.26AC
+                - course: MUSIC.73
+                - rule: american_natamst
+                - course: POL SCI.1
+                - course: SOCIOL.3AC
+                - course: THEATER.25AC
+                - course: THEATER.52AC
+
+    american_asamst:
+        hidden: true
+        rule: count_courses
+            min: 2
+            rule: OR
+            args:
+                - course: ASAMST.20A
+                - course: ASAMST.20B
+                - course: ASAMST.20C
+
+    american_natamst:
+        hidden: true
+        rule: count_courses
+            min: 2
+            rule: OR
+            args:
+                - course: NATAMST.71
+                - course: NATAMST.72
+                - course: NATAMST.20A
+                - course: NATAMST.20B
+
+    american_africam:
+        hidden: true
+        rule: count_courses
+            min: 2
+            rule: OR
+            args:
+                - course: AFRICAM.28AC
+                - course: AFRICAM.5B
+                - course: AFRICAM.5A
+
+    american_aerospc:
+        hidden: true
+        rule: count_courses
+            min: 2
+            rule: OR
+            args:
+                - course: AEROSPC.1A
+                - course: AEROSPC.1B
+                - course: AEROSPC.2A
+                - course: AEROSPC.2B
+
+    ls_american_core_time:
+        description: "American Studies Core Methods - Time"
+        rule: OR
+        args:
+            - course: AMERSTD.101
+            - course: AMERSTD.C111
+            - course: AMERSTD.C132B
+            - course: AMERSTD.139AC
+
+    ls_american_core_place:
+        description: "American Studies Core Methods - Place"
+        rule: OR
+        args:
+            - course: AMERSTD.102
+            - course: AMERSTD.C112
+            - course: AMERSTD.C171
+            - course: AMERSTD.H110
+
+    ls_american_thesis:
+        description: "American Studies Thesis Requirement"
+        rule: OR
+        args:
+            - course: AMERSTD.191
+            - course: AMERSTD.190
+            - course: AMERSTD.H195
+            # THESIS OFFERED BY ANOTHER DEPT?!?!?! WUT.
+
+    ls_american_concentration:
+        description: "American Studies Area of Concentration"
+        rule: count_courses
+            min: 6
+            rule: OR
+            args:
+            # two different dept, no more than three from one
+
+    ls_american_historical:
+        description: "American Studies Historical Requirement"
+        rule: OR
+        args: # course focusing on US history, culture, or politics before 1900
+
+
+
+

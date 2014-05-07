@@ -22,7 +22,7 @@ rules:
             - rule: ced_individual_math
 
     ced_individual_math:
-        hidden: true
+        description: "Math Requirements for the Individual Major in CED"
         rule: OR
         args:
             - course: MATH.16A
@@ -44,7 +44,7 @@ rules:
 
 
     ced_upperdiv_individual_units:
-        hidden: true
+        description: "Electives for Individual Major in CED"
         rule: units
         args:
             min: 36
@@ -55,9 +55,12 @@ rules:
                 - rule: upperdiv_vision_studies
                 - rule: upperdiv_environmental_design
                 - rule: upperdiv_city_planning
-                max: 6
-                rule: OR
-                args:
-                    - upperdiv # max of 6 non-CED
+    ced_upperdiv_individual_other:
+        hidden: true
+        rule: units
+            max: 6
+            rule: OR
+            args:
+                - upperdiv # max of 6 non-CED
 
 

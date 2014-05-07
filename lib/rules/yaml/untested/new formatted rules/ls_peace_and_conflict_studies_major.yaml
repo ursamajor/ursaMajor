@@ -1,0 +1,295 @@
+rules:
+
+    ls_peace_and_conflict_studies_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # lower division
+            - course: PACS.10
+            - numcourses:
+                min: 2
+                courses:
+                    - course: ANTHRO.3
+                    - course: ANTHRO.3AC
+                    - course: ASIANST.10
+                    - course: DEV STD.C10
+                    - course: GEOG.C32
+                    - course: ECON.1
+                    - course: ECON.2
+                    - course: GWS.20
+                    - course: GEOG.4
+                    - course: GEOG.10
+                    - course: GEOG.20
+                    - course: GEOG.C55
+                    - course: NE STUD.C26
+                    - course: HISTORY.6B
+                    - course: HISTORY.7B
+                    - course: HISTORY.8B
+                    - course: HISTORY.10
+                    - course: HISTORY.11
+                    - course: HISTORY.12
+                    - course: HISTORY.14
+                    - course: IAS.45
+                    - course: LATAMST.10
+                    - course: M E STU.20
+                    - course: POL SCI.2
+                    - course: PSYCH.1
+                    - course: SOCIOL.1
+                    - course: SOCIOL.3AC
+                    - course: UGBA.10
+        - ls_ias_foreign_language_requirement
+        - AND: # upper division
+            - course: PACS.100
+            - course: PACS.190
+            - OR: # methodology
+                - course: DEMOG.110
+                - course: ECON.140
+                - course: ECON.141
+                - course: ECON.C142
+                - course: POL SCI.C131A
+                - course: PUB POL.C142
+                - course: ENVECON.C118
+                - course: IAS.C118
+                - course: IND ENG.162
+                - course: PSYCH.101
+                - course: PB HLTH.142
+                - course: SOCIOL.106
+                - course: STAT.131A
+                - course: AFRICAM.101
+                - course: ANTHRO.169B
+                - course: ETH STD.101A
+                - course: ETH STD.101B
+                - course: ETH STD.195
+                - course: IAS.102
+                - course: IAS.H102
+                - course: M E STU.102
+                - course: NATAMAST.110
+                - course: SOCIOL.105
+            - AND: # survey
+                - numcourses:
+                    min: 2
+                    courses:
+                        - ls_peace_and_conflict_studies_concentration_conflict_resolution
+                        - ls_peace_and_confict_studies_concentration_culture_and_identity
+                        - ls_peace_and_conflict_studies_concentration_global_governance
+                        - ls_peace_and_conflict_studies_concentration_human_rights
+                        - ls_peace_and_confict_studies_concentration_human_security
+                        - ls_peace_and_confict_studies_concentration_nonviolence
+            - AND: # concentration (can be others too)
+                - numcourses:
+                    min: 4
+                    courses:
+                        - OR:
+                            - ls_peace_and_conflict_studies_concentration_conflict_resolution
+                            - ls_peace_and_confict_studies_concentration_culture_and_identity
+                            - ls_peace_and_conflict_studies_concentration_global_governance
+                            - ls_peace_and_conflict_studies_concentration_human_rights
+                            - ls_peace_and_confict_studies_concentration_human_security
+                            - ls_peace_and_confict_studies_concentration_nonviolence
+
+    ls_peace_and_conflict_studies_concentration_conflict_resolution:
+        description: "Peace and Conflict Studies Concentration: Conflict Resolution"
+        rule: OR
+        args:
+            - course: AFRICAM.111
+            - course: ANTHRO.139
+            - course: CY PLAN.115
+            - course: GPP.115
+            - course: EDUC.140AC
+            - course: ESPM.155
+            - course: ESPM.163AC
+            - course: ESPM.168
+            - course: GEOG.130
+            - course: GWS.102
+            - course: HISTORY.112
+            - course: ISF.100A
+            - course: ISF.100B
+            - course: PACS.135
+            - course: PACS.149
+            - course: PACS.150
+            - course: PACS.150AC
+            - course: PACS.151
+            - course: PACS.154
+            - course: PACS.154AC
+            - course: PACS.164A
+            - course: PACS.164B
+            - course: PACS.170
+            - course: POL SCI.124A
+            - course: POL SCI.150
+            - course: PSYCH.160
+            - course: PSYCH.C162
+            - course: LNS.C160V
+            - course: PSYCH.166AC
+            - course: SOCIOL.130
+            - course: SOCIOL.130AC
+            - course: SOCIOL.131A
+            - course: SOCIOL.131AC
+            - course: SOCIOL.133
+            - course: UGBA.152
+
+    ls_peace_and_conflict_studies_concentration_culture_and_identity:
+        description: "Peace and Conflict Studies Concentration: Culture and Identity"
+        rule: OR
+        args:
+            - course: ANTHRO.189
+            - course: ASIANST.150
+            - course: ASAMST.150
+            - course: BUDDSTD.C120
+            - course: EA LANG.C120
+            - course: EDUC.140AC
+            - course: GWS.102
+            - course: GWS.103
+            - course: GERMAN.C109
+            - course: LNS.C180T
+            - course: HISTORY.100
+            - course: HISTORY.109C
+            - course: HISTORY.114B
+            - course: IAS.150
+            - course: LNS.150
+            - course: M E STU.130
+            - course: M E STU.150
+            - course: NATAMST.120AC
+            - course: PACS.125AC
+            - course: PACS.151
+            - course: POL SCI.122A
+            - course: POL SCI.144B
+            - course: SOCIOL.131A
+            - course: SOCIOL.131AC
+
+    ls_peace_and_conflict_studies_concentration_global_governance:
+        description: "Peace and Conflict Studies Concentration: Global Governance"
+        rule: OR
+        args:
+            - course: CY PLAN.115
+            - course: GPP.115
+            - course: ECON.115
+            - course: ECON.C181
+            - course: ENVECON.C181
+            - course: ENVECON.152
+            - course: ESPM.152
+            - course: GEOG.130
+            - course: GWS.141
+            - course: HISTORY.130
+            - course: HISTORY.162A
+            - course: HISTORY.162B
+            - course: PACS.130
+            - course: PACS.149
+            - course: PACS.151
+            - course: POLECON.101
+            - course: POL SCI.122A
+            - course: POL SCI.126A
+            - course: POL SCI.141C
+            - course: POL SCI.143A
+            - course: POL SCI.146A
+            - course: POL SCI.148A
+            - course: UGBA.178
+
+    ls_peace_and_conflict_studies_concentration_human_rights:
+        description: "Peace and Conflict Studies Concentration: Human Rights"
+        rule: OR
+        args:
+            - course: AFRICAM.111
+            - course: AFRICAM.112A
+            - course: AFRICAM.112B
+            - course: AFRICAM.138
+            - course: AFRICAM.139
+            - course: AMERSTD.102
+            - course: ANTHRO.139
+            - course: ASAMST.126
+            - course: ASAMST.141
+            - course: CHICANO.159
+            - course: CHICANO.174
+            - course: ENE,RES.175
+            - course: ESPM.161
+            - course: ESPM.162
+            - course: ESPM.163AC
+            - course: GERMAN.C109
+            - course: LNS.C180T
+            - course: GWS.141
+            - course: HISTORY.C187
+            - course: LNS.C140V
+            - course: ISF.100E
+            - course: LEGALST.107
+            - course: LEGALST.154
+            - course: LEGALST.177
+            - course: LEGALST.182
+            - course: NATAMST.101
+            - course: PACS.125AC
+            - course: PACS.126
+            - course: PACS.127
+            - course: PACS.128AC
+            - course: PACS.154
+            - course: POL SCI.124C
+            - course: POL SCI.140
+            - course: POL SCI.157A
+            - course: POL SCI.157B
+            - course: RHETOR.164
+            - course: RHETOR.165
+            - course: SOCIOL.111
+            - course: SOCIOL.124
+            - course: UGBA.175
+
+    ls_peace_and_conflict_studies_concentration_human_security:
+        description: "Peace and Conflict Studies Concentration: Human Security"
+        rule: OR
+        args:
+            - course: AFRICAM.112A
+            - course: AFRICAM.112B
+            - course: CY PLAN.115
+            - course: GPP.115
+            - course: DEV STD.C100
+            - course: GEOG.C112
+            - course: ECON.161
+            - course: ENVECON.152
+            - course: ESPM.155
+            - course: ESPM.165
+            - course: GEOG.C110
+            - course: ISF.C101
+            - course: GEOG.159AC
+            - course: EDUC.186AC
+            - course: ETH STD.159AC
+            - course: GEOG.164
+            - course: HISTORY.162A
+            - course: HISTORY.162B
+            - course: PACS.125AC
+            - course: PACS.149
+            - course: POL SCI.124A
+            - course: POL SCI.138E
+            - course: POL SCI.139B
+            - course: POL SCI.141C
+            - course: SOCIOL.127
+
+    ls_peace_and_conflict_studies_concentration_nonviolence:
+        description: "Peace and Conflict Studies Concentration: Nonviolence"
+        rule: OR
+        args:
+            - course: EDUC.189
+            - course: ETH STD.136
+            - course: ESPM.161
+            - course: ESPM.162
+            - course: GERMAN.C109
+            - course: LNS.C180T
+            - course: HISTORY.125A
+            - course: HISTORY.125B
+            - course: LEGALST.107
+            - course: NE STUD.146A
+            - course: NE STUD.146B
+            - course: PACS.149
+            - course: PACS.150
+            - course: PACS.150AC
+            - course: PACS.154
+            - course: PACS.164A
+            - course: PACS.164B
+            - course: PACS.170
+            - course: PHILOS.104
+            - course: PHILOS.108
+            - course: POL SCI.124A
+            - course: POL SCI.140
+            - course: PSYCH.167AC
+            - course: SOCIOL.C112
+            - course: RELIGST.C182
+            - course: SOCIOL.130
+            - course: SOCIOL.130AC
+
+

@@ -5,15 +5,6 @@ rules:
         rule: AND
         args:
             - rule: coe_humanities_and_social_sciences
-            - rule: coe_lowerdiv_mechanical_nuclear_engineering
-            - rule: coe_upperdiv_mechanical_nuclear_engineering
-            - rule: units_upperdiv
-            - rule: units_total
-
-    coe_lowerdiv_mechanical_nuclear_engineering:
-        description: "Joint Mechanical Engineering and Nuclear Engineering Lower Division Requirements"
-        rule: AND
-        args:
             - rule: chem1_4a
             - course: MATH.1A
             - course: MATH.1B
@@ -28,18 +19,6 @@ rules:
             - course: MEC ENG.40
             - course: MEC ENG.C85
             - rule: ee40_100
-
-    e10_nuce92:
-        hidden: true
-        rule: OR
-        args:
-            - course: ENGIN.10
-            - course: NUC ENG.92
-
-    coe_upperdiv_mechanical_nuclear_engineering:
-        description: "Joint Mechanical Engineering and Nuclear Engineering Upper Division Requirements"
-        rule: AND
-        args:
             - course: MEC ENG.102A
             - course: MEC ENG.102B
             - course: MEC ENG.104
@@ -54,6 +33,27 @@ rules:
             - course: NUC ENG.170A
             - rule: coe_mechanical_nuclear_engineering_technical
             - rule: coe_nuclear_engineering_ethics
+            - rule: units_upperdiv
+            - rule: units_total
+
+# not sure if we should do it like this or split into lowerdiv/upperdiv
+
+    coe_lowerdiv_mechanical_nuclear_engineering:
+        description: "Joint Mechanical Engineering and Nuclear Engineering Lower Division Requirements"
+        rule: AND
+        args:
+
+    e10_nuce92:
+        hidden: true
+        rule: OR
+        args:
+            - course: ENGIN.10
+            - course: NUC ENG.92
+
+    coe_upperdiv_mechanical_nuclear_engineering:
+        description: "Joint Mechanical Engineering and Nuclear Engineering Upper Division Requirements"
+        rule: AND
+        args:
 
     coe_mechanical_nuclear_engineering_technical:
         description: "Joint Mechanical Engineering and Nuclear Engineering Technical Electives"

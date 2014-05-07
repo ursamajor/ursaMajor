@@ -22,6 +22,7 @@ Plan Page
   - tutorial button
   - highlight whole row for rules (green pass, red fail)
   - sort by tabs (university, college, major)
+  - when clearing semester, say "Clear #{semester} #{year}" instead of backend name
 
 Rules Page
   - popular rules
@@ -31,6 +32,7 @@ Profile Page
   - user information (GPA, transcripts, major)
 
 Contact
+  - bug reporting
 
 Courses
   - save dept name as field
@@ -69,6 +71,7 @@ Chores
   - tag rules by major
   - clean up planscontroller
   - more progressive data-ng-cloak
+  - tests
 
 After First Release
   - sample major plan
@@ -111,6 +114,13 @@ Optional
     - separate courses and plans controller again (combined for sake of duplicate removal)
     - switch over bootstrap js to angular ui js
 
+  Performance
+    - is it worth it to not cache plan/show?
+      pros:
+        - fixes browser back/forward reverting any changes
+      cons:
+        - may have to reload all assets?
+
   Structure
     - move all requires
     config
@@ -124,11 +134,8 @@ Optional
         yaml files
 
 Errors
-  - browser back/forward caching issue
-  - http://www.sitekickr.com/blog/back-button-browser-cache/
-  - loses save
-  - course modal not rendered
-  - planCourses not updated?
+  - course modals not rendered sometimes for courses in plan
+    - planCourses not updated? 
 
 404 not found
 

@@ -5,15 +5,6 @@ rules:
         rule: AND
         args:
             - rule: coe_humanities_and_social_sciences
-            - rule: coe_lowerdiv_industrial_engineering
-            - rule: coe_upperdiv_industrial_engineering
-            - rule: units_upperdiv
-            - rule: units_total
-
-    coe_lowerdiv_industrial_engineering:
-        description: "Industrial Engineering Lower Division Requirements"
-        rule: AND
-        args:
             - rule: chem1_4a
             - course: ENGIN.7
             - course: MATH.1A
@@ -23,9 +14,27 @@ rules:
             - course: PHYSICS.7A
             - course: PHYSICS.7B
             - rule: ieor_programming
+            - course: ENGIN.120
+            - course: IND ENG.160
+            - course: IND ENG.161
+            - course: IND ENG.162
+            - course: IND ENG.165
+            - rule: ieor172_stat134
+            - course: IND ENG.131
+            - course: IND ENG.180
+            - rule: coe_industrial_engineering_electives
+            - rule: units_upperdiv
+            - rule: units_total
+
+# not sure if we should do it like this or split into lowerdiv/upperdiv
+
+    coe_lowerdiv_industrial_engineering:
+        description: "Industrial Engineering Lower Division Requirements"
+        rule: AND
+        args:
 
     ieor_programming:
-        hidden: true
+        description: "Industrial Engineering Programming Requirement"
         rule: OR
         args:
             - course: COMPSCI.9C
@@ -37,15 +46,6 @@ rules:
         description: "Industrial Engineering Upper Division Requirements"
         rule: AND
         args:
-            - course: ENGIN.120
-            - course: IND ENG.160
-            - course: IND ENG.161
-            - course: IND ENG.162
-            - course: IND ENG.165
-            - rule: ieor172_stat134
-            - course: IND ENG.131
-            - course: IND ENG.180
-            - rule: coe_industrial_engineering_electives
 
     coe_industrial_engineering_electives:
         description: "Industrial Engineering Electives"

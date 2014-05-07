@@ -5,17 +5,6 @@ rules:
         rule: AND
         args:
             - rule: coe_humanities_and_social_sciences
-            - rule: coe_lowerdiv_civil_engineering_requirements
-            - rule: coe_electives_civil_engineering
-            - rule: units_upperdiv
-            - rule: units_total
-
-
-
-    coe_lowerdiv_civil_engineering_requirements:
-        description: "Lower Division Civil Engineering Requirements"
-        rule: AND
-        args:
             - rule: chem_a
             - course: ENGIN.7
             - course: MATH.1A
@@ -29,6 +18,16 @@ rules:
             - rule: chem1b_4b_phys
             - rule: civec30_mecec85
             - course: CIV ENG.60
+            - rule: coe_electives_civil_engineering
+            - rule: units_upperdiv
+            - rule: units_total
+
+# not sure if we should do it like this or split into lowerdiv/upperdiv
+
+    coe_lowerdiv_civil_engineering_requirements:
+        description: "Lower Division Civil Engineering Requirements"
+        rule: AND
+        args:
 
     coe_electives_civil_engineering:
         description: "Civil Engineering Electives"
@@ -59,7 +58,7 @@ rules:
             - course: MEC ENG.104
 
     cive_elective_core:
-        hidden: true
+        description: "Civil Engineering Elective Core"
         rule: count_courses
             min: 4
             rule: OR

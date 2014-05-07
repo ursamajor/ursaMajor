@@ -5,15 +5,6 @@ rules:
         rule: AND
         args:
             - rule: coe_humanities_and_social_sciences
-            - rule: coe_lowerdiv_joint_bioengineering_materials_science
-            - rule: coe_upperdiv_joint_bioengineering_materials_science
-            - rule: units_upperdiv
-            - rule: units_total
-
-    coe_lowerdiv_joint_bioengineering_materials_science:
-        description: "Joint Bioengineering and Materials Science Lower Division Requirements"
-        rule: AND
-        args:
             - rule: chem1_4a
             - rule: chem3a_112a
             - rule: e7_cs61a
@@ -29,6 +20,30 @@ rules:
             - course: BIOLOGY.1AL
             - course: ENGIN.45
             - rule: ee40_100_bioe101
+            - course: BIO ENG.102
+            - course: BIO ENG.104
+            - rule: chem135_mcb102_110
+            - rule: chem120b_c130_mcbc100a_e115
+            - rule: bioe110_115_mse130
+            - rule: bioe111_116_c117
+            - course: MCELLBI.130A
+            - course: MAT SCI.102
+            - course: MAT SCI.104
+            - course: BIO ENG.C118
+            - course: MAT SCI.115
+            - rule: joint_bio_mse_choose
+            - rule: coe_joint_bioengineering_and_materials_science_design
+            - rule: coe_joint_bioengineering_and_materials_science_techincal
+            - rule: coe_joint_bioengineering_and_materials_science_ethics
+            - rule: units_upperdiv
+            - rule: units_total
+
+# not sure if we should do it like this or split into lowerdiv/upperdiv
+
+    coe_lowerdiv_joint_bioengineering_materials_science:
+        description: "Joint Bioengineering and Materials Science Lower Division Requirements"
+        rule: AND
+        args:
 
     chem3a_112a:
         hidden: true
@@ -49,21 +64,6 @@ rules:
         description: "Joint Bioengineering and Materials Science Upper Division Requirements"
         rule: AND
         args:
-            - course: BIO ENG.102
-            - course: BIO ENG.104
-            - rule: chem135_mcb102_110
-            - rule: chem120b_c130_mcbc100a_e115
-            - rule: bioe110_115_mse130
-            - rule: bioe111_116_c117
-            - course: MCELLBI.130A
-            - course: MAT SCI.102
-            - course: MAT SCI.104
-            - course: BIO ENG.C118
-            - course: MAT SCI.115
-            - rule: joint_bio_mse_choose
-            - rule: coe_joint_bioengineering_and_materials_science_design
-            - rule: coe_joint_bioengineering_and_materials_science_techincal
-            - rule: coe_joint_bioengineering_and_materials_science_ethics
 
     chem135_mcb102_110:
         hidden: true

@@ -47,7 +47,7 @@ rules: # not sure if I should combine lower/upper div into one concentration, si
                 - rule: meb_seminar
 
     meb_biochem:
-        hidden: true
+        description: "Molecular Environmental Biology: Biochemistry Requirement"
         rule: OR
         args:
             - course: MCELLBI.102
@@ -55,7 +55,7 @@ rules: # not sure if I should combine lower/upper div into one concentration, si
             - course: MCELLBI.110
 
     meb_mb:
-        hidden: true
+        description: "Molecular Environmental Biology: Molecular Biology Requirement"
         rule: OR
         args:
             - course: INTEGBI.141
@@ -68,7 +68,7 @@ rules: # not sure if I should combine lower/upper div into one concentration, si
             - course: PLANTBI.160
 
     meb_cell:
-        hidden: true
+        description: "Molecular Environmental Biology: Cell Biology Requirement"
         rule: OR
         args:
             - course: MCELLBI.130
@@ -82,7 +82,7 @@ rules: # not sure if I should combine lower/upper div into one concentration, si
             - course: PB HLTH.162A
 
     meb_physiology:
-        hidden: true
+        description: "Molecular Environmental Biology: Physiology Requirement"
         rule: OR
         args:
             - course: ESPM.144
@@ -96,7 +96,7 @@ rules: # not sure if I should combine lower/upper div into one concentration, si
             - course: PLANTBI.135
 
     meb_diversity:
-        hidden: true
+        description: "Molecular Environmental Biology: Diversity Requirement"
         rule: OR
         args:
             - course: ESPM.106
@@ -123,7 +123,7 @@ rules: # not sure if I should combine lower/upper div into one concentration, si
             - AND:
 
     meb_ecology:
-        hidden: true
+        description: "Molecular Environmental Biology: Ecology Requirement"
         rule: OR
         args:
             - course: ESPM.102A
@@ -150,7 +150,7 @@ rules: # not sure if I should combine lower/upper div into one concentration, si
             - course: ESPM.116C
 
     meb_seminar:
-        hidden: true
+        description: "Molecular Environmental Biology: Seminar"
         rule: OR
         args:
             - course: ESPM.192
@@ -234,7 +234,7 @@ rules: # not sure if I should combine lower/upper div into one concentration, si
             - rule: meb_animal_health_courses
 
     meb_animal_health_courses:
-        hidden: true
+        description: "Molecular Environmental Biology: Animal Health Courses"
         rule: units
         args:
             min: 12
@@ -287,7 +287,7 @@ rules: # not sure if I should combine lower/upper div into one concentration, si
             - course: STAT.131A
 
     meb_biodiversity_courses:
-        hidden: true
+        description: "Molecular Environmental Biology: Biodiversity Courses"
         rule: units
         args:
             min: 12
@@ -335,7 +335,7 @@ rules: # not sure if I should combine lower/upper div into one concentration, si
             - rule: meb_ecology_courses
 
     meb_ecology_courses:
-        hidden: true
+        description: "Molecular Environmental Biology: Ecology Courses"
         rule: units
         args:
             min: 12
@@ -388,7 +388,7 @@ rules: # not sure if I should combine lower/upper div into one concentration, si
             - rule: meb_human_courses
 
     meb_human_courses:
-        hidden: true
+        description: "Molecular Environmental Biology: Human Health Courses"
         rule: units
         args:
             min: 12
@@ -448,7 +448,7 @@ rules: # not sure if I should combine lower/upper div into one concentration, si
             - rule: meb_math_b
 
     meb_insect_courses:
-        hidden: true
+        description: "Molecular Environmental Biology: Insect Biology Courses"
         rule: units
         args:
             min: 8

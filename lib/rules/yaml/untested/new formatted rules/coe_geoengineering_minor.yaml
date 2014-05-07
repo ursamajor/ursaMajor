@@ -2,10 +2,12 @@ rules:
 
     coe_geoengineering_minor:
         description: "Geoengineering Minor"
-        rule: AND
-        args:
-            - rule: geoeng_prereqs
-            - rule: geoeng_upperdiv
+        rule: count_courses
+            min: 13
+            rule: AND
+            args:
+                - rule: geoeng_prereqs
+                - rule: geoeng_upperdiv
 
     geoeng_prereqs:
         description: "Geoengineering Pre-requisites"

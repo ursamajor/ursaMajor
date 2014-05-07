@@ -5,21 +5,6 @@ rules:
         rule: AND
         args:
             - rule: coe_humanities_and_social_sciences
-            - rule: coe_lowerdiv_bioengineering_requirements
-            - rule: coe_upperdiv_bioengineering_requirements
-            - rule: coe_bioengineering_upperdiv_technical_units
-            - rule: coe_bioengineering_upperdiv_bioengineering_units
-            - rule: coe_bioengineering_upperdiv_engineering_units
-            - rule: units_upperdiv
-            - rule: units_total
-
-
-
-
-    coe_lowerdiv_bioengineering_requirements:
-        description: "Lower Division Bioengineering Requirements"
-        rule: AND
-        args:
             - course: MATH.1A
             - course: MATH.1B
             - course: MATH.53
@@ -33,6 +18,23 @@ rules:
             - rule: e7_cs61a
             - course: BIO ENG.24
             - course: BIO ENG.25
+            - rule: coe_bioengineering_upperdiv_technical_units
+            - rule: coe_bioengineering_upperdiv_bioengineering_units
+            - rule: coe_bioengineering_upperdiv_engineering_units
+            - rule: bioe_ethics
+            - rule: bioe_lab
+            - rule: bioe_design
+            - rule: bioe_units
+            - rule: units_upperdiv
+            - rule: units_total
+
+
+# not sure if we should do it like this or split into lowerdiv/upperdiv
+
+    coe_lowerdiv_bioengineering_requirements:
+        description: "Lower Division Bioengineering Requirements"
+        rule: AND
+        args:
 
     coe_bioengineering_upperdiv_technical_units:
         description: "Upper Division Technical Units for Bioengineering"
@@ -68,13 +70,9 @@ rules:
         description: "Upper Division Bioengineering Requirements"
         rule: AND
         args:
-            - rule: bioe_ethics
-            - rule: bioe_lab
-            - rule: bioe_design
-            - rule: bioe_units
 
     bioe_ethics:
-        hidden: true
+        description: "Bioengineering Ethics"
         rule: OR
         args:
             - course: BIO ENG.100
@@ -89,7 +87,7 @@ rules:
             - course: PB HLTH.116
 
     bioe_lab:
-        hidden: true
+        description: "Bioengineering Lab Requirement"
         rule: OR
         args:
             - rule: bioeng22
@@ -105,7 +103,7 @@ rules:
             - course: BIO ENG.168L
 
     bioe_design:
-        hidden: true
+        description: "Bioengineering Design Course"
         rule: OR
         args:
             - course: BIO ENG.121L

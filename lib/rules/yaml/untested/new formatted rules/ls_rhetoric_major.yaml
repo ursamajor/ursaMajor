@@ -1,0 +1,117 @@
+rules:
+
+    ls_rhetoric_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # lower division
+            - course: RHETOR.10
+            - course: RHETOR.20
+        - AND: # upper division
+            - course: RHETOR.103A
+            - course: RHETOR.103B
+        - OR: # concentration
+            - AND: # history & theory of rhetoric
+                - numcourses:
+                    min: 3
+                    courses:
+                        - ls_rhetoric_concentration_history
+                - numcourses:
+                    min: 2
+                    courses:
+                        - ls_rhetoric_concentration_public_discourse
+                        - ls_rhetoric_concentration_narrative_and_image
+                # another course in another department
+            - AND: # public discourse
+                - numcourses:
+                    min: 3
+                    courses:
+                        - ls_rhetoric_concentration_public_discourse
+                - numcourses:
+                    min: 2
+                    courses:
+                        - ls_rhetoric_concentration_history
+                        - ls_rhetoric_concentration_narrative_and_image
+                # another course in another department
+            - AND: # narrative & image
+                - numcourses:
+                    min: 3
+                    courses:
+                        - ls_rhetoric_concentration_narrative_and_image
+                - numcourses:
+                    min: 2
+                    courses:
+                        - ls_rhetoric_concentration_public_discourse
+                        - ls_rhetoric_concentration_history
+                # another course in another department
+
+    ls_rhetoric_concentration_history:
+        description: "Rhetoric Concentration: History & Theory of Rhetoric"
+        rule: OR
+        args:
+            - course: RHETOR.104
+            - course: RHETOR.105T
+            - course: RHETOR.106
+            - course: RHETOR.107
+            - course: RHETOR.108
+            - course: RHETOR.109
+            - course: RHETOR.110
+            - course: RHETOR.112
+            - course: RHETOR.114
+            - course: RHETOR.116
+            - course: RHETOR.117
+            - course: RHETOR.118
+
+
+    ls_rhetoric_concentration_public_discourse:
+        description: "Rhetoric Concentration: Public Discourse"
+        rule: OR
+        args:
+            - course: RHETOR.150
+            - course: RHETOR.151
+            - course: RHETOR.152
+            - course: RHETOR.152AC
+            - course: RHETOR.153
+            - course: RHETOR.155
+            - course: RHETOR.157A
+            - course: RHETOR.157B
+            - course: RHETOR.1
+            - course: RHETOR.158
+            - course: RHETOR.159A
+            - course: RHETOR.160
+            - course: RHETOR.162AC
+            - course: RHETOR.164
+            - course: RHETOR.165
+            - course: RHETOR.166
+            - course: RHETOR.167
+            - course: RHETOR.168
+            - course: RHETOR.169
+            - course: RHETOR.170
+            - course: RHETOR.171
+            - course: RHETOR.172
+            - course: RHETOR.176
+            - course: RHETOR.182
+
+
+    ls_rhetoric_concentration_narrative_and_image:
+        description: "Rhetoric Concentration: Narrative & Image"
+        rule: OR
+        args:
+            - course: RHETOR.121
+            - course: RHETOR.122
+            - course: RHETOR.123
+            - course: RHETOR.124
+            - course: RHETOR.127
+            - course: RHETOR.128T
+            - course: RHETOR.129
+            - course: RHETOR.129AC
+            - course: RHETOR.130
+            - course: RHETOR.131T
+            - course: RHETOR.132T
+            - course: RHETOR.133T
+            - course: RHETOR.134
+            - course: RHETOR.135T
+
+
+

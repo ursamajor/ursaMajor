@@ -1,0 +1,67 @@
+rules:
+
+    ls_ethnic_studies_major: # conflicting reqs
+        description: "Ethnic Studies Major"
+        rule: AND
+        args:
+            - rule: university_all
+            - rule: ls_breadth_all
+            - rule: ls_ethnic_studies_core
+            - rule: ls_upperdiv_ethnic_studies
+            - rule: units_upperdiv
+            - rule: units_total
+
+    ls_ethnic_studies_core:
+        description: "Ethnic Studies Department Core"
+        rule: AND
+        args:
+            - course: ETH STD.10AC
+            - course: ETH STD.11AC
+            - course: ETH STD.101A
+            - course: ETH STD.101B
+
+    ls_upperdiv_ethnic_studies:
+        description: "Etnic Studies Upper Division Courses"
+        rule: count_courses
+            min: 7
+            rule: AND
+            args:
+                - course: ETH STD.190
+                - course: ETH STD.197
+                - rule: ls_ethnic_studies_upperdiv
+                - rule: ls_ethnic_studies_upperdiv_other
+
+    ls_ethnic_studies_upperdiv:
+        description: "Ethnic Studies Upper Division Courses"
+        rule: count_courses
+            min: 3
+            rule: OR
+            args:
+                - course: ETH STD.100
+                - course: ETH STD.103
+                - course: ETH STD.122AC
+                - course: ETH STD.C126
+                - course: ETH STD.130
+                - course: ETH STD.135
+                - course: ETH STD.136
+                - course: ETH STD.141
+                - course: ETH STD.N144
+                - course: ETH STD.147
+                - course: ETH STD.150
+                - course: ETH STD.159AC
+                - course: ETH STD.C170
+                - course: ETH STD.C173
+                - course: ETH STD.180
+                - course: ETH STD.190
+
+    ls_ethnic_studies_upperdiv_other:
+        description: "Ethnic Studies Upper Division Courses in Any Ethnic Studies Program"
+        rule: count_courses
+            min: 2
+            rule: OR
+            args:
+                - rule: upperdiv_asian_american
+                - rule: upperdiv_chicano
+                - rule: upperdiv_native_american
+                - rule: upperdiv_african_american
+                - rule: upperdiv_ethnic_studies # other than above...what

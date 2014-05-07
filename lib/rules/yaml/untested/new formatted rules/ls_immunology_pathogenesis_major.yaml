@@ -1,0 +1,99 @@
+rules:
+
+    ls_immunology_pathogenesis_major:
+        description: "Immunology and Pathogenesis Major"
+        rule: AND
+        args:
+            - rule: university_all
+            - rule: ls_breadth_all
+            - rule: ls_lowerdiv_immunology
+            - rule: ls_immunology_tracks
+            - rule: units_upperdiv
+            - rule: units_total
+
+    ls_lowerdiv_immunology:
+        description: "Immunology & Pathogenesis Lower Division Requirements"
+        rule: AND
+        args:
+            - rule: ls_molecular_cell_biology_lower_division
+            - course: CHEM.3A
+            - course: CHEM.3AL
+            - course: CHEM.3B
+            - course: CHEM.3BL
+
+    ls_immunology_tracks:
+        description: "Immunology Tracks: Immunology & Pathogenesis and Infectious Diseases"
+        rule: OR
+        args:
+            - rule: ls_immunology_track_immunology
+            - rule: ls_immunology_track_infectious
+
+    ls_immunology_track_immunology:
+        description: "Track 1: Immunology & Pathogenesis"
+        rule: AND
+        args:
+            - course: MCELLBI.C100A
+            - course: MCELLBI.110
+            - rule: mcb104_140
+            - course: MCELLBI.150
+            - course: MCELLBI.150L
+            - rule: ls_immunology_track_immunology_elective
+
+    mcb104_140:
+        hidden: true
+        rule: OR
+        args:
+            - course: MCELLBI.104
+            - course: MCELLBI.140
+
+    ls_immunology_track_immunology_elective:
+        description: "Immunology & Pathogenesis Track Electives"
+        rule: OR
+        args:
+            - course: MCELLBI.100B
+            - course: MCELLBI.C103
+            - course: MCELLBI.C112
+            - course: MCELLBI.C114
+            - course: MCELLBI.130A
+            - course: MCELLBI.132
+            - course: MCELLBI.C134
+            - course: MCELLBI.135A
+            - course: MCELLBI.141
+            - course: MCELLBI.149
+            - course: BIO ENG.131
+
+    ls_immunology_track_infectious:
+        description: "Track 2: Infectious Diseases"
+        rule: AND
+        args:
+            - course: MCELLBI.102
+            - course: MCELLBI.104
+            - course: MCELLBI.150
+            - course: MCELLBI.150L
+            - course: ls_immunology_track_infectious_elective_1
+            - course: ls_immunology_track_infectious_elective_2
+
+    ls_immunology_track_infectious_elective_1:
+        description: "Infectious Diseases Electives (1)"
+        rule: OR
+        args:
+            - course: MCELLBI.C103
+            - course: MCELLBI.C112
+            - course: MCELLBI.C114
+
+    ls_immunology_track_infectious_elective_2:
+        description: "Infectious Diseases Electives (2)"
+        rule: OR
+        args:
+            - course: MCELLBI.130A
+            - course: MCELLBI.132
+            - course: MCELLBI.C134
+            - course: MCELLBI.135A
+            - course: MCELLBI.136
+            - course: MCELLBI.141
+            - course: MCELLBI.143
+            - course: MCELLBI.C145
+            - course: MCELLBI.C146
+            - course: MCELLBI.149
+            - course: MCELLBI.C160
+            - course: MCELLBI.250

@@ -1,0 +1,52 @@
+rules:
+
+    ls_sociology_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # pre-requisites
+            - course: SOCIOL.1
+            - course: SOCIOL.5
+            - OR:
+                - course: SOCIOL.7
+                - course: STAT.2
+                - course: STAT.2X
+                - course: STAT.20
+                - course: STAT.21
+                - course: STAT.131A
+                - course: PSYCH.101
+                - course: PHILOS.12A
+                - course: PHILOS.14A
+        - AND: # theory
+            - course: SOCIOL.101
+            - course: SOCIOL.102
+        - AND: # survey
+            - numcourses:
+                min: 2
+                courses:
+                    - course: SOCIOL.110
+                    - course: SOCIOL.120
+                    - course: SOCIOL.130
+                    - course: SOCIOL.140
+                    - OR:
+                        - course: SOCIOL.150
+                        - course: SOCIOL.150A
+                        - course: SOCIOL.150B
+                    - course: SOCIOL.160
+                    - OR:
+                        - course: SOCIOL.180C
+                        - course: SOCIOL.180I
+        - AND: # electives upper div
+            - numcourses:
+                min: 4
+                courses:
+                    - dept: SOCIOL # not including the others you used
+                        - NOT:
+                            - course: SOCIOL.191
+        - OR: # capstone/seminar
+            - course: SOCIOL.190
+            - course: SOCIOL.H190B
+            - course: SOCIOL.107B
+
+

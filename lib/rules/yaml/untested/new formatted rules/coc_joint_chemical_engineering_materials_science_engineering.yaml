@@ -4,23 +4,8 @@ rules:
         description: "Joint Major in Chemical Engineering and Materials Science and Engineering"
         rule: AND
         args:
-            - rule: coc_breadth_joint_chemical_engineering_materials_science_requirement
-            - rule: coc_joint_chemical_engineering_materials_science_engineering_requirements
-            - rule: coc_electives_joint_chemical_engineering_materials_science_engineering_materials_science
-
-
-    coc_breadth_joint_chemical_engineering_materials_science_requirement:
-        description: "Joint Chemical Engineering & Materials Science and Engineering Breadth Requirements"
-        rule: AND
-        args:
             - rule: cheme_rc
             - rule: cheme_breadth
-
-
-    coc_joint_chemical_engineering_materials_science_engineering_requirements:
-        description: "Joint Chemical Engineering & Materials Science and Engineering Requirements"
-        rule: AND
-        args:
             - course: MATH.1A
             - course: MATH.1B
             - course: MATH.53
@@ -45,6 +30,23 @@ rules:
             - course: MAT SCI.103
             - course: MAT SCI.120
             - course: MAT SCI.130
+            - rule: coc_electives_joint_chemical_engineering_materials_science_engineering_materials_science
+            - rule: units_upperdiv
+            - rule: units_total
+
+
+# not sure if we should do it like this or split into lowerdiv/upperdiv
+
+    coc_breadth_joint_chemical_engineering_materials_science_requirement:
+        description: "Joint Chemical Engineering & Materials Science and Engineering Breadth Requirements"
+        rule: AND
+        args:
+
+
+    coc_joint_chemical_engineering_materials_science_engineering_requirements:
+        description: "Joint Chemical Engineering & Materials Science and Engineering Requirements"
+        rule: AND
+        args:
 
     chem120a_phys137A:
         hidden: true

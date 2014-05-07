@@ -1,0 +1,123 @@
+rules:
+
+    ls_biochemistry_molecular_biology_major:
+        description: "Biochemistry & Molecular Biology Major"
+        rule: AND
+        args:
+            - rule: university_all
+            - rule: ls_breadth_all
+            - rule: ls_molecular_cell_biology_lower_division
+            - rule: ls_biochemistry_tracks
+            - rule: units_upperdiv
+            - rule: units_total
+
+    ls_biochemistry_tracks:
+        description: "Biochemistry Tracks"
+        rule: OR
+        args:
+            - rule: ls_biochemistry_track_1
+            - rule: ls_biochemistry_track_2
+
+    ls_biochemistry_track_1:
+        description: "Track 1: Biochemistry & Molecular Biology"
+        rule: AND
+        args:
+            - rule: ls_biochemistry_track_1_lowerdiv
+            - rule: ls_biochemistry_track_1_upperdiv
+
+    ls_biochemistry_track_1_lowerdiv:
+        description: "Track 1 Lower Division Requirements"
+        rule: AND
+        args:
+            - course: CHEM.3A
+            - course: CHEM.3AL
+            - course: CHEM.3B
+            - course: CHEM.3BL
+
+    ls_biochemistry_track_1_upperdiv:
+        description: "Track 1 Upper Division Requirements"
+        rule: AND
+        args:
+            - course: MCELLBI.C100A
+            - course: MCELLBI.100B
+            - course: MCELLBI.110
+            - course: MCELLBI.110L
+            - rule: mcb140_c148
+            - rule: ls_biochemistry_track_1_elective
+
+    mcb140_c148:
+        hidden: true
+        rule: OR
+        args:
+            - course: MCELLBI.140
+            - course: MCELLBI.C148
+
+    ls_biochemistry_track_1_elective:
+        description: "Track 1 Electives"
+        rule: OR
+        args:
+            - course: CHEM.113
+            - course: CHEM.115
+            - course: CHEM.130B
+            - course: ESPM.C148
+            - course: MATH.110
+            - course: MCELLBI.C103
+            - course: MCELLBI.C112
+            - course: MCELLBI.C114
+            - course: MCELLBI.C116
+            - course: MCELLBI.118
+            - course: MCELLBI.132
+            - course: MCELLBI.C134
+            - course: MCELLBI.135A
+            - course: MCELLBI.136
+            - course: MCELLBI.137
+            - course: MCELLBI.141
+            - course: MCELLBI.143
+            - course: MCELLBI.149
+            - course: MCELLBI.150
+            - course: MCELLBI.C160
+            - course: MCELLBI.163
+            - course: MCELLBI.166
+            - course: MCELLBI.167
+            - course: NEUROSC.C160
+            - course: NUSCTX.C114
+            - course: PHYSICS.112
+            - course: PHYSICS.177
+            - course: PLANTBI.C112
+            - course: PLANTBI.C114
+            - course: PLANTBI.C116
+            - course: PLANTBI.C134
+            - course: PLANTBI.135
+            - course: PLANTBI.150
+            - course: PLANTBI.160
+            - course: PB HLTH.141
+            - course: PB HLTH.142
+            - course: STAT.131A
+            - course: BIO ENG.C141
+            - course: MATH.127
+            - course: PHYSICS.132
+            - course: STAT.C141
+
+
+    ls_biochemistry_track_2:
+        description: "Track 2: Biological Chemistry"
+        rule: AND
+        args:
+            - course: CHEM.1B
+            - course: CHEM.112A
+            - course: CHEM.112B
+            - course: MCELLBI.C100A
+            - course: CHEM.130B
+            - course: CHEM.135
+            - rule: mcb130a_140
+            - course: MCELLBI.C110L
+
+    mcb130a_140:
+        hidden: true
+        rule: OR
+        args:
+            - course: MCELLBI.130A
+            - course: MCELLBI.140
+
+
+

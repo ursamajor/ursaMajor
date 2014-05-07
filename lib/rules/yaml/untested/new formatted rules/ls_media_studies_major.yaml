@@ -1,0 +1,91 @@
+rules:
+
+    ls_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # pre-req
+            - course: MEDIAST.10
+            - OR: # post civil war US history
+                - course: HISTORY.7B
+                - course: HISTORY.124A
+                - course: HISTORY.124B
+                - course: HISTORY.131B
+            - course: POL SCI.1
+            - OR: # intro to social science
+                - course: ANTHRO.3
+                - course: ANTHRO.3AC
+                - course: ECON.1
+                - course: ECON.2
+                - course: PSYCH.1
+                - course: PSYCH.2
+                - course: SOCIOL.1
+                - course: SOCIOL.3
+                - course: SOCIOL.3AC
+        - OR: # research methods
+            - course: POL SCI.3
+            - course: SOCIOL.5
+            - course: MEDIAST.130
+            - course: PSYCH.101
+            - course: SOCIOL.105
+        - AND: # four courses
+            - course: MEDIAST.101
+            - course: MEDIAST.102
+            - course: MEDIAST.C103
+            - OR: 
+                - course: MEDIAST.104A
+                - course: MEDIAST.104B
+                - course: MEDIAST.C104C
+                - course: COG SCI.C103
+                - course: INFO.C103
+                - course: HISTORY.C192
+                - course: MEDIAST.104D
+        - AND: # upper division
+            - numcourses:
+                min: 4
+                courses:
+                    - course: AFRICAM.142A
+                    - course: AFRICAM.142B
+                    - course: AFRICAM.142AC
+                    - course: AMERST.112A
+                    - course: AMERST.112B
+                    - course: AMERST.C172
+                    - course: ANTHRO.138
+                    - course: ANTHRO.139
+                    - course: ANTHRO.144
+                    - course: ANTHRO.149
+                    - course: ANTHRO.156B
+                    - course: ANTHRO.166
+                    - course: ENGLISH.173
+                    - course: ENGLISH.176
+                    - course: FILM.160
+                    - course: GWS.125
+                    - course: HISTORY.122AC
+                    - course: HISTORY.134A
+                    - course: HISTORY.134B
+                    - course: INFO.141
+                    - course: INFO.146
+                    - course: INFO.182AC
+                    - course: JOURN.180
+                    - course: LINGUIS.150
+                    - course: MEDIAST.140
+                    - course: MEDIAST.145
+                    - course: MEDIAST.150
+                    - course: MEDIAST.160
+                    - course: MEDIAST.160
+                    - course: MEDIAST.180
+                    - course: MEDIAST.190
+                    - course: POL SCI.106A
+                    - OR:
+                        - course: POL SCI.111A
+                        - course: POL SCI.111AC
+                    - course: POL SCI.161
+                    - course: POL SCI.164A
+                    - course: SOCIOL.110
+                    - course: SOCIOL.111
+                    - course: SOCIOL.140
+                    - course: SOCIOL.150
+                    - course: SOCIOL.160
+                    - course: SOCIOL.166
+                    - course: SOCIOL.170

@@ -5,14 +5,6 @@ rules:
         rule: AND
         args:
             - rule: coc_breadth_joint_chemical_engineering_materials_science_requirement
-            - rule: coc_joint_chemical_engineering_nuclear_engineering_requirements
-            - rule: coc_electives_joint_chemical_engineering_nuclear_engineering_nuclear
-
-
-    coc_joint_chemical_engineering_nuclear_engineering_requirements:
-        description: "Joint Chemical Engineering & Nuclear Engineering Requirements"
-        rule: AND
-        args:
             - course: MATH.1A
             - course: MATH.1B
             - course: MATH.53
@@ -37,6 +29,16 @@ rules:
             - course: NUC ENG.104
             - course: NUC ENG.150
             - rule: cheme_ethics
+            - rule: coc_electives_joint_chemical_engineering_nuclear_engineering_nuclear
+            - rule: units_upperdiv
+            - rule: units_total
+
+# not sure if we should do it like this or split into lowerdiv/upperdiv
+
+    coc_joint_chemical_engineering_nuclear_engineering_requirements:
+        description: "Joint Chemical Engineering & Nuclear Engineering Requirements"
+        rule: AND
+        args:
 
     cheme160_nuc170a:
         hidden: true

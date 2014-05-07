@@ -5,15 +5,6 @@ rules:
         rule: AND
         args:
             - rule: coe_humanities_and_social_sciences
-            - rule: coe_lowerdiv_joint_electrical_nuclear_engineering
-            - rule: coe_upperdiv_joint_electrical_nuclear_engineering
-            - rule: units_upperdiv
-            - rule: units_total
-
-    coe_lowerdiv_joint_electrical_nuclear_engineering:
-        description: "Joint Electrical Engineering and Nuclear Engineering Lower Division Requirements"
-        rule: AND
-        args:
             - rule: chem1_4a
             - course: COMPSCI.61A
             - course: COMPSCI.61B
@@ -29,11 +20,6 @@ rules:
             - course: EL ENG.40
             - course: ENGIN.45
             - course: ENGIN.115
-
-    coe_upperdiv_joint_electrical_nuclear_engineering:
-        description: "Joint Electrical Engineering and Nuclear Engineering Upper Division Requirements"
-        rule: AND
-        args:
             - course: EL ENG.120
             - rule: ee126_stat25_134
             - course: NUC ENG.101
@@ -44,6 +30,20 @@ rules:
             - course: NUC ENG.170A
             - rule: coe_joint_electrical_nuclear_engineering_tech_eng
             - rule: coe_nuclear_engineering_ethics
+            - rule: units_upperdiv
+            - rule: units_total
+
+# not sure if we should do it like this or split into lowerdiv/upperdiv
+
+    coe_lowerdiv_joint_electrical_nuclear_engineering:
+        description: "Joint Electrical Engineering and Nuclear Engineering Lower Division Requirements"
+        rule: AND
+        args:
+
+    coe_upperdiv_joint_electrical_nuclear_engineering:
+        description: "Joint Electrical Engineering and Nuclear Engineering Upper Division Requirements"
+        rule: AND
+        args:
 
     coe_joint_electrical_nuclear_engineering_tech_eng:
         description: "Joint Electrical Engineering and Nuclear Engineering Technical Electives (1)"

@@ -5,15 +5,6 @@ rules:
         rule: AND
         args:
             - rule: coe_humanities_and_social_sciences
-            - rule: coe_lowerdiv_energy_engineering
-            - rule: coe_upperdiv_energy_engineering
-            - rule: units_upperdiv
-            - rule: units_total
-
-    coe_energy_engineering_lowerdiv:
-        description: "Energy Engineering Lower Division Requirements"
-        rule: AND
-        args:
             - rule: chem1_4a
             - rule: e7_cs61a
             - course: MATH.1A
@@ -24,11 +15,6 @@ rules:
             - course: PHYSICS.7B
             - course: ENGIN.93
             - rule: civec30_mecec85
-
-    coe_energy_engineering_upperdiv:
-        description: "Energy Engineering Upper Division Requirements"
-        rule: AND
-        args:
             - course: ENE,RES.100
             - rule: engprep1
             - rule: engprep2
@@ -46,6 +32,20 @@ rules:
             - rule: cive107_geo142
             - rule: energy_sustainability
             - rule: energy_technical
+            - rule: units_upperdiv
+            - rule: units_total
+
+# not sure if we should do it like this or split into lowerdiv/upperdiv
+
+    coe_energy_engineering_lowerdiv:
+        description: "Energy Engineering Lower Division Requirements"
+        rule: AND
+        args:
+
+    coe_energy_engineering_upperdiv:
+        description: "Energy Engineering Upper Division Requirements"
+        rule: AND
+        args:
 
     engprep1:
         hidden: true
@@ -83,7 +83,7 @@ rules:
             - course: MEC ENG.106
 
     energy_econ:
-        hidden: true
+        description: "Energy Engineering: Economics Requirement"
         rule: OR
         args:
             - course: CIV ENG.156
@@ -97,7 +97,7 @@ rules:
             - course: POLECON.101
 
     energy_math:
-        hidden: true
+        description: "Energy Engineering: Math Requirement"
         rule: OR
         args:
             - course: CIV ENG.93
@@ -122,7 +122,7 @@ rules:
             - course: GEOG.142
 
     energy_sustainability:
-        hidden: true
+        description: "Energy Engineering: Sustainability Requirement"
         rule: OR
         args:
             - course: CIV ENG.111

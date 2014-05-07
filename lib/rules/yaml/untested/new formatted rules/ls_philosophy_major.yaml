@@ -1,0 +1,65 @@
+rules:
+
+    ls_philosophy_major:
+    rule: AND
+    args:
+        - university_all
+        - ls_breadth_all
+        - AND: # lower division
+            - course: PHILOS.12A
+            - course: PHILOS.25A
+            - course: PHILOS.25B
+        - AND: # upper division
+            - course: PHILOS.100
+            - OR: # ethics
+                - course: PHILOS.104
+                - course: PHILOS.105
+                - course: PHILOS.107
+                - course: PHILOS.115
+            - AND: # history
+                - OR:
+                    - course: PHILOS.160
+                    - course: PHILOS.161
+                    - course: PHILOS.163
+                    - course: PHILOS.170
+                    - course: PHILOS.172
+                    - course: PHILOS.173
+                    - course: PHILOS.176
+                    - course: PHILOS.178
+                - OR:
+                    - course: PHILOS.160
+                    - course: PHILOS.161
+                    - course: PHILOS.163
+                    - course: PHILOS.170
+                    - course: PHILOS.172
+                    - course: PHILOS.173
+                    - course: PHILOS.176
+                    - course: PHILOS.178
+                    - course: PHILOS.181
+                    - course: PHILOS.183
+                    - course: PHILOS.184
+                    - course: PHILOS.185
+                    - course: PHILOS.186B
+                    - course: PHILOS.187
+            - AND: # epistemology/metaphysics
+                - numcourses:
+                    min: 2
+                    courses:
+                        - course: PHILOS.122
+                        - course: PHILOS.125
+                        - OR:
+                            - course: PHILOS.131
+                            - course: PHILOS.132
+                        - OR:
+                            - course: PHILOS.133
+                            - course: PHILOS.135
+            - AND: # electives
+                - numcourses:
+                    min: 3
+                    courses:
+                        - dept: PHILOS # ones not chosen yet;
+                        # one can be in another department
+
+
+
+

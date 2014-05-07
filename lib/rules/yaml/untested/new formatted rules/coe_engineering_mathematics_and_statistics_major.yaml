@@ -5,15 +5,6 @@ rules:
         rule: AND
         args:
             - rule: coe_humanities_and_social_sciences
-            - rule: coe_lowerdiv_engineering_math
-            - rule: coe_upperdiv_engineering_math
-            - rule: units_upperdiv
-            - rule: units_total
-
-    coe_lowerdiv_engineering_math:
-        description: "Engineering Mathematics and Statistics Lower Division Requirements"
-        rule: AND
-        args:
             - rule: chem1_4a
             - rule: e7_cs61a
             - course: MATH.1A
@@ -25,6 +16,23 @@ rules:
             - course: PHYSICS.7C
             - rule: e177_cs61b
             - rule: eng_math_lowerdiv_tech
+            - course: MATH.110
+            - course: MATH.104
+            - course: MATH.105
+            - course: MATH.185
+            - course: MATH.128A
+            - rule: ieor172_stat134
+            - rule: eng_math_upperdiv_tech
+            - rule: eng_math_upperdiv_additional
+            - rule: units_upperdiv
+            - rule: units_total
+
+# not sure if we should do it like this or split into lowerdiv/upperdiv
+
+    coe_lowerdiv_engineering_math:
+        description: "Engineering Mathematics and Statistics Lower Division Requirements"
+        rule: AND
+        args:
 
     eng_math_lowerdiv_tech:
         hidden: true
@@ -43,14 +51,6 @@ rules:
         description: "Engineering Mathematics and Statistics Upper Division Requirements"
         rule: AND
         args:
-            - course: MATH.110
-            - course: MATH.104
-            - course: MATH.105
-            - course: MATH.185
-            - course: MATH.128A
-            - rule: ieor172_stat134
-            - rule: eng_math_upperdiv_tech
-            - rule: eng_math_upperdiv_additional
 
     eng_math_upperdiv_tech:
         hidden: true
