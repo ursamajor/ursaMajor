@@ -10,7 +10,7 @@ angular.module('ursamajor.controllers').controller 'CourseListCtrl', ['$scope', 
       when a.postfix > b.postfix then 1
       when a.postfix < b.postfix then -1
 
-  $http.get("/courses/tagged_courses.json").success (data) ->
+  $scope.coursePromise = $http.get("/courses/tagged_courses.json").success (data) ->
     $scope.courses = data
     $scope.courses.sort $scope.sortCourses #todo: sort in rails controller so don't have to here
     $scope.totalDisplayed = 20

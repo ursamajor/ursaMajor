@@ -11,6 +11,8 @@ ursamajor = angular.module 'ursamajor', [
   'infinite-scroll'
   'ui.bootstrap'
   'angular-intro'
+  'cgBusy'
+  'chieffancypants.loadingBar'
   'ursamajor.controllers'
   'ursamajor.filters'
 ]

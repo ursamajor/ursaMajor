@@ -22,7 +22,6 @@ Plan Page
   - tutorial button
   - highlight whole row for rules (green pass, red fail)
   - sort by tabs (university, college, major)
-  - do something to show if plan save succeeded or not
 
 Rules Page
   - popular rules
@@ -56,7 +55,7 @@ Plans
     - allow nonowners to see if flag
     - if nonowner, no drag/drop
     - maybe don't show rules?
-    - don't show saveplan / garbage
+    - don't show garbage
 Semesters
   - semester object should have year+fa/sp/su
 Users
@@ -83,7 +82,6 @@ After First Release
   - labeling pnp courses
 
 Possible Features
-  - loading bars/progress wheel
   - switch plans without reload
   - ninjacourses/courserank semesterly calendar
   - color code rules/courses (breadth, major, university)
@@ -129,7 +127,6 @@ Errors
   - sometimes course modal doesn't pop up when you load plan initially
     - replicate error by switching page from plan, then returning to plan using browser back
     - course modal not rendered
-  - sometimes doesn't save if exit too quickly
 
 404 not found
 
