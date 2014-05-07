@@ -1,5 +1,5 @@
 .div(data-ng-controller="PlanDetailCtrl" data-ng-intro-options="IntroOptions" data-ng-intro-method="startIntro" data-ng-intro-autostart="#{!signed_in?}")
-  .col-md-2.col-sm-2
+  .col-md-2.col-sm-2(cg-busy="{promise:coursePromise,message:'Loading Courses'}")
     - if @demo
       %h2.plan-name= @plan.name
     - else

@@ -81,7 +81,7 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
       when a.postfix > b.postfix then 1
       when a.postfix < b.postfix then -1
 
-  $http.get("/courses/tagged_courses.json").success (data) ->
+  $scope.coursePromise = $http.get("/courses/tagged_courses.json").success (data) ->
     $scope.courses = data
     $scope.courses.sort $scope.sortCourses #todo: sort in rails controller so don't have to here
     $scope.updatePlan()
@@ -137,10 +137,9 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
       return true if tags is rule.name
     false
 
-  $scope.getRules = ->
-    $http.get("/rules/search.json").success (data) ->
-      $scope.rules = data
-      $scope.updateRules()
+  $scope.rulePromise = $http.get("/rules/search.json").success (data) ->
+    $scope.rules = data
+    $scope.updateRules()
 
   $scope.checkRule = (rule) ->
     numCourses = numUnits = 0
@@ -200,8 +199,6 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
     $scope.planCourses = $scope.plan["courses"].concat $scope.backpack
     $scope.planCourses = (course.id for course in $scope.planCourses)
     $scope.courses = $scope.courses.filter (course) -> course.id not in $scope.planCourses
-
-  $scope.getRules()
 
   $scope.startYearString = "2013"
   $scope.years = [
