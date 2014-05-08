@@ -5,7 +5,6 @@ Landing Page
 Course Catalog
   - show remaining requirements unsatisfied in course catalog, click to display 
     courses that satisfy, show course that will fulfill multiple requirements
-  - don't need all fields for course json
 
 Plan Page
   - mobile options
@@ -15,7 +14,6 @@ Plan Page
     - in course modal, show which requirements satisfies, drop down to add to a semesters
   - more modal styling
   - display rule description in modal, plus courses that satisfy
-  - handling display of plan names that are long
   - ability to move courses within a semester around
   - ability to hide a year
   - for demo, allow saving plan to user's plans if logged in
@@ -39,7 +37,7 @@ Courses
   - editing of course info in ui
 Rules
   - get college/major info for rule from folder structure/name
-  - shorten names of rules
+  - shorten names of rules?
   - online/summer versions of classes should also work with rules
   - updating rule (can only use up to 2 from same dept for breadths)
   - remove course if used for rule and can only be used once
@@ -111,18 +109,6 @@ Optional
     - more consistent json object attribute accessing [] vs .
     - separate courses and plans controller again (combined for sake of duplicate removal)
     - switch over bootstrap js to angular ui js
-
-  Structure
-    - move all requires
-    config
-      initializers
-        ursarule.rb
-    model
-      rule
-        rule*.rb
-    lib
-      rule
-        yaml files
 
 Errors
   - course modals not rendered sometimes for courses in plan

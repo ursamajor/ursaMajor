@@ -52,3 +52,14 @@ select {
   -o-border-radius: 2px;
   border-radius: 2px;
 }
+
+a.click-link {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

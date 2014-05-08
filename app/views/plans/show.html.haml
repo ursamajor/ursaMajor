@@ -1,9 +1,9 @@
 .div(data-ng-controller="PlanDetailCtrl" data-ng-intro-options="IntroOptions" data-ng-intro-method="startIntro" data-ng-intro-autostart="#{!signed_in?}")
   .col-md-2.col-sm-2(cg-busy="{promise:coursePromise,message:'Loading Courses'}")
     - if @demo
-      %h2.plan-name= @plan.name
+      %h2.plan-name.ellipsis= @plan.name
     - else
-      %h2.plan-name= best_in_place @plan, :name, type: :input, :activator => "#edit#{@plan.id}"
+      %h2.plan-name.ellipsis= best_in_place @plan, :name, type: :input, :activator => "#edit#{@plan.id}"
       %a.btn-link.edit-plan-name{id: "edit#{@plan.id}"}
         %i.fa.fa-pencil.pencil-icon
     = render 'plans/leftColumn'
