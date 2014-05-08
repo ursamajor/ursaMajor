@@ -13,7 +13,7 @@
         %tr
           %th Name
           %th Actions
-      .body
+      %tbody
         - @plans.each do |plan|
           %tr
             %td= link_to "#{plan.name}", plan_path(plan)

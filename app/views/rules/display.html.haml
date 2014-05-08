@@ -1,13 +1,13 @@
 .col-md-3.col-sm-3
 .col-md-9.col-sm-9
-  .col-md-12.col-sm-12
+  .col-md-12.col-sm-12(data-ng-controller="RuleDetailCtrl")
     %h2= @rule.name.to_s
     %h3= @rule.description
     %table.table
       %thead
         %tr
           %th Courses Fulfilling
-      .body
-        - @courses.each do |course|
-          %tr
-            %th= link_to course.search_name, course_path(course)
+      %tbody
+        %div(infinite-scroll="addMoreCourses()" infinite-scroll-distance="2" cg-busy="{promise:coursePromise,message:'Loading Courses'}")
+          %tr(data-ng-repeat="course in courses | limitTo:totalDisplayed")
+            %td <a href="/courses/{{course.id}}">{{course.name}}</a>

@@ -6,7 +6,7 @@
       %tr
         %th Rule
         %th Description
-    .body
+    %tbody
       - @rules.values.each do |rule|
         - next if rule.hidden? or rule.core?
         %tr
