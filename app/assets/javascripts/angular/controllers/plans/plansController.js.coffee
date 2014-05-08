@@ -39,11 +39,11 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
       position: "left"
     ,
       element: "a.rule"
-      intro: "Click to show all courses that fulfill this requirement."
+      intro: "Click on a requirement to show all courses that fulfill it."
       position: "right"
     ,
       element: "a.result"
-      intro: "Click to show all courses in your current plan that fulfill this requirement."
+      intro: "Click on a checkmark to show all courses in your current plan that fulfill the requirement."
       position: "left"
     ,
       intro: "That's it! Have fun planning. "

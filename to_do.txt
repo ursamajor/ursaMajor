@@ -111,6 +111,8 @@ Optional
     - more consistent json object attribute accessing [] vs .
     - separate courses and plans controller again (combined for sake of duplicate removal)
     - switch over bootstrap js to angular ui js
+    - set default values for models set by promises
+    - make sure that requests in order (don't compute on null values)
 
   Performance:
     - maybe don't load everything at once and rely on http requests
