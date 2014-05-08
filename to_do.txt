@@ -5,14 +5,15 @@ Landing Page
 Course Catalog
   - show remaining requirements unsatisfied in course catalog, click to display 
     courses that satisfy, show course that will fulfill multiple requirements
+  - fix column widths
 
 Plan Page
+  - print option
   - mobile options
     - drop down of semester to add course to
     - slider to switch between semestesrs (where backpack is)
     - moving courses around?
     - in course modal, show which requirements satisfies, drop down to add to a semesters
-  - more modal styling
   - display rule description in modal, plus courses that satisfy
   - ability to move courses within a semester around
   - ability to hide a year
@@ -63,7 +64,8 @@ Users
 Chores
   - going through completed rules, make sure they work
   - documentation 
-    -- refer to (http://stackoverflow.com/questions/2543979/example-of-a-well-documented-rails-project-and-or-best-pratices)
+    - refer to (http://stackoverflow.com/questions/2543979/example-of-a-well-documented-rails-project-and-or-best-pratices)
+    - swagger for api documentation
   - tag rules by major
   - clean up planscontroller
   - more progressive data-ng-cloak
@@ -109,6 +111,11 @@ Optional
     - more consistent json object attribute accessing [] vs .
     - separate courses and plans controller again (combined for sake of duplicate removal)
     - switch over bootstrap js to angular ui js
+
+  Performance:
+    - maybe don't load everything at once and rely on http requests
+      - other majors?
+      - course modal information?
 
 Errors
 

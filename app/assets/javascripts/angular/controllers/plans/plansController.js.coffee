@@ -16,6 +16,10 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
       intro: "Search here for courses."
       position: "right"
     ,
+      element: "#query"
+      intro: "Click on a course to get its description."
+      position: "right"
+    ,
       element: ".backpack"
       intro: "Drag courses to your backpack for later use."
       position: "right"
@@ -26,12 +30,20 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
     ,
       intro: "Drag your courses into the semester planner."
     ,
-      element: "#majors"
+      element: "#majors select"
       intro: "Select a major."
       position: "left"
     ,
-      element: "#rules"
+      element: "#rules table"
       intro: "The rules sidebar will instantly show how close you are to satisfying your major requirements."
+      position: "left"
+    ,
+      element: "a.rule.ng-binding"
+      intro: "Click to show all courses that fulfill this requirement."
+      position: "right"
+    ,
+      element: "a.result.ng-binding"
+      intro: "Click to show all courses in your current plan that fulfill this requirement."
       position: "left"
     ,
       intro: "That's it! Have fun planning. "

@@ -95,9 +95,17 @@ a.show {
 }
 
 .profile select {
-  float: right !important;
   width: 50% !important;
-  position: absolute;
+  float: left;
+}
+
+.start-year-text {
+  max-width: 50%;
+  float: left;
+}
+
+.total-units {
+  clear: both;
 }
 
 .gridItem.backpack, .gridItem#garbage, { 
