@@ -111,8 +111,6 @@ Optional
     - switch over bootstrap js to angular ui js
 
 Errors
-  - course modals not rendered sometimes for courses in plan
-    - planCourses not updated? 
 
 404 not found
 

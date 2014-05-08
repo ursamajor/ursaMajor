@@ -196,9 +196,8 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
     $scope.savePlan()
 
   $scope.removeDuplicates = ->
-    $scope.planCourses = $scope.plan["courses"].concat $scope.backpack
-    $scope.planCourses = (course.id for course in $scope.planCourses)
-    $scope.courses = $scope.courses.filter (course) -> course.id not in $scope.planCourses
+    courseIds = (course.id for course in $scope.planCourses)
+    $scope.courses = $scope.courses.filter (course) -> course.id not in courseIds
 
   $scope.startYearString = "2013"
   $scope.years = [
