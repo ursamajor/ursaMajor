@@ -36,6 +36,9 @@ body.landing_page {
   .input-field-middle {
     width: 260px;
     float: none;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -o-border-radius: 0px;
     border-radius: 0px;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.2em;
@@ -48,6 +51,9 @@ body.landing_page {
     width: 260px;
     border: none;
     color: white;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    -o-border-radius: 1px;
     border-radius: 1px;
     font-family: 'Open Sans', sans-serif;
     float: none;
@@ -58,6 +64,9 @@ body.landing_page {
   }
   .input-field-top {
     width: 260px;
+    -webkit-border-radius: 2px 2px 0px 0px;
+    -moz-border-radius: 2px 2px 0px 0px;
+    -o-border-radius: 2px 2px 0px 0px;
     border-radius: 2px 2px 0px 0px;
     float: none; 
     font-size: 1.2em;

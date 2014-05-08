@@ -65,6 +65,9 @@ a.show {
   line-height: 1.428571429;
   background-color: white;
   border: 1px solid #dddddd;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -191,12 +194,15 @@ td.result.green a.result {
 }
 
 tr.result.green {
+  background-color: #e7f6ec;
 }
 
 tr.result.red {
+  background-color: #f5e8e8;
 }
 
 a.result { 
   cursor: pointer; 
   cursor: hand; 
+  float: right;
 }
