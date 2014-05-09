@@ -15,6 +15,6 @@
             - Rule.get(rule)
           - rescue
             - next
-          %tr
+          %tr.row-hover
             %td= rule
             %td= link_to Rule.get(rule).description, display_rules_path(:rule => rule)

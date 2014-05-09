@@ -1,0 +1,6 @@
+.move-course
+  %select(data-ng-model="section")
+    %option(value="backpack") Backpack
+    %option(data-ng-repeat="semester in semesters" value="{{semester}}") {{semesterPrint(semester)}}
+    / %option(value="garbage") Garbage
+  .btn.btn-xs.btn-primary(data-ng-click="moveCourse(course, section)") Move

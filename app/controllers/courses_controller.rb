@@ -3,6 +3,7 @@ class CoursesController < ApplicationController
 
   def index
     @courses = Course.order 'name ASC'
+    @plan = false
     query = session[:search_query] = params[:search_query]
 
     if ! [nil, ""].include? query

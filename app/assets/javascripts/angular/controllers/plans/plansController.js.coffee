@@ -1,6 +1,6 @@
 #Plans controller
 
-angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', '$http', '$filter', ($scope, $http, $filter) ->
+angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', '$http', '$filter', '$timeout', ($scope, $http, $filter, $timeout) ->
   $scope.semesters = ['fall1','fall2','fall3','fall4','spring1','spring2','spring3','spring4','summer1','summer2','summer3','summer4']
   $scope.garbage = []
   $scope.plan = {}
@@ -55,6 +55,27 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
     prevLabel: "<span style=\"color:green\">Previous</span>"
     skipLabel: "Exit"
     doneLabel: "Thanks"
+
+  $scope.section = "backpack"
+
+  $scope.findSection = (courseId) ->
+    for section in $scope.semesters.concat "backpack"
+      for course in $scope.plan[section]
+        return section if course.id is courseId
+    return "courses"
+
+  $scope.moveCourse = (course, section) ->
+    $("#course_#{course.id}").modal('hide')
+    currentSection = $scope.findSection course.id
+    courseMove = ->
+      $scope[section].push course
+      unless section is currentSection
+        $scope[currentSection] = $scope[currentSection].filter (courseB) -> courseB.id isnt course.id
+        $scope.updatePlan()
+    $timeout courseMove, 300
+    if currentSection is "courses" or section is "garbage"
+      $('body').removeClass('modal-open')
+      $('.modal-backdrop').remove()
 
   # CODE for Majors
   $scope.majors = [
@@ -115,20 +136,25 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
 
   $scope.dragged = false
 
-  $scope.courseDisplay= (course) ->
+  $scope.courseDisplay = (course) ->
     if not $scope.dragged
+      section = $scope.findSection course
+      section = "backpack" if section is "courses"
+      $scope.section = section
       $("#course_#{course}").modal('show')
     $scope.dragged = false
 
   $scope.startDragging = ->
     $scope.dragged = true
 
-  # later make one method for returning garbage to $scope.courses
-  $scope.clearSemester = (semester) ->
+  $scope.semesterPrint = (semester) ->
     semesterName = "#{semester.charAt(0).toUpperCase()+semester.slice(1,semester.length-1)}"
     yearMod = if semesterName is "Fall" then -1 else 0
     semesterName += " #{$scope.startYear+parseInt(semester[semester.length-1])+yearMod}"
-    if confirm "Clear #{semesterName}?"
+
+  # later make one method for returning garbage to $scope.courses
+  $scope.clearSemester = (semester) ->
+    if confirm "Clear #{$scope.semesterPrint semester}?"
       semesterCourses = $scope[semester]
       $scope[semester] = []
       $scope.courses.push course for course in semesterCourses

@@ -4,7 +4,7 @@
   %table.table
     %tbody
       %div(infinite-scroll="addMoreCourses()" infinite-scroll-distance="2" cg-busy="{promise:coursePromise,message:'Loading Courses'}")
-        %tr(data-ng-repeat="course in courses | emptyIfBlank:query | filter:{searchNames: query} | limitTo:totalDisplayed")
+        %tr.row-hover(data-ng-repeat="course in courses | emptyIfBlank:query | filter:{searchNames: query} | limitTo:totalDisplayed")
           %td
             %a.click-link(data-ng-click="courseDisplay(course.id)")
               {{course.name}}

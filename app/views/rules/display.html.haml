@@ -9,5 +9,5 @@
           %th Courses Fulfilling
       %tbody
         %div(infinite-scroll="addMoreCourses()" infinite-scroll-distance="2" cg-busy="{promise:coursePromise,message:'Loading Courses'}")
-          %tr(data-ng-repeat="course in courses | limitTo:totalDisplayed")
+          %tr.row-hover(data-ng-repeat="course in courses | limitTo:totalDisplayed")
             %td <a href="/courses/{{course.id}}">{{course.name}}</a>

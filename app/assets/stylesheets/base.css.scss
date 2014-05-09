@@ -63,3 +63,7 @@ a.click-link {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+tr.row-hover:hover {
+  background-color: #f6f6f6;
+}

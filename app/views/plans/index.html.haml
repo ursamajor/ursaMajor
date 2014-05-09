@@ -15,6 +15,6 @@
           %th Actions
       %tbody
         - @plans.each do |plan|
-          %tr
+          %tr.row-hover
             %td= link_to "#{plan.name}", plan_path(plan)
             %td= link_to "Delete", plan_path(plan), :method => :delete, :class => "btn btn-xs btn-danger", data: { confirm: "Are you sure?" }

@@ -227,3 +227,19 @@ a.result {
   border-color: grey;
   border-style: solid !important;
 }
+
+.move-course {
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  select, .btn {
+    float: left;
+  }
+  select {
+    max-width: 60%;
+  }
+  .btn {
+    max-width: 40%;
+    margin-left: 5px;
+  }
+}
