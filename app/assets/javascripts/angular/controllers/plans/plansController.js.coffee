@@ -68,9 +68,9 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
     $("#course_#{course.id}").modal('hide')
     currentSection = $scope.findSection course.id
     courseMove = ->
-      $scope[section].push course
       unless section is currentSection
         $scope[currentSection] = $scope[currentSection].filter (courseB) -> courseB.id isnt course.id
+        $scope[section].push course
         $scope.updatePlan()
     $timeout courseMove, 300
     if currentSection is "courses" or section is "garbage"
