@@ -8,6 +8,7 @@ Course Catalog
   - fix column widths
 
 Plan Page
+  - start tutorial after rules properly loaded
   - print option
   - mobile options
     - drop down of semester to add course to
@@ -46,7 +47,6 @@ Rules
       - utility function of numRulesSatisfied, proportion of courses left to fulfill other requirements
     - flag as an exclusive rule, which removes course from plan when checking rest
 Plans
-  - fix show.json for plan to not repeat startyear/major in each array
   - autopopulate plans from user information (years of semester)
   - selecting which rules you want
   - share plan

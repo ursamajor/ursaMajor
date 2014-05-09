@@ -224,11 +224,11 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
     $scope.startYear = parseInt $scope.startYearString
 
   $scope.planPromise = $http.get("#{window.location.pathname}.json").success (data) ->
-    $scope.startYearString = data[0]["startYear"]
-    $scope.currentMajor = data[0]["major"]
+    $scope.startYearString = data["startYear"]
+    $scope.currentMajor = data["major"]
     for section in $scope.semesters.concat ["backpack", "startYearString", "currentMajor"]
       unless section is "startYearString" or section is "currentMajor"
-        $scope[section] = $scope.findSemester data, section
+        $scope[section] = $scope.findSemester data["semesters"], section
       $scope.$watchCollection section, ->
         $scope.update()
     $scope.updatePlan()

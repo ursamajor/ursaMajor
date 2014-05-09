@@ -1,6 +1,6 @@
-json.array! @plan.semesters do |semester|
-  json.major @plan.major
-  json.startYear @plan.start_year
+json.major @plan.major
+json.startYear @plan.start_year
+json.semesters @plan.semesters do |semester|
   json.set! semester.name do
     json.array! semester.courses do |course|
       json.id course.id
