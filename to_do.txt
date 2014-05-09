@@ -8,7 +8,7 @@ Course Catalog
   - fix column widths
 
 Plan Page
-  - start tutorial after rules properly loaded
+  - start tutorial after rules properly loaded (pop up with start tutorial button)
   - print option
     - https://ariejan.net/2007/01/19/print-this-page-with-ruby-on-rails/
   - mobile options
@@ -21,7 +21,6 @@ Plan Page
   - ability to hide a year
   - for demo, allow saving plan to user's plans if logged in
   - sort by tabs (university, college, major)
-  - when clearing semester, say "Clear #{semester} #{year}" instead of backend name
 
 Rules Page
   - popular rules
@@ -40,7 +39,6 @@ Courses
   - editing of course info in ui
 Rules
   - get college/major info for rule from folder structure/name
-  - shorten names of rules?
   - online/summer versions of classes should also work with rules
   - updating rule (can only use up to 2 from same dept for breadths)
   - remove course if used for rule and can only be used once

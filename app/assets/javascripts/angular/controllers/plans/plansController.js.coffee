@@ -125,7 +125,10 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
 
   # later make one method for returning garbage to $scope.courses
   $scope.clearSemester = (semester) ->
-    if confirm "Clear #{semester}?"
+    semesterName = "#{semester.charAt(0).toUpperCase()+semester.slice(1,semester.length-1)}"
+    yearMod = if semesterName is "Fall" then -1 else 0
+    semesterName += " #{$scope.startYear+parseInt(semester[semester.length-1])+yearMod}"
+    if confirm "Clear #{semesterName}?"
       semesterCourses = $scope[semester]
       $scope[semester] = []
       $scope.courses.push course for course in semesterCourses
