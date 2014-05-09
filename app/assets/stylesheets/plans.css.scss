@@ -221,3 +221,9 @@ a.result {
   cursor: hand; 
   float: right;
 }
+
+.gridItem:hover {
+  background-color: #fdfdfd;
+  border-color: grey;
+  border-style: solid !important;
+}
