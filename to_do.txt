@@ -10,6 +10,7 @@ Course Catalog
 Plan Page
   - start tutorial after rules properly loaded
   - print option
+    - https://ariejan.net/2007/01/19/print-this-page-with-ruby-on-rails/
   - mobile options
     - drop down of semester to add course to
     - slider to switch between semestesrs (where backpack is)

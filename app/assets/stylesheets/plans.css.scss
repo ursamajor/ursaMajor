@@ -92,15 +92,14 @@ a.show {
   border-color: #B1B3B1; 
   border-style: solid;
   width: 90%;
+  font-size: 0.95em;
 }
 
 .profile select {
-  width: 50% !important;
-  float: left;
+  max-width: 55% !important;
 }
 
 .start-year-text {
-  max-width: 50%;
   float: left;
 }
 
@@ -189,6 +188,14 @@ a.fa.fa-times-circle:hover, a.fa.fa-cog:hover {
   float: right;
   height: 585px; 
   overflow:auto 
+}
+
+tr.result.red:hover {
+  background-color: #ffcccc;
+}
+
+tr.result.green:hover {
+  background-color: #ccffcc;
 }
 
 td.result.red a.result { 
