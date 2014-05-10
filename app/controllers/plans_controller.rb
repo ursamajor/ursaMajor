@@ -6,6 +6,10 @@ class PlansController < ApplicationController
   
   def index
     @plans = current_user.plans
+    respond_to do |format|
+      format.html
+      format.json { render 'index.json' }
+    end
   end
 
   def show

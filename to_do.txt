@@ -66,7 +66,7 @@ Chores
   - going through completed rules, make sure they work
   - documentation 
     - refer to (http://stackoverflow.com/questions/2543979/example-of-a-well-documented-rails-project-and-or-best-pratices)
-    - swagger for api documentation
+    - more swagger
   - tag rules by major
   - clean up planscontroller
   - more progressive data-ng-cloak

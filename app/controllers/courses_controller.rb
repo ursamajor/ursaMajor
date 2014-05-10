@@ -10,6 +10,10 @@ class CoursesController < ApplicationController
       query = "%"+query.upcase+"%"
       @courses = Course.search_query query
     end
+    respond_to do |format|
+      format.html
+      format.json { render 'index.json' }
+    end
   end
 
   def show
