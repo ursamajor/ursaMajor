@@ -31,6 +31,9 @@ Rails.application.routes.draw do
     end
   end
 
+  get '/api', to: 'api#index'
+  get '/api/:title', to: 'api#api_doc'
+
   get '/tag', to: 'tags#tag'
   get '/tag_all', to: 'tags#tag_all'
   get '/tag_only_hidden', to: 'tags#tag_only_hidden'

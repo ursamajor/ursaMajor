@@ -27,6 +27,9 @@ gem 'acts-as-taggable-on'
 gem 'devise'
 gem 'nokogiri'
 
+gem 'swagger-docs'
+gem 'swagger-ui_rails'
+
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
