@@ -1,5 +1,6 @@
 class CoursesController < ApplicationController
   respond_to :html, :json
+  before_action :cors_set_access_control_headers, :only => [:tagged_courses]
 
   def index
     @courses = Course.order 'name ASC'

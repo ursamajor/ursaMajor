@@ -8,6 +8,12 @@ class ApplicationController < ActionController::Base
 
   protected
 
+  def cors_set_access_control_headers
+    response.headers['Access-Control-Allow-Origin'] = '*'
+    response.headers['Access-Control-Allow-Methods'] = 'POST, GET, OPTIONS'
+    response.headers['Access-Control-Allow-Headers'] = '*'
+  end
+
   def rules
     @rules = Rule.all
   end
