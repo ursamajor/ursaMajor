@@ -5,3 +5,24 @@
 .info {
   float: left;
 }
+#course-sidebar {
+  float:left;
+  display: left;
+}
+.course-info {
+  float: right;
+}
+.table-container {
+  height: 100%;
+  width: 22%;
+  position: fixed;
+  overflow: scroll;
+}
+.course-ellipsis {
+  whites-space: nowrap;
+  x-overflow: hidden;
+  text-overflow: ellipsis;
+}
+#query{
+  width: 100%;
+}
