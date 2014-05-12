@@ -1,4 +1,4 @@
-%input(data-ng-model="query" id="query" class="form-control search-bar course-input" type="text" placeholder="Add a course..." name= "search_query" value="#{session[:search_query]}" autocomplete="off")
+%input(data-ng-model="query" class="form-control search-bar course-input" type="text" placeholder="Add a course..." name= "search_query" value="#{session[:search_query]}" autocomplete="off")
 .query
   .btn.btn-droppable(data-ng-repeat="course in courses | emptyIfBlank:query | filter:{searchNames: query} | limitTo:4" data-drop="true" data-ng-model="courses" data-jqyoui-options="{accept:'.btn-draggable'}" jqyoui-droppable="{index: {{$index}},applyFilter:'filterCourses'}")
     .btn.btn-primary.btn-draggable(data-ng-click="courseDisplay(course.id)" data-drag="{{course.drag}}" data-jqyoui-options="{revert: 'invalid'}" data-ng-model="courses" jqyoui-draggable="{onStart: 'startDragging', index: {{$index}},placeholder:true,applyFilter:'filterCourses'}" data-ng-hide="!course.name")
