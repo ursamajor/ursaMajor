@@ -1,6 +1,6 @@
 .col-md-3.col-sm-3(data-ng-controller="CourseListCtrl" id="course-sidebar")
   %h3.text-center Search Courses
-  %input(data-ng-model="query" id="query" class="form-control search-bar" type="text" placeholder="Type course name..." name= "search_query" value="#{session[:search_query]}" autocomplete="off")
+  %input(data-ng-model="query" id="catalog" class="form-control search-bar" type="text" placeholder="Type course name..." name= "search_query" value="#{session[:search_query]}" autocomplete="off")
   .table-container
     %table.table
       %tbody
