@@ -1,15 +1,28 @@
-.col-md-3.col-sm-3(data-ng-controller="CourseListCtrl" id="course-sidebar")
-  %h3.text-center Search Courses
-  %input(data-ng-model="query" id="catalog" class="form-control search-bar" type="text" placeholder="Type course name..." name= "search_query" value="#{session[:search_query]}" autocomplete="off")
-  .table-container
-    %table.table
-      %tbody
-        %div(infinite-scroll="addMoreCourses()" infinite-scroll-distance="2" cg-busy="{promise:coursePromise,message:'Loading Courses'}")
-          %tr.row-hover.course-ellipsis(data-ng-repeat="course in courses | emptyIfBlank:query | filter:{searchNames: query} | limitTo:totalDisplayed")
-            %td
-              %a.click-link(data-ng-click="courseDisplay(course.id)")
-                {{course.name}}
-            %td {{course.title}}
-    %div(data-ng-repeat="course in courses | emptyIfBlank:query | filter:{searchNames: query} | limitTo:totalDisplayed")
-      = render 'plans/course_modal'
-.course-info
+.col-md-1.col-sm-1
+.col-md-9.col-sm-9(data-ng-controller="CourseListCtrl" id="course-sidebar")
+  .col-md-4.col-sm-4
+    %h3.text-center Search Courses
+    %input(data-ng-model="query" id="catalog" class="form-control search-bar" type="text" placeholder="Type course name..." name= "search_query" value="#{session[:search_query]}" autocomplete="off")
+    #courses-container
+      %table.table
+        %tbody
+          %div(infinite-scroll="addMoreCourses()" infinite-scroll-distance="2" cg-busy="{promise:coursePromise,message:'Loading Courses'}")
+            %tr.row-hover.course-ellipsis(data-ng-repeat="course in courses | emptyIfBlank:query | filter:{searchNames: query} | limitTo:totalDisplayed")
+              %td
+                %a.click-link(data-ng-click="selectCourse(course)")
+                  {{course.name}}
+              %td {{course.title}}
+      %div(data-ng-repeat="course in courses | emptyIfBlank:query | filter:{searchNames: query} | limitTo:totalDisplayed")
+  .col-md-5.col-sm-5
+    .course-info(data-ng-if="selectedCourse")
+      %h3 {{selectedCourse.name}}
+      %h4 {{selectedCourse.title}}
+      %b Description:
+      {{selectedCourse.description || "Sorry, something's missing!"}}
+      %br
+      %br
+      %b Units:
+      {{selectedCourse.units}}
+      %br
+      %br
+      %a(href="/courses/{{selectedCourse.id}}") More Info

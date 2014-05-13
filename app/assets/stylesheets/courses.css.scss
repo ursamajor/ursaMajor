@@ -12,11 +12,9 @@
 .course-info {
   float: right;
 }
-.table-container {
-  height: 100%;
-  width: 22%;
-  position: fixed;
-  overflow: scroll;
+#courses-container {
+  height: 500px; 
+  overflow:auto 
 }
 .course-ellipsis {
   whites-space: nowrap;

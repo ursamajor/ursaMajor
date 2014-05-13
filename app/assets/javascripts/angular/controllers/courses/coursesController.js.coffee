@@ -18,8 +18,8 @@ angular.module('ursamajor.controllers').controller 'CourseListCtrl', ['$scope', 
   $scope.addMoreCourses = ->
     $scope.totalDisplayed += 30
 
-  $scope.courseDisplay= (course) ->
-    $("#course_#{course}").modal('show')
+  $scope.selectCourse = (course) ->
+    $scope.selectedCourse = course
 
   $scope.$watch 'query', ->
     $scope.totalDisplayed = 20

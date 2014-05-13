@@ -31,7 +31,7 @@ Profile Page
   - user information (GPA, transcripts, major)
 
 Contact
-  - bug reporting
+  - bug reporting (firebase?)
 
 Courses
   - save dept name as field
@@ -115,6 +115,7 @@ Optional
     - switch over bootstrap js to angular ui js
     - set default values for models set by promises/functions
     - make sure that requests in order (don't compute on null values)
+    - data-ng-if
 
   Rails
     - clean up / comment out parts replaced by angular
