@@ -23208,7 +23208,7 @@ courses = [
     "name" => "GWS.141", 
     "number" => 141, 
     "units" => 4, 
-    "title" => "Interrogating Global Economic "Development"", 
+    "title" => "Interrogating Global Economic 'Development'", 
     "description" => "An introduction to women and gender in 'development.' Addresses theories of 'development' (modernization, demographic transition, dependency, world systems, post-development, postcolonial, and transnational feminist): productions and representations of 'underdevelopment'; national and international 'development' apparatuses; 'development' practices about labor, population, resources, environment, literacy, technologies, media; and women's resistance and alternatives." 
   }, 
   { 
@@ -40897,7 +40897,7 @@ courses = [
     "name" => "NATAMST.145", 
     "number" => 145, 
     "units" => 4, 
-    "title" => "Making History/Making "Indians"", 
+    "title" => "Making History/Making 'Indians'", 
     "description" => "This course explores the ways in which an invented, generic 'Indian' has played a variety of roles in master narratives of United States history. We shall examine changes in images of key figures and events constituting 'our' collective historical memory." 
   }, 
   { 
@@ -57872,7 +57872,7 @@ courses = [
     "name" => "UGIS.162L", 
     "number" => 162, 
     "units" => 4, 
-    "title" => "Middle East Politics and the Arab "Spring"", 
+    "title" => "Middle East Politics and the Arab 'Spring'", 
     "description" => "This course provides an overview of modern Middle Eastern politics with the aim of gaining a deeper understanding of the recent events of the Arab 'Spring.' This course begins with a historical analysis outlining the development of the states in the Middle East. Through this course, students will gain an understanding of the dynamics of the Middle Eastern politics and society." 
   }, 
   { 
