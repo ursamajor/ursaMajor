@@ -16,6 +16,5 @@
           {{course.units}}
       .modal-footer
         %a.info(href="/courses/{{course.id}}") More Info
-        - if @plan
-          = render "plans/course_move"
+        = render "plans/course_move"
         %button.btn.btn-xs.btn-default{"data-dismiss" => "modal", type: "button"} Close

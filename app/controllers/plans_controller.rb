@@ -34,6 +34,7 @@ class PlansController < ApplicationController
     @plan = Plan.find_by id: params[:id]
 
     respond_to do |format|
+      # change this
       if @plan.update_attributes plans_params
         format.json { respond_with_bip(@plan) }
       else

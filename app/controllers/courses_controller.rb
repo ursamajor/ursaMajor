@@ -4,13 +4,12 @@ class CoursesController < ApplicationController
 
   def index
     @courses = Course.order 'name ASC'
-    @plan = false
-    query = session[:search_query] = params[:search_query]
+    # query = session[:search_query] = params[:search_query]
 
-    if ! [nil, ""].include? query
-      query = "%"+query.upcase+"%"
-      @courses = Course.search_query query
-    end
+    # if ! [nil, ""].include? query
+    #   query = "%"+query.upcase+"%"
+    #   @courses = Course.search_query query
+    # end
     respond_to do |format|
       format.html
       format.json { render 'index.json' }
@@ -22,12 +21,12 @@ class CoursesController < ApplicationController
   end
 
   def search
-    @courses = Course.order 'name ASC'
     unless params[:course] == 'all' && ENV['TAG_ALL'] == "true"
       redirect_to landing_path and return
       # query = "%"+params[:course].upcase+"%"
       # @courses = @courses.where("upper(name) like ?", query)
     end
+    @courses = Course.order 'name ASC'
     render :partial => "courses/all.json"
   end
 

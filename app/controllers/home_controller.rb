@@ -17,7 +17,6 @@ class HomeController < ApplicationController
 
   def demo
     @plan = session[:demo_id] ? Plan.find_by(id: session[:demo_id]) : Plan.create_demo 
-    @plan ||= Plan.create_demo 
     @demo = true
     session[:demo_id] = @plan.id
     respond_to do |format|
