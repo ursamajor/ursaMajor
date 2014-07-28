@@ -13,7 +13,7 @@
 //= require swagger-ui
 //= require jquery
 //= require jquery_ujs
-//= require jquery.ui.all
+//= require jquery-ui
 //= require best_in_place
 //= require angular
 //= require angular-animate
