@@ -129,6 +129,7 @@ Optional
       - for numcourses/units, compare tagged ids with rule id
       - for course rule, pass course id with rule
       - pass rule id with rule otherwise
+    - serialize tags as a string instead of x associations
 
 Errors
 
