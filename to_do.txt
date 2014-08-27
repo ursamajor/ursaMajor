@@ -120,6 +120,7 @@ Optional
   Rails
     - clean up / comment out parts replaced by angular
     - naming convention for partials (stick to camel or snake case)
+    - rake tasks
 
   Performance:
     - maybe don't load everything at once and rely on http requests

@@ -38,11 +38,11 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
       intro: "The rules sidebar will instantly show how close you are to satisfying your major requirements."
       position: "left"
     ,
-      element: "a.rule"
+      element: "#rules table"
       intro: "Click on a requirement to show all courses that fulfill it."
-      position: "right"
+      position: "left"
     ,
-      element: "a.result"
+      element: "#rules table"
       intro: "Click on a checkmark to show all courses in your current plan that fulfill the requirement."
       position: "left"
     ,
