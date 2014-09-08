@@ -1,3 +1,8 @@
+Responsibilities:
+  -Josh: clean up / back-end
+  -Sean: rules / back-end
+  -Dibyo / Victoria: front-end / UI
+
 Landing Page
   - tag line
   - highlights
@@ -71,6 +76,9 @@ Chores
   - clean up planscontroller
   - more progressive data-ng-cloak
   - tests
+  
+AB Testing framework: tokens
+
 
 After First Release
   - sample major plan
