@@ -240,13 +240,13 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
     courseIds = (course.id for course in $scope.planCourses)
     $scope.courses = $scope.courses.filter (course) -> course.id not in courseIds
 
-  $scope.startYearString = "2013"
+  $scope.startYearString = "2014"
   $scope.years = [
-    "2010"
     "2011"
     "2012"
     "2013"
     "2014"
+    "2015"
   ]
 
   $scope.$watch 'startYearString', ->

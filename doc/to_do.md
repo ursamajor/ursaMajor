@@ -1,8 +1,7 @@
-Responsibilities
-
-  - Josh: clean up / back-end
-  - Sean: rules / back-end
-  - Dibyo / Victoria: front-end / UI
+- [ ] fix CSRF token setting for Rails 4.2 (ApplicationController)
+- [ ] fix css/sass loading (app/assets/stylesheets)
+- [ ] fix drag/drop updating plan (plans/show, PlanDetailCtrl)
+- [ ] refactor
 
 Landing Page
 
