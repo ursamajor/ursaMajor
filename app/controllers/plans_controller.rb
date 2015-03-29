@@ -3,7 +3,7 @@ class PlansController < ApplicationController
   before_action :signed_in
   before_action :is_owner, :except => [:index, :create]
   before_action :set_cache_buster, :only => [:show]
-  
+
   def index
     @plans = current_user.plans
     respond_to do |format|

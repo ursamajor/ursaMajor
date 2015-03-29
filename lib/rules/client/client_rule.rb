@@ -94,7 +94,7 @@ class ClientRule < Rule
       name = entry['course']
       @subrules << ClientRule.course_rule(name)
     elsif entry.length == 1
-        begin 
+        begin
           name = entry.keys[0]
         rescue
           puts entry

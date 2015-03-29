@@ -65,7 +65,7 @@ class SameDeptRule < Rule
     rule, args = Rule.parse_entry entry
 
     result = Result.new self, false
-    plan.courses.each do |course1| 
+    plan.courses.each do |course1|
       dept_plan = Semester.new
       plan_dept_name = course1.dept
       plan.courses.each do |course2|

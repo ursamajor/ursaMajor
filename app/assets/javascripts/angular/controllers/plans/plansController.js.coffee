@@ -84,7 +84,7 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
     "Molecular Toxicology"
   ]
 
-  $scope.majorsMapping = 
+  $scope.majorsMapping =
     "EECS": "COE"
     "Molecular Toxicology": "CNR"
     "LS": "LS"
@@ -187,7 +187,7 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
     fulfillingSet = []
     for course in $scope.plan.courses
       if $scope.taggedWith(course, rule)
-        fulfillingSet.push course 
+        fulfillingSet.push course
         numCourses += 1
         numUnits += course["units"]
     pass = numUnits >= rule.numUnits and numCourses >= rule.numCourses
@@ -207,7 +207,7 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
     $scope.updatePlan()
     for rule in $scope.currentRules
       rule["result"] = $scope.checkRule rule
-    
+
   $scope.updatePlan = ->
     $scope.plan["courses"] = []
     $scope.plan["backpack"] = $scope["backpack"]
@@ -240,13 +240,13 @@ angular.module('ursamajor.controllers').controller 'PlanDetailCtrl', ['$scope', 
     courseIds = (course.id for course in $scope.planCourses)
     $scope.courses = $scope.courses.filter (course) -> course.id not in courseIds
 
-  $scope.startYearString = "2013"
+  $scope.startYearString = "2014"
   $scope.years = [
-    "2010"
     "2011"
     "2012"
     "2013"
     "2014"
+    "2015"
   ]
 
   $scope.$watch 'startYearString', ->

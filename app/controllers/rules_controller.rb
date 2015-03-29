@@ -1,6 +1,6 @@
 class RulesController < ApplicationController
   respond_to :html, :json
-  
+
   def index
     respond_to do |format|
       format.html

@@ -2,7 +2,7 @@ class HomeController < ApplicationController
   respond_to :html, :json
 
   before_action :set_cache_buster, :only => [:demo]
-  
+
   def index
     if signed_in?
       redirect_to demo_path and return
@@ -16,7 +16,7 @@ class HomeController < ApplicationController
   end
 
   def demo
-    @plan = session[:demo_id] ? Plan.find_by(id: session[:demo_id]) : Plan.create_demo 
+    @plan = session[:demo_id] ? Plan.find_by(id: session[:demo_id]) : Plan.create_demo
     @demo = true
     session[:demo_id] = @plan.id
     respond_to do |format|

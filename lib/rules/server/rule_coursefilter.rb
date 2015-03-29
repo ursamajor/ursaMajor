@@ -23,5 +23,5 @@ class CourseFilter < Rule
   def check_course(plan, course, args)
     fail NotImplementedError, "<Rule '#{name}'>.check_course"
   end
-  
+
 end

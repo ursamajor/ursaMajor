@@ -39,8 +39,8 @@ How it works
 -   rule object
 
         {
-            name: "IMARULE", 
-            num_courses: 2, 
+            name: "IMARULE",
+            num_courses: 2,
             num_units: 8
         }
 -   keep track of how many courses are tagged with "IMARULE"
@@ -61,10 +61,10 @@ How it works
 -   rule object
 
         {
-            name: "IMACOOLERRULE", 
-            num_courses: 0, 
-            num_units:0, 
-            bool_op: "AND", 
+            name: "IMACOOLERRULE",
+            num_courses: 0,
+            num_units:0,
+            bool_op: "AND",
             subrules:
             [
                 {
@@ -82,7 +82,7 @@ How it works
     num_units)
 
 -   a rule passes if totalCourses >= num_courses, totalUnits >=
-    num_units, AND X  
+    num_units, AND X
     X can be
     -   all subrules pass (bool_op: "AND")
     -   one of the subrules passes (bool_op: "OR")

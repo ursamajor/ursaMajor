@@ -6,9 +6,9 @@ class Plan < ActiveRecord::Base
   belongs_to :user
 
   validates :name, presence: true
-  
+
   @@semesters = [:backpack, :fall1, :fall2, :fall3, :fall4, :spring1, :spring2, :spring3, :spring4, :summer1, :summer2, :summer3, :summer4]
-  
+
   def self.semesters
     @@semesters
   end

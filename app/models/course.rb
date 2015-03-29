@@ -145,5 +145,5 @@ class Course < ActiveRecord::Base
       course.save
     end
   end
-  
+
 end

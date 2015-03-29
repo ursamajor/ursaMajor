@@ -1,8 +1,4 @@
-Responsibilities
-
-  - Josh: clean up / back-end
-  - Sean: rules / back-end
-  - Dibyo / Victoria: front-end / UI
+- [ ] refactor
 
 Landing Page
 
@@ -16,6 +12,7 @@ Course Catalog
 
 Plan Page
 
+  - [ ] fix tutorial
   - [ ] start tutorial after rules properly loaded (pop up with start tutorial button)
   - [ ] print option
     - [ ] https://ariejan.net/2007/01/19/print-this-page-with-ruby-on-rails/
@@ -84,14 +81,14 @@ Users
 Chores
 
   - [ ] going through completed rules, make sure they work
-  - [ ] documentation 
+  - [ ] documentation
     - [ ] refer to (http://stackoverflow.com/questions/2543979/example-of-a-well-documented-rails-project-and-or-best-pratices)
     - [ ] more swagger
   - [ ] tag rules by major
   - [ ] clean up planscontroller
   - [ ] more progressive data-ng-cloak
   - [ ] tests
-  
+
 AB Testing framework
 
   - [ ] tokens

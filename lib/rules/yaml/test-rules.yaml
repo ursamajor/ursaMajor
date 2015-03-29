@@ -44,7 +44,7 @@ rules:
 
     ls_breadth_arts:
         description: "Arts and Literature Breadth Requirement"
-        colleges: 
+        colleges:
             - LS
         rule: same_course
         args:
@@ -1528,7 +1528,7 @@ rules:
                 - course: NE STD.144
                 - course: NE STD.146A
                 - course: NE STD.146B
-                - course: NE STD.147    
+                - course: NE STD.147
                 - course: NE STD.150A
                 - course: NE STD.150B
                 - course: NE STD.160
@@ -4292,7 +4292,7 @@ rules:
                 - course: NUSCTX.161B
                 - course: NUSCTX.166
                 - course: NUSCTX.C196
-                - course: NUSCTX.H196                    
+                - course: NUSCTX.H196
                 - course: NUSCTX.199
                 - course: PB HLTH.150A
                 - course: PB HLTH.150B

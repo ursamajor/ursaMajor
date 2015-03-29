@@ -1,7 +1,7 @@
 #Courses controller
 
 angular.module('ursamajor.controllers').controller 'CourseListCtrl', ['$scope', '$http', '$filter', ($scope, $http, $filter) ->
-  
+
   $scope.sortCourses = (a, b) -> switch
       when a.dept > b.dept then 1
       when a.dept < b.dept then -1
@@ -14,7 +14,7 @@ angular.module('ursamajor.controllers').controller 'CourseListCtrl', ['$scope', 
     $scope.courses = data
     $scope.courses.sort $scope.sortCourses #todo: sort in rails controller so don't have to here
     $scope.totalDisplayed = 20
- 
+
   $scope.addMoreCourses = ->
     $scope.totalDisplayed += 30
 

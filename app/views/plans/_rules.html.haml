@@ -2,8 +2,8 @@
   %table.table
     %tbody
       %tr(data-ng-repeat="rule in currentRules" class="result {{rule.result.pass | color}}")
-        %td 
+        %td
           %a.rule(href="{{rule.url}}") {{rule.description}}
-        %td(class="result {{rule.result.pass | color}}") 
+        %td(class="result {{rule.result.pass | color}}")
           %a.result(data-toggle="modal" data-target="#fulfilling_set_{{rule.name}}") {{rule.result.pass | satisfied}}
           = render "plans/fulfilling_set_modal"
